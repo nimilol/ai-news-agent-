@@ -8,6 +8,10 @@
 #   tier     - official | leak | community | newsletter | press  (decides priority when there is a lot of news)
 #   alert    - true = also checked every 30 minutes for instant "new post" pings (official sources only, no AI)
 #   limit    - max items to take from this source per run (default 15)
+#   exclude  - optional regex: items whose title matches are skipped (e.g. 'alpha|beta' for pre-releases)
+#
+# Only official sources set `company`. Community and press sources keep an item only when its headline or
+# summary mentions one of your companies (keywords in config.yaml), which keeps unrelated stories out.
 #
 # Type notes:
 #   rss          - any RSS/Atom feed (Substack: add /feed, GitHub releases: /releases.atom)
@@ -29,7 +33,7 @@ sources:
   - {name: OpenAI API changelog, type: page_diff, url: "https://platform.openai.com/docs/changelog", company: openai, tier: official, alert: true}
   - {name: ChatGPT release notes, type: page_diff, url: "https://help.openai.com/en/articles/6825453-chatgpt-release-notes", company: openai, tier: official, alert: true}
   - {name: OpenAI model release notes, type: page_diff, url: "https://help.openai.com/en/articles/9624314-model-release-notes", company: openai, tier: official}
-  - {name: Codex releases, type: rss, url: "https://github.com/openai/codex/releases.atom", company: openai, tier: official, limit: 3}
+  - {name: Codex releases, type: rss, url: "https://github.com/openai/codex/releases.atom", company: openai, tier: official, limit: 3, exclude: 'alpha|beta|-rc'}
   - {name: OpenAI on Hugging Face, type: huggingface, author: openai, company: openai, tier: official, alert: true}
 
   # ---------------------------------------------------------------- xAI / Grok (official)
@@ -48,16 +52,16 @@ sources:
   - {name: OpenRouter new models, type: openrouter_models, tier: leak}
 
   # ---------------------------------------------------------------- Community
-  - {name: "Hacker News: Anthropic/Claude", type: hn, query: [Anthropic, Claude], company: anthropic, min_points: 40, tier: community}
-  - {name: "Hacker News: OpenAI", type: hn, query: [OpenAI, ChatGPT], company: openai, min_points: 60, tier: community}
-  - {name: "Hacker News: xAI/Grok", type: hn, query: [xAI, Grok], company: xai, min_points: 30, tier: community}
-  - {name: "Hacker News: GLM", type: hn, query: [GLM, Zhipu], company: zhipu, min_points: 20, tier: community}
+  - {name: "Hacker News: Anthropic/Claude", type: hn, query: [Anthropic, Claude], min_points: 40, tier: community}
+  - {name: "Hacker News: OpenAI", type: hn, query: [OpenAI, ChatGPT], min_points: 60, tier: community}
+  - {name: "Hacker News: xAI/Grok", type: hn, query: [xAI, Grok], min_points: 30, tier: community}
+  - {name: "Hacker News: GLM", type: hn, query: [GLM, Zhipu], min_points: 20, tier: community}
   # Reddit: one combined request for all subreddits (separate requests get rate-limited). Value = company, or ~ for general.
   - name: Reddit
     type: reddit
     tier: community
     limit: 25
-    subreddits: {ClaudeAI: anthropic, OpenAI: openai, ChatGPT: openai, grok: xai, LocalLLaMA: ~, singularity: ~}
+    subreddits: {ClaudeAI: anthropic, OpenAI: openai, grok: xai, LocalLLaMA: ~, singularity: ~}
 
   # ---------------------------------------------------------------- Newsletters, blogs and YouTube
   - {name: Simon Willison, type: rss, url: "https://simonwillison.net/atom/everything/", tier: newsletter}
@@ -72,10 +76,10 @@ sources:
   - {name: Sam Witteveen (YouTube), type: youtube, handle: samwitteveenai, tier: newsletter}
 
   # ---------------------------------------------------------------- Press
-  - {name: "Google News: Anthropic", type: google_news, query: "Anthropic OR \"Claude AI\"", company: anthropic, tier: press, limit: 10}
-  - {name: "Google News: OpenAI", type: google_news, query: "OpenAI OR ChatGPT", company: openai, tier: press, limit: 10}
-  - {name: "Google News: xAI", type: google_news, query: "xAI OR Grok", company: xai, tier: press, limit: 10}
-  - {name: "Google News: Zhipu", type: google_news, query: "Zhipu OR \"Z.ai\" OR GLM model", company: zhipu, tier: press, limit: 10}
+  - {name: "Google News: Anthropic", type: google_news, query: "Anthropic OR \"Claude AI\"", tier: press, limit: 10}
+  - {name: "Google News: OpenAI", type: google_news, query: "OpenAI OR ChatGPT", tier: press, limit: 10}
+  - {name: "Google News: xAI", type: google_news, query: "xAI OR Grok", tier: press, limit: 10}
+  - {name: "Google News: Zhipu", type: google_news, query: "Zhipu OR \"Z.ai\" OR GLM-5 OR ChatGLM", tier: press, limit: 10}
   - {name: The Decoder, type: rss, url: "https://the-decoder.com/feed/", tier: press}
   - {name: TechCrunch AI, type: rss, url: "https://techcrunch.com/category/artificial-intelligence/feed/", tier: press}
   - {name: The Verge AI, type: rss, url: "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", tier: press}

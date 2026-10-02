@@ -185,7 +185,7 @@ def fetch_hn(source, state):
     since = int((now_utc() - timedelta(hours=48)).timestamp())
     items, seen = [], set()
     for q in queries:
-        params = {"query": q, "tags": "story", "hitsPerPage": 30,
+        params = {"query": q, "tags": "story", "hitsPerPage": 30, "restrictSearchableAttributes": "title",
                   "numericFilters": f"points>={source.get('min_points', 30)},created_at_i>{since}"}
         for hit in get("https://hn.algolia.com/api/v1/search_by_date", params=params).json().get("hits", []):
             if hit["objectID"] in seen:

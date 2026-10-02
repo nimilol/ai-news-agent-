@@ -30,8 +30,9 @@ def _chat_completions(base_url, key, model, system, user, json_mode=True, extra_
         raise ProviderError(f"HTTP {r.status_code}: {r.text[:300]}")
     try:
         text = r.json()["choices"][0]["message"]["content"]
-    except (KeyError, IndexError, ValueError) as e:
-        raise ProviderError(f"unexpected response: {r.text[:300]}") from e
+    except (KeyError, IndexError, TypeError, ValueError) as e:
+        kind = r.headers.get("content-type", "?")
+        raise ProviderError(f"unexpected response from {r.url} ({kind}): {r.text[:300]!r}") from e
     if not text or not text.strip():
         raise ProviderError("empty answer")
     return text
@@ -98,7 +99,7 @@ def complete(config, system, build_user):
                 if name == "anthropic":
                     text = _claude(key, model, system, user)
                 else:
-                    headers = {"X-Title": "ai-news-agent"} if name == "openrouter" else None
+                    headers = p.get("headers")
                     text = _chat_completions(p["base_url"], key, model, system, user, extra_headers=headers,
                                              max_tokens=p.get("max_tokens", 8000))
                 return text, f"{name}/{model}"

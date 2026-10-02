@@ -190,3 +190,13 @@ def test_reddit_combined_feed_tags_company_by_subreddit(monkeypatch):
     assert urls == ["https://www.reddit.com/r/ClaudeAI+LocalLLaMA/top/.rss?t=day&limit=100"]
     assert [(i["source"], i["companies"]) for i in items] == [("r/ClaudeAI", ["anthropic"]), ("r/LocalLLaMA", [])]
     assert items[0]["summary"] == "Anyone else?" and items[0]["published"].startswith("2026-10-02T10:00")
+
+
+def test_exclude_skips_prereleases(state, monkeypatch):
+    src = {"name": "Codex releases", "type": "rss", "company": "openai", "tier": "official", "exclude": "alpha|beta|-rc"}
+    state.mark_initialized("Codex releases")
+    monkeypatch.setattr(main, "fetch", lambda s, st: [
+        item("0.162.0-alpha.7", source="Codex releases", company="openai"),
+        item("0.162.0", source="Codex releases", company="openai")])
+    found, _, _ = main.collect([src], state, CONFIG)
+    assert [i["title"] for i in found] == ["0.162.0"]

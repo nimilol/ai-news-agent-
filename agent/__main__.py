@@ -79,8 +79,11 @@ def collect(sources, state, config):
         state.record_result(name, ok=True)
         scanned += len(result)
         first_run = state.is_new_source(name)
+        exclude = re.compile(src["exclude"], re.I) if src.get("exclude") else None
         fresh = []
         for item in result:
+            if exclude and exclude.search(item["title"]):
+                continue
             if not tag_companies(item, matchers):
                 continue
             if not state.observe(item["id"]):
