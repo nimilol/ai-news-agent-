@@ -17,7 +17,7 @@ Answer with JSON only, in exactly this shape:
   "headline": "the single most important development, one sentence ('Quiet period' if nothing notable)",
   "stories": [
     {
-      "company": "anthropic | openai | xai | zhipu | industry",
+      "company": "anthropic | openai | xai | zhipu | free_models | industry",
       "title": "short factual headline, at most 12 words",
       "summary": "2-3 sentences: what changed, who it affects, why it matters. Keep concrete names, numbers, dates.",
       "status": "official | report | rumor",
@@ -37,9 +37,13 @@ Rules:
 - importance: 5 = new model, major launch or shutdown, pricing/policy change affecting many users;
   4 = notable feature or model update, big deal, funding, outage; 3 = smaller update or interesting report;
   2 = minor; 1 = noise.
-- Leave out items that are not really about these companies, and noise (memes, help requests, job posts,
+- Apart from free models, leave out items that are not really about these companies, and noise (memes, help requests, job posts,
   routine SDK patch releases). Returning few stories is fine.
 - "industry" is for stories involving several of the companies, or the AI field as a whole.
+- "free_models" is for new models the creator can use for free (items from "OpenRouter free models" or
+  "OpenCode free models"), from any company. Keep these. Group several into one story when there are many, and
+  name each model, who made it and where it is free. Use status "official" and importance 3 (4 if it is a
+  well-known model from a major lab).
 - Sort stories by importance, highest first. At most 25 stories."""
 
 STATUS_LABEL = {"official": "✅ Official", "report": "📰 Report", "rumor": "👀 Rumor"}

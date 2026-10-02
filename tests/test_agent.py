@@ -219,3 +219,39 @@ def test_busy_provider_is_retried(monkeypatch):
     monkeypatch.setattr(llm.requests, "post", lambda *a, **k: Resp(next(codes)))
     monkeypatch.setattr(llm.time, "sleep", lambda s: None)
     assert llm._chat_completions("https://x", "k", "m", "sys", "user") == '{"stories": []}'
+
+
+def test_free_model_sources(monkeypatch):
+    from agent import sources
+
+    openrouter = {"data": [
+        {"id": "meta/llama-9:free", "name": "Llama 9 (free)", "pricing": {"prompt": "0", "completion": "0"}},
+        {"id": "anthropic/claude-opus-6", "name": "Claude Opus 6", "pricing": {"prompt": "0.000004", "completion": "0.00002"}},
+        {"id": "openrouter/mystery-alpha", "name": "Mystery Alpha", "pricing": {"prompt": "0", "completion": "0"}},
+    ]}
+    models_dev = {
+        "opencode": {"name": "OpenCode Zen", "models": {
+            "big-pickle": {"name": "Big Pickle", "cost": {"input": 0, "output": 0}, "limit": {"context": 200000}},
+            "paid-model": {"name": "Paid", "cost": {"input": 3, "output": 15}}}},
+        "anthropic": {"name": "Anthropic", "models": {"claude-opus-6": {"name": "Claude Opus 6", "release_date": "2026-10-01"}}},
+    }
+
+    class R:
+        def __init__(self, data):
+            self._data = data
+
+        def json(self):
+            return self._data
+    monkeypatch.setattr(sources, "get", lambda url, **kw: R(openrouter if "openrouter" in url else models_dev))
+
+    free = sources.fetch_openrouter_models({"name": "OpenRouter free models", "mode": "free"}, {})
+    assert {i["title"].split(": ", 1)[1] for i in free} == {"Llama 9 (free) (meta/llama-9:free)", "Mystery Alpha (openrouter/mystery-alpha)"}
+    assert all(i["companies"] == ["free_models"] for i in free)
+
+    default = sources.fetch_openrouter_models({"name": "OpenRouter new models"}, {})
+    assert [(i["companies"], "stealth" in i["summary"]) for i in default] == [(["anthropic"], False), ([], True)]
+
+    oc = sources.fetch_models_dev({"name": "OpenCode free models", "providers": {"opencode": "free_models"}, "free_only": True}, {})
+    assert [i["title"] for i in oc] == ["New free model in OpenCode Zen: Big Pickle (big-pickle)"]
+    early = sources.fetch_models_dev({"name": "Early model listings", "providers": {"anthropic": "anthropic", "zai": "zhipu"}}, {})
+    assert [(i["title"], i["companies"]) for i in early] == [("New model listed for Anthropic: Claude Opus 6 (claude-opus-6)", ["anthropic"])]

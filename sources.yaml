@@ -2,11 +2,11 @@
 #
 # Fields:
 #   name     - shown in the digest and in the health report
-#   type     - rss | page_links | page_diff | huggingface | openrouter_models | youtube | hn | reddit | google_news
-#   company  - anthropic | openai | xai | zhipu  (set it when the source is about one company: every item counts.
+#   type     - rss | page_links | page_diff | huggingface | openrouter_models | models_dev | youtube | hn | reddit | google_news
+#   company  - anthropic | openai | xai | zhipu | free_models  (set it when the source is about one company: every item counts.
 #              Leave it out for general sources: then only items mentioning your companies are kept.)
 #   tier     - official | leak | community | newsletter | press  (decides priority when there is a lot of news)
-#   alert    - true = also checked every 30 minutes for instant "new post" pings (official sources only, no AI)
+#   alert    - true = also checked every hour for instant "new post" pings on Telegram (no AI)
 #   limit    - max items to take from this source per run (default 15)
 #   exclude  - optional regex: items whose title matches are skipped (e.g. 'alpha|beta' for pre-releases)
 #
@@ -48,8 +48,14 @@ sources:
   - {name: Z.ai on Hugging Face, type: huggingface, author: zai-org, company: zhipu, tier: official, alert: true}
 
   # ---------------------------------------------------------------- Leaks and early signals
-  - {name: TestingCatalog, type: rss, url: "https://www.testingcatalog.com/rss/", tier: leak}
-  - {name: OpenRouter new models, type: openrouter_models, tier: leak}
+  # These are also checked hourly (alert: true), because leaks and new listings are where "early" comes from.
+  - {name: TestingCatalog, type: rss, url: "https://www.testingcatalog.com/rss/", tier: leak, alert: true}
+  - {name: OpenRouter new models, type: openrouter_models, tier: leak, alert: true}
+  - {name: Early model listings (models.dev), type: models_dev, tier: leak, alert: true, providers: {anthropic: anthropic, openai: openai, xai: xai, zai: zhipu, zhipuai: zhipu}}
+
+  # ---------------------------------------------------------------- New free models you can use
+  - {name: OpenRouter free models, type: openrouter_models, mode: free, tier: leak, alert: true}
+  - {name: OpenCode free models, type: models_dev, providers: {opencode: free_models}, free_only: true, tier: leak, alert: true}
 
   # ---------------------------------------------------------------- Community
   - {name: "Hacker News: Anthropic/Claude", type: hn, query: [Anthropic, Claude], min_points: 40, tier: community}

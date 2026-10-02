@@ -143,29 +143,83 @@ def fetch_huggingface(source, state):
 OPENROUTER_COMPANIES = {"anthropic/": "anthropic", "openai/": "openai", "x-ai/": "xai", "z-ai/": "zhipu", "thudm/": "zhipu"}
 
 
+def _is_free(price):
+    try:
+        return float(price.get("prompt", 1)) == 0 and float(price.get("completion", 1)) == 0
+    except (TypeError, ValueError):
+        return False
+
+
 def fetch_openrouter_models(source, state):
-    """New model ids on OpenRouter from our companies, plus anonymous 'stealth' models."""
+    """New models on OpenRouter.
+    Default: models from our companies, plus anonymous 'stealth' models (often unreleased models in testing).
+    mode: free -> every new model you can use for free, from any company."""
+    free_mode = source.get("mode") == "free"
     items = []
     for m in get("https://openrouter.ai/api/v1/models").json().get("data", []):
-        model_id = m.get("id", "")
+        model_id, name = m.get("id", ""), m.get("name", m.get("id", ""))
+        price = m.get("pricing", {})
+        context = f"Context: {m.get('context_length', '?')} tokens."
+        if free_mode:
+            if not _is_free(price):
+                continue
+            summary = f"Free to use on OpenRouter (rate-limited). {context} {clean_text(m.get('description', ''), 400)}"
+            item = make_item(source, f"New free model on OpenRouter: {name} ({model_id})",
+                             f"https://openrouter.ai/{model_id}", summary, uid=model_id)
+            item["companies"] = ["free_models"]
+            items.append(item)
+            continue
         if ":" in model_id:  # skip ':free' / ':beta' duplicates of a model
             continue
         company = next((c for prefix, c in OPENROUTER_COMPANIES.items() if model_id.startswith(prefix)), None)
-        stealth = model_id.startswith("openrouter/") or "stealth" in (m.get("name", "") + model_id).lower()
+        stealth = model_id.startswith("openrouter/") or "stealth" in (name + model_id).lower()
         if not company and not stealth:
             continue
-        price = m.get("pricing", {})
-        summary = (
-            f"{clean_text(m.get('description', ''), 500)} Context: {m.get('context_length', '?')} tokens. "
-            f"Price per token: input {price.get('prompt', '?')}, output {price.get('completion', '?')}."
-        )
+        summary = (f"{clean_text(m.get('description', ''), 500)} {context} "
+                   f"Price per token: input {price.get('prompt', '?')}, output {price.get('completion', '?')}.")
         if stealth:
             summary = "Anonymous/stealth model (often an unreleased model being tested). " + summary
-        item = make_item(source, f"OpenRouter lists new model: {m.get('name', model_id)} ({model_id})",
+        item = make_item(source, f"OpenRouter lists new model: {name} ({model_id})",
                          f"https://openrouter.ai/{model_id}", summary, uid=model_id)
         if company:
             item["companies"] = [company]
         items.append(item)
+    return items
+
+
+def fetch_models_dev(source, state):
+    """models.dev: the open model database behind OpenCode. Models often appear here as soon as a provider lists them.
+    `providers` maps a models.dev provider id to a company (or to free_models).
+    free_only: true -> only models that cost nothing (e.g. OpenCode's free models)."""
+    data = get("https://models.dev/api.json").json()
+    items = []
+    for provider_id, company in source["providers"].items():
+        provider = data.get(provider_id)
+        if not isinstance(provider, dict):
+            continue
+        pname = provider.get("name", provider_id)
+        for model_id, m in (provider.get("models") or {}).items():
+            if not isinstance(m, dict):
+                continue
+            cost = m.get("cost") or {}
+            free = cost.get("input", 1) == 0 and cost.get("output", 1) == 0
+            if source.get("free_only") and not free:
+                continue
+            name = m.get("name") or model_id
+            limit = (m.get("limit") or {}).get("context", "?")
+            summary = (f"Listed by {pname} on models.dev. Released: {m.get('release_date', '?')}. Context: {limit} tokens. "
+                       f"Cost per million tokens: input {cost.get('input', '?')}, output {cost.get('output', '?')}.")
+            if source.get("free_only"):
+                title = f"New free model in {pname}: {name} ({model_id})"
+            else:
+                title = f"New model listed for {pname}: {name} ({model_id})"
+            item = make_item(source, title, f"https://models.dev/?search={quote(model_id)}", summary,
+                             uid=f"{provider_id}/{model_id}")
+            if company:
+                item["companies"] = [company]
+            items.append(item)
+    if not items and not source.get("free_only"):
+        raise ValueError("no models found (models.dev layout changed?)")
     return items
 
 
@@ -233,6 +287,7 @@ FETCHERS = {
     "page_diff": fetch_page_diff,
     "huggingface": fetch_huggingface,
     "openrouter_models": fetch_openrouter_models,
+    "models_dev": fetch_models_dev,
     "youtube": fetch_youtube,
     "hn": fetch_hn,
     "reddit": fetch_reddit,

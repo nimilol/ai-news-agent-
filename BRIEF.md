@@ -87,3 +87,8 @@ Follow-up:
 - **Same day, first run with a Gemini key:** the key worked, but `gemini-flash-latest` answered "503 high demand"
   and `gemini-2.5-flash` has been retired ("use gemini-3.8-flash"). AI calls now retry busy errors (429/5xx) twice,
   after 5 and 20 seconds, and the Gemini list is `gemini-flash-latest`, `gemini-3.8-flash`, `gemini-flash-lite-latest`.
+- **Same day, owner asked for earlier signals and free models:** TestingCatalog and OpenRouter's new/stealth models
+  now trigger hourly alerts too. New sources: models.dev (the open model database behind OpenCode) for early listings
+  of Anthropic, OpenAI, xAI and Z.ai models; new free models on OpenRouter (any company); and new free models in
+  OpenCode (models.dev provider `opencode`, cost 0). Free models get their own "🆓 New free models you can use"
+  section in the brief. Groq (the owner's backup key) gets a shorter item list to fit its free per-minute token limit.

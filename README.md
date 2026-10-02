@@ -6,8 +6,11 @@ and sends you a summary on **Telegram** and/or **email**.
 - **Every 6 hours:** reads about 42 sources (official blogs and changelogs, leak trackers, Hacker News, Reddit,
   newsletters, YouTube, the press), keeps only what's new and about your four companies, and has a free AI model
   write a brief: grouped by company, labelled *Official / Report / Rumor*, with links and post ideas.
-- **Every hour:** checks only the official sources and pings you instantly when something new appears
-  (no AI, so it's fast and always works).
+- **Every hour:** checks the official sources plus the early-signal sources (TestingCatalog leaks, new and stealth
+  models on OpenRouter, new model listings on models.dev) and the free-model sources (new free models on OpenRouter
+  and in OpenCode), and pings you on Telegram as soon as something new appears (no AI, so it's fast and always works).
+- **New free models:** the brief has a "🆓 New free models you can use" section for models that just became free on
+  OpenRouter or in OpenCode, from any company.
 - **Costs $0.** It runs on GitHub Actions (free) and free AI tiers. When you have money, add a Claude API key and
   it switches to Claude automatically.
 
@@ -71,7 +74,7 @@ Add each one by name (`TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `GEMINI_API_KEY`
 ## Day to day
 
 - **Briefs:** 00:17, 06:17, 12:17 and 18:17 UTC. Change the time in `.github/workflows/digest.yml` (`cron`, in UTC).
-- **Instant alerts:** hourly from official sources (every 30 minutes is possible if the repository is public; see the comment in `.github/workflows/alerts.yml`). To turn them off, open the **Actions** tab, choose
+- **Instant alerts:** hourly from official, early-signal and free-model sources (every 30 minutes is possible if the repository is public; see the comment in `.github/workflows/alerts.yml`). To turn them off, open the **Actions** tab, choose
   **Instant alerts**, and pick **Disable workflow** from the **⋯** menu.
 - **Archive:** every brief is saved in `digests/` as a Markdown file, so you have a searchable history of everything
   that happened.

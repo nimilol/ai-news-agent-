@@ -15,6 +15,10 @@ companies:
   zhipu:
     label: "GLM / Z.ai (Zhipu)"
     keywords: ['\bglm\b', '\bglm-?[0-9]', '\bchatglm\b', '\bzhipu\b', '\bz\.ai\b', '\bzai-org\b']
+  free_models:
+    # Filled only by the free-model sources (OpenRouter free tier, OpenCode), so no keywords.
+    label: "🆓 New free models you can use"
+    keywords: []
 
 # How far back to look. Items older than this are ignored even if never seen before.
 max_age_hours: 48
@@ -53,6 +57,9 @@ llm:
       key_env: GROQ_API_KEY
       base_url: https://api.groq.com/openai/v1
       models: [openai/gpt-oss-120b, llama-3.3-70b-versatile]
+      # Groq's free tier limits tokens per minute, so it gets a shorter list.
+      max_items: 35
+      summary_chars: 200
     openrouter:
       key_env: OPENROUTER_API_KEY
       base_url: https://openrouter.ai/api/v1
