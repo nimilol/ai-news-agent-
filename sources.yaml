@@ -39,7 +39,7 @@ sources:
   - {name: xAI on Hugging Face, type: huggingface, author: xai-org, company: xai, tier: official, alert: true}
 
   # ---------------------------------------------------------------- Zhipu / GLM (official)
-  - {name: Z.ai Blog, type: page_links, url: "https://z.ai/blog", pattern: '^(https://z\.ai)?/blog/[A-Za-z0-9-]+/?$', company: zhipu, tier: official, alert: true}
+  # z.ai/blog has no listing page (404), so GLM launches are caught by the release notes, Hugging Face, OpenRouter and the press.
   - {name: Z.ai release notes, type: page_diff, url: "https://docs.z.ai/release-notes/new-released", company: zhipu, tier: official, alert: true}
   - {name: Z.ai on Hugging Face, type: huggingface, author: zai-org, company: zhipu, tier: official, alert: true}
 
@@ -62,7 +62,7 @@ sources:
   - {name: Simon Willison, type: rss, url: "https://simonwillison.net/atom/everything/", tier: newsletter}
   - {name: Latent Space / AINews, type: rss, url: "https://www.latent.space/feed", tier: newsletter}
   - {name: Interconnects, type: rss, url: "https://www.interconnects.ai/feed", tier: newsletter}
-  - {name: Import AI, type: rss, url: "https://importai.substack.com/feed", tier: newsletter}
+  - {name: Import AI, type: rss, url: "https://jack-clark.net/feed/", tier: newsletter}
   - {name: TLDR AI, type: rss, url: "https://tldr.tech/api/rss/ai", tier: newsletter}
   - {name: Ben's Bites, type: rss, url: "https://www.bensbites.com/feed", tier: newsletter}
   - {name: AI Explained (YouTube), type: youtube, channel_id: UCNJ1Ymd5yFuUPtn21xtRbbw, handle: aiexplained-official, tier: newsletter}

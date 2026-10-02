@@ -7,6 +7,8 @@
 import calendar
 import hashlib
 import re
+import threading
+import time
 from datetime import datetime, timedelta, timezone
 from urllib.parse import quote, urljoin
 
@@ -199,9 +201,26 @@ def fetch_hn(source, state):
     return items
 
 
+_reddit_lock = threading.Lock()
+_reddit_last = [0.0]
+REDDIT_SPACING = 4  # seconds between Reddit requests; asking for several feeds at once gets "429 Too Many Requests"
+
+
 def fetch_reddit(source, state):
     url = f"https://www.reddit.com/r/{source['subreddit']}/top/.rss?t=day&limit=25"
-    return _feed_items(source, get(url).content)
+    with _reddit_lock:  # one Reddit request at a time, spaced out
+        for attempt in range(2):
+            wait = _reddit_last[0] + REDDIT_SPACING - time.monotonic()
+            if wait > 0:
+                time.sleep(wait)
+            _reddit_last[0] = time.monotonic()
+            try:
+                return _feed_items(source, get(url).content)
+            except Exception as e:  # noqa: BLE001
+                if attempt == 0 and "429" in str(e):
+                    time.sleep(10)
+                    continue
+                raise
 
 
 def fetch_google_news(source, state):
