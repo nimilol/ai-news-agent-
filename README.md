@@ -59,7 +59,9 @@ Add each one by name (`TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `GEMINI_API_KEY`
 2. Click **AI news digest → Run workflow**, choose **test-delivery**, and run it. You should get a "connected"
    message on Telegram/email.
 3. Run it again with **check-sources** and open the run log: it lists which sources work (✓) and which don't (✗).
-4. Run it with **digest** for your first brief. From then on it runs by itself every 6 hours.
+4. Optional: run it with **preview**. The run log shows a full brief written by the AI, but nothing is sent and the
+   agent's memory isn't changed, so you can preview as often as you like.
+5. Run it with **digest** for your first brief. From then on it runs by itself every 6 hours.
 
 > **The first brief is short on purpose.** The first time the agent reads a source, it only reports the last 12 hours
 > and quietly remembers everything older, so you don't get a flood of old news.

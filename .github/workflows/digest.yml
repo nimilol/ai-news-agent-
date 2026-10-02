@@ -8,7 +8,7 @@ on:
       mode:
         description: What to run
         type: choice
-        options: [digest, check-sources, test-delivery]
+        options: [digest, preview, check-sources, test-delivery]
         default: digest
 
 permissions:
@@ -45,7 +45,12 @@ jobs:
           EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
           EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
-        run: python -m agent "$MODE"
+        run: |
+          if [ "$MODE" = "preview" ]; then
+            python -m agent digest --dry-run   # full brief in this log; nothing sent, nothing saved
+          else
+            python -m agent "$MODE"
+          fi
 
       - name: Save memory and archive
         if: ${{ (inputs.mode || 'digest') == 'digest' }}
