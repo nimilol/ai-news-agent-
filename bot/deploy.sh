@@ -56,7 +56,7 @@ if [ -z "$SUB" ]; then
   echo "Registering the workers.dev subdomain $WANT…"
   RESULT="$(curl -s -X PUT -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" -H 'content-type: application/json' \
     -d "{\"subdomain\":\"$WANT\"}" "$CF_API")"
-  echo "$RESULT" | grep -q '"success":true' || {
+  echo "$RESULT" | grep -Eq '"success": *true' || {
     echo "::error::Could not register a workers.dev subdomain ($RESULT). Open Cloudflare → Workers & Pages once, pick a subdomain, then run this again."; exit 1; }
   sleep 5
 fi
@@ -82,7 +82,7 @@ HOOK="$(printf '%s' "hook:$TELEGRAM_BOT_TOKEN" | sha256sum | cut -c1-32)"
 RESULT="$(curl -s "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/setWebhook" \
   --data-urlencode "url=$URL/telegram" --data-urlencode "secret_token=$HOOK" \
   --data-urlencode 'allowed_updates=["message"]')"
-echo "$RESULT" | grep -q '"ok":true' || { echo "::error::Telegram refused the webhook: $RESULT"; exit 1; }
+echo "$RESULT" | grep -Eq '"ok": *true' || { echo "::error::Telegram refused the webhook: $RESULT"; exit 1; }
 
 curl -s "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/setMyCommands" -H 'content-type: application/json' -d '{"commands":[
   {"command":"free","description":"Free models you can use right now"},
