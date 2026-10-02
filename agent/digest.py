@@ -176,6 +176,11 @@ def render_telegram(brief, items, companies, meta, limit=3900):
     if meta.get("warning"):
         blocks.append(f"<i>⚠️ {e(meta['warning'])}</i>")
 
+    return split_messages(blocks, limit)
+
+
+def split_messages(blocks, limit=3900):
+    """Pack text blocks into as few messages as fit under Telegram's 4096-character limit."""
     messages, current = [], ""
     for b in blocks:
         if len(b) > limit:

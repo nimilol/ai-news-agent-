@@ -82,6 +82,20 @@ Add each one by name (`TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `GEMINI_API_KEY`
 - **Broken sources:** websites change. If a source fails 3 runs in a row, the brief's footer names it. Fix or remove
   its line in `sources.yaml`.
 
+## Ask your agent
+
+Send these to your bot in Telegram (they also appear in the bot's **/** menu):
+
+| Command | What you get |
+|---|---|
+| `/free` | Every model you can use for free right now on OpenRouter and in OpenCode, newest first (🆕 = added in the last 14 days) |
+| `/latest` | The most recent news brief again |
+| `/help` | The list of commands |
+
+The agent isn't online all the time. It reads your messages on each hourly alert check, so **replies take up to
+an hour**. For an instant answer, run **Actions → AI news digest → Run workflow → free-models**; the list arrives
+in Telegram in about a minute. Only your own chat (`TELEGRAM_CHAT_ID`) gets answers.
+
 ## Customising
 
 - **Sources:** `sources.yaml`. Each line is one source, with comments explaining the fields. Add any RSS feed

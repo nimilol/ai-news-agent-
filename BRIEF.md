@@ -92,3 +92,8 @@ Follow-up:
   of Anthropic, OpenAI, xAI and Z.ai models; new free models on OpenRouter (any company); and new free models in
   OpenCode (models.dev provider `opencode`, cost 0). Free models get their own "🆓 New free models you can use"
   section in the brief. Groq (the owner's backup key) gets a shorter item list to fit its free per-minute token limit.
+- **Same day, owner asked to request free-model info on demand:** Telegram commands `/free` (every model that is
+  free right now on OpenRouter and in OpenCode, 🆕 for the last 14 days), `/latest` (resend the last brief) and
+  `/help`. The agent has no always-on server, so it reads commands on each hourly alert run and each brief (replies
+  within about an hour) and answers only the owner's chat. A `free-models` workflow run sends the list instantly.
+  An always-on bot (instant replies) would need a free Cloudflare Worker; not built yet.

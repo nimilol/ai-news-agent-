@@ -255,3 +255,61 @@ def test_free_model_sources(monkeypatch):
     assert [i["title"] for i in oc] == ["New free model in OpenCode Zen: Big Pickle (big-pickle)"]
     early = sources.fetch_models_dev({"name": "Early model listings", "providers": {"anthropic": "anthropic", "zai": "zhipu"}}, {})
     assert [(i["title"], i["companies"]) for i in early] == [("New model listed for Anthropic: Claude Opus 6 (claude-opus-6)", ["anthropic"])]
+
+
+def test_free_models_list(monkeypatch):
+    from agent import freemodels
+
+    now = now_utc().timestamp()
+    openrouter = {"data": [
+        {"id": "new/model:free", "name": "Brand New", "created": now - 86400, "context_length": 131072,
+         "pricing": {"prompt": "0", "completion": "0"}},
+        {"id": "old/model:free", "name": "Old One", "created": now - 90 * 86400, "context_length": 1000000,
+         "pricing": {"prompt": "0", "completion": "0"}},
+        {"id": "paid/model", "name": "Paid", "pricing": {"prompt": "0.001", "completion": "0.002"}},
+    ]}
+    models_dev = {"opencode": {"name": "OpenCode Zen", "models": {
+        "big-pickle": {"name": "Big Pickle", "cost": {"input": 0, "output": 0}, "release_date": "2020-01-01"}}}}
+
+    class R:
+        def __init__(self, data):
+            self._data = data
+
+        def json(self):
+            return self._data
+    monkeypatch.setattr(freemodels, "get", lambda url, **kw: R(openrouter if "openrouter" in url else models_dev))
+    text = "\n".join(freemodels.render(freemodels.collect(CONFIG)))
+    assert "<b>OpenRouter</b> (2 free)" in text and "<b>OpenCode Zen</b> (1 free)" in text
+    assert text.index("🆕 <a href=\"https://openrouter.ai/new/model:free\">Brand New</a> · 131K context") < text.index("Old One")
+    assert "Old One</a> · 1M context" in text and "Paid" not in text
+
+
+def test_telegram_commands_only_answer_owner(tmp_path, monkeypatch):
+    from agent import commands
+
+    monkeypatch.setattr("agent.state.ROOT", tmp_path)
+    monkeypatch.setattr(commands, "LAST_BRIEF", tmp_path / "last_brief.json")
+    monkeypatch.setenv("TELEGRAM_BOT_TOKEN", "t")
+    monkeypatch.setenv("TELEGRAM_CHAT_ID", "42")
+    updates = [{"update_id": 7, "message": {"chat": {"id": 42}, "text": "/free"}},
+               {"update_id": 8, "message": {"chat": {"id": 99}, "text": "/latest"}},   # a stranger
+               {"update_id": 9, "message": {"chat": {"id": 42}, "text": "/latest@my_bot"}},
+               {"update_id": 10, "message": {"chat": {"id": 42}, "text": "hello"}}]
+
+    class R:
+        ok = True
+
+        def json(self):
+            return {"result": updates}
+    calls = []
+    monkeypatch.setattr(commands.requests, "get", lambda url, params=None, timeout=None: calls.append(params) or R())
+    monkeypatch.setattr(commands.requests, "post", lambda *a, **k: R())
+    sent = []
+    monkeypatch.setattr(commands, "send_free_models", lambda config: sent.append("free"))
+    monkeypatch.setattr(commands, "send_telegram", lambda msgs: sent.append(msgs[0].split("\n")[0]))
+    commands.handle(CONFIG)
+    assert sent[0] == "free" and sent[1].startswith("No brief has been sent") and "Your AI news agent" in sent[2]
+    assert len(sent) == 3  # the stranger's /latest was ignored
+    updates.clear()
+    commands.handle(CONFIG)  # next run continues after the last answered message
+    assert calls[-1]["offset"] == 11

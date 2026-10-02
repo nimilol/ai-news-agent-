@@ -5,6 +5,7 @@
     python -m agent check-sources   test every source and print which ones work
     python -m agent test-delivery   send a test message to Telegram / email
     python -m agent test-ai         check every AI key with a tiny request
+    python -m agent free-models     send the list of models that are free right now to Telegram
 
 Add --dry-run to print instead of sending and to leave the saved state untouched.
 """
@@ -17,7 +18,7 @@ import sys
 from concurrent.futures import ThreadPoolExecutor
 from datetime import timedelta
 
-from . import llm
+from . import commands, freemodels, llm
 from .common import ROOT, TIER_RANK, load_yaml, now_utc, parse_date
 from .deliver import deliver, email_configured, telegram_configured
 from .digest import (SYSTEM_PROMPT, build_user_message, fallback_brief, parse_answer, rank_items,
@@ -136,6 +137,7 @@ def finish(state, sent, errors, dry_run):
 
 def cmd_digest(args):
     config, sources = load()
+    answer_commands(config, args)
     state = State("digest")
     now = now_utc()
     print(f"Collecting from {len(sources)} sources…")
@@ -184,6 +186,8 @@ def cmd_digest(args):
     if args.dry_run:
         return finish(state, [], [], True)
     sent, errors = deliver(config, tg, (subject, render_email_html(brief, items, companies, meta), md))
+    if "telegram" in sent:
+        commands.save_last_brief(tg)  # for the /latest command
     if dcfg.get("archive", True) and (sent or not errors):
         path = ROOT / "digests" / f"{now:%Y-%m-%d_%H%M}.md"
         path.parent.mkdir(exist_ok=True)
@@ -191,8 +195,18 @@ def cmd_digest(args):
     return finish(state, sent, errors, args.dry_run)
 
 
+def answer_commands(config, args):
+    if args.dry_run:
+        return
+    try:
+        commands.handle(config)
+    except Exception as e:  # noqa: BLE001 - a command problem must never block the news
+        print(f"Telegram commands failed: {str(e)[:200]}")
+
+
 def cmd_alerts(args):
     config, sources = load()
+    answer_commands(config, args)
     sources = [s for s in sources if s.get("alert")]
     state = State("alerts")
     items, _, _ = collect(sources, state, config)
@@ -258,6 +272,20 @@ def cmd_test_ai(args):
     return 0 if working else 1
 
 
+def cmd_free_models(args):
+    """Send the list of models you can use for free right now to Telegram (or print it)."""
+    config, _ = load()
+    messages = freemodels.render(freemodels.collect(config))
+    for m in messages:
+        print(re.sub(r"<[^>]+>", "", m) + "\n")
+    if args.dry_run or not telegram_configured():
+        return 0
+    sent, errors = deliver(config, messages, None, ["telegram"])
+    for e in errors:
+        print(f"Failed: {e}")
+    return 0 if sent else 1
+
+
 def cmd_test_delivery(args):
     config, _ = load()
     text = "✅ Your AI news agent is connected. Briefs will arrive here."
@@ -272,11 +300,12 @@ def cmd_test_delivery(args):
 
 def main():
     parser = argparse.ArgumentParser(prog="python -m agent", description="AI news agent")
-    parser.add_argument("command", choices=["digest", "alerts", "check-sources", "test-delivery", "test-ai"])
+    parser.add_argument("command", choices=["digest", "alerts", "check-sources", "test-delivery", "test-ai", "free-models"])
     parser.add_argument("--dry-run", action="store_true", help="print instead of sending; don't save state")
     args = parser.parse_args()
     commands = {"digest": cmd_digest, "alerts": cmd_alerts, "check-sources": cmd_check_sources,
-                "test-delivery": cmd_test_delivery, "test-ai": cmd_test_ai}
+                "test-delivery": cmd_test_delivery, "test-ai": cmd_test_ai,
+                "free-models": cmd_free_models}
     sys.exit(commands[args.command](args))
 
 

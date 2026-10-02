@@ -71,6 +71,11 @@ llm:
       base_url: https://api.z.ai/api/paas/v4
       models: [glm-4.5-flash]
 
+# The /free command and the "free-models" run list every free model from these places.
+free_models:
+  # models.dev provider ids to include besides OpenRouter ("opencode" = OpenCode's free models).
+  models_dev_providers: [opencode]
+
 delivery:
   telegram: true   # needs TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID
   email: true      # needs EMAIL_ADDRESS and EMAIL_APP_PASSWORD (EMAIL_TO optional)
