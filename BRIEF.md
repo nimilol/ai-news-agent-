@@ -62,7 +62,7 @@ Follow-up:
   creator's posts honest about what's confirmed.
 - **Memory:** `state/*.json`, committed by the workflows. Items are remembered for 30 days after they were last seen.
   The first read of a source only reports the last 12 hours.
-- **Sources:** 46 to start, in `sources.yaml`: official blogs, changelogs and release notes for each company,
+- **Sources:** 42 to start (Reddit is one combined source), in `sources.yaml`: official blogs, changelogs and release notes for each company,
   Hugging Face orgs, OpenRouter's model list (catches stealth models), TestingCatalog, Hacker News, Reddit,
   newsletters (Simon Willison, Latent Space/AINews, Interconnects, Import AI, TLDR AI, Ben's Bites), YouTube
   (AI Explained, Matthew Berman, Wes Roth, Sam Witteveen), Google News and tech press. AINews moved from
@@ -72,8 +72,9 @@ Follow-up:
 ## Changes
 
 - **2026-10-02, after the first live source check on GitHub Actions (41/47 working):** Reddit returned
-  "429 Too Many Requests" because five feeds were fetched at once, so Reddit requests now go one at a time, 4 seconds
-  apart, with one retry. Import AI's Substack feed returned 403, so it now uses jack-clark.net/feed/ (the same
+  "429 Too Many Requests" after the first one or two feeds (even spaced 4 seconds apart), so all subreddits now come
+  from one combined request (r/ClaudeAI+OpenAI+ChatGPT+grok+LocalLLaMA+singularity), each post tagged by its
+  subreddit's company. Import AI's Substack feed returned 403, so it now uses jack-clark.net/feed/ (the same
   newsletter). z.ai/blog has no listing page (404), so it was removed; GLM is still covered by the Z.ai release notes,
   Hugging Face, OpenRouter, Hacker News and Google News. The instant alerts run hourly instead of every 30 minutes
   because the repo is private (2,000 free minutes a month). GitHub Actions bumped to checkout@v5 / setup-python@v6

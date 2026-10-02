@@ -52,11 +52,12 @@ sources:
   - {name: "Hacker News: OpenAI", type: hn, query: [OpenAI, ChatGPT], company: openai, min_points: 60, tier: community}
   - {name: "Hacker News: xAI/Grok", type: hn, query: [xAI, Grok], company: xai, min_points: 30, tier: community}
   - {name: "Hacker News: GLM", type: hn, query: [GLM, Zhipu], company: zhipu, min_points: 20, tier: community}
-  - {name: r/LocalLLaMA, type: reddit, subreddit: LocalLLaMA, tier: community}
-  - {name: r/ClaudeAI, type: reddit, subreddit: ClaudeAI, company: anthropic, tier: community, limit: 8}
-  - {name: r/OpenAI, type: reddit, subreddit: OpenAI, company: openai, tier: community, limit: 8}
-  - {name: r/grok, type: reddit, subreddit: grok, company: xai, tier: community, limit: 8}
-  - {name: r/singularity, type: reddit, subreddit: singularity, tier: community}
+  # Reddit: one combined request for all subreddits (separate requests get rate-limited). Value = company, or ~ for general.
+  - name: Reddit
+    type: reddit
+    tier: community
+    limit: 25
+    subreddits: {ClaudeAI: anthropic, OpenAI: openai, ChatGPT: openai, grok: xai, LocalLLaMA: ~, singularity: ~}
 
   # ---------------------------------------------------------------- Newsletters, blogs and YouTube
   - {name: Simon Willison, type: rss, url: "https://simonwillison.net/atom/everything/", tier: newsletter}

@@ -3,7 +3,7 @@
 A free agent that follows four AI companies, **Anthropic (Claude), OpenAI (GPT), xAI (Grok) and Zhipu / Z.ai (GLM)**,
 and sends you a summary on **Telegram** and/or **email**.
 
-- **Every 6 hours:** reads about 46 sources (official blogs and changelogs, leak trackers, Hacker News, Reddit,
+- **Every 6 hours:** reads about 42 sources (official blogs and changelogs, leak trackers, Hacker News, Reddit,
   newsletters, YouTube, the press), keeps only what's new and about your four companies, and has a free AI model
   write a brief: grouped by company, labelled *Official / Report / Rumor*, with links and post ideas.
 - **Every hour:** checks only the official sources and pings you instantly when something new appears

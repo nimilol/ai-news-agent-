@@ -167,3 +167,26 @@ def test_provider_chain_falls_through(monkeypatch):
     text, used = llm.complete(config, "sys", lambda n=None, c=None: "user")
     assert used == "gemini/new-model" and text == '{"stories": []}'
     assert calls == [("old-model", True), ("new-model", True), ("new-model", False)]
+
+
+def test_reddit_combined_feed_tags_company_by_subreddit(monkeypatch):
+    from agent import sources
+
+    atom = b"""<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>top</title>
+    <entry><category term="ClaudeAI" label="r/ClaudeAI"/><id>t3_a</id><title>Opus feels faster today</title>
+      <link href="https://www.reddit.com/r/ClaudeAI/comments/a/"/><updated>2026-10-02T10:00:00+00:00</updated>
+      <content type="html">&lt;p&gt;Anyone else?&lt;/p&gt;</content></entry>
+    <entry><category term="LocalLLaMA" label="r/LocalLLaMA"/><id>t3_b</id><title>GLM-5 weights are out</title>
+      <link href="https://www.reddit.com/r/LocalLLaMA/comments/b/"/><updated>2026-10-02T11:00:00+00:00</updated></entry>
+    </feed>"""
+
+    class R:
+        content = atom
+    urls = []
+    monkeypatch.setattr(sources, "get", lambda url, **kw: urls.append(url) or R())
+    src = {"name": "Reddit", "type": "reddit", "tier": "community",
+           "subreddits": {"ClaudeAI": "anthropic", "LocalLLaMA": None}}
+    items = sources.fetch_reddit(src, {})
+    assert urls == ["https://www.reddit.com/r/ClaudeAI+LocalLLaMA/top/.rss?t=day&limit=100"]
+    assert [(i["source"], i["companies"]) for i in items] == [("r/ClaudeAI", ["anthropic"]), ("r/LocalLLaMA", [])]
+    assert items[0]["summary"] == "Anyone else?" and items[0]["published"].startswith("2026-10-02T10:00")

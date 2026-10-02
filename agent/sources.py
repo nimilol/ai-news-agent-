@@ -7,8 +7,6 @@
 import calendar
 import hashlib
 import re
-import threading
-import time
 from datetime import datetime, timedelta, timezone
 from urllib.parse import quote, urljoin
 
@@ -201,26 +199,26 @@ def fetch_hn(source, state):
     return items
 
 
-_reddit_lock = threading.Lock()
-_reddit_last = [0.0]
-REDDIT_SPACING = 4  # seconds between Reddit requests; asking for several feeds at once gets "429 Too Many Requests"
-
-
 def fetch_reddit(source, state):
-    url = f"https://www.reddit.com/r/{source['subreddit']}/top/.rss?t=day&limit=25"
-    with _reddit_lock:  # one Reddit request at a time, spaced out
-        for attempt in range(2):
-            wait = _reddit_last[0] + REDDIT_SPACING - time.monotonic()
-            if wait > 0:
-                time.sleep(wait)
-            _reddit_last[0] = time.monotonic()
-            try:
-                return _feed_items(source, get(url).content)
-            except Exception as e:  # noqa: BLE001
-                if attempt == 0 and "429" in str(e):
-                    time.sleep(10)
-                    continue
-                raise
+    """All subreddits in ONE request (Reddit answers "429 Too Many Requests" to several in a row).
+    `subreddits` maps each subreddit to a company, or to nothing for general ones."""
+    subs = source["subreddits"]
+    url = f"https://www.reddit.com/r/{'+'.join(subs)}/top/.rss?t=day&limit=100"
+    feed = feedparser.parse(get(url).content)
+    if feed.bozo and not feed.entries:
+        raise ValueError(f"not a valid feed ({feed.bozo_exception})")
+    lower = {k.lower(): v for k, v in subs.items()}
+    items = []
+    for e in feed.entries:
+        sub = next((t.get("term", "") for t in e.get("tags", [])), "")
+        content = e.content[0].get("value", "") if e.get("content") else e.get("summary", "")
+        item = make_item(source, e.get("title", ""), e.get("link", ""), content,
+                         _struct_time(e.get("published_parsed") or e.get("updated_parsed")), uid=e.get("id"))
+        item["source"] = f"r/{sub}" if sub else source["name"]
+        if lower.get(sub.lower()):
+            item["companies"] = [lower[sub.lower()]]
+        items.append(item)
+    return items
 
 
 def fetch_google_news(source, state):
