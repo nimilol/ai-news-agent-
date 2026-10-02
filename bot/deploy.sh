@@ -46,6 +46,21 @@ fi
 if [ -z "$KV_ID" ]; then echo "::error::Could not create or find the KV namespace. Check the API token permissions."; exit 1; fi
 write_config "$KV_ID"
 
+# A workers.dev address needs an account-wide subdomain. New accounts don't have one yet: register one.
+CF_API="https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/workers/subdomain"
+SUB="$(curl -s -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" "$CF_API" | node -e '
+  let s = ""; process.stdin.on("data", d => s += d).on("end", () => {
+    try { console.log(JSON.parse(s).result?.subdomain || ""); } catch { console.log(""); } });')"
+if [ -z "$SUB" ]; then
+  WANT="ainews-$(printf '%s' "$CLOUDFLARE_ACCOUNT_ID" | sha256sum | cut -c1-8)"
+  echo "Registering the workers.dev subdomain $WANT…"
+  RESULT="$(curl -s -X PUT -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" -H 'content-type: application/json' \
+    -d "{\"subdomain\":\"$WANT\"}" "$CF_API")"
+  echo "$RESULT" | grep -q '"success":true' || {
+    echo "::error::Could not register a workers.dev subdomain ($RESULT). Open Cloudflare → Workers & Pages once, pick a subdomain, then run this again."; exit 1; }
+  sleep 5
+fi
+
 echo "Deploying the worker…"
 $W deploy 2>&1 | tee deploy.log
 URL="$(grep -oE 'https://[a-zA-Z0-9.-]+\.workers\.dev' deploy.log | head -1 || true)"
