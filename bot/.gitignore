@@ -1,0 +1,4 @@
+node_modules/
+wrangler.toml
+deploy.log
+.wrangler/

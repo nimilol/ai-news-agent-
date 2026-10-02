@@ -97,3 +97,16 @@ Follow-up:
   `/help`. The agent has no always-on server, so it reads commands on each hourly alert run and each brief (replies
   within about an hour) and answers only the owner's chat. A `free-models` workflow run sends the list instantly.
   An always-on bot (instant replies) would need a free Cloudflare Worker; not built yet.
+- **Same day, "go with all your suggestions":** (1) the top 15 items' full articles are read before writing;
+  (2) a fact-check pass on a different AI provider fixes or drops unsupported stories, and the brief still goes
+  out if it fails; (3) each story shows how many independent publishers back it, ⚠️ single source, and when it
+  first appeared, and a story is "Official" only if an official source is among its items (the first brief had
+  labelled Google News reports as Official); (4) quiet-change watchers on the models, pricing, deprecation and
+  plan pages plus status feeds for Anthropic, OpenAI, xAI and Z.ai (tables are read too, where prices live);
+  (5) blocked publishers (blockchain.news, basenor, tikr.com, startuphub.ai); (6) headlines sent in the last 48 h
+  are given to the writer so stories aren't repeated unless there's an update; (7) daily Builder picks (GitHub
+  Trending, rising repos by topic, Hugging Face trending, Show HN; one AI call picks 10); (8) a Sunday weekly
+  recap from the saved briefs; (9) `/repos`, `/ask` and `/news` commands; (10) an optional always-on Cloudflare
+  Worker bot for instant replies. The agent pushes data to it, so the worker does no heavy work and stays
+  inside the free CPU limit. Cost check before building: about 10 AI requests a day (was 4), well inside the
+  free tiers, and about 1,350 of 2,000 free GitHub minutes a month.

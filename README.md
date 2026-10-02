@@ -11,6 +11,14 @@ and sends you a summary on **Telegram** and/or **email**.
   and in OpenCode), and pings you on Telegram as soon as something new appears (no AI, so it's fast and always works).
 - **New free models:** the brief has a "🆓 New free models you can use" section for models that just became free on
   OpenRouter or in OpenCode, from any company.
+- **Every morning:** "🛠 Builder picks", the most useful trending AI tools and repos (GitHub Trending, fast-rising
+  new repos, Hugging Face, Show HN), each with what it does and who it helps.
+- **Every Sunday:** a weekly recap of the biggest stories, with recap post ideas.
+- **Accuracy built in:** reads the full article for the top stories, fact-checks the brief with a second AI,
+  shows how many independent sources back each story (⚠️ for single-source claims), the time it first appeared,
+  blocks low-quality sites, never labels press reports as "Official", and doesn't repeat stories already sent.
+- **Watches quiet changes:** model lists, API prices, deprecation dates, plan pages and status pages at Anthropic,
+  OpenAI, xAI and Z.ai, so unannounced price changes, new models and retirements reach you.
 - **Costs $0.** It runs on GitHub Actions (free) and free AI tiers. When you have money, add a Claude API key and
   it switches to Claude automatically.
 
@@ -74,6 +82,9 @@ Add each one by name (`TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `GEMINI_API_KEY`
 
 ## Day to day
 
+- **Builder picks:** every morning at 06:41 UTC (`.github/workflows/builders.yml`). Topics for the rising-repo
+  search are in `config.yaml` → `builders`.
+- **Weekly recap:** Sundays at 17:53 UTC (`.github/workflows/weekly.yml`).
 - **Briefs:** 00:17, 06:17, 12:17 and 18:17 UTC. Change the time in `.github/workflows/digest.yml` (`cron`, in UTC).
 - **Instant alerts:** hourly from official, early-signal and free-model sources (every 30 minutes is possible if the repository is public; see the comment in `.github/workflows/alerts.yml`). To turn them off, open the **Actions** tab, choose
   **Instant alerts**, and pick **Disable workflow** from the **⋯** menu.
@@ -90,11 +101,36 @@ Send these to your bot in Telegram (they also appear in the bot's **/** menu):
 |---|---|
 | `/free` | Every model you can use for free right now on OpenRouter and in OpenCode, newest first (🆕 = added in the last 14 days) |
 | `/latest` | The most recent news brief again |
+| `/repos` | Today's Builder picks |
+| `/ask your question` | An answer from this week's briefs, e.g. `/ask what did OpenAI change this week?` |
+| `/news` | Run a fresh news check now (instant bot only) |
 | `/help` | The list of commands |
 
-The agent isn't online all the time. It reads your messages on each hourly alert check, so **replies take up to
-an hour**. For an instant answer, run **Actions → AI news digest → Run workflow → free-models**; the list arrives
-in Telegram in about a minute. Only your own chat (`TELEGRAM_CHAT_ID`) gets answers.
+Without the instant bot, the agent reads your messages on each hourly alert check, so **replies take up to an
+hour**. With the instant bot (next section) replies take seconds. Only your own chat (`TELEGRAM_CHAT_ID`) gets
+answers.
+
+## Instant replies (Cloudflare, free)
+
+This puts a tiny always-on bot on Cloudflare Workers (free plan) so your commands are answered in seconds.
+Your GitHub agent keeps doing the research and sends the bot the latest brief, picks and free-model list.
+
+1. Create a free account at **https://dash.cloudflare.com/sign-up** and verify your email.
+2. In the dashboard, open **Workers & Pages** once. If it asks you to choose a `workers.dev` subdomain, pick any
+   name. (The bot's address will be `ai-news-bot.<that-name>.workers.dev`.)
+3. **Account ID:** on the **Workers & Pages** page it's shown on the right ("Account ID"); copy it.
+4. **API token:** click your profile icon → **My Profile → API Tokens → Create Token**, choose the
+   **Edit Cloudflare Workers** template, set **Account Resources** to your account, then **Continue to summary →
+   Create Token**. Copy the token (it's shown once).
+5. In GitHub (**Settings → Secrets and variables → Actions → New repository secret**), add:
+   - `CLOUDFLARE_API_TOKEN`: the token from step 4
+   - `CLOUDFLARE_ACCOUNT_ID`: the ID from step 3
+   - Optional, for `/news`: `BOT_GITHUB_TOKEN`, a fine-grained GitHub token (github.com → Settings → Developer
+     settings → Fine-grained tokens) limited to this repository with **Actions: Read and write**.
+6. Run **Actions → Deploy Telegram bot (Cloudflare) → Run workflow → deploy**. When it's green, send `/help` to
+   your bot: the reply should say "(instant replies)".
+
+To go back to hourly replies, run the same workflow with **remove**.
 
 ## Customising
 
@@ -142,7 +178,8 @@ python -m pytest -q                  # offline tests
 |---|---|
 | `sources.yaml` | where the agent looks |
 | `config.yaml` | companies, keywords, AI providers, delivery |
-| `agent/` | the code: `sources.py` (fetchers), `digest.py` (AI prompt and formatting), `llm.py` (providers), `deliver.py` (Telegram/email), `__main__.py` (the runs) |
+| `agent/` | the code: `sources.py` (fetchers), `digest.py` (AI prompt and formatting), `accuracy.py` (articles, source counts, blocklist), `factcheck.py` (second-AI check), `builders.py` (Builder picks), `weekly.py` (recap), `freemodels.py` (`/free`), `commands.py` (Telegram commands), `botpush.py` (feeds the instant bot), `llm.py` (providers), `deliver.py` (Telegram/email), `__main__.py` (the runs) |
+| `bot/` | the instant Telegram bot for Cloudflare Workers, its tests and deploy script |
 | `state/` | the agent's memory of what it already sent (saved by the workflows) |
 | `digests/` | archive of every brief |
 | `.github/workflows/` | the schedules |

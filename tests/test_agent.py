@@ -126,13 +126,15 @@ def test_dry_run_digest_end_to_end(tmp_path, monkeypatch, capsys):
          "importance": 5, "items": [1]},
         {"company": "xai", "title": "Grok 5 in testing", "summary": "Spotted in the app.", "status": "rumor",
          "importance": 4, "items": [2]}], "post_ideas": ["GPT-6: what's new"]})
+    monkeypatch.setattr(main.accuracy, "add_articles", lambda *a, **k: 0)
     monkeypatch.setattr(main.llm, "complete", lambda config, system, build: (build(), "fake/model") and (answer, "fake/model"))
+    monkeypatch.setattr(main, "factcheck", lambda config, brief, items, writer: (brief, "fact-checked by fake"))
 
     class Args:
         dry_run = True
     assert main.cmd_digest(Args) == 0
     out = capsys.readouterr().out
-    assert "GPT-6 launches" in out and "Grok 5 in testing" in out and "AI: fake/model" in out
+    assert "GPT-6 launches" in out and "Grok 5 in testing" in out and "written by fake/model" in out
     assert not (tmp_path / "state" / "digest.json").exists()  # dry run saves nothing
 
 
@@ -164,7 +166,7 @@ def test_provider_chain_falls_through(monkeypatch):
     config = {"llm": {"order": ["anthropic", "gemini"], "providers": {
         "anthropic": {"key_env": "ANTHROPIC_API_KEY", "models": ["claude-opus-5-5"]},
         "gemini": {"key_env": "GEMINI_API_KEY", "base_url": "https://x", "models": ["old-model", "new-model"]}}}}
-    text, used = llm.complete(config, "sys", lambda n=None, c=None: "user")
+    text, used = llm.complete(config, "sys", lambda **kw: "user")
     assert used == "gemini/new-model" and text == '{"stories": []}'
     assert calls == [("old-model", True), ("new-model", True), ("new-model", False)]
 
@@ -313,3 +315,126 @@ def test_telegram_commands_only_answer_owner(tmp_path, monkeypatch):
     updates.clear()
     commands.handle(CONFIG)  # next run continues after the last answered message
     assert calls[-1]["offset"] == 11
+
+
+def test_accuracy_helpers():
+    from agent import accuracy
+
+    gn = item("OpenAI ships GPT-6 - The Verge", source="Google News: OpenAI", tier="press", hours_ago=3,
+              url="https://news.google.com/rss/articles/x")
+    tc = item("OpenAI GPT-6 spotted", source="TechCrunch AI", tier="press", hours_ago=5, url="https://techcrunch.com/a")
+    tc2 = item("More on GPT-6", source="TechCrunch AI", tier="press", hours_ago=1, url="https://techcrunch.com/b")
+    junk = item("GLM beats everyone - blockchain.news", source="Google News: Zhipu", tier="press")
+    assert accuracy.publisher(gn) == "The Verge" and accuracy.publisher(tc) == "techcrunch.com"
+    assert accuracy.is_blocked(junk, ["blockchain.news"]) and not accuracy.is_blocked(gn, ["blockchain.news"])
+    items = [gn, tc, tc2]
+    story = {"status": "official", "items": [1, 2, 3], "title": "t", "summary": "s"}
+    assert accuracy.source_count(story, items) == 2  # two TechCrunch links count once
+    accuracy.enforce_status(story, items)
+    assert story["status"] == "report"  # no official source, so it can't be "official"
+    line = accuracy.badges(story, items)
+    assert "2 sources" in line and "🕐" in line
+    assert "single source" in accuracy.badges({"status": "rumor", "items": [2]}, items)
+
+
+def test_factcheck_fixes_and_drops(monkeypatch):
+    from agent import factcheck as fc
+
+    items = [item("Claude Opus 6 released", source="Anthropic News", tier="official", company="anthropic"),
+             item("Unrelated GLM hacking benchmark", source="r/LocalLLaMA", tier="community")]
+    brief = {"headline": "h", "post_ideas": [], "stories": [
+        {"company": "anthropic", "title": "Opus 6 out with 10M context", "summary": "Claims 10M context.",
+         "status": "official", "importance": 5, "items": [1, 2]},
+        {"company": "zhipu", "title": "Made up", "summary": "x", "status": "rumor", "importance": 2, "items": [2]}]}
+    answer = json.dumps({"checks": [
+        {"story": 1, "verdict": "fix", "title": "Claude Opus 6 released", "summary": "Anthropic released Opus 6.",
+         "remove_items": [2]},
+        {"story": 2, "verdict": "drop"}]})
+    seen = {}
+
+    def fake_complete(config, system, build):
+        seen["order"] = config["llm"]["order"]
+        seen["text"] = build(summary_chars=100)
+        return answer, "groq/x"
+    monkeypatch.setattr(fc.llm, "complete", fake_complete)
+    out, note = fc.factcheck(CONFIG, brief, items, "gemini/gemini-flash-latest")
+    assert seen["order"][0] != "gemini" and seen["order"][-1] == "gemini"  # a different model checks the work
+    assert [s["title"] for s in out["stories"]] == ["Claude Opus 6 released"]
+    assert out["stories"][0]["items"] == [1] and "1 corrected, 1 removed" in note
+
+
+def test_builder_picks(monkeypatch):
+    from agent import builders
+
+    trending_html = """<article class="Box-row"><h2><a href="/acme/agent-kit"> acme / agent-kit </a></h2>
+      <p>Open-source toolkit for building AI agents with MCP</p><span itemprop="programmingLanguage">Python</span>
+      <a href="/acme/agent-kit/stargazers">12,345</a><span>1,234 stars today</span></article>
+      <article class="Box-row"><h2><a href="/x/css-art">x / css-art</a></h2><p>Pretty CSS drawings</p></article>"""
+
+    class R:
+        def __init__(self, data=None, text=""):
+            self._data, self.text = data, text
+
+        def json(self):
+            return self._data
+
+    def fake_get(url, params=None, **kw):
+        if "trending" in url:
+            return R(text=trending_html)
+        if "search/repositories" in url:
+            return R({"items": [{"full_name": "new/rag-lab", "html_url": "https://github.com/new/rag-lab",
+                                 "description": "RAG evals", "stargazers_count": 900, "language": "TypeScript"}]})
+        if "api/models" in url:
+            return R([{"id": "zai-org/GLM-5.3", "likes": 500, "pipeline_tag": "text-generation"}])
+        if "api/spaces" in url:
+            return R([])
+        return R({"hits": [{"objectID": "1", "title": "Show HN: A voice agent in 200 lines", "points": 120, "url": "https://v.dev"}]})
+    monkeypatch.setattr(builders, "get", fake_get)
+    candidates, failed = builders.collect(CONFIG)
+    names = {c["name"] for c in candidates}
+    assert failed == [] and "acme/agent-kit" in names and "x/css-art" not in names  # non-AI repos filtered out
+    assert {"new/rag-lab", "zai-org/GLM-5.3", "A voice agent in 200 lines"} <= names
+    trend = next(c for c in candidates if c["name"] == "acme/agent-kit")
+    assert trend["stars"] == 12345 and "+1,234 stars today" in trend["extra"]
+
+    answer = json.dumps({"theme": "Agents everywhere", "picks": [
+        {"item": 1, "what": "Toolkit for agents", "who": "Python devs"}, {"item": 99, "what": "bogus"}]})
+    monkeypatch.setattr(builders.llm, "complete", lambda config, system, build: (answer, "gemini/x"))
+    theme, picks, model = builders.pick(CONFIG, candidates)
+    assert theme == "Agents everywhere" and len(picks) == 1 and picks[0][1] == "Toolkit for agents"
+    text = "\n".join(builders.render(theme, picks, model, []))
+    assert "🛠 Builder picks" in text and "For: Python devs" in text
+
+
+def test_ask_and_repos_commands(tmp_path, monkeypatch):
+    from agent import commands
+
+    monkeypatch.setattr("agent.state.ROOT", tmp_path)
+    monkeypatch.setattr(commands, "ROOT", tmp_path)
+    monkeypatch.setattr(commands, "LAST_REPOS", tmp_path / "last_repos.json")
+    (tmp_path / "digests").mkdir()
+    (tmp_path / "digests" / f"{now_utc():%Y-%m-%d_%H%M}.md").write_text("# Brief\nOpenAI launched GPT-6.")
+    commands.save_json(commands.LAST_REPOS, ["🛠 picks"])
+    monkeypatch.setenv("TELEGRAM_BOT_TOKEN", "t")
+    monkeypatch.setenv("TELEGRAM_CHAT_ID", "42")
+    updates = [{"update_id": 1, "message": {"chat": {"id": 42}, "text": "/repos"}},
+               {"update_id": 2, "message": {"chat": {"id": 42}, "text": "/ask What did OpenAI launch?"}}]
+
+    class R:
+        ok = True
+
+        def json(self):
+            return {"result": updates}
+    monkeypatch.setattr(commands.requests, "get", lambda *a, **k: R())
+    monkeypatch.setattr(commands.requests, "post", lambda *a, **k: R())
+    asked = {}
+
+    def fake_complete(config, system, build):
+        asked["user"] = build()
+        return "OpenAI launched GPT-6.", "gemini/x"
+    monkeypatch.setattr("agent.llm.complete", fake_complete)
+    sent = []
+    monkeypatch.setattr(commands, "send_telegram", lambda msgs: sent.extend(msgs))
+    commands.handle(CONFIG)
+    assert sent[0] == "🛠 picks"
+    assert "What did OpenAI launch?" in sent[1] and "GPT-6" in sent[1] and "GPT-6" in asked["user"]

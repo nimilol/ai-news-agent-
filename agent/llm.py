@@ -83,8 +83,8 @@ def _claude(key, model, system, user):
 def complete(config, system, build_user):
     """Run the prompt on the first provider that works.
 
-    `build_user(max_items, summary_chars)` builds the user message, so providers with small input
-    limits can get a shorter list. Returns (answer_text, "provider/model") or raises ProviderError.
+    `build_user(max_items=, summary_chars=, article_chars=)` builds the user message, so providers with
+    small input limits can get a shorter list. Returns (answer_text, "provider/model") or raises ProviderError.
     """
     llm = config["llm"]
     errors = []
@@ -95,7 +95,8 @@ def complete(config, system, build_user):
         key = env(p["key_env"])
         if not key:
             continue
-        user = build_user(p.get("max_items"), p.get("summary_chars"))
+        user = build_user(max_items=p.get("max_items"), summary_chars=p.get("summary_chars"),
+                          article_chars=p.get("article_chars", 1500))
         models = list(p.get("models", []))
         if models == ["auto-free"]:
             try:

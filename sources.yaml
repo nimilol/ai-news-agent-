@@ -47,6 +47,21 @@ sources:
   - {name: Z.ai release notes, type: page_diff, url: "https://docs.z.ai/release-notes/new-released", company: zhipu, tier: official, alert: true}
   - {name: Z.ai on Hugging Face, type: huggingface, author: zai-org, company: zhipu, tier: official, alert: true}
 
+  # ---------------------------------------------------------------- Quiet changes (pages companies edit without announcing)
+  # page_diff with tables: true also reads table rows, where prices and limits live.
+  - {name: "Claude models page", type: page_diff, url: "https://platform.claude.com/docs/en/about-claude/models/overview", company: anthropic, tier: official, alert: true, tables: true}
+  - {name: "Claude API pricing", type: page_diff, url: "https://platform.claude.com/docs/en/about-claude/pricing", company: anthropic, tier: official, alert: true, tables: true}
+  - {name: "Claude model deprecations", type: page_diff, url: "https://platform.claude.com/docs/en/about-claude/model-deprecations", company: anthropic, tier: official, alert: true, tables: true}
+  - {name: "Claude plans and pricing", type: page_diff, url: "https://claude.com/pricing", company: anthropic, tier: official, tables: true}
+  - {name: "Anthropic status (outages)", type: rss, url: "https://status.anthropic.com/history.rss", company: anthropic, tier: official, limit: 5}
+  - {name: "OpenAI models page", type: page_diff, url: "https://platform.openai.com/docs/models", company: openai, tier: official, alert: true, tables: true}
+  - {name: "OpenAI API pricing", type: page_diff, url: "https://platform.openai.com/docs/pricing", company: openai, tier: official, alert: true, tables: true}
+  - {name: "OpenAI deprecations", type: page_diff, url: "https://platform.openai.com/docs/deprecations", company: openai, tier: official, alert: true, tables: true}
+  - {name: "ChatGPT plans and pricing", type: page_diff, url: "https://openai.com/chatgpt/pricing/", company: openai, tier: official, tables: true}
+  - {name: "OpenAI status (outages)", type: rss, url: "https://status.openai.com/feed.rss", company: openai, tier: official, limit: 5}
+  - {name: "xAI models and pricing", type: page_diff, url: "https://docs.x.ai/docs/models", company: xai, tier: official, alert: true, tables: true}
+  - {name: "Z.ai pricing", type: page_diff, url: "https://docs.z.ai/guides/overview/pricing", company: zhipu, tier: official, alert: true, tables: true}
+
   # ---------------------------------------------------------------- Leaks and early signals
   # These are also checked hourly (alert: true), because leaks and new listings are where "early" comes from.
   - {name: TestingCatalog, type: rss, url: "https://www.testingcatalog.com/rss/", tier: leak, alert: true}

@@ -5,6 +5,7 @@ import html
 import json
 import re
 
+from .accuracy import badges, publisher
 from .common import TIER_RANK, clean_text, parse_date
 
 SYSTEM_PROMPT = """You are the research assistant of an AI news creator who covers four AI companies:
@@ -22,15 +23,20 @@ Answer with JSON only, in exactly this shape:
       "summary": "2-3 sentences: what changed, who it affects, why it matters. Keep concrete names, numbers, dates.",
       "status": "official | report | rumor",
       "importance": 1,
-      "items": [1, 2]
+      "items": [1, 2],
+      "update": false
     }
   ],
   "post_ideas": ["up to 3 short post hooks for the creator, based on the most newsworthy stories"]
 }
 
 Rules:
-- Merge items about the same news into one story and list all of their numbers in "items".
-- Use only facts found in the items. Never invent details, numbers, quotes or links.
+- Merge items about the same news into one story and list all of their numbers in "items". Only merge items
+  that are clearly about the same event; when unsure, keep them as separate stories.
+- Use only facts found in the items. Never invent details, numbers, quotes or links. When an item has an
+  "Article:" text, base the summary on the article, not just the headline.
+- A list of headlines already sent in the last 48 hours may follow the items. Do not repeat those stories.
+  Include one again only if the new items add a real development, and then set "update": true and say what is new.
 - status: "official" when an item comes from the company's own official source (tier official);
   "report" when it comes from the press or newsletters; "rumor" for leaks, stealth models,
   unconfirmed claims and community speculation.
@@ -40,6 +46,11 @@ Rules:
 - Apart from free models, leave out items that are not really about these companies, and noise (memes, help requests, job posts,
   routine SDK patch releases). Returning few stories is fine.
 - "industry" is for stories involving several of the companies, or the AI field as a whole.
+- Items from a "models page", "pricing", "deprecations" or "plans" source are changes the company made to
+  that page. Say exactly what changed (a new model, a price, a retirement date, a limit); these are often
+  unannounced and very newsworthy (importance 4-5 for prices, new models and retirements).
+- Status-page items: include only real outages that affect many users (importance 4). Skip short or minor
+  incidents.
 - "free_models" is for new models the creator can use for free (items from "OpenRouter free models" or
   "OpenCode free models"), from any company. Keep these. Group several into one story when there are many, and
   name each model, who made it and where it is free. Use status "official" and importance 3 (4 if it is a
@@ -59,14 +70,19 @@ def _ts(iso):
     return d.timestamp() if d else 9e12  # undated items are brand-new by definition
 
 
-def build_user_message(items, now, summary_chars=400):
+def build_user_message(items, now, summary_chars=400, article_chars=1500, recent=None):
     lines = [f"Current time: {now:%Y-%m-%d %H:%M} UTC. {len(items)} items:\n"]
     for n, it in enumerate(items, 1):
         date = (it["published"] or "")[:10] or "new"
         companies = ",".join(it["companies"]) or "-"
-        lines.append(f"[{n}] ({it['tier']} · {it['source']} · {companies} · {date}) {it['title']}")
+        lines.append(f"[{n}] ({it['tier']} · {it['source']} · {publisher(it)} · {companies} · {date}) {it['title']}")
         if it["summary"]:
             lines.append(f"    {clean_text(it['summary'], summary_chars)}")
+        if it.get("article") and article_chars:
+            lines.append(f"    Article: {clean_text(it['article'], article_chars)}")
+    if recent:
+        lines.append("\nAlready sent in the last 48 hours (do not repeat unless there is a new development):")
+        lines.extend(f"- {t}" for t in recent[-60:])
     return "\n".join(lines)
 
 
@@ -104,6 +120,7 @@ def parse_answer(text, items, companies):
             "status": s.get("status") if s.get("status") in STATUS_LABEL else "report",
             "importance": importance,
             "items": refs,
+            "update": s.get("update") is True,
         })
     if not stories and items:
         raise ValueError("the answer had no usable stories")
@@ -141,7 +158,7 @@ def _story_links(story, items, max_links=3):
         it = items[n - 1]
         if it["url"] and it["url"] not in seen:
             seen.add(it["url"])
-            links.append((it["source"], it["url"]))
+            links.append((publisher(it), it["url"]))
     return links[:max_links]
 
 
@@ -164,6 +181,9 @@ def render_telegram(brief, items, companies, meta, limit=3900):
         for s in group:
             mark = IMPORTANCE_MARK.get(s["importance"], "•")
             text = f"{mark} <b>{e(s['title'])}</b>  <i>{STATUS_LABEL[s['status']]}</i>"
+            trust = badges(s, items)
+            if trust:
+                text += f"\n<i>{e(trust)}</i>"
             if s["summary"]:
                 text += f"\n{e(s['summary'])}"
             links = _story_links(s, items)
@@ -208,7 +228,7 @@ def render_email_html(brief, items, companies, meta):
             links = " · ".join(f'<a href="{e(u, quote=True)}">{e(n)}</a>' for n, u in _story_links(s, items))
             parts.append(
                 f'<p style="margin:14px 0"><b>{mark} {e(s["title"])}</b> '
-                f'<span style="color:#666;font-size:13px">{STATUS_LABEL[s["status"]]}</span><br>'
+                f'<span style="color:#666;font-size:13px">{STATUS_LABEL[s["status"]]} · {e(badges(s, items))}</span><br>'
                 f'{e(s["summary"])}{"<br>" if s["summary"] else ""}'
                 f'<span style="font-size:13px">{links}</span></p>'
             )
@@ -230,7 +250,8 @@ def render_markdown(brief, items, companies, meta):
         for s in group:
             mark = IMPORTANCE_MARK.get(s["importance"], "-")
             links = " · ".join(f"[{n}]({u})" for n, u in _story_links(s, items))
-            out.append(f"{mark} **{s['title']}** ({STATUS_LABEL[s['status']]})  ")
+            trust = badges(s, items)
+            out.append(f"{mark} **{s['title']}** ({STATUS_LABEL[s['status']]}{' · ' + trust if trust else ''})  ")
             if s["summary"]:
                 out.append(f"  {s['summary']}  ")
             if links:

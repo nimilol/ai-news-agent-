@@ -33,6 +33,13 @@ digest:
   send_when_empty: true
   # Save every digest as a Markdown file in digests/ (your searchable archive).
   archive: true
+  # Read the full article for this many top items (0 = headlines and summaries only).
+  read_articles: 15
+  article_chars: 2500
+
+# Publishers whose stories are skipped (matched against the link's domain or the publisher name).
+# These mostly rewrite other outlets' stories. Add any site you don't trust.
+blocked_publishers: [blockchain.news, basenor, tikr.com, startuphub.ai]
 
 alerts:
   # Max instant alerts per run (alerts never use AI, they just say "new post at X").
@@ -57,9 +64,10 @@ llm:
       key_env: GROQ_API_KEY
       base_url: https://api.groq.com/openai/v1
       models: [openai/gpt-oss-120b, llama-3.3-70b-versatile]
-      # Groq's free tier limits tokens per minute, so it gets a shorter list.
+      # Groq's free tier limits tokens per minute, so it gets a shorter list and no article text.
       max_items: 35
       summary_chars: 200
+      article_chars: 0
     openrouter:
       key_env: OPENROUTER_API_KEY
       base_url: https://openrouter.ai/api/v1
@@ -70,6 +78,10 @@ llm:
       key_env: ZAI_API_KEY
       base_url: https://api.z.ai/api/paas/v4
       models: [glm-4.5-flash]
+
+# Builder picks: GitHub topics searched for fast-rising new repos (plus GitHub Trending, Hugging Face, Show HN).
+builders:
+  topics: [llm, ai-agents, mcp, agents, generative-ai, rag, coding-agent, local-llm]
 
 # The /free command and the "free-models" run list every free model from these places.
 free_models:

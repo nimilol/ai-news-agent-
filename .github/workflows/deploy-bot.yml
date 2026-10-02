@@ -1,0 +1,77 @@
+name: Deploy Telegram bot (Cloudflare)
+
+# Puts the always-on Telegram bot on Cloudflare Workers (free) for instant replies.
+# Run it once after adding CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID, and again after changing bot/.
+# "remove" switches back to the hourly replies handled by GitHub.
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: What to do
+        type: choice
+        options: [deploy, remove]
+        default: deploy
+
+permissions:
+  contents: write
+
+concurrency:
+  group: agent-state
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Test the bot
+        if: ${{ inputs.action == 'deploy' }}
+        run: node --test bot/test/*.test.mjs
+
+      - name: Deploy to Cloudflare
+        if: ${{ inputs.action == 'deploy' }}
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          BOT_GITHUB_TOKEN: ${{ secrets.BOT_GITHUB_TOKEN }}
+        run: bash bot/deploy.sh
+
+      - name: Give the bot the latest brief, picks and free-model list
+        if: ${{ inputs.action == 'deploy' }}
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          pip install -r requirements.txt
+          python -m agent push-bot
+
+      - name: Switch back to hourly replies
+        if: ${{ inputs.action == 'remove' }}
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: |
+          curl -s "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/deleteWebhook"
+          rm -f bot/url.txt
+
+      - name: Save the bot address
+        run: |
+          git config user.name "ai-news-agent"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A bot/url.txt || true
+          if git diff --cached --quiet; then echo "Nothing to save."; exit 0; fi
+          git commit -m "bot: ${{ inputs.action }} $(date -u '+%Y-%m-%d %H:%M') UTC"
+          git pull --rebase
+          git push

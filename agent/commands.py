@@ -19,20 +19,57 @@ HELP = (
     "I check your messages every hour, so replies can take up to an hour.\n\n"
     "/free · models you can use for free right now (OpenRouter, OpenCode)\n"
     "/latest · resend the most recent news brief\n"
+    "/repos · today's Builder picks (trending AI tools and repos)\n"
+    "/ask your question · ask about this week's news, answered from your briefs\n"
     "/help · this message\n\n"
     "For an instant list, open GitHub: Actions → AI news digest → Run workflow → free-models."
 )
 COMMANDS = [
     {"command": "free", "description": "Free models you can use right now"},
     {"command": "latest", "description": "Resend the latest news brief"},
+    {"command": "repos", "description": "Today's Builder picks"},
+    {"command": "ask", "description": "Ask about this week's news"},
+    {"command": "news", "description": "Run a fresh news check now"},
     {"command": "help", "description": "What I can do"},
 ]
 LAST_BRIEF = ROOT / "state" / "last_brief.json"
+LAST_REPOS = ROOT / "state" / "last_repos.json"
+ASK_PROMPT = """You answer questions from an AI news creator using only the news briefs below (newest last).
+Answer in at most 8 short lines of plain text. Name the date and source of each fact. If the briefs don't
+cover the question, say so plainly instead of guessing."""
+
+
+def save_json(path, messages):
+    path.parent.mkdir(exist_ok=True)
+    path.write_text(json.dumps(messages, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
 def save_last_brief(messages):
-    LAST_BRIEF.parent.mkdir(exist_ok=True)
-    LAST_BRIEF.write_text(json.dumps(messages, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    save_json(LAST_BRIEF, messages)
+
+
+def recent_briefs(days=7, max_chars=60000):
+    """This week's saved briefs as one text, newest last, trimmed from the oldest end."""
+    from datetime import timedelta
+
+    from .common import now_utc
+
+    cutoff = (now_utc() - timedelta(days=days)).strftime("%Y-%m-%d_%H%M")
+    texts = [p.read_text(encoding="utf-8") for p in sorted((ROOT / "digests").glob("*.md")) if p.stem >= cutoff]
+    return "\n\n".join(texts)[-max_chars:]
+
+
+def answer_question(config, question):
+    import html
+
+    from . import llm
+
+    briefs = recent_briefs()
+    if not briefs:
+        return "I don't have any saved briefs yet, so I can't answer from the news."
+    text, _ = llm.complete(config, ASK_PROMPT,
+                           lambda max_items=None, **_: f"Briefs:\n{briefs[-(12000 if max_items else 60000):]}\n\nQuestion: {question}")
+    return f"<b>❓ {html.escape(question)}</b>\n{html.escape(text.strip())}"
 
 
 def send_free_models(config):
@@ -60,12 +97,17 @@ def handle(config):
         msg = u.get("message") or {}
         if str(msg.get("chat", {}).get("id")) != str(chat_id):
             continue  # someone else found your bot: ignore them
-        words = (msg.get("text") or "").strip().lower().split()
-        command = words[0].lstrip("/").split("@")[0] if words else ""
-        command = command if command in ("free", "latest") else "help"
+        raw = (msg.get("text") or "").strip()
+        words = raw.split()
+        command = words[0].lstrip("/").split("@")[0].lower() if words else ""
+        if command == "ask":
+            question = raw.split(None, 1)[1].strip() if len(words) > 1 else ""
+            wanted.append(("ask", question))
+            continue
+        command = command if command in ("free", "latest", "repos", "news") else "help"
         if command not in wanted:
             wanted.append(command)
-    print(f"Telegram commands: {', '.join(wanted) or 'none'}")
+    print(f"Telegram commands: {', '.join(c if isinstance(c, str) else c[0] for c in wanted) or 'none'}")
     try:
         for command in wanted:
             if command == "free":
@@ -75,6 +117,23 @@ def handle(config):
                     send_telegram(json.loads(LAST_BRIEF.read_text(encoding="utf-8")))
                 else:
                     send_telegram(["No brief has been sent yet. The next one arrives at the next 6-hour run."])
+            elif command == "repos":
+                if LAST_REPOS.exists():
+                    send_telegram(json.loads(LAST_REPOS.read_text(encoding="utf-8")))
+                else:
+                    send_telegram(["No Builder picks yet. They arrive every morning."])
+            elif command == "news":
+                send_telegram(["/news needs the instant bot (see 'Instant replies' in the README). For now, open GitHub: "
+                               "Actions → AI news digest → Run workflow → digest."])
+            elif isinstance(command, tuple):
+                question = command[1]
+                if not question:
+                    send_telegram(["Type your question after /ask, e.g. <i>/ask what did OpenAI release this week?</i>"])
+                else:
+                    try:
+                        send_telegram([answer_question(config, question)])
+                    except Exception as e:  # noqa: BLE001
+                        send_telegram([f"Sorry, I couldn't answer that right now ({str(e)[:100]})."])
             else:
                 send_telegram([HELP])
     finally:

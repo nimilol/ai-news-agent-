@@ -77,24 +77,25 @@ def fetch_page_links(source, state):
     return items
 
 
-def _page_blocks(html_text):
+def _page_blocks(html_text, tables=False):
     soup = BeautifulSoup(html_text, "html.parser")
     for tag in soup(["script", "style", "nav", "header", "footer", "aside", "noscript", "svg", "form"]):
         tag.decompose()
     root = soup.find("article") or soup.find("main") or soup.body or soup
+    names = ["h1", "h2", "h3", "h4", "p", "li"] + (["tr", "dt", "dd"] if tables else [])
     blocks = []
-    for el in root.find_all(["h1", "h2", "h3", "h4", "p", "li"]):
+    for el in root.find_all(names):
         if el.find(["p", "li"]):  # skip containers, keep the leaf text
             continue
         text = clean_text(el.get_text(" ", strip=True))
-        if len(text) >= 20:
+        if len(text) >= (12 if el.name in ("tr", "dt", "dd") else 20):
             blocks.append((el.name, text))
     return blocks
 
 
 def fetch_page_diff(source, state):
     """A release-notes page: paragraphs not seen on earlier runs are reported as changes."""
-    blocks = _page_blocks(get(source["url"]).text)
+    blocks = _page_blocks(get(source["url"]).text, tables=source.get("tables", False))
     if len(blocks) < 3:
         raise ValueError("page has almost no readable text (blocked, or loaded by JavaScript)")
     known = set(state.get("hashes", []))
