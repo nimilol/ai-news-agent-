@@ -51,8 +51,7 @@ Follow-up:
   (owner's call). Delivery by Telegram and email.
 - **Runs on GitHub Actions** (free, no server): AI digest every 6 hours, plus an instant no-AI alert every
   hour for official sources only (hourly because the repo is private; free minutes are capped at 2,000/month), because a 6-hour gap is too slow for "early news".
-- **Free AI with fallbacks:** Gemini → Groq → OpenRouter (auto-picks a free model) → Z.ai GLM Flash → GitHub Models
-  (needs no signup). Each provider lists several models so a retired model falls through. If every provider fails,
+- **Free AI with fallbacks:** Gemini → Groq → OpenRouter (auto-picks a free model) → Z.ai GLM Flash. Each provider lists several models so a retired model falls through. If every provider fails,
   the brief is sent as plain headlines, so a run is never lost.
 - **Claude-ready:** Claude is first in the order and is used as soon as `ANTHROPIC_API_KEY` is added, via the
   official Anthropic SDK (default model `claude-opus-5-5`, low effort, server-side refusal fallback on).
@@ -79,3 +78,9 @@ Follow-up:
   Hugging Face, OpenRouter, Hacker News and Google News. The instant alerts run hourly instead of every 30 minutes
   because the repo is private (2,000 free minutes a month). GitHub Actions bumped to checkout@v5 / setup-python@v6
   (Node 20 deprecation).
+- **Same day, first previews:** Hacker News and Google News results were being filed under a company just because
+  the source was set up for that company (e.g. an unrelated court story under GLM). Now only official sources assign
+  a company; community and press items must mention one in the headline or summary. Hacker News searches titles
+  only, r/ChatGPT was dropped (mostly memes), and Codex alpha/beta builds are skipped. GitHub Models was removed:
+  it was retired on 2026-07-30 and its endpoint now answers "OK" to everything. At least one free AI key (Gemini
+  recommended) is now needed for written summaries; without one the agent sends plain headlines.

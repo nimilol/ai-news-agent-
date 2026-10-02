@@ -40,8 +40,8 @@ Optional extra free keys. If one provider is busy or hits its daily limit, the a
 | `OPENROUTER_API_KEY` | https://openrouter.ai/keys (the agent picks a free model automatically) |
 | `ZAI_API_KEY` | https://z.ai, under API keys (GLM Flash models are free) |
 
-Even with **no** AI key, it still works: GitHub Models (free, built into GitHub Actions) is the last fallback, and if
-that fails too you get the plain headlines.
+**You need at least one AI key** for written summaries. Without one (or if every provider is down) the agent still
+runs and sends the plain headlines with links, so a run is never lost.
 
 ### 3. Email (optional)
 Use a Gmail address with 2-Step Verification on, then create an **app password** at
