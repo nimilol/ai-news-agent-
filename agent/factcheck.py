@@ -14,7 +14,7 @@ Each numbered story below lists the source items it is based on. Check the story
 against those sources only.
 
 Answer with JSON only:
-{"checks": [{"story": 1, "verdict": "ok | fix | drop", "title": "", "summary": "", "remove_items": []}]}
+{"headline": "", "checks": [{"story": 1, "verdict": "ok | fix | drop", "title": "", "summary": "", "remove_items": []}]}
 
 - "ok": every claim is supported by the sources. Leave title and summary empty.
 - "fix": something is wrong or overstated (a number, name, date, a rumor written as fact, two unrelated
@@ -22,11 +22,12 @@ Answer with JSON only:
   "remove_items" any item numbers that are about a different event than the story.
 - "drop": the sources do not support the story at all.
 Be strict with numbers, names and dates, and with "launched" versus "reported" or "rumored".
-Include one check for every story."""
+Include one check for every story. Also check the brief's headline: if it states anything the stories'
+sources don't support, put a corrected one-sentence headline in "headline"; otherwise leave it empty."""
 
 
 def _build(brief, items, text_chars):
-    lines = []
+    lines = [f"Headline: {brief['headline']}\n"]
     for i, s in enumerate(brief["stories"], 1):
         lines.append(f"Story {i}: {s['title']}\nSummary: {s['summary']}\nSources:")
         for n in s["items"]:
@@ -40,7 +41,8 @@ def _build(brief, items, text_chars):
 def _parse(text):
     text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text.strip())
     start, end = text.find("{"), text.rfind("}")
-    return json.loads(text[start : end + 1]).get("checks") or []
+    data = json.loads(text[start : end + 1])
+    return data.get("checks") or [], clean_text(str(data.get("headline") or ""), 300)
 
 
 def factcheck(config, brief, items, writer):
@@ -55,7 +57,7 @@ def factcheck(config, brief, items, writer):
     try:
         answer, checker = llm.complete(cfg, VERIFY_PROMPT,
                                        lambda summary_chars=None, **_: _build(brief, items, summary_chars or 700))
-        checks = _parse(answer)
+        checks, headline = _parse(answer)
     except Exception as e:  # noqa: BLE001
         print(f"Fact-check skipped: {str(e)[:300]}")
         return brief, "not fact-checked this run"
@@ -80,6 +82,9 @@ def factcheck(config, brief, items, writer):
             fixed += 1
         keep.append(s)
     brief["stories"] = keep
+    if headline:
+        brief["headline"] = headline
+        fixed += 1
     note = f"fact-checked by {checker}"
     if fixed or dropped:
         note += f" ({fixed} corrected, {dropped} removed)"

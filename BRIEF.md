@@ -114,3 +114,9 @@ Follow-up:
   testing ("exceeded your current quota"), so a 429 that mentions quota now skips straight to the next model, and
   3.8-flash is tried after Groq. The Google News decoder reports success as `success` (not `status`), so links were
   never decoded; fixed, and the check-sources run now tests decoding and article reading logs why items are skipped.
+- **Same day, final preview:** 10 of 15 full articles were read (was 3) and links now point at the real articles.
+  Two more fixes: the fact-checker now also checks the headline (one said "$2 trillion IPO" with no source behind
+  it), and items published on the companies' own sites (anthropic.com, claude.com, openai.com, x.ai, z.ai, ...)
+  count as Official even when they arrive through Google News. Gemini's free daily limits turned out lower than
+  assumed: after a day of testing, gemini-flash-latest and gemini-3.8-flash both answered "quota exceeded" and
+  gemini-flash-lite-latest wrote the brief. Normal use is about 5-6 Gemini calls a day; Groq does the fact-check.

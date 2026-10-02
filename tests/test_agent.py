@@ -335,6 +335,11 @@ def test_accuracy_helpers():
     line = accuracy.badges(story, items)
     assert "2 sources" in line and "🕐" in line
     assert "single source" in accuracy.badges({"status": "rumor", "items": [2]}, items)
+    own_site = item("Anthropic launches academy - Anthropic", source="Google News: Anthropic", tier="press",
+                    url="https://www.anthropic.com/news/claude-frontier-academy")
+    promoted = {"status": "report", "items": [1]}
+    accuracy.enforce_status(promoted, [own_site])
+    assert promoted["status"] == "official"  # published on the company's own site
 
 
 def test_factcheck_fixes_and_drops(monkeypatch):
@@ -346,7 +351,7 @@ def test_factcheck_fixes_and_drops(monkeypatch):
         {"company": "anthropic", "title": "Opus 6 out with 10M context", "summary": "Claims 10M context.",
          "status": "official", "importance": 5, "items": [1, 2]},
         {"company": "zhipu", "title": "Made up", "summary": "x", "status": "rumor", "importance": 2, "items": [2]}]}
-    answer = json.dumps({"checks": [
+    answer = json.dumps({"headline": "Anthropic released Opus 6.", "checks": [
         {"story": 1, "verdict": "fix", "title": "Claude Opus 6 released", "summary": "Anthropic released Opus 6.",
          "remove_items": [2]},
         {"story": 2, "verdict": "drop"}]})
@@ -360,7 +365,8 @@ def test_factcheck_fixes_and_drops(monkeypatch):
     out, note = fc.factcheck(CONFIG, brief, items, "gemini/gemini-flash-latest")
     assert seen["order"][0] != "gemini" and seen["order"][-1] == "gemini"  # a different model checks the work
     assert [s["title"] for s in out["stories"]] == ["Claude Opus 6 released"]
-    assert out["stories"][0]["items"] == [1] and "1 corrected, 1 removed" in note
+    assert out["stories"][0]["items"] == [1] and "2 corrected, 1 removed" in note
+    assert out["headline"] == "Anthropic released Opus 6." and "Headline: h" in seen["text"]
 
 
 def test_builder_picks(monkeypatch):

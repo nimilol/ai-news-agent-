@@ -11,6 +11,9 @@ from .common import clean_text, get, now_utc, parse_date
 NO_ARTICLE_HOSTS = ("reddit.com", "huggingface.co", "openrouter.ai", "models.dev",
                     "github.com", "youtube.com", "youtu.be", "x.com", "twitter.com")
 RECENT_HOURS = 48
+# The companies' own websites: an item published here is official, whichever feed it came through.
+OFFICIAL_DOMAINS = ("anthropic.com", "claude.com", "claude.ai", "openai.com", "chatgpt.com", "x.ai", "z.ai",
+                    "zhipuai.cn", "bigmodel.cn")
 
 
 def publisher(item):
@@ -93,9 +96,19 @@ def first_seen(story, items):
     return min(dates) if dates else None
 
 
+def is_official(item):
+    if item["tier"] == "official":
+        return True
+    host = urlsplit(item["url"]).netloc.lower()
+    return any(host == d or host.endswith("." + d) for d in OFFICIAL_DOMAINS)
+
+
 def enforce_status(story, items):
-    """A story is only 'official' if one of its items comes from the company's own official source."""
-    if story["status"] == "official" and not any(items[n - 1]["tier"] == "official" for n in story["items"]):
+    """'Official' exactly when one of the story's items was published by the company itself."""
+    official = any(is_official(items[n - 1]) for n in story["items"])
+    if official and story["status"] != "official":
+        story["status"] = "official"
+    elif story["status"] == "official" and not official:
         tiers = {items[n - 1]["tier"] for n in story["items"]}
         story["status"] = "rumor" if tiers <= {"leak", "community"} else "report"
 
