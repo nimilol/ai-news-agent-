@@ -4,6 +4,7 @@
     python -m agent alerts          quick check of official sources, instant ping, no AI (hourly)
     python -m agent check-sources   test every source and print which ones work
     python -m agent test-delivery   send a test message to Telegram / email
+    python -m agent test-ai         check every AI key with a tiny request
 
 Add --dry-run to print instead of sending and to leave the saved state untouched.
 """
@@ -236,6 +237,27 @@ def cmd_check_sources(args):
     return 0
 
 
+def cmd_test_ai(args):
+    """Send a tiny request to every AI provider that has a key, one by one, and report which work."""
+    config, _ = load()
+    llm_cfg = config["llm"]
+    working = 0
+    for name in llm_cfg["order"]:
+        p = llm_cfg["providers"].get(name)
+        if not p or not os.environ.get(p["key_env"]):
+            print(f"-  {name:<11} no key ({p['key_env'] if p else '?'} not set)")
+            continue
+        single = {"llm": {"order": [name], "providers": {name: p}}}
+        try:
+            text, used = llm.complete(single, 'Reply with the JSON {"ok": true} and nothing else.', lambda *a: "Test.")
+            working += 1
+            print(f"✓  {name:<11} works ({used}): {text.strip()[:60]}")
+        except Exception as e:  # noqa: BLE001
+            print(f"✗  {name:<11} failed: {str(e)[:300]}")
+    print(f"\n{working} AI provider(s) working.")
+    return 0 if working else 1
+
+
 def cmd_test_delivery(args):
     config, _ = load()
     text = "✅ Your AI news agent is connected. Briefs will arrive here."
@@ -250,11 +272,11 @@ def cmd_test_delivery(args):
 
 def main():
     parser = argparse.ArgumentParser(prog="python -m agent", description="AI news agent")
-    parser.add_argument("command", choices=["digest", "alerts", "check-sources", "test-delivery"])
+    parser.add_argument("command", choices=["digest", "alerts", "check-sources", "test-delivery", "test-ai"])
     parser.add_argument("--dry-run", action="store_true", help="print instead of sending; don't save state")
     args = parser.parse_args()
     commands = {"digest": cmd_digest, "alerts": cmd_alerts, "check-sources": cmd_check_sources,
-                "test-delivery": cmd_test_delivery}
+                "test-delivery": cmd_test_delivery, "test-ai": cmd_test_ai}
     sys.exit(commands[args.command](args))
 
 

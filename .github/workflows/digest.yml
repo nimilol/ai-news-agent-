@@ -8,7 +8,7 @@ on:
       mode:
         description: What to run
         type: choice
-        options: [digest, preview, check-sources, test-delivery]
+        options: [digest, preview, check-sources, test-delivery, test-ai]
         default: digest
 
 permissions:
