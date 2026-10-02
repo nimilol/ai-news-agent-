@@ -1,0 +1,80 @@
+# Where the agent looks for news. Add, remove or comment out (#) any line.
+#
+# Fields:
+#   name     - shown in the digest and in the health report
+#   type     - rss | page_links | page_diff | huggingface | openrouter_models | youtube | hn | reddit | google_news
+#   company  - anthropic | openai | xai | zhipu  (set it when the source is about one company: every item counts.
+#              Leave it out for general sources: then only items mentioning your companies are kept.)
+#   tier     - official | leak | community | newsletter | press  (decides priority when there is a lot of news)
+#   alert    - true = also checked every 30 minutes for instant "new post" pings (official sources only, no AI)
+#   limit    - max items to take from this source per run (default 15)
+#
+# Type notes:
+#   rss          - any RSS/Atom feed (Substack: add /feed, GitHub releases: /releases.atom)
+#   page_links   - a news page without a feed; new links matching "pattern" (a regex on the link path) = new posts
+#   page_diff    - a release-notes page; new paragraphs since the last run = changes
+#   youtube      - give "handle" (the @name) or "channel_id"
+
+sources:
+  # ---------------------------------------------------------------- Anthropic / Claude (official)
+  - {name: Anthropic News, type: page_links, url: "https://www.anthropic.com/news", pattern: '^/news/[a-z0-9-]+$', company: anthropic, tier: official, alert: true}
+  - {name: Claude Blog, type: page_links, url: "https://claude.com/blog", pattern: '^/blog/[a-z0-9-]+$', company: anthropic, tier: official, alert: true}
+  - {name: Anthropic Engineering, type: page_links, url: "https://www.anthropic.com/engineering", pattern: '^/engineering/[a-z0-9-]+$', company: anthropic, tier: official}
+  - {name: Claude API release notes, type: rss, url: "https://platform.claude.com/docs/en/release-notes/feed.xml", company: anthropic, tier: official, alert: true, limit: 5}
+  - {name: Claude apps release notes, type: page_diff, url: "https://support.claude.com/en/articles/12138966-release-notes", company: anthropic, tier: official, alert: true}
+  - {name: Claude Code releases, type: rss, url: "https://github.com/anthropics/claude-code/releases.atom", company: anthropic, tier: official, limit: 3}
+
+  # ---------------------------------------------------------------- OpenAI / GPT (official)
+  - {name: OpenAI News, type: rss, url: "https://openai.com/news/rss.xml", company: openai, tier: official, alert: true}
+  - {name: OpenAI API changelog, type: page_diff, url: "https://platform.openai.com/docs/changelog", company: openai, tier: official, alert: true}
+  - {name: ChatGPT release notes, type: page_diff, url: "https://help.openai.com/en/articles/6825453-chatgpt-release-notes", company: openai, tier: official, alert: true}
+  - {name: OpenAI model release notes, type: page_diff, url: "https://help.openai.com/en/articles/9624314-model-release-notes", company: openai, tier: official}
+  - {name: Codex releases, type: rss, url: "https://github.com/openai/codex/releases.atom", company: openai, tier: official, limit: 3}
+  - {name: OpenAI on Hugging Face, type: huggingface, author: openai, company: openai, tier: official, alert: true}
+
+  # ---------------------------------------------------------------- xAI / Grok (official)
+  - {name: xAI News, type: page_links, url: "https://x.ai/news", pattern: '^(https://x\.ai)?/news/[a-z0-9-]+/?$', company: xai, tier: official, alert: true}
+  - {name: xAI API release notes, type: page_diff, url: "https://docs.x.ai/docs/release-notes", company: xai, tier: official, alert: true}
+  - {name: xAI SDK releases, type: rss, url: "https://github.com/xai-org/xai-sdk-python/releases.atom", company: xai, tier: official, limit: 3}
+  - {name: xAI on Hugging Face, type: huggingface, author: xai-org, company: xai, tier: official, alert: true}
+
+  # ---------------------------------------------------------------- Zhipu / GLM (official)
+  - {name: Z.ai Blog, type: page_links, url: "https://z.ai/blog", pattern: '^(https://z\.ai)?/blog/[A-Za-z0-9-]+/?$', company: zhipu, tier: official, alert: true}
+  - {name: Z.ai release notes, type: page_diff, url: "https://docs.z.ai/release-notes/new-released", company: zhipu, tier: official, alert: true}
+  - {name: Z.ai on Hugging Face, type: huggingface, author: zai-org, company: zhipu, tier: official, alert: true}
+
+  # ---------------------------------------------------------------- Leaks and early signals
+  - {name: TestingCatalog, type: rss, url: "https://www.testingcatalog.com/rss/", tier: leak}
+  - {name: OpenRouter new models, type: openrouter_models, tier: leak}
+
+  # ---------------------------------------------------------------- Community
+  - {name: "Hacker News: Anthropic/Claude", type: hn, query: [Anthropic, Claude], company: anthropic, min_points: 40, tier: community}
+  - {name: "Hacker News: OpenAI", type: hn, query: [OpenAI, ChatGPT], company: openai, min_points: 60, tier: community}
+  - {name: "Hacker News: xAI/Grok", type: hn, query: [xAI, Grok], company: xai, min_points: 30, tier: community}
+  - {name: "Hacker News: GLM", type: hn, query: [GLM, Zhipu], company: zhipu, min_points: 20, tier: community}
+  - {name: r/LocalLLaMA, type: reddit, subreddit: LocalLLaMA, tier: community}
+  - {name: r/ClaudeAI, type: reddit, subreddit: ClaudeAI, company: anthropic, tier: community, limit: 8}
+  - {name: r/OpenAI, type: reddit, subreddit: OpenAI, company: openai, tier: community, limit: 8}
+  - {name: r/grok, type: reddit, subreddit: grok, company: xai, tier: community, limit: 8}
+  - {name: r/singularity, type: reddit, subreddit: singularity, tier: community}
+
+  # ---------------------------------------------------------------- Newsletters, blogs and YouTube
+  - {name: Simon Willison, type: rss, url: "https://simonwillison.net/atom/everything/", tier: newsletter}
+  - {name: Latent Space / AINews, type: rss, url: "https://www.latent.space/feed", tier: newsletter}
+  - {name: Interconnects, type: rss, url: "https://www.interconnects.ai/feed", tier: newsletter}
+  - {name: Import AI, type: rss, url: "https://importai.substack.com/feed", tier: newsletter}
+  - {name: TLDR AI, type: rss, url: "https://tldr.tech/api/rss/ai", tier: newsletter}
+  - {name: Ben's Bites, type: rss, url: "https://www.bensbites.com/feed", tier: newsletter}
+  - {name: AI Explained (YouTube), type: youtube, channel_id: UCNJ1Ymd5yFuUPtn21xtRbbw, handle: aiexplained-official, tier: newsletter}
+  - {name: Matthew Berman (YouTube), type: youtube, handle: matthew_berman, tier: newsletter}
+  - {name: Wes Roth (YouTube), type: youtube, handle: WesRoth, tier: newsletter}
+  - {name: Sam Witteveen (YouTube), type: youtube, handle: samwitteveenai, tier: newsletter}
+
+  # ---------------------------------------------------------------- Press
+  - {name: "Google News: Anthropic", type: google_news, query: "Anthropic OR \"Claude AI\"", company: anthropic, tier: press, limit: 10}
+  - {name: "Google News: OpenAI", type: google_news, query: "OpenAI OR ChatGPT", company: openai, tier: press, limit: 10}
+  - {name: "Google News: xAI", type: google_news, query: "xAI OR Grok", company: xai, tier: press, limit: 10}
+  - {name: "Google News: Zhipu", type: google_news, query: "Zhipu OR \"Z.ai\" OR GLM model", company: zhipu, tier: press, limit: 10}
+  - {name: The Decoder, type: rss, url: "https://the-decoder.com/feed/", tier: press}
+  - {name: TechCrunch AI, type: rss, url: "https://techcrunch.com/category/artificial-intelligence/feed/", tier: press}
+  - {name: The Verge AI, type: rss, url: "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", tier: press}

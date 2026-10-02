@@ -1,0 +1,59 @@
+name: AI news digest
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"   # every 6 hours: 00:17, 06:17, 12:17, 18:17 UTC
+  workflow_dispatch:          # the "Run workflow" button in the Actions tab
+    inputs:
+      mode:
+        description: What to run
+        type: choice
+        options: [digest, check-sources, test-delivery]
+        default: digest
+
+permissions:
+  contents: write   # to save the agent's memory (state/) and archive (digests/)
+  models: read      # free GitHub Models as the last AI fallback
+
+concurrency:
+  group: agent-state  # never run two jobs that save memory at the same time
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+
+      - name: Run the agent
+        env:
+          MODE: ${{ inputs.mode || 'digest' }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          ZAI_API_KEY: ${{ secrets.ZAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
+          EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        run: python -m agent "$MODE"
+
+      - name: Save memory and archive
+        if: ${{ (inputs.mode || 'digest') == 'digest' }}
+        run: |
+          git config user.name "ai-news-agent"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state digests
+          if git diff --cached --quiet; then echo "Nothing to save."; exit 0; fi
+          git commit -m "digest: $(date -u '+%Y-%m-%d %H:%M') UTC"
+          git pull --rebase
+          git push

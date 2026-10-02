@@ -1,0 +1,48 @@
+name: Instant alerts
+
+# Every hour: checks only the official sources marked `alert: true` in sources.yaml and pings you on
+# Telegram when a new post appears. No AI involved. GitHub may start scheduled runs a few minutes late
+# when it is busy. Hourly keeps a private repository well inside GitHub's free 2,000 minutes a month.
+# If you make the repository public (unlimited free minutes), you can use "*/30 * * * *" for every 30 minutes.
+on:
+  schedule:
+    - cron: "23 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: agent-state
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+
+      - name: Check official sources
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
+          EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        run: python -m agent alerts
+
+      - name: Save memory
+        run: |
+          git config user.name "ai-news-agent"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state
+          if git diff --cached --quiet; then echo "Nothing to save."; exit 0; fi
+          git commit -m "alerts: $(date -u '+%Y-%m-%d %H:%M') UTC"
+          git pull --rebase
+          git push

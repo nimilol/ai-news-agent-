@@ -1,0 +1,78 @@
+# Settings for the AI news agent. Edit freely; the agent reads this file on every run.
+
+# The companies you cover. An item from a general source (newsletter, Reddit, press) is kept
+# only if its title or summary matches one of these patterns (regular expressions, case-insensitive).
+companies:
+  anthropic:
+    label: "Claude / Anthropic"
+    keywords: ['\banthropic\b', '\bclaude\b', 'claude code', '\bdario amodei\b', '\bopus [0-9]', '\bsonnet [0-9]', '\bhaiku [0-9]']
+  openai:
+    label: "GPT / OpenAI"
+    keywords: ['\bopenai\b', '\bchatgpt\b', '\bgpt-?[0-9o]', '\bsora\b', '\bcodex\b', '\bsam altman\b', '\bgpt-oss\b']
+  xai:
+    label: "Grok / xAI"
+    keywords: ['\bxai\b', '\bx\.ai\b', '\bgrok\b', '\bcolossus\b']
+  zhipu:
+    label: "GLM / Z.ai (Zhipu)"
+    keywords: ['\bglm\b', '\bglm-?[0-9]', '\bchatglm\b', '\bzhipu\b', '\bz\.ai\b', '\bzai-org\b']
+
+# How far back to look. Items older than this are ignored even if never seen before.
+max_age_hours: 48
+# The first time a source is read, only items from the last N hours are reported
+# (everything older is quietly marked as seen, so the first digest isn't a flood).
+first_run_hours: 12
+
+digest:
+  # Max items handed to the AI per run (most important first: official > leaks > community > newsletters > press).
+  max_items: 80
+  # Send a short "nothing new" message when a run finds nothing (useful to know the agent is alive).
+  send_when_empty: true
+  # Save every digest as a Markdown file in digests/ (your searchable archive).
+  archive: true
+
+alerts:
+  # Max instant alerts per run (alerts never use AI, they just say "new post at X").
+  max_per_run: 8
+
+# AI providers, tried in this order. A provider is skipped when its key isn't set.
+# Each "models" list is tried top to bottom, so a retired model just falls through to the next one.
+# All of these have free tiers except anthropic. When you add ANTHROPIC_API_KEY, Claude is used first.
+llm:
+  order: [anthropic, gemini, groq, openrouter, zai, github]
+  providers:
+    anthropic:
+      key_env: ANTHROPIC_API_KEY
+      # Change to "claude-haiku-4-5" for the cheapest option.
+      models: [claude-opus-5-5]
+    gemini:
+      key_env: GEMINI_API_KEY
+      base_url: https://generativelanguage.googleapis.com/v1beta/openai
+      models: [gemini-flash-latest, gemini-2.5-flash]
+    groq:
+      key_env: GROQ_API_KEY
+      base_url: https://api.groq.com/openai/v1
+      models: [openai/gpt-oss-120b, llama-3.3-70b-versatile]
+    openrouter:
+      key_env: OPENROUTER_API_KEY
+      base_url: https://openrouter.ai/api/v1
+      # "auto-free" picks the free model with the biggest context window from OpenRouter's live list.
+      models: [auto-free]
+    zai:
+      key_env: ZAI_API_KEY
+      base_url: https://api.z.ai/api/paas/v4
+      models: [glm-4.5-flash]
+    github:
+      # GitHub Models: free, and GitHub Actions provides this token automatically. No signup needed.
+      # It only accepts small inputs, so it gets fewer items.
+      key_env: GITHUB_TOKEN
+      base_url: https://models.github.ai/inference
+      models: [openai/gpt-4.1-mini, openai/gpt-4o-mini]
+      max_items: 30
+      summary_chars: 160
+      max_tokens: 4000
+
+delivery:
+  telegram: true   # needs TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID
+  email: true      # needs EMAIL_ADDRESS and EMAIL_APP_PASSWORD (EMAIL_TO optional)
+  smtp_host: smtp.gmail.com
+  smtp_port: 465
