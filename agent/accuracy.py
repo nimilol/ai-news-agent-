@@ -8,7 +8,7 @@ from urllib.parse import urlsplit
 from .common import clean_text, get, now_utc, parse_date
 
 # Links that already carry their full content in the feed, or can't be read as articles.
-NO_ARTICLE_HOSTS = ("news.google.com", "reddit.com", "huggingface.co", "openrouter.ai", "models.dev",
+NO_ARTICLE_HOSTS = ("reddit.com", "huggingface.co", "openrouter.ai", "models.dev",
                     "github.com", "youtube.com", "youtu.be", "x.com", "twitter.com")
 RECENT_HOURS = 48
 
@@ -41,14 +41,29 @@ def _article_text(url, chars):
     return clean_text(text, chars)
 
 
+def real_url(url):
+    """Google News hides the publisher's address behind news.google.com/rss/articles/...; recover it."""
+    if "news.google.com" not in url:
+        return url
+    from googlenewsdecoder import gnewsdecoder
+
+    result = gnewsdecoder(url, timeout=10)
+    return result.get("decoded_url") if result.get("status") else None
+
+
 def add_articles(items, max_articles=15, chars=2500):
-    """Read the full article for the top items, so the AI summarises the story, not just the headline."""
+    """Read the full article for the top items, so the AI summarises the story, not just the headline.
+    Google News links are swapped for the real article address, which also gives you direct links."""
     targets = [it for it in items if it["url"] and not any(h in urlsplit(it["url"]).netloc for h in NO_ARTICLE_HOSTS)]
     targets = targets[:max_articles]
 
     def read(item):
         try:
-            text = _article_text(item["url"], chars)
+            url = real_url(item["url"])
+            if not url:
+                return
+            item["url"] = url
+            text = _article_text(url, chars)
             if len(text) > 200:
                 item["article"] = text
         except Exception:  # noqa: BLE001 - paywalls, timeouts: keep the headline and summary
