@@ -84,3 +84,6 @@ Follow-up:
   only, r/ChatGPT was dropped (mostly memes), and Codex alpha/beta builds are skipped. GitHub Models was removed:
   it was retired on 2026-07-30 and its endpoint now answers "OK" to everything. At least one free AI key (Gemini
   recommended) is now needed for written summaries; without one the agent sends plain headlines.
+- **Same day, first run with a Gemini key:** the key worked, but `gemini-flash-latest` answered "503 high demand"
+  and `gemini-2.5-flash` has been retired ("use gemini-3.8-flash"). AI calls now retry busy errors (429/5xx) twice,
+  after 5 and 20 seconds, and the Gemini list is `gemini-flash-latest`, `gemini-3.8-flash`, `gemini-flash-lite-latest`.

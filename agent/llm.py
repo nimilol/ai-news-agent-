@@ -4,9 +4,13 @@ Every free provider here speaks the OpenAI-style chat completions format, so one
 covers them all. Claude uses the official Anthropic SDK and is only tried when ANTHROPIC_API_KEY is set.
 """
 
+import time
+
 import requests
 
 from .common import env, get
+
+RETRY_WAITS = [5, 20]  # seconds; "busy" errors (429/5xx) are usually gone a few seconds later
 
 
 class ProviderError(Exception):
@@ -23,7 +27,12 @@ def _chat_completions(base_url, key, model, system, user, json_mode=True, extra_
     if json_mode:
         body["response_format"] = {"type": "json_object"}
     headers = {"Authorization": f"Bearer {key}", "Content-Type": "application/json", **(extra_headers or {})}
-    r = requests.post(f"{base_url.rstrip('/')}/chat/completions", json=body, headers=headers, timeout=180)
+    for wait in RETRY_WAITS + [None]:
+        r = requests.post(f"{base_url.rstrip('/')}/chat/completions", json=body, headers=headers, timeout=180)
+        if r.status_code not in (429, 500, 502, 503, 504) or wait is None:
+            break
+        print(f"  {model} is busy (HTTP {r.status_code}), retrying in {wait}s")
+        time.sleep(wait)
     if r.status_code == 400 and json_mode:  # some models don't support JSON mode: retry once without it
         return _chat_completions(base_url, key, model, system, user, False, extra_headers, max_tokens)
     if r.status_code != 200:

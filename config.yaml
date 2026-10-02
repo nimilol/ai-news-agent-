@@ -47,7 +47,8 @@ llm:
     gemini:
       key_env: GEMINI_API_KEY
       base_url: https://generativelanguage.googleapis.com/v1beta/openai
-      models: [gemini-flash-latest, gemini-2.5-flash]
+      # If Google retires a model, its error message names the replacement: put that name here.
+      models: [gemini-flash-latest, gemini-3.8-flash, gemini-flash-lite-latest]
     groq:
       key_env: GROQ_API_KEY
       base_url: https://api.groq.com/openai/v1

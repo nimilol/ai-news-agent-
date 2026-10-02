@@ -200,3 +200,22 @@ def test_exclude_skips_prereleases(state, monkeypatch):
         item("0.162.0", source="Codex releases", company="openai")])
     found, _, _ = main.collect([src], state, CONFIG)
     assert [i["title"] for i in found] == ["0.162.0"]
+
+
+def test_busy_provider_is_retried(monkeypatch):
+    from agent import llm
+
+    codes = iter([503, 503, 200])
+
+    class Resp:
+        def __init__(self, code):
+            self.status_code = code
+            self.text = "busy" if code != 200 else ""
+            self.url, self.headers = "https://x/chat/completions", {}
+
+        def json(self):
+            return {"choices": [{"message": {"content": '{"stories": []}'}}]}
+
+    monkeypatch.setattr(llm.requests, "post", lambda *a, **k: Resp(next(codes)))
+    monkeypatch.setattr(llm.time, "sleep", lambda s: None)
+    assert llm._chat_completions("https://x", "k", "m", "sys", "user") == '{"stories": []}'
