@@ -7,6 +7,7 @@ Nothing happens if the bot isn't deployed.
 """
 
 import hashlib
+import time
 
 import requests
 
@@ -25,18 +26,24 @@ def secret(purpose):
     return hashlib.sha256(f"{purpose}:{env('TELEGRAM_BOT_TOKEN')}".encode()).hexdigest()
 
 
-def push(key, value):
+def push(key, value, attempts=1, wait=30):
+    """`attempts` > 1 retries connection errors, e.g. a just-created workers.dev address that isn't live yet."""
     url = bot_url()
     if not url or not env("TELEGRAM_BOT_TOKEN"):
         return False
-    try:
-        r = requests.post(f"{url}/push", json={"key": key, "value": value},
-                          headers={"Authorization": f"Bearer {secret('push')}"}, timeout=30)
-        if r.status_code != 200:
-            print(f"  Bot update ({key}) failed: HTTP {r.status_code} {r.text[:100]}")
-            return False
-        print(f"  Bot updated: {key}")
-        return True
-    except requests.RequestException as e:
-        print(f"  Bot update ({key}) failed: {str(e)[:100]}")
-        return False
+    for attempt in range(attempts):
+        try:
+            r = requests.post(f"{url}/push", json={"key": key, "value": value},
+                              headers={"Authorization": f"Bearer {secret('push')}"}, timeout=30)
+            if r.status_code != 200:
+                print(f"  Bot update ({key}) failed: HTTP {r.status_code} {r.text[:100]}")
+                return False
+            print(f"  Bot updated: {key}")
+            return True
+        except requests.RequestException as e:
+            if attempt + 1 < attempts:
+                print(f"  Bot not reachable yet, retrying in {wait}s…")
+                time.sleep(wait)
+            else:
+                print(f"  Bot update ({key}) failed: {str(e)[:100]}")
+    return False

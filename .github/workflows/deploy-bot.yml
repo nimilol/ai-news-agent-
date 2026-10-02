@@ -51,6 +51,7 @@ jobs:
 
       - name: Give the bot the latest brief, picks and free-model list
         if: ${{ inputs.action == 'deploy' }}
+        continue-on-error: true  # the next runs fill it in anyway
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}

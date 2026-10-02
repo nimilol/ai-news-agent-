@@ -218,12 +218,12 @@ def answer_commands(config, args):
         print(f"Telegram commands failed: {str(e)[:200]}")
 
 
-def refresh_bot_free_models(config, args):
+def refresh_bot_free_models(config, args, attempts=1):
     """Hourly: give the always-on bot a fresh free-model list for instant /free replies."""
     if args.dry_run or not botpush.bot_url():
         return
     try:
-        botpush.push("free_models", freemodels.render(freemodels.collect(config)))
+        botpush.push("free_models", freemodels.render(freemodels.collect(config)), attempts=attempts)
     except Exception as e:  # noqa: BLE001
         print(f"  Free-model list for the bot failed: {str(e)[:150]}")
 
@@ -374,11 +374,11 @@ def cmd_push_bot(args):
     if not botpush.bot_url():
         print("The bot isn't deployed yet (no bot/url.txt).")
         return 1
-    ok = botpush.push("briefs", commands.recent_briefs())
+    ok = botpush.push("briefs", commands.recent_briefs(), attempts=10)  # a new address can take minutes to go live
     for key, path in (("last_brief", commands.LAST_BRIEF), ("last_repos", commands.LAST_REPOS)):
         if path.exists():
             ok = botpush.push(key, json.loads(path.read_text(encoding="utf-8"))) and ok
-    refresh_bot_free_models(config, args)
+    refresh_bot_free_models(config, args, attempts=3)
     return 0 if ok else 1
 
 
