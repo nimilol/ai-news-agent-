@@ -196,10 +196,10 @@ def cmd_alerts(args):
     state = State("alerts")
     items, _, _ = collect(sources, state, config)
     items = rank_items(items)[: config.get("alerts", {}).get("max_per_run", 8)]
-    print(f"{len(items)} new official posts.")
+    print(f"{len(items)} new items for instant alerts.")
     if not items:
         return finish(state, ["nothing to send"], [], args.dry_run)
-    lines = ["<b>🚨 New from official sources</b>"]
+    lines = ["<b>🚨 Just in</b>"]
     for it in items:
         title = html.escape(it["title"])
         link = f'<a href="{html.escape(it["url"], quote=True)}">{title}</a>' if it["url"] else title
