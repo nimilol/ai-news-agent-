@@ -48,7 +48,9 @@ def real_url(url):
     from googlenewsdecoder import gnewsdecoder
 
     result = gnewsdecoder(url, timeout=10)
-    return result.get("decoded_url") if result.get("status") else None
+    if (result.get("status") or result.get("success")) and result.get("decoded_url"):
+        return result["decoded_url"]
+    raise ValueError(f"Google News link not decoded: {result.get('message', 'no reason given')}")
 
 
 def add_articles(items, max_articles=15, chars=2500):
@@ -57,22 +59,26 @@ def add_articles(items, max_articles=15, chars=2500):
     targets = [it for it in items if it["url"] and not any(h in urlsplit(it["url"]).netloc for h in NO_ARTICLE_HOSTS)]
     targets = targets[:max_articles]
 
+    problems = []
+
     def read(item):
         try:
             url = real_url(item["url"])
-            if not url:
-                return
             item["url"] = url
             text = _article_text(url, chars)
             if len(text) > 200:
                 item["article"] = text
-        except Exception:  # noqa: BLE001 - paywalls, timeouts: keep the headline and summary
-            pass
+            else:
+                problems.append(f"no readable text at {urlsplit(url).netloc}")
+        except Exception as e:  # noqa: BLE001 - paywalls, timeouts: keep the headline and summary
+            problems.append(f"{urlsplit(item['url']).netloc}: {str(e)[:80]}")
 
-    with ThreadPoolExecutor(max_workers=8) as pool:
+    with ThreadPoolExecutor(max_workers=4) as pool:
         list(pool.map(read, targets))
     read_count = sum(1 for it in targets if it.get("article"))
     print(f"  Read {read_count} of {len(targets)} full articles.")
+    for p in sorted(set(problems))[:5]:
+        print(f"    skipped: {p}")
     return read_count
 
 

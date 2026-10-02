@@ -110,3 +110,7 @@ Follow-up:
   Worker bot for instant replies. The agent pushes data to it, so the worker does no heavy work and stays
   inside the free CPU limit. Cost check before building: about 10 AI requests a day (was 4), well inside the
   free tiers, and about 1,350 of 2,000 free GitHub minutes a month.
+- **Same day, first live test of the above:** `gemini-3.8-flash` hit its free daily limit after a day of heavy
+  testing ("exceeded your current quota"), so a 429 that mentions quota now skips straight to the next model, and
+  3.8-flash is tried after Groq. The Google News decoder reports success as `success` (not `status`), so links were
+  never decoded; fixed, and the check-sources run now tests decoding and article reading logs why items are skipped.

@@ -31,6 +31,8 @@ def _chat_completions(base_url, key, model, system, user, json_mode=True, extra_
         r = requests.post(f"{base_url.rstrip('/')}/chat/completions", json=body, headers=headers, timeout=180)
         if r.status_code not in (429, 500, 502, 503, 504) or wait is None:
             break
+        if r.status_code == 429 and "quota" in r.text.lower():
+            break  # the daily free limit is used up: waiting won't help, move to the next model
         print(f"  {model} is busy (HTTP {r.status_code}), retrying in {wait}s")
         time.sleep(wait)
     if r.status_code == 400 and json_mode:  # some models don't support JSON mode: retry once without it

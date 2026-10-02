@@ -270,6 +270,14 @@ def cmd_check_sources(args):
             note = " (page_diff: learns the page on first run)" if src["type"] == "page_diff" else ""
             print(f"✓ ok    {src['name']:<34} {len(r):>3} items, newest {newest}{note}")
     print(f"\n{ok}/{len(sources)} sources working.")
+    gn = next((i for src in sources if src["type"] == "google_news" and not isinstance(results[src["name"]], Exception)
+               for i in results[src["name"]]), None)
+    if gn:
+        try:
+            real = accuracy.real_url(gn["url"])
+            print(f"Google News link decoding: works → {real[:80]}")
+        except Exception as e:  # noqa: BLE001
+            print(f"Google News link decoding: FAILED ({str(e)[:200]})")
     keys = [n for n, p in config["llm"]["providers"].items() if os.environ.get(p["key_env"])]
     print(f"AI providers with a key: {', '.join(keys) or 'none'}")
     print(f"Telegram set up: {telegram_configured()} · Email set up: {email_configured()}")
