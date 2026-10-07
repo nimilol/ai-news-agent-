@@ -1,6 +1,6 @@
 {
  "failures": {
-  "Claude Blog": 3
+  "Claude Blog": 4
  },
  "seen": {
   "000c151c5231df1a": "2026-10-07",
@@ -1893,8 +1893,6 @@
    "hashes": [
     "c16b19da2d45",
     "696639aff53b",
-    "fc620f4ee97e",
-    "60f1ee8f4112",
     "55177d4ea6c2",
     "5a0895a1f1b8",
     "702586478d9b",
@@ -2971,7 +2969,9 @@
     "708d8756de8c",
     "438a975d7cdc",
     "12ecae719924",
-    "df4784a73e60"
+    "df4784a73e60",
+    "fc620f4ee97e",
+    "60f1ee8f4112"
    ],
    "initialized": true
   },
