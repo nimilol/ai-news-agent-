@@ -132,7 +132,7 @@ export async function handleMessage(env, message) {
       await sendStored(env, "free_models", "The free-model list isn't ready yet. It refreshes every hour.");
       return command;
     case "latest":
-      await sendStored(env, "last_brief", "No brief yet. The next one arrives at the next 6-hour run.");
+      await sendStored(env, "last_brief", "No brief yet. The next one arrives at the next 2-hour run.");
       return command;
     case "repos":
       await sendStored(env, "last_repos", "No Builder picks yet. They arrive every morning.");

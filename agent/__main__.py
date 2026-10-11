@@ -1,6 +1,6 @@
 """Entry point.
 
-    python -m agent digest          collect news, summarise with AI, send the brief (every 6 hours)
+    python -m agent digest          collect news, summarise with AI, send the brief (every 2 hours)
     python -m agent alerts          quick check of official sources, instant ping, no AI (hourly)
     python -m agent builders        daily Builder picks: trending AI tools and repos
     python -m agent weekly          Sunday recap of the week's biggest stories
@@ -180,6 +180,9 @@ def cmd_digest(args):
         print(f"AI summary failed, sending headlines instead: {str(e)[:400]}")
         brief = fallback_brief(items, companies)
     brief, checked = factcheck(config, brief, items, model_used)
+    if not brief["stories"]:
+        print("Nothing worth sending this run; waiting for the next one.")
+        return finish(state, ["nothing to send"], [], args.dry_run)
 
     meta = {
         "when": when,

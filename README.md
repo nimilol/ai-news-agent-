@@ -3,9 +3,10 @@
 A free agent that follows four AI companies, **Anthropic (Claude), OpenAI (GPT), xAI (Grok) and Zhipu / Z.ai (GLM)**,
 and sends you a summary on **Telegram** and/or **email**.
 
-- **Every 6 hours:** reads about 42 sources (official blogs and changelogs, leak trackers, Hacker News, Reddit,
+- **Every 2 hours:** reads about 42 sources (official blogs and changelogs, leak trackers, Hacker News, Reddit,
   newsletters, YouTube, the press), keeps only what's new and about your four companies, and has a free AI model
-  write a brief: grouped by company, labelled *Official / Report / Rumor*, with links and post ideas.
+  write a brief: grouped by company, each story opened by a hook question ("Did Anthropic just release a new
+  model?"), labelled *Official / Report / Rumor*, with links and post ideas.
 - **Every hour:** checks the official sources plus the early-signal sources (TestingCatalog leaks, new and stealth
   models on OpenRouter, new model listings on models.dev) and the free-model sources (new free models on OpenRouter
   and in OpenCode), and pings you on Telegram as soon as something new appears (no AI, so it's fast and always works).
@@ -73,7 +74,7 @@ Add each one by name (`TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `GEMINI_API_KEY`
 4. Optional: run it with **preview**. The run log shows a full brief written by the AI, but nothing is sent and the
    agent's memory isn't changed, so you can preview as often as you like.
 5. Optional: run it with **test-ai** to check every AI key you added (each gets a tiny request).
-6. Run it with **digest** for your first brief. From then on it runs by itself every 6 hours.
+6. Run it with **digest** for your first brief. From then on it runs by itself every 2 hours. A run with nothing new sends nothing; the news waits for the next run.
 
 > **The first brief is short on purpose.** The first time the agent reads a source, it only reports the last 12 hours
 > and quietly remembers everything older, so you don't get a flood of old news.
@@ -166,7 +167,7 @@ python -m pytest -q                  # offline tests
 - **Some sites block bots** (OpenAI's help pages sometimes do). Those show up as ✗ in `check-sources`; the rest
   keep working.
 - **Free minutes:** a private repository gets 2,000 free GitHub Actions minutes a month. This agent uses roughly
-  1,000 (briefs about 240, hourly alerts about 720). A public repository has no limit.
+  1,500 (briefs every 2 hours about 720, hourly alerts about 720). A public repository has no limit.
 - **GitHub pauses scheduled workflows after 60 days without activity** in public repositories. The agent commits its
   memory after runs, which counts as activity. If it ever stops, re-enable it in the Actions tab.
 - **Always open the source before you post.** The AI summarises; it can misread. The *Official / Report / Rumor*

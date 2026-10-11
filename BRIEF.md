@@ -120,3 +120,10 @@ Follow-up:
   count as Official even when they arrive through Google News. Gemini's free daily limits turned out lower than
   assumed: after a day of testing, gemini-flash-latest and gemini-3.8-flash both answered "quota exceeded" and
   gemini-flash-lite-latest wrote the brief. Normal use is about 5-6 Gemini calls a day; Groq does the fact-check.
+- **2026-10-11, owner asked for question hooks and 2-hour briefs:** every story in the brief now opens with a
+  short hook question that the story answers (e.g. "Did Anthropic just release a new model?" before a Haiku 5.5
+  story), on Telegram, email and in the archive. The fact-checker checks the question too. The brief now runs every
+  2 hours instead of every 6; a brief with a single story is fine, and a run with nothing worth sending sends
+  nothing at all (no "nothing new" message, and no raw-headline dump when the AI finds only noise), so the news rolls
+  over to the next run. Cost check: about 24 AI calls a day (writer + fact-check, 12 runs), spread over the
+  provider fallback chain, and about 1,500 of 2,000 free GitHub minutes a month.

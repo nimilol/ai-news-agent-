@@ -116,7 +116,7 @@ def handle(config):
                 if LAST_BRIEF.exists():
                     send_telegram(json.loads(LAST_BRIEF.read_text(encoding="utf-8")))
                 else:
-                    send_telegram(["No brief has been sent yet. The next one arrives at the next 6-hour run."])
+                    send_telegram(["No brief has been sent yet. The next one arrives at the next 2-hour run."])
             elif command == "repos":
                 if LAST_REPOS.exists():
                     send_telegram(json.loads(LAST_REPOS.read_text(encoding="utf-8")))

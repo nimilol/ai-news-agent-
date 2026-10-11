@@ -29,8 +29,9 @@ first_run_hours: 12
 digest:
   # Max items handed to the AI per run (most important first: official > leaks > community > newsletters > press).
   max_items: 80
-  # Send a short "nothing new" message when a run finds nothing (useful to know the agent is alive).
-  send_when_empty: true
+  # Send a short "nothing new" message when a run finds nothing. Off: a quiet run sends nothing and the
+  # news rolls over to the next 2-hour run.
+  send_when_empty: false
   # Save every digest as a Markdown file in digests/ (your searchable archive).
   archive: true
   # Read the full article for this many top items (0 = headlines and summaries only).

@@ -19,6 +19,7 @@ Answer with JSON only, in exactly this shape:
   "stories": [
     {
       "company": "anthropic | openai | xai | zhipu | free_models | industry",
+      "question": "a short hook question that leads into the story, e.g. 'Did Anthropic just release a new model?'",
       "title": "short factual headline, at most 12 words",
       "summary": "2-3 sentences: what changed, who it affects, why it matters. Keep concrete names, numbers, dates.",
       "status": "official | report | rumor",
@@ -55,6 +56,11 @@ Rules:
   "OpenCode free models"), from any company. Keep these. Group several into one story when there are many, and
   name each model, who made it and where it is free. Use status "official" and importance 3 (4 if it is a
   well-known model from a major lab).
+- "question": every story opens with one short question (at most 12 words) that makes the reader curious
+  and that the story then answers, without giving the answer away. Examples: "Did Anthropic just release a
+  new model?", "Is OpenAI changing ChatGPT's prices?", "Is Grok getting a new feature?". The question must
+  not imply anything the items don't support. Use a different question for each story.
+- If nothing in the items is worth reporting, return an empty "stories" list.
 - Sort stories by importance, highest first. At most 25 stories."""
 
 STATUS_LABEL = {"official": "✅ Official", "report": "📰 Report", "rumor": "👀 Rumor"}
@@ -94,8 +100,10 @@ def parse_answer(text, items, companies):
     if start < 0 or end < 0:
         raise ValueError("no JSON object in the answer")
     data = json.loads(text[start : end + 1])
+    if not isinstance(data, dict) or not isinstance(data.get("stories"), list):
+        raise ValueError("the answer has no stories list")
     stories = []
-    for s in data.get("stories") or []:
+    for s in data["stories"]:
         if not isinstance(s, dict):
             continue
         refs = []
@@ -115,6 +123,7 @@ def parse_answer(text, items, companies):
             importance = 2
         stories.append({
             "company": company if company in companies else "industry",
+            "question": as_question(s.get("question")),
             "title": clean_text(str(s.get("title", "")), 200) or items[refs[0] - 1]["title"],
             "summary": clean_text(str(s.get("summary", "")), 900),
             "status": s.get("status") if s.get("status") in STATUS_LABEL else "report",
@@ -122,13 +131,19 @@ def parse_answer(text, items, companies):
             "items": refs,
             "update": s.get("update") is True,
         })
-    if not stories and items:
-        raise ValueError("the answer had no usable stories")
+    if not stories and data.get("stories"):
+        raise ValueError("the answer had no usable stories")  # an empty list is a quiet run, not an error
     return {
         "headline": clean_text(str(data.get("headline", "")), 300),
         "stories": stories,
         "post_ideas": [clean_text(str(p), 300) for p in (data.get("post_ideas") or [])[:3] if p],
     }
+
+
+def as_question(text):
+    """The story's hook question, always ending in "?" ("" when there is none)."""
+    q = clean_text(str(text or ""), 200).rstrip(" .!")
+    return q + "?" if q and not q.endswith("?") else q
 
 
 def fallback_brief(items, companies, per_company=10):
@@ -142,6 +157,7 @@ def fallback_brief(items, companies, per_company=10):
         tier = it["tier"]
         stories.append({
             "company": company if company in companies else "industry",
+            "question": "",
             "title": it["title"],
             "summary": clean_text(it["summary"], 220),
             "status": "official" if tier == "official" else "rumor" if tier in ("leak", "community") else "report",
@@ -180,7 +196,8 @@ def render_telegram(brief, items, companies, meta, limit=3900):
         blocks.append(f"\n<b>━━ {e(label)} ━━</b>")
         for s in group:
             mark = IMPORTANCE_MARK.get(s["importance"], "•")
-            text = f"{mark} <b>{e(s['title'])}</b>  <i>{STATUS_LABEL[s['status']]}</i>"
+            text = f"❓ <b><i>{e(s['question'])}</i></b>\n" if s.get("question") else ""
+            text += f"{mark} <b>{e(s['title'])}</b>  <i>{STATUS_LABEL[s['status']]}</i>"
             trust = badges(s, items)
             if trust:
                 text += f"\n<i>{e(trust)}</i>"
@@ -226,8 +243,9 @@ def render_email_html(brief, items, companies, meta):
         for s in group:
             mark = IMPORTANCE_MARK.get(s["importance"], "")
             links = " · ".join(f'<a href="{e(u, quote=True)}">{e(n)}</a>' for n, u in _story_links(s, items))
+            question = f'<i>❓ {e(s["question"])}</i><br>' if s.get("question") else ""
             parts.append(
-                f'<p style="margin:14px 0"><b>{mark} {e(s["title"])}</b> '
+                f'<p style="margin:14px 0">{question}<b>{mark} {e(s["title"])}</b> '
                 f'<span style="color:#666;font-size:13px">{STATUS_LABEL[s["status"]]} · {e(badges(s, items))}</span><br>'
                 f'{e(s["summary"])}{"<br>" if s["summary"] else ""}'
                 f'<span style="font-size:13px">{links}</span></p>'
@@ -251,6 +269,8 @@ def render_markdown(brief, items, companies, meta):
             mark = IMPORTANCE_MARK.get(s["importance"], "-")
             links = " · ".join(f"[{n}]({u})" for n, u in _story_links(s, items))
             trust = badges(s, items)
+            if s.get("question"):
+                out.append(f"❓ _{s['question']}_  ")
             out.append(f"{mark} **{s['title']}** ({STATUS_LABEL[s['status']]}{' · ' + trust if trust else ''})  ")
             if s["summary"]:
                 out.append(f"  {s['summary']}  ")

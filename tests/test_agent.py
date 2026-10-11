@@ -80,11 +80,11 @@ def test_parse_answer_keeps_only_grounded_stories():
     answer = "```json\n" + json.dumps({
         "headline": "Anthropic ships Opus 6",
         "stories": [
-            {"company": "anthropic", "title": "Opus 6 is out", "summary": "Big.", "status": "official",
-             "importance": 5, "items": [1]},
+            {"company": "anthropic", "question": "Did Anthropic just release a new model?", "title": "Opus 6 is out",
+             "summary": "Big.", "status": "official", "importance": 5, "items": [1]},
             {"company": "openai", "title": "Made-up story", "summary": "x", "status": "rumor",
              "importance": 4, "items": [99]},  # points at an item that doesn't exist -> dropped
-            {"company": "openai", "title": "GPT-6 whispers", "summary": "y", "status": "weird",
+            {"company": "openai", "question": "Is GPT-6 close", "title": "GPT-6 whispers", "summary": "y", "status": "weird",
              "importance": "9", "items": ["2"]},
         ],
         "post_ideas": ["Opus 6 in 60 seconds"],
@@ -92,6 +92,17 @@ def test_parse_answer_keeps_only_grounded_stories():
     brief = digest.parse_answer(answer, items, COMPANIES)
     assert [s["title"] for s in brief["stories"]] == ["Opus 6 is out", "GPT-6 whispers"]
     assert brief["stories"][1]["importance"] == 5 and brief["stories"][1]["status"] == "report"
+    assert [s["question"] for s in brief["stories"]] == ["Did Anthropic just release a new model?", "Is GPT-6 close?"]
+
+
+def test_parse_answer_empty_stories_is_a_quiet_run():
+    brief = digest.parse_answer('{"headline": "Quiet period", "stories": [], "post_ideas": []}',
+                                [item("Claude meme")], COMPANIES)
+    assert brief["stories"] == []
+    with pytest.raises(ValueError):  # stories that all point nowhere are still an error
+        digest.parse_answer('{"stories": [{"title": "x", "items": [7]}]}', [item("Claude news")], COMPANIES)
+    with pytest.raises(ValueError):
+        digest.parse_answer('{"headline": "no stories key"}', [item("Claude news")], COMPANIES)
 
 
 def test_parse_answer_rejects_garbage():
@@ -112,8 +123,30 @@ def test_telegram_render_escapes_and_splits():
     assert "&lt;update&gt;" in messages[0] and "a=1&amp;b=2" in messages[0]
 
 
-def test_dry_run_digest_end_to_end(tmp_path, monkeypatch, capsys):
-    """Full digest with a fake AI provider and fake sources: nothing is sent or saved."""
+def test_question_comes_before_the_story(tmp_path, monkeypatch):
+    from agent import weekly
+
+    items = [item("Claude Haiku 5.5 released", tier="official", company="anthropic", url="https://anthropic.com/h")]
+    brief = {"headline": "Anthropic ships a new small model", "post_ideas": [], "stories": [
+        {"company": "anthropic", "question": "Did Anthropic just release a new model?", "title": "Haiku 5.5 is out",
+         "summary": "Anthropic released Haiku 5.5.", "status": "official", "importance": 5, "items": [1]}]}
+    meta = {"when": "now", "footer": "footer", "warning": None}
+    tg = digest.render_telegram(brief, items, COMPANIES, meta)[0]
+    assert tg.index("❓ <b><i>Did Anthropic just release a new model?</i></b>") < tg.index("Haiku 5.5 is out</b>")
+    html_ = digest.render_email_html(brief, items, COMPANIES, meta)
+    assert html_.index("Did Anthropic just release") < html_.index("Haiku 5.5 is out</b>")
+    md = digest.render_markdown(brief, items, COMPANIES, meta)
+    assert md.index("❓ _Did Anthropic just release a new model?_") < md.index("**Haiku 5.5 is out**")
+
+    (tmp_path / "digests").mkdir()
+    (tmp_path / "digests" / f"{now_utc():%Y-%m-%d_%H%M}.md").write_text(md, encoding="utf-8")
+    monkeypatch.setattr(weekly, "ROOT", tmp_path)
+    [story] = weekly.read_week()  # the weekly recap still reads archives with questions in them
+    assert story["title"] == "Haiku 5.5 is out" and story["summary"] == "Anthropic released Haiku 5.5."
+    assert story["url"] == "https://anthropic.com/h"
+
+
+def fake_digest_run(tmp_path, monkeypatch, answer):
     monkeypatch.setattr("agent.state.ROOT", tmp_path)
     items = [item("OpenAI launches GPT-6", source="OpenAI News", tier="official", company="openai", url="https://openai.com/a"),
              item("Grok 5 spotted in testing", source="TestingCatalog", tier="leak", url="https://tc.com/b")]
@@ -121,14 +154,19 @@ def test_dry_run_digest_end_to_end(tmp_path, monkeypatch, capsys):
         {"name": "OpenAI News", "type": "rss", "company": "openai", "tier": "official"},
         {"name": "TestingCatalog", "type": "rss", "tier": "leak"}]))
     monkeypatch.setattr(main, "fetch", lambda s, st: [i for i in items if i["source"] == s["name"]])
+    monkeypatch.setattr(main.accuracy, "add_articles", lambda *a, **k: 0)
+    monkeypatch.setattr(main.llm, "complete", lambda config, system, build: (build(), "fake/model") and (answer, "fake/model"))
+    monkeypatch.setattr(main, "factcheck", lambda config, brief, items, writer: (brief, "fact-checked by fake"))
+
+
+def test_dry_run_digest_end_to_end(tmp_path, monkeypatch, capsys):
+    """Full digest with a fake AI provider and fake sources: nothing is sent or saved."""
     answer = json.dumps({"headline": "GPT-6 is here", "stories": [
         {"company": "openai", "title": "GPT-6 launches", "summary": "OpenAI released GPT-6.", "status": "official",
          "importance": 5, "items": [1]},
         {"company": "xai", "title": "Grok 5 in testing", "summary": "Spotted in the app.", "status": "rumor",
          "importance": 4, "items": [2]}], "post_ideas": ["GPT-6: what's new"]})
-    monkeypatch.setattr(main.accuracy, "add_articles", lambda *a, **k: 0)
-    monkeypatch.setattr(main.llm, "complete", lambda config, system, build: (build(), "fake/model") and (answer, "fake/model"))
-    monkeypatch.setattr(main, "factcheck", lambda config, brief, items, writer: (brief, "fact-checked by fake"))
+    fake_digest_run(tmp_path, monkeypatch, answer)
 
     class Args:
         dry_run = True
@@ -136,6 +174,20 @@ def test_dry_run_digest_end_to_end(tmp_path, monkeypatch, capsys):
     out = capsys.readouterr().out
     assert "GPT-6 launches" in out and "Grok 5 in testing" in out and "written by fake/model" in out
     assert not (tmp_path / "state" / "digest.json").exists()  # dry run saves nothing
+
+
+def test_quiet_digest_sends_nothing(tmp_path, monkeypatch, capsys):
+    """The AI finds only noise: no brief and no headline dump; the news rolls over to the next run."""
+    fake_digest_run(tmp_path, monkeypatch, '{"headline": "Quiet period", "stories": [], "post_ideas": []}')
+    sent = []
+    monkeypatch.setattr(main, "deliver", lambda *a, **k: sent.append(a) or (["telegram"], []))
+    monkeypatch.setattr(main, "answer_commands", lambda *a: None)
+
+    class Args:
+        dry_run = False
+    assert main.cmd_digest(Args) == 0
+    assert sent == [] and "Nothing worth sending" in capsys.readouterr().out
+    assert (tmp_path / "state" / "digest.json").exists()  # items are remembered, so they aren't sent later
 
 
 def test_provider_chain_falls_through(monkeypatch):
@@ -348,12 +400,12 @@ def test_factcheck_fixes_and_drops(monkeypatch):
     items = [item("Claude Opus 6 released", source="Anthropic News", tier="official", company="anthropic"),
              item("Unrelated GLM hacking benchmark", source="r/LocalLLaMA", tier="community")]
     brief = {"headline": "h", "post_ideas": [], "stories": [
-        {"company": "anthropic", "title": "Opus 6 out with 10M context", "summary": "Claims 10M context.",
-         "status": "official", "importance": 5, "items": [1, 2]},
+        {"company": "anthropic", "question": "Does Claude now read 10M tokens?", "title": "Opus 6 out with 10M context",
+         "summary": "Claims 10M context.", "status": "official", "importance": 5, "items": [1, 2]},
         {"company": "zhipu", "title": "Made up", "summary": "x", "status": "rumor", "importance": 2, "items": [2]}]}
     answer = json.dumps({"headline": "Anthropic released Opus 6.", "checks": [
-        {"story": 1, "verdict": "fix", "title": "Claude Opus 6 released", "summary": "Anthropic released Opus 6.",
-         "remove_items": [2]},
+        {"story": 1, "verdict": "fix", "question": "Did Anthropic just release a new model",
+         "title": "Claude Opus 6 released", "summary": "Anthropic released Opus 6.", "remove_items": [2]},
         {"story": 2, "verdict": "drop"}]})
     seen = {}
 
@@ -367,6 +419,8 @@ def test_factcheck_fixes_and_drops(monkeypatch):
     assert [s["title"] for s in out["stories"]] == ["Claude Opus 6 released"]
     assert out["stories"][0]["items"] == [1] and "2 corrected, 1 removed" in note
     assert out["headline"] == "Anthropic released Opus 6." and "Headline: h" in seen["text"]
+    assert out["stories"][0]["question"] == "Did Anthropic just release a new model?"
+    assert "Question: Does Claude now read 10M tokens?" in seen["text"]
 
 
 def test_builder_picks(monkeypatch):

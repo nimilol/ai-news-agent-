@@ -8,18 +8,20 @@ import re
 from . import llm
 from .accuracy import enforce_status, publisher
 from .common import clean_text
+from .digest import as_question
 
 VERIFY_PROMPT = """You are a strict fact-checker for an AI news brief.
-Each numbered story below lists the source items it is based on. Check the story's title and summary
-against those sources only.
+Each numbered story below lists the source items it is based on. Check the story's hook question, title
+and summary against those sources only.
 
 Answer with JSON only:
-{"headline": "", "checks": [{"story": 1, "verdict": "ok | fix | drop", "title": "", "summary": "", "remove_items": []}]}
+{"headline": "", "checks": [{"story": 1, "verdict": "ok | fix | drop", "question": "", "title": "", "summary": "", "remove_items": []}]}
 
-- "ok": every claim is supported by the sources. Leave title and summary empty.
+- "ok": every claim is supported by the sources. Leave question, title and summary empty.
 - "fix": something is wrong or overstated (a number, name, date, a rumor written as fact, two unrelated
   events merged). Give the corrected title and summary using only facts in the sources, and list in
-  "remove_items" any item numbers that are about a different event than the story.
+  "remove_items" any item numbers that are about a different event than the story. If the hook question
+  implies something the sources don't support, also give a corrected "question" (otherwise leave it empty).
 - "drop": the sources do not support the story at all.
 Be strict with numbers, names and dates, and with "launched" versus "reported" or "rumored".
 Include one check for every story. Also check the brief's headline: if it states anything the stories'
@@ -29,7 +31,8 @@ sources don't support, put a corrected one-sentence headline in "headline"; othe
 def _build(brief, items, text_chars):
     lines = [f"Headline: {brief['headline']}\n"]
     for i, s in enumerate(brief["stories"], 1):
-        lines.append(f"Story {i}: {s['title']}\nSummary: {s['summary']}\nSources:")
+        question = f"Question: {s['question']}\n" if s.get("question") else ""
+        lines.append(f"Story {i}: {s['title']}\n{question}Summary: {s['summary']}\nSources:")
         for n in s["items"]:
             it = items[n - 1]
             body = it.get("article") or it["summary"]
@@ -78,6 +81,8 @@ def factcheck(config, brief, items, writer):
                 s["title"] = clean_text(str(c["title"]), 200)
             if c.get("summary"):
                 s["summary"] = clean_text(str(c["summary"]), 900)
+            if c.get("question") and s.get("question"):
+                s["question"] = as_question(c["question"])
             enforce_status(s, items)
             fixed += 1
         keep.append(s)
