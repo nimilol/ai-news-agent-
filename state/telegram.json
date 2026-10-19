@@ -3,7 +3,15 @@
  "seen": {},
  "sources": {
   "bot": {
-   "menu_set": true,
+   "menu": [
+    "free",
+    "latest",
+    "repos",
+    "buzz",
+    "ask",
+    "news",
+    "help"
+   ],
    "offset": 93298447
   }
  }
