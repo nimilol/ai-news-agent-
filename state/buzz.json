@@ -1,0 +1,12 @@
+{
+ "failures": {},
+ "seen": {
+  "gh:MadsLorentzen/ai-job-search": "2026-10-19",
+  "gh:stablyai/orca": "2026-10-19",
+  "hf:abenzerps/Qwen-Image-2.1-Uncensored-Quantized": "2026-10-19",
+  "hf:deepseek-ai/DeepSeek-V4.1-Flash-1017": "2026-10-19",
+  "news:650d7d85becf0e66": "2026-10-19",
+  "news:a40309a7615275e0": "2026-10-19"
+ },
+ "sources": {}
+}
