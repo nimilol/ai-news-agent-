@@ -66,7 +66,7 @@ def rising_repos(topics, days=7, min_stars=30):
     return list(found.values())
 
 
-def trending_repos():
+def trending_repos(ai_only=True):
     soup = BeautifulSoup(get("https://github.com/trending?since=daily").text, "html.parser")
     out = []
     for row in soup.select("article.Box-row"):
@@ -75,7 +75,8 @@ def trending_repos():
             continue
         name = re.sub(r"\s+", "", link.get_text())
         desc = clean_text((row.select_one("p") or BeautifulSoup("", "html.parser")).get_text(" ", strip=True), 300)
-        if not AI_WORDS.search(f"{name} {desc}"):
+        is_ai = bool(AI_WORDS.search(f"{name} {desc}"))
+        if ai_only and not is_ai:
             continue
         today = re.search(r"([\d,]+) stars? today", row.get_text(" ", strip=True))
         total = row.select_one('a[href$="/stargazers"]')
@@ -84,6 +85,7 @@ def trending_repos():
             "kind": "trending", "id": f"gh:{name}", "name": name, "url": f"https://github.com/{name}", "text": desc,
             "stars": int(re.sub(r"\D", "", total.get_text()) or 0) if total else 0,
             "extra": f"+{today.group(1)} stars today · {lang.get_text(strip=True) if lang else 'n/a'}" if today else "",
+            "today": int(re.sub(r"\D", "", today.group(1))) if today else 0, "ai": is_ai,
         })
     return out
 

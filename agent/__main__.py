@@ -3,6 +3,7 @@
     python -m agent digest          collect news, summarise with AI, send the brief (every 6 hours)
     python -m agent alerts          quick check of official sources, instant ping, no AI (hourly)
     python -m agent builders        daily Builder picks: trending AI tools and repos
+    python -m agent buzz            every 3 hours: what's hot on GitHub and Hugging Face, something to talk about
     python -m agent weekly          Sunday recap of the week's biggest stories
     python -m agent check-sources   test every source and print which ones work
     python -m agent test-delivery   send a test message to Telegram / email
@@ -20,14 +21,14 @@ import sys
 from concurrent.futures import ThreadPoolExecutor
 from datetime import timedelta
 
-from . import accuracy, botpush, builders, commands, freemodels, llm, weekly
+from . import accuracy, botpush, builders, buzz, commands, freemodels, llm, weekly
 from .common import ROOT, TIER_RANK, load_yaml, now_utc, parse_date
 from .deliver import deliver, email_configured, telegram_configured
 from .factcheck import factcheck
 from .digest import (SYSTEM_PROMPT, build_user_message, fallback_brief, parse_answer, rank_items,
                      render_email_html, render_markdown, render_telegram)
 from .sources import fetch
-from .state import State
+from .state import KEEP_DAYS, State
 
 FAILING_WARN_AFTER = 3  # runs in a row before a broken source is mentioned in the brief
 
@@ -124,7 +125,7 @@ def failing_warning(state):
     return f"Not working for {FAILING_WARN_AFTER}+ runs (check the URL in sources.yaml): " + ", ".join(broken)
 
 
-def finish(state, sent, errors, dry_run):
+def finish(state, sent, errors, dry_run, keep_days=None):
     for e in errors:
         print(f"  Delivery failed: {e}")
     if dry_run:
@@ -135,7 +136,7 @@ def finish(state, sent, errors, dry_run):
         return 1
     if not sent:
         print("No delivery channel is set up (TELEGRAM_* or EMAIL_* secrets). Printed above only.")
-    state.save()
+    state.save(keep_days or KEEP_DAYS)
     return 0
 
 
@@ -345,6 +346,36 @@ def cmd_builders(args):
     return finish(state, sent, errors, args.dry_run)
 
 
+def cmd_buzz(args):
+    """Every 3 hours: the most talked-about things on GitHub and Hugging Face."""
+    config, _ = load()
+    answer_commands(config, args)
+    state = State("buzz")
+    print("Collecting what's hot on GitHub and Hugging Face…")
+    candidates, failed = buzz.collect(config)
+    fresh = [c for c in candidates if c["id"] not in state.seen]  # don't repeat a pick within a week
+    print(f"{len(fresh)} new candidates ({len(candidates) - len(fresh)} already sent this week).")
+    if not fresh:
+        return finish(state, ["nothing to send"], [], args.dry_run, buzz.KEEP_DAYS)
+    headline, picks, model = buzz.pick(config, fresh)
+    messages = buzz.render(headline, picks, model, failed, len(candidates))
+    for m in messages:
+        print(re.sub(r"<[^>]+>", "", m) + "\n")
+    if args.dry_run:
+        return finish(state, [], [], True)
+    channels = ["telegram"] if telegram_configured() else ["email"]
+    plain = "\n\n".join(re.sub(r"<[^>]+>", "", m) for m in messages)
+    subject = f"🔥 Buzz: {(headline or picks[0][0]['name'])[:80]}"
+    sent, errors = deliver(config, messages, (subject, "<br>".join(m.replace("\n", "<br>") for m in messages), plain),
+                           channels)
+    if sent:
+        for p in picks:
+            state.observe(p[0]["id"])
+        commands.save_json(commands.LAST_BUZZ, messages)  # for the /buzz command
+        botpush.push("last_buzz", messages)
+    return finish(state, sent, errors, args.dry_run, buzz.KEEP_DAYS)
+
+
 def cmd_weekly(args):
     """Sunday recap of the week's biggest stories, from the saved briefs."""
     config, _ = load()
@@ -375,7 +406,8 @@ def cmd_push_bot(args):
         print("The bot isn't deployed yet (no bot/url.txt).")
         return 1
     ok = botpush.push("briefs", commands.recent_briefs(), attempts=10)  # a new address can take minutes to go live
-    for key, path in (("last_brief", commands.LAST_BRIEF), ("last_repos", commands.LAST_REPOS)):
+    for key, path in (("last_brief", commands.LAST_BRIEF), ("last_repos", commands.LAST_REPOS),
+                      ("last_buzz", commands.LAST_BUZZ)):
         if path.exists():
             ok = botpush.push(key, json.loads(path.read_text(encoding="utf-8"))) and ok
     refresh_bot_free_models(config, args, attempts=3)
@@ -396,13 +428,13 @@ def cmd_test_delivery(args):
 
 def main():
     parser = argparse.ArgumentParser(prog="python -m agent", description="AI news agent")
-    parser.add_argument("command", choices=["digest", "alerts", "builders", "weekly", "check-sources", "test-delivery",
+    parser.add_argument("command", choices=["digest", "alerts", "builders", "buzz", "weekly", "check-sources", "test-delivery",
                                             "test-ai", "free-models", "push-bot"])
     parser.add_argument("--dry-run", action="store_true", help="print instead of sending; don't save state")
     args = parser.parse_args()
     commands = {"digest": cmd_digest, "alerts": cmd_alerts, "check-sources": cmd_check_sources,
                 "test-delivery": cmd_test_delivery, "test-ai": cmd_test_ai,
-                "free-models": cmd_free_models, "builders": cmd_builders, "weekly": cmd_weekly,
+                "free-models": cmd_free_models, "builders": cmd_builders, "buzz": cmd_buzz, "weekly": cmd_weekly,
                 "push-bot": cmd_push_bot}
     sys.exit(commands[args.command](args))
 

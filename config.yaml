@@ -88,6 +88,23 @@ llm:
 builders:
   topics: [llm, ai-agents, mcp, agents, generative-ai, rag, coding-agent, local-llm]
 
+# Buzz (every 3 hours): what's hot on GitHub and Hugging Face, "something to talk about".
+buzz:
+  max_picks: 8
+  # GitHub topics searched for fast-rising new AI repos (GitHub Trending is read in full, AI or not).
+  topics: [llm, ai-agents, mcp, generative-ai, coding-agent, local-llm, rag, llm-inference]
+  # The labs you follow most: their repos and Hugging Face uploads are checked directly, and anything
+  # mentioning them is marked FOCUS so the AI puts it first.
+  gh_orgs: [anthropics, openai, zai-org, MoonshotAI, MiniMax-AI, xai-org, deepseek-ai, QwenLM, google-gemini, google-deepmind, meta-llama]
+  hf_orgs: [openai, zai-org, moonshotai, MiniMaxAI, xai-org, deepseek-ai, Qwen, google, meta-llama]
+  focus: ['\banthropic', '\bclaude\b', '\bopenai\b', '\bchatgpt\b', '\bgpt-?[0-9o]', '\bcodex\b', '\bglm', '\bzhipu\b',
+          '\bz\.?ai\b', '\bkimi\b', '\bmoonshot', '\bminimax', '\bxai\b', '\bgrok\b', '\bdeepseek', '\bqwen',
+          '\bgemini\b', '\bgemma\b', '\bllama\b', 'meta-llama']
+  # Hugging Face and GitHub don't publish offers or censorship news, so these two news searches fill the gap.
+  news_queries:
+    - '("free for a limited time" OR "limited-time" OR "free access" OR "free tier" OR "discount") (Claude OR ChatGPT OR GPT OR GLM OR Kimi OR MiniMax OR Grok OR Gemini OR DeepSeek OR Qwen)'
+    - '(AI model OR chatbot OR Claude OR ChatGPT OR Grok OR DeepSeek OR Qwen OR Kimi) (censored OR censorship OR uncensored OR restricted OR banned)'
+
 # The /free command and the "free-models" run list every free model from these places.
 free_models:
   # models.dev provider ids to include besides OpenRouter ("opencode" = OpenCode's free models).

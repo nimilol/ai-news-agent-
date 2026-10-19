@@ -1,7 +1,7 @@
 // Always-on Telegram bot for the AI news agent (Cloudflare Worker, free plan).
 //
 // Telegram sends every message here instantly (a "webhook"). The heavy work still happens on GitHub:
-// after each run the agent pushes the latest brief, Builder picks, free-model list and this week's
+// after each run the agent pushes the latest brief, Builder picks, Buzz, free-model list and this week's
 // briefs into KV storage, so the bot only reads and replies. Only your own chat gets answers.
 //
 // Secrets (set by the deploy workflow): TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, GEMINI_API_KEY,
@@ -13,6 +13,7 @@ const HELP = [
   "/free · models you can use for free right now",
   "/latest · the most recent news brief",
   "/repos · today's Builder picks",
+  "/buzz · what's hot on GitHub and Hugging Face right now",
   "/ask <i>your question</i> · ask about this week's news",
   "/news · run a fresh news check now",
   "/help · this message",
@@ -23,7 +24,7 @@ const ASK_PROMPT =
   "Answer in at most 8 short lines of plain text. Name the date and source of each fact. " +
   "If the briefs don't cover the question, say so plainly instead of guessing.";
 
-const PUSH_KEYS = ["last_brief", "last_repos", "free_models", "briefs"];
+const PUSH_KEYS = ["last_brief", "last_repos", "last_buzz", "free_models", "briefs"];
 
 export async function sha256(text) {
   const data = new TextEncoder().encode(text);
@@ -136,6 +137,9 @@ export async function handleMessage(env, message) {
       return command;
     case "repos":
       await sendStored(env, "last_repos", "No Builder picks yet. They arrive every morning.");
+      return command;
+    case "buzz":
+      await sendStored(env, "last_buzz", "No Buzz yet. It arrives every 3 hours.");
       return command;
     case "ask": {
       const question = raw.slice(first.length).trim();

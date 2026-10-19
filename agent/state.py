@@ -39,8 +39,8 @@ class State:
         else:
             self.failures[name] = self.failures.get(name, 0) + 1
 
-    def save(self):
-        cutoff = (now_utc() - timedelta(days=KEEP_DAYS)).date().isoformat()
+    def save(self, keep_days=KEEP_DAYS):
+        cutoff = (now_utc() - timedelta(days=keep_days)).date().isoformat()
         self.seen = {k: v for k, v in self.seen.items() if v >= cutoff}
         data = {"seen": self.seen, "sources": self.sources, "failures": self.failures}
         text = json.dumps(data, indent=1, sort_keys=True, ensure_ascii=False) + "\n"

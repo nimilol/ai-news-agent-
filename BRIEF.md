@@ -120,3 +120,18 @@ Follow-up:
   count as Official even when they arrive through Google News. Gemini's free daily limits turned out lower than
   assumed: after a day of testing, gemini-flash-latest and gemini-3.8-flash both answered "quota exceeded" and
   gemini-flash-lite-latest wrote the brief. Normal use is about 5-6 Gemini calls a day; Groq does the fact-check.
+- **2026-10-19, owner asked for GitHub + Hugging Face buzz:** "look through hugging face and … send most talked
+  about github repositories or news on hugging face … scan the two sites every 3 hours and give me something to
+  talk about … mainly ai focus: new models, new upgrades, new censored models, new free models, limited offers on
+  models … especially anthropic and claude, open ai and chatgpt, glm, kimi, minimax and the key main models … for
+  github … ai and trending repos even if it's outside the ai scope". Owner's choices: keep the 6-hour brief, the
+  hourly alerts and the Builder picks as they are; watch Kimi, MiniMax, xAI/Grok, DeepSeek, Qwen, Google
+  Gemini/Gemma and Meta Llama besides Claude, OpenAI and GLM; "censored" means both uncensored models and
+  censorship news. Built a new **Buzz** run every 3 hours (`agent/buzz.py`, `.github/workflows/buzz.yml`):
+  GitHub Trending (all repos, non-AI marked), rising AI repos, the labs' own GitHub orgs and Hugging Face uploads,
+  HF trending models and Spaces, uncensored/abliterated models, HF Daily Papers, the HF blog, and two Google News
+  searches for free/limited-time offers and censorship (HF and GitHub don't publish those). One AI call picks up
+  to 8 with "what / why people are talking / a line to post"; links come from the items, and without AI the
+  hottest item of each kind is sent. A pick isn't repeated for 7 days. Telegram (email if Telegram isn't set
+  up), `/buzz` command. About 480 more GitHub minutes a month (recent runs take 1-2 minutes), about 8 more AI
+  requests a day.

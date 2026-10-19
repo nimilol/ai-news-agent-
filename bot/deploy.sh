@@ -88,6 +88,7 @@ curl -s "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/setMyCommands" -H 'cont
   {"command":"free","description":"Free models you can use right now"},
   {"command":"latest","description":"The latest news brief"},
   {"command":"repos","description":"Today'"'"'s Builder picks"},
+  {"command":"buzz","description":"What'"'"'s hot on GitHub and Hugging Face"},
   {"command":"ask","description":"Ask about this week'"'"'s news"},
   {"command":"news","description":"Run a fresh news check now"},
   {"command":"help","description":"What I can do"}]}' >/dev/null

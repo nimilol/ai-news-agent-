@@ -444,3 +444,99 @@ def test_ask_and_repos_commands(tmp_path, monkeypatch):
     commands.handle(CONFIG)
     assert sent[0] == "🛠 picks"
     assert "What did OpenAI launch?" in sent[1] and "GPT-6" in sent[1] and "GPT-6" in asked["user"]
+
+
+def test_buzz_collect_pick_and_render(monkeypatch):
+    from agent import builders, buzz
+
+    trending_html = """<article class="Box-row"><h2><a href="/acme/agent-kit"> acme / agent-kit </a></h2>
+      <p>Open-source toolkit for building AI agents</p><a href="/acme/agent-kit/stargazers">12,345</a>
+      <span>1,234 stars today</span></article>
+      <article class="Box-row"><h2><a href="/x/css-art">x / css-art</a></h2><p>Pretty CSS drawings</p>
+      <span>900 stars today</span></article>"""
+
+    class R:
+        def __init__(self, data=None, text="", content=b""):
+            self._data, self.text, self.content = data, text, content
+
+        def json(self):
+            return self._data
+
+    def fake_get(url, params=None, **kw):
+        params = params or {}
+        if "trending" in url:
+            return R(text=trending_html)
+        if "search/repositories" in url:
+            if "org:moonshotai" in params["q"].lower():
+                return R({"items": [{"full_name": "MoonshotAI/Kimi-K3", "html_url": "https://github.com/MoonshotAI/Kimi-K3",
+                                     "description": "Kimi K3 model code", "stargazers_count": 4000}]})
+            return R({"items": []})
+        if "api/models" in url:
+            if params.get("search") == "uncensored":
+                return R([{"id": "someone/Qwen4-uncensored", "likes": 80, "trendingScore": 12}])
+            if params.get("author") == "MiniMaxAI":
+                return R([{"id": "MiniMaxAI/MiniMax-M3", "likes": 300, "createdAt": now_utc().isoformat()}])
+            if params.get("author"):
+                return R([])
+            return R([{"id": "zai-org/GLM-5.3", "likes": 500, "trendingScore": 40, "pipeline_tag": "text-generation"}])
+        if "api/spaces" in url:
+            return R([])
+        if "daily_papers" in url:
+            return R([{"paper": {"id": "2610.0001", "title": "Agents that sleep", "upvotes": 90}, "numComments": 4}])
+        if "huggingface.co/blog" in url:
+            return R(content=b"<rss><channel><item><title>Welcome GLM-5.3</title><link>https://huggingface.co/blog/glm</link>"
+                             b"</item></channel></rss>")
+        if "news.google.com" in url:
+            return R(content=b"<rss><channel></channel></rss>")
+        raise AssertionError(url)
+    monkeypatch.setattr(builders, "get", fake_get)
+    monkeypatch.setattr(buzz, "get", fake_get)
+    monkeypatch.setattr("agent.sources.get", fake_get)
+
+    candidates, failed = buzz.collect(CONFIG)
+    by_name = {c["name"]: c for c in candidates}
+    assert failed == []
+    assert {"acme/agent-kit", "x/css-art", "MoonshotAI/Kimi-K3", "MiniMaxAI/MiniMax-M3", "zai-org/GLM-5.3",
+            "someone/Qwen4-uncensored", "Agents that sleep", "Welcome GLM-5.3"} <= set(by_name)  # non-AI repos kept too
+    assert "not AI" in by_name["x/css-art"]["extra"]
+    assert by_name["MoonshotAI/Kimi-K3"]["focus"] and by_name["someone/Qwen4-uncensored"]["uncensored"]
+    assert len({c["kind"] for c in candidates[:4]}) == 4  # interleaved: each kind gets a turn near the top
+
+    kimi = candidates.index(by_name["MoonshotAI/Kimi-K3"]) + 1
+    answer = json.dumps({"headline": "Kimi K3 lands", "picks": [
+        {"item": kimi, "type": "new model", "what": "Kimi's new model", "why": "4,000 stars", "talk": "Kimi is back"},
+        {"item": 999, "type": "repo", "what": "made up"}, {"item": kimi, "type": "repo", "what": "duplicate"}]})
+    monkeypatch.setattr(buzz.llm, "complete", lambda config, system, build: (answer, "gemini/x"))
+    headline, picks, model = buzz.pick(CONFIG, candidates)
+    assert headline == "Kimi K3 lands" and len(picks) == 1 and picks[0][1] == "new model"
+    text = "\n".join(buzz.render(headline, picks, model, [], len(candidates)))
+    assert "🔥 Buzz" in text and "🧠" in text and "https://github.com/MoonshotAI/Kimi-K3" in text and "Kimi is back" in text
+
+    def broken(*a, **k):
+        raise RuntimeError("every AI is down")
+    monkeypatch.setattr(buzz.llm, "complete", broken)
+    headline, picks, model = buzz.pick(CONFIG, candidates)
+    assert model == "none" and len(picks) == CONFIG["buzz"]["max_picks"]
+
+
+def test_buzz_run_skips_items_already_sent(tmp_path, monkeypatch):
+    from agent import buzz, commands
+
+    monkeypatch.setattr("agent.state.ROOT", tmp_path)
+    monkeypatch.setattr(commands, "LAST_BUZZ", tmp_path / "last_buzz.json")
+    monkeypatch.setattr(main, "answer_commands", lambda *a: None)
+    cands = [{"kind": "repo", "id": f"gh:a/{n}", "name": f"a/{n}", "url": f"https://github.com/a/{n}", "text": "AI tool",
+              "extra": "", "score": n, "focus": False, "uncensored": False} for n in range(3)]
+    monkeypatch.setattr(buzz, "collect", lambda config: (list(cands), []))
+    monkeypatch.setattr(buzz.llm, "complete", lambda *a: (json.dumps({"headline": "h", "picks": [{"item": 1, "type": "repo"}]}), "m"))
+    sent = []
+    monkeypatch.setattr(main, "telegram_configured", lambda: True)
+    monkeypatch.setattr(main, "deliver", lambda config, msgs, email, channels: (sent.append(msgs) or ["telegram"], []))
+    monkeypatch.setattr(main.botpush, "push", lambda *a, **k: True)
+
+    class Args:
+        dry_run = False
+    assert main.cmd_buzz(Args()) == 0
+    assert "a/0" in sent[0][0] and json.loads((tmp_path / "last_buzz.json").read_text()) == sent[0]
+    assert main.cmd_buzz(Args()) == 0
+    assert "a/0" not in sent[1][0] and "a/1" in sent[1][0]  # the first pick isn't repeated

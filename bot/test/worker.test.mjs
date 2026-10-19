@@ -35,11 +35,13 @@ function setup(kv = {}) {
 const msg = (text, id = 42) => ({ chat: { id }, text });
 
 test("commands reply from stored data", async () => {
-  const { env, sent } = setup({ free_models: JSON.stringify(["free list"]), last_brief: JSON.stringify(["b1", "b2"]) });
+  const { env, sent } = setup({ free_models: JSON.stringify(["free list"]), last_brief: JSON.stringify(["b1", "b2"]),
+                                last_buzz: JSON.stringify(["🔥 buzz"]) });
   await handleMessage(env, msg("/free"));
   await handleMessage(env, msg("/latest@my_bot"));
   await handleMessage(env, msg("/repos"));
-  assert.deepEqual(sent, ["free list", "b1", "b2", "No Builder picks yet. They arrive every morning."]);
+  await handleMessage(env, msg("/buzz"));
+  assert.deepEqual(sent, ["free list", "b1", "b2", "No Builder picks yet. They arrive every morning.", "🔥 buzz"]);
 });
 
 test("strangers are ignored, unknown text gets help", async () => {

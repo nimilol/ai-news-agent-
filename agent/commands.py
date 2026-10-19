@@ -20,6 +20,7 @@ HELP = (
     "/free · models you can use for free right now (OpenRouter, OpenCode)\n"
     "/latest · resend the most recent news brief\n"
     "/repos · today's Builder picks (trending AI tools and repos)\n"
+    "/buzz · the latest Buzz: what's hot on GitHub and Hugging Face right now\n"
     "/ask your question · ask about this week's news, answered from your briefs\n"
     "/help · this message\n\n"
     "For an instant list, open GitHub: Actions → AI news digest → Run workflow → free-models."
@@ -28,12 +29,14 @@ COMMANDS = [
     {"command": "free", "description": "Free models you can use right now"},
     {"command": "latest", "description": "Resend the latest news brief"},
     {"command": "repos", "description": "Today's Builder picks"},
+    {"command": "buzz", "description": "What's hot on GitHub and Hugging Face"},
     {"command": "ask", "description": "Ask about this week's news"},
     {"command": "news", "description": "Run a fresh news check now"},
     {"command": "help", "description": "What I can do"},
 ]
 LAST_BRIEF = ROOT / "state" / "last_brief.json"
 LAST_REPOS = ROOT / "state" / "last_repos.json"
+LAST_BUZZ = ROOT / "state" / "last_buzz.json"
 ASK_PROMPT = """You answer questions from an AI news creator using only the news briefs below (newest last).
 Answer in at most 8 short lines of plain text. Name the date and source of each fact. If the briefs don't
 cover the question, say so plainly instead of guessing."""
@@ -84,9 +87,11 @@ def handle(config):
     state = State("telegram")
     memory = state.source("bot")
     api = f"https://api.telegram.org/bot{token}"
-    if not memory.get("menu_set"):  # show /free, /latest, /help in Telegram's "/" menu
+    menu = [c["command"] for c in COMMANDS]
+    if memory.get("menu") != menu:  # show the commands in Telegram's "/" menu (again when the list changes)
         if requests.post(f"{api}/setMyCommands", json={"commands": COMMANDS}, timeout=30).ok:
-            memory["menu_set"] = True
+            memory["menu"] = menu
+            memory.pop("menu_set", None)
     params = {"timeout": 0, "allowed_updates": json.dumps(["message"])}
     if memory.get("offset"):
         params["offset"] = memory["offset"] + 1
@@ -104,7 +109,7 @@ def handle(config):
             question = raw.split(None, 1)[1].strip() if len(words) > 1 else ""
             wanted.append(("ask", question))
             continue
-        command = command if command in ("free", "latest", "repos", "news") else "help"
+        command = command if command in ("free", "latest", "repos", "buzz", "news") else "help"
         if command not in wanted:
             wanted.append(command)
     print(f"Telegram commands: {', '.join(c if isinstance(c, str) else c[0] for c in wanted) or 'none'}")
@@ -122,6 +127,11 @@ def handle(config):
                     send_telegram(json.loads(LAST_REPOS.read_text(encoding="utf-8")))
                 else:
                     send_telegram(["No Builder picks yet. They arrive every morning."])
+            elif command == "buzz":
+                if LAST_BUZZ.exists():
+                    send_telegram(json.loads(LAST_BUZZ.read_text(encoding="utf-8")))
+                else:
+                    send_telegram(["No Buzz yet. It arrives every 3 hours."])
             elif command == "news":
                 send_telegram(["/news needs the instant bot (see 'Instant replies' in the README). For now, open GitHub: "
                                "Actions → AI news digest → Run workflow → digest."])
