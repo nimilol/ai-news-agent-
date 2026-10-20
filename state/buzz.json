@@ -3,18 +3,26 @@
  "seen": {
   "gh:MadsLorentzen/ai-job-search": "2026-10-19",
   "gh:anthropics/claude-code": "2026-10-20",
+  "gh:anthropics/claude-plugins-official": "2026-10-20",
+  "gh:google-gemini/gemini-cli": "2026-10-20",
+  "gh:openai/codex": "2026-10-20",
   "gh:ruvnet/ruflo": "2026-10-20",
   "gh:stablyai/orca": "2026-10-19",
   "hf:AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF": "2026-10-20",
   "hf:HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF": "2026-10-20",
+  "hf:Qwen/Qwen-Image-2.1-Turbo": "2026-10-20",
   "hf:Qwen/Qwen3.8-27B": "2026-10-20",
+  "hf:Qwen/Qwen3.8-Flash-Next": "2026-10-20",
   "hf:abenzerps/Qwen-Image-2.1-Uncensored-Quantized": "2026-10-19",
   "hf:deepseek-ai/DeepSeek-V4.1-Flash": "2026-10-20",
   "hf:deepseek-ai/DeepSeek-V4.1-Flash-1017": "2026-10-19",
+  "hf:huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF": "2026-10-20",
+  "hf:meta-models/Muse-Spark-Open-816B-A42B": "2026-10-20",
   "news:0ee69ec6a162c662": "2026-10-20",
   "news:650d7d85becf0e66": "2026-10-19",
   "news:a40309a7615275e0": "2026-10-19",
-  "news:c51dd48b07c86d68": "2026-10-20"
+  "news:c51dd48b07c86d68": "2026-10-20",
+  "news:fca247cba2c41091": "2026-10-20"
  },
  "sources": {}
 }
