@@ -18,11 +18,19 @@
   "hf:deepseek-ai/DeepSeek-V4.1-Flash-1017": "2026-10-19",
   "hf:huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF": "2026-10-20",
   "hf:meta-models/Muse-Spark-Open-816B-A42B": "2026-10-20",
+  "hfs:AST-1320/Qwen-2511-Plus-Flux.2-klein": "2026-10-20",
+  "hfs:hugging-apps/qwen-qwen-image-2-1-turbo": "2026-10-20",
+  "hfs:pablodawson/minimax-h3-360-orbit": "2026-10-20",
   "news:0ee69ec6a162c662": "2026-10-20",
+  "news:5d11415ceb11eaae": "2026-10-20",
   "news:650d7d85becf0e66": "2026-10-19",
+  "news:6d39f6b2e8682490": "2026-10-20",
   "news:a40309a7615275e0": "2026-10-19",
   "news:c51dd48b07c86d68": "2026-10-20",
-  "news:fca247cba2c41091": "2026-10-20"
+  "news:fca247cba2c41091": "2026-10-20",
+  "news:fdbb6e8b7690bad7": "2026-10-20",
+  "paper:2610.25736": "2026-10-20",
+  "paper:2610.26825": "2026-10-20"
  },
  "sources": {}
 }
