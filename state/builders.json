@@ -11,6 +11,7 @@
   "gh:BlenderGPT3D/blender-ai-addon": "2026-10-15",
   "gh:Btluo1/ccb": "2026-10-07",
   "gh:C4rohan/Lampline": "2026-10-20",
+  "gh:Cattmonkey/ChaosIntelligence": "2026-10-27",
   "gh:Charonyuu/whatsmyagentdoing": "2026-10-25",
   "gh:Danielxu0208/rsi_eval": "2026-10-18",
   "gh:Dicklesworthstone/frankensonos": "2026-10-08",
@@ -25,6 +26,7 @@
   "gh:Graphicle-AI/graphicle": "2026-10-16",
   "gh:Graphify-Labs/graphify": "2026-10-21",
   "gh:HKUDS/CLI-Anything": "2026-10-14",
+  "gh:Hvftpie13/Flashmind_Gemini-3.8-Flash_Smart-agent": "2026-10-27",
   "gh:JMS1717/ming-voice": "2026-10-24",
   "gh:JuliusBrussee/caveman": "2026-10-02",
   "gh:K-Dense-AI/scientific-agent-skills": "2026-10-14",
@@ -96,6 +98,7 @@
   "gh:cobanov/PS5LM": "2026-10-05",
   "gh:colbymchenry/codegraph": "2026-10-02",
   "gh:coreyhaines31/marketingskills": "2026-10-04",
+  "gh:daveebbelaar/bama": "2026-10-27",
   "gh:debpalash/VoiceStudio": "2026-10-13",
   "gh:deeplethe/fde-gym": "2026-10-12",
   "gh:deeplethe/solid-glass": "2026-10-16",
@@ -104,6 +107,7 @@
   "gh:earthtojake/text-to-cad": "2026-10-05",
   "gh:efim0v/brow": "2026-10-09",
   "gh:eliasbiondo/antirion": "2026-10-20",
+  "gh:ethanplusai/astro-conversion-kit": "2026-10-27",
   "gh:etosin/arc-draw": "2026-10-03",
   "gh:facebookresearch/swe-sweep": "2026-10-07",
   "gh:faraflow/faraflow": "2026-10-26",
@@ -117,6 +121,7 @@
   "gh:franzenzenhofer/big-arrow-on-the-screen": "2026-10-09",
   "gh:fzn0x/idx": "2026-10-19",
   "gh:garrytan/gstack": "2026-10-04",
+  "gh:gitroomhq/postiz-app": "2026-10-27",
   "gh:google-gemini/gemini-cli": "2026-10-24",
   "gh:graygnatconsole/mcp-audit-tool": "2026-10-02",
   "gh:guolola/SoftJL": "2026-10-21",
@@ -174,6 +179,8 @@
   "gh:openqodex/openqodex": "2026-10-08",
   "gh:outcrawlai/scout": "2026-10-14",
   "gh:p10node/docflare-ai": "2026-10-09",
+  "gh:patch-gg/anymove": "2026-10-27",
+  "gh:patch-gg/trompe": "2026-10-27",
   "gh:paulmil11/decks": "2026-10-21",
   "gh:pbakaus/impeccable": "2026-10-04",
   "gh:pipedude/yahont-ce": "2026-10-24",
@@ -233,7 +240,8 @@
   "hn:50167604": "2026-10-22",
   "hn:50167617": "2026-10-22",
   "hn:50183892": "2026-10-22",
-  "hn:50214373": "2026-10-24"
+  "hn:50214373": "2026-10-24",
+  "hn:50246238": "2026-10-27"
  },
  "sources": {}
 }
