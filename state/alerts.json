@@ -1,7 +1,7 @@
 {
  "failures": {
-  "ChatGPT release notes": 36,
-  "Claude Blog": 105
+  "ChatGPT release notes": 37,
+  "Claude Blog": 106
  },
  "seen": {
   "000c151c5231df1a": "2026-10-27",
@@ -120,6 +120,7 @@
   "0c2860b074fe80c6": "2026-10-27",
   "0c2dad3c416ba978": "2026-10-27",
   "0c30a3b1a36966c5": "2026-10-27",
+  "0c36cc827ad4d4fc": "2026-10-27",
   "0c3f1a2b6712ffef": "2026-10-27",
   "0c421e61176dba7e": "2026-10-27",
   "0c55616c673cd58d": "2026-10-27",
