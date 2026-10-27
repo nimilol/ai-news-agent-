@@ -11,6 +11,7 @@
   "gh:JMS1717/ming-voice": "2026-10-24",
   "gh:JetBrains/thinkrail": "2026-10-25",
   "gh:LiCinCan/blender-ai-mcp-addon": "2026-10-21",
+  "gh:MiniMax-AI/MiniMax-M2": "2026-10-27",
   "gh:MiniMax-AI/OpenAgentCore": "2026-10-20",
   "gh:MiniMax-AI/minimax-code": "2026-10-21",
   "gh:Monopoly0024/simple-reviewer-v1": "2026-10-25",
@@ -49,6 +50,7 @@
   "gh:deepseek-ai/DeepEP": "2026-10-21",
   "gh:deepseek-ai/DeepGEMM": "2026-10-22",
   "gh:deepseek-ai/DeepInfer": "2026-10-20",
+  "gh:deepseek-ai/FlashMLA": "2026-10-27",
   "gh:deepseek-ai/deepseek-harness": "2026-10-23",
   "gh:eagle-hq/EAGLE-4": "2026-10-25",
   "gh:eliasbiondo/antirion": "2026-10-21",
@@ -113,6 +115,7 @@
   "hf:RecursiveSI/flint": "2026-10-24",
   "hf:SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF": "2026-10-21",
   "hf:XHToken/Spark-X2.6-4B": "2026-10-25",
+  "hf:abenzerps/Qwen-Image-2.1-Uncensored-Quantized": "2026-10-27",
   "hf:alesha-pro/Qwen3.8-Flash-Next-abliterated-GSQ-RCO-Strata-GGUF": "2026-10-22",
   "hf:audnai/penclaw-GLM-5.3-abliterated": "2026-10-23",
   "hf:black-forest-labs/flux-3-image-klein": "2026-10-22",
@@ -121,6 +124,7 @@
   "hf:dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8": "2026-10-20",
   "hf:dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8": "2026-10-21",
   "hf:deepseek-ai/DeepSeek-V4.1-Flash": "2026-10-20",
+  "hf:deepseek-ai/DeepSeek-V4.1-Flash-1017": "2026-10-27",
   "hf:drowzeys/keys-DeepSeek-V4.1-Flash-1017-Abliterated": "2026-10-22",
   "hf:facebook/sam3": "2026-10-21",
   "hf:fishaudio/drama-3": "2026-10-23",
@@ -231,7 +235,8 @@
   "paper:2610.31066": "2026-10-26",
   "paper:2610.31329": "2026-10-23",
   "paper:2610.31668": "2026-10-26",
-  "paper:2610.31931": "2026-10-26"
+  "paper:2610.31931": "2026-10-26",
+  "paper:2610.33472": "2026-10-27"
  },
  "sources": {}
 }
