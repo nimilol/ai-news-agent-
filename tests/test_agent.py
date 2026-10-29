@@ -538,6 +538,16 @@ def test_youtube_falls_back_to_the_videos_page(monkeypatch):
     items = sources.fetch_youtube({"name": "Podcast", "type": "youtube", "channel_id": "UCx", "interview": True}, {})
     assert items[0]["summary"].startswith("1,234,567 views on YouTube.") and all(i["interview"] for i in items)
 
+    urls = []
+    monkeypatch.setattr(sources, "get", lambda url, **kw: urls.append(url) or R(url))
+    sources.youtube_videos("UCx", views=True)  # Buzz: the Videos page first, for real view counts
+    assert urls == ["https://www.youtube.com/channel/UCx/videos"]
+
+    combined = {"x": {"videoId": "c1", "title": {"simpleText": "My 2 views on AI"},
+                      "viewCountText": {"simpleText": "Lex Fridman 12K views • 3 hours ago"}}}
+    [v] = sources.parse_youtube_videos_page(f"<script>window[\"ytInitialData\"] = {json.dumps(combined)};</script>")
+    assert v["views"] == 12_000 and 2.9 <= (now_utc() - v["published"]).total_seconds() / 3600 <= 3.1
+
 
 def test_digest_marks_interviews(tmp_path, monkeypatch):
     from agent import weekly

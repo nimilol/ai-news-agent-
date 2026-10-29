@@ -270,7 +270,8 @@ def _youtube_feed(channel_id):
 
 
 _AGO = re.compile(r"(\d+) (second|minute|hour|day|week|month|year)s? ago")
-_VIEWS = re.compile(r"^([\d.,]+)\s*([KMB]?)\s+views?$", re.I)
+_VIEWS = re.compile(r"\b([\d.,]+)\s*(K|M|B|thousand|million|billion)?\s+views?\b", re.I)
+_SCALE = {"": 1, "k": 1e3, "thousand": 1e3, "m": 1e6, "million": 1e6, "b": 1e9, "billion": 1e9}
 _UNIT_HOURS = {"second": 1 / 3600, "minute": 1 / 60, "hour": 1, "day": 24, "week": 168, "month": 730, "year": 8760}
 
 
@@ -324,11 +325,14 @@ def parse_youtube_videos_page(page, channel=""):
         seen.add(vid)
         views, published = 0, None
         for text in _strings(d):
-            text = text.strip()
-            m = _VIEWS.match(text)
+            if text == title:  # a title can say "views" too
+                continue
+            m = _VIEWS.search(text)
             if m and not views:
-                n = float(m.group(1).replace(",", ""))
-                views = int(n * {"": 1, "K": 1e3, "M": 1e6, "B": 1e9}[m.group(2).upper()])
+                try:
+                    views = int(float(m.group(1).replace(",", "")) * _SCALE[(m.group(2) or "").lower()])
+                except ValueError:
+                    pass
             a = _AGO.search(text)
             if a and not published:
                 published = now - timedelta(hours=int(a.group(1)) * _UNIT_HOURS[a.group(2)])
@@ -339,18 +343,21 @@ def parse_youtube_videos_page(page, channel=""):
     return out
 
 
-def youtube_videos(channel_id):
-    """The channel's latest videos with views (and likes when known).
-    Reads the channel's public feed; when YouTube refuses the feed (it sometimes answers 404 for every
-    channel for days), reads the channel's Videos page instead."""
-    try:
-        return _youtube_feed(channel_id)
-    except Exception as e:  # noqa: BLE001
-        feed_error = e
-    try:
+def youtube_videos(channel_id, views=False):
+    """The channel's latest videos.
+    Reads the channel's public feed (exact dates, full descriptions) and, when YouTube refuses it (it sometimes
+    answers 404 for every channel for days), the channel's Videos page instead.
+    views=True reads the Videos page first: the feed's view counts are often missing (0)."""
+    def page():
         return parse_youtube_videos_page(get(f"https://www.youtube.com/channel/{channel_id}/videos").text)
-    except Exception as e:  # noqa: BLE001
-        raise ValueError(f"feed: {str(feed_error)[:60]}; videos page: {str(e)[:80]}") from e
+    readers = [("videos page", page), ("feed", lambda: _youtube_feed(channel_id))]
+    errors = []
+    for name, read in readers if views else readers[::-1]:
+        try:
+            return read()
+        except Exception as e:  # noqa: BLE001
+            errors.append(f"{name}: {str(e)[:80]}")
+    raise ValueError("; ".join(errors))
 
 
 def fetch_youtube(source, state):

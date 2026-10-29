@@ -47,7 +47,8 @@ Answer with JSON only:
 
 Rules:
 - Up to 10 picks, most talk-worthy first. AI first, and FOCUS items before others when they are comparably hot.
-- Include 2-3 interviews when there are any worth it (most-watched or most-discussed first). For an interview,
+- When the list has interview items, 2-3 of your picks MUST be interviews (type "interview"), most-watched or
+  most-discussed first, preferring guests from FOCUS companies and well-known AI leaders. For an interview,
   "what" names the guest and their role, and "why" gives the most talk-worthy thing they said or discussed,
   taken from the item text, plus the views or upvotes.
 - Include at least 2 GitHub repos, and the hottest Reddit discussion or YouTube video when one stands out.
@@ -197,11 +198,13 @@ def reddit(config):
         return []
     posts = [(p, False) for p in reddit_posts(subs, "day", rcfg.get("limit", 50))]
     if rcfg.get("interview_search"):
-        time.sleep(10)  # Reddit refuses quick repeat requests
-        try:
-            posts += [(p, True) for p in reddit_posts(subs, "week", 25, rcfg["interview_search"])]
-        except Exception as e:  # noqa: BLE001 - the top posts are still worth sending
-            print(f"    Reddit interview search skipped: {str(e)[:100]}")
+        for wait in (10, 30):  # Reddit refuses quick repeat requests ("429 Too Many Requests")
+            time.sleep(wait)
+            try:
+                posts += [(p, True) for p in reddit_posts(subs, "week", 25, rcfg["interview_search"])]
+                break
+            except Exception as e:  # noqa: BLE001 - the top posts are still worth sending
+                print(f"    Reddit interview search {'skipped' if wait == 30 else 'retrying'}: {str(e)[:100]}")
     out, total = [], len(posts)
     for rank, (p, searched) in enumerate(posts):
         interview = is_interview(p["title"]) or (searched and is_interview(p["text"][:300]))
@@ -232,7 +235,7 @@ def youtube(config, cache):
         handle = ch.get("handle")
         cid = ch.get("channel_id") or youtube_channel_id(handle, cache)
         try:
-            videos = youtube_videos(cid)
+            videos = youtube_videos(cid, views=True)
         except Exception:
             cache.pop(handle, None)  # both the feed and the page failed: look the id up again next time
             raise
