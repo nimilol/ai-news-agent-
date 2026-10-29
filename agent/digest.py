@@ -49,6 +49,11 @@ Rules:
 - Items from a "models page", "pricing", "deprecations" or "plans" source are changes the company made to
   that page. Say exactly what changed (a new model, a price, a retirement date, a limit); these are often
   unannounced and very newsworthy (importance 4-5 for prices, new models and retirements).
+- Items marked "interview" are interviews, podcasts, AMAs or talks with people who work in AI (executives,
+  researchers, engineers, investors), mostly from YouTube and Reddit. Keep them when the guest says something
+  newsworthy about these companies: a plan, a date, a number, a strong opinion. Title them like
+  "Sam Altman on ...: ..." and say in the summary who the guest is, where they spoke and what they said
+  (status "report"; importance 3, or 4 when a company leader reveals something new).
 - Status-page items: include only real outages that affect many users (importance 4). Skip short or minor
   incidents.
 - "free_models" is for new models the creator can use for free (items from "OpenRouter free models" or
@@ -75,7 +80,8 @@ def build_user_message(items, now, summary_chars=400, article_chars=1500, recent
     for n, it in enumerate(items, 1):
         date = (it["published"] or "")[:10] or "new"
         companies = ",".join(it["companies"]) or "-"
-        lines.append(f"[{n}] ({it['tier']} · {it['source']} · {publisher(it)} · {companies} · {date}) {it['title']}")
+        kind = " · interview" if it.get("interview") else ""
+        lines.append(f"[{n}] ({it['tier']}{kind} · {it['source']} · {publisher(it)} · {companies} · {date}) {it['title']}")
         if it["summary"]:
             lines.append(f"    {clean_text(it['summary'], summary_chars)}")
         if it.get("article") and article_chars:
@@ -121,6 +127,7 @@ def parse_answer(text, items, companies):
             "importance": importance,
             "items": refs,
             "update": s.get("update") is True,
+            "interview": any(items[n - 1].get("interview") for n in refs),
         })
     if not stories and items:
         raise ValueError("the answer had no usable stories")
@@ -147,6 +154,7 @@ def fallback_brief(items, companies, per_company=10):
             "status": "official" if tier == "official" else "rumor" if tier in ("leak", "community") else "report",
             "importance": 4 if tier == "official" else 3 if tier == "leak" else 2,
             "items": [n],
+            "interview": bool(it.get("interview")),
         })
     return {"headline": "AI summary unavailable this run, so here are the raw headlines.", "stories": stories,
             "post_ideas": []}
@@ -179,7 +187,7 @@ def render_telegram(brief, items, companies, meta, limit=3900):
     for label, group in _sections(brief, companies):
         blocks.append(f"\n<b>━━ {e(label)} ━━</b>")
         for s in group:
-            mark = IMPORTANCE_MARK.get(s["importance"], "•")
+            mark = IMPORTANCE_MARK.get(s["importance"], "•") + (" 🎙" if s.get("interview") else "")
             text = f"{mark} <b>{e(s['title'])}</b>  <i>{STATUS_LABEL[s['status']]}</i>"
             trust = badges(s, items)
             if trust:
@@ -224,7 +232,7 @@ def render_email_html(brief, items, companies, meta):
     for label, group in _sections(brief, companies):
         parts.append(f'<h3 style="border-bottom:2px solid #ddd;padding-bottom:4px;margin-top:28px">{e(label)}</h3>')
         for s in group:
-            mark = IMPORTANCE_MARK.get(s["importance"], "")
+            mark = IMPORTANCE_MARK.get(s["importance"], "") + (" 🎙" if s.get("interview") else "")
             links = " · ".join(f'<a href="{e(u, quote=True)}">{e(n)}</a>' for n, u in _story_links(s, items))
             parts.append(
                 f'<p style="margin:14px 0"><b>{mark} {e(s["title"])}</b> '
@@ -248,7 +256,7 @@ def render_markdown(brief, items, companies, meta):
     for label, group in _sections(brief, companies):
         out += [f"## {label}", ""]
         for s in group:
-            mark = IMPORTANCE_MARK.get(s["importance"], "-")
+            mark = IMPORTANCE_MARK.get(s["importance"], "-") + (" 🎙" if s.get("interview") else "")
             links = " · ".join(f"[{n}]({u})" for n, u in _story_links(s, items))
             trust = badges(s, items)
             out.append(f"{mark} **{s['title']}** ({STATUS_LABEL[s['status']]}{' · ' + trust if trust else ''})  ")

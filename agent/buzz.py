@@ -1,13 +1,16 @@
-"""Buzz: every 3 hours, the most talked-about things on GitHub and Hugging Face, "something to talk about".
+"""Buzz: every 3 hours, the most talked-about things in AI on GitHub, Hugging Face, Reddit and YouTube,
+"something to talk about".
 
-Mainly AI (new models, upgrades, uncensored models, free models, offers, censorship news), with extra weight on
-the focus companies in config.yaml → buzz.focus. Trending GitHub repos are included even when they are not AI.
+Mainly AI (new models, upgrades, uncensored models, free models, offers, censorship news, trending discussions and
+videos), with extra weight on interviews with people who work in AI and on the focus companies in
+config.yaml → buzz.focus. Trending GitHub repos are included even when they are not AI.
 One AI call picks the best few and writes a talking point for each. Links always come from the items.
 """
 
 import html
 import json
 import re
+import time
 from concurrent.futures import ThreadPoolExecutor
 from datetime import timedelta
 
@@ -15,33 +18,46 @@ from . import accuracy, llm
 from .builders import _gh_headers, rising_repos, trending_repos
 from .common import clean_text, get, now_utc, parse_date
 from .digest import split_messages
-from .sources import fetch
+from .sources import fetch, is_interview, reddit_posts, youtube_channel_id, youtube_videos
 
 KEEP_DAYS = 7  # a pick can come back after a week if it's still the talk of the town
-TYPE_ICON = {"new model": "🧠", "upgrade": "⬆️", "uncensored": "🔓", "free": "🆓", "offer": "💸",
-             "censorship": "🚫", "repo": "📈", "paper": "📄", "news": "🤗"}
+TYPE_ICON = {"interview": "🎙", "new model": "🧠", "upgrade": "⬆️", "uncensored": "🔓", "free": "🆓", "offer": "💸",
+             "censorship": "🚫", "repo": "📈", "paper": "📄", "video": "📺", "discussion": "🗨", "news": "🤗"}
+# A video from a general channel (a VC firm, a business podcast) only counts when its title is about AI.
+AI_TOPIC = re.compile(r"\bA\.?I\b|artificial intelligence|\bAGI\b|\bASI\b|\bLLMs?\b|machine learning|deep learning|"
+                      r"neural|chatbot|\bagents?\b|agentic|superintelligen|\brobot|\bGPUs?\b|nvidia|frontier model|"
+                      r"\bvibe cod", re.I)
 UNCENSORED = re.compile(r"uncensor|abliterat|heretic|unfilter|nsfw|jailbr", re.I)
 
 BUZZ_PROMPT = """You find "something to talk about" for an AI creator, every 3 hours. You get a numbered list of
 what is hot right now on GitHub and Hugging Face (trending repos, new and trending models, uncensored models,
-Spaces, papers, the Hugging Face blog) plus a few news items about free offers and censorship.
+Spaces, papers, the Hugging Face blog), on Reddit (today's top posts in the AI subreddits, with upvotes and
+comments when known) and on YouTube (new videos from AI podcasts, interview shows and AI news channels, with views),
+plus a few news items about free offers and censorship.
+Items marked "interview" are interviews, podcasts, AMAs or talks with people who work in AI: founders, CEOs,
+researchers, engineers, investors. The creator especially wants these.
 Items marked FOCUS are about the companies the creator follows most (Anthropic/Claude, OpenAI/ChatGPT, GLM,
 Kimi, MiniMax, xAI/Grok, DeepSeek, Qwen, Google Gemini/Gemma, Meta Llama).
 
 Answer with JSON only:
 {"headline": "the one thing to talk about right now, one sentence",
- "picks": [{"item": 1, "type": "new model | upgrade | uncensored | free | offer | censorship | repo | paper | news",
+ "picks": [{"item": 1, "type": "interview | new model | upgrade | uncensored | free | offer | censorship | repo | paper | video | discussion | news",
             "what": "one sentence: what it is", "why": "why people are talking about it, with the numbers from the item",
             "talk": "one short line the creator could say or post about it"}]}
 
 Rules:
-- Up to 8 picks, most talk-worthy first. AI first, and FOCUS items before others when they are comparably hot.
-- Include at least 2 GitHub repos. A non-AI repo is fine when it is clearly one of the most talked-about today.
+- Up to 10 picks, most talk-worthy first. AI first, and FOCUS items before others when they are comparably hot.
+- When the list has interview items, 2-3 of your picks MUST be interviews (type "interview"), most-watched or
+  most-discussed first, preferring guests from FOCUS companies and well-known AI leaders. For an interview,
+  "what" names the guest and their role, and "why" gives the most talk-worthy thing they said or discussed,
+  taken from the item text, plus the views or upvotes.
+- Include at least 2 GitHub repos, and the hottest Reddit discussion or YouTube video when one stands out.
+  A non-AI repo is fine when it is clearly one of the most talked-about today.
 - Good picks: new models and model upgrades (above all from FOCUS companies), uncensored/abliterated models,
   models that became free, limited-time offers, censorship or restriction news, repos and papers with big
   momentum (stars today, likes, upvotes).
 - Skip "awesome" lists, tutorial-only repos, crypto, spam, re-uploads/quantizations of the same model when the
-  original is also listed, and anything whose purpose is unclear.
+  original is also listed, memes, help requests, sponsored videos, and anything whose purpose is unclear.
 - Use only what the item text says. Do not invent features, numbers or claims."""
 
 
@@ -170,8 +186,81 @@ def news_net(config):
     return out
 
 
-def collect(config):
+def _ago(hours):
+    return f"{int(hours)}h" if hours < 48 else f"{int(hours // 24)} days"
+
+
+def reddit(config):
+    """Today's top posts across the AI subreddits, plus the week's top interviews and AMAs there."""
+    rcfg = config.get("buzz", {}).get("reddit") or {}
+    subs = rcfg.get("subreddits") or []
+    if not subs:
+        return []
+    posts = [(p, False) for p in reddit_posts(subs, "day", rcfg.get("limit", 50))]
+    if rcfg.get("interview_search"):
+        for wait in (10, 30):  # Reddit refuses quick repeat requests ("429 Too Many Requests")
+            time.sleep(wait)
+            try:
+                posts += [(p, True) for p in reddit_posts(subs, "week", 25, rcfg["interview_search"])]
+                break
+            except Exception as e:  # noqa: BLE001 - the top posts are still worth sending
+                print(f"    Reddit interview search {'skipped' if wait == 30 else 'retrying'}: {str(e)[:100]}")
+    out, total = [], len(posts)
+    for rank, (p, searched) in enumerate(posts):
+        interview = is_interview(p["title"]) or (searched and is_interview(p["text"][:300]))
+        if p["score"] is not None:
+            extra = f"r/{p['sub']} · {p['score']:,} upvotes · {p['comments'] or 0:,} comments"
+            score = p["score"] + 2 * (p["comments"] or 0)
+        else:  # RSS: no counts, but the feed is already ordered by upvotes
+            extra = f"r/{p['sub']} · " + ("top this week" if searched else f"#{rank + 1} of today's top posts")
+            score = (total - rank) * 20
+        text = p["text"]
+        out.append({"kind": "interview" if interview else "reddit", "id": f"rd:{p['id']}", "name": p["title"],
+                    "url": p["url"], "text": clean_text(text, 300) or "(discussion thread)",
+                    "extra": extra + (" · interview/AMA" if interview else ""), "score": score})
+    return out
+
+
+def youtube(config, cache):
+    """New videos from AI podcasts, interview shows and AI news channels, ranked by views per hour."""
+    ycfg = config.get("buzz", {}).get("youtube") or {}
+    max_age = timedelta(days=ycfg.get("max_age_days", 4))
+    focus = [re.compile(k, re.I) for k in config.get("buzz", {}).get("focus", [])]
+    now = now_utc()
+
+    def about_ai(title):
+        return bool(AI_TOPIC.search(title)) or any(f.search(title) for f in focus)
+
+    def channel(ch):
+        handle = ch.get("handle")
+        cid = ch.get("channel_id") or youtube_channel_id(handle, cache)
+        try:
+            videos = youtube_videos(cid, views=True)
+        except Exception:
+            cache.pop(handle, None)  # both the feed and the page failed: look the id up again next time
+            raise
+        out = []
+        for v in videos:
+            if not v["published"] or now - v["published"] > max_age or "#shorts" in v["title"].lower():
+                continue
+            if ch.get("ai_only") and not about_ai(v["title"]):
+                continue
+            hours = max(1.0, (now - v["published"]).total_seconds() / 3600)
+            interview = bool(ch.get("interview")) or is_interview(v["title"])
+            likes = f" · {v['likes']:,} likes" if v["likes"] else ""
+            out.append({"kind": "interview" if interview else "youtube", "id": f"yt:{v['id']}", "name": v["title"],
+                        "url": v["url"], "text": clean_text(v["description"], 300),
+                        "extra": f"{ch.get('name') or v['channel']} on YouTube · {v['views']:,} views in {_ago(hours)}{likes}",
+                        "score": int(v["views"] / hours)})
+        return out
+
+    return _each(channel, ycfg.get("channels") or [])
+
+
+def collect(config, youtube_ids=None):
+    """youtube_ids: a dict that remembers each channel's id between runs (handle -> id)."""
     cfg = config.get("buzz", {})
+    youtube_ids = {} if youtube_ids is None else youtube_ids
     jobs = {
         "github": lambda: github(config),
         "github-labs": lambda: org_repos(cfg.get("gh_orgs", [])),
@@ -181,6 +270,8 @@ def collect(config):
         "hf-papers": hf_papers,
         "hf-blog": hf_blog,
         "news": lambda: news_net(config),
+        "reddit": lambda: reddit(config),
+        "youtube": lambda: youtube(config, youtube_ids),
     }
     candidates, failed = [], []
     with ThreadPoolExecutor(max_workers=4) as pool:
@@ -227,7 +318,8 @@ def _line(n, c):
 
 
 def _fallback(candidates, max_picks):
-    kind_type = {"paper": "paper", "hf-blog": "news", "news": "news", "hf-model": "new model", "hf-space": "news"}
+    kind_type = {"paper": "paper", "hf-blog": "news", "news": "news", "hf-model": "new model", "hf-space": "news",
+                 "interview": "interview", "youtube": "video", "reddit": "discussion"}
     top = candidates[:max_picks]  # already interleaved, best of each kind first
     return [(c, "uncensored" if c.get("uncensored") else kind_type.get(c["kind"], "repo"), c["text"], c["extra"], "")
             for c in top]
@@ -262,7 +354,15 @@ def pick(config, candidates):
     return "", _fallback(candidates, max_picks), "none"
 
 
-def render(headline, picks, model, failed, scanned):
+def more_interviews(candidates, picks, want=3):
+    """Interviews the AI didn't pick, so every Buzz has a few when there are any (best first)."""
+    picked = {c["id"] for c, kind, *_ in picks}
+    have = sum(1 for c, kind, *_ in picks if kind == "interview" or c["kind"] == "interview")
+    rest = [c for c in candidates if c["kind"] == "interview" and c["id"] not in picked]
+    return sorted(rest, key=lambda c: (not c.get("focus"), -c["score"]))[: max(0, want - have)]
+
+
+def render(headline, picks, model, failed, scanned, interviews=()):
     e = html.escape
     blocks = [f"<b>🔥 Buzz: what everyone's talking about</b> · {now_utc():%a %d %b, %H:%M} UTC"
               + (f"\n<i>{e(headline)}</i>" if headline else "")]
@@ -277,7 +377,11 @@ def render(headline, picks, model, failed, scanned):
         if talk:
             text += f"\n💬 <i>{e(talk)}</i>"
         blocks.append(text)
-    footer = f"From {scanned} hot items on GitHub and Hugging Face · picked by {model}"
+    if interviews:
+        lines = [f"• <a href=\"{e(c['url'], quote=True)}\">{e(c['name'])}</a> · <i>{e(c['extra'])}</i>"
+                 for c in interviews]
+        blocks.append("\n<b>🎙 More interviews worth watching</b>\n" + "\n".join(lines))
+    footer = f"From {scanned} hot items on GitHub, Hugging Face, Reddit and YouTube · picked by {model}"
     if failed:
         footer += f" · couldn't reach: {', '.join(failed)}"
     blocks.append(f"\n<i>{e(footer)}</i>")

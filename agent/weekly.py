@@ -20,7 +20,7 @@ Answer with JSON only:
 Rules: pick the 10 most important stories of the week, most important first. Merge duplicates (the same
 story often appears in several briefs; use the first item number). Use only facts in the stories."""
 
-MARK = re.compile(r"^(🔥|⭐|-|•) \*\*(.+?)\*\* \((.+?)\)\s*$")
+MARK = re.compile(r"^(🔥|⭐|-|•)( 🎙)? \*\*(.+?)\*\* \((.+?)\)\s*$")
 LINK = re.compile(r"\[([^\]]+)\]\((https?://[^)]+)\)")
 
 
@@ -38,8 +38,8 @@ def read_week(days=7):
                 continue
             m = MARK.match(line.strip())
             if m and section and section != "Post ideas":
-                current = {"title": m.group(2), "label": m.group(3), "summary": "", "url": "", "section": section,
-                           "hot": m.group(1) == "🔥", "date": path.stem[:10]}
+                current = {"title": m.group(3), "label": m.group(4), "summary": "", "url": "", "section": section,
+                           "hot": m.group(1) == "🔥", "date": path.stem[:10], "interview": bool(m.group(2))}
                 stories.append(current)
             elif current and line.startswith("  ") and line.strip():
                 link = LINK.search(line)

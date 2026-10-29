@@ -88,9 +88,10 @@ llm:
 builders:
   topics: [llm, ai-agents, mcp, agents, generative-ai, rag, coding-agent, local-llm]
 
-# Buzz (every 3 hours): what's hot on GitHub and Hugging Face, "something to talk about".
+# Buzz (every 3 hours): what's hot on GitHub, Hugging Face, Reddit and YouTube, "something to talk about",
+# with interviews of people who work in AI (founders, CEOs, researchers, engineers) first.
 buzz:
-  max_picks: 8
+  max_picks: 10
   # GitHub topics searched for fast-rising new AI repos (GitHub Trending is read in full, AI or not).
   topics: [llm, ai-agents, mcp, generative-ai, coding-agent, local-llm, rag, llm-inference]
   # The labs you follow most: their repos and Hugging Face uploads are checked directly, and anything
@@ -100,6 +101,44 @@ buzz:
   focus: ['\banthropic', '\bclaude\b', '\bopenai\b', '\bchatgpt\b', '\bgpt-?[0-9o]', '\bcodex\b', '\bglm', '\bzhipu\b',
           '\bz\.?ai\b', '\bkimi\b', '\bmoonshot', '\bminimax', '\bxai\b', '\bgrok\b', '\bdeepseek', '\bqwen',
           '\bgemini\b', '\bgemma\b', '\bllama\b', 'meta-llama']
+  # Reddit: today's top posts across these subreddits (one request), plus the week's top interviews and AMAs.
+  reddit:
+    subreddits: [LocalLLaMA, singularity, OpenAI, ClaudeAI, Anthropic, ChatGPT, ChatGPTCoding, artificial,
+                 MachineLearning, accelerate, StableDiffusion, grok, DeepSeek, Qwen_AI]
+    limit: 50
+    interview_search: 'interview OR podcast OR AMA OR "in conversation" OR fireside OR keynote'
+  # YouTube: new videos (last few days) from these channels, ranked by views per hour.
+  #   interview: true  - every video is an interview or podcast episode with a guest
+  #   ai_only: true    - the channel covers more than AI, so only videos whose title is about AI are kept
+  # Add a channel with its @handle (the part after youtube.com/@). Its id is looked up once and remembered.
+  youtube:
+    max_age_days: 4
+    channels:
+      # Interviews and podcasts with people who build, run and fund AI
+      - {name: Dwarkesh Patel, handle: DwarkeshPatel, interview: true, ai_only: true}
+      - {name: Lex Fridman, handle: lexfridman, interview: true, ai_only: true}
+      - {name: No Priors, handle: NoPriorsPodcast, interview: true}
+      - {name: Latent Space, handle: LatentSpacePod, interview: true}
+      - {name: Cognitive Revolution, handle: CognitiveRevolutionPodcast, interview: true}
+      - {name: Machine Learning Street Talk, handle: MachineLearningStreetTalk, interview: true}
+      - {name: Bg2 Pod, handle: Bg2Pod, interview: true, ai_only: true}
+      - {name: All-In Podcast, handle: allin, interview: true, ai_only: true}
+      - {name: 20VC, handle: 20VC, interview: true, ai_only: true}
+      - {name: "Lenny's Podcast", handle: LennysPodcast, interview: true, ai_only: true}
+      - {name: The Diary Of A CEO, handle: TheDiaryOfACEO, interview: true, ai_only: true}
+      - {name: Sequoia Capital (Training Data), handle: sequoiacapital, interview: true, ai_only: true}
+      - {name: a16z, handle: a16z, ai_only: true}
+      - {name: Y Combinator, handle: ycombinator, ai_only: true}
+      # The labs' own channels (launches, talks and conversations with their researchers)
+      - {name: Anthropic, handle: anthropic-ai}
+      - {name: OpenAI, handle: OpenAI}
+      - {name: Google DeepMind, handle: googledeepmind}
+      # AI news channels
+      - {name: AI Explained, handle: aiexplained-official, channel_id: UCNJ1Ymd5yFuUPtn21xtRbbw}
+      - {name: Matthew Berman, handle: matthew_berman}
+      - {name: Wes Roth, handle: WesRoth}
+      - {name: Two Minute Papers, handle: TwoMinutePapers}
+      - {name: Fireship, handle: Fireship, ai_only: true}
   # Hugging Face and GitHub don't publish offers or censorship news, so these two news searches fill the gap.
   news_queries:
     - '("free for a limited time" OR "limited-time" OR "free access" OR "free tier" OR "discount") (Claude OR ChatGPT OR GPT OR GLM OR Kimi OR MiniMax OR Grok OR Gemini OR DeepSeek OR Qwen)'

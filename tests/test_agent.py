@@ -446,6 +446,136 @@ def test_ask_and_repos_commands(tmp_path, monkeypatch):
     assert "What did OpenAI launch?" in sent[1] and "GPT-6" in sent[1] and "GPT-6" in asked["user"]
 
 
+def youtube_feed(videos):
+    """A YouTube channel feed: videos = [(title, views, hours ago)]."""
+    entries = "".join(
+        f"""<entry><id>yt:video:v{n}</id><yt:videoId>v{n}</yt:videoId><title>{title}</title>
+        <link rel="alternate" href="https://www.youtube.com/watch?v=v{n}"/><author><name>Channel</name></author>
+        <published>{(now_utc() - timedelta(hours=hours)).isoformat()}</published>
+        <media:group><media:description>Episode notes for {title}</media:description>
+        <media:community><media:starRating count="1200" average="5" min="1" max="5"/>
+        <media:statistics views="{views}"/></media:community></media:group></entry>"""
+        for n, (title, views, hours) in enumerate(videos))
+    return (f"""<?xml version="1.0" encoding="UTF-8"?><feed xmlns:yt="http://www.youtube.com/xml/schemas/2015"
+        xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom"><title>Channel</title>
+        {entries}</feed>""").encode()
+
+
+def test_youtube_source_marks_interviews(monkeypatch):
+    from agent import sources
+
+    feed = youtube_feed([("Sam Altman on GPT-6 | Ep. 42", 50_000, 5), ("OpenAI news roundup", 1_000, 3)])
+
+    class R:
+        content = feed
+    monkeypatch.setattr(sources, "get", lambda url, **kw: R())
+    plain = sources.fetch_youtube({"name": "News channel", "type": "youtube", "channel_id": "UCx"}, {})
+    assert [i["interview"] for i in plain] == [True, False]  # "Ep. 42" in the title
+    assert plain[0]["summary"].startswith("50,000 views on YouTube.") and plain[0]["id"] != plain[1]["id"]
+    podcast = sources.fetch_youtube({"name": "Podcast", "type": "youtube", "channel_id": "UCx", "interview": True}, {})
+    assert all(i["interview"] for i in podcast)
+    assert sources.is_interview("AMA with the OpenAI Codex team") and not sources.is_interview("GPT-6 is out")
+
+
+def reddit_feed(posts):
+    """A Reddit RSS feed: posts = [(id, title, text)]."""
+    entries = "".join(
+        f"""<entry><category term="LocalLLaMA" label="r/LocalLLaMA"/><id>t3_{pid}</id><title>{title}</title>
+        <link href="https://www.reddit.com/r/LocalLLaMA/comments/{pid}/"/><updated>2026-10-02T10:00:00+00:00</updated>
+        <content type="html">&lt;p&gt;{text}&lt;/p&gt; submitted by /u/someone [link] [comments]</content></entry>"""
+        for pid, title, text in posts)
+    return f"""<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>t</title>
+        {entries}</feed>""".encode()
+
+
+def test_reddit_posts_and_interview_search(monkeypatch):
+    from agent import buzz, sources
+
+    class Feed:
+        content = reddit_feed([("z", "Demis Hassabis interview on AGI timelines", "")])
+    calls = []
+    monkeypatch.setattr(sources, "get", lambda url, **kw: calls.append((url, kw.get("params"))) or Feed())
+    posts = sources.reddit_posts(["singularity", "OpenAI"], "day", 50)
+    assert calls[0] == ("https://www.reddit.com/r/singularity+OpenAI/top/.rss", {"t": "day", "limit": 50})
+    assert posts[0]["sub"] == "LocalLLaMA" and posts[0]["text"] == "" and posts[0]["score"] is None
+    sources.reddit_posts(["singularity"], "week", 25, "interview OR AMA")
+    assert calls[1][0] == "https://www.reddit.com/r/singularity/search.rss" and calls[1][1]["q"] == "interview OR AMA"
+
+    monkeypatch.setattr(buzz, "reddit_posts", lambda subs, period, limit, query=None: [] if query else posts)
+    monkeypatch.setattr(buzz.time, "sleep", lambda s: None)
+    cands = buzz.reddit({"buzz": {"reddit": {"subreddits": ["singularity"], "interview_search": "interview"}}})
+    assert cands[0]["kind"] == "interview" and "#1 of today's top posts" in cands[0]["extra"]
+
+
+def test_youtube_falls_back_to_the_videos_page(monkeypatch):
+    from agent import sources
+
+    data = {"contents": {"tabs": [{"richGridRenderer": {"contents": [
+        {"richItemRenderer": {"content": {"videoRenderer": {   # older layout
+            "videoId": "old1", "title": {"runs": [{"text": "Sam Altman interview: GPT-6"}]},
+            "descriptionSnippet": {"runs": [{"text": "We talk about"}]},
+            "viewCountText": {"simpleText": "1,234,567 views"}, "publishedTimeText": {"simpleText": "2 days ago"}}}}},
+        {"richItemRenderer": {"content": {"lockupViewModel": {  # newer layout
+            "contentId": "new1", "contentType": "LOCKUP_CONTENT_TYPE_VIDEO",
+            "metadata": {"lockupMetadataViewModel": {
+                "title": {"content": "Dario Amodei on Claude"},
+                "metadata": {"contentMetadataViewModel": {"metadataRows": [{"metadataParts": [
+                    {"text": {"content": "1.5M views"}}, {"text": {"content": "5 hours ago"}}]}]}}}}}}}},
+    ]}}]}}
+    page = f"<html><script>var ytInitialData = {json.dumps(data)};</script></html>"
+
+    class R:
+        def __init__(self, url):
+            if "feeds/videos.xml" in url:
+                raise ValueError("404 Client Error: Not Found")
+            self.text = page
+    monkeypatch.setattr(sources, "get", lambda url, **kw: R(url))
+    videos = sources.youtube_videos("UCx")
+    assert [(v["id"], v["title"], v["views"]) for v in videos] == [
+        ("yt:video:old1", "Sam Altman interview: GPT-6", 1_234_567), ("yt:video:new1", "Dario Amodei on Claude", 1_500_000)]
+    assert 47 <= (now_utc() - videos[0]["published"]).total_seconds() / 3600 <= 49
+    assert videos[1]["url"] == "https://www.youtube.com/watch?v=new1" and videos[0]["description"] == "We talk about"
+    items = sources.fetch_youtube({"name": "Podcast", "type": "youtube", "channel_id": "UCx", "interview": True}, {})
+    assert items[0]["summary"].startswith("1,234,567 views on YouTube.") and all(i["interview"] for i in items)
+
+    urls = []
+    monkeypatch.setattr(sources, "get", lambda url, **kw: urls.append(url) or R(url))
+    sources.youtube_videos("UCx", views=True)  # Buzz: the Videos page first, for real view counts
+    assert urls == ["https://www.youtube.com/channel/UCx/videos"]
+
+    combined = {"x": {"videoId": "c1", "title": {"simpleText": "My 2 views on AI"},
+                      "viewCountText": {"simpleText": "Lex Fridman 12K views • 3 hours ago"}}}
+    [v] = sources.parse_youtube_videos_page(f"<script>window[\"ytInitialData\"] = {json.dumps(combined)};</script>")
+    assert v["views"] == 12_000 and 2.9 <= (now_utc() - v["published"]).total_seconds() / 3600 <= 3.1
+
+
+def test_digest_marks_interviews(tmp_path, monkeypatch):
+    from agent import weekly
+
+    talk = item("Dario Amodei on Claude's next model", source="Dwarkesh Patel (YouTube)")
+    talk["interview"] = True
+    news = item("Anthropic raises prices", tier="official", company="anthropic")
+    msg = digest.build_user_message([talk, news], now_utc())
+    assert "(newsletter · interview · Dwarkesh Patel (YouTube)" in msg and "(official · Test Feed" in msg
+    answer = json.dumps({"headline": "h", "stories": [
+        {"company": "anthropic", "title": "Dario Amodei on the next Claude", "summary": "He said...", "status": "report",
+         "importance": 4, "items": [1]},
+        {"company": "anthropic", "title": "Prices go up", "status": "official", "importance": 3, "items": [2]}]})
+    brief = digest.parse_answer(answer, [talk, news], COMPANIES)
+    assert [s["interview"] for s in brief["stories"]] == [True, False]
+    meta = {"when": "now", "footer": "f", "warning": None}
+    md = digest.render_markdown(brief, [talk, news], COMPANIES, meta)
+    assert "⭐ 🎙 **Dario Amodei on the next Claude**" in md
+    assert "🎙" in "".join(digest.render_telegram(brief, [talk, news], COMPANIES, meta))
+
+    (tmp_path / "digests").mkdir()
+    (tmp_path / "digests" / f"{now_utc():%Y-%m-%d_%H%M}.md").write_text(md, encoding="utf-8")
+    monkeypatch.setattr(weekly, "ROOT", tmp_path)
+    stories = weekly.read_week()
+    assert [(s["title"], s["interview"]) for s in stories] == [("Dario Amodei on the next Claude", True),
+                                                                ("Prices go up", False)]
+
+
 def test_buzz_collect_pick_and_render(monkeypatch):
     from agent import builders, buzz
 
@@ -488,14 +618,35 @@ def test_buzz_collect_pick_and_render(monkeypatch):
                              b"</item></channel></rss>")
         if "news.google.com" in url:
             return R(content=b"<rss><channel></channel></rss>")
+        if "reddit.com" in url:
+            if "search" in url:
+                return R(content=reddit_feed([("ama", "AMA with the Qwen team", "")]))
+            return R(content=reddit_feed([("x", "GLM-5.3 beats everything on my evals", "Long post"),
+                                          ("y", "My cat", "")]))
+        if "youtube.com/@" in url:
+            return R(text='<link rel="alternate" href="https://www.youtube.com/feeds/videos.xml?channel_id=UC' + "a" * 22 + '">')
+        if "feeds/videos.xml" in url:
+            return R(content=youtube_feed([("Dario Amodei: Claude and the next five years", 600_000, 2),
+                                           ("How we bake bread", 9_000, 3)]))
         raise AssertionError(url)
     monkeypatch.setattr(builders, "get", fake_get)
+    monkeypatch.setattr(buzz.time, "sleep", lambda s: None)
     monkeypatch.setattr(buzz, "get", fake_get)
     monkeypatch.setattr("agent.sources.get", fake_get)
 
-    candidates, failed = buzz.collect(CONFIG)
+    config = {**CONFIG, "buzz": {**CONFIG["buzz"], "youtube": {"max_age_days": 4, "channels": [
+        {"name": "Dwarkesh Patel", "handle": "DwarkeshPatel", "interview": True, "ai_only": True}]}}}
+    ids = {}
+    candidates, failed = buzz.collect(config, ids)
     by_name = {c["name"]: c for c in candidates}
     assert failed == []
+    assert ids == {"DwarkeshPatel": "UC" + "a" * 22}  # remembered for the next run
+    dario = by_name["Dario Amodei: Claude and the next five years"]
+    assert dario["kind"] == "interview" and dario["focus"] and "600,000 views in 2h" in dario["extra"]
+    assert "How we bake bread" not in by_name  # not about AI, from a channel marked ai_only
+    glm = by_name["GLM-5.3 beats everything on my evals"]
+    assert glm["kind"] == "reddit" and "r/LocalLLaMA · #1 of today's top posts" in glm["extra"] and glm["text"] == "Long post"
+    assert by_name["AMA with the Qwen team"]["kind"] == "interview" and "top this week" in by_name["AMA with the Qwen team"]["extra"]
     assert {"acme/agent-kit", "x/css-art", "MoonshotAI/Kimi-K3", "MiniMaxAI/MiniMax-M3", "zai-org/GLM-5.3",
             "someone/Qwen4-uncensored", "Agents that sleep", "Welcome GLM-5.3"} <= set(by_name)  # non-AI repos kept too
     assert "not AI" in by_name["x/css-art"]["extra"]
@@ -511,6 +662,10 @@ def test_buzz_collect_pick_and_render(monkeypatch):
     assert headline == "Kimi K3 lands" and len(picks) == 1 and picks[0][1] == "new model"
     text = "\n".join(buzz.render(headline, picks, model, [], len(candidates)))
     assert "🔥 Buzz" in text and "🧠" in text and "https://github.com/MoonshotAI/Kimi-K3" in text and "Kimi is back" in text
+    more = buzz.more_interviews(candidates, picks)
+    assert [c["name"] for c in more] == ["Dario Amodei: Claude and the next five years", "AMA with the Qwen team"]
+    text = "\n".join(buzz.render(headline, picks, model, [], len(candidates), more))
+    assert "🎙 More interviews worth watching" in text and "AMA with the Qwen team" in text and "Reddit and YouTube" in text
 
     def broken(*a, **k):
         raise RuntimeError("every AI is down")
@@ -527,7 +682,7 @@ def test_buzz_run_skips_items_already_sent(tmp_path, monkeypatch):
     monkeypatch.setattr(main, "answer_commands", lambda *a: None)
     cands = [{"kind": "repo", "id": f"gh:a/{n}", "name": f"a/{n}", "url": f"https://github.com/a/{n}", "text": "AI tool",
               "extra": "", "score": n, "focus": False, "uncensored": False} for n in range(3)]
-    monkeypatch.setattr(buzz, "collect", lambda config: (list(cands), []))
+    monkeypatch.setattr(buzz, "collect", lambda config, ids=None: (list(cands), []))
     monkeypatch.setattr(buzz.llm, "complete", lambda *a: (json.dumps({"headline": "h", "picks": [{"item": 1, "type": "repo"}]}), "m"))
     sent = []
     monkeypatch.setattr(main, "telegram_configured", lambda: True)

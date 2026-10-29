@@ -20,7 +20,7 @@ HELP = (
     "/free · models you can use for free right now (OpenRouter, OpenCode)\n"
     "/latest · resend the most recent news brief\n"
     "/repos · today's Builder picks (trending AI tools and repos)\n"
-    "/buzz · the latest Buzz: what's hot on GitHub and Hugging Face right now\n"
+    "/buzz · the latest Buzz: what's hot on GitHub, Hugging Face, Reddit and YouTube, with interviews\n"
     "/ask your question · ask about this week's news, answered from your briefs\n"
     "/help · this message\n\n"
     "For an instant list, open GitHub: Actions → AI news digest → Run workflow → free-models."
@@ -29,7 +29,7 @@ COMMANDS = [
     {"command": "free", "description": "Free models you can use right now"},
     {"command": "latest", "description": "Resend the latest news brief"},
     {"command": "repos", "description": "Today's Builder picks"},
-    {"command": "buzz", "description": "What's hot on GitHub and Hugging Face"},
+    {"command": "buzz", "description": "What's hot: GitHub, Hugging Face, Reddit, YouTube"},
     {"command": "ask", "description": "Ask about this week's news"},
     {"command": "news", "description": "Run a fresh news check now"},
     {"command": "help", "description": "What I can do"},

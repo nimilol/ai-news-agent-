@@ -3,19 +3,24 @@
 A free agent that follows four AI companies, **Anthropic (Claude), OpenAI (GPT), xAI (Grok) and Zhipu / Z.ai (GLM)**,
 and sends you a summary on **Telegram** and/or **email**.
 
-- **Every 6 hours:** reads about 42 sources (official blogs and changelogs, leak trackers, Hacker News, Reddit,
-  newsletters, YouTube, the press), keeps only what's new and about your four companies, and has a free AI model
-  write a brief: grouped by company, labelled *Official / Report / Rumor*, with links and post ideas.
+- **Every 6 hours:** reads about 65 sources (official blogs and changelogs, leak trackers, Hacker News, Reddit,
+  newsletters, YouTube news channels and interview podcasts, the press), keeps only what's new and about your four
+  companies, and has a free AI model write a brief: grouped by company, labelled *Official / Report / Rumor*, with
+  links and post ideas. Interviews (a CEO or researcher on a podcast, an AMA on Reddit) are marked 🎙.
 - **Every hour:** checks the official sources plus the early-signal sources (TestingCatalog leaks, new and stealth
   models on OpenRouter, new model listings on models.dev) and the free-model sources (new free models on OpenRouter
   and in OpenCode), and pings you on Telegram as soon as something new appears (no AI, so it's fast and always works).
 - **New free models:** the brief has a "🆓 New free models you can use" section for models that just became free on
   OpenRouter or in OpenCode, from any company.
-- **Every 3 hours:** "🔥 Buzz", something to talk about: the most talked-about things on **GitHub and Hugging Face**
-  right now. Trending repos (AI first, but a non-AI repo that's blowing up gets in too), new models and upgrades
-  (extra focus on Claude, OpenAI, GLM, Kimi, MiniMax, Grok, DeepSeek, Qwen, Gemini/Gemma and Llama), uncensored
-  models, trending Spaces and papers, the Hugging Face blog, plus news searches for free/limited-time offers and
+- **Every 3 hours:** "🔥 Buzz", something to talk about: the most talked-about things on **GitHub, Hugging Face,
+  Reddit and YouTube** right now. Trending repos (AI first, but a non-AI repo that's blowing up gets in too), new
+  models and upgrades (extra focus on Claude, OpenAI, GLM, Kimi, MiniMax, Grok, DeepSeek, Qwen, Gemini/Gemma and
+  Llama), uncensored models, trending Spaces and papers, the Hugging Face blog, today's top posts in the AI
+  subreddits, the most-watched new videos from AI channels, plus news searches for free/limited-time offers and
   censorship. Each pick says what it is, why people are talking, and a line you could post.
+- **🎙 Interviews with people who work in AI:** every Buzz puts 2-3 of the most-watched or most-discussed interviews
+  first (founders, CEOs, researchers, engineers and investors on Dwarkesh Patel, Lex Fridman, No Priors, Latent
+  Space, Bg2, All-In, 20VC and more, plus Reddit AMAs), with who the guest is and what they said.
 - **Every morning:** "🛠 Builder picks", the most useful trending AI tools and repos (GitHub Trending, fast-rising
   new repos, Hugging Face, Show HN), each with what it does and who it helps.
 - **Every Sunday:** a weekly recap of the biggest stories, with recap post ideas.
@@ -88,7 +93,8 @@ Add each one by name (`TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `GEMINI_API_KEY`
 ## Day to day
 
 - **Buzz:** every 3 hours at :47 past (00:47, 03:47, … UTC; `.github/workflows/buzz.yml`). The labs it watches,
-  the GitHub topics and the offer/censorship news searches are in `config.yaml` → `buzz`. Run it by hand with
+  the GitHub topics, the subreddits (`buzz.reddit`), the YouTube channels (`buzz.youtube`, add any channel by its
+  @handle) and the offer/censorship news searches are in `config.yaml` → `buzz`. Run it by hand with
   **Actions → Buzz → Run workflow** (`preview` prints it in the log without sending).
 - **Builder picks:** every morning at 06:41 UTC (`.github/workflows/builders.yml`). Topics for the rising-repo
   search are in `config.yaml` → `builders`.
@@ -110,7 +116,7 @@ Send these to your bot in Telegram (they also appear in the bot's **/** menu):
 | `/free` | Every model you can use for free right now on OpenRouter and in OpenCode, newest first (🆕 = added in the last 14 days) |
 | `/latest` | The most recent news brief again |
 | `/repos` | Today's Builder picks |
-| `/buzz` | The latest Buzz: what's hot on GitHub and Hugging Face |
+| `/buzz` | The latest Buzz: what's hot on GitHub, Hugging Face, Reddit and YouTube, with interviews |
 | `/ask your question` | An answer from this week's briefs, e.g. `/ask what did OpenAI change this week?` |
 | `/news` | Run a fresh news check now (instant bot only) |
 | `/help` | The list of commands |
@@ -187,7 +193,7 @@ python -m pytest -q                  # offline tests
 |---|---|
 | `sources.yaml` | where the agent looks |
 | `config.yaml` | companies, keywords, AI providers, delivery |
-| `agent/` | the code: `sources.py` (fetchers), `digest.py` (AI prompt and formatting), `accuracy.py` (articles, source counts, blocklist), `factcheck.py` (second-AI check), `builders.py` (Builder picks), `buzz.py` (3-hourly Buzz), `weekly.py` (recap), `freemodels.py` (`/free`), `commands.py` (Telegram commands), `botpush.py` (feeds the instant bot), `llm.py` (providers), `deliver.py` (Telegram/email), `__main__.py` (the runs) |
+| `agent/` | the code: `sources.py` (fetchers), `digest.py` (AI prompt and formatting), `accuracy.py` (articles, source counts, blocklist), `factcheck.py` (second-AI check), `builders.py` (Builder picks), `buzz.py` (3-hourly Buzz: GitHub, Hugging Face, Reddit, YouTube), `weekly.py` (recap), `freemodels.py` (`/free`), `commands.py` (Telegram commands), `botpush.py` (feeds the instant bot), `llm.py` (providers), `deliver.py` (Telegram/email), `__main__.py` (the runs) |
 | `bot/` | the instant Telegram bot for Cloudflare Workers, its tests and deploy script |
 | `state/` | the agent's memory of what it already sent (saved by the workflows) |
 | `digests/` | archive of every brief |
