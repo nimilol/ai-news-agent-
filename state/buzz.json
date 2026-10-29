@@ -38,6 +38,7 @@
   "gh:anthropics/claude-for-legal": "2026-10-24",
   "gh:anthropics/claude-plugins-official": "2026-10-28",
   "gh:anthropics/claude-quickstarts": "2026-10-24",
+  "gh:anthropics/financial-services": "2026-10-29",
   "gh:anthropics/skills": "2026-10-29",
   "gh:cloudflare/security-audit-skill": "2026-10-22",
   "gh:coollabsio/coolify": "2026-10-25",
@@ -66,6 +67,7 @@
   "gh:luongnv89/claude-howto": "2026-10-22",
   "gh:lwh0630/TokenBar": "2026-10-26",
   "gh:makecindy/cindy": "2026-10-24",
+  "gh:milind-soni/OpenMausBot": "2026-10-29",
   "gh:morganlinton/BeautifulRust": "2026-10-24",
   "gh:multica-ai/andrej-karpathy-skills": "2026-10-26",
   "gh:nightly-labs/openbot": "2026-10-27",
@@ -221,10 +223,16 @@
   "rd:t3_1xdmqml": "2026-10-29",
   "rd:t3_1xhmo1q": "2026-10-29",
   "rd:t3_1xhr3wv": "2026-10-29",
+  "rd:t3_1xi1xgl": "2026-10-29",
   "rd:t3_1xif6lf": "2026-10-29",
+  "rd:t3_1xifmqv": "2026-10-29",
   "yt:yt:video:24XUcWhqY_4": "2026-10-29",
+  "yt:yt:video:IRJDwtAreB4": "2026-10-29",
   "yt:yt:video:MRQTlwcW-aQ": "2026-10-29",
-  "yt:yt:video:nEaJMdM1djM": "2026-10-29"
+  "yt:yt:video:nEaJMdM1djM": "2026-10-29",
+  "yt:yt:video:tTuk4pGnT0A": "2026-10-29",
+  "yt:yt:video:vhPCo-8K78U": "2026-10-29",
+  "yt:yt:video:zHG6sAss_kE": "2026-10-29"
  },
  "sources": {
   "YouTube channel ids": {
