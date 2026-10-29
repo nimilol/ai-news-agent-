@@ -38,6 +38,7 @@
   "gh:anthropics/claude-for-legal": "2026-10-24",
   "gh:anthropics/claude-plugins-official": "2026-10-28",
   "gh:anthropics/claude-quickstarts": "2026-10-24",
+  "gh:anthropics/skills": "2026-10-29",
   "gh:cloudflare/security-audit-skill": "2026-10-22",
   "gh:coollabsio/coolify": "2026-10-25",
   "gh:debpalash/VoiceStudio": "2026-10-25",
@@ -72,6 +73,7 @@
   "gh:obra/superpowers": "2026-10-27",
   "gh:openai/codex": "2026-10-28",
   "gh:openai/codex-security": "2026-10-25",
+  "gh:openai/openai-agents-python": "2026-10-29",
   "gh:openai/openai-cookbook": "2026-10-22",
   "gh:pbakaus/impeccable": "2026-10-24",
   "gh:php/php-src": "2026-10-23",
@@ -126,6 +128,7 @@
   "hf:mistralai/Timestral-209M": "2026-10-24",
   "hf:orcarouter/DeepSeek-V4.1-Flash-1017-abliterated-GGUF": "2026-10-24",
   "hf:orcarouter/OrcaCyber-Nano-1.0": "2026-10-26",
+  "hf:orcarouter/Qwen3.8-Flash-Next-Uncensored-GGUF": "2026-10-29",
   "hf:ornith-ai/Ornith-1.5-122B": "2026-10-25",
   "hf:ttindall/Qwen3.8-27B-Defiance-Uncensored-MTP-GGUF": "2026-10-23",
   "hf:unsloth/flint-GGUF": "2026-10-25",
@@ -142,6 +145,7 @@
   "news:070342dab795780c": "2026-10-22",
   "news:076fba7ee84d8aa5": "2026-10-29",
   "news:081ee693fc503d99": "2026-10-28",
+  "news:08430b517efc590b": "2026-10-29",
   "news:084deee3d41766a7": "2026-10-26",
   "news:0934ed6072aa8633": "2026-10-24",
   "news:0a7d9f7e7a94548b": "2026-10-28",
@@ -213,7 +217,38 @@
   "paper:2610.33472": "2026-10-27",
   "paper:2610.34283": "2026-10-28",
   "paper:2610.35013": "2026-10-28",
-  "paper:2610.36077": "2026-10-29"
+  "paper:2610.36077": "2026-10-29",
+  "rd:t3_1xdmqml": "2026-10-29",
+  "rd:t3_1xhmo1q": "2026-10-29",
+  "rd:t3_1xhr3wv": "2026-10-29",
+  "rd:t3_1xif6lf": "2026-10-29",
+  "yt:yt:video:24XUcWhqY_4": "2026-10-29",
+  "yt:yt:video:MRQTlwcW-aQ": "2026-10-29",
+  "yt:yt:video:nEaJMdM1djM": "2026-10-29"
  },
- "sources": {}
+ "sources": {
+  "YouTube channel ids": {
+   "20VC": "UCf0PBRjhf0rF8fWBIxTuoWA",
+   "Bg2Pod": "UC-yRDvpR99LUc5l7i7jLzew",
+   "CognitiveRevolutionPodcast": "UCjNRVMBVI30Sak_p6HRWhIA",
+   "DwarkeshPatel": "UCXl4i9dYBrFOabk0xGmbkRA",
+   "Fireship": "UCsBjURrPoezykLs9EqgamOA",
+   "LatentSpacePod": "UCxBcwypKK-W3GHd_RZ9FZrQ",
+   "LennysPodcast": "UC6t1O76G0jYXOAoYCm153dA",
+   "MachineLearningStreetTalk": "UCMLtBahI5DMrt0NPvDSoIRQ",
+   "NoPriorsPodcast": "UCSI7h9hydQ40K5MJHnCrQvw",
+   "OpenAI": "UCXZCJLdBC09xxGZ6gcdrc6A",
+   "TheDiaryOfACEO": "UCGq-a57w-aPwyi3pW7XLiHw",
+   "TwoMinutePapers": "UCbfYPyITQ-7l4upoX8nvctg",
+   "WesRoth": "UCqcbQf6yw5KzRoDDcZ_wBSw",
+   "a16z": "UC9cn0TuPq4dnbTY-CBsm8XA",
+   "allin": "UCESLZhusAkFfsNsApnjF_Cg",
+   "anthropic-ai": "UCrDwWp7EBBv4NwvScIpBDOA",
+   "googledeepmind": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+   "lexfridman": "UCSHZKyawb77ixDdsGog4iWA",
+   "matthew_berman": "UCawZsQWqfGSbCI5yjkdVkTA",
+   "sequoiacapital": "UCWrF0oN6unbXrWsTN7RctTw",
+   "ycombinator": "UCcefcZRL2oaA_uBNeo5UOWg"
+  }
+ }
 }
