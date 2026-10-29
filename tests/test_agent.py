@@ -477,31 +477,66 @@ def test_youtube_source_marks_interviews(monkeypatch):
     assert sources.is_interview("AMA with the OpenAI Codex team") and not sources.is_interview("GPT-6 is out")
 
 
-def test_reddit_posts_falls_back_to_rss(monkeypatch):
-    from agent import sources
+def reddit_feed(posts):
+    """A Reddit RSS feed: posts = [(id, title, text)]."""
+    entries = "".join(
+        f"""<entry><category term="LocalLLaMA" label="r/LocalLLaMA"/><id>t3_{pid}</id><title>{title}</title>
+        <link href="https://www.reddit.com/r/LocalLLaMA/comments/{pid}/"/><updated>2026-10-02T10:00:00+00:00</updated>
+        <content type="html">&lt;p&gt;{text}&lt;/p&gt; submitted by /u/someone [link] [comments]</content></entry>"""
+        for pid, title, text in posts)
+    return f"""<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>t</title>
+        {entries}</feed>""".encode()
 
-    rss = b"""<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>top</title>
-    <entry><category term="singularity"/><id>t3_z</id><title>Demis Hassabis interview on AGI timelines</title>
-      <link href="https://www.reddit.com/r/singularity/comments/z/"/><updated>2026-10-02T10:00:00+00:00</updated></entry>
-    </feed>"""
 
-    class Blocked:
-        def json(self):
-            raise ValueError("not JSON (blocked page)")
+def test_reddit_posts_and_interview_search(monkeypatch):
+    from agent import buzz, sources
 
     class Feed:
-        content = rss
-    urls = []
-    monkeypatch.setattr(sources, "get", lambda url, **kw: urls.append(url) or (Feed() if url.endswith(".rss") else Blocked()))
+        content = reddit_feed([("z", "Demis Hassabis interview on AGI timelines", "")])
+    calls = []
+    monkeypatch.setattr(sources, "get", lambda url, **kw: calls.append((url, kw.get("params"))) or Feed())
     posts = sources.reddit_posts(["singularity", "OpenAI"], "day", 50)
-    assert urls == ["https://www.reddit.com/r/singularity+OpenAI/top.json", "https://www.reddit.com/r/singularity+OpenAI/top/.rss"]
-    assert posts[0]["sub"] == "singularity" and posts[0]["score"] is None
+    assert calls[0] == ("https://www.reddit.com/r/singularity+OpenAI/top/.rss", {"t": "day", "limit": 50})
+    assert posts[0]["sub"] == "LocalLLaMA" and posts[0]["text"] == "" and posts[0]["score"] is None
+    sources.reddit_posts(["singularity"], "week", 25, "interview OR AMA")
+    assert calls[1][0] == "https://www.reddit.com/r/singularity/search.rss" and calls[1][1]["q"] == "interview OR AMA"
 
-    from agent import buzz
     monkeypatch.setattr(buzz, "reddit_posts", lambda subs, period, limit, query=None: [] if query else posts)
     monkeypatch.setattr(buzz.time, "sleep", lambda s: None)
     cands = buzz.reddit({"buzz": {"reddit": {"subreddits": ["singularity"], "interview_search": "interview"}}})
     assert cands[0]["kind"] == "interview" and "#1 of today's top posts" in cands[0]["extra"]
+
+
+def test_youtube_falls_back_to_the_videos_page(monkeypatch):
+    from agent import sources
+
+    data = {"contents": {"tabs": [{"richGridRenderer": {"contents": [
+        {"richItemRenderer": {"content": {"videoRenderer": {   # older layout
+            "videoId": "old1", "title": {"runs": [{"text": "Sam Altman interview: GPT-6"}]},
+            "descriptionSnippet": {"runs": [{"text": "We talk about"}]},
+            "viewCountText": {"simpleText": "1,234,567 views"}, "publishedTimeText": {"simpleText": "2 days ago"}}}}},
+        {"richItemRenderer": {"content": {"lockupViewModel": {  # newer layout
+            "contentId": "new1", "contentType": "LOCKUP_CONTENT_TYPE_VIDEO",
+            "metadata": {"lockupMetadataViewModel": {
+                "title": {"content": "Dario Amodei on Claude"},
+                "metadata": {"contentMetadataViewModel": {"metadataRows": [{"metadataParts": [
+                    {"text": {"content": "1.5M views"}}, {"text": {"content": "5 hours ago"}}]}]}}}}}}}},
+    ]}}]}}
+    page = f"<html><script>var ytInitialData = {json.dumps(data)};</script></html>"
+
+    class R:
+        def __init__(self, url):
+            if "feeds/videos.xml" in url:
+                raise ValueError("404 Client Error: Not Found")
+            self.text = page
+    monkeypatch.setattr(sources, "get", lambda url, **kw: R(url))
+    videos = sources.youtube_videos("UCx")
+    assert [(v["id"], v["title"], v["views"]) for v in videos] == [
+        ("yt:video:old1", "Sam Altman interview: GPT-6", 1_234_567), ("yt:video:new1", "Dario Amodei on Claude", 1_500_000)]
+    assert 47 <= (now_utc() - videos[0]["published"]).total_seconds() / 3600 <= 49
+    assert videos[1]["url"] == "https://www.youtube.com/watch?v=new1" and videos[0]["description"] == "We talk about"
+    items = sources.fetch_youtube({"name": "Podcast", "type": "youtube", "channel_id": "UCx", "interview": True}, {})
+    assert items[0]["summary"].startswith("1,234,567 views on YouTube.") and all(i["interview"] for i in items)
 
 
 def test_digest_marks_interviews(tmp_path, monkeypatch):
@@ -575,14 +610,9 @@ def test_buzz_collect_pick_and_render(monkeypatch):
             return R(content=b"<rss><channel></channel></rss>")
         if "reddit.com" in url:
             if "search" in url:
-                return R({"data": {"children": [{"data": {
-                    "name": "t3_ama", "title": "AMA with the Qwen team", "permalink": "/r/LocalLLaMA/comments/ama/",
-                    "subreddit": "LocalLLaMA", "score": 900, "num_comments": 400, "created_utc": 1}}]}})
-            return R({"data": {"children": [
-                {"data": {"name": "t3_x", "title": "GLM-5.3 beats everything on my evals", "selftext": "Long post",
-                          "permalink": "/r/LocalLLaMA/comments/x/", "subreddit": "LocalLLaMA", "score": 2500,
-                          "num_comments": 300, "created_utc": 1}},
-                {"data": {"name": "t3_s", "title": "Weekly thread", "stickied": True, "permalink": "/r/a/comments/s/"}}]}})
+                return R(content=reddit_feed([("ama", "AMA with the Qwen team", "")]))
+            return R(content=reddit_feed([("x", "GLM-5.3 beats everything on my evals", "Long post"),
+                                          ("y", "My cat", "")]))
         if "youtube.com/@" in url:
             return R(text='<link rel="alternate" href="https://www.youtube.com/feeds/videos.xml?channel_id=UC' + "a" * 22 + '">')
         if "feeds/videos.xml" in url:
@@ -590,6 +620,7 @@ def test_buzz_collect_pick_and_render(monkeypatch):
                                            ("How we bake bread", 9_000, 3)]))
         raise AssertionError(url)
     monkeypatch.setattr(builders, "get", fake_get)
+    monkeypatch.setattr(buzz.time, "sleep", lambda s: None)
     monkeypatch.setattr(buzz, "get", fake_get)
     monkeypatch.setattr("agent.sources.get", fake_get)
 
@@ -603,9 +634,9 @@ def test_buzz_collect_pick_and_render(monkeypatch):
     dario = by_name["Dario Amodei: Claude and the next five years"]
     assert dario["kind"] == "interview" and dario["focus"] and "600,000 views in 2h" in dario["extra"]
     assert "How we bake bread" not in by_name  # not about AI, from a channel marked ai_only
-    assert by_name["GLM-5.3 beats everything on my evals"]["kind"] == "reddit"
-    assert "2,500 upvotes · 300 comments" in by_name["GLM-5.3 beats everything on my evals"]["extra"]
-    assert by_name["AMA with the Qwen team"]["kind"] == "interview" and "Weekly thread" not in by_name
+    glm = by_name["GLM-5.3 beats everything on my evals"]
+    assert glm["kind"] == "reddit" and "r/LocalLLaMA · #1 of today's top posts" in glm["extra"] and glm["text"] == "Long post"
+    assert by_name["AMA with the Qwen team"]["kind"] == "interview" and "top this week" in by_name["AMA with the Qwen team"]["extra"]
     assert {"acme/agent-kit", "x/css-art", "MoonshotAI/Kimi-K3", "MiniMaxAI/MiniMax-M3", "zai-org/GLM-5.3",
             "someone/Qwen4-uncensored", "Agents that sleep", "Welcome GLM-5.3"} <= set(by_name)  # non-AI repos kept too
     assert "not AI" in by_name["x/css-art"]["extra"]

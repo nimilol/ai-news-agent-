@@ -197,7 +197,7 @@ def reddit(config):
         return []
     posts = [(p, False) for p in reddit_posts(subs, "day", rcfg.get("limit", 50))]
     if rcfg.get("interview_search"):
-        time.sleep(2)  # Reddit refuses quick repeat requests
+        time.sleep(10)  # Reddit refuses quick repeat requests
         try:
             posts += [(p, True) for p in reddit_posts(subs, "week", 25, rcfg["interview_search"])]
         except Exception as e:  # noqa: BLE001 - the top posts are still worth sending
@@ -211,9 +211,7 @@ def reddit(config):
         else:  # RSS: no counts, but the feed is already ordered by upvotes
             extra = f"r/{p['sub']} · " + ("top this week" if searched else f"#{rank + 1} of today's top posts")
             score = (total - rank) * 20
-        text = p["text"] or p["flair"]
-        if p["link"] and "reddit.com" not in p["link"]:
-            text = f"Links to {p['link']}. {text}"
+        text = p["text"]
         out.append({"kind": "interview" if interview else "reddit", "id": f"rd:{p['id']}", "name": p["title"],
                     "url": p["url"], "text": clean_text(text, 300) or "(discussion thread)",
                     "extra": extra + (" · interview/AMA" if interview else ""), "score": score})
@@ -236,7 +234,7 @@ def youtube(config, cache):
         try:
             videos = youtube_videos(cid)
         except Exception:
-            cache.pop(handle, None)  # the channel may have moved: look its id up again next time
+            cache.pop(handle, None)  # both the feed and the page failed: look the id up again next time
             raise
         out = []
         for v in videos:

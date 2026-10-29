@@ -6,6 +6,7 @@
 
 import calendar
 import hashlib
+import json
 import re
 from datetime import datetime, timedelta, timezone
 from urllib.parse import quote, urljoin
@@ -254,19 +255,102 @@ def _num(d, key):
         return 0
 
 
-def youtube_videos(channel_id):
-    """The channel's latest ~15 videos from its public feed, with views and likes."""
+def _youtube_feed(channel_id):
     feed = feedparser.parse(get(f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}").content)
     if feed.bozo and not feed.entries:
         raise ValueError(f"not a valid feed ({feed.bozo_exception})")
     out = []
     for e in feed.entries:
-        out.append({"id": e.get("id") or e.get("yt_videoid"), "title": e.get("title", ""), "url": e.get("link", ""),
-                    "description": e.get("summary") or e.get("media_description") or "",
+        out.append({"id": e.get("id") or f"yt:video:{e.get('yt_videoid')}", "title": e.get("title", ""),
+                    "url": e.get("link", ""), "description": e.get("summary") or e.get("media_description") or "",
                     "channel": e.get("author") or feed.feed.get("title", ""),
                     "published": _struct_time(e.get("published_parsed") or e.get("updated_parsed")),
                     "views": _num(e.get("media_statistics"), "views"), "likes": _num(e.get("media_starrating"), "count")})
     return out
+
+
+_AGO = re.compile(r"(\d+) (second|minute|hour|day|week|month|year)s? ago")
+_VIEWS = re.compile(r"^([\d.,]+)\s*([KMB]?)\s+views?$", re.I)
+_UNIT_HOURS = {"second": 1 / 3600, "minute": 1 / 60, "hour": 1, "day": 24, "week": 168, "month": 730, "year": 8760}
+
+
+def _strings(o):
+    if isinstance(o, str):
+        yield o
+    elif isinstance(o, dict):
+        for v in o.values():
+            yield from _strings(v)
+    elif isinstance(o, list):
+        for v in o:
+            yield from _strings(v)
+
+
+def _dicts(o):
+    if isinstance(o, dict):
+        yield o
+        for v in o.values():
+            yield from _dicts(v)
+    elif isinstance(o, list):
+        for v in o:
+            yield from _dicts(v)
+
+
+def _text(t):
+    if isinstance(t, str):
+        return t
+    if isinstance(t, dict):
+        return t.get("simpleText") or t.get("content") or "".join(r.get("text", "") for r in t.get("runs", []))
+    return ""
+
+
+def parse_youtube_videos_page(page, channel=""):
+    """The videos on a channel's /videos page (its ytInitialData), newest first. Dates are approximate
+    ("2 days ago"). Handles both the older videoRenderer and the newer lockupViewModel layouts."""
+    found = re.search(r"ytInitialData\"?\]?\s*=\s*(\{.+?\})\s*;\s*</script>", page, re.S)
+    if not found:
+        raise ValueError("no video list on the channel page")
+    data = json.loads(found.group(1))
+    now, out, seen = now_utc(), [], set()
+    for d in _dicts(data):
+        if "videoId" in d and "title" in d and ("viewCountText" in d or "publishedTimeText" in d):
+            vid, title, desc = d["videoId"], _text(d["title"]), _text(d.get("descriptionSnippet"))
+        elif d.get("contentType") == "LOCKUP_CONTENT_TYPE_VIDEO" and d.get("contentId"):
+            meta = (d.get("metadata") or {}).get("lockupMetadataViewModel") or {}
+            vid, title, desc = d["contentId"], _text(meta.get("title")), ""
+        else:
+            continue
+        if vid in seen or not title:
+            continue
+        seen.add(vid)
+        views, published = 0, None
+        for text in _strings(d):
+            text = text.strip()
+            m = _VIEWS.match(text)
+            if m and not views:
+                n = float(m.group(1).replace(",", ""))
+                views = int(n * {"": 1, "K": 1e3, "M": 1e6, "B": 1e9}[m.group(2).upper()])
+            a = _AGO.search(text)
+            if a and not published:
+                published = now - timedelta(hours=int(a.group(1)) * _UNIT_HOURS[a.group(2)])
+        out.append({"id": f"yt:video:{vid}", "title": title, "url": f"https://www.youtube.com/watch?v={vid}",
+                    "description": desc, "channel": channel, "published": published, "views": views, "likes": 0})
+    if not out:
+        raise ValueError("no videos found on the channel page")
+    return out
+
+
+def youtube_videos(channel_id):
+    """The channel's latest videos with views (and likes when known).
+    Reads the channel's public feed; when YouTube refuses the feed (it sometimes answers 404 for every
+    channel for days), reads the channel's Videos page instead."""
+    try:
+        return _youtube_feed(channel_id)
+    except Exception as e:  # noqa: BLE001
+        feed_error = e
+    try:
+        return parse_youtube_videos_page(get(f"https://www.youtube.com/channel/{channel_id}/videos").text)
+    except Exception as e:  # noqa: BLE001
+        raise ValueError(f"feed: {str(feed_error)[:60]}; videos page: {str(e)[:80]}") from e
 
 
 def fetch_youtube(source, state):
@@ -329,42 +413,33 @@ def fetch_reddit(source, state):
 
 
 def reddit_posts(subreddits, period="day", limit=50, query=None):
-    """Top posts across several subreddits in one request, best first.
-    Tries Reddit's JSON (it has upvotes and comment counts); some networks are refused it, so it falls
-    back to the RSS feed, where the order alone tells how popular a post is (upvotes are then None).
-    query: search those subreddits instead (e.g. 'interview OR AMA')."""
-    path = f"r/{'+'.join(subreddits)}/" + ("search" if query else "top")
-    params = {"t": period, "limit": limit, "raw_json": 1}
+    """Top posts across several subreddits in one request, best first (the feed is ordered by upvotes).
+    query: search those subreddits instead (e.g. 'interview OR AMA').
+    Uses RSS: Reddit refuses its JSON API to GitHub's servers."""
+    subs = "+".join(subreddits)
+    params = {"t": period, "limit": limit}
     if query:
         params.update(q=query, restrict_sr="on", sort="top")
-    try:
-        children = get(f"https://www.reddit.com/{path}.json", params=params).json()["data"]["children"]
-        posts = []
-        for c in children:
-            d = c.get("data") or {}
-            if d.get("stickied") or d.get("over_18") or not d.get("permalink"):
-                continue
-            posts.append({"id": d.get("name") or d["permalink"], "title": d.get("title", ""),
-                          "url": "https://www.reddit.com" + d["permalink"], "sub": d.get("subreddit", ""),
-                          "text": d.get("selftext") or "", "link": d.get("url_overridden_by_dest") or "",
-                          "flair": d.get("link_flair_text") or "", "score": d.get("score"),
-                          "comments": d.get("num_comments"),
-                          "published": datetime.fromtimestamp(d.get("created_utc") or 0, tz=timezone.utc)})
-        return posts
-    except Exception as e:  # noqa: BLE001 - fall back to RSS
-        print(f"    Reddit JSON unavailable ({str(e)[:80]}), using RSS")
-    params.pop("raw_json")
-    feed = feedparser.parse(get(f"https://www.reddit.com/{path}/.rss", params=params).content)
+        url = f"https://www.reddit.com/r/{subs}/search.rss"
+    else:
+        url = f"https://www.reddit.com/r/{subs}/top/.rss"
+    feed = feedparser.parse(get(url, params=params).content)
     if feed.bozo and not feed.entries:
         raise ValueError(f"not a valid feed ({feed.bozo_exception})")
     posts = []
     for e in feed.entries:
         content = e.content[0].get("value", "") if e.get("content") else e.get("summary", "")
         posts.append({"id": e.get("id") or e.get("link", ""), "title": e.get("title", ""), "url": e.get("link", ""),
-                      "sub": next((t.get("term", "") for t in e.get("tags", [])), ""), "text": clean_text(content),
-                      "link": "", "flair": "", "score": None, "comments": None,
+                      "sub": next((t.get("term", "") for t in e.get("tags", [])), ""), "text": _reddit_text(content),
+                      "score": None, "comments": None,
                       "published": _struct_time(e.get("published_parsed") or e.get("updated_parsed"))})
     return posts
+
+
+def _reddit_text(content):
+    """A post's own text, without Reddit's "submitted by /u/x [link] [comments]" footer."""
+    text = clean_text(content)
+    return re.sub(r"\s*submitted by\s+/u/\S+.*$", "", text).strip()
 
 
 def fetch_google_news(source, state):

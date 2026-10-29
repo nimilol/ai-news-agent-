@@ -129,7 +129,6 @@ buzz:
       - {name: Sequoia Capital (Training Data), handle: sequoiacapital, interview: true, ai_only: true}
       - {name: a16z, handle: a16z, ai_only: true}
       - {name: Y Combinator, handle: ycombinator, ai_only: true}
-      - {name: Bloomberg Technology, handle: BloombergTechnology, ai_only: true}
       # The labs' own channels (launches, talks and conversations with their researchers)
       - {name: Anthropic, handle: anthropic-ai}
       - {name: OpenAI, handle: OpenAI}
