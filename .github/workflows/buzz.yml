@@ -1,7 +1,7 @@
-name: Buzz (GitHub + Hugging Face)
+name: Buzz (GitHub, Hugging Face, Reddit, YouTube)
 
-# Every 3 hours: the most talked-about repos, models, papers and news on GitHub and Hugging Face,
-# with a talking point for each. Uses one AI request per run.
+# Every 3 hours: the most talked-about repos, models, papers, discussions, videos and interviews on GitHub,
+# Hugging Face, Reddit and YouTube, with a talking point for each. Uses one AI request per run.
 on:
   schedule:
     - cron: "47 */3 * * *"   # 00:47, 03:47, 06:47 … UTC

@@ -3,7 +3,7 @@
     python -m agent digest          collect news, summarise with AI, send the brief (every 6 hours)
     python -m agent alerts          quick check of official sources, instant ping, no AI (hourly)
     python -m agent builders        daily Builder picks: trending AI tools and repos
-    python -m agent buzz            every 3 hours: what's hot on GitHub and Hugging Face, something to talk about
+    python -m agent buzz            every 3 hours: what's hot on GitHub, Hugging Face, Reddit and YouTube (interviews first)
     python -m agent weekly          Sunday recap of the week's biggest stories
     python -m agent check-sources   test every source and print which ones work
     python -m agent test-delivery   send a test message to Telegram / email
@@ -347,18 +347,19 @@ def cmd_builders(args):
 
 
 def cmd_buzz(args):
-    """Every 3 hours: the most talked-about things on GitHub and Hugging Face."""
+    """Every 3 hours: the most talked-about things on GitHub, Hugging Face, Reddit and YouTube."""
     config, _ = load()
     answer_commands(config, args)
     state = State("buzz")
-    print("Collecting what's hot on GitHub and Hugging Face…")
-    candidates, failed = buzz.collect(config)
+    print("Collecting what's hot on GitHub, Hugging Face, Reddit and YouTube…")
+    candidates, failed = buzz.collect(config, state.source("YouTube channel ids"))
     fresh = [c for c in candidates if c["id"] not in state.seen]  # don't repeat a pick within a week
     print(f"{len(fresh)} new candidates ({len(candidates) - len(fresh)} already sent this week).")
     if not fresh:
         return finish(state, ["nothing to send"], [], args.dry_run, buzz.KEEP_DAYS)
     headline, picks, model = buzz.pick(config, fresh)
-    messages = buzz.render(headline, picks, model, failed, len(candidates))
+    interviews = buzz.more_interviews(fresh, picks)
+    messages = buzz.render(headline, picks, model, failed, len(candidates), interviews)
     for m in messages:
         print(re.sub(r"<[^>]+>", "", m) + "\n")
     if args.dry_run:
@@ -369,8 +370,8 @@ def cmd_buzz(args):
     sent, errors = deliver(config, messages, (subject, "<br>".join(m.replace("\n", "<br>") for m in messages), plain),
                            channels)
     if sent:
-        for p in picks:
-            state.observe(p[0]["id"])
+        for c in [p[0] for p in picks] + interviews:
+            state.observe(c["id"])
         commands.save_json(commands.LAST_BUZZ, messages)  # for the /buzz command
         botpush.push("last_buzz", messages)
     return finish(state, sent, errors, args.dry_run, buzz.KEEP_DAYS)

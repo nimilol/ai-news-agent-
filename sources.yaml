@@ -17,7 +17,7 @@
 #   rss          - any RSS/Atom feed (Substack: add /feed, GitHub releases: /releases.atom)
 #   page_links   - a news page without a feed; new links matching "pattern" (a regex on the link path) = new posts
 #   page_diff    - a release-notes page; new paragraphs since the last run = changes
-#   youtube      - give "handle" (the @name) or "channel_id"
+#   youtube      - give "handle" (the @name) or "channel_id"; interview: true for podcast/interview channels
 
 sources:
   # ---------------------------------------------------------------- Anthropic / Claude (official)
@@ -82,7 +82,8 @@ sources:
     type: reddit
     tier: community
     limit: 25
-    subreddits: {ClaudeAI: anthropic, OpenAI: openai, grok: xai, LocalLLaMA: ~, singularity: ~}
+    subreddits: {ClaudeAI: anthropic, Anthropic: anthropic, ClaudeCode: anthropic, OpenAI: openai, ChatGPTPro: openai,
+                 grok: xai, LocalLLaMA: ~, singularity: ~, artificial: ~}
 
   # ---------------------------------------------------------------- Newsletters, blogs and YouTube
   - {name: Simon Willison, type: rss, url: "https://simonwillison.net/atom/everything/", tier: newsletter}
@@ -95,6 +96,19 @@ sources:
   - {name: Matthew Berman (YouTube), type: youtube, handle: matthew_berman, tier: newsletter}
   - {name: Wes Roth (YouTube), type: youtube, handle: WesRoth, tier: newsletter}
   - {name: Sam Witteveen (YouTube), type: youtube, handle: samwitteveenai, tier: newsletter}
+
+  # ---------------------------------------------------------------- Interviews (YouTube podcasts with people who work in AI)
+  # interview: true marks every video as an interview. Like other general sources, a video is kept only when its
+  # title or description mentions one of your companies (e.g. a CEO or researcher from Anthropic or OpenAI).
+  - {name: Dwarkesh Patel (YouTube), type: youtube, handle: DwarkeshPatel, interview: true, tier: newsletter, limit: 3}
+  - {name: Lex Fridman (YouTube), type: youtube, handle: lexfridman, interview: true, tier: newsletter, limit: 3}
+  - {name: No Priors (YouTube), type: youtube, handle: NoPriorsPodcast, interview: true, tier: newsletter, limit: 3}
+  - {name: Latent Space (YouTube), type: youtube, handle: LatentSpacePod, interview: true, tier: newsletter, limit: 3}
+  - {name: Cognitive Revolution (YouTube), type: youtube, handle: CognitiveRevolutionPodcast, interview: true, tier: newsletter, limit: 3}
+  - {name: Bg2 Pod (YouTube), type: youtube, handle: Bg2Pod, interview: true, tier: newsletter, limit: 3}
+  - {name: 20VC (YouTube), type: youtube, handle: 20VC, interview: true, tier: newsletter, limit: 3}
+  - {name: Anthropic (YouTube), type: youtube, handle: anthropic-ai, company: anthropic, tier: official, limit: 3}
+  - {name: OpenAI (YouTube), type: youtube, handle: OpenAI, company: openai, tier: official, limit: 3}
 
   # ---------------------------------------------------------------- Press
   - {name: "Google News: Anthropic", type: google_news, query: "Anthropic OR \"Claude AI\"", tier: press, limit: 10}

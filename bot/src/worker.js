@@ -13,7 +13,7 @@ const HELP = [
   "/free · models you can use for free right now",
   "/latest · the most recent news brief",
   "/repos · today's Builder picks",
-  "/buzz · what's hot on GitHub and Hugging Face right now",
+  "/buzz · what's hot on GitHub, Hugging Face, Reddit and YouTube, with interviews",
   "/ask <i>your question</i> · ask about this week's news",
   "/news · run a fresh news check now",
   "/help · this message",

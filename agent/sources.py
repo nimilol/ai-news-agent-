@@ -224,15 +224,66 @@ def fetch_models_dev(source, state):
     return items
 
 
+# Interviews, podcasts and AMAs with people who work in AI (founders, CEOs, researchers, engineers).
+INTERVIEW = re.compile(
+    r"\binterview|\bpodcast\b|\bAMA\b|ask me anything|in conversation|conversation with|fireside|"
+    r"sits? down with|sat down with|\bin discussion\b|\bQ&A\b|\bkeynote\b|\btestif(y|ies|ied)\b|"
+    r"\bep(isode)?\.? ?#?\d+\b|\bjoins (us|me)\b|\bwith (ceo|cto|founder|co-?founder)\b", re.I)
+
+
+def is_interview(*texts):
+    return any(INTERVIEW.search(t or "") for t in texts)
+
+
+def youtube_channel_id(handle, cache):
+    """A channel's id from its @handle (one page load), remembered in `cache` (handle -> id)."""
+    if cache.get(handle):
+        return cache[handle]
+    page = get(f"https://www.youtube.com/@{handle}").text
+    found = re.search(r'channel_id=(UC[\w-]{22})', page) or re.search(r'"(?:externalId|channelId)":"(UC[\w-]{22})"', page)
+    if not found:
+        raise ValueError(f"could not find the channel id for @{handle}")
+    cache[handle] = found.group(1)
+    return cache[handle]
+
+
+def _num(d, key):
+    try:
+        return int((d or {}).get(key) or 0)
+    except (TypeError, ValueError):
+        return 0
+
+
+def youtube_videos(channel_id):
+    """The channel's latest ~15 videos from its public feed, with views and likes."""
+    feed = feedparser.parse(get(f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}").content)
+    if feed.bozo and not feed.entries:
+        raise ValueError(f"not a valid feed ({feed.bozo_exception})")
+    out = []
+    for e in feed.entries:
+        out.append({"id": e.get("id") or e.get("yt_videoid"), "title": e.get("title", ""), "url": e.get("link", ""),
+                    "description": e.get("summary") or e.get("media_description") or "",
+                    "channel": e.get("author") or feed.feed.get("title", ""),
+                    "published": _struct_time(e.get("published_parsed") or e.get("updated_parsed")),
+                    "views": _num(e.get("media_statistics"), "views"), "likes": _num(e.get("media_starrating"), "count")})
+    return out
+
+
 def fetch_youtube(source, state):
+    """One YouTube channel. interview: true marks every video as an interview (podcast channels);
+    otherwise a video counts as one when its title says so."""
     channel_id = source.get("channel_id") or state.get("channel_id")
     if not channel_id:
-        page = get(f"https://www.youtube.com/@{source['handle']}").text
-        found = re.search(r'channel_id=(UC[\w-]{22})', page) or re.search(r'"(?:externalId|channelId)":"(UC[\w-]{22})"', page)
-        if not found:
-            raise ValueError(f"could not find the channel id for @{source['handle']}")
-        channel_id = state["channel_id"] = found.group(1)
-    return _feed_items(source, get(f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}").content)
+        channel_id = state["channel_id"] = youtube_channel_id(source["handle"], {})
+    items = []
+    for v in youtube_videos(channel_id):
+        summary = v["description"]
+        if v["views"]:
+            summary = f"{v['views']:,} views on YouTube. {summary}"
+        item = make_item(source, v["title"], v["url"], summary, v["published"], uid=v["id"])
+        item["interview"] = bool(source.get("interview")) or is_interview(v["title"])
+        items.append(item)
+    return items
 
 
 def fetch_hn(source, state):
@@ -270,10 +321,50 @@ def fetch_reddit(source, state):
         item = make_item(source, e.get("title", ""), e.get("link", ""), content,
                          _struct_time(e.get("published_parsed") or e.get("updated_parsed")), uid=e.get("id"))
         item["source"] = f"r/{sub}" if sub else source["name"]
+        item["interview"] = is_interview(item["title"])
         if lower.get(sub.lower()):
             item["companies"] = [lower[sub.lower()]]
         items.append(item)
     return items
+
+
+def reddit_posts(subreddits, period="day", limit=50, query=None):
+    """Top posts across several subreddits in one request, best first.
+    Tries Reddit's JSON (it has upvotes and comment counts); some networks are refused it, so it falls
+    back to the RSS feed, where the order alone tells how popular a post is (upvotes are then None).
+    query: search those subreddits instead (e.g. 'interview OR AMA')."""
+    path = f"r/{'+'.join(subreddits)}/" + ("search" if query else "top")
+    params = {"t": period, "limit": limit, "raw_json": 1}
+    if query:
+        params.update(q=query, restrict_sr="on", sort="top")
+    try:
+        children = get(f"https://www.reddit.com/{path}.json", params=params).json()["data"]["children"]
+        posts = []
+        for c in children:
+            d = c.get("data") or {}
+            if d.get("stickied") or d.get("over_18") or not d.get("permalink"):
+                continue
+            posts.append({"id": d.get("name") or d["permalink"], "title": d.get("title", ""),
+                          "url": "https://www.reddit.com" + d["permalink"], "sub": d.get("subreddit", ""),
+                          "text": d.get("selftext") or "", "link": d.get("url_overridden_by_dest") or "",
+                          "flair": d.get("link_flair_text") or "", "score": d.get("score"),
+                          "comments": d.get("num_comments"),
+                          "published": datetime.fromtimestamp(d.get("created_utc") or 0, tz=timezone.utc)})
+        return posts
+    except Exception as e:  # noqa: BLE001 - fall back to RSS
+        print(f"    Reddit JSON unavailable ({str(e)[:80]}), using RSS")
+    params.pop("raw_json")
+    feed = feedparser.parse(get(f"https://www.reddit.com/{path}/.rss", params=params).content)
+    if feed.bozo and not feed.entries:
+        raise ValueError(f"not a valid feed ({feed.bozo_exception})")
+    posts = []
+    for e in feed.entries:
+        content = e.content[0].get("value", "") if e.get("content") else e.get("summary", "")
+        posts.append({"id": e.get("id") or e.get("link", ""), "title": e.get("title", ""), "url": e.get("link", ""),
+                      "sub": next((t.get("term", "") for t in e.get("tags", [])), ""), "text": clean_text(content),
+                      "link": "", "flair": "", "score": None, "comments": None,
+                      "published": _struct_time(e.get("published_parsed") or e.get("updated_parsed"))})
+    return posts
 
 
 def fetch_google_news(source, state):
