@@ -178,3 +178,17 @@ Follow-up:
   lmarena.ai, epoch.ai, swebench.com, livebench.ai and artificialanalysis.ai offer no keyless machine-readable feed.
   Release records now also keep the full comparison, explanation and API availability for the report. Archive in
   releases/weekly/, command /weeklymodels in both bots.
+- **2026-11-16, owner asked for AI Skills & Open-Source Discovery Intelligence** ("a dedicated discovery engine that
+  finds practical resources I can actually use … every three hours … as a curated batch … without repeating
+  previously delivered resources") and to move the weekly model report to Saturday 3 pm. Added `agent/discovery/` +
+  `discovery.yaml` + `discovery.yml` (every 3 h): rotated GitHub searches (32 queries), official AI organisations,
+  GitHub Trending, Hugging Face Spaces/models/datasets, the official MCP registry, GitLab and Codeberg (all checked
+  live; Codeberg's search was throttling, Papers with Code is closed). Deterministic evaluation: AI relevance by
+  the resource's own words (a TV-debloating repo tagged claude-code was rejected), eight categories, security
+  screening (secrets requests, hidden code, exposed keys, prompt injection → rejected; curl|sh → warning), six
+  licence/cost classes, requirements, a 0-100 quality score where documentation, maintenance and accessibility
+  outweigh stars, P0-P3 (P0 gated). A pool collects passing resources between runs; batches go through the
+  release monitor's Telegram outbox and resources are marked delivered only on Telegram's confirmation; GitHub
+  identity is the repository id, so renames and URL variants are not re-sent; meaningful new releases (major
+  version or real new features) are sent as "what changed". Weekly model report moved to its own Saturday workflow
+  (13:53 UTC = 14:53 Lagos, aiming at 3 pm with GitHub's start delay); the Sunday recap is unchanged.

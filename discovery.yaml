@@ -1,0 +1,156 @@
+# AI Skills & Open-Source Discovery Intelligence (python -m agent discovery, every 3 hours).
+# Finds practical, free resources for building agents, apps, prompts, workflows, hackathon projects and content,
+# evaluates them, and sends new ones as one curated Telegram batch. Nothing found is ever installed or run.
+# See README → "AI Skills & Open-Source Discovery".
+
+settings:
+  max_per_batch: 8              # resources per Telegram batch
+  max_per_section: 3            # per category section in one batch
+  min_score: 45                 # resources below this quality score are never sent (P3 starts here)
+  send_only_if_best: P2         # don't send a batch whose best resource is only P3 (no meaningless batches)
+  pool_days: 10                 # evaluated resources wait this long for a batch slot, then drop out
+  recheck_rejected_days: 30     # a rejected resource is looked at again after this long
+  update_checks_per_run: 8      # delivered GitHub repos re-checked per run for a meaningful new release
+  update_check_days: 7          # each delivered repo is re-checked at most this often
+  max_github_requests: 120      # GitHub API calls per run (search is limited to 30 a minute)
+  queries_per_run: 8            # GitHub searches per run, rotated so every query runs about once a day
+  evaluate_per_run: 30          # new candidates read in detail (README) per run
+  max_readme_chars: 12000
+  # Never recommended (matched against name and description): not practical development resources.
+  exclude: ['uncensor', 'abliterat', 'heretic', '\bnsfw\b', 'jailbreak', '\bcrack(ed)?\b', 'keygen', 'cheat engine']
+
+# Priority by quality score (0-100). Usefulness, accessibility, documentation and maintenance count more than stars.
+priorities: {P0: 85, P1: 72, P2: 58, P3: 45}
+
+# The eight categories. Keywords are matched against name, description, topics and README (case-insensitive).
+categories:
+  agent_building:
+    label: AI agent building
+    keywords: ['\bagents?\b', 'agentic', 'multi-agent', 'tool[- ]calling', 'function calling', 'orchestrat', 'agent memory',
+               '\bmemory\b', 'langgraph', 'crewai', 'autogen', 'swarm', 'planner', 'agent framework', 'agent eval']
+  skills:
+    label: AI skills and instructions
+    keywords: ['claude[- ]code', 'skill\.md', '\bskills?\b', 'agents\.md', 'claude\.md', 'gemini\.md', 'codex', 'gemini[- ]cli',
+               'subagents?', 'slash commands?', 'custom instructions', 'cursor rules', '\.cursorrules', 'plugins?']
+  prompting:
+    label: Prompt engineering
+    keywords: ['prompt', 'system prompts?', 'context engineering', 'structured outputs?', 'json schema', 'few-shot',
+               'chain[- ]of[- ]thought', 'prompt eval', 'prompt optimi', 'dspy', 'long[- ]context']
+  app_development:
+    label: AI application development
+    keywords: ['starter', 'boilerplate', 'template', 'saas', 'full[- ]stack', 'next\.js', 'nextjs', 'fastapi', 'supabase',
+               'chatbot', 'chat ui', '\brag\b', 'retrieval', 'vector', 'deploy']
+  automation:
+    label: AI automation and workflows
+    keywords: ['\bn8n\b', 'workflow', 'automation', '\bmcp\b', 'model context protocol', 'telegram', 'notion', 'browser automation',
+               'playwright', 'scrap', 'crawl', 'extraction', 'scheduled', 'cron', 'zapier', 'make\.com']
+  hackathon:
+    label: Hackathon and personal projects
+    keywords: ['hackathon', 'starter kit', 'boilerplate', 'template', 'demo', 'example apps?', 'project ideas', 'quickstart',
+               'cookbook', 'examples?']
+  creator_tools:
+    label: AI creator tools
+    keywords: ['video', 'image generation', 'text[- ]to[- ](speech|image|video)', '\btts\b', 'voice', 'audio', 'transcri',
+               'whisper', 'subtitle', 'podcast', 'youtube', 'thumbnail', 'content creation', 'research assistant', 'benchmark']
+  productivity:
+    label: Developer productivity
+    keywords: ['vs ?code', 'terminal', '\bcli\b', 'git(hub)? automation', 'code review', 'debug', 'testing', 'lint',
+               'documentation', 'developer tools?', 'productivity', 'pull requests?', 'commit']
+
+# Your work: a resource matching one of these gets a relevance boost and a "How this could help ..." line.
+profile:
+  - project: your AI News Agent
+    keywords: ['\brss\b', 'news', 'monitor', 'feeds?', 'scrap', 'crawl', 'changelog', 'release notes', 'telegram bot', 'digest',
+               'summari', 'github actions', 'notification']
+    hint: "it covers source monitoring, summarising or Telegram delivery, which your news agent does every day"
+  - project: your personal AI agents
+    keywords: ['personal assistant', 'agent memory', '\bmemory\b', 'tool[- ]calling', 'multi-agent', 'autonomous']
+    hint: "it is a building block for agents that remember, use tools and act on their own"
+  - project: your autonomous research systems
+    keywords: ['deep research', 'research agent', 'web search', 'citations?', 'literature', 'paper']
+    hint: "it automates searching, reading and citing sources"
+  - project: your Claude Code, Codex and Gemini development
+    keywords: ['claude[- ]code', 'codex', 'gemini[- ]cli', 'skill\.md', 'agents\.md', 'claude\.md', 'subagent', 'slash command']
+    hint: "it plugs into the coding agents you already use"
+  - project: your Telegram and Notion integrations
+    keywords: ['telegram', 'notion']
+    hint: "it connects AI to Telegram or Notion, where your agent already talks to you"
+  - project: your reusable AI skills
+    keywords: ['\bskills?\b', 'skill\.md', 'reusable prompts?', 'instructions']
+    hint: "it shows how to package know-how as reusable skills or instructions"
+  - project: your prompting
+    keywords: ['prompt', 'context engineering', 'system prompts?']
+    hint: "it explains or tests prompting techniques you can apply directly"
+  - project: your hackathon projects
+    keywords: ['hackathon', 'starter', 'boilerplate', 'template', 'quickstart']
+    hint: "it saves setup time so you can spend a hackathon on the idea"
+  - project: your AI educational videos
+    keywords: ['video', 'tts', 'voice', 'transcri', 'subtitle', 'thumbnail', 'explain', 'visuali', 'tutorial']
+    hint: "it helps produce or explain material for your videos"
+
+# Where to look. Every source is official API or a public listing; failures never stop a run.
+sources:
+  github:
+    enabled: true
+    # Each run takes the next `queries_per_run` searches (each at most once per `min_hours`). mode:
+    #   new     repositories created recently (newly published skills, servers, templates)
+    #   active  established repositories pushed recently
+    min_hours: 20
+    queries:
+      - {q: 'topic:claude-code', mode: new, min_stars: 15}
+      - {q: 'topic:ai-agents', mode: new, min_stars: 40}
+      - {q: 'topic:mcp-server', mode: new, min_stars: 20}
+      - {q: 'topic:rag', mode: new, min_stars: 40}
+      - {q: 'topic:prompt-engineering', mode: new, min_stars: 20}
+      - {q: 'topic:n8n', mode: new, min_stars: 20}
+      - {q: 'hackathon starter ai in:name,description', mode: active, min_stars: 30}
+      - {q: 'topic:text-to-speech', mode: new, min_stars: 40}
+      - {q: 'topic:vscode-extension llm', mode: new, min_stars: 20}
+      - {q: 'topic:agent-skills', mode: new, min_stars: 15}
+      - {q: 'topic:multi-agent', mode: active, min_stars: 300}
+      - {q: 'topic:model-context-protocol', mode: active, min_stars: 200}
+      - {q: 'ai saas starter in:name,description', mode: active, min_stars: 100}
+      - {q: '"system prompts" in:name,description', mode: active, min_stars: 200}
+      - {q: 'topic:browser-automation llm', mode: new, min_stars: 20}
+      - {q: 'topic:whisper transcription', mode: new, min_stars: 30}
+      - {q: 'topic:developer-tools llm', mode: new, min_stars: 40}
+      - {q: 'topic:claude-skills', mode: new, min_stars: 10}
+      - {q: 'topic:agent-framework', mode: active, min_stars: 300}
+      - {q: 'topic:telegram-bot llm', mode: new, min_stars: 15}
+      - {q: 'topic:context-engineering', mode: new, min_stars: 10}
+      - {q: 'topic:ai-video', mode: new, min_stars: 30}
+      - {q: 'topic:coding-agent', mode: new, min_stars: 30}
+      - {q: 'topic:langgraph', mode: new, min_stars: 20}
+      - {q: 'notion ai agent in:name,description', mode: new, min_stars: 15}
+      - {q: 'topic:llm-evaluation', mode: active, min_stars: 100}
+      - {q: 'topic:codex', mode: new, min_stars: 15}
+      - {q: 'topic:crewai', mode: new, min_stars: 20}
+      - {q: '"codex cli" in:name,description', mode: new, min_stars: 15}
+      - {q: 'topic:autogen', mode: active, min_stars: 100}
+      - {q: 'topic:gemini-cli', mode: new, min_stars: 10}
+      - {q: '"claude code" skills in:name,description', mode: new, min_stars: 15}
+    # Official AI company and framework organisations: new repositories are always worth a look.
+    orgs: [anthropics, openai, google-gemini, google-deepmind, huggingface, modelcontextprotocol, langchain-ai,
+           run-llama, crewAIInc, microsoft]
+    org_days: 21
+    trending: true               # github.com/trending (daily), AI repositories only
+  huggingface:
+    enabled: true
+    spaces_trending: 25
+    spaces_search: [agent, mcp, tts, video]
+    models_trending: 20
+    datasets_trending: 15
+  mcp_registry:
+    enabled: true                # registry.modelcontextprotocol.io, the official MCP server registry
+    url: https://registry.modelcontextprotocol.io/v0/servers
+    limit: 100
+  gitlab:
+    enabled: true
+    every_hours: 24
+    queries: ["llm agent", "mcp server", "ai agent framework", "prompt engineering"]
+    min_stars: 10
+  codeberg:
+    enabled: true                # its search is often throttled ("high influx"); failures are expected and skipped
+    every_hours: 24
+    queries: ["llm", "ai agent", "mcp"]
+    min_stars: 5

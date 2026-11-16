@@ -1,0 +1,66 @@
+name: AI skills & open-source discovery
+
+# Every 3 hours: finds practical, free AI resources (agent frameworks, Claude Code / Codex / Gemini skills, MCP
+# servers, prompt engineering, templates, automation, creator and developer tools) on GitHub, Hugging Face, the MCP
+# registry, GitLab and Codeberg, evaluates them, and sends the new ones as ONE curated Telegram batch.
+# No message when nothing good enough is new. Nothing found is ever installed or run. See README.
+# GitHub may start scheduled runs late (or skip them when busy); the discovery memory makes that harmless.
+on:
+  schedule:
+    - cron: "29 */3 * * *"   # 00:29, 03:29, 06:29 … UTC
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: What to run
+        type: choice
+        options: [discovery, preview]
+        default: discovery
+
+permissions:
+  contents: write   # to save the discovery history (state/discovery.json)
+
+concurrency:
+  group: agent-state  # never runs at the same time as another job that saves memory
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+
+      - name: Discover, evaluate and send
+        env:
+          MODE: ${{ inputs.mode || 'discovery' }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          ZAI_API_KEY: ${{ secrets.ZAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ "$MODE" = "preview" ]; then
+            python -m agent discovery --dry-run   # the whole batch in this log; nothing sent or saved
+          else
+            python -m agent discovery
+          fi
+
+      - name: Save memory
+        # Always: discoveries not delivered yet, and batches Telegram already confirmed, must be remembered.
+        if: ${{ always() && (inputs.mode || 'discovery') == 'discovery' }}
+        run: |
+          git config user.name "ai-news-agent"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state
+          if git diff --cached --quiet; then echo "Nothing to save."; exit 0; fi
+          git commit -m "discovery: $(date -u '+%Y-%m-%d %H:%M') UTC"
+          git pull --rebase
+          git push

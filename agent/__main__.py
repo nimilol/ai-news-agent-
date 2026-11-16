@@ -5,7 +5,8 @@
     python -m agent builders        daily Builder picks: trending AI tools and repos
     python -m agent buzz            every 3 hours: what's hot on GitHub, Hugging Face, Reddit and YouTube (interviews first)
     python -m agent weekly          Sunday recap of the week's biggest stories
-    python -m agent weekly-models   Sunday Weekly Model Intelligence Report (from the release history)
+    python -m agent weekly-models   Saturday Weekly Model Intelligence Report (from the release history)
+    python -m agent discovery       every 3 hours: AI skills, repositories and tools, evaluated, as one Telegram batch
     python -m agent check-sources   test every source and print which ones work
     python -m agent test-delivery   send a test message to Telegram / email
     python -m agent test-ai         check every AI key with a tiny request
@@ -365,7 +366,9 @@ def cmd_builders(args):
     state = State("builders")
     print("Collecting builder candidates…")
     candidates, failed = builders.collect(config)
-    fresh = [c for c in candidates if c["id"] not in state.seen]  # don't repeat a pick within 30 days
+    ledger = led.Ledger()
+    fresh = [c for c in candidates if c["id"] not in state.seen  # don't repeat a pick within 30 days
+             and not ledger.sent([led.url_key(c.get("url"))])]   # nor a repo the discovery engine just sent
     print(f"{len(fresh)} new candidates ({len(candidates) - len(fresh)} already picked recently).")
     if not fresh:
         return finish(state, ["nothing to send"], [], args.dry_run)
@@ -445,7 +448,7 @@ def cmd_weekly(args):
 
 
 def cmd_weekly_models(args):
-    """Sunday: the Weekly Model Intelligence Report, built from the release monitor's history (agent/releases/weekly.py).
+    """Saturday: the Weekly Model Intelligence Report, built from the release monitor's history (agent/releases/weekly.py).
     Separate from the general weekly recap, which keeps working as before."""
     from .releases import config as rconfig
     from .releases import weekly as model_weekly
@@ -479,6 +482,13 @@ def cmd_weekly_models(args):
     return 0
 
 
+def cmd_discovery(args):
+    """AI Skills & Open-Source Discovery Intelligence (agent/discovery/): search, evaluate, batch, deliver."""
+    from .discovery import pipeline as discovery
+
+    return discovery.run(dry_run=args.dry_run)
+
+
 def cmd_push_bot(args):
     """Send everything the always-on bot needs (used right after the bot is deployed)."""
     import json
@@ -490,7 +500,7 @@ def cmd_push_bot(args):
     ok = botpush.push("briefs", commands.recent_briefs(), attempts=10)  # a new address can take minutes to go live
     for key, path in (("last_brief", commands.LAST_BRIEF), ("last_repos", commands.LAST_REPOS),
                       ("last_buzz", commands.LAST_BUZZ), ("last_weekly", weekly.LAST_WEEKLY),
-                      ("last_model_weekly", commands.LAST_MODEL_WEEKLY)):
+                      ("last_model_weekly", commands.LAST_MODEL_WEEKLY), ("last_discovery", commands.LAST_DISCOVERY)):
         if path.exists():
             ok = botpush.push(key, json.loads(path.read_text(encoding="utf-8"))) and ok
     refresh_bot_free_models(config, args, attempts=3)
@@ -527,7 +537,7 @@ def main():
     parser = argparse.ArgumentParser(prog="python -m agent", description="AI news agent")
     parser.add_argument("command", choices=["digest", "alerts", "builders", "buzz", "weekly", "check-sources", "test-delivery",
                                             "test-ai", "free-models", "push-bot", "releases", "check-releases",
-                                            "weekly-models"])
+                                            "weekly-models", "discovery"])
     parser.add_argument("--dry-run", action="store_true", help="print instead of sending; don't save state")
     parser.add_argument("--bootstrap", action="store_true",
                         help="releases only: learn every official source as it is now, without sending alerts")
@@ -536,7 +546,7 @@ def main():
                 "test-delivery": cmd_test_delivery, "test-ai": cmd_test_ai,
                 "free-models": cmd_free_models, "builders": cmd_builders, "buzz": cmd_buzz, "weekly": cmd_weekly,
                 "push-bot": cmd_push_bot, "releases": cmd_releases, "check-releases": cmd_check_releases,
-                "weekly-models": cmd_weekly_models}
+                "weekly-models": cmd_weekly_models, "discovery": cmd_discovery}
     sys.exit(commands[args.command](args))
 
 

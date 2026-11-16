@@ -1,0 +1,65 @@
+name: Weekly model report
+
+# Saturdays: the Weekly Model Intelligence Report (python -m agent weekly-models) on the AI models Anthropic,
+# OpenAI, Moonshot AI, Alibaba, xAI and Google released in the last 7 days, built from the release history.
+# Scheduled at 13:53 UTC (14:53 in Lagos) so that, with GitHub's usual start delay, it arrives around 3 pm Lagos time.
+on:
+  schedule:
+    - cron: "53 13 * * 6"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: What to run
+        type: choice
+        options: [models, preview]
+        default: models
+
+permissions:
+  contents: write   # to save the report for /weeklymodels and archive it in releases/weekly/
+
+concurrency:
+  group: agent-state
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+
+      - name: Write the Weekly Model Intelligence Report
+        env:
+          MODE: ${{ inputs.mode || 'models' }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          ZAI_API_KEY: ${{ secrets.ZAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
+          EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        run: |
+          if [ "$MODE" = "preview" ]; then
+            python -m agent weekly-models --dry-run   # the whole report in this log; nothing sent or saved
+          else
+            python -m agent weekly-models
+          fi
+
+      - name: Save the report (/weeklymodels, archive in releases/weekly/)
+        if: ${{ always() && (inputs.mode || 'models') == 'models' }}
+        run: |
+          git config user.name "ai-news-agent"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state releases
+          if git diff --cached --quiet; then echo "Nothing to save."; exit 0; fi
+          git commit -m "weekly-models: $(date -u '+%Y-%m-%d %H:%M') UTC"
+          git pull --rebase
+          git push

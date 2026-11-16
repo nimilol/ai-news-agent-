@@ -168,3 +168,12 @@ test("/weeklymodels replies with the pushed model report, separate from /weekly"
   await handleMessage(empty.env, msg("/weeklymodels"));
   assert.match(empty.sent[0], /No Weekly Model Intelligence Report yet/);
 });
+
+test("/discoveries replies with the latest discovery batch", async () => {
+  const { env, sent } = setup({ last_discovery: JSON.stringify(["🚀 batch"]) });
+  await handleMessage(env, msg("/discoveries"));
+  assert.deepEqual(sent, ["🚀 batch"]);
+  const empty = setup();
+  await handleMessage(empty.env, msg("/discoveries"));
+  assert.match(empty.sent[0], /No discoveries sent yet/);
+});

@@ -14,6 +14,7 @@ const HELP = [
   "/latest · the most recent news brief",
   "/buzz · what's hot on GitHub, Hugging Face, Reddit and YouTube",
   "/repos · today's Builder picks",
+  "/discoveries · the latest AI skills & open-source discoveries",
   "/weekly · the latest weekly news recap",
   "/ask <i>your question</i> · answered from this week's briefs",
   "/news · run a fresh news check now",
@@ -39,7 +40,7 @@ const ASK_PROMPT =
   "If the briefs don't cover the question, say so plainly instead of guessing.";
 
 const PUSH_KEYS = ["last_brief", "last_repos", "last_buzz", "free_models", "briefs", "last_releases", "last_models",
-  "models_index", "sources", "health", "last_weekly", "last_model_weekly"];
+  "models_index", "sources", "health", "last_weekly", "last_model_weekly", "last_discovery"];
 
 // /compare: the same simple name matching as agent/releases/catalog.py ("opus 5.5" finds claude-opus-5-5).
 export function normalize(text) {
@@ -222,7 +223,10 @@ export async function handleMessage(env, message) {
       await sendStored(env, "last_weekly", "No weekly report yet. It arrives on Sunday evening.");
       return command;
     case "weeklymodels":
-      await sendStored(env, "last_model_weekly", "No Weekly Model Intelligence Report yet. It arrives on Sunday evening.");
+      await sendStored(env, "last_model_weekly", "No Weekly Model Intelligence Report yet. It arrives on Saturday afternoon.");
+      return command;
+    case "discoveries":
+      await sendStored(env, "last_discovery", "No discoveries sent yet. The discovery engine runs every 3 hours.");
       return command;
     case "sources":
       await sendStored(env, "sources", "The source list isn't loaded yet. It refreshes with every release check.");

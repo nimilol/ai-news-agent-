@@ -1,4 +1,4 @@
-"""The Weekly Model Intelligence Report (every Sunday, `python -m agent weekly-models`).
+"""The Weekly Model Intelligence Report (every Saturday, `python -m agent weekly-models`).
 
 Built from the release monitor's persistent history (state/releases.json), not from the news briefs:
 

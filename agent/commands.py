@@ -21,6 +21,7 @@ HELP = (
     "/latest · the most recent news brief\n"
     "/buzz · what's hot on GitHub, Hugging Face, Reddit and YouTube\n"
     "/repos · today's Builder picks\n"
+    "/discoveries · the latest AI skills & open-source discoveries\n"
     "/weekly · the latest weekly news recap\n"
     "/ask your question · answered from this week's briefs\n\n"
     "<b>Models</b>\n"
@@ -39,6 +40,7 @@ COMMANDS = [
     {"command": "free", "description": "Free models you can use right now"},
     {"command": "latest", "description": "Resend the latest news brief"},
     {"command": "repos", "description": "Today's Builder picks"},
+    {"command": "discoveries", "description": "Latest AI skills & open-source discoveries"},
     {"command": "buzz", "description": "What's hot: GitHub, Hugging Face, Reddit, YouTube"},
     {"command": "ask", "description": "Ask about this week's news"},
     {"command": "models", "description": "Recent confirmed model releases"},
@@ -56,6 +58,7 @@ LAST_REPOS = ROOT / "state" / "last_repos.json"
 LAST_BUZZ = ROOT / "state" / "last_buzz.json"
 LAST_WEEKLY = ROOT / "state" / "last_weekly.json"
 LAST_MODEL_WEEKLY = ROOT / "state" / "last_model_weekly.json"
+LAST_DISCOVERY = ROOT / "state" / "last_discovery.json"
 ASK_PROMPT = """You answer questions from an AI news creator using only the news briefs below (newest last).
 Answer in at most 8 short lines of plain text. Name the date and source of each fact. If the briefs don't
 cover the question, say so plainly instead of guessing."""
@@ -177,7 +180,7 @@ def handle(config):
             wanted.append((command, question))
             continue
         command = command if command in ("free", "latest", "repos", "buzz", "news", "releases", "models", "sources",
-                                         "health", "weekly", "weeklymodels") else "help"
+                                         "health", "weekly", "weeklymodels", "discoveries") else "help"
         if command not in wanted:
             wanted.append(command)
     print(f"Telegram commands: {', '.join(c if isinstance(c, str) else c[0] for c in wanted) or 'none'}")
@@ -214,11 +217,16 @@ def handle(config):
                     send_telegram(json.loads(LAST_WEEKLY.read_text(encoding="utf-8")))
                 else:
                     send_telegram(["No weekly report yet. It arrives on Sunday evening."])
+            elif command == "discoveries":
+                if LAST_DISCOVERY.exists():
+                    send_telegram(json.loads(LAST_DISCOVERY.read_text(encoding="utf-8")))
+                else:
+                    send_telegram(["No discoveries sent yet. The discovery engine runs every 3 hours."])
             elif command == "weeklymodels":
                 if LAST_MODEL_WEEKLY.exists():
                     send_telegram(json.loads(LAST_MODEL_WEEKLY.read_text(encoding="utf-8")))
                 else:
-                    send_telegram(["No Weekly Model Intelligence Report yet. It arrives on Sunday evening."])
+                    send_telegram(["No Weekly Model Intelligence Report yet. It arrives on Saturday afternoon."])
             elif isinstance(command, tuple) and command[0] == "compare":
                 send_telegram(compare_models(command[1]))
             elif command == "news":

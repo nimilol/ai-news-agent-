@@ -1,19 +1,11 @@
 name: Weekly recap
 
-# Sunday evening, two reports:
-#   1. the weekly news recap from the saved briefs (as before), and
-#   2. the Weekly Model Intelligence Report from the model-release history (python -m agent weekly-models).
-# The second one can never stop the first: it runs after it and its failure doesn't fail the recap.
+# Sunday evening: the weekly news recap from the saved briefs, with content opportunities (/weekly).
+# The Weekly Model Intelligence Report has its own workflow on Saturdays (weekly-models.yml).
 on:
   schedule:
     - cron: "53 17 * * 0"   # Sundays 17:53 UTC (18:53 in Lagos)
   workflow_dispatch:
-    inputs:
-      mode:
-        description: What to run
-        type: choice
-        options: [both, recap, models, preview-models]
-        default: both
 
 permissions:
   contents: write   # to keep the latest report for the /weekly command (state/last_weekly.json)
@@ -35,7 +27,6 @@ jobs:
       - run: pip install -r requirements.txt
 
       - name: Write the weekly recap
-        if: ${{ (inputs.mode || 'both') == 'both' || inputs.mode == 'recap' }}
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
@@ -49,34 +40,12 @@ jobs:
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
         run: python -m agent weekly
 
-      - name: Write the Weekly Model Intelligence Report
-        if: ${{ always() && ((inputs.mode || 'both') == 'both' || inputs.mode == 'models' || inputs.mode == 'preview-models') }}
-        continue-on-error: true  # never affects the recap above
-        env:
-          MODE: ${{ inputs.mode || 'both' }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          ZAI_API_KEY: ${{ secrets.ZAI_API_KEY }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
-          EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
-          EMAIL_TO: ${{ secrets.EMAIL_TO }}
-        run: |
-          if [ "$MODE" = "preview-models" ]; then
-            python -m agent weekly-models --dry-run   # whole report in this log; nothing sent or saved
-          else
-            python -m agent weekly-models
-          fi
-
-      - name: Save the reports (/weekly, /weeklymodels, archive in releases/weekly/)
-        if: ${{ always() && inputs.mode != 'preview-models' }}
+      - name: Save the report for /weekly
+        if: always()
         run: |
           git config user.name "ai-news-agent"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add state releases
+          git add state
           if git diff --cached --quiet; then echo "Nothing to save."; exit 0; fi
           git commit -m "weekly: $(date -u '+%Y-%m-%d %H:%M') UTC"
           git pull --rebase

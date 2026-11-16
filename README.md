@@ -28,10 +28,17 @@ and sends you a summary on **Telegram** and/or **email**.
   Space, Bg2, All-In, 20VC and more, plus Reddit AMAs), with who the guest is and what they said.
 - **Every morning:** "🛠 Builder picks", the most useful trending AI tools and repos (GitHub Trending, fast-rising
   new repos, Hugging Face, Show HN), each with what it does and who it helps.
-- **Every Sunday:** a weekly recap of the biggest stories, with content opportunities (`/weekly`), and a separate
-  **Weekly Model Intelligence Report** on the week's new models from the six labs: comparisons with their
-  predecessors, updates, the competitive landscape, company-reported and independent (LMArena) benchmarks, and
-  ranked content ideas (`/weeklymodels`). See [Weekly Model Intelligence Report](#weekly-model-intelligence-report).
+- **Every Saturday (about 3 pm Lagos time):** the **Weekly Model Intelligence Report** on the week's new models from
+  the six labs: comparisons with their predecessors, updates, the competitive landscape, company-reported and
+  independent (LMArena) benchmarks, and ranked content ideas (`/weeklymodels`).
+  See [Weekly Model Intelligence Report](#weekly-model-intelligence-report).
+- **Every Sunday:** a weekly recap of the biggest stories, with content opportunities (`/weekly`).
+- **🚀 Every 3 hours: AI skills & open-source discoveries.** A discovery engine scouts GitHub, Hugging Face, the
+  official MCP registry, GitLab and Codeberg for practical, free resources (agent frameworks, Claude Code / Codex /
+  Gemini skills, MCP servers, prompt engineering, app templates, automation, hackathon starters, creator and developer
+  tools), checks each one (licence, cost, maintenance, documentation, security) and sends only new, useful ones as one
+  curated batch, never the same resource twice (`/discoveries`).
+  See [AI Skills & Open-Source Discovery](#ai-skills--open-source-discovery).
 - **Organised like a research assistant:** every message uses the same ten sections, four priorities (🔴 P0 to ⚪ P3)
   and the same card layout, explains important developments in plain language, suggests news/education/analysis
   video ideas, and never sends the same story twice. See [How Telegram messages are organised](#how-telegram-messages-are-organised).
@@ -184,6 +191,7 @@ Send these to your bot in Telegram (they also appear in the bot's **/** menu):
 | `/latest` | The most recent news brief again |
 | `/buzz` | The latest Buzz: what's hot on GitHub, Hugging Face, Reddit and YouTube, with interviews |
 | `/repos` | Today's Builder picks |
+| `/discoveries` | The latest AI skills & open-source discovery batch |
 | `/weekly` | The latest weekly news recap |
 | `/weeklymodels` | The latest Weekly Model Intelligence Report |
 | `/ask your question` | An answer from this week's briefs, e.g. `/ask what did OpenAI change this week?` |
@@ -311,8 +319,9 @@ answer is lost in a network error, that part is sent again on the next run (Tele
 
 ## Weekly Model Intelligence Report
 
-Every Sunday at 17:53 UTC, right after the weekly news recap (which is unchanged), the agent sends a report on the
-AI models Anthropic, OpenAI, Moonshot AI, Alibaba, xAI and Google officially released in the last seven days
+Every Saturday (scheduled 13:53 UTC, 14:53 in Lagos, so that with GitHub's usual start delay it arrives around
+3 pm Lagos time; workflow `weekly-models.yml`), the agent sends a report on the AI models Anthropic, OpenAI,
+Moonshot AI, Alibaba, xAI and Google officially released in the last seven days
 (`agent/releases/weekly.py`, `python -m agent weekly-models`). It is built from the release monitor's own history
 (`state/releases.json`), not from the news briefs.
 
@@ -336,7 +345,7 @@ AI models Anthropic, OpenAI, Moonshot AI, Alibaba, xAI and Google officially rel
    topic, each scored 1-5 for relevance, evidence quality (computed from the evidence: official confirmation,
    specs, benchmarks) and educational value, and ranked by the total.
 
-**Counting rules.** A release is counted once, in the first Sunday report after it was confirmed: the report
+**Counting rules.** A release is counted once, in the first Saturday report after it was confirmed: the report
 records which releases it covered, so a manual re-run or the next week never counts them again. A model announced
 earlier but only detected this week is included and marked ⏱ "detected late". Two records for the same model
 (e.g. a launch that arrived through several sources) count as one.
@@ -347,9 +356,81 @@ the landscape answers and the content ideas from the same facts; any sentence wi
 facts is thrown away.
 
 **Archive and commands.** Every report is saved as Markdown in `releases/weekly/YYYY-MM-DD.md`; `/weeklymodels`
-resends the latest one. Run it by hand with **Actions → Weekly recap → Run workflow** and choose `models` (send now)
-or `preview-models` (print in the log, nothing sent or saved); `recap` and `both` work as before. Independent
-benchmark sources are configured in `releases.yaml → independent_benchmarks`.
+resends the latest one. Run it by hand with **Actions → Weekly model report → Run workflow** and choose `models`
+(send now) or `preview` (print in the log, nothing sent or saved). The Sunday news recap is a separate workflow and
+works as before. Independent benchmark sources are configured in `releases.yaml → independent_benchmarks`.
+
+## AI Skills & Open-Source Discovery
+
+A discovery engine for resources you can actually use to build agents, apps, prompts, workflows, hackathon projects
+and videos (`agent/discovery/`, configured in `discovery.yaml`, workflow `discovery.yml`, every 3 hours at :29).
+It is not a news collector: it only recommends things it has checked.
+
+**From search to Telegram**
+1. **Deliver first:** a batch from an earlier run that Telegram hasn't confirmed is sent before anything new (and no
+   new batch is stacked on top of it).
+2. **Search:** 32 targeted GitHub searches (by topic, tool, framework, ecosystem and problem; `new` = created in the
+   last 60 days, `active` = pushed in the last 14 days, each with a minimum of stars), rotated so each runs about once
+   a day; new repositories of official AI organisations (Anthropic, OpenAI, Google Gemini/DeepMind, Hugging Face,
+   MCP, LangChain, LlamaIndex, CrewAI, Microsoft); GitHub Trending; Hugging Face trending and searched Spaces,
+   trending models and datasets; recently updated servers in the official MCP registry (registry.modelcontextprotocol.io,
+   matched to their GitHub repository); GitLab and Codeberg once a day. GitHub calls are budgeted (120 per run) with
+   rate-limit handling and backoff; repositories found elsewhere are looked up several at a time.
+3. **Filter:** one entry per resource; anything already delivered, queued, waiting or recently rejected is skipped.
+4. **Evaluate** (deterministic Python; READMEs are read as untrusted text, never executed or obeyed):
+   - is it really an AI resource (its own words, not just its tags), and which of the eight categories: agent building,
+     skills and instructions, prompt engineering, app development, automation and workflows, hackathon and personal
+     projects, creator tools, developer productivity;
+   - **security:** requests for secrets, hidden decode-and-run code, exposed API keys, prompt injection aimed at AI
+     agents, miners, password-protected .exe installers → rejected; `curl … | sh`, sudo or `rm -rf` steps → kept with a
+     ⚠️ warning and fewer points;
+   - **licence and cost:** FREE AND OPEN SOURCE · FREE TO USE, CLOSED SOURCE · FREE TIER AVAILABLE · OPEN SOURCE WITH
+     PAID OPTIONAL SERVICES · PAID OR RESTRICTED · LICENCE UNCLEAR (a public repository is never called free just
+     because it is public), plus what it needs: paid API, subscription, cloud infrastructure, GPU, paid hosting,
+     commercial licence;
+   - **quality score (0-100):** category fit, documentation (install, usage, examples), maintenance (last update,
+     archived), accessibility (licence/cost), practical implementation (real install commands and code), and stars,
+     forks, likes, downloads and contributors as a capped supporting signal; plus a boost when it fits your work
+     (`discovery.yaml → profile`). Link lists without an implementation, abandoned or thin repositories lose points
+     and say why.
+   - **priority:** 🔴 P0 exceptional (85+, and only when open, well documented, active and relevant to your work) ·
+     🟠 P1 highly useful (72+) · 🔵 P2 worth exploring (58+) · ⚪ P3 interesting (45+); below 45 it is never sent.
+5. **Pool:** resources that pass wait (up to 10 days) for a batch, so good finds are collected between runs.
+6. **Updates:** delivered GitHub repositories are re-checked weekly; only a meaningful new release (a new major
+   version, or a minor version whose notes describe real new features) is sent, as "what changed", never the original
+   description again. Patch releases, routine commits and documentation changes are ignored.
+7. **Batch:** the best of the pool (8 at most, 3 per section, best first, each resource once); no message at all if
+   nothing new reaches P2.
+8. **Explain:** one AI call writes what each resource actually does, the problem it solves, why it matters, how to use
+   it, and how it connects to your projects; README text is passed as quoted untrusted data, and sentences with
+   numbers that aren't in the resource's own data are dropped. Without AI keys the batch still goes out, worded from
+   the evaluation.
+9. **Send** through the same Telegram outbox as release alerts: a resource becomes "delivered" only when Telegram
+   confirms the message (message ids saved); a failed batch is retried next run, only the unconfirmed parts.
+10. **Remember:** `state/discovery.json` keeps every resource (name, canonical URL, platform, owner, repository id,
+    categories, first discovered, last checked, score, licence class, delivery status, Telegram message ids, last
+    notification, latest version) and is committed after every run. Delivered resources are kept forever; Buzz and
+    Builder picks also skip repositories the discovery engine has sent (`state/sent.json`).
+
+**The batch** starts with 🚀 AI SKILLS & OPEN-SOURCE DISCOVERIES (date, discovery period, number of new
+discoveries), then only the sections with something in them: 🧠 AI AGENT BUILDING, 🛠 AI SKILLS AND PROMPTS,
+⚡ AI AUTOMATION AND WORKFLOWS, 🏗 HACKATHON AND PROJECT RESOURCES, 🎬 AI CREATOR RESOURCES, 💻 DEVELOPER PRODUCTIVITY,
+each card with the fields for its kind (e.g. developer, what it does, why it matters, practical application,
+compatibility, cost, licence and link for agent resources; installation and where it plugs in for skills), its
+priority and score, stars/forks/last update, warnings, and "How this could help your …" when it fits your work.
+It ends with 🏆 BEST DISCOVERY: why it ranked first, the problem it solves and what you could build with it.
+`/discoveries` resends the latest batch.
+
+**Configuration** (`discovery.yaml`): `settings` (batch size, minimum score, pool time, GitHub request budget,
+queries per run, excluded topics), `priorities`, `categories` (keywords), `profile` (your projects and what connects to
+them), and `sources` (searches, organisations, platforms; each can be switched off). **Secrets:** none new.
+`GITHUB_TOKEN` is provided automatically by GitHub Actions (higher search limits); `TELEGRAM_BOT_TOKEN` and
+`TELEGRAM_CHAT_ID` for delivery; your existing free AI keys (optional) for the explanations.
+
+**Limits:** Codeberg's search is often throttled by Codeberg itself (it is tried daily and skipped when it refuses);
+Papers with Code closed in 2025 and Hugging Face papers have no code links, so research implementations come through
+GitHub searches; the extra workflow uses about 8 short runs a day (roughly 250-450 GitHub Actions minutes a month,
+inside the free allowance of a private repository with the other runs at their real frequency).
 
 ## Customising
 
@@ -399,8 +480,9 @@ python -m pytest -q                  # offline tests
 |---|---|
 | `sources.yaml` | where the agent looks |
 | `releases.yaml` | the model release monitor: official sources and settings for the six labs |
+| `discovery.yaml` | the AI skills & open-source discovery engine: searches, categories, scoring, your projects |
 | `config.yaml` | companies, keywords, AI providers, delivery |
-| `agent/` | the code: `messages.py` (sections, priorities, cards, message splitting), `ledger.py` (what was already sent), `alerts.py` (instant alerts), `health.py` (/health), `sources.py` (fetchers), `digest.py` (AI prompt and formatting), `accuracy.py` (articles, source counts, blocklist), `factcheck.py` (second-AI check), `builders.py` (Builder picks), `buzz.py` (3-hourly Buzz: GitHub, Hugging Face, Reddit, YouTube), `weekly.py` (recap), `freemodels.py` (`/free`), `commands.py` (Telegram commands), `botpush.py` (feeds the instant bot), `llm.py` (providers), `deliver.py` (Telegram/email), `__main__.py` (the runs), `releases/` (model release monitor: `parsers.py`, `classify.py`, `analyze.py`, `render.py`, `notify.py`, `pipeline.py`; `weekly.py` the Weekly Model Intelligence Report; `benchmarks.py` LMArena) |
+| `agent/` | the code: `messages.py` (sections, priorities, cards, message splitting), `ledger.py` (what was already sent), `alerts.py` (instant alerts), `health.py` (/health), `sources.py` (fetchers), `digest.py` (AI prompt and formatting), `accuracy.py` (articles, source counts, blocklist), `factcheck.py` (second-AI check), `builders.py` (Builder picks), `buzz.py` (3-hourly Buzz: GitHub, Hugging Face, Reddit, YouTube), `weekly.py` (recap), `freemodels.py` (`/free`), `commands.py` (Telegram commands), `botpush.py` (feeds the instant bot), `llm.py` (providers), `deliver.py` (Telegram/email), `__main__.py` (the runs), `discovery/` (AI skills & open-source discovery: `sources.py`, `evaluate.py`, `explain.py`, `render.py`, `pipeline.py`, `store.py`), `releases/` (model release monitor: `parsers.py`, `classify.py`, `analyze.py`, `render.py`, `notify.py`, `pipeline.py`; `weekly.py` the Weekly Model Intelligence Report; `benchmarks.py` LMArena) |
 | `bot/` | the instant Telegram bot for Cloudflare Workers, its tests and deploy script |
 | `state/` | the agent's memory of what it already sent (saved by the workflows) |
 | `digests/` | archive of every brief |
