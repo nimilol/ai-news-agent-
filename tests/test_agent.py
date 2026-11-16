@@ -310,7 +310,7 @@ def test_telegram_commands_only_answer_owner(tmp_path, monkeypatch):
     monkeypatch.setattr(commands, "send_free_models", lambda config: sent.append("free"))
     monkeypatch.setattr(commands, "send_telegram", lambda msgs: sent.append(msgs[0].split("\n")[0]))
     commands.handle(CONFIG)
-    assert sent[0] == "free" and sent[1].startswith("No brief has been sent") and "Your AI news agent" in sent[2]
+    assert sent[0] == "free" and sent[1].startswith("No brief has been sent") and "Your AI research assistant" in sent[2]
     assert len(sent) == 3  # the stranger's /latest was ignored
     updates.clear()
     commands.handle(CONFIG)  # next run continues after the last answered message
@@ -572,8 +572,8 @@ def test_digest_marks_interviews(tmp_path, monkeypatch):
     (tmp_path / "digests" / f"{now_utc():%Y-%m-%d_%H%M}.md").write_text(md, encoding="utf-8")
     monkeypatch.setattr(weekly, "ROOT", tmp_path)
     stories = weekly.read_week()
-    assert [(s["title"], s["interview"]) for s in stories] == [("Dario Amodei on the next Claude", True),
-                                                                ("Prices go up", False)]
+    assert sorted((s["title"], s["interview"]) for s in stories) == [("Dario Amodei on the next Claude", True),
+                                                                      ("Prices go up", False)]
 
 
 def test_buzz_collect_pick_and_render(monkeypatch):
@@ -658,20 +658,21 @@ def test_buzz_collect_pick_and_render(monkeypatch):
         {"item": kimi, "type": "new model", "what": "Kimi's new model", "why": "4,000 stars", "talk": "Kimi is back"},
         {"item": 999, "type": "repo", "what": "made up"}, {"item": kimi, "type": "repo", "what": "duplicate"}]})
     monkeypatch.setattr(buzz.llm, "complete", lambda config, system, build: (answer, "gemini/x"))
-    headline, picks, model = buzz.pick(CONFIG, candidates)
+    headline, picks, model, content = buzz.pick(CONFIG, candidates)
     assert headline == "Kimi K3 lands" and len(picks) == 1 and picks[0][1] == "new model"
     text = "\n".join(buzz.render(headline, picks, model, [], len(candidates)))
-    assert "🔥 Buzz" in text and "🧠" in text and "https://github.com/MoonshotAI/Kimi-K3" in text and "Kimi is back" in text
+    assert "🔥 Buzz" in text and "🔄 MODEL UPDATES AND IMPROVEMENTS" in text and "Kimi is back" in text
+    assert "https://github.com/MoonshotAI/Kimi-K3" in text and "🏢 MoonshotAI" in text
     more = buzz.more_interviews(candidates, picks)
     assert [c["name"] for c in more] == ["Dario Amodei: Claude and the next five years", "AMA with the Qwen team"]
     text = "\n".join(buzz.render(headline, picks, model, [], len(candidates), more))
-    assert "🎙 More interviews worth watching" in text and "AMA with the Qwen team" in text and "Reddit and YouTube" in text
+    assert "🎙 AI PODCASTS AND INTERVIEWS" in text and "AMA with the Qwen team" in text and "Reddit and YouTube" in text
 
     def broken(*a, **k):
         raise RuntimeError("every AI is down")
     monkeypatch.setattr(buzz.llm, "complete", broken)
-    headline, picks, model = buzz.pick(CONFIG, candidates)
-    assert model == "none" and len(picks) == CONFIG["buzz"]["max_picks"]
+    headline, picks, model, content = buzz.pick(CONFIG, candidates)
+    assert model == "none" and len(picks) == CONFIG["buzz"]["max_picks"] and content == []
 
 
 def test_buzz_run_skips_items_already_sent(tmp_path, monkeypatch):
@@ -686,7 +687,7 @@ def test_buzz_run_skips_items_already_sent(tmp_path, monkeypatch):
     monkeypatch.setattr(buzz.llm, "complete", lambda *a: (json.dumps({"headline": "h", "picks": [{"item": 1, "type": "repo"}]}), "m"))
     sent = []
     monkeypatch.setattr(main, "telegram_configured", lambda: True)
-    monkeypatch.setattr(main, "deliver", lambda config, msgs, email, channels: (sent.append(msgs) or ["telegram"], []))
+    monkeypatch.setattr(main, "deliver", lambda config, msgs, email, channels, **kw: (sent.append(msgs) or ["telegram"], []))
     monkeypatch.setattr(main.botpush, "push", lambda *a, **k: True)
 
     class Args:

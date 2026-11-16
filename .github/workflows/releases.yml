@@ -1,0 +1,66 @@
+name: Model releases
+
+# The model release monitor on demand: official sources of Anthropic, OpenAI, Moonshot AI, Alibaba (Qwen), xAI and
+# Google (Gemini) → verified, compared Telegram alerts with delivery confirmation. See README → "Model release alerts".
+#
+# It also runs automatically inside every "Instant alerts" run (hourly schedule). This workflow has no schedule of
+# its own; it is started by hand, or on time by the optional Cloudflare trigger (repository variable
+# RELEASE_CHECK_CRON + BOT_GITHUB_TOKEN, see the README), because GitHub often skips scheduled runs when busy.
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: What to run
+        type: choice
+        options: [releases, preview, bootstrap, check]
+        default: releases
+
+permissions:
+  contents: write
+
+concurrency:
+  group: agent-state
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+
+      - name: Check official model releases
+        env:
+          MODE: ${{ inputs.mode || 'releases' }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          ZAI_API_KEY: ${{ secrets.ZAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          case "$MODE" in
+            preview)   python -m agent releases --dry-run ;;   # everything in this log; nothing sent or saved
+            bootstrap) python -m agent releases --bootstrap ;; # learn the sources as they are now; no alerts
+            check)     python -m agent check-releases ;;       # test every source; nothing saved
+            *)         python -m agent releases ;;
+          esac
+
+      - name: Save memory
+        # Always (also after a failed step): alerts Telegram already confirmed must never be sent twice.
+        if: ${{ always() && (inputs.mode == 'releases' || inputs.mode == 'bootstrap' || inputs.mode == '') }}
+        run: |
+          git config user.name "ai-news-agent"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state releases
+          if git diff --cached --quiet; then echo "Nothing to save."; exit 0; fi
+          git commit -m "releases: $(date -u '+%Y-%m-%d %H:%M') UTC"
+          git pull --rebase
+          git push

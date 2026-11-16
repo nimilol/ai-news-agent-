@@ -47,6 +47,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           BOT_GITHUB_TOKEN: ${{ secrets.BOT_GITHUB_TOKEN }}
+          RELEASE_CHECK_CRON: ${{ vars.RELEASE_CHECK_CRON }}  # optional, e.g. "7 * * * *" (see README)
         run: bash bot/deploy.sh
 
       - name: Give the bot the latest brief, picks and free-model list

@@ -20,6 +20,12 @@ write_config() {  # $1 = KV namespace id (may be empty on the very first pass)
     echo ''
     echo '[vars]'
     echo "GH_REPO = \"${GITHUB_REPOSITORY:-}\""
+    if [ -n "${RELEASE_CHECK_CRON:-}" ]; then
+      # Opt-in: Cloudflare starts the "Model releases" workflow on this schedule (needs BOT_GITHUB_TOKEN).
+      echo ''
+      echo '[triggers]'
+      echo "crons = [\"$RELEASE_CHECK_CRON\"]"
+    fi
     if [ -n "$1" ]; then
       echo ''
       echo '[[kv_namespaces]]'
@@ -90,6 +96,13 @@ curl -s "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/setMyCommands" -H 'cont
   {"command":"repos","description":"Today'"'"'s Builder picks"},
   {"command":"buzz","description":"What'"'"'s hot on GitHub and Hugging Face"},
   {"command":"ask","description":"Ask about this week'"'"'s news"},
+  {"command":"models","description":"Recent confirmed model releases"},
+  {"command":"releases","description":"Model release history"},
+  {"command":"compare","description":"Compare two models: /compare A vs B"},
+  {"command":"weekly","description":"The latest weekly news recap"},
+  {"command":"weeklymodels","description":"The latest Weekly Model Intelligence Report"},
+  {"command":"sources","description":"Official sources being monitored"},
+  {"command":"health","description":"Agent health"},
   {"command":"news","description":"Run a fresh news check now"},
   {"command":"help","description":"What I can do"}]}' >/dev/null
 

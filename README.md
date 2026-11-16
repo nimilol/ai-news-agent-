@@ -7,6 +7,11 @@ and sends you a summary on **Telegram** and/or **email**.
   newsletters, YouTube news channels and interview podcasts, the press), keeps only what's new and about your four
   companies, and has a free AI model write a brief: grouped by company, labelled *Official / Report / Rumor*, with
   links and post ideas. Interviews (a CEO or researcher on a podcast, an AMA on Reddit) are marked 🎙.
+- **🚨 New AI model alerts (hourly):** watches the *official* release sources of **Anthropic (Claude), OpenAI (GPT),
+  Moonshot AI (Kimi), Alibaba (Qwen), xAI (Grok) and Google (Gemini)**: announcement posts, API release notes,
+  model catalogs and their own Hugging Face / GitHub organisations. When a lab officially releases a new model you get
+  a verified Telegram alert that compares it with its predecessor, and a delivery receipt once Telegram confirms it.
+  See [Model release alerts](#model-release-alerts).
 - **Every hour:** checks the official sources plus the early-signal sources (TestingCatalog leaks, new and stealth
   models on OpenRouter, new model listings on models.dev) and the free-model sources (new free models on OpenRouter
   and in OpenCode), and pings you on Telegram as soon as something new appears (no AI, so it's fast and always works).
@@ -23,7 +28,13 @@ and sends you a summary on **Telegram** and/or **email**.
   Space, Bg2, All-In, 20VC and more, plus Reddit AMAs), with who the guest is and what they said.
 - **Every morning:** "🛠 Builder picks", the most useful trending AI tools and repos (GitHub Trending, fast-rising
   new repos, Hugging Face, Show HN), each with what it does and who it helps.
-- **Every Sunday:** a weekly recap of the biggest stories, with recap post ideas.
+- **Every Sunday:** a weekly recap of the biggest stories, with content opportunities (`/weekly`), and a separate
+  **Weekly Model Intelligence Report** on the week's new models from the six labs: comparisons with their
+  predecessors, updates, the competitive landscape, company-reported and independent (LMArena) benchmarks, and
+  ranked content ideas (`/weeklymodels`). See [Weekly Model Intelligence Report](#weekly-model-intelligence-report).
+- **Organised like a research assistant:** every message uses the same ten sections, four priorities (🔴 P0 to ⚪ P3)
+  and the same card layout, explains important developments in plain language, suggests news/education/analysis
+  video ideas, and never sends the same story twice. See [How Telegram messages are organised](#how-telegram-messages-are-organised).
 - **Accuracy built in:** reads the full article for the top stories, fact-checks the brief with a second AI,
   shows how many independent sources back each story (⚠️ for single-source claims), the time it first appeared,
   blocks low-quality sites, never labels press reports as "Official", and doesn't repeat stories already sent.
@@ -107,19 +118,86 @@ Add each one by name (`TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `GEMINI_API_KEY`
 - **Broken sources:** websites change. If a source fails 3 runs in a row, the brief's footer names it. Fix or remove
   its line in `sources.yaml`.
 
+## How Telegram messages are organised
+
+Everything the agent sends uses one structure (`agent/messages.py`), so a release alert, the 6-hour brief, Buzz,
+Builder picks and the weekly report all read the same way.
+
+**Ten sections**, always in this order, and only the ones with something in them:
+
+1. 🚨 NEW MODEL RELEASES · 2. 🔄 MODEL UPDATES AND IMPROVEMENTS · 3. 🧠 AI RESEARCH AND BENCHMARKS ·
+4. 📰 AI INDUSTRY NEWS · 5. 🔥 TRENDING AI DISCUSSIONS · 6. 🆓 FREE AI MODELS AND TOOLS ·
+7. 🛠 NEW AI TOOLS AND PROJECTS · 8. 🎙 AI PODCASTS AND INTERVIEWS · 9. 💡 CONTENT OPPORTUNITIES ·
+10. ⚙️ AGENT HEALTH AND SYSTEM NOTIFICATIONS
+
+Only an official release counts as a "new model release": a leak or press report about an upcoming model is filed
+under industry news with a 👀 label.
+
+**Four priorities** decide when you hear about something and how it arrives:
+
+| Priority | What | When | Sound |
+|---|---|---|---|
+| 🔴 P0 Critical | confirmed flagship model releases, major developments | at once (release monitor, every alerts run) | yes |
+| 🟠 P1 High | other confirmed new models, significant upgrades, important announcements, major research | at once | yes |
+| 🔵 P2 Normal | industry news, benchmarks, leaks, official page changes, notable discussions | at once in instant alerts, otherwise in the digest | silent |
+| ⚪ P3 Discovery | free models, repositories, experiments, tools | the digest, Buzz and Builder picks | silent |
+
+A model counts as a flagship when its id matches the company's `flagship_patterns` in `releases.yaml`, or the
+official text calls it "flagship", "most capable" or "frontier". Change what is sent at once with
+`config.yaml → alerts.min_priority` and what arrives silently with `config.yaml → telegram.silent_from`.
+
+**Every item is a card** with the same fields in the same order: headline · priority, verification and date ·
+company (and the original speaker or publication for interviews, research and discussions) · what happened ·
+why it matters · technical details · sources. Messages start with a priority summary (e.g. `🔴 1 P0 · 🔵 4 P2`).
+
+**Explained.** For important stories (P0/P1 in the brief, every confirmed release) a collapsed "📘 Explained" block
+answers: what was introduced, what it actually does, what problem it solves, how it differs from before, who
+benefits, and why a creator or developer should care. Tap it to open; it stays out of the way otherwise.
+
+**💡 Content opportunities.** For the most important story of a brief, Buzz, the weekly report and every confirmed
+release, three ideas: **A. NEWS** (a timely video), **B. EDUCATION** (explaining the technology) and **C. ANALYSIS**
+(a comparison, test or opinion), each with a suggested title, the main angle, why it is interesting and what still
+needs research or testing. Nothing is created or published: you decide.
+
+**Accuracy.** The AI only adds explanations and ideas on top of the sources: any sentence with a number that appears
+in none of the sources is dropped, and a "new model release" needs an official source.
+
+**Long reports** are split into several messages in order, never in the middle of a card or an HTML tag; a section
+that continues gets its heading again, marked "(continued)", and each part is numbered (1/3, 2/3, …).
+
+**No repeats.** Besides each run's own memory, `state/sent.json` records what was actually delivered (links,
+headlines, model identities) for 14 days, across all runs:
+- a model release delivered by the release monitor is not repeated as an instant alert, a brief story or a Buzz pick
+  (the brief's footer lists it as "already sent as alerts");
+- several sources reporting the same thing in one run become one card with several links, and the same story with a
+  reworded headline in a later run is recognised and skipped ("Grok 5 …" and "Grok 6 …" are kept apart);
+- minor edits to documentation pages (no price, limit, model or deprecation change) are not sent at all;
+- when a story really develops, it comes back once, marked 🔄 update, saying what is new (release alerts get a
+  separate 🔄 UPDATE message).
+
 ## Ask your agent
 
 Send these to your bot in Telegram (they also appear in the bot's **/** menu):
 
 | Command | What you get |
 |---|---|
-| `/free` | Every model you can use for free right now on OpenRouter and in OpenCode, newest first (🆕 = added in the last 14 days) |
 | `/latest` | The most recent news brief again |
-| `/repos` | Today's Builder picks |
 | `/buzz` | The latest Buzz: what's hot on GitHub, Hugging Face, Reddit and YouTube, with interviews |
+| `/repos` | Today's Builder picks |
+| `/weekly` | The latest weekly news recap |
+| `/weeklymodels` | The latest Weekly Model Intelligence Report |
 | `/ask your question` | An answer from this week's briefs, e.g. `/ask what did OpenAI change this week?` |
+| `/models` | Recent confirmed new model releases from the six labs |
+| `/releases` | The full release history (new models, upgrades, availability, reviews) with verification and delivery status |
+| `/compare model A vs model B` | Two models side by side from the official catalogs (context, output limit, prices, latency, inputs, availability), e.g. `/compare Claude Opus 5.5 vs GPT-6.1 Terra` |
+| `/free` | Every model you can use for free right now on OpenRouter and in OpenCode, newest first (🆕 = added in the last 14 days) |
+| `/sources` | Every official source the release monitor watches, with ✅ or ⚠️ failing |
+| `/health` | Latest run of every workflow, how often the hourly alerts really ran, failing sources, alert delivery |
 | `/news` | Run a fresh news check now (instant bot only) |
 | `/help` | The list of commands |
+
+`/compare` uses official specs only (no benchmarks); specs for models that only have a name in a catalog are filled
+in a few pages per release check. `/weekly` is available after the next Sunday report.
 
 Without the instant bot, the agent reads your messages on each hourly alert check, so **replies take up to an
 hour**. With the instant bot (next section) replies take seconds. Only your own chat (`TELEGRAM_CHAT_ID`) gets
@@ -147,8 +225,136 @@ Your GitHub agent keeps doing the research and sends the bot the latest brief, p
 
 To go back to hourly replies, run the same workflow with **remove**.
 
+## Model release alerts
+
+A dedicated monitor (`agent/releases/`, configured in `releases.yaml`) for new models from **Anthropic, OpenAI,
+Moonshot AI, Alibaba, xAI and Google**. It runs inside every "Instant alerts" run and on demand (**Actions → Model
+releases → Run workflow**).
+
+**Where it looks (all official; every endpoint was fetched and parsed on 2026-11-16, except the GitHub organisation
+lists, which use the same GitHub API your Buzz run already uses for these organisations):**
+
+| Company | Announcements | API release notes | Model catalog (ids, specs, prices) | Release repos |
+|---|---|---|---|---|
+| Anthropic | anthropic.com/news (incl. launch posts like /claude-opus-5-5) | Claude Platform release-notes feed | Claude models overview + deprecations (Markdown) | none (no open weights) |
+| OpenAI | openai.com/news RSS | API changelog (Markdown, tagged `Feature · Model: …`) | developers.openai.com model catalog + per-model pages | Hugging Face `openai`, GitHub `openai` |
+| xAI | x.ai/news | docs.x.ai release notes | docs.x.ai models & pricing | Hugging Face `xai-org`, GitHub `xai-org` |
+| Google | DeepMind blog, Gemini blog, Developers Blog (RSS) | Gemini API changelog + Gemini app release notes | Gemini API models (+ the official model-list API if `GEMINI_API_KEY` is set) | Hugging Face `google` |
+| Moonshot AI | kimi.com/blog | (the platform changelog stopped in 2025) | platform.kimi.ai model list | Hugging Face `moonshotai`, GitHub `MoonshotAI` |
+| Alibaba | (qwen.ai only renders in a browser; its old blog feed stopped in 2025) | | Alibaba Cloud Model Studio "newly released models" (Qwen only) | Hugging Face `Qwen`, GitHub `QwenLM` |
+
+OpenRouter, models.dev and TestingCatalog are read too, but only as **early signals**: they can never confirm a
+release. A source is only treated as official when its address is on the company's own domains (checked by
+`python -m agent check-releases`, which also tests every source).
+
+**How a change is classified.** Everything the sources report is put in one of six categories:
+A `NEW_MODEL_RELEASE` · B `MAJOR_MODEL_UPGRADE` · C `MODEL_AVAILABILITY` · D `DOCUMENTATION_OR_PRICING_CHANGE` ·
+E `PRODUCT_OR_FEATURE_ANNOUNCEMENT` · F `UNCONFIRMED_EARLY_SIGNAL`, and gets a verification status:
+`OFFICIAL CONFIRMED`, `OFFICIAL UPDATE`, `UNCONFIRMED`, `REJECTED AS DUPLICATE` or `REQUIRES MANUAL REVIEW`.
+The rules are deterministic Python (`agent/releases/classify.py`): a model family/version/tier never seen in the
+official catalogs, introduced by an official post, changelog entry, catalog listing or repository, is a new model;
+a new dated snapshot or "-preview"/"-highspeed" variant of a known model is an upgrade; GA, new regions, apps or
+tiers are availability; price, limit and deprecation edits are documentation changes. Only `OFFICIAL CONFIRMED` new
+models get the full 🚨 alert; upgrades and availability get shorter ⬆️/🟢 alerts; documentation, feature and early-signal
+items are saved but not sent (switch any of them on in `releases.yaml → settings.notify`). If the official text can't
+be read, or the agent finds conflicting evidence, you get a short 🔎 "requires manual review" note instead.
+
+**Verification and comparison.** For a confirmed launch the agent reads the official announcement, release note and
+model page, takes the announcement and availability dates from the sources themselves (both are shown separately;
+"Not stated" when a source doesn't say), and finds the previous model: first the company's own words ("an upgrade
+over Claude Sonnet 5", "migration from Gemini 3.8 Flash"), otherwise the model lineage in the official catalog (same
+family and tier, previous version; xAI's 4.20 correctly sorts before 4.3). It compares context window, output limit,
+prices, latency, modalities and availability from the official specs, and, with an AI key, reads the announcement for
+benchmarks and claims. Every AI statement must quote the official text verbatim and every number must appear in the
+sources, otherwise it is thrown away. Company-reported benchmarks, qualitative claims and the AI's interpretation are
+labelled separately; independent benchmarks are listed as not collected. Without any AI key the alert still goes out
+with the facts from the official pages.
+
+**Delivery confirmation.** Alerts go through an outbox in `state/releases.json`: `PENDING` → `SENT` only when
+Telegram itself answers `"ok": true` with a message id for every part, which is saved with the time. A failed send
+becomes `RETRY_PENDING` and is retried on the next run, re-sending only the parts Telegram didn't confirm; after 6
+failed runs it is `FAILED` (kept in the history). Once confirmed, the alert's "DELIVERY" line is updated to show the
+message id and a short ✅ delivery receipt follows. Verification and delivery status are stored separately.
+
+**Release history.** `state/releases.json` keeps every release with company, model, previous model, classification,
+announcement and availability dates, official source, verification status, comparison summary, first-detected and
+last-updated times, Telegram delivery status and message ids. It is never pruned. Confirmed alerts are also saved as
+Markdown in `releases/`. The first run (and the first run of any newly added source) only learns what is already
+published and sends nothing.
+
+**How fast, honestly.** This is scheduled polling: none of these labs offers a push notification for new models, so
+real-time detection isn't possible on this setup. The check itself takes seconds. The delay is the time until the next
+run plus the minutes a lab takes to update its pages:
+- **Default (no setup):** every "Instant alerts" run, scheduled hourly. GitHub skips many scheduled runs when it is
+  busy; this repository's hourly alerts have actually run every **4-9 hours**. Expect alerts within hours, not minutes.
+- **Dependable hourly (recommended, free):** let your Cloudflare bot start the check on time. Add the
+  `BOT_GITHUB_TOKEN` secret (see "Instant replies"), add a repository **variable** (Settings → Secrets and variables →
+  Actions → Variables) named `RELEASE_CHECK_CRON` with the value `7 * * * *`, and run **Deploy Telegram bot →
+  deploy** again. Expected delay: under about 65 minutes. Cost: up to about 720 extra GitHub Actions minutes a month
+  (each run is billed as at least one minute), which fits the free 2,000 minutes of a private repository together
+  with the other runs at their real frequency. A public repository has unlimited minutes, so `*/15 * * * *` (≈15
+  minutes) would be possible there.
+
+**Secrets.** Nothing new is required: `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` for the alerts, and your existing
+free AI keys (optional) for reading and comparing announcements. `GITHUB_TOKEN` is provided by GitHub automatically
+(used to list the labs' GitHub repositories). Optional: `ANTHROPIC_API_KEY` adds Anthropic's Models API,
+`GEMINI_API_KEY` adds Google's official model list, and `BOT_GITHUB_TOKEN` + the `RELEASE_CHECK_CRON` variable enable
+the dependable trigger above.
+
+**Commands.** `python -m agent releases` (add `--dry-run` to print without sending or saving, `--bootstrap` to learn
+the sources again without alerts) and `python -m agent check-releases`. In the **Model releases** workflow these are
+the modes `releases`, `preview`, `bootstrap` and `check`.
+
+**Known limits.** qwen.ai can't be read without a browser, so Qwen launches are confirmed through Alibaba Cloud's
+docs and Qwen's own repositories. xAI's release notes give only the month. If Telegram accepts a message but the
+answer is lost in a network error, that part is sent again on the next run (Telegram offers no way to check).
+
+## Weekly Model Intelligence Report
+
+Every Sunday at 17:53 UTC, right after the weekly news recap (which is unchanged), the agent sends a report on the
+AI models Anthropic, OpenAI, Moonshot AI, Alibaba, xAI and Google officially released in the last seven days
+(`agent/releases/weekly.py`, `python -m agent weekly-models`). It is built from the release monitor's own history
+(`state/releases.json`), not from the news briefs.
+
+**Sections**
+1. **🚨 New model releases**: every confirmed release with company, model, announcement date, availability date,
+   main capabilities, official announcement link and API/product availability.
+2. **↔️ Model-to-model comparisons**: each new model against its predecessor (the one the company itself named, or
+   the previous version in its catalog): reasoning, coding, multimodal, context window, speed, pricing and benchmark
+   results. Rows without evidence are listed as "Not established" instead of being guessed.
+3. **🔄 Important model updates**: upgrades, availability changes, pricing changes, retirements and API changes,
+   kept apart from new models; unconfirmed candidates are listed separately and never counted as releases.
+4. **🧭 Competitive landscape**: activity per company and evidence-based answers to: which companies introduced
+   significant improvements, which capabilities are advancing, where competitors converge or differ, and which
+   limitations remain; plus where each company's best model stands on LMArena.
+5. **📈 Benchmark intelligence**: company-reported results (from the official announcements, labelled as such) and
+   independent results from **LMArena** (the official `lmarena-ai/leaderboard-dataset` on Hugging Face, updated daily:
+   crowdsourced blind pairwise votes, Elo-style ratings with 95% confidence intervals, for general text, coding, math
+   and vision). Scores from different evaluations are never compared with each other; within LMArena, a difference
+   is only called real when the confidence intervals don't overlap.
+6. **💡 Content opportunities**: three video topics, three X posts, one model comparison and one deeper educational
+   topic, each scored 1-5 for relevance, evidence quality (computed from the evidence: official confirmation,
+   specs, benchmarks) and educational value, and ranked by the total.
+
+**Counting rules.** A release is counted once, in the first Sunday report after it was confirmed: the report
+records which releases it covered, so a manual re-run or the next week never counts them again. A model announced
+earlier but only detected this week is included and marked ⏱ "detected late". Two records for the same model
+(e.g. a launch that arrived through several sources) count as one.
+
+**Without AI keys** the report is still complete: comparisons, updates, benchmarks and the landscape answers come
+straight from the evidence, and content ideas are generated from the strongest evidence. With a key, an AI writes
+the landscape answers and the content ideas from the same facts; any sentence with a number that isn't in the
+facts is thrown away.
+
+**Archive and commands.** Every report is saved as Markdown in `releases/weekly/YYYY-MM-DD.md`; `/weeklymodels`
+resends the latest one. Run it by hand with **Actions → Weekly recap → Run workflow** and choose `models` (send now)
+or `preview-models` (print in the log, nothing sent or saved); `recap` and `both` work as before. Independent
+benchmark sources are configured in `releases.yaml → independent_benchmarks`.
+
 ## Customising
 
+- **Model release sources:** `releases.yaml`, one block per company with its official hosts, model-name patterns and
+  sources (each with how it was verified). Run `python -m agent check-releases` after editing it.
 - **Sources:** `sources.yaml`. Each line is one source, with comments explaining the fields. Add any RSS feed
   (Substack newsletters: add `/feed` to the address; GitHub releases: add `/releases.atom`).
 - **Companies and keywords:** `config.yaml` → `companies`. Add a company with its keywords and the agent starts
@@ -192,9 +398,11 @@ python -m pytest -q                  # offline tests
 | Path | What it is |
 |---|---|
 | `sources.yaml` | where the agent looks |
+| `releases.yaml` | the model release monitor: official sources and settings for the six labs |
 | `config.yaml` | companies, keywords, AI providers, delivery |
-| `agent/` | the code: `sources.py` (fetchers), `digest.py` (AI prompt and formatting), `accuracy.py` (articles, source counts, blocklist), `factcheck.py` (second-AI check), `builders.py` (Builder picks), `buzz.py` (3-hourly Buzz: GitHub, Hugging Face, Reddit, YouTube), `weekly.py` (recap), `freemodels.py` (`/free`), `commands.py` (Telegram commands), `botpush.py` (feeds the instant bot), `llm.py` (providers), `deliver.py` (Telegram/email), `__main__.py` (the runs) |
+| `agent/` | the code: `messages.py` (sections, priorities, cards, message splitting), `ledger.py` (what was already sent), `alerts.py` (instant alerts), `health.py` (/health), `sources.py` (fetchers), `digest.py` (AI prompt and formatting), `accuracy.py` (articles, source counts, blocklist), `factcheck.py` (second-AI check), `builders.py` (Builder picks), `buzz.py` (3-hourly Buzz: GitHub, Hugging Face, Reddit, YouTube), `weekly.py` (recap), `freemodels.py` (`/free`), `commands.py` (Telegram commands), `botpush.py` (feeds the instant bot), `llm.py` (providers), `deliver.py` (Telegram/email), `__main__.py` (the runs), `releases/` (model release monitor: `parsers.py`, `classify.py`, `analyze.py`, `render.py`, `notify.py`, `pipeline.py`; `weekly.py` the Weekly Model Intelligence Report; `benchmarks.py` LMArena) |
 | `bot/` | the instant Telegram bot for Cloudflare Workers, its tests and deploy script |
 | `state/` | the agent's memory of what it already sent (saved by the workflows) |
 | `digests/` | archive of every brief |
+| `releases/` | archive of every confirmed model release alert, and of every Weekly Model Intelligence Report (`releases/weekly/`) |
 | `.github/workflows/` | the schedules |

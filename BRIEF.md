@@ -135,3 +135,46 @@ Follow-up:
   hottest item of each kind is sent. A pick isn't repeated for 7 days. Telegram (email if Telegram isn't set
   up), `/buzz` command. About 480 more GitHub minutes a month (recent runs take 1-2 minutes), about 8 more AI
   requests a day.
+- **2026-11-16, owner asked for a dedicated AI Model Release Intelligence system:** "monitor official model
+  announcements and release information from Anthropic (Claude), OpenAI (GPT), Moonshot AI (Kimi), Alibaba (Qwen),
+  xAI (Grok) and Google (Gemini) … official sources must establish release confirmation … compare the new model
+  against its predecessor … confirm successful Telegram delivery". An audit first found: the hourly alerts actually
+  run every 4-9 hours (GitHub skips scheduled runs); Anthropic's model launch posts live at the site root
+  (/claude-opus-5-5), which the `^/news/` pattern never matched; the "OpenAI models page" watcher only ever saw 5
+  lines (the page is rendered by JavaScript); "Claude Blog" (moved to /resources/articles) and help.openai.com (403
+  to bots) have been failing for weeks; and every lab except Alibaba now publishes Markdown copies of its docs.
+  Built `agent/releases/` + `releases.yaml` (30 official sources + 3 early-signal listings, every endpoint checked) as a
+  separate module so the digest's four-company scope is unchanged: model catalogs and changelogs are diffed as
+  structured data, changes are classified deterministically into six categories with five verification statuses,
+  confirmed launches are compared with their predecessor (the company's own wording first, then the catalog lineage),
+  the AI only adds facts it can quote verbatim from the official text, and alerts go through a Telegram outbox that
+  only counts Telegram's own confirmation (message ids saved, retries never repeat a confirmed part, receipt after
+  delivery). Runs inside every "Instant alerts" run (no schedule changed) and on demand; an optional Cloudflare cron
+  can start it on time. Tested against today's real launches (Gemini 4 Hydrogen, Claude Fable/Mythos 5.2, GPT-6
+  Cyber, Kimi K3.1 Pro): all four detected, confirmed and compared with the right predecessor.
+- **2026-11-16, owner asked for Telegram intelligence and message organisation:** "every notification must have a
+  clear purpose, category, priority and consistent presentation … like a professional AI research assistant".
+  Added `agent/messages.py`: ten fixed sections (only non-empty ones shown), four priorities (P0 critical to P3
+  discovery) and one card layout (headline · priority/verification/date · company or speaker · what happened · why
+  it matters · details · sources), with a collapsed "Explained" block (six questions) for important stories and
+  A/B/C content opportunities (title, angle, why, research needed). Long reports split in order without cutting a
+  card or an HTML tag. Every producer now uses it: the brief (the AI also returns section, why, details, speaker,
+  explanations and content ideas; sections and priorities are enforced by rules; numbers that appear in no source are
+  dropped), instant alerts (rule-based sections and priorities, minor documentation edits dropped, several sources
+  merged into one card, P3 deferred to the digest), Buzz, Builder picks, the weekly report (now saved) and the release
+  monitor (flagship releases P0). Priority sets timing and sound: P2/P3 arrive silently. A cross-run ledger
+  (`state/sent.json`) stops a story from being delivered again by another run or with a reworded headline. New
+  commands: /models, /compare (official specs side by side), /sources, /health (live workflow runs via the GitHub
+  API, including how often the hourly alerts really ran), /weekly; all existing commands kept, in both bots.
+- **2026-11-16, owner asked for a Weekly Model Intelligence Report:** "every Sunday, a complete overview of the AI
+  models officially announced or released during the previous seven days … use the persistent model-release
+  history … do not break the existing weekly recap", then "push all to main". Added `agent/releases/weekly.py`
+  (`python -m agent weekly-models`), a second step of the Sunday workflow that can't fail the recap: new releases,
+  comparisons with predecessors, updates (kept apart), an evidence-based competitive landscape, benchmark
+  intelligence and ranked content ideas (3 videos, 3 X posts, 1 comparison, 1 educational topic). Each release is
+  counted once (the report records what it covered; late detections are included and marked). Independent
+  benchmarks: LMArena's official Hugging Face dataset (checked live: current, with confidence intervals), compared
+  only within one leaderboard category; Aider's leaderboard was rejected as stale (last entry Oct 2025), and
+  lmarena.ai, epoch.ai, swebench.com, livebench.ai and artificialanalysis.ai offer no keyless machine-readable feed.
+  Release records now also keep the full comparison, explanation and API availability for the report. Archive in
+  releases/weekly/, command /weeklymodels in both bots.
