@@ -39,6 +39,11 @@ and sends you a summary on **Telegram** and/or **email**.
   tools), checks each one (licence, cost, maintenance, documentation, security) and sends only new, useful ones as one
   curated batch, never the same resource twice (`/discoveries`).
   See [AI Skills & Open-Source Discovery](#ai-skills--open-source-discovery).
+- **🔑 Model Access Intelligence (`/modelaccess`).** Where any model (Claude, GPT, Gemini, Grok, Llama, DeepSeek, Qwen,
+  Mistral, Kimi, GLM, MiniMax and the rest) can be used for free (free tiers with limits, credits, free plans) or
+  cheaply, across official APIs, third-party providers, coding platforms and apps, refreshed every 6 hours, with
+  free-access alerts and a Saturday Weekly Model Access Report. Separate from `/free`.
+  See [Model Access Intelligence](#model-access-intelligence).
 - **Organised like a research assistant:** every message uses the same ten sections, four priorities (🔴 P0 to ⚪ P3)
   and the same card layout, explains important developments in plain language, suggests news/education/analysis
   video ideas, and never sends the same story twice. See [How Telegram messages are organised](#how-telegram-messages-are-organised).
@@ -199,6 +204,7 @@ Send these to your bot in Telegram (they also appear in the bot's **/** menu):
 | `/releases` | The full release history (new models, upgrades, availability, reviews) with verification and delivery status |
 | `/compare model A vs model B` | Two models side by side from the official catalogs (context, output limit, prices, latency, inputs, availability), e.g. `/compare Claude Opus 5.5 vs GPT-6.1 Terra` |
 | `/free` | Every model you can use for free right now on OpenRouter and in OpenCode, newest first (🆕 = added in the last 14 days) |
+| `/modelaccess` | Where models can be used for free or cheaply. Also `/modelaccess free`, `cheapest`, `leaderboard`, `weekly`, `/modelaccess Claude` (a company), `/modelaccess Claude fable 5.2` or `/modelaccess deepseek v4 flash` (one model), `/modelaccess compare kimi k3` (every provider's price), `/modelaccess alternatives claude fable 5.2` |
 | `/sources` | Every official source the release monitor watches, with ✅ or ⚠️ failing |
 | `/health` | Latest run of every workflow, how often the hourly alerts really ran, failing sources, alert delivery |
 | `/news` | Run a fresh news check now (instant bot only) |
@@ -432,6 +438,75 @@ Papers with Code closed in 2025 and Hugging Face papers have no code links, so r
 GitHub searches; the extra workflow uses about 8 short runs a day (roughly 250-450 GitHub Actions minutes a month,
 inside the free allowance of a private repository with the other runs at their real frequency).
 
+## Model Access Intelligence
+
+`/modelaccess` answers "where can I use this model for free, or cheapest?" (`agent/modelaccess/`, configured in
+`modelaccess.yaml`). It is independent of `/free`: different data, different replies, and every reply begins with
+**[MODEL ACCESS INTELLIGENCE]**.
+
+**What it finds.** Models are discovered from the provider catalogs, not from a fixed list: models.dev (about 320
+providers' official and third-party price lists), OpenRouter's live catalog and its per-provider breakdowns, and
+Google's Gemini API pricing page. Each model is grouped under its maker (OpenAI, Anthropic, Google, xAI, Meta,
+DeepSeek, Alibaba/Qwen, Mistral, Microsoft, NVIDIA, Zhipu, Moonshot, MiniMax, Cohere, AI21 and any other author the
+catalogs name) and tagged general, reasoning, coding, multimodal, image, video, audio, embedding, agentic or small.
+Coding platforms and apps (GitHub Copilot Free, Google AI Studio, Claude.ai and ChatGPT free plans, Cursor, Windsurf,
+Arena, NVIDIA's API catalog, ...) are listed in `modelaccess.yaml` with their source page.
+
+**Statuses.** Every offer and every model gets one: `FREE` (open weights you run yourself), `LIMITED_FREE` (a free
+tier with limits; never described as unlimited), `FREE_CREDITS`, `LOW_COST` (blended price at or under $1 per 1M
+tokens), `PAID_ONLY` (including "included in a paid subscription"), `UNVERIFIED`.
+
+**How it avoids false claims.**
+- A $0 price only counts as free for providers whose free tier is confirmed (OpenRouter's `:free` models, the Gemini
+  API Free tier, Z.ai's Flash models, OpenCode/Vercel free models, ModelScope, SiliconFlow China). Elsewhere a $0
+  listing is shown as UNVERIFIED (it is often a gap in the catalog, or per-request pricing), and a $0 price in a
+  coding or token plan means "included in the plan".
+- Google's own pricing page overrides the catalog (e.g. Lyria is listed at $0 but has no Free tier: UNVERIFIED).
+- Published terms are re-checked on each refresh: OpenRouter's free limits (20 requests/minute; 50 a day, or 1,000 a
+  day after $10 of credits), GitHub Copilot Free (AI credit allowance, 2,000 completions a month, auto model
+  selection only), GitHub Models (confirmed retired on 30 July 2026: shown as discontinued). An entry whose claim
+  disappears from its page drops back to UNVERIFIED.
+- Anything not stated by a source is shown as "not stated" (card, geography, commercial use, ...), never guessed.
+- Community claims (Reddit leads, and the X posts it was seeded with: "unlimited" DeepSeek V4 Flash on OMO dev,
+  Gemini 4 Argon free on Arena, Zonos3-Mini voice) are always labelled UNVERIFIED. Uncensored/abliterated models
+  and providers that advertise removing safety are excluded.
+- "Cheapest", "best value", "best for agents" and the leaderboard only use the official APIs and established
+  providers (`vetted` in `modelaccess.yaml`); small resellers still appear in `/modelaccess compare`, labelled
+  "unvetted reseller".
+
+**Per model** (`/modelaccess <model>`): status, best free option with every term (platform, exact model id, access
+type, registration, card, daily/monthly limits, token quota, rate limits, context, geography, commercial use,
+permanent or temporary, link, verification date), cheapest verified provider, official price, best value for
+developers (keeps the context window and tool calls), best for agents (cached-input cost), best for heavy usage
+(output-heavy), subscriptions that include it (priced separately), open weights. Prices are USD per 1M tokens:
+input, output and cached input; "blended" = 3 parts input to 1 part output.
+
+**Leaderboard** (`/modelaccess leaderboard`): best completely free, best free API providers, coding, reasoning,
+agents, cheapest premium access, best overall value. Ranked on a transparent capability score (the maker's price
+tier, reasoning, tool calling, context, recency, how many providers host it) against price, never on how many models
+a provider lists.
+
+**Database.** `state/modelaccess.json` (one record per line, committed like the rest of the memory): models, offers
+(first seen, last seen, last verified, active), platform checks, price/quota/status change history, alert history,
+community leads and the alert outbox. A refresh merges into it; an offer is only marked gone after its catalog loaded
+fine twice without it, and a catalog that fails to load keeps its last good data (the reply footer says so).
+
+**Schedule (no new scheduler).** Refresh: a step of the 6-hourly news digest run (`python -m agent model-access`,
+about 15 seconds; a failure never affects the brief). Free-access alerts go out from that step: paid → free, new
+free offer, new model with free access, a new provider at least 15% cheaper for a premium model, price drops of 25%
+or more, changed free limits, free access that ended, new or discontinued platforms. Each alert has the model,
+provider, what changed, before and now, quota or pricing, link, source and verification date; it is recorded as sent
+only after Telegram confirms it and is never sent twice. **Weekly Model Access Report:** Saturdays, right after the
+Weekly Model Intelligence Report (same workflow), opening with **BEST MODEL ACCESS OPPORTUNITIES THIS WEEK**, then new
+free access, price and limit changes, ended free access, the leaderboard and unverified leads (`/modelaccess weekly`).
+
+**Bots.** The instant (Cloudflare) bot gets the ready-made replies after each refresh (only the pieces that changed:
+18 small storage keys), so it answers in seconds with the same routing as the Python side. Redeploy the bot once
+(Actions → Deploy Telegram bot (Cloudflare) → Run workflow) so it learns `/modelaccess`. Without the instant bot, the hourly run answers.
+
+**Run it by hand:** Actions → AI news digest → Run workflow → `model-access`, or `python -m agent model-access
+--dry-run` (prints, saves nothing). **Secrets:** none new (it only reads public catalogs; Telegram secrets for alerts).
+
 ## Customising
 
 - **Model release sources:** `releases.yaml`, one block per company with its official hosts, model-name patterns and
@@ -481,8 +556,9 @@ python -m pytest -q                  # offline tests
 | `sources.yaml` | where the agent looks |
 | `releases.yaml` | the model release monitor: official sources and settings for the six labs |
 | `discovery.yaml` | the AI skills & open-source discovery engine: searches, categories, scoring, your projects |
+| `modelaccess.yaml` | Model Access Intelligence: companies, how $0 prices are read, vetted providers, platforms and their checks |
 | `config.yaml` | companies, keywords, AI providers, delivery |
-| `agent/` | the code: `messages.py` (sections, priorities, cards, message splitting), `ledger.py` (what was already sent), `alerts.py` (instant alerts), `health.py` (/health), `sources.py` (fetchers), `digest.py` (AI prompt and formatting), `accuracy.py` (articles, source counts, blocklist), `factcheck.py` (second-AI check), `builders.py` (Builder picks), `buzz.py` (3-hourly Buzz: GitHub, Hugging Face, Reddit, YouTube), `weekly.py` (recap), `freemodels.py` (`/free`), `commands.py` (Telegram commands), `botpush.py` (feeds the instant bot), `llm.py` (providers), `deliver.py` (Telegram/email), `__main__.py` (the runs), `discovery/` (AI skills & open-source discovery: `sources.py`, `evaluate.py`, `explain.py`, `render.py`, `pipeline.py`, `store.py`), `releases/` (model release monitor: `parsers.py`, `classify.py`, `analyze.py`, `render.py`, `notify.py`, `pipeline.py`; `weekly.py` the Weekly Model Intelligence Report; `benchmarks.py` LMArena) |
+| `agent/` | the code: `messages.py` (sections, priorities, cards, message splitting), `ledger.py` (what was already sent), `alerts.py` (instant alerts), `health.py` (/health), `sources.py` (fetchers), `digest.py` (AI prompt and formatting), `accuracy.py` (articles, source counts, blocklist), `factcheck.py` (second-AI check), `builders.py` (Builder picks), `buzz.py` (3-hourly Buzz: GitHub, Hugging Face, Reddit, YouTube), `weekly.py` (recap), `freemodels.py` (`/free`), `commands.py` (Telegram commands), `botpush.py` (feeds the instant bot), `llm.py` (providers), `deliver.py` (Telegram/email), `__main__.py` (the runs), `modelaccess/` (Model Access Intelligence, `/modelaccess`: `sources.py`, `normalize.py`, `db.py`, `analyze.py`, `alerts.py`, `render.py`, `respond.py`, `pipeline.py`), `discovery/` (AI skills & open-source discovery: `sources.py`, `evaluate.py`, `explain.py`, `render.py`, `pipeline.py`, `store.py`), `releases/` (model release monitor: `parsers.py`, `classify.py`, `analyze.py`, `render.py`, `notify.py`, `pipeline.py`; `weekly.py` the Weekly Model Intelligence Report; `benchmarks.py` LMArena) |
 | `bot/` | the instant Telegram bot for Cloudflare Workers, its tests and deploy script |
 | `state/` | the agent's memory of what it already sent (saved by the workflows) |
 | `digests/` | archive of every brief |

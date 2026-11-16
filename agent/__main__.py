@@ -489,6 +489,21 @@ def cmd_discovery(args):
     return discovery.run(dry_run=args.dry_run)
 
 
+def cmd_model_access(args):
+    """Model Access Intelligence refresh (agent/modelaccess/): where models can be used for free or cheaply."""
+    from .modelaccess import pipeline as model_access
+
+    return model_access.refresh(dry_run=args.dry_run)
+
+
+def cmd_model_access_weekly(args):
+    """Saturday: the Weekly Model Access Report (sent after the Weekly Model Intelligence Report)."""
+    from .modelaccess import pipeline as model_access
+
+    config, _ = load()
+    return model_access.weekly(config, dry_run=args.dry_run)
+
+
 def cmd_push_bot(args):
     """Send everything the always-on bot needs (used right after the bot is deployed)."""
     import json
@@ -504,6 +519,18 @@ def cmd_push_bot(args):
         if path.exists():
             ok = botpush.push(key, json.loads(path.read_text(encoding="utf-8"))) and ok
     refresh_bot_free_models(config, args, attempts=3)
+    try:  # /modelaccess replies (every piece, not only changed ones: the bot may be new)
+        from .modelaccess import config as mconfig
+        from .modelaccess import respond as model_access
+        from .modelaccess.db import AccessDB
+
+        access_db = AccessDB()
+        if access_db.models:
+            bundle, _, _ = model_access.build(access_db, mconfig.load())
+            for key, value in model_access.bot_payloads(bundle).items():
+                ok = botpush.push(key, value) and ok
+    except Exception as e:  # noqa: BLE001 - the rest of the bot still works
+        print(f"  /modelaccess data not pushed: {str(e)[:150]}")
     return 0 if ok else 1
 
 
@@ -537,7 +564,7 @@ def main():
     parser = argparse.ArgumentParser(prog="python -m agent", description="AI news agent")
     parser.add_argument("command", choices=["digest", "alerts", "builders", "buzz", "weekly", "check-sources", "test-delivery",
                                             "test-ai", "free-models", "push-bot", "releases", "check-releases",
-                                            "weekly-models", "discovery"])
+                                            "weekly-models", "discovery", "model-access", "model-access-weekly"])
     parser.add_argument("--dry-run", action="store_true", help="print instead of sending; don't save state")
     parser.add_argument("--bootstrap", action="store_true",
                         help="releases only: learn every official source as it is now, without sending alerts")
@@ -546,7 +573,8 @@ def main():
                 "test-delivery": cmd_test_delivery, "test-ai": cmd_test_ai,
                 "free-models": cmd_free_models, "builders": cmd_builders, "buzz": cmd_buzz, "weekly": cmd_weekly,
                 "push-bot": cmd_push_bot, "releases": cmd_releases, "check-releases": cmd_check_releases,
-                "weekly-models": cmd_weekly_models, "discovery": cmd_discovery}
+                "weekly-models": cmd_weekly_models, "discovery": cmd_discovery, "model-access": cmd_model_access,
+                "model-access-weekly": cmd_model_access_weekly}
     sys.exit(commands[args.command](args))
 
 

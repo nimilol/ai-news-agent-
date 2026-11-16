@@ -53,6 +53,26 @@ jobs:
             python -m agent weekly-models
           fi
 
+      # The Weekly Model Access Report (/modelaccess weekly), sent right after the model report. Its failure never
+      # blocks saving the model report.
+      - name: Weekly Model Access Report
+        if: ${{ always() }}
+        continue-on-error: true
+        timeout-minutes: 5
+        env:
+          MODE: ${{ inputs.mode || 'models' }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
+          EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        run: |
+          if [ "$MODE" = "preview" ]; then
+            python -m agent model-access-weekly --dry-run
+          else
+            python -m agent model-access-weekly
+          fi
+
       - name: Save the report (/weeklymodels, archive in releases/weekly/)
         if: ${{ always() && (inputs.mode || 'models') == 'models' }}
         run: |

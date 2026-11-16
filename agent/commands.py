@@ -29,7 +29,8 @@ HELP = (
     "/releases · the full release history (upgrades, availability, reviews)\n"
     "/weeklymodels · the latest Weekly Model Intelligence Report\n"
     "/compare model A vs model B · official specs side by side\n"
-    "/free · models you can use for free right now\n\n"
+    "/free · models you can use for free right now\n"
+    "/modelaccess · where any model can be used for free or cheaply (try /modelaccess help)\n\n"
     "<b>System</b>\n"
     "/sources · the official sources being monitored\n"
     "/health · runs, failing sources and alert delivery\n"
@@ -46,6 +47,7 @@ COMMANDS = [
     {"command": "models", "description": "Recent confirmed model releases"},
     {"command": "releases", "description": "Model release history"},
     {"command": "compare", "description": "Compare two models: /compare A vs B"},
+    {"command": "modelaccess", "description": "Free or cheap access to any model"},
     {"command": "weekly", "description": "The latest weekly news recap"},
     {"command": "weeklymodels", "description": "The latest Weekly Model Intelligence Report"},
     {"command": "sources", "description": "Official sources being monitored"},
@@ -145,6 +147,16 @@ def compare_models(args):
     return render_compare(found[0], found[1], companies)
 
 
+def model_access(args):
+    """The /modelaccess reply (Model Access Intelligence, agent/modelaccess/). Independent of /free."""
+    from .modelaccess import pipeline
+
+    try:
+        return pipeline.answer(args)
+    except Exception as e:  # noqa: BLE001
+        return [f"[MODEL ACCESS INTELLIGENCE]\nSorry, I couldn't answer that right now ({str(e)[:100]})."]
+
+
 def send_free_models(config):
     send_telegram(freemodels.render(freemodels.collect(config)))
 
@@ -175,7 +187,7 @@ def handle(config):
         raw = (msg.get("text") or "").strip()
         words = raw.split()
         command = words[0].lstrip("/").split("@")[0].lower() if words else ""
-        if command in ("ask", "compare"):
+        if command in ("ask", "compare", "modelaccess"):
             question = raw.split(None, 1)[1].strip() if len(words) > 1 else ""
             wanted.append((command, question))
             continue
@@ -229,6 +241,8 @@ def handle(config):
                     send_telegram(["No Weekly Model Intelligence Report yet. It arrives on Saturday afternoon."])
             elif isinstance(command, tuple) and command[0] == "compare":
                 send_telegram(compare_models(command[1]))
+            elif isinstance(command, tuple) and command[0] == "modelaccess":
+                send_telegram(model_access(command[1]))
             elif command == "news":
                 send_telegram(["/news needs the instant bot (see 'Instant replies' in the README). For now, open GitHub: "
                                "Actions → AI news digest → Run workflow → digest."])

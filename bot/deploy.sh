@@ -100,6 +100,7 @@ curl -s "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/setMyCommands" -H 'cont
   {"command":"models","description":"Recent confirmed model releases"},
   {"command":"releases","description":"Model release history"},
   {"command":"compare","description":"Compare two models: /compare A vs B"},
+  {"command":"modelaccess","description":"Free or cheap access to any model"},
   {"command":"weekly","description":"The latest weekly news recap"},
   {"command":"weeklymodels","description":"The latest Weekly Model Intelligence Report"},
   {"command":"sources","description":"Official sources being monitored"},

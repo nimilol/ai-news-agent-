@@ -8,7 +8,7 @@ on:
       mode:
         description: What to run
         type: choice
-        options: [digest, preview, free-models, check-sources, test-delivery, test-ai]
+        options: [digest, preview, model-access, free-models, check-sources, test-delivery, test-ai]
         default: digest
 
 permissions:
@@ -50,8 +50,20 @@ jobs:
             python -m agent "$MODE"
           fi
 
-      - name: Save memory and archive
+      # Model Access Intelligence (/modelaccess): refresh where models can be used for free or cheaply, send
+      # free-access alerts, update the bot. Part of this 6-hourly run (no separate schedule); a failure here never
+      # stops the brief or the save below.
+      - name: Model access refresh
         if: ${{ (inputs.mode || 'digest') == 'digest' }}
+        continue-on-error: true
+        timeout-minutes: 6
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python -m agent model-access
+
+      - name: Save memory and archive
+        if: ${{ always() && contains(fromJSON('["digest", "model-access"]'), inputs.mode || 'digest') }}
         run: |
           git config user.name "ai-news-agent"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

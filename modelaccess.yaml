@@ -1,0 +1,263 @@
+# Model Access Intelligence (python -m agent model-access, agent/modelaccess/).
+#
+# Finds where AI models can be used for free (limited quotas, free tiers, credits, free plans) or cheaply,
+# across official APIs, third-party providers, coding platforms and apps. It is independent of /free.
+#
+# Model discovery is NOT a hard-coded model list: every model in the provider catalogs below is found
+# automatically, grouped by its canonical id (author/model). The `companies` section only gives display names and
+# extra id prefixes; a company that isn't listed still appears, under the author name the catalogs use.
+#
+# Nothing here is a claim by itself. Each `platforms` entry has a source page; when it has a `verify` block the
+# refresh fetches that page and marks the entry VERIFIED (with the date) only if every phrase is still there.
+# Entries without a working check stay UNVERIFIED and are always shown with that label.
+
+settings:
+  # Blended price = (3 x input + 1 x output) / 4, per 1M tokens: a 3:1 input:output mix, typical of chat and agents.
+  low_cost_max_blended: 1.00      # USD per 1M tokens (blended) or less = LOW_COST
+  heavy_usage_ratio: 3            # "best for heavy usage" weights output this many times more than the blend
+  min_context_for_agents: 64000   # an "agents" pick needs tool calling and at least this context
+  openrouter_endpoint_lookups: 25 # per refresh: per-model OpenRouter provider breakdowns (oldest first)
+  stale_hours: 12                 # commands mention when the data is older than this
+  max_alerts_per_run: 6
+  alert_cooldown_days: 30         # the same change on the same offer is never alerted twice within this window
+  history_keep: 3000              # price/quota change events kept (oldest dropped first)
+  leads_keep_days: 45
+  weekly_top: 8
+  exclude_patterns:               # never listed: community fine-tunes that strip safety, and similar
+    - uncensored
+    - abliterated
+    - heretic
+    - jailbreak
+    - nsfw
+
+companies:   # canonical author -> display name; `aliases` are extra author ids the catalogs use
+  openai: {name: OpenAI}
+  anthropic: {name: Anthropic}
+  google: {name: Google}
+  xai: {name: xAI, aliases: [x-ai]}
+  meta: {name: Meta, aliases: [meta-llama, facebook]}
+  deepseek: {name: DeepSeek, aliases: [deepseek-ai]}
+  alibaba: {name: Alibaba (Qwen), aliases: [qwen, alibaba-cloud]}
+  mistral: {name: Mistral, aliases: [mistralai]}
+  microsoft: {name: Microsoft}
+  nvidia: {name: NVIDIA}
+  zhipuai: {name: Zhipu AI (GLM), aliases: [z-ai, zai, zai-org, thudm]}
+  moonshotai: {name: Moonshot AI (Kimi), aliases: [moonshot]}
+  minimax: {name: MiniMax, aliases: [minimaxai]}
+  cohere: {name: Cohere, aliases: [coherelabs]}
+  ai21: {name: AI21 Labs}
+  xiaomi: {name: Xiaomi (MiMo)}
+  tencent: {name: Tencent}
+  baidu: {name: Baidu}
+  bytedance: {name: ByteDance, aliases: [bytedance-seed]}
+  stepfun: {name: StepFun, aliases: [stepfun-ai]}
+  meituan: {name: Meituan (LongCat)}
+  amazon: {name: Amazon}
+  ibm: {name: IBM, aliases: [ibm-granite]}
+  liquid: {name: Liquid AI}
+  perplexity: {name: Perplexity}
+  inception: {name: Inception}
+  thinkingmachines: {name: Thinking Machines}
+  reflection: {name: Reflection AI}
+  poolside: {name: Poolside}
+  openbmb: {name: OpenBMB}
+  inclusionai: {name: inclusionAI (Ling)}
+
+# How a provider's $0 price is read. Anything not matched here: a $0 listing is UNVERIFIED (it may be a gap in the
+# catalog, not a free offer). Matching is on the models.dev provider id.
+providers:
+  official:      # the model maker's own API (prices here are the official list prices, as listed by models.dev)
+    openai: openai
+    anthropic: anthropic
+    google: google
+    xai: xai
+    deepseek: deepseek
+    mistral: mistral
+    moonshotai: moonshotai
+    alibaba: alibaba
+    zai: zhipuai
+    zhipuai: zhipuai
+    minimax: minimax
+    cohere: cohere
+    xiaomi: xiaomi
+    perplexity: perplexity
+    nvidia: nvidia
+  # Subscriptions: a $0 price means "included in the plan" (the plan itself is paid), never free.
+  subscription_patterns: ["coding-plan", "token-plan", "code-plan", "step-plan", "-go$", "^cline-pass$",
+                          "^github-copilot$", "^gitlab$", "^poe$"]
+  # Established inference providers and gateways (besides the official APIs above). Only these are used for the
+  # "cheapest", "best value", "best for agents" picks and the leaderboard. Every other catalog provider (often
+  # small resellers) still appears in /modelaccess compare, labelled "unvetted reseller".
+  vetted: [openrouter, togetherai, fireworks-ai, groq, deepinfra, siliconflow, siliconflow-cn, novita-ai, huggingface,
+           cerebras, google-vertex, google-vertex-anthropic, amazon-bedrock, azure, azure-cognitive-services, vercel,
+           cloudflare-workers-ai, cloudflare-ai-gateway, baseten, nebius, chutes, friendli, sambanova, wandb,
+           scaleway, ovhcloud, databricks, snowflake-cortex, oci, sap-ai-core, watsonx, digitalocean, vultr,
+           alibaba-cn, moonshotai-cn, minimax-cn, stepfun-ai, volcengine, byteplus, opencode, modelscope, zhipuai,
+           requesty, helicone, kilo, nvidia, inception, cohere, ai21, upstage, perplexity, mistral, deepseek,
+           alibaba, moonshotai, minimax, xiaomi, zai, xai, openai, anthropic, google, crusoe, parasail, hyperbolic,
+           lambda, modal, ollama-cloud, morph, thinkingmachines, reflection, poolside, sakana, meta, longcat]
+  # Never used at all (they advertise removing model safety).
+  blocked: [abliteratedllm, abliteration-ai, uncensuredai, refuseless, unrestricted]
+  # Providers whose $0 listings are real free tiers (always with limits: shown as LIMITED_FREE, never "unlimited").
+  free_tier:
+    openrouter:
+      rule: "id ends with :free"
+      access_type: third_party_free_api
+      registration: "OpenRouter account and API key"
+      card: "Not needed (lower daily limit until $10 of credits have been bought)"
+      rate_limit: "20 requests/minute"
+      daily_limit: "50 requests/day; 1,000/day once you have bought at least $10 of credits (all :free models combined)"
+      permanence: "Temporary: free variants can be withdrawn by OpenRouter or the provider"
+      source: https://openrouter.ai/docs/api/reference/limits
+      verify:
+        url: https://openrouter.ai/docs/api/reference/limits.md
+        patterns: ["Less than 10\\s*\\|\\s*20\\s*\\|\\s*50", "At least 10\\s*\\|\\s*20\\s*\\|\\s*1000"]
+    google:
+      access_type: official_free_tier
+      registration: "Google account; API key from Google AI Studio"
+      card: "Not needed for the Free tier (billing is only needed from Tier 1)"
+      rate_limit: "Per model and project; shown in Google AI Studio (rate-limit page)"
+      notes: "Free-tier prompts and responses are used to improve Google's products (per the pricing page)."
+      permanence: "Ongoing free tier; Google changes per-model limits without notice"
+      source: https://ai.google.dev/gemini-api/docs/pricing
+    zai:
+      access_type: official_free_tier
+      registration: "Z.AI account and API key"
+      card: "Not stated"
+      rate_limit: "Not stated in the catalog"
+      permanence: "Not stated"
+      source: https://docs.z.ai/guides/overview/pricing
+    opencode:
+      rule: "id ends with -free"
+      access_type: coding_platform
+      registration: "OpenCode Zen account"
+      card: "Not stated"
+      rate_limit: "Not stated in the catalog"
+      permanence: "Temporary: OpenCode's free models rotate"
+      source: https://opencode.ai/v2/docs/console/models/
+    vercel:
+      rule: "id ends with -free"
+      access_type: third_party_free_api
+      registration: "Vercel account (AI Gateway)"
+      card: "Not stated"
+      rate_limit: "Not stated in the catalog"
+      permanence: "Temporary"
+      source: https://vercel.com/docs/ai-gateway
+    modelscope:
+      access_type: third_party_free_api
+      registration: "ModelScope account and access token"
+      card: "Not stated"
+      rate_limit: "Daily free quota (amount not stated in the catalog)"
+      geography: "China-focused service"
+      permanence: "Not stated"
+      source: https://modelscope.cn/docs/model-service/API-Inference/intro
+    siliconflow-cn:
+      access_type: third_party_free_api
+      registration: "SiliconFlow (China) account"
+      card: "Not stated"
+      rate_limit: "Not stated in the catalog"
+      geography: "China region service"
+      permanence: "Not stated"
+      source: https://cloud.siliconflow.com/models
+
+# OpenRouter's catalog adds its :free variants and per-provider prices on top of models.dev.
+catalogs:
+  models_dev: https://models.dev/api.json
+  openrouter: https://openrouter.ai/api/v1/models
+  gemini_pricing: https://ai.google.dev/gemini-api/docs/pricing.md.txt
+
+# Coding platforms, apps and programs that aren't per-token APIs. `status` is what the entry claims; it is only
+# shown as verified when the `verify` check passed (or `verified` is set from a manual check with its date).
+platforms:
+  - id: github-copilot-free
+    name: GitHub Copilot Free
+    kind: coding_platform
+    status: LIMITED_FREE
+    models: "Auto model selection only (no model picker)"
+    limits: "An allowance of GitHub AI Credits; 2,000 code completions per month"
+    registration: "GitHub account (individuals without Copilot through an organisation)"
+    card: "Not needed"
+    permanence: "Ongoing free plan"
+    url: https://docs.github.com/en/copilot/get-started/plans
+    verify:
+      url: https://docs.github.com/api/article/body?pathname=/en/copilot/get-started/plans
+      patterns: ["Copilot Free", "2000 completions per month", "auto model selection only"]
+  - id: github-models
+    name: GitHub Models (free prototyping API)
+    kind: third_party_free_api
+    status: DISCONTINUED
+    models: "Was a free, rate-limited catalog of many providers' models"
+    limits: "Retired on 30 July 2026: playground, catalog, inference API and BYOK are gone"
+    url: https://docs.github.com/en/github-models/use-github-models/prototyping-with-ai-models
+    verify:
+      url: https://docs.github.com/api/article/body?pathname=/en/github-models/use-github-models/prototyping-with-ai-models
+      patterns: ["GitHub Models has been retired"]
+  - id: google-ai-studio
+    name: Google AI Studio
+    kind: official_free_app
+    status: LIMITED_FREE
+    models: "Gemini models with a Free tier (see /modelaccess Google)"
+    limits: "Per-model limits shown in AI Studio"
+    registration: "Google account"
+    card: "Not needed"
+    url: https://aistudio.google.com
+    verify:
+      url: https://ai.google.dev/gemini-api/docs/pricing.md.txt
+      patterns: ["Try it in Google AI Studio", "Free Tier", "Free of charge"]
+  - id: arena-direct
+    name: Arena (direct chat)
+    kind: playground
+    status: UNVERIFIED
+    claim: "Community post: Gemini 4 Argon and other frontier models free in Direct mode, Google sign-in, no API key or card"
+    models: "gemini-4-argon (claimed)"
+    url: https://arena.ai
+  - id: omo-dev
+    name: OMO dev
+    kind: coding_platform
+    status: UNVERIFIED
+    claim: "Community post claims 'unlimited' DeepSeek V4 Flash. Not verified, and no free tier is unlimited: treat as limited until confirmed"
+    models: "deepseek-v4-flash (claimed)"
+    url: https://omo.dev
+  - id: zyphra-zonos3-mini
+    name: Zyphra Zonos3-Mini (browser voice generation)
+    kind: open_weights
+    status: UNVERIFIED
+    claim: "Community post: free text-to-speech in the browser, 100M active parameters, 43 languages, Apache 2.0"
+    models: "zonos3-mini (claimed)"
+    url: https://www.zyphra.com/our-work
+  - id: claude-free
+    name: Claude.ai Free plan
+    kind: official_free_app
+    status: UNVERIFIED
+    claim: "Free chat plan with usage limits; which models it includes changes over time"
+    url: https://claude.com/pricing
+  - id: chatgpt-free
+    name: ChatGPT Free plan
+    kind: official_free_app
+    status: UNVERIFIED
+    claim: "Free chat plan with usage limits on the newest models"
+    url: https://openai.com/chatgpt/pricing/
+  - id: cursor-hobby
+    name: Cursor Hobby (free)
+    kind: coding_platform
+    status: UNVERIFIED
+    claim: "Free plan with limited agent requests and completions"
+    url: https://cursor.com/pricing
+  - id: windsurf-free
+    name: Windsurf Free
+    kind: coding_platform
+    status: UNVERIFIED
+    claim: "Free plan with limited credits"
+    url: https://windsurf.com/pricing
+  - id: nvidia-build
+    name: NVIDIA build.nvidia.com API catalog
+    kind: promo_credits
+    status: UNVERIFIED
+    claim: "Free, rate-limited API access to many hosted models for prototyping (listed at $0 in the catalog)"
+    url: https://build.nvidia.com
+
+# Community leads: Reddit posts that mention free or cheap access to a model. Always UNVERIFIED until an official
+# or catalog source confirms them; never alerted as fact.
+leads:
+  subreddits: [LocalLLaMA, OpenAI, ClaudeAI, Bard, singularity, ChatGPTCoding, SillyTavernAI]
+  query: '"free tier" OR "free credits" OR "for free" OR "free access" OR "free api"'

@@ -25,6 +25,7 @@ const HELP = [
   "/weeklymodels · the latest Weekly Model Intelligence Report",
   "/compare <i>model A</i> vs <i>model B</i> · official specs side by side",
   "/free · models you can use for free right now",
+  "/modelaccess · where any model can be used for free or cheaply (try /modelaccess help)",
   "",
   "<b>System</b>",
   "/sources · the official sources being monitored",
@@ -40,7 +41,69 @@ const ASK_PROMPT =
   "If the briefs don't cover the question, say so plainly instead of guessing.";
 
 const PUSH_KEYS = ["last_brief", "last_repos", "last_buzz", "free_models", "briefs", "last_releases", "last_models",
-  "models_index", "sources", "health", "last_weekly", "last_model_weekly", "last_discovery"];
+  "models_index", "sources", "health", "last_weekly", "last_model_weekly", "last_discovery",
+  "modelaccess_main", "modelaccess_index", ...Array.from({ length: 16 }, (_, n) => `modelaccess_s${n}`)];
+
+// /modelaccess: Model Access Intelligence. The agent pushes ready-made replies (modelaccess_main: overview, free,
+// cheapest, leaderboard, weekly, companies; modelaccess_index: model lookup keys; modelaccess_s0..15: per-model
+// cards, comparisons and alternatives). Routing is identical to agent/modelaccess/respond.py route().
+const ACCESS_PREFIX = "[MODEL ACCESS INTELLIGENCE]";
+const ACCESS_VIEWS = ["free", "cheapest", "leaderboard", "weekly", "help"];
+
+export function accessNorm(text) {
+  return String(text || "").trim().toLowerCase().replace(/[\s_./:]+/g, "-").replace(/[^a-z0-9-]/g, "")
+    .replace(/-+/g, "-").replace(/^-+|-+$/g, "");
+}
+
+export function findAccess(index, query, company = null) {
+  const q = accessNorm(query);
+  if (!q) return null;
+  const words = q.split("-");
+  const rows = index.filter((r) => !company || r.c === company);
+  const tests = [(k) => k === q, (k) => k.endsWith("-" + q), (k) => k.startsWith(q + "-"),
+    (k) => words.every((w) => k.split("-").includes(w))];
+  for (const test of tests) {
+    const hit = rows.find((r) => r.k.some(test));
+    if (hit) return hit;
+  }
+  return null;
+}
+
+export async function routeModelAccess(env, text) {
+  const main = await env.AGENT_KV.get("modelaccess_main", "json");
+  const index = (await env.AGENT_KV.get("modelaccess_index", "json")) || [];
+  if (!main || !index.length) {
+    return [`${ACCESS_PREFIX}\nThe model access database isn't loaded yet. It refreshes with the 6-hourly news run.`];
+  }
+  const views = main.views;
+  const notFound = (q) => views.not_found.map((m) => m.replace("{query}", escapeHtml(q)));
+  const entry = async (hit) => ((await env.AGENT_KV.get(`modelaccess_s${hit.s}`, "json")) || {})[hit.i];
+  const clean = String(text || "").replace(/\s+/g, " ").trim();
+  if (!clean) return views.overview;
+  const words = clean.split(" ");
+  const first = words[0].toLowerCase();
+  const rest = words.slice(1).join(" ").trim();
+  if (ACCESS_VIEWS.includes(first) && !rest) return views[first];
+  if (["compare", "alternatives", "alternative", "alt"].includes(first)) {
+    if (!rest) return [`${ACCESS_PREFIX}\nName a model, e.g. <i>/modelaccess ${escapeHtml(first)} kimi k3</i>`];
+    const hit = findAccess(index, rest);
+    if (!hit) return notFound(rest);
+    const e = await entry(hit);
+    if (!e) return notFound(rest);
+    return first === "compare" ? e.compare : e.alternatives;
+  }
+  const company = main.brands[accessNorm(first)];
+  let hit;
+  if (company) {
+    if (!rest) return main.companies[company] || notFound(clean);
+    hit = findAccess(index, clean, company) || findAccess(index, rest, company) || findAccess(index, clean);
+  } else {
+    hit = findAccess(index, clean);
+  }
+  if (!hit) return notFound(clean);
+  const e = await entry(hit);
+  return e ? e.card : notFound(clean);
+}
 
 // /compare: the same simple name matching as agent/releases/catalog.py ("opus 5.5" finds claude-opus-5-5).
 export function normalize(text) {
@@ -236,6 +299,9 @@ export async function handleMessage(env, message) {
       return command;
     case "compare":
       await compare(env, raw.slice(first.length).trim());
+      return command;
+    case "modelaccess":
+      for (const m of await routeModelAccess(env, raw.slice(first.length).trim())) await send(env, m);
       return command;
     case "ask": {
       const question = raw.slice(first.length).trim();

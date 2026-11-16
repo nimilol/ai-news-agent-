@@ -177,3 +177,41 @@ test("/discoveries replies with the latest discovery batch", async () => {
   await handleMessage(empty.env, msg("/discoveries"));
   assert.match(empty.sent[0], /No discoveries sent yet/);
 });
+
+test("/modelaccess answers from the pushed bundle with the same routing as the agent", async () => {
+  const P = "[MODEL ACCESS INTELLIGENCE]";
+  const card = [`${P}\ncard fable`];
+  const kv = {
+    modelaccess_main: JSON.stringify({
+      updated: "2026-11-16T12:00:00+00:00",
+      views: { overview: [`${P}\noverview`], free: [`${P}\nfree`], cheapest: [`${P}\ncheap`],
+        leaderboard: [`${P}\nboard`], weekly: [`${P}\nweekly`], help: [`${P}\nhelp`],
+        not_found: [`${P}\nI couldn't find <b>{query}</b>`] },
+      brands: { claude: "anthropic", anthropic: "anthropic", deepseek: "deepseek" },
+      companies: { anthropic: [`${P}\nANTHROPIC list`] },
+    }),
+    modelaccess_index: JSON.stringify([
+      { i: "anthropic/claude-fable-5-2", k: ["claude-fable-5-2"], c: "anthropic", s: 3 },
+      { i: "deepseek/deepseek-v4-flash", k: ["deepseek-v4-flash"], c: "deepseek", s: 7 },
+    ]),
+    modelaccess_s3: JSON.stringify({ "anthropic/claude-fable-5-2": { card, compare: [`${P}\ncompare`], alternatives: [`${P}\nalts`] } }),
+    modelaccess_s7: JSON.stringify({ "deepseek/deepseek-v4-flash": { card: [`${P}\ncard ds`], compare: [], alternatives: [] } }),
+  };
+  const { env, sent } = setup(kv);
+  for (const text of ["/modelaccess", "/modelaccess free", "/modelaccess Claude", "/modelaccess claude fable 5.2",
+    "/modelaccess compare fable 5.2", "/modelaccess alternatives claude-fable-5-2", "/modelaccess deepseek v4 flash",
+    "/modelaccess <b>nope</b>", "/free"]) {
+    await handleMessage(env, msg(text));
+  }
+  assert.deepEqual(sent.slice(0, 7), [`${P}\noverview`, `${P}\nfree`, `${P}\nANTHROPIC list`, `${P}\ncard fable`,
+    `${P}\ncompare`, `${P}\nalts`, `${P}\ncard ds`]);
+  assert.equal(sent[7], `${P}\nI couldn't find <b>&lt;b&gt;nope&lt;/b&gt;</b>`);
+  assert.equal(sent[8], "The free-model list isn't ready yet. It refreshes every hour."); // /free untouched
+  assert.ok(sent.slice(0, 8).every((m) => m.startsWith(P)));
+});
+
+test("/modelaccess before any data arrives", async () => {
+  const { env, sent } = setup();
+  await handleMessage(env, msg("/modelaccess claude"));
+  assert.match(sent[0], /^\[MODEL ACCESS INTELLIGENCE\]\nThe model access database isn't loaded yet/);
+});

@@ -192,3 +192,24 @@ Follow-up:
   identity is the repository id, so renames and URL variants are not re-sent; meaningful new releases (major
   version or real new features) are sent as "what changed". Weekly model report moved to its own Saturday workflow
   (13:53 UTC = 14:53 Lagos, aiming at 3 pm with GitHub's start delay); the Sunday recap is unchanged.
+- **2026-11-16, owner asked for a Model Access Intelligence module:** "/modelaccess … where premium, proprietary and
+  powerful AI models can be used for free (limited quotas, promotional credits, free subscriptions) or at low cost
+  … every response must begin with [MODEL ACCESS INTELLIGENCE] … /free must remain independent and unchanged …
+  do not fabricate pricing, quotas, model support, or access availability … never describe a limited free tier as
+  unlimited access … if an opportunity cannot be confirmed, label it UNVERIFIED … integrate into existing
+  schedules". Built `agent/modelaccess/` + `modelaccess.yaml`: models discovered from models.dev (about 320 providers),
+  OpenRouter's live catalog (with per-provider breakdowns) and the Gemini API pricing page; statuses FREE /
+  LIMITED_FREE / FREE_CREDITS / LOW_COST / PAID_ONLY / UNVERIFIED; per-model picks (best free, cheapest verified,
+  developer value, agents, heavy usage), comparisons, alternatives, company lists, a personal leaderboard; alerts
+  deduplicated against an alert history and confirmed by Telegram; the Weekly Model Access Report on Saturdays after
+  the model report. Checked live while building: OpenRouter's free limits (20/min, 50/day or 1,000/day after $10 of
+  credits) and Copilot Free (AI credit allowance, 2,000 completions a month, auto model selection) are confirmed
+  automatically on each refresh; GitHub Models turned out to be retired (30 July 2026) and is shown as discontinued;
+  models.dev lists Lyria at $0 although Google's page shows no Free tier, so the official page now overrides the
+  catalog; a $0 price on unknown providers or in coding/token plans is never read as free; cheapest-provider picks
+  were dominated by tiny resellers (one 94% under list price), so picks and rankings now use only the official APIs and
+  established providers, while resellers stay visible in comparisons with a label. Arena's site blocks automated
+  checks, so the "Gemini 4 Argon free on Arena" post stays UNVERIFIED, as do "unlimited DeepSeek V4 Flash on OMO dev"
+  and Zonos3-Mini; the uncensored DeepSeek/Qwen distil from the screenshots is excluded. Refresh runs as a step of the
+  6-hourly digest (about 15 s); the instant bot receives ready-made replies in 18 storage keys, pushed only when
+  they change.
