@@ -1,0 +1,208 @@
+{
+ "sent": {
+  "title:adds anthropic models opus outputs sonnet text watermarking": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic adds text watermarking to outputs from Opus and Sonnet models"
+  },
+  "title:adds classifier controls csam developers image openai safety": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI adds CSAM Image Classifier and safety controls for developers"
+  },
+  "title:agent attorney california general hacking incidents openai over rogue sues": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "California Attorney General sues OpenAI over rogue agent hacking incidents"
+  },
+  "title:ahead anthropic continue debut ipo nasdaq preparations": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
+  },
+  "title:begins embedded evaluations external labs openai research safety": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI begins embedded safety evaluations with external research labs"
+  },
+  "title:center chemical data facility reported southaven spill xai": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Chemical spill reported at xAI Southaven data center facility"
+  },
+  "title:flash free hy4 lists model opencode zero-cost": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "OpenCode lists Hy4 flash Free as a new zero-cost model"
+  },
+  "url:https://models.dev/": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "OpenCode lists Hy4 flash Free as a new zero-cost model"
+  },
+  "url:https://news.google.com/rss/articles/cbmicefvx3lxte5ysxppr00yoxppmdgzmm44rfndsdb3x2l1qwtmvkj2zdzpvvfqeedrte5lcuhzogdndfpetufhbkvmbgtaov9vnw5nef9hm3nlmtv5wet3ym1hz1vxbg9qevhmdnkttgpjouo0u1i3mva": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
+  },
+  "url:https://news.google.com/rss/articles/cbmigafbvv95cuxqexcxrtjra2oysnfctk1vaersvvfxtzz2dw4zcu9osu9ozviyogzxdu81m2habutrtffcsdhkrxg3bzmzwwzhynbmumx1tvqzzjc5si00uzlmzfm0cethauc2wdbxce5ssjhmdfzey19xevpkx2pbse4zm3cxzwy5yg": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
+  },
+  "url:https://news.google.com/rss/articles/cbmikafbvv95cuxowxf2rxfiq05ocfg4z3foetvndkjgrvzzeuj1a3veuvczek9xsfi0dfphrdbzruhdwudxmc1lngj3v3npu0xzzmzktedtcdf1n3rjtunioflzshjvnzbem3nfzvfcaerjajzvawhky0fmvnjmri1vsk1nzjlwm0dqcwnon3i1cmppwnjvy1bqawe": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Chemical spill reported at xAI Southaven data center facility"
+  },
+  "url:https://news.google.com/rss/articles/cbmilwfbvv95cuxpakxuc0pflxzpr1uzbw5ewufnektednp6znfzqllkunbqd1uxne1qbjhvvudotxr1vmt4of8towi4stjyww5yyk83sfbty0pmsld2xzmtcndgeu5vodm5nwyxn1fowflowm9lcehseup5yjfscwr1c2newvvjodnyovnpdg1mvhlrlwlidufucdvasvzyuvpj": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Chemical spill reported at xAI Southaven data center facility"
+  },
+  "url:https://news.google.com/rss/articles/cbmimafbvv95cuxondbquwx1wg8xt3e3uvgzqupruevjnnhmwelumk1esezwwez0twnuqza5szhszev0zk94bxptutnaretaumrit0rtwe1tthpvrdfmuwtlefjrtxbkvex0tenpzxzhx3nhvmd5euvwdeq2ymvjrhv2anfprjbrsl82wnp3anrgemy2v3lvuzbjamhpdkvwzxzwwq": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
+  },
+  "url:https://news.google.com/rss/articles/cbmingfbvv95cuxnyjnsslhmdnbsyunpluz4yv83axcxuxbvyvbnbletnwt3cjktwmlxdlnualfktulxcehjsknmnjboeljgcdzwykz4ukdrtzlkzmvic1d2r1dtmdk0dg1ialljzlzmcldvb3p2oxdbqvfxtze2a1fxsfduqmlhymviazrlzhbhbwzysgxitgdodmphuwozmgi2m193buvbdw": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
+  },
+  "url:https://news.google.com/rss/articles/cbminwfbvv95cuxpzwsta3njmezjltlrchl5tgvlu0oyodvkt2xjv3nmwwr2dxhostzcetbrsflqv180etnhbw9hm0zwatzaejnqmuu4shzpqm5arnfodknrqvfrnuftv2i5bhbjuk5urdfmtm1uqnrqcxpvbdgyb3hregowr0otmdzwehvmbfhut1a4mwpynnnpc2vjnuzockhaqwr2cwxgzehsaaqbqvvfexfmt2ztedrvb2nxdvzfvuntelbysgvjy1nods1uvxjxb21cv05pykvloen4vgpua0y0bxrvahdjqln5dzy4u1prakxpmjvod05tsnu5umvjel9prkhredlnd1zuowndsgxru0rjagdddusxtvdurgdxu0rpqmlbtfdprjdnt3h3lvj5wek2c3cxufozegvgzehwsfdkrnnovhdpofptlww": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
+  },
+  "url:https://news.google.com/rss/articles/cbmioafbvv95cuxndmdknwxjvjfsb28zuvfzsddvtef0nuddvmrxznlxdwpqrfvobdvda01im2y0au1jr3pjqzzjoghtzmppmdlzsf9lzgl4cezfykxwry1ldlhgt1frdtlqnmtrmvbkohzjsuyzaxa4ekz4mjjktfn4tjnhr181s2xrall1vfbyuklxa0zrrzb2zlfjoeplvnf1tndnafq5z0lr": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
+  },
+  "url:https://news.google.com/rss/articles/cbmiogfbvv95cuxqauvecerrwehnamzgx2xommzfrnj3nhowr1pcrgvoothuvk5vum1tb1gxzflmculkc1r5rg1pufktag9zqtfxm0lvwxbunw8wagfubzntzlexdxdlyu9vm29eufdrcjlfb3fjc21cmgxlvupvsjfpntdprthhohhfckczdjvratvnbu5kqznaqzv2bgvpmhhrvfzitnizzwvmt2c": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
+  },
+  "url:https://news.google.com/rss/articles/cbmipgfbvv95cuxobxlst3nmahbyv0hxoxy5rmtqtwlpwtfyzxi1emk5au9jsmxwtun4mkzud2ftn3m0mwrkuuvjczjmvec2twtlx0fjb0iyq0thc3i4d0xwlvpeotqtykpvbzrmbzq4ddyyug9itezdywpxa3kybtmwdg9oqthelvfzzzy5wud0cxdebgfrsly3d04ytlrvnvl5bhvkovjymxn5yxplbdbb": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Chemical spill reported at xAI Southaven data center facility"
+  },
+  "url:https://news.google.com/rss/articles/cbmipwfbvv95cuxnauztwmfznmsyohznv2u2n2vmsjz5whrqrmxkbet2nnrrcfpqcnljodrzz09utzdwx1p4qm50vhp2nxqwohjrv1l5azzocl9ubtv6netrafg5wmp6cvv2og1zektuq1e1a3frqm83zgz3rgwyoxnktvfhdexzrkrpnvvet0r2ykpvc3pyuxbksk5waupqegx2mmvjm0y5bwexogjwq0dgvq": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Chemical spill reported at xAI Southaven data center facility"
+  },
+  "url:https://news.google.com/rss/articles/cbmiqwfbvv95cuxns2yyd1r5sknxsldhdjfxzuu2a21fm3c4evdftl96z3loehk5cjbyylnuvzhndxrnau1orevuzhrowuy0z1l2udnqv3dtx1jeu2dbotzdnuxvahrptwxuyzfynhpjec1acvjjsjm0d3byovp2se9rmgdqvkvyahhybxvmmnhhqmzkquzda1frwmvoeerib0dfmdmttenpav84zk1mqmvht2zjata": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
+  },
+  "url:https://news.google.com/rss/articles/cbmirgfbvv95cuxozejobhphml90wudvbnpzsgxlb1l3bi1bczhrn29ivw9ruzbtqwe4afnum2zgs1riqthldezpwmzjeexvahhraxbubkdqr3r3txjytlrqumrycxzxys1pv1lyrlexuddeuwj3ctg4aktjvwcxbkg5uw9oevrxlxhczjdrqmfnefjllxhpwtrmm1leuvlodgwxvhncse9ontlnem0yekw1ddnraelyzgc": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
+  },
+  "url:https://news.google.com/rss/articles/cbmiswfbvv95cuxouwteogthd0vyahpjrnezcdytrklurlffcfbyafnfq2dhlvjtbkfosklxedd3x1dwdvrrr2jvyvrxazf4ngfzd1o5tvzsr0xwbwfuynd3eu1frznbmwnuy1fzefzlcwqzwfrpt0y4smrcuuvletvizzfkrmhcq1pkmjnlstvjmgi4atznd3k5d3lpug1xtfpnshlhn2zoa3bkuk1hufdkduczx20xnfewndu1yw": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
+  },
+  "url:https://news.google.com/rss/articles/cbmitafbvv95cuxochdhb0tmcg13ejvvwmnks2g0ztfmwjcwy2ncahn2dzvvof9oukdqadzqaexqdu9fotndahf3wghxogews2powuv6zf9oz1atsefksxldrnczsvnnsi1omedtekhiemriu1axbevvqzlwcertwents3nic0jxnwpjugl3efjxsljiz3bmnllkafralwdkcm55c1fqmk1omw00twjyvnp1rg1hunniek4wyuytu1e": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Chemical spill reported at xAI Southaven data center facility"
+  },
+  "url:https://news.google.com/rss/articles/cbmitgfbvv95cuxqu2zzdhhtcxzma2jztghtukruekr0akplexlrlu9mwnzfmmxxzujowkxjotnmvnjqovvxrevjwtjlnjh6uetras1zavnorhd6vfvvzw1mbk1ot1rgzf8waejwtjhyajvnuenycwpozmliuvnxsgllmgzmcmpzandnajm0ymtxouv2tfj0zkpdauh1cwpeszm0lwmxcdr4avpzow5ft3rddgfxymlkss04uhp6sjngzw": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
+  },
+  "url:https://openai.com/index/our-first-phase-of-embedded-assessments": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI begins embedded safety evaluations with external research labs"
+  },
+  "url:https://openai.com/index/strengthening-online-child-safety": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI adds CSAM Image Classifier and safety controls for developers"
+  },
+  "url:https://platform.claude.com/docs/release-notes/overview": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic adds text watermarking to outputs from Opus and Sonnet models"
+  },
+  "url:https://platform.openai.com/docs/changelog": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI adds CSAM Image Classifier and safety controls for developers"
+  },
+  "url:https://reddit.com/r/anthropic/comments/1xxnnbj/anthropic_founders_plan_ipo_share_sales_worth": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
+  },
+  "url:https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "California Attorney General sues OpenAI over rogue agent hacking incidents"
+  },
+  "url:https://techcrunch.com/2026/11/16/openai-releases-a-new-image-classifier-and-chatgpt-warnings-to-combat-csam": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI adds CSAM Image Classifier and safety controls for developers"
+  },
+  "url:https://techcrunch.com/2026/11/16/openai-will-embed-apollo-researchers-to-investigate-ai-subversion": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI begins embedded safety evaluations with external research labs"
+  },
+  "url:https://theverge.com/ai-artificial-intelligence/1034815/california-openai-hugging-face-lawsuit": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "California Attorney General sues OpenAI over rogue agent hacking incidents"
+  },
+  "url:https://theverge.com/policy/1034527/openai-csam-classifier": {
+   "at": "2026-11-16T22:02:32+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI adds CSAM Image Classifier and safety controls for developers"
+  }
+ }
+}
