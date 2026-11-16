@@ -1,5 +1,17 @@
 {
  "sent": {
+  "title:1m king launch openai partnership trust": {
+   "at": "2026-11-16T22:19:08+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "The King’s Trust and OpenAI launch £1m partnership"
+  },
+  "title:access ai broadening scientists": {
+   "at": "2026-11-16T22:19:08+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Broadening access to AI for scientists"
+  },
   "title:adds anthropic models opus outputs sonnet text watermarking": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
@@ -11,6 +23,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "OpenAI adds CSAM Image Classifier and safety controls for developers"
+  },
+  "title:advancing agents computer-use healthcare teams": {
+   "at": "2026-11-16T22:19:08+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Advancing computer-use agents for healthcare teams"
   },
   "title:agent attorney california general hacking incidents openai over rogue sues": {
    "at": "2026-11-16T22:02:32+00:00",
@@ -24,17 +42,35 @@
    "priority": "P2",
    "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
   },
+  "title:anyone asks before dots extras get holiday work": {
+   "at": "2026-11-16T22:19:08+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "At Holiday Extras, dots get to work before anyone asks"
+  },
   "title:begins embedded evaluations external labs openai research safety": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
    "priority": "P1",
    "title": "OpenAI begins embedded safety evaluations with external research labs"
   },
+  "title:care chatgpt forward healthcare more move ways": {
+   "at": "2026-11-16T22:19:08+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "More ways to move care forward with ChatGPT for Healthcare"
+  },
   "title:center chemical data facility reported southaven spill xai": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
    "priority": "P2",
    "title": "Chemical spill reported at xAI Southaven data center facility"
+  },
+  "title:chatgpt frontier science scientists use": {
+   "at": "2026-11-16T22:19:08+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Science at the Frontier: How scientists use ChatGPT"
   },
   "title:flash free hy4 lists model opencode zero-cost": {
    "at": "2026-11-16T22:02:32+00:00",
@@ -144,17 +180,53 @@
    "priority": "P2",
    "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
   },
+  "url:https://openai.com/business/customer-stories/holiday-extras-dots": {
+   "at": "2026-11-16T22:19:08+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "At Holiday Extras, dots get to work before anyone asks"
+  },
+  "url:https://openai.com/index/advancing-computer-use-for-healthcare-teams": {
+   "at": "2026-11-16T22:19:08+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Advancing computer-use agents for healthcare teams"
+  },
+  "url:https://openai.com/index/expanding-chatgpt-for-academic-researchers": {
+   "at": "2026-11-16T22:19:08+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Broadening access to AI for scientists"
+  },
+  "url:https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare": {
+   "at": "2026-11-16T22:19:08+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "More ways to move care forward with ChatGPT for Healthcare"
+  },
   "url:https://openai.com/index/our-first-phase-of-embedded-assessments": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
    "priority": "P1",
    "title": "OpenAI begins embedded safety evaluations with external research labs"
   },
+  "url:https://openai.com/index/science-at-the-frontier": {
+   "at": "2026-11-16T22:19:08+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Science at the Frontier: How scientists use ChatGPT"
+  },
   "url:https://openai.com/index/strengthening-online-child-safety": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
    "priority": "P1",
    "title": "OpenAI adds CSAM Image Classifier and safety controls for developers"
+  },
+  "url:https://openai.com/index/the-kings-trust-and-openai": {
+   "at": "2026-11-16T22:19:08+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "The King’s Trust and OpenAI launch £1m partnership"
   },
   "url:https://platform.claude.com/docs/release-notes/overview": {
    "at": "2026-11-16T22:02:32+00:00",
