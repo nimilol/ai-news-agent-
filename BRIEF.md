@@ -152,3 +152,17 @@ Follow-up:
   delivery). Runs inside every "Instant alerts" run (no schedule changed) and on demand; an optional Cloudflare cron
   can start it on time. Tested against today's real launches (Gemini 4 Hydrogen, Claude Fable/Mythos 5.2, GPT-6
   Cyber, Kimi K3.1 Pro): all four detected, confirmed and compared with the right predecessor.
+- **2026-11-16, owner asked for Telegram intelligence and message organisation:** "every notification must have a
+  clear purpose, category, priority and consistent presentation … like a professional AI research assistant".
+  Added `agent/messages.py`: ten fixed sections (only non-empty ones shown), four priorities (P0 critical to P3
+  discovery) and one card layout (headline · priority/verification/date · company or speaker · what happened · why
+  it matters · details · sources), with a collapsed "Explained" block (six questions) for important stories and
+  A/B/C content opportunities (title, angle, why, research needed). Long reports split in order without cutting a
+  card or an HTML tag. Every producer now uses it: the brief (the AI also returns section, why, details, speaker,
+  explanations and content ideas; sections and priorities are enforced by rules; numbers that appear in no source are
+  dropped), instant alerts (rule-based sections and priorities, minor documentation edits dropped, several sources
+  merged into one card, P3 deferred to the digest), Buzz, Builder picks, the weekly report (now saved) and the release
+  monitor (flagship releases P0). Priority sets timing and sound: P2/P3 arrive silently. A cross-run ledger
+  (`state/sent.json`) stops a story from being delivered again by another run or with a reworded headline. New
+  commands: /models, /compare (official specs side by side), /sources, /health (live workflow runs via the GitHub
+  API, including how often the hourly alerts really ran), /weekly; all existing commands kept, in both bots.

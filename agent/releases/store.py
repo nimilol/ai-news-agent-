@@ -135,14 +135,14 @@ class Store:
         return sorted(recs, key=lambda r: r.get("first_detected") or "", reverse=True)[:limit]
 
     # ------------------------------------------------------------------ outbox
-    def enqueue(self, release_id, kind, category, verification, model_name, parts):
+    def enqueue(self, release_id, kind, category, verification, model_name, parts, priority="P1"):
         digest = hashlib.sha1("\n".join(parts).encode()).hexdigest()[:10]
         nid = f"{release_id}|{kind}|{digest}"
         if nid in self.outbox:  # the very same message is already queued or sent: never send it twice
             return nid
         self.outbox[nid] = {"id": nid, "release_id": release_id, "kind": kind, "category": category,
                             "verification": verification, "model_name": model_name, "parts": parts,
-                            "sent_parts": {}, "status": "PENDING", "attempts": 0, "created": now_iso(),
+                            "sent_parts": {}, "status": "PENDING", "attempts": 0, "created": now_iso(), "priority": priority,
                             "sent_at": None, "last_error": None, "log": [],
                             "receipt": {"status": "NOT_NEEDED"}}
         return nid

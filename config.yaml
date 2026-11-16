@@ -42,8 +42,16 @@ digest:
 blocked_publishers: [blockchain.news, basenor, tikr.com, startuphub.ai]
 
 alerts:
-  # Max instant alerts per run (alerts never use AI, they just say "new post at X").
+  # Max instant alert cards per run (alerts never use AI). Several sources about one story make one card.
   max_per_run: 8
+  # Only items of this priority or higher are sent at once; lower ones wait for the digest.
+  # P0 critical · P1 high · P2 normal (industry news, leaks, official page changes) · P3 discovery (free models).
+  min_priority: P2
+
+telegram:
+  # Messages whose most important item is this priority or lower arrive without a notification sound.
+  # P2 = only P0 and P1 make your phone buzz. Set P3 to hear P2 as well, or P4 to never be silent.
+  silent_from: P2
 
 # AI providers, tried in this order. A provider is skipped when its key isn't set.
 # Each "models" list is tried top to bottom, so a retired model just falls through to the next one.

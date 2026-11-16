@@ -16,6 +16,8 @@ After a confirmed delivery the last part's "DELIVERY: Pending Telegram confirmat
 confirmed message id (best effort), and a short delivery receipt is sent for the categories in `receipts_for`.
 """
 
+from .. import ledger as led
+from .. import messages as msg
 from ..deliver import TelegramError, edit_telegram_message, send_telegram_message, telegram_configured
 from .render import PENDING_LINE, delivered_line, render_receipt
 from .store import now_iso
@@ -50,7 +52,7 @@ def send_one(store, n, settings, save):
         if key in n["sent_parts"]:
             continue  # Telegram already confirmed this part on an earlier try
         try:
-            confirmation = send_telegram_message(text)
+            confirmation = send_telegram_message(text, silent=msg.is_silent(n.get("priority", "P1")))
         except TelegramError as e:
             n["last_error"] = str(e)[:300]
             n["status"] = "RETRY_PENDING" if n["attempts"] < max_attempts else "FAILED"
@@ -67,6 +69,7 @@ def send_one(store, n, settings, save):
     ids = [n["sent_parts"][k]["message_id"] for k in sorted(n["sent_parts"], key=int)]
     _log(n, f"SENT: Telegram confirmed message id(s) {ids}")
     _update_release(store, n)
+    remember_sent(store, n)
     save()
     last = n["parts"][-1]
     if PENDING_LINE in last:
@@ -77,10 +80,25 @@ def send_one(store, n, settings, save):
     return n["status"]
 
 
+def remember_sent(store, n):
+    """Tell every other run this release was delivered (state/sent.json), so it isn't sent again as an instant
+    alert, a digest story or a Buzz pick."""
+    rec = store.history.get(n["release_id"])
+    if not rec or n["kind"] == "health":
+        return
+    ledger = led.Ledger()
+    keys = [led.url_key(s.get("url")) for s in rec.get("official_sources", []) if s.get("url")]
+    keys += [led.title_key(rec["model_name"])]
+    keys += [f"model:{rec['company']}:{b.split(':', 1)[-1]}" for b, rid in store.index.items()
+             if rid == rec["id"] and b.startswith(rec["company"] + ":")]
+    ledger.record(keys, rec["model_name"], "release", n.get("priority"))
+    ledger.save()
+
+
 def send_receipt(store, n, save):
     ids = [n["sent_parts"][k]["message_id"] for k in sorted(n["sent_parts"], key=int)]
     try:
-        confirmation = send_telegram_message(render_receipt(n, ids, n["sent_at"]))
+        confirmation = send_telegram_message(render_receipt(n, ids, n["sent_at"]), silent=True)
         n["receipt"] = {"status": "SENT", "message_id": confirmation["message_id"], "at": now_iso()}
         _log(n, f"delivery receipt SENT (message id {confirmation['message_id']})")
     except TelegramError as e:

@@ -1,7 +1,7 @@
 // Offline tests for the bot: node --test bot/test
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import worker, { dispatchReleaseCheck, handleMessage, sha256 } from "../src/worker.js";
+import worker, { dispatchReleaseCheck, findModel, handleMessage, normalize, sha256, splitPair } from "../src/worker.js";
 
 function setup(kv = {}) {
   const store = { ...kv };
@@ -49,7 +49,7 @@ test("strangers are ignored, unknown text gets help", async () => {
   assert.equal(await handleMessage(env, msg("/free", 99)), "ignored");
   await handleMessage(env, msg("hello"));
   assert.equal(sent.length, 1);
-  assert.match(sent[0], /Your AI news agent/);
+  assert.match(sent[0], /Your AI research assistant/);
 });
 
 test("/ask answers from the briefs", async () => {
@@ -123,4 +123,38 @@ test("the agent can push the release list", async () => {
   }), env, { waitUntil: () => {} });
   assert.equal(r.status, 200);
   assert.equal(store.last_releases, JSON.stringify(["x"]));
+});
+
+const INDEX = [
+  { id: "claude-opus-5-5", name: "Claude Opus 5.5", company: "anthropic", plain: true,
+    keys: ["claude-opus-5-5"], cells: { context: "1M tokens", pricing: "$4 input / $20 output per 1M tokens" } },
+  { id: "gpt-6.1-terra", name: "GPT-6.1 Terra", company: "openai", plain: true,
+    keys: ["gpt-6-1-terra"], cells: { context: "1.05M tokens" } },
+];
+
+test("/compare finds models by loose names, like the Python side", async () => {
+  assert.equal(normalize("Claude Opus 5.5"), "claude-opus-5-5");
+  assert.equal(findModel(INDEX, "opus 5.5").id, "claude-opus-5-5");
+  assert.equal(findModel(INDEX, "gpt-6.1 terra").id, "gpt-6.1-terra");
+  assert.equal(findModel(INDEX, "nothing"), null);
+  assert.deepEqual(splitPair("a vs b"), ["a", "b"]);
+  const { env, sent } = setup({ models_index: JSON.stringify(INDEX) });
+  await handleMessage(env, msg("/compare opus 5.5 vs gpt-6.1 terra"));
+  assert.match(sent[0], /Claude Opus 5.5 vs GPT-6.1 Terra/);
+  assert.match(sent[0], /\$4 input/);
+  assert.match(sent[0], /<i>not established<\/i>/);
+  await handleMessage(env, msg("/compare opus 5.5 vs nonsense"));
+  assert.match(sent[1], /couldn't find <b>nonsense<\/b>/);
+  await handleMessage(env, msg("/compare onlyone"));
+  assert.match(sent[2], /Name two models/);
+});
+
+test("new commands reply from pushed data, old ones still work", async () => {
+  const { env, sent } = setup({ last_models: JSON.stringify(["models"]), sources: JSON.stringify(["src"]),
+                                health: JSON.stringify(["ok"]), last_weekly: JSON.stringify(["week"]),
+                                last_brief: JSON.stringify(["brief"]) });
+  for (const c of ["/models", "/sources", "/health", "/weekly", "/latest"]) await handleMessage(env, msg(c));
+  assert.deepEqual(sent, ["models", "src", "ok", "week", "brief"]);
+  await handleMessage(env, msg("/help"));
+  assert.match(sent[5], /\/compare/);
 });

@@ -4,7 +4,6 @@ Candidates come from GitHub Trending, fast-rising new GitHub repos, Hugging Face
 Spaces, and Show HN launches. One AI call picks the best ~10 and says what each does and who it helps.
 """
 
-import html
 import json
 import re
 from concurrent.futures import ThreadPoolExecutor
@@ -14,7 +13,6 @@ from bs4 import BeautifulSoup
 
 from . import llm
 from .common import ROOT, clean_text, env, get, now_utc
-from .digest import split_messages
 
 AI_WORDS = re.compile(
     r"\b(ai|llms?|gpt|agents?|agentic|mcp|claude|openai|gemini|grok|glm|rag|models?|inference|diffusion|"
@@ -172,19 +170,17 @@ def pick(config, candidates):
 
 
 def render(theme, picks, model, failed):
-    e = html.escape
-    blocks = [f"<b>🛠 Builder picks</b> · {now_utc():%a %d %b}" + (f"\n<i>{e(theme)}</i>" if theme else "")]
-    for i, (c, what, who) in enumerate(picks, 1):
-        text = f"\n{i}. {KIND_ICON.get(c['kind'], '•')} <a href=\"{e(c['url'], quote=True)}\"><b>{e(c['name'])}</b></a>"
-        if c["extra"]:
-            text += f" · <i>{e(c['extra'])}</i>"
-        if what:
-            text += f"\n{e(what)}"
-        if who:
-            text += f"\n<i>For: {e(who)}</i>"
-        blocks.append(text)
+    """Builder picks in the standard structure: every pick is a 🛠 tool or project (P3 discovery)."""
+    from . import messages as msg
+
+    cards = []
+    for c, what, who in picks:
+        owner = c["name"].split("/", 1)[0] if "/" in c["name"] else None
+        details = [f"{KIND_ICON.get(c['kind'], '•')} {c['extra']}"] if c.get("extra") else []
+        cards.append(msg.card("tools", "P3", c["name"], company=owner, what=what or c.get("text"),
+                              why=f"For: {who}" if who else None, details=details, sources=[("open", c["url"])],
+                              verification="📈 Trending"))
     footer = f"🚀 rising new repo · 📈 GitHub trending · 🤗 Hugging Face · 🟧 Show HN · picked by {model}"
     if failed:
         footer += f" · couldn't reach: {', '.join(failed)}"
-    blocks.append(f"\n<i>{e(footer)}</i>")
-    return split_messages(blocks)
+    return msg.report("🛠 Builder picks", cards, when=f"{now_utc():%a %d %b}", subtitle=theme or None, footer=footer)

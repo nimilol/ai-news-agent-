@@ -269,6 +269,7 @@ def run(dry_run=False, bootstrap=False, cfg=None, config=None, store=None):
         print(f"→ {company_cfg['label']}: possible new model {', '.join(r['base'] for r in group)}")
         facts = analyze(group, store, company_cfg, config, settings, llm_budget)
         rec = record_launch(store, facts)
+        rec["priority"] = facts["priority"]
         print(f"   {cls.VERIFICATION_LABEL[facts['verification']]}: {facts['model_name']} "
               f"(previous: {facts['previous']['name'] if facts['previous'] else 'not established'})")
         if facts["verification"] == cls.CONFIRMED and settings["notify"].get(cls.A):
@@ -277,7 +278,8 @@ def run(dry_run=False, bootstrap=False, cfg=None, config=None, store=None):
             parts, kind = render.render_review(facts, companies), "review"
         else:
             continue
-        queued.append(store.enqueue(rec["id"], kind, cls.A, facts["verification"], facts["model_name"], parts))
+        priority = facts["priority"] if kind == "release" else "P1"
+        queued.append(store.enqueue(rec["id"], kind, cls.A, facts["verification"], facts["model_name"], parts, priority))
         if not dry_run and facts["verification"] == cls.CONFIRMED:
             archive(facts, parts)
 
@@ -301,7 +303,7 @@ def run(dry_run=False, bootstrap=False, cfg=None, config=None, store=None):
             parts = render.render_followup(existing, text, [{"name": o["source"], "url": o.get("url")} for o in new_obs],
                                            companies)
             queued.append(store.enqueue(existing["id"], "followup", existing["classification"], cls.UPDATE,
-                                        existing["model_name"], parts))
+                                        existing["model_name"], parts, "P1"))
             continue
         if ver != cls.DUPLICATE and cat in (cls.B, cls.C) and existing and \
                 existing.get("verification") in (cls.CONFIRMED, cls.UPDATE) and r["official"] and \
@@ -340,6 +342,7 @@ def run(dry_run=False, bootstrap=False, cfg=None, config=None, store=None):
             continue
         rec = store.new_release(r["company"], [r["base"]] if cat == cls.F else [], rid=rid)
         rec.update(model_name=facts["model_name"], model_ids=facts["model_ids"], classification=cat,
+                   priority=facts["priority"],
                    verification=ver, announcement_date=facts["date"],
                    source_url=next((s["url"] for s in facts["sources"] if s.get("url")), None),
                    official_sources=[{"source": s["name"], "url": s["url"]} for s in facts["sources"]],
@@ -349,7 +352,7 @@ def run(dry_run=False, bootstrap=False, cfg=None, config=None, store=None):
         if not settings["notify"].get(cat):
             continue
         queued.append(store.enqueue(rec["id"], "update", cat, ver, facts["model_name"],
-                                    render.render_update(facts, companies)))
+                                    render.render_update(facts, companies), facts["priority"]))
 
     # 4. Health alerts for official sources that keep failing.
     threshold = int(settings.get("failing_alert_after", 3))
@@ -358,7 +361,7 @@ def run(dry_run=False, bootstrap=False, cfg=None, config=None, store=None):
                 and source["role"] != "early":
             label = companies[source["company"]]["label"]
             store.enqueue(f"health:{name}", "health", "HEALTH", "", name,
-                          render.render_health(name, label, store.failures[name], str(err)))
+                          render.render_health(name, label, store.failures[name], str(err)), "P1")
             store.health[name] = {"alerted": True, "since": now_iso()}
 
     print(f"{len(observations)} new observations, {len(classified)} classified, {len(queued)} alert(s) queued.")
@@ -368,13 +371,53 @@ def run(dry_run=False, bootstrap=False, cfg=None, config=None, store=None):
         print("\n(dry run: nothing sent, state not saved)")
         return 0
 
+    enrich_specs(store, companies, int(settings.get("spec_pages_per_run", 8)))
     store.save()
     summary = notify.process_outbox(store, settings, store.save, int(settings.get("max_notifications_per_run", 8)))
     store.save()
-    if summary["SENT"]:
-        botpush.push("last_releases", render.render_recent(store.recent_releases(), companies))
+    push_to_bot(store, cfg)
     print(f"Delivery: {summary}")
     return 1 if summary.get("FAILED") else 0
+
+
+def enrich_specs(store, companies, budget=8):
+    """Fill in specs (context, output limit, prices) for catalog models that only have a name, a few detail pages
+    per run, so /compare and predecessor comparisons have numbers for every lab. Each model is tried at most once
+    a week."""
+    from .fetchers import fetch_detail
+
+    week_ago = (now_utc() - timedelta(days=7)).isoformat()
+    for key, c in companies.items():
+        src = next((s for s in c["sources"] if s.get("role") == "catalog" and s.get("detail_url")), None)
+        if not src:
+            continue
+        for mid, rec in store.models(key).items():
+            if budget <= 0:
+                return
+            specs = rec.get("specs") or {}
+            if specs.get("context_tokens") or rec.get("status") == "deprecated" or \
+                    (rec.get("specs_checked") or "") > week_ago or src["name"] not in rec.get("sources", []):
+                continue
+            budget -= 1
+            rec["specs_checked"] = now_iso()
+            got = fetch_detail(src, mid)
+            if got:
+                rec["specs"] = {**specs, **got}
+
+
+def push_to_bot(store, cfg):
+    """Keep the instant bot's /releases, /models, /compare, /sources and /health answers current."""
+    if not botpush.bot_url():
+        return
+    from .. import health
+    from . import catalog
+
+    companies = cfg["companies"]
+    botpush.push("last_releases", render.render_recent(store.recent_releases(), companies))
+    botpush.push("last_models", render.render_models(store.recent_releases(30), companies))
+    botpush.push("models_index", catalog.compact_index(catalog.model_index(store, companies)))
+    botpush.push("sources", render.render_sources(cfg, store.failures))
+    botpush.push("health", health.render())
 
 
 def archive(facts, parts):

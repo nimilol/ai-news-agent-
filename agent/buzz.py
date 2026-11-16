@@ -7,7 +7,6 @@ config.yaml → buzz.focus. Trending GitHub repos are included even when they ar
 One AI call picks the best few and writes a talking point for each. Links always come from the items.
 """
 
-import html
 import json
 import re
 import time
@@ -17,7 +16,7 @@ from datetime import timedelta
 from . import accuracy, llm
 from .builders import _gh_headers, rising_repos, trending_repos
 from .common import clean_text, get, now_utc, parse_date
-from .digest import split_messages
+from . import messages as msg
 from .sources import fetch, is_interview, reddit_posts, youtube_channel_id, youtube_videos
 
 KEEP_DAYS = 7  # a pick can come back after a week if it's still the talk of the town
@@ -43,7 +42,8 @@ Answer with JSON only:
 {"headline": "the one thing to talk about right now, one sentence",
  "picks": [{"item": 1, "type": "interview | new model | upgrade | uncensored | free | offer | censorship | repo | paper | video | discussion | news",
             "what": "one sentence: what it is", "why": "why people are talking about it, with the numbers from the item",
-            "talk": "one short line the creator could say or post about it"}]}
+            "talk": "one short line the creator could say or post about it"}],
+ "content": [{"kind": "news | education | analysis", "title": "", "angle": "", "why": "", "research": ""}]}
 
 Rules:
 - Up to 10 picks, most talk-worthy first. AI first, and FOCUS items before others when they are comparably hot.
@@ -58,7 +58,17 @@ Rules:
   momentum (stars today, likes, upvotes).
 - Skip "awesome" lists, tutorial-only repos, crypto, spam, re-uploads/quantizations of the same model when the
   original is also listed, memes, help requests, sponsored videos, and anything whose purpose is unclear.
+- content: three video ideas about the headline topic: "news" (what happened), "education" (how the technology
+  works), "analysis" (a comparison, practical test or opinion). Each with a title, the main angle, why it is
+  interesting, and what still needs research or testing before making it.
 - Use only what the item text says. Do not invent features, numbers or claims."""
+
+# Buzz pick type → standard section; FOCUS items of these types are P2, everything else is a P3 discovery.
+TYPE_SECTION = {"interview": "podcasts", "new model": "model_updates", "upgrade": "model_updates",
+                "uncensored": "model_updates", "free": "free", "offer": "free", "censorship": "industry",
+                "repo": "tools", "paper": "research", "video": "discussions", "discussion": "discussions",
+                "news": "industry"}
+P2_TYPES = {"interview", "new model", "upgrade", "paper", "offer", "censorship"}
 
 
 def _gh_search(q, per_page=5):
@@ -326,7 +336,7 @@ def _fallback(candidates, max_picks):
 
 
 def pick(config, candidates):
-    """Returns (headline, [(candidate, type, what, why, talk)], model)."""
+    """Returns (headline, [(candidate, type, what, why, talk)], model, content ideas)."""
     max_picks = config.get("buzz", {}).get("max_picks", 8)
 
     def build(max_items=None, **_):
@@ -348,10 +358,11 @@ def pick(config, candidates):
                           clean_text(str(p.get("what", "")), 250), clean_text(str(p.get("why", "")), 250),
                           clean_text(str(p.get("talk", "")), 250)))
         if picks:
-            return clean_text(str(data.get("headline", "")), 250), picks[:max_picks], model
+            content = msg.clean_opportunities(data.get("content"))
+            return clean_text(str(data.get("headline", "")), 250), picks[:max_picks], model, content
     except Exception as e:  # noqa: BLE001 - always send something, even without AI
         print(f"AI picking failed, using the hottest items instead: {str(e)[:200]}")
-    return "", _fallback(candidates, max_picks), "none"
+    return "", _fallback(candidates, max_picks), "none", []
 
 
 def more_interviews(candidates, picks, want=3):
@@ -362,27 +373,55 @@ def more_interviews(candidates, picks, want=3):
     return sorted(rest, key=lambda c: (not c.get("focus"), -c["score"]))[: max(0, want - have)]
 
 
-def render(headline, picks, model, failed, scanned, interviews=()):
-    e = html.escape
-    blocks = [f"<b>🔥 Buzz: what everyone's talking about</b> · {now_utc():%a %d %b, %H:%M} UTC"
-              + (f"\n<i>{e(headline)}</i>" if headline else "")]
-    for i, (c, kind, what, why, talk) in enumerate(picks, 1):
-        text = f"\n{i}. {TYPE_ICON.get(kind, '•')} <a href=\"{e(c['url'], quote=True)}\"><b>{e(c['name'])}</b></a>"
-        if c["extra"]:
-            text += f" · <i>{e(c['extra'])}</i>"
-        if what:
-            text += f"\n{e(what)}"
-        if why and why != c["extra"]:
-            text += f"\n🗣 {e(why)}"
-        if talk:
-            text += f"\n💬 <i>{e(talk)}</i>"
-        blocks.append(text)
-    if interviews:
-        lines = [f"• <a href=\"{e(c['url'], quote=True)}\">{e(c['name'])}</a> · <i>{e(c['extra'])}</i>"
-                 for c in interviews]
-        blocks.append("\n<b>🎙 More interviews worth watching</b>\n" + "\n".join(lines))
+def _who(c):
+    """(developer, speaker or publication) for a candidate."""
+    name, extra = c["name"], c.get("extra") or ""
+    if c["kind"] in ("repo", "hf-model", "hf-space", "rising", "trending") and "/" in name:
+        return name.split("/", 1)[0], None
+    if " on YouTube" in extra:
+        return None, extra.split(" on YouTube", 1)[0]
+    if extra.startswith("r/"):
+        return None, extra.split(" · ", 1)[0]
+    if c["kind"] == "paper":
+        return None, "Hugging Face Daily Papers"
+    if c["kind"] == "hf-blog":
+        return "Hugging Face", "Hugging Face blog"
+    return None, None
+
+
+def pick_card(c, kind, what, why, talk):
+    section = TYPE_SECTION.get(kind) or {"interview": "podcasts", "paper": "research", "reddit": "discussions",
+                                         "youtube": "discussions"}.get(c["kind"], "tools")
+    priority = "P2" if c.get("focus") and kind in P2_TYPES else "P3"
+    company, speaker = _who(c)
+    details = [c["extra"]] if c.get("extra") else []
+    if talk:
+        details.append(f"💬 {talk}")
+    return msg.card(section, priority, c["name"], company=company, speaker=speaker, what=what or c["text"],
+                    why=why if why and why != c.get("extra") else None, details=details,
+                    sources=[(_source_name(c), c["url"])], verification=_verification(c))
+
+
+def _source_name(c):
+    host = c["url"].split("/")[2] if "//" in c["url"] else c["url"]
+    return host[4:] if host.startswith("www.") else host
+
+
+def _verification(c):
+    return {"paper": "📄 Paper", "interview": "🎙 Original recording", "reddit": "🗨 Community discussion",
+            "youtube": "📺 Video", "news": "📰 Report"}.get(c["kind"], "📈 Trending")
+
+
+def render(headline, picks, model, failed, scanned, interviews=(), content=None):
+    """Buzz in the standard sections (agent/messages.py)."""
+    cards = [pick_card(*p) for p in picks]
+    for c in interviews:
+        company, speaker = _who(c)
+        cards.append(msg.card("podcasts", "P3", c["name"], speaker=speaker, details=[c["extra"]],
+                              sources=[(_source_name(c), c["url"])], verification="🎙 Original recording",
+                              what=c["text"] or None))
     footer = f"From {scanned} hot items on GitHub, Hugging Face, Reddit and YouTube · picked by {model}"
     if failed:
         footer += f" · couldn't reach: {', '.join(failed)}"
-    blocks.append(f"\n<i>{e(footer)}</i>")
-    return split_messages(blocks)
+    return msg.report("🔥 Buzz: what everyone's talking about", cards, when=f"{now_utc():%a %d %b, %H:%M} UTC",
+                      subtitle=headline or None, content=content, content_topic=headline or None, footer=footer)

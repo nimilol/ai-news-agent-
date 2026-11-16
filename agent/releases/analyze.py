@@ -61,7 +61,12 @@ Answer with JSON only:
  "claims": [{"text": "a qualitative claim the company makes", "source": 1, "quote": ""}],
  "interpretation": ["at most 3 short sentences on what meaningfully improved, using only the facts above"],
  "why_it_matters": "2 sentences for someone who builds with AI and teaches people about it",
- "content_ideas": {"news_video": "", "explainer": "", "comparison_video": ""}}
+ "explain": {"introduced": "what was introduced", "does": "what it actually does", "problem": "what problem it solves",
+             "different": "how it differs from what existed before", "who": "who benefits",
+             "care": "why an AI creator or developer should care"},
+ "content": [{"kind": "news", "title": "", "angle": "", "why": "", "research": ""},
+             {"kind": "education", "title": "", "angle": "", "why": "", "research": ""},
+             {"kind": "analysis", "title": "", "angle": "", "why": "", "research": ""}]}
 
 Rules:
 - "is_new_model" is "yes" only when the sources announce a new model or model generation, not a new snapshot,
@@ -69,6 +74,11 @@ Rules:
 - benchmarks: only scores printed in the sources, copied exactly, with the benchmark's name. Fill "previous" only
   when the sources give the previous model's score on the same benchmark.
 - comparison "previous": only what the sources say about the previous model. Leave it empty otherwise.
+- explain: plain language with accurate technical terms, only from the sources; don't oversimplify into something
+  inaccurate. Leave a question empty when the sources don't answer it.
+- content: "news" = a timely video on what happened, "education" = a video explaining the technology,
+  "analysis" = a comparison, practical test or opinion. Each: a title, the main angle, why it is interesting, and
+  what still needs to be researched or tested before making it (e.g. claims to verify, tests to run).
 - Leave any field empty rather than guessing."""
 
 
@@ -159,10 +169,11 @@ def validate_ai(data, sources, corpus):
         out[key] = kept
     why = clean_text(str(data.get("why_it_matters") or ""), 500)
     out["why_it_matters"] = why if numbers_supported(why, corpus) else ""
-    ideas = data.get("content_ideas") if isinstance(data.get("content_ideas"), dict) else {}
-    out["content_ideas"] = {k: clean_text(str(ideas.get(k) or ""), 220) for k in ("news_video", "explainer",
-                                                                                 "comparison_video")
-                            if ideas.get(k) and numbers_supported(str(ideas.get(k)), corpus)}
+    from .. import messages as msg
+
+    check = lambda v: numbers_supported(v, corpus)  # noqa: E731
+    out["explain"] = msg.clean_explain(data.get("explain"), check)
+    out["content"] = msg.clean_opportunities(data.get("content"), check)
     verdict = str(data.get("is_new_model") or "").lower().strip()
     out["is_new_model"] = verdict if verdict in ("yes", "no", "unclear") else ""
     if out["is_new_model"] == "no" and "classification_quote" not in out:
@@ -279,15 +290,20 @@ def _fmt_tokens(n):
     return f"{n:,} tokens"
 
 
+def money(x):
+    """4 → '$4', 1.5 → '$1.50', 0.1 → '$0.10'."""
+    return f"${x:g}" if float(x).is_integer() else f"${x:,.2f}"
+
+
 def _fmt_price(specs):
     i, o = specs.get("input_price"), specs.get("output_price")
     if i is None and o is None:
         return specs.get("price_note")
     parts = []
     if i is not None:
-        parts.append(f"${i:g} input")
+        parts.append(f"{money(i)} input")
     if o is not None:
-        parts.append(f"${o:g} output")
+        parts.append(f"{money(o)} output")
     return " / ".join(parts) + " per 1M tokens"
 
 
@@ -331,11 +347,11 @@ def spec_diffs(prev, new):
         if a is not None and b is not None:
             pct = _pct(a, b)
             if b < a:
-                better.append(f"{label} drops from ${a:g} to ${b:g} per 1M tokens ({pct}%)")
+                better.append(f"{label} drops from {money(a)} to {money(b)} per 1M tokens ({pct}%)")
             elif b > a:
-                worse.append(f"{label} rises from ${a:g} to ${b:g} per 1M tokens (+{pct}%)")
+                worse.append(f"{label} rises from {money(a)} to {money(b)} per 1M tokens (+{pct}%)")
             else:
-                same.append(f"{label} unchanged (${b:g} per 1M tokens)")
+                same.append(f"{label} unchanged ({money(b)} per 1M tokens)")
     if prev.get("latency") and new.get("latency") and prev["latency"] != new["latency"]:
         same.append(f"Latency label changes from {prev['latency']} to {new['latency']}")
     pi, ni = _modal_set(prev.get("input_modalities")), _modal_set(new.get("input_modalities"))
@@ -421,6 +437,12 @@ def _first_sentences(text, model_words, n=2):
     return (picked or good)[:n]
 
 
+def ledger_similar(a, b):
+    from ..ledger import similar
+
+    return similar(a, b, 0.7)
+
+
 def _dedupe_reasons(reasons):
     out = []
     for r in reasons:
@@ -459,6 +481,10 @@ def analyze(results, store, company_cfg, config, settings, llm_budget):
         specs[mid] = {"specs": s, "status": rec.get("status") or next(
             (o.get("status") for o in official if mid in o.get("model_ids", []) and o.get("status")), None),
             "name": rec.get("name") if rec.get("name") and rec.get("name") != mid else None}
+
+    for mid in new_ids[:1]:
+        if specs[mid]["specs"].get("input_price") is None:
+            specs[mid]["specs"].update(prices_from_text(texts))
 
     # AI reading (optional, limited per run).
     ai, ai_model, ai_dropped = {}, None, 0
@@ -534,7 +560,11 @@ def analyze(results, store, company_cfg, config, settings, llm_budget):
             whats_new += _first_sentences(t["text"], words, 2)
             if len(whats_new) >= 3:
                 break
-    whats_new = list(dict.fromkeys(whats_new))[:4]
+    unique = []
+    for line in whats_new:  # the changelog and the blog post often say the same sentence
+        if not any(ledger_similar(line, u) for u in unique):
+            unique.append(line)
+    whats_new = unique[:4]
 
     verification = CONFIRMED if all(r["verification"] == CONFIRMED for r in results) else REVIEW
     reasons = _dedupe_reasons([x for r in results for x in r["reasons"]])
@@ -548,6 +578,7 @@ def analyze(results, store, company_cfg, config, settings, llm_budget):
         reasons.append("the announcement could not be read, so nothing could be verified from it")
 
     summary = "; ".join(better[:2] + worse[:1]) or ("compared with " + prev["name"] if prev else "")
+    flagship = is_flagship(new_ids, names, texts, company_cfg)
     return {
         "company": company, "bases": bases, "model_ids": new_ids, "model_name": model_name,
         "category": A, "verification": verification, "reasons": reasons,
@@ -556,8 +587,63 @@ def analyze(results, store, company_cfg, config, settings, llm_budget):
         "texts": texts, "official": official, "specs": specs, "previous": prev, "previous_specs": prev_specs,
         "comparison": comparison, "improved": better, "regressed": worse, "unchanged": same,
         "whats_new": whats_new, "ai": ai, "ai_model": ai_model, "ai_dropped": ai_dropped,
-        "comparison_summary": summary,
+        "comparison_summary": summary, "flagship": flagship,
+        "priority": "P0" if verification == CONFIRMED and flagship else "P1",
+        "explain": ai.get("explain") or fallback_explain(model_name, company_cfg, specs[main_id]["specs"], prev,
+                                                         better + worse),
     }
+
+
+FLAGSHIP_WORDS = re.compile(r"\b(flagship|most capable|most intelligent|most powerful|most advanced|frontier model|"
+                            r"our best|state-of-the-art)\b", re.I)
+
+
+def is_flagship(ids, names, texts, company_cfg):
+    """A flagship launch (→ P0): the id matches the company's flagship patterns in releases.yaml, or the official
+    text calls the model flagship / most capable / frontier in the same sentence as its name."""
+    for pat in company_cfg.get("flagship_patterns", []):
+        if any(re.search(pat, i, re.I) for i in ids):
+            return True
+    for t in texts:
+        for sentence in re.split(r"(?<=[.!?])\s+", t.get("text") or ""):
+            if FLAGSHIP_WORDS.search(sentence) and any(n.lower() in sentence.lower() for n in list(names) + list(ids)):
+                return True
+    return False
+
+
+_PRICE = re.compile(r"\$\s?(\d+(?:\.\d+)?)\s*(?:per\s+(?:1M|one million|million)|/\s*(?:1M|M)?\s*)\s*input(?:\s+tokens?)?"
+                    r"[^$]{0,60}?\$\s?(\d+(?:\.\d+)?)\s*(?:per\s+(?:1M|one million|million)|/\s*(?:1M|M)?\s*)\s*output",
+                    re.I)
+
+
+def prices_from_text(texts):
+    """Input/output prices per 1M tokens stated in the official release text ('$1.50 per 1M input tokens and
+    $7.50 per 1M output tokens'), used only when the catalog has no price for the new model."""
+    for t in sorted(texts, key=lambda t: {"changelog": 0, "announcement": 1}.get(t["kind"], 2)):
+        m = _PRICE.search(t.get("text") or "")
+        if m:
+            return {"input_price": float(m.group(1)), "output_price": float(m.group(2))}
+    return {}
+
+
+def fallback_explain(name, company_cfg, specs, prev, diffs):
+    """Explanation from the official facts alone (no AI). Questions the facts can't answer are left out."""
+    out = {"introduced": f"{name}, a new {company_cfg['product']} model from {company_cfg['label']}."}
+    if specs.get("description"):
+        out["does"] = specs["description"]
+    if prev and diffs:
+        out["different"] = f"Compared with {prev['name']}: " + "; ".join(diffs[:3]) + "."
+    return out
+
+
+def update_priority(category, verification):
+    """Priority for the shorter alerts: upgrades and manual reviews P1, availability and early signals P2,
+    documentation and feature notes P3."""
+    if verification == REVIEW or category == B:
+        return "P1"
+    if category in (C, "UNCONFIRMED_EARLY_SIGNAL"):
+        return "P2"
+    return "P3"
 
 
 def summarize_update(result, store, company_cfg):
@@ -575,6 +661,7 @@ def summarize_update(result, store, company_cfg):
             ids[0] if ids else result["base"]),
         "title": main.get("title", ""), "text": clean_text(main.get("text", ""), 500), "date": main.get("date"),
         "sources": [{"name": o["source"], "url": o.get("url")} for o in obs][:4], "reasons": result["reasons"],
+        "priority": update_priority(result["category"], result["verification"]),
     }
 
 

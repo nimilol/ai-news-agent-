@@ -28,7 +28,10 @@ and sends you a summary on **Telegram** and/or **email**.
   Space, Bg2, All-In, 20VC and more, plus Reddit AMAs), with who the guest is and what they said.
 - **Every morning:** "🛠 Builder picks", the most useful trending AI tools and repos (GitHub Trending, fast-rising
   new repos, Hugging Face, Show HN), each with what it does and who it helps.
-- **Every Sunday:** a weekly recap of the biggest stories, with recap post ideas.
+- **Every Sunday:** a weekly intelligence report of the biggest stories, with content opportunities (`/weekly`).
+- **Organised like a research assistant:** every message uses the same ten sections, four priorities (🔴 P0 to ⚪ P3)
+  and the same card layout, explains important developments in plain language, suggests news/education/analysis
+  video ideas, and never sends the same story twice. See [How Telegram messages are organised](#how-telegram-messages-are-organised).
 - **Accuracy built in:** reads the full article for the top stories, fact-checks the brief with a second AI,
   shows how many independent sources back each story (⚠️ for single-source claims), the time it first appeared,
   blocks low-quality sites, never labels press reports as "Official", and doesn't repeat stories already sent.
@@ -112,20 +115,85 @@ Add each one by name (`TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `GEMINI_API_KEY`
 - **Broken sources:** websites change. If a source fails 3 runs in a row, the brief's footer names it. Fix or remove
   its line in `sources.yaml`.
 
+## How Telegram messages are organised
+
+Everything the agent sends uses one structure (`agent/messages.py`), so a release alert, the 6-hour brief, Buzz,
+Builder picks and the weekly report all read the same way.
+
+**Ten sections**, always in this order, and only the ones with something in them:
+
+1. 🚨 NEW MODEL RELEASES · 2. 🔄 MODEL UPDATES AND IMPROVEMENTS · 3. 🧠 AI RESEARCH AND BENCHMARKS ·
+4. 📰 AI INDUSTRY NEWS · 5. 🔥 TRENDING AI DISCUSSIONS · 6. 🆓 FREE AI MODELS AND TOOLS ·
+7. 🛠 NEW AI TOOLS AND PROJECTS · 8. 🎙 AI PODCASTS AND INTERVIEWS · 9. 💡 CONTENT OPPORTUNITIES ·
+10. ⚙️ AGENT HEALTH AND SYSTEM NOTIFICATIONS
+
+Only an official release counts as a "new model release": a leak or press report about an upcoming model is filed
+under industry news with a 👀 label.
+
+**Four priorities** decide when you hear about something and how it arrives:
+
+| Priority | What | When | Sound |
+|---|---|---|---|
+| 🔴 P0 Critical | confirmed flagship model releases, major developments | at once (release monitor, every alerts run) | yes |
+| 🟠 P1 High | other confirmed new models, significant upgrades, important announcements, major research | at once | yes |
+| 🔵 P2 Normal | industry news, benchmarks, leaks, official page changes, notable discussions | at once in instant alerts, otherwise in the digest | silent |
+| ⚪ P3 Discovery | free models, repositories, experiments, tools | the digest, Buzz and Builder picks | silent |
+
+A model counts as a flagship when its id matches the company's `flagship_patterns` in `releases.yaml`, or the
+official text calls it "flagship", "most capable" or "frontier". Change what is sent at once with
+`config.yaml → alerts.min_priority` and what arrives silently with `config.yaml → telegram.silent_from`.
+
+**Every item is a card** with the same fields in the same order: headline · priority, verification and date ·
+company (and the original speaker or publication for interviews, research and discussions) · what happened ·
+why it matters · technical details · sources. Messages start with a priority summary (e.g. `🔴 1 P0 · 🔵 4 P2`).
+
+**Explained.** For important stories (P0/P1 in the brief, every confirmed release) a collapsed "📘 Explained" block
+answers: what was introduced, what it actually does, what problem it solves, how it differs from before, who
+benefits, and why a creator or developer should care. Tap it to open; it stays out of the way otherwise.
+
+**💡 Content opportunities.** For the most important story of a brief, Buzz, the weekly report and every confirmed
+release, three ideas: **A. NEWS** (a timely video), **B. EDUCATION** (explaining the technology) and **C. ANALYSIS**
+(a comparison, test or opinion), each with a suggested title, the main angle, why it is interesting and what still
+needs research or testing. Nothing is created or published: you decide.
+
+**Accuracy.** The AI only adds explanations and ideas on top of the sources: any sentence with a number that appears
+in none of the sources is dropped, and a "new model release" needs an official source.
+
+**Long reports** are split into several messages in order, never in the middle of a card or an HTML tag; a section
+that continues gets its heading again, marked "(continued)", and each part is numbered (1/3, 2/3, …).
+
+**No repeats.** Besides each run's own memory, `state/sent.json` records what was actually delivered (links,
+headlines, model identities) for 14 days, across all runs:
+- a model release delivered by the release monitor is not repeated as an instant alert, a brief story or a Buzz pick
+  (the brief's footer lists it as "already sent as alerts");
+- several sources reporting the same thing in one run become one card with several links, and the same story with a
+  reworded headline in a later run is recognised and skipped ("Grok 5 …" and "Grok 6 …" are kept apart);
+- minor edits to documentation pages (no price, limit, model or deprecation change) are not sent at all;
+- when a story really develops, it comes back once, marked 🔄 update, saying what is new (release alerts get a
+  separate 🔄 UPDATE message).
+
 ## Ask your agent
 
 Send these to your bot in Telegram (they also appear in the bot's **/** menu):
 
 | Command | What you get |
 |---|---|
-| `/free` | Every model you can use for free right now on OpenRouter and in OpenCode, newest first (🆕 = added in the last 14 days) |
 | `/latest` | The most recent news brief again |
-| `/repos` | Today's Builder picks |
 | `/buzz` | The latest Buzz: what's hot on GitHub, Hugging Face, Reddit and YouTube, with interviews |
+| `/repos` | Today's Builder picks |
+| `/weekly` | The latest weekly intelligence report |
 | `/ask your question` | An answer from this week's briefs, e.g. `/ask what did OpenAI change this week?` |
-| `/releases` | The latest new AI models from the six labs, with verification and delivery status |
+| `/models` | Recent confirmed new model releases from the six labs |
+| `/releases` | The full release history (new models, upgrades, availability, reviews) with verification and delivery status |
+| `/compare model A vs model B` | Two models side by side from the official catalogs (context, output limit, prices, latency, inputs, availability), e.g. `/compare Claude Opus 5.5 vs GPT-6.1 Terra` |
+| `/free` | Every model you can use for free right now on OpenRouter and in OpenCode, newest first (🆕 = added in the last 14 days) |
+| `/sources` | Every official source the release monitor watches, with ✅ or ⚠️ failing |
+| `/health` | Latest run of every workflow, how often the hourly alerts really ran, failing sources, alert delivery |
 | `/news` | Run a fresh news check now (instant bot only) |
 | `/help` | The list of commands |
+
+`/compare` uses official specs only (no benchmarks); specs for models that only have a name in a catalog are filled
+in a few pages per release check. `/weekly` is available after the next Sunday report.
 
 Without the instant bot, the agent reads your messages on each hourly alert check, so **replies take up to an
 hour**. With the instant bot (next section) replies take seconds. Only your own chat (`TELEGRAM_CHAT_ID`) gets
@@ -286,7 +354,7 @@ python -m pytest -q                  # offline tests
 | `sources.yaml` | where the agent looks |
 | `releases.yaml` | the model release monitor: official sources and settings for the six labs |
 | `config.yaml` | companies, keywords, AI providers, delivery |
-| `agent/` | the code: `sources.py` (fetchers), `digest.py` (AI prompt and formatting), `accuracy.py` (articles, source counts, blocklist), `factcheck.py` (second-AI check), `builders.py` (Builder picks), `buzz.py` (3-hourly Buzz: GitHub, Hugging Face, Reddit, YouTube), `weekly.py` (recap), `freemodels.py` (`/free`), `commands.py` (Telegram commands), `botpush.py` (feeds the instant bot), `llm.py` (providers), `deliver.py` (Telegram/email), `__main__.py` (the runs), `releases/` (model release monitor: `parsers.py`, `classify.py`, `analyze.py`, `render.py`, `notify.py`, `pipeline.py`) |
+| `agent/` | the code: `messages.py` (sections, priorities, cards, message splitting), `ledger.py` (what was already sent), `alerts.py` (instant alerts), `health.py` (/health), `sources.py` (fetchers), `digest.py` (AI prompt and formatting), `accuracy.py` (articles, source counts, blocklist), `factcheck.py` (second-AI check), `builders.py` (Builder picks), `buzz.py` (3-hourly Buzz: GitHub, Hugging Face, Reddit, YouTube), `weekly.py` (recap), `freemodels.py` (`/free`), `commands.py` (Telegram commands), `botpush.py` (feeds the instant bot), `llm.py` (providers), `deliver.py` (Telegram/email), `__main__.py` (the runs), `releases/` (model release monitor: `parsers.py`, `classify.py`, `analyze.py`, `render.py`, `notify.py`, `pipeline.py`) |
 | `bot/` | the instant Telegram bot for Cloudflare Workers, its tests and deploy script |
 | `state/` | the agent's memory of what it already sent (saved by the workflows) |
 | `digests/` | archive of every brief |

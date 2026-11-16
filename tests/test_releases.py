@@ -356,7 +356,7 @@ def test_spec_diffs_report_improvements_and_regressions():
         {"context_tokens": 400_000, "input_price": 12.5, "output_price": 75, "max_output_tokens": 128_000},
         {"context_tokens": 1_050_000, "input_price": 20, "output_price": 100, "max_output_tokens": 128_000})
     assert better == ["Context window grows from 400K tokens to 1.05M tokens"]
-    assert worse[0].startswith("Input price rises from $12.5 to $20") and "+60%" in worse[0]
+    assert worse[0].startswith("Input price rises from $12.50 to $20") and "+60%" in worse[0]
     assert same == ["Output limit unchanged (128K tokens)"]
 
 
@@ -387,6 +387,7 @@ def _facts(**over):
          "comparison": {"context": {"previous": "1M tokens", "new": "2M tokens", "basis": "official specs", "quote": ""}},
          "improved": ["Context window grows from 1M tokens to 2M tokens"], "regressed": [], "unchanged": [],
          "whats_new": ["Gemini 5 Pro <b>doubles</b> the context window."], "ai_model": None, "ai_dropped": 0,
+         "priority": "P1", "flagship": False, "explain": {"introduced": "Gemini 5 Pro, a new Gemini model.", "who": "Developers"},
          "ai": {"benchmarks": [{"name": "SWE-bench", "new": "81%", "previous": "74%"}]}}
     f.update(over)
     return f
@@ -395,12 +396,14 @@ def _facts(**over):
 def test_release_message_has_every_section_in_order_and_fits_a_phone():
     raw = "\n".join(render.render_release(_facts(), COMPANIES))
     text = render.plain([raw])
-    order = ["NEW AI MODEL RELEASE", "COMPANY:", "NEW MODEL:", "RELEASE INFORMATION:", "Announcement date:",
+    order = ["NEW AI MODEL RELEASE", "NEW MODEL RELEASES · 🟠 P1 High", "COMPANY:", "NEW MODEL:",
+             "RELEASE INFORMATION:", "Announcement date:",
              "Availability date:", "Model category:", "Availability status:", "API access:", "WHAT'S NEW:",
+             "📘 Explained", "What was introduced:",
              "COMPARISON WITH PREVIOUS MODEL:", "Previous model: Gemini 4 Carbon", "WHAT ACTUALLY IMPROVED:",
              "WHAT HAS NOT BEEN ESTABLISHED:", "OFFICIAL SOURCES:", "Original announcement", "Official documentation",
-             "Model information", "WHY THIS MATTERS:", "CONTENT OPPORTUNITIES:", "1. News video",
-             "2. Educational explainer", "3. Model comparison video", "VERIFICATION:\nOFFICIAL CONFIRMED",
+             "Model information", "WHY THIS MATTERS:", "💡 CONTENT OPPORTUNITIES", "A. NEWS:", "Angle:",
+             "Research or testing needed:", "B. EDUCATION:", "C. ANALYSIS:", "VERIFICATION:\nOFFICIAL CONFIRMED",
              "DELIVERY:\nPending Telegram confirmation."]
     positions = [text.index(s) for s in order]
     assert positions == sorted(positions)
@@ -624,8 +627,9 @@ def test_end_to_end_ai_reading_is_validated(monkeypatch, frozen):
               "comparison": {"pricing": {"new": "$1.50 per million input tokens", "previous": "", "source": 1,
                                          "quote": "priced at $1.50 per million input tokens"}},
               "why_it_matters": "A cheap fast model changes defaults for builders.",
-              "content_ideas": {"news_video": "Gemini 4 Hydrogen explained for builders",
-                                "explainer": "Hydrogen in 60 seconds"}}
+              "content": [{"kind": "news", "title": "Gemini 4 Hydrogen explained for builders",
+                           "angle": "Cheap and fast", "why": "Changes defaults", "research": "Test latency"},
+                          {"kind": "education", "title": "Hydrogen in 60 seconds"}]}
     monkeypatch.setattr("agent.releases.analyze.llm.complete", lambda c, s, build: (json.dumps(answer), "fake/ai"))
     fake_web(monkeypatch, _pages(with_hydrogen=True))
     pipeline.run(cfg=cfg, config=NO_AI, store=Store())
@@ -686,7 +690,7 @@ def test_releases_command_lists_recent_releases(monkeypatch):
     rec["delivery"]["status"] = "SENT"
     store.save()
     text = "\n".join(commands.recent_releases())
-    assert "Gemini 5 Pro" in text and "OFFICIAL CONFIRMED" in text and "delivery SENT" in text
+    assert "Gemini 5 Pro" in text and "OFFICIAL CONFIRMED" in text and "Delivery: SENT" in text
     sent = []
     monkeypatch.setenv("TELEGRAM_BOT_TOKEN", "1:t")
     monkeypatch.setenv("TELEGRAM_CHAT_ID", "42")

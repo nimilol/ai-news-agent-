@@ -36,6 +36,7 @@ settings:
   max_llm_calls: 4                # AI calls per run (one per release that needs reading/comparison)
   article_chars: 12000            # how much of an announcement the AI reads
   max_notifications_per_run: 8
+  spec_pages_per_run: 8           # model detail pages read per run to fill in missing specs (for /compare)
 
 companies:
   # -------------------------------------------------------------------------------------------- Anthropic
@@ -51,6 +52,9 @@ companies:
       - '(?<![\w-])(?:opus|sonnet|haiku|fable|mythos) \d+(?:\.\d+)?\b'
     family_prefix: claude                   # "Opus 5" in a post means Claude Opus 5
     tier_into_family: [opus, sonnet, haiku, fable, mythos]
+    # Flagship launches are P0 (critical). Others are P1. The official text calling a model "flagship",
+    # "most capable" or "frontier" also makes it a flagship.
+    flagship_patterns: ['^claude-(opus|sonnet|fable|mythos)-']
     sources:
       - name: Anthropic news
         role: announcement
@@ -96,6 +100,7 @@ companies:
       - 'gpt-\d+(?:\.\d+)? (?:astra|sol|terra|luna|cyber|mini|nano|pro|codex|rosalind|instant|thinking)\b'
       - 'gpt-(?:image|realtime|audio|live|transcribe)-\d+(?:\.\d+)?(?:[- ](?:flare|sunburst|mini|translate|whisper))*\b'
       - 'gpt-oss-\d+b\b'
+    flagship_patterns: ['^gpt-\d+(\.\d+)?(-(astra|sol|pro))?$']
     sources:
       - name: OpenAI news
         role: announcement
@@ -136,6 +141,7 @@ companies:
       - 'grok \d+(?:\.\d+)?\b'
       - 'grok-(?:imagine|voice|build|code)(?:-[a-z0-9.]+)*\b'
       - 'grok (?:imagine|voice|build|code) \d+(?:\.\d+)?\b'
+    flagship_patterns: ['^grok-\d+(\.\d+)?(-heavy)?$']
     sources:
       - name: xAI news
         role: announcement
@@ -177,6 +183,7 @@ companies:
       # "Gemini 4 Hydrogen", "Gemini 3.8 Flash-Lite": the tier word must start with a capital letter.
       - 'gemini \d+(?:\.\d+)?(?: (?-i:(?!(?:The|And|Is|In|On|For|With|To|Now|Model|Models|API|App|Is|Will|Can)\b)[A-Z][a-z]+(?:-[A-Z][a-z]+)?)){0,2}'
       - 'gemma[- ]\d+(?:\.\d+)?(?:-[a-z0-9]+)*\b'
+    flagship_patterns: ['^gemini-\d+(\.\d+)?-(pro|ultra|carbon|argon)$']
     sources:
       - name: Google DeepMind blog
         role: announcement
@@ -234,6 +241,7 @@ companies:
       - 'kimi[- ]k\d+(?:\.\d+)?(?:[- ](?:pro|thinking|instruct|base|turbo|highspeed|code|linear|vl|dev|preview|\d{4}))*\b'
       - 'moonshot-v\d+(?:-[a-z0-9]+)*\b'
       - 'kimi-(?:latest|thinking-preview)\b'
+    flagship_patterns: ['^kimi-k\d+(\.\d+)?(-(pro|thinking))?$']
     sources:
       - name: Kimi blog
         role: announcement
@@ -269,6 +277,7 @@ companies:
       - 'qwen\d+(?:\.\d+)?(?:-[a-z0-9.]+)*\b'
       - 'qwen-(?:image|audio|vl|max|plus|turbo|flash|coder|omni|mt|tts|asr|long)(?:-[a-z0-9.]+)*\b'
       - 'qwq-[a-z0-9.-]+\b'
+    flagship_patterns: ['^qwen\d+(\.\d+)?(-(max|plus))?$']
     sources:
       - name: Alibaba Cloud Model Studio new models
         role: catalog

@@ -47,10 +47,13 @@ def _telegram_call(method, payload):
     raise TelegramError(f"Telegram said HTTP {r.status_code}: {description}", status=r.status_code, retryable=retryable)
 
 
-def send_telegram_message(text, parse_mode="HTML"):
+def send_telegram_message(text, parse_mode="HTML", silent=False):
     """Send one message and return Telegram's confirmation: {"message_id": int, "date": unix time}.
-    A formatting error is retried once as plain text, so the content still arrives."""
+    A formatting error is retried once as plain text, so the content still arrives.
+    silent=True delivers it without a notification sound (used for P2/P3 priorities)."""
     payload = {"chat_id": env("TELEGRAM_CHAT_ID"), "text": text, "disable_web_page_preview": True}
+    if silent:
+        payload["disable_notification"] = True
     if parse_mode:
         payload["parse_mode"] = parse_mode
     try:
@@ -79,9 +82,9 @@ def edit_telegram_message(message_id, text, parse_mode="HTML"):
         return False
 
 
-def send_telegram(messages):
+def send_telegram(messages, silent=False):
     """Send several messages in order. Returns their message ids; raises on the first failure."""
-    return [send_telegram_message(text)["message_id"] for text in messages]
+    return [send_telegram_message(text, silent=silent)["message_id"] for text in messages]
 
 
 def send_email(subject, html_body, text_body, config):
@@ -97,14 +100,14 @@ def send_email(subject, html_body, text_body, config):
         s.sendmail(sender, recipients, msg.as_string())
 
 
-def deliver(config, telegram_messages=None, email=None, channels=None):
-    """Send to every configured channel. Returns (sent_to, errors)."""
+def deliver(config, telegram_messages=None, email=None, channels=None, silent=False):
+    """Send to every configured channel. Returns (sent_to, errors). silent=True: no notification sound."""
     d = config["delivery"]
     channels = channels or [c for c in ("telegram", "email") if d.get(c)]
     sent, errors = [], []
     if "telegram" in channels and telegram_messages and telegram_configured():
         try:
-            send_telegram(telegram_messages)
+            send_telegram(telegram_messages, silent=silent)
             sent.append("telegram")
         except Exception as e:  # noqa: BLE001
             errors.append(f"telegram: {e}")

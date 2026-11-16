@@ -15,16 +15,24 @@ from .deliver import send_telegram
 from .state import State
 
 HELP = (
-    "<b>🛰 Your AI news agent</b>\n"
+    "<b>🛰 Your AI research assistant</b>\n"
     "I check your messages every hour, so replies can take up to an hour.\n\n"
-    "/free · models you can use for free right now (OpenRouter, OpenCode)\n"
-    "/latest · resend the most recent news brief\n"
-    "/repos · today's Builder picks (trending AI tools and repos)\n"
-    "/buzz · the latest Buzz: what's hot on GitHub, Hugging Face, Reddit and YouTube, with interviews\n"
-    "/ask your question · ask about this week's news, answered from your briefs\n"
-    "/releases · the latest new AI models from Anthropic, OpenAI, Moonshot, Alibaba, xAI and Google\n"
+    "<b>News</b>\n"
+    "/latest · the most recent news brief\n"
+    "/buzz · what's hot on GitHub, Hugging Face, Reddit and YouTube\n"
+    "/repos · today's Builder picks\n"
+    "/weekly · the latest weekly intelligence report\n"
+    "/ask your question · answered from this week's briefs\n\n"
+    "<b>Models</b>\n"
+    "/models · recent confirmed model releases\n"
+    "/releases · the full release history (upgrades, availability, reviews)\n"
+    "/compare model A vs model B · official specs side by side\n"
+    "/free · models you can use for free right now\n\n"
+    "<b>System</b>\n"
+    "/sources · the official sources being monitored\n"
+    "/health · runs, failing sources and alert delivery\n"
     "/help · this message\n\n"
-    "For an instant list, open GitHub: Actions → AI news digest → Run workflow → free-models."
+    "Priorities: 🔴 P0 critical · 🟠 P1 high · 🔵 P2 normal · ⚪ P3 discovery (P2 and P3 arrive silently)."
 )
 COMMANDS = [
     {"command": "free", "description": "Free models you can use right now"},
@@ -32,13 +40,19 @@ COMMANDS = [
     {"command": "repos", "description": "Today's Builder picks"},
     {"command": "buzz", "description": "What's hot: GitHub, Hugging Face, Reddit, YouTube"},
     {"command": "ask", "description": "Ask about this week's news"},
-    {"command": "releases", "description": "Latest new AI models (official, verified)"},
+    {"command": "models", "description": "Recent confirmed model releases"},
+    {"command": "releases", "description": "Model release history"},
+    {"command": "compare", "description": "Compare two models: /compare A vs B"},
+    {"command": "weekly", "description": "The latest weekly intelligence report"},
+    {"command": "sources", "description": "Official sources being monitored"},
+    {"command": "health", "description": "Agent health"},
     {"command": "news", "description": "Run a fresh news check now"},
     {"command": "help", "description": "What I can do"},
 ]
 LAST_BRIEF = ROOT / "state" / "last_brief.json"
 LAST_REPOS = ROOT / "state" / "last_repos.json"
 LAST_BUZZ = ROOT / "state" / "last_buzz.json"
+LAST_WEEKLY = ROOT / "state" / "last_weekly.json"
 ASK_PROMPT = """You answer questions from an AI news creator using only the news briefs below (newest last).
 Answer in at most 8 short lines of plain text. Name the date and source of each fact. If the briefs don't
 cover the question, say so plainly instead of guessing."""
@@ -86,6 +100,45 @@ def recent_releases():
     return render_recent(Store().recent_releases(), rconfig.load()["companies"])
 
 
+def recent_models():
+    """The /models reply: confirmed new model releases only."""
+    from .releases import config as rconfig
+    from .releases.render import render_models
+    from .releases.store import Store
+
+    return render_models(Store().recent_releases(30), rconfig.load()["companies"])
+
+
+def monitored_sources():
+    from .releases import config as rconfig
+    from .releases.render import render_sources
+    from .releases.store import Store
+
+    return render_sources(rconfig.load(), Store().failures)
+
+
+def compare_models(args):
+    """The /compare reply: two models side by side from the official catalogs."""
+    import html
+
+    from .releases import catalog
+    from .releases import config as rconfig
+    from .releases.render import render_compare
+    from .releases.store import Store
+
+    pair = catalog.split_pair(args)
+    if not pair:
+        return ["Name two models, e.g. <i>/compare Claude Opus 5.5 vs GPT-6.1 Terra</i>"]
+    companies = rconfig.load()["companies"]
+    index = catalog.model_index(Store(), companies)
+    found = [catalog.find(index, q) for q in pair]
+    missing = [q for q, m in zip(pair, found) if not m]
+    if missing:
+        return ["I couldn't find " + " or ".join(f"<b>{html.escape(q)}</b>" for q in missing) +
+                " in the official model catalogs of the six labs I monitor. Try the model id, e.g. gpt-6.1-terra."]
+    return render_compare(found[0], found[1], companies)
+
+
 def send_free_models(config):
     send_telegram(freemodels.render(freemodels.collect(config)))
 
@@ -116,11 +169,12 @@ def handle(config):
         raw = (msg.get("text") or "").strip()
         words = raw.split()
         command = words[0].lstrip("/").split("@")[0].lower() if words else ""
-        if command == "ask":
+        if command in ("ask", "compare"):
             question = raw.split(None, 1)[1].strip() if len(words) > 1 else ""
-            wanted.append(("ask", question))
+            wanted.append((command, question))
             continue
-        command = command if command in ("free", "latest", "repos", "buzz", "news", "releases") else "help"
+        command = command if command in ("free", "latest", "repos", "buzz", "news", "releases", "models", "sources",
+                                         "health", "weekly") else "help"
         if command not in wanted:
             wanted.append(command)
     print(f"Telegram commands: {', '.join(c if isinstance(c, str) else c[0] for c in wanted) or 'none'}")
@@ -145,10 +199,24 @@ def handle(config):
                     send_telegram(["No Buzz yet. It arrives every 3 hours."])
             elif command == "releases":
                 send_telegram(recent_releases())
+            elif command == "models":
+                send_telegram(recent_models())
+            elif command == "sources":
+                send_telegram(monitored_sources())
+            elif command == "health":
+                from . import health
+                send_telegram(health.render())
+            elif command == "weekly":
+                if LAST_WEEKLY.exists():
+                    send_telegram(json.loads(LAST_WEEKLY.read_text(encoding="utf-8")))
+                else:
+                    send_telegram(["No weekly report yet. It arrives on Sunday evening."])
+            elif isinstance(command, tuple) and command[0] == "compare":
+                send_telegram(compare_models(command[1]))
             elif command == "news":
                 send_telegram(["/news needs the instant bot (see 'Instant replies' in the README). For now, open GitHub: "
                                "Actions → AI news digest → Run workflow → digest."])
-            elif isinstance(command, tuple):
+            elif isinstance(command, tuple):  # /ask
                 question = command[1]
                 if not question:
                     send_telegram(["Type your question after /ask, e.g. <i>/ask what did OpenAI release this week?</i>"])
