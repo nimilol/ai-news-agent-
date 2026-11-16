@@ -309,3 +309,18 @@ early_signals:
   - name: TestingCatalog (early signal)
     type: rss
     url: https://www.testingcatalog.com/rss/
+
+# Independent benchmarks for the weekly model report (python -m agent weekly-models). Shown separately from the
+# companies' own numbers and only ever compared within the same leaderboard and category.
+independent_benchmarks:
+  - name: LMArena
+    type: lmarena_hf
+    dataset: lmarena-ai/leaderboard-dataset
+    url: https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset
+    methodology: "Crowdsourced blind pairwise human votes between anonymous models, turned into a Bradley-Terry (Elo-style) rating with a 95% confidence interval, per category."
+    boards:
+      - {config: text, category: overall, label: "General (text)"}
+      - {config: text, category: coding, label: Coding}
+      - {config: text, category: math, label: Math}
+      - {config: vision, category: overall, label: "Vision (multimodal)"}
+    verified: "2026-11-16: official LMArena dataset on Hugging Face, updated daily; read through the public datasets API"

@@ -299,7 +299,7 @@ def render_compare(a, b, companies):
     from .analyze import spec_cells, spec_diffs
 
     rows = [("context", "📏 Context window"), ("output", "📤 Output limit"), ("pricing", "💰 API pricing"),
-            ("speed", "⚡ Speed"), ("multimodal", "🖼 Inputs → outputs"), ("reasoning", "🧠 Reasoning"),
+            ("speed", "⚡ Speed"), ("multimodal", "🖼 Inputs and outputs"), ("reasoning", "🧠 Reasoning"),
             ("availability", "🌍 Availability")]
     ca, cb = spec_cells(a["specs"], a.get("status")), spec_cells(b["specs"], b.get("status"))
     lab = lambda m: companies.get(m["company"], {}).get("label", m["company"])  # noqa: E731

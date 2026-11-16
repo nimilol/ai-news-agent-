@@ -14,13 +14,14 @@ const HELP = [
   "/latest · the most recent news brief",
   "/buzz · what's hot on GitHub, Hugging Face, Reddit and YouTube",
   "/repos · today's Builder picks",
-  "/weekly · the latest weekly intelligence report",
+  "/weekly · the latest weekly news recap",
   "/ask <i>your question</i> · answered from this week's briefs",
   "/news · run a fresh news check now",
   "",
   "<b>Models</b>",
   "/models · recent confirmed model releases",
   "/releases · the full release history",
+  "/weeklymodels · the latest Weekly Model Intelligence Report",
   "/compare <i>model A</i> vs <i>model B</i> · official specs side by side",
   "/free · models you can use for free right now",
   "",
@@ -38,7 +39,7 @@ const ASK_PROMPT =
   "If the briefs don't cover the question, say so plainly instead of guessing.";
 
 const PUSH_KEYS = ["last_brief", "last_repos", "last_buzz", "free_models", "briefs", "last_releases", "last_models",
-  "models_index", "sources", "health", "last_weekly"];
+  "models_index", "sources", "health", "last_weekly", "last_model_weekly"];
 
 // /compare: the same simple name matching as agent/releases/catalog.py ("opus 5.5" finds claude-opus-5-5).
 export function normalize(text) {
@@ -66,7 +67,7 @@ export function splitPair(text) {
 }
 
 const COMPARE_ROWS = [["context", "📏 Context window"], ["output", "📤 Output limit"], ["pricing", "💰 API pricing"],
-  ["speed", "⚡ Speed"], ["multimodal", "🖼 Inputs → outputs"], ["reasoning", "🧠 Reasoning"],
+  ["speed", "⚡ Speed"], ["multimodal", "🖼 Inputs and outputs"], ["reasoning", "🧠 Reasoning"],
   ["availability", "🌍 Availability"]];
 
 export function renderCompare(a, b) {
@@ -219,6 +220,9 @@ export async function handleMessage(env, message) {
       return command;
     case "weekly":
       await sendStored(env, "last_weekly", "No weekly report yet. It arrives on Sunday evening.");
+      return command;
+    case "weeklymodels":
+      await sendStored(env, "last_model_weekly", "No Weekly Model Intelligence Report yet. It arrives on Sunday evening.");
       return command;
     case "sources":
       await sendStored(env, "sources", "The source list isn't loaded yet. It refreshes with every release check.");

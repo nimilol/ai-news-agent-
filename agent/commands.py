@@ -21,11 +21,12 @@ HELP = (
     "/latest · the most recent news brief\n"
     "/buzz · what's hot on GitHub, Hugging Face, Reddit and YouTube\n"
     "/repos · today's Builder picks\n"
-    "/weekly · the latest weekly intelligence report\n"
+    "/weekly · the latest weekly news recap\n"
     "/ask your question · answered from this week's briefs\n\n"
     "<b>Models</b>\n"
     "/models · recent confirmed model releases\n"
     "/releases · the full release history (upgrades, availability, reviews)\n"
+    "/weeklymodels · the latest Weekly Model Intelligence Report\n"
     "/compare model A vs model B · official specs side by side\n"
     "/free · models you can use for free right now\n\n"
     "<b>System</b>\n"
@@ -43,7 +44,8 @@ COMMANDS = [
     {"command": "models", "description": "Recent confirmed model releases"},
     {"command": "releases", "description": "Model release history"},
     {"command": "compare", "description": "Compare two models: /compare A vs B"},
-    {"command": "weekly", "description": "The latest weekly intelligence report"},
+    {"command": "weekly", "description": "The latest weekly news recap"},
+    {"command": "weeklymodels", "description": "The latest Weekly Model Intelligence Report"},
     {"command": "sources", "description": "Official sources being monitored"},
     {"command": "health", "description": "Agent health"},
     {"command": "news", "description": "Run a fresh news check now"},
@@ -53,6 +55,7 @@ LAST_BRIEF = ROOT / "state" / "last_brief.json"
 LAST_REPOS = ROOT / "state" / "last_repos.json"
 LAST_BUZZ = ROOT / "state" / "last_buzz.json"
 LAST_WEEKLY = ROOT / "state" / "last_weekly.json"
+LAST_MODEL_WEEKLY = ROOT / "state" / "last_model_weekly.json"
 ASK_PROMPT = """You answer questions from an AI news creator using only the news briefs below (newest last).
 Answer in at most 8 short lines of plain text. Name the date and source of each fact. If the briefs don't
 cover the question, say so plainly instead of guessing."""
@@ -174,7 +177,7 @@ def handle(config):
             wanted.append((command, question))
             continue
         command = command if command in ("free", "latest", "repos", "buzz", "news", "releases", "models", "sources",
-                                         "health", "weekly") else "help"
+                                         "health", "weekly", "weeklymodels") else "help"
         if command not in wanted:
             wanted.append(command)
     print(f"Telegram commands: {', '.join(c if isinstance(c, str) else c[0] for c in wanted) or 'none'}")
@@ -211,6 +214,11 @@ def handle(config):
                     send_telegram(json.loads(LAST_WEEKLY.read_text(encoding="utf-8")))
                 else:
                     send_telegram(["No weekly report yet. It arrives on Sunday evening."])
+            elif command == "weeklymodels":
+                if LAST_MODEL_WEEKLY.exists():
+                    send_telegram(json.loads(LAST_MODEL_WEEKLY.read_text(encoding="utf-8")))
+                else:
+                    send_telegram(["No Weekly Model Intelligence Report yet. It arrives on Sunday evening."])
             elif isinstance(command, tuple) and command[0] == "compare":
                 send_telegram(compare_models(command[1]))
             elif command == "news":

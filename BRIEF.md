@@ -166,3 +166,15 @@ Follow-up:
   (`state/sent.json`) stops a story from being delivered again by another run or with a reworded headline. New
   commands: /models, /compare (official specs side by side), /sources, /health (live workflow runs via the GitHub
   API, including how often the hourly alerts really ran), /weekly; all existing commands kept, in both bots.
+- **2026-11-16, owner asked for a Weekly Model Intelligence Report:** "every Sunday, a complete overview of the AI
+  models officially announced or released during the previous seven days … use the persistent model-release
+  history … do not break the existing weekly recap", then "push all to main". Added `agent/releases/weekly.py`
+  (`python -m agent weekly-models`), a second step of the Sunday workflow that can't fail the recap: new releases,
+  comparisons with predecessors, updates (kept apart), an evidence-based competitive landscape, benchmark
+  intelligence and ranked content ideas (3 videos, 3 X posts, 1 comparison, 1 educational topic). Each release is
+  counted once (the report records what it covered; late detections are included and marked). Independent
+  benchmarks: LMArena's official Hugging Face dataset (checked live: current, with confidence intervals), compared
+  only within one leaderboard category; Aider's leaderboard was rejected as stale (last entry Oct 2025), and
+  lmarena.ai, epoch.ai, swebench.com, livebench.ai and artificialanalysis.ai offer no keyless machine-readable feed.
+  Release records now also keep the full comparison, explanation and API availability for the report. Archive in
+  releases/weekly/, command /weeklymodels in both bots.

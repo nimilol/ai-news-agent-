@@ -5,6 +5,7 @@
     python -m agent builders        daily Builder picks: trending AI tools and repos
     python -m agent buzz            every 3 hours: what's hot on GitHub, Hugging Face, Reddit and YouTube (interviews first)
     python -m agent weekly          Sunday recap of the week's biggest stories
+    python -m agent weekly-models   Sunday Weekly Model Intelligence Report (from the release history)
     python -m agent check-sources   test every source and print which ones work
     python -m agent test-delivery   send a test message to Telegram / email
     python -m agent test-ai         check every AI key with a tiny request
@@ -443,6 +444,41 @@ def cmd_weekly(args):
     return 0 if sent or not errors else 1
 
 
+def cmd_weekly_models(args):
+    """Sunday: the Weekly Model Intelligence Report, built from the release monitor's history (agent/releases/weekly.py).
+    Separate from the general weekly recap, which keeps working as before."""
+    from .releases import config as rconfig
+    from .releases import weekly as model_weekly
+    from .releases.store import Store
+
+    config, _ = load()
+    cfg = rconfig.load()
+    store = Store()
+    report = model_weekly.build(store, cfg, config)
+    messages = model_weekly.render(report, cfg["companies"], cfg)
+    print(f"{len(report['releases'])} new releases, {sum(len(v) for v in report['updates'].values())} updates.")
+    for m in messages:
+        print(msg.strip_html(m) + "\n")
+    if args.dry_run:
+        print("(dry run: nothing sent, saved or archived)")
+        return 0
+    sent, errors = deliver(config, messages, (f"Weekly Model Intelligence Report: {len(report['releases'])} new models",
+                                              "<br>".join(m.replace("\n", "<br>") for m in messages),
+                                              "\n\n".join(msg.strip_html(m) for m in messages)),
+                           silent=msg.is_silent(model_weekly.top_priority(report), config))
+    for e in errors:
+        print(f"Failed: {e}")
+    if not sent:
+        return 1 if errors else 0
+    path = model_weekly.archive(report, messages)
+    print(f"Archived in {path}")
+    model_weekly.mark_reported(store, report)  # the next report never counts these releases again
+    store.save()
+    model_weekly.save_last(messages)  # for /weeklymodels
+    botpush.push("last_model_weekly", messages)
+    return 0
+
+
 def cmd_push_bot(args):
     """Send everything the always-on bot needs (used right after the bot is deployed)."""
     import json
@@ -453,7 +489,8 @@ def cmd_push_bot(args):
         return 1
     ok = botpush.push("briefs", commands.recent_briefs(), attempts=10)  # a new address can take minutes to go live
     for key, path in (("last_brief", commands.LAST_BRIEF), ("last_repos", commands.LAST_REPOS),
-                      ("last_buzz", commands.LAST_BUZZ), ("last_weekly", weekly.LAST_WEEKLY)):
+                      ("last_buzz", commands.LAST_BUZZ), ("last_weekly", weekly.LAST_WEEKLY),
+                      ("last_model_weekly", commands.LAST_MODEL_WEEKLY)):
         if path.exists():
             ok = botpush.push(key, json.loads(path.read_text(encoding="utf-8"))) and ok
     refresh_bot_free_models(config, args, attempts=3)
@@ -489,7 +526,8 @@ def cmd_test_delivery(args):
 def main():
     parser = argparse.ArgumentParser(prog="python -m agent", description="AI news agent")
     parser.add_argument("command", choices=["digest", "alerts", "builders", "buzz", "weekly", "check-sources", "test-delivery",
-                                            "test-ai", "free-models", "push-bot", "releases", "check-releases"])
+                                            "test-ai", "free-models", "push-bot", "releases", "check-releases",
+                                            "weekly-models"])
     parser.add_argument("--dry-run", action="store_true", help="print instead of sending; don't save state")
     parser.add_argument("--bootstrap", action="store_true",
                         help="releases only: learn every official source as it is now, without sending alerts")
@@ -497,7 +535,8 @@ def main():
     commands = {"digest": cmd_digest, "alerts": cmd_alerts, "check-sources": cmd_check_sources,
                 "test-delivery": cmd_test_delivery, "test-ai": cmd_test_ai,
                 "free-models": cmd_free_models, "builders": cmd_builders, "buzz": cmd_buzz, "weekly": cmd_weekly,
-                "push-bot": cmd_push_bot, "releases": cmd_releases, "check-releases": cmd_check_releases}
+                "push-bot": cmd_push_bot, "releases": cmd_releases, "check-releases": cmd_check_releases,
+                "weekly-models": cmd_weekly_models}
     sys.exit(commands[args.command](args))
 
 

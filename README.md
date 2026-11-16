@@ -28,7 +28,10 @@ and sends you a summary on **Telegram** and/or **email**.
   Space, Bg2, All-In, 20VC and more, plus Reddit AMAs), with who the guest is and what they said.
 - **Every morning:** "🛠 Builder picks", the most useful trending AI tools and repos (GitHub Trending, fast-rising
   new repos, Hugging Face, Show HN), each with what it does and who it helps.
-- **Every Sunday:** a weekly intelligence report of the biggest stories, with content opportunities (`/weekly`).
+- **Every Sunday:** a weekly recap of the biggest stories, with content opportunities (`/weekly`), and a separate
+  **Weekly Model Intelligence Report** on the week's new models from the six labs: comparisons with their
+  predecessors, updates, the competitive landscape, company-reported and independent (LMArena) benchmarks, and
+  ranked content ideas (`/weeklymodels`). See [Weekly Model Intelligence Report](#weekly-model-intelligence-report).
 - **Organised like a research assistant:** every message uses the same ten sections, four priorities (🔴 P0 to ⚪ P3)
   and the same card layout, explains important developments in plain language, suggests news/education/analysis
   video ideas, and never sends the same story twice. See [How Telegram messages are organised](#how-telegram-messages-are-organised).
@@ -181,7 +184,8 @@ Send these to your bot in Telegram (they also appear in the bot's **/** menu):
 | `/latest` | The most recent news brief again |
 | `/buzz` | The latest Buzz: what's hot on GitHub, Hugging Face, Reddit and YouTube, with interviews |
 | `/repos` | Today's Builder picks |
-| `/weekly` | The latest weekly intelligence report |
+| `/weekly` | The latest weekly news recap |
+| `/weeklymodels` | The latest Weekly Model Intelligence Report |
 | `/ask your question` | An answer from this week's briefs, e.g. `/ask what did OpenAI change this week?` |
 | `/models` | Recent confirmed new model releases from the six labs |
 | `/releases` | The full release history (new models, upgrades, availability, reviews) with verification and delivery status |
@@ -305,6 +309,48 @@ the modes `releases`, `preview`, `bootstrap` and `check`.
 docs and Qwen's own repositories. xAI's release notes give only the month. If Telegram accepts a message but the
 answer is lost in a network error, that part is sent again on the next run (Telegram offers no way to check).
 
+## Weekly Model Intelligence Report
+
+Every Sunday at 17:53 UTC, right after the weekly news recap (which is unchanged), the agent sends a report on the
+AI models Anthropic, OpenAI, Moonshot AI, Alibaba, xAI and Google officially released in the last seven days
+(`agent/releases/weekly.py`, `python -m agent weekly-models`). It is built from the release monitor's own history
+(`state/releases.json`), not from the news briefs.
+
+**Sections**
+1. **🚨 New model releases**: every confirmed release with company, model, announcement date, availability date,
+   main capabilities, official announcement link and API/product availability.
+2. **↔️ Model-to-model comparisons**: each new model against its predecessor (the one the company itself named, or
+   the previous version in its catalog): reasoning, coding, multimodal, context window, speed, pricing and benchmark
+   results. Rows without evidence are listed as "Not established" instead of being guessed.
+3. **🔄 Important model updates**: upgrades, availability changes, pricing changes, retirements and API changes,
+   kept apart from new models; unconfirmed candidates are listed separately and never counted as releases.
+4. **🧭 Competitive landscape**: activity per company and evidence-based answers to: which companies introduced
+   significant improvements, which capabilities are advancing, where competitors converge or differ, and which
+   limitations remain; plus where each company's best model stands on LMArena.
+5. **📈 Benchmark intelligence**: company-reported results (from the official announcements, labelled as such) and
+   independent results from **LMArena** (the official `lmarena-ai/leaderboard-dataset` on Hugging Face, updated daily:
+   crowdsourced blind pairwise votes, Elo-style ratings with 95% confidence intervals, for general text, coding, math
+   and vision). Scores from different evaluations are never compared with each other; within LMArena, a difference
+   is only called real when the confidence intervals don't overlap.
+6. **💡 Content opportunities**: three video topics, three X posts, one model comparison and one deeper educational
+   topic, each scored 1-5 for relevance, evidence quality (computed from the evidence: official confirmation,
+   specs, benchmarks) and educational value, and ranked by the total.
+
+**Counting rules.** A release is counted once, in the first Sunday report after it was confirmed: the report
+records which releases it covered, so a manual re-run or the next week never counts them again. A model announced
+earlier but only detected this week is included and marked ⏱ "detected late". Two records for the same model
+(e.g. a launch that arrived through several sources) count as one.
+
+**Without AI keys** the report is still complete: comparisons, updates, benchmarks and the landscape answers come
+straight from the evidence, and content ideas are generated from the strongest evidence. With a key, an AI writes
+the landscape answers and the content ideas from the same facts; any sentence with a number that isn't in the
+facts is thrown away.
+
+**Archive and commands.** Every report is saved as Markdown in `releases/weekly/YYYY-MM-DD.md`; `/weeklymodels`
+resends the latest one. Run it by hand with **Actions → Weekly recap → Run workflow** and choose `models` (send now)
+or `preview-models` (print in the log, nothing sent or saved); `recap` and `both` work as before. Independent
+benchmark sources are configured in `releases.yaml → independent_benchmarks`.
+
 ## Customising
 
 - **Model release sources:** `releases.yaml`, one block per company with its official hosts, model-name patterns and
@@ -354,9 +400,9 @@ python -m pytest -q                  # offline tests
 | `sources.yaml` | where the agent looks |
 | `releases.yaml` | the model release monitor: official sources and settings for the six labs |
 | `config.yaml` | companies, keywords, AI providers, delivery |
-| `agent/` | the code: `messages.py` (sections, priorities, cards, message splitting), `ledger.py` (what was already sent), `alerts.py` (instant alerts), `health.py` (/health), `sources.py` (fetchers), `digest.py` (AI prompt and formatting), `accuracy.py` (articles, source counts, blocklist), `factcheck.py` (second-AI check), `builders.py` (Builder picks), `buzz.py` (3-hourly Buzz: GitHub, Hugging Face, Reddit, YouTube), `weekly.py` (recap), `freemodels.py` (`/free`), `commands.py` (Telegram commands), `botpush.py` (feeds the instant bot), `llm.py` (providers), `deliver.py` (Telegram/email), `__main__.py` (the runs), `releases/` (model release monitor: `parsers.py`, `classify.py`, `analyze.py`, `render.py`, `notify.py`, `pipeline.py`) |
+| `agent/` | the code: `messages.py` (sections, priorities, cards, message splitting), `ledger.py` (what was already sent), `alerts.py` (instant alerts), `health.py` (/health), `sources.py` (fetchers), `digest.py` (AI prompt and formatting), `accuracy.py` (articles, source counts, blocklist), `factcheck.py` (second-AI check), `builders.py` (Builder picks), `buzz.py` (3-hourly Buzz: GitHub, Hugging Face, Reddit, YouTube), `weekly.py` (recap), `freemodels.py` (`/free`), `commands.py` (Telegram commands), `botpush.py` (feeds the instant bot), `llm.py` (providers), `deliver.py` (Telegram/email), `__main__.py` (the runs), `releases/` (model release monitor: `parsers.py`, `classify.py`, `analyze.py`, `render.py`, `notify.py`, `pipeline.py`; `weekly.py` the Weekly Model Intelligence Report; `benchmarks.py` LMArena) |
 | `bot/` | the instant Telegram bot for Cloudflare Workers, its tests and deploy script |
 | `state/` | the agent's memory of what it already sent (saved by the workflows) |
 | `digests/` | archive of every brief |
-| `releases/` | archive of every confirmed model release alert |
+| `releases/` | archive of every confirmed model release alert, and of every Weekly Model Intelligence Report (`releases/weekly/`) |
 | `.github/workflows/` | the schedules |

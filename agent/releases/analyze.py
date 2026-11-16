@@ -310,7 +310,8 @@ def _fmt_price(specs):
 def spec_cells(specs, status=None):
     """The comparison rows the official specs can fill on their own."""
     s = specs or {}
-    modal = " → ".join(x for x in (s.get("input_modalities"), s.get("output_modalities")) if x)
+    modal = " · ".join(f"{k}: {v}" for k, v in (("in", s.get("input_modalities")), ("out", s.get("output_modalities")))
+                       if v)
     cells = {
         "context": _fmt_tokens(s.get("context_tokens")),
         "output": _fmt_tokens(s.get("max_output_tokens")),
@@ -432,7 +433,8 @@ SUBSTANCE = re.compile(r"\b(improv\w*|faster|new|support\w*|built for|designed f
 def _first_sentences(text, model_words, n=2):
     """Sentences that say something concrete about the model (deterministic "what's new" without AI)."""
     sentences = re.split(r"(?<=[.!?])\s+", clean_text(text or ""))
-    good = [s for s in sentences if 30 < len(s) < 320 and not BOILERPLATE.search(s) and SUBSTANCE.search(s)]
+    good = [s for s in sentences if 30 < len(s) < 320 and not BOILERPLATE.search(s)]
+    good.sort(key=lambda s: not SUBSTANCE.search(s))  # concrete sentences first, but keep the rest as fallback
     picked = [s for s in good if any(w.lower() in s.lower() for w in model_words)]
     return (picked or good)[:n]
 

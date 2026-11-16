@@ -175,9 +175,12 @@ def record_launch(store, facts):
         fingerprints=sorted({fp for o in facts["official"] for fp in o.get("fingerprints", [])}),
         comparison_summary=facts["comparison_summary"],
         details={"whats_new": facts["whats_new"], "improved": facts["improved"], "regressed": facts["regressed"],
-                 "benchmarks": facts["ai"].get("benchmarks", []), "reasons": facts["reasons"],
-                 "ai_model": facts["ai_model"], "specs": facts["specs"],
-                 "previous_specs": facts["previous_specs"]})
+                 "unchanged": facts["unchanged"], "benchmarks": facts["ai"].get("benchmarks", []),
+                 "claims": facts["ai"].get("claims", []), "reasons": facts["reasons"],
+                 "ai_model": facts["ai_model"], "specs": facts["specs"], "previous_specs": facts["previous_specs"],
+                 "comparison": facts["comparison"], "explain": facts.get("explain") or {},
+                 "api_access": facts["api_access"], "flagship": facts.get("flagship", False),
+                 "priority": facts.get("priority")})
     if existing:
         was = existing.get("verification")
         existing.update(fields)

@@ -54,7 +54,8 @@ def load(path="releases.yaml", data=None):
         c["_patterns"] = compile_patterns(c)
         c["sources"] = [dict(s, company=key) for s in c.get("sources") or []]
         companies[key] = c
-    return {"settings": settings, "companies": companies, "early_signals": list(cfg.get("early_signals") or [])}
+    return {"settings": settings, "companies": companies, "early_signals": list(cfg.get("early_signals") or []),
+            "independent_benchmarks": list(cfg.get("independent_benchmarks") or [])}
 
 
 def validate(cfg):
@@ -117,6 +118,11 @@ def validate(cfg):
         if s.get("name") in names:
             errors.append(f"early signal {s.get('name')}: duplicate source name")
         names.add(s.get("name"))
+    for b in cfg.get("independent_benchmarks", []):
+        if b.get("type") != "lmarena_hf" or not b.get("boards") or not b.get("dataset"):
+            errors.append(f"independent benchmark {b.get('name')}: needs type lmarena_hf, a dataset and boards")
+        if not b.get("methodology"):
+            errors.append(f"independent benchmark {b.get('name')}: describe its methodology")
     for cat in cfg["settings"]["notify"]:
         if cat not in CATEGORIES + ["REQUIRES_MANUAL_REVIEW"]:
             errors.append(f"settings.notify: unknown category {cat}")

@@ -158,3 +158,13 @@ test("new commands reply from pushed data, old ones still work", async () => {
   await handleMessage(env, msg("/help"));
   assert.match(sent[5], /\/compare/);
 });
+
+test("/weeklymodels replies with the pushed model report, separate from /weekly", async () => {
+  const { env, sent } = setup({ last_model_weekly: JSON.stringify(["🧠 models"]), last_weekly: JSON.stringify(["🗓 recap"]) });
+  await handleMessage(env, msg("/weeklymodels"));
+  await handleMessage(env, msg("/weekly"));
+  assert.deepEqual(sent, ["🧠 models", "🗓 recap"]);
+  const empty = setup();
+  await handleMessage(empty.env, msg("/weeklymodels"));
+  assert.match(empty.sent[0], /No Weekly Model Intelligence Report yet/);
+});
