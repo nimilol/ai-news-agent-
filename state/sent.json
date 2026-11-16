@@ -78,6 +78,46 @@
    "priority": "P3",
    "title": "OpenCode lists Hy4 flash Free as a new zero-cost model"
   },
+  "url:https://github.com/alibaba/open-code-review": {
+   "at": "2026-11-16T23:48:27+00:00",
+   "channel": "discovery",
+   "title": "alibaba/open-code-review"
+  },
+  "url:https://github.com/anthropics/flashprove": {
+   "at": "2026-11-16T23:48:27+00:00",
+   "channel": "discovery",
+   "title": "anthropics/FlashProve"
+  },
+  "url:https://github.com/chromedevtools/chrome-devtools-mcp": {
+   "at": "2026-11-16T23:48:27+00:00",
+   "channel": "discovery",
+   "title": "ChromeDevTools/chrome-devtools-mcp"
+  },
+  "url:https://github.com/huggingface/pybot": {
+   "at": "2026-11-16T23:48:27+00:00",
+   "channel": "discovery",
+   "title": "huggingface/pybot"
+  },
+  "url:https://github.com/mvanhorn/last30days-skill": {
+   "at": "2026-11-16T23:48:27+00:00",
+   "channel": "discovery",
+   "title": "mvanhorn/last30days-skill"
+  },
+  "url:https://github.com/oldcircle/geo-sleuth": {
+   "at": "2026-11-16T23:48:27+00:00",
+   "channel": "discovery",
+   "title": "Oldcircle/geo-sleuth"
+  },
+  "url:https://github.com/wgjsg/agilex-docs-mcp": {
+   "at": "2026-11-16T23:48:27+00:00",
+   "channel": "discovery",
+   "title": "wgjsg/agilex-docs-mcp"
+  },
+  "url:https://gitlab.com/fforster/gitlab-mcp": {
+   "at": "2026-11-16T23:48:27+00:00",
+   "channel": "discovery",
+   "title": "fforster/gitlab-mcp"
+  },
   "url:https://models.dev/": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
