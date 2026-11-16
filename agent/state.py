@@ -16,6 +16,8 @@ class State:
         self.seen = data.get("seen", {})          # item id -> date last observed
         self.sources = data.get("sources", {})    # source name -> fetcher memory
         self.failures = data.get("failures", {})  # source name -> failed runs in a row
+        # Any other top-level keys (e.g. the model-release history) are kept as they are and never pruned.
+        self.extra = {k: v for k, v in data.items() if k not in ("seen", "sources", "failures")}
 
     def source(self, name):
         return self.sources.setdefault(name, {})
@@ -42,7 +44,7 @@ class State:
     def save(self, keep_days=KEEP_DAYS):
         cutoff = (now_utc() - timedelta(days=keep_days)).date().isoformat()
         self.seen = {k: v for k, v in self.seen.items() if v >= cutoff}
-        data = {"seen": self.seen, "sources": self.sources, "failures": self.failures}
+        data = {**self.extra, "seen": self.seen, "sources": self.sources, "failures": self.failures}
         text = json.dumps(data, indent=1, sort_keys=True, ensure_ascii=False) + "\n"
         if text != self._original:  # only touch the file when something changed (fewer commits)
             self.path.parent.mkdir(exist_ok=True)

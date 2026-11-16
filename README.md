@@ -7,6 +7,11 @@ and sends you a summary on **Telegram** and/or **email**.
   newsletters, YouTube news channels and interview podcasts, the press), keeps only what's new and about your four
   companies, and has a free AI model write a brief: grouped by company, labelled *Official / Report / Rumor*, with
   links and post ideas. Interviews (a CEO or researcher on a podcast, an AMA on Reddit) are marked 🎙.
+- **🚨 New AI model alerts (hourly):** watches the *official* release sources of **Anthropic (Claude), OpenAI (GPT),
+  Moonshot AI (Kimi), Alibaba (Qwen), xAI (Grok) and Google (Gemini)**: announcement posts, API release notes,
+  model catalogs and their own Hugging Face / GitHub organisations. When a lab officially releases a new model you get
+  a verified Telegram alert that compares it with its predecessor, and a delivery receipt once Telegram confirms it.
+  See [Model release alerts](#model-release-alerts).
 - **Every hour:** checks the official sources plus the early-signal sources (TestingCatalog leaks, new and stealth
   models on OpenRouter, new model listings on models.dev) and the free-model sources (new free models on OpenRouter
   and in OpenCode), and pings you on Telegram as soon as something new appears (no AI, so it's fast and always works).
@@ -118,6 +123,7 @@ Send these to your bot in Telegram (they also appear in the bot's **/** menu):
 | `/repos` | Today's Builder picks |
 | `/buzz` | The latest Buzz: what's hot on GitHub, Hugging Face, Reddit and YouTube, with interviews |
 | `/ask your question` | An answer from this week's briefs, e.g. `/ask what did OpenAI change this week?` |
+| `/releases` | The latest new AI models from the six labs, with verification and delivery status |
 | `/news` | Run a fresh news check now (instant bot only) |
 | `/help` | The list of commands |
 
@@ -147,8 +153,94 @@ Your GitHub agent keeps doing the research and sends the bot the latest brief, p
 
 To go back to hourly replies, run the same workflow with **remove**.
 
+## Model release alerts
+
+A dedicated monitor (`agent/releases/`, configured in `releases.yaml`) for new models from **Anthropic, OpenAI,
+Moonshot AI, Alibaba, xAI and Google**. It runs inside every "Instant alerts" run and on demand (**Actions → Model
+releases → Run workflow**).
+
+**Where it looks (all official; every endpoint was fetched and parsed on 2026-11-16, except the GitHub organisation
+lists, which use the same GitHub API your Buzz run already uses for these organisations):**
+
+| Company | Announcements | API release notes | Model catalog (ids, specs, prices) | Release repos |
+|---|---|---|---|---|
+| Anthropic | anthropic.com/news (incl. launch posts like /claude-opus-5-5) | Claude Platform release-notes feed | Claude models overview + deprecations (Markdown) | none (no open weights) |
+| OpenAI | openai.com/news RSS | API changelog (Markdown, tagged `Feature · Model: …`) | developers.openai.com model catalog + per-model pages | Hugging Face `openai`, GitHub `openai` |
+| xAI | x.ai/news | docs.x.ai release notes | docs.x.ai models & pricing | Hugging Face `xai-org`, GitHub `xai-org` |
+| Google | DeepMind blog, Gemini blog, Developers Blog (RSS) | Gemini API changelog + Gemini app release notes | Gemini API models (+ the official model-list API if `GEMINI_API_KEY` is set) | Hugging Face `google` |
+| Moonshot AI | kimi.com/blog | (the platform changelog stopped in 2025) | platform.kimi.ai model list | Hugging Face `moonshotai`, GitHub `MoonshotAI` |
+| Alibaba | (qwen.ai only renders in a browser; its old blog feed stopped in 2025) | | Alibaba Cloud Model Studio "newly released models" (Qwen only) | Hugging Face `Qwen`, GitHub `QwenLM` |
+
+OpenRouter, models.dev and TestingCatalog are read too, but only as **early signals**: they can never confirm a
+release. A source is only treated as official when its address is on the company's own domains (checked by
+`python -m agent check-releases`, which also tests every source).
+
+**How a change is classified.** Everything the sources report is put in one of six categories:
+A `NEW_MODEL_RELEASE` · B `MAJOR_MODEL_UPGRADE` · C `MODEL_AVAILABILITY` · D `DOCUMENTATION_OR_PRICING_CHANGE` ·
+E `PRODUCT_OR_FEATURE_ANNOUNCEMENT` · F `UNCONFIRMED_EARLY_SIGNAL`, and gets a verification status:
+`OFFICIAL CONFIRMED`, `OFFICIAL UPDATE`, `UNCONFIRMED`, `REJECTED AS DUPLICATE` or `REQUIRES MANUAL REVIEW`.
+The rules are deterministic Python (`agent/releases/classify.py`): a model family/version/tier never seen in the
+official catalogs, introduced by an official post, changelog entry, catalog listing or repository, is a new model;
+a new dated snapshot or "-preview"/"-highspeed" variant of a known model is an upgrade; GA, new regions, apps or
+tiers are availability; price, limit and deprecation edits are documentation changes. Only `OFFICIAL CONFIRMED` new
+models get the full 🚨 alert; upgrades and availability get shorter ⬆️/🟢 alerts; documentation, feature and early-signal
+items are saved but not sent (switch any of them on in `releases.yaml → settings.notify`). If the official text can't
+be read, or the agent finds conflicting evidence, you get a short 🔎 "requires manual review" note instead.
+
+**Verification and comparison.** For a confirmed launch the agent reads the official announcement, release note and
+model page, takes the announcement and availability dates from the sources themselves (both are shown separately;
+"Not stated" when a source doesn't say), and finds the previous model: first the company's own words ("an upgrade
+over Claude Sonnet 5", "migration from Gemini 3.8 Flash"), otherwise the model lineage in the official catalog (same
+family and tier, previous version; xAI's 4.20 correctly sorts before 4.3). It compares context window, output limit,
+prices, latency, modalities and availability from the official specs, and, with an AI key, reads the announcement for
+benchmarks and claims. Every AI statement must quote the official text verbatim and every number must appear in the
+sources, otherwise it is thrown away. Company-reported benchmarks, qualitative claims and the AI's interpretation are
+labelled separately; independent benchmarks are listed as not collected. Without any AI key the alert still goes out
+with the facts from the official pages.
+
+**Delivery confirmation.** Alerts go through an outbox in `state/releases.json`: `PENDING` → `SENT` only when
+Telegram itself answers `"ok": true` with a message id for every part, which is saved with the time. A failed send
+becomes `RETRY_PENDING` and is retried on the next run, re-sending only the parts Telegram didn't confirm; after 6
+failed runs it is `FAILED` (kept in the history). Once confirmed, the alert's "DELIVERY" line is updated to show the
+message id and a short ✅ delivery receipt follows. Verification and delivery status are stored separately.
+
+**Release history.** `state/releases.json` keeps every release with company, model, previous model, classification,
+announcement and availability dates, official source, verification status, comparison summary, first-detected and
+last-updated times, Telegram delivery status and message ids. It is never pruned. Confirmed alerts are also saved as
+Markdown in `releases/`. The first run (and the first run of any newly added source) only learns what is already
+published and sends nothing.
+
+**How fast, honestly.** This is scheduled polling: none of these labs offers a push notification for new models, so
+real-time detection isn't possible on this setup. The check itself takes seconds. The delay is the time until the next
+run plus the minutes a lab takes to update its pages:
+- **Default (no setup):** every "Instant alerts" run, scheduled hourly. GitHub skips many scheduled runs when it is
+  busy; this repository's hourly alerts have actually run every **4-9 hours**. Expect alerts within hours, not minutes.
+- **Dependable hourly (recommended, free):** let your Cloudflare bot start the check on time. Add the
+  `BOT_GITHUB_TOKEN` secret (see "Instant replies"), add a repository **variable** (Settings → Secrets and variables →
+  Actions → Variables) named `RELEASE_CHECK_CRON` with the value `7 * * * *`, and run **Deploy Telegram bot →
+  deploy** again. Expected delay: under about 65 minutes. Cost: up to about 720 extra GitHub Actions minutes a month
+  (each run is billed as at least one minute), which fits the free 2,000 minutes of a private repository together
+  with the other runs at their real frequency. A public repository has unlimited minutes, so `*/15 * * * *` (≈15
+  minutes) would be possible there.
+
+**Secrets.** Nothing new is required: `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` for the alerts, and your existing
+free AI keys (optional) for reading and comparing announcements. `GITHUB_TOKEN` is provided by GitHub automatically
+(used to list the labs' GitHub repositories). Optional: `ANTHROPIC_API_KEY` adds Anthropic's Models API,
+`GEMINI_API_KEY` adds Google's official model list, and `BOT_GITHUB_TOKEN` + the `RELEASE_CHECK_CRON` variable enable
+the dependable trigger above.
+
+**Commands.** `python -m agent releases` (add `--dry-run` to print without sending or saving, `--bootstrap` to learn
+the sources again without alerts) and `python -m agent check-releases`. In the **Model releases** workflow these are
+the modes `releases`, `preview`, `bootstrap` and `check`.
+
+**Known limits.** qwen.ai can't be read without a browser, so Qwen launches are confirmed through Alibaba Cloud's
+docs and Qwen's own repositories. xAI's release notes give only the month. If Telegram accepts a message but the
+answer is lost in a network error, that part is sent again on the next run (Telegram offers no way to check).
+
 ## Customising
 
+- **Model release sources:** `releases.yaml`, one block per company with its official hosts, model-name patterns and
+  sources (each with how it was verified). Run `python -m agent check-releases` after editing it.
 - **Sources:** `sources.yaml`. Each line is one source, with comments explaining the fields. Add any RSS feed
   (Substack newsletters: add `/feed` to the address; GitHub releases: add `/releases.atom`).
 - **Companies and keywords:** `config.yaml` → `companies`. Add a company with its keywords and the agent starts
@@ -192,9 +284,11 @@ python -m pytest -q                  # offline tests
 | Path | What it is |
 |---|---|
 | `sources.yaml` | where the agent looks |
+| `releases.yaml` | the model release monitor: official sources and settings for the six labs |
 | `config.yaml` | companies, keywords, AI providers, delivery |
-| `agent/` | the code: `sources.py` (fetchers), `digest.py` (AI prompt and formatting), `accuracy.py` (articles, source counts, blocklist), `factcheck.py` (second-AI check), `builders.py` (Builder picks), `buzz.py` (3-hourly Buzz: GitHub, Hugging Face, Reddit, YouTube), `weekly.py` (recap), `freemodels.py` (`/free`), `commands.py` (Telegram commands), `botpush.py` (feeds the instant bot), `llm.py` (providers), `deliver.py` (Telegram/email), `__main__.py` (the runs) |
+| `agent/` | the code: `sources.py` (fetchers), `digest.py` (AI prompt and formatting), `accuracy.py` (articles, source counts, blocklist), `factcheck.py` (second-AI check), `builders.py` (Builder picks), `buzz.py` (3-hourly Buzz: GitHub, Hugging Face, Reddit, YouTube), `weekly.py` (recap), `freemodels.py` (`/free`), `commands.py` (Telegram commands), `botpush.py` (feeds the instant bot), `llm.py` (providers), `deliver.py` (Telegram/email), `__main__.py` (the runs), `releases/` (model release monitor: `parsers.py`, `classify.py`, `analyze.py`, `render.py`, `notify.py`, `pipeline.py`) |
 | `bot/` | the instant Telegram bot for Cloudflare Workers, its tests and deploy script |
 | `state/` | the agent's memory of what it already sent (saved by the workflows) |
 | `digests/` | archive of every brief |
+| `releases/` | archive of every confirmed model release alert |
 | `.github/workflows/` | the schedules |

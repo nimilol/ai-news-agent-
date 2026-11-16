@@ -1,7 +1,7 @@
 // Offline tests for the bot: node --test bot/test
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import worker, { handleMessage, sha256 } from "../src/worker.js";
+import worker, { dispatchReleaseCheck, handleMessage, sha256 } from "../src/worker.js";
 
 function setup(kv = {}) {
   const store = { ...kv };
@@ -91,4 +91,36 @@ test("webhook and push endpoints check their secrets", async () => {
     method: "POST", body: JSON.stringify({ key: "last_repos", value: [] }), headers: { authorization: "Bearer nope" },
   }), env, ctx);
   assert.equal(denied.status, 403);
+});
+
+test("/releases replies with the latest model releases pushed by the agent", async () => {
+  const { env, sent } = setup({ last_releases: JSON.stringify(["🧠 Latest model releases"]) });
+  await handleMessage(env, msg("/releases"));
+  assert.deepEqual(sent, ["🧠 Latest model releases"]);
+  const empty = setup();
+  await handleMessage(empty.env, msg("/releases"));
+  assert.match(empty.sent[0], /No model releases recorded yet/);
+});
+
+test("the optional cron starts the Model releases workflow, only with a token", async () => {
+  const { env, calls } = setup();
+  assert.equal(await dispatchReleaseCheck(env), "not configured");
+  assert.equal(calls.length, 0);
+  env.BOT_GITHUB_TOKEN = "t";
+  assert.equal(await dispatchReleaseCheck(env), "started");
+  assert.match(calls[0].url, /actions\/workflows\/releases\.yml\/dispatches$/);
+  assert.equal(JSON.parse(calls[0].init.body).inputs.mode, "releases");
+  let waited;
+  await worker.scheduled({}, env, { waitUntil: (p) => { waited = p; } });
+  assert.equal(await waited, "started");
+});
+
+test("the agent can push the release list", async () => {
+  const { env, store } = setup();
+  const r = await worker.fetch(new Request("https://x/push", {
+    method: "POST", body: JSON.stringify({ key: "last_releases", value: ["x"] }),
+    headers: { authorization: `Bearer ${await sha256("push:123:abc")}` },
+  }), env, { waitUntil: () => {} });
+  assert.equal(r.status, 200);
+  assert.equal(store.last_releases, JSON.stringify(["x"]));
 });

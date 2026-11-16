@@ -1,8 +1,9 @@
 """Accuracy helpers: block low-quality publishers, read full articles, count independent sources,
 first-seen times, and remember recent headlines so the same story isn't reported twice."""
 
+import re
 from concurrent.futures import ThreadPoolExecutor
-from datetime import timedelta
+from datetime import datetime, timedelta
 from urllib.parse import urlsplit
 
 from .common import clean_text, get, now_utc, parse_date
@@ -30,6 +31,54 @@ def is_blocked(item, blocked):
     name = publisher(item).lower()
     host = urlsplit(item["url"]).netloc.lower()
     return any(b in name or host.endswith(b) for b in blocked)
+
+
+_MONTH_DATE = re.compile(r"\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.? (\d{1,2}), (20\d\d)\b")
+
+
+def page_date(html_text, soup=None):
+    """The publish date of an article page (ISO date), from its metadata, a <time> tag or the first
+    "Month D, YYYY" in the text. None when the page doesn't say."""
+    from bs4 import BeautifulSoup
+
+    soup = soup or BeautifulSoup(html_text, "html.parser")
+    for attrs in ({"property": "article:published_time"}, {"name": "article:published_time"},
+                  {"itemprop": "datePublished"}, {"name": "date"}, {"name": "publish_date"}):
+        tag = soup.find("meta", attrs=attrs)
+        d = parse_date(tag.get("content")) if tag and tag.get("content") else None
+        if d:
+            return d.date().isoformat()
+    found = re.search(r'"datePublished"\s*:\s*"([^"]+)"', html_text)
+    if found and parse_date(found.group(1)):
+        return parse_date(found.group(1)).date().isoformat()
+    for t in soup.find_all("time"):
+        d = parse_date(t.get("datetime")) if t.get("datetime") else None
+        if d:
+            return d.date().isoformat()
+    m = _MONTH_DATE.search(soup.get_text(" "))
+    if m:
+        try:
+            return datetime.strptime(f"{m.group(1)[:3]} {m.group(2)} {m.group(3)}", "%b %d %Y").date().isoformat()
+        except ValueError:
+            return None
+    return None
+
+
+def read_article(url, chars=2500, timeout=12):
+    """Fetch an article once. Returns (text, publish date or None, title)."""
+    from bs4 import BeautifulSoup
+
+    html_text = get(url, timeout=timeout).text
+    soup = BeautifulSoup(html_text, "html.parser")
+    published = page_date(html_text, soup)
+    og = soup.find("meta", attrs={"property": "og:title"})
+    title = clean_text(og.get("content") if og and og.get("content") else (soup.title.string if soup.title else ""))
+    for tag in soup(["script", "style", "nav", "header", "footer", "aside", "noscript", "form", "figure"]):
+        tag.decompose()
+    root = soup.find("article") or soup.find("main") or soup.body or soup
+    paragraphs = [clean_text(p.get_text(" ", strip=True)) for p in root.find_all(["p", "li"])]
+    text = " ".join(p for p in dict.fromkeys(paragraphs) if len(p) > 40)
+    return clean_text(text, chars), published, title
 
 
 def _article_text(url, chars):

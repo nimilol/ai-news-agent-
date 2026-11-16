@@ -9,6 +9,8 @@
     python -m agent test-delivery   send a test message to Telegram / email
     python -m agent test-ai         check every AI key with a tiny request
     python -m agent free-models     send the list of models that are free right now to Telegram
+    python -m agent releases        model release monitor: official sources of 6 labs, verified Telegram alerts
+    python -m agent check-releases  validate releases.yaml and test every official release source
 
 Add --dry-run to print instead of sending and to leave the saved state untouched.
 """
@@ -415,6 +417,20 @@ def cmd_push_bot(args):
     return 0 if ok else 1
 
 
+def cmd_releases(args):
+    """Model Release Intelligence: check the official sources of Anthropic, OpenAI, Moonshot AI, Alibaba, xAI and
+    Google, verify and compare new models, and deliver confirmed Telegram alerts (agent/releases/)."""
+    from .releases import pipeline
+
+    return pipeline.run(dry_run=args.dry_run, bootstrap=args.bootstrap)
+
+
+def cmd_check_releases(args):
+    from .releases import pipeline
+
+    return pipeline.check()
+
+
 def cmd_test_delivery(args):
     config, _ = load()
     text = "✅ Your AI news agent is connected. Briefs will arrive here."
@@ -430,13 +446,15 @@ def cmd_test_delivery(args):
 def main():
     parser = argparse.ArgumentParser(prog="python -m agent", description="AI news agent")
     parser.add_argument("command", choices=["digest", "alerts", "builders", "buzz", "weekly", "check-sources", "test-delivery",
-                                            "test-ai", "free-models", "push-bot"])
+                                            "test-ai", "free-models", "push-bot", "releases", "check-releases"])
     parser.add_argument("--dry-run", action="store_true", help="print instead of sending; don't save state")
+    parser.add_argument("--bootstrap", action="store_true",
+                        help="releases only: learn every official source as it is now, without sending alerts")
     args = parser.parse_args()
     commands = {"digest": cmd_digest, "alerts": cmd_alerts, "check-sources": cmd_check_sources,
                 "test-delivery": cmd_test_delivery, "test-ai": cmd_test_ai,
                 "free-models": cmd_free_models, "builders": cmd_builders, "buzz": cmd_buzz, "weekly": cmd_weekly,
-                "push-bot": cmd_push_bot}
+                "push-bot": cmd_push_bot, "releases": cmd_releases, "check-releases": cmd_check_releases}
     sys.exit(commands[args.command](args))
 
 

@@ -22,6 +22,7 @@ HELP = (
     "/repos · today's Builder picks (trending AI tools and repos)\n"
     "/buzz · the latest Buzz: what's hot on GitHub, Hugging Face, Reddit and YouTube, with interviews\n"
     "/ask your question · ask about this week's news, answered from your briefs\n"
+    "/releases · the latest new AI models from Anthropic, OpenAI, Moonshot, Alibaba, xAI and Google\n"
     "/help · this message\n\n"
     "For an instant list, open GitHub: Actions → AI news digest → Run workflow → free-models."
 )
@@ -31,6 +32,7 @@ COMMANDS = [
     {"command": "repos", "description": "Today's Builder picks"},
     {"command": "buzz", "description": "What's hot: GitHub, Hugging Face, Reddit, YouTube"},
     {"command": "ask", "description": "Ask about this week's news"},
+    {"command": "releases", "description": "Latest new AI models (official, verified)"},
     {"command": "news", "description": "Run a fresh news check now"},
     {"command": "help", "description": "What I can do"},
 ]
@@ -75,6 +77,15 @@ def answer_question(config, question):
     return f"<b>❓ {html.escape(question)}</b>\n{html.escape(text.strip())}"
 
 
+def recent_releases():
+    """The /releases reply: the latest model releases from the release monitor's history."""
+    from .releases import config as rconfig
+    from .releases.render import render_recent
+    from .releases.store import Store
+
+    return render_recent(Store().recent_releases(), rconfig.load()["companies"])
+
+
 def send_free_models(config):
     send_telegram(freemodels.render(freemodels.collect(config)))
 
@@ -109,7 +120,7 @@ def handle(config):
             question = raw.split(None, 1)[1].strip() if len(words) > 1 else ""
             wanted.append(("ask", question))
             continue
-        command = command if command in ("free", "latest", "repos", "buzz", "news") else "help"
+        command = command if command in ("free", "latest", "repos", "buzz", "news", "releases") else "help"
         if command not in wanted:
             wanted.append(command)
     print(f"Telegram commands: {', '.join(c if isinstance(c, str) else c[0] for c in wanted) or 'none'}")
@@ -132,6 +143,8 @@ def handle(config):
                     send_telegram(json.loads(LAST_BUZZ.read_text(encoding="utf-8")))
                 else:
                     send_telegram(["No Buzz yet. It arrives every 3 hours."])
+            elif command == "releases":
+                send_telegram(recent_releases())
             elif command == "news":
                 send_telegram(["/news needs the instant bot (see 'Instant replies' in the README). For now, open GitHub: "
                                "Actions → AI news digest → Run workflow → digest."])

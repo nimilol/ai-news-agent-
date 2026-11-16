@@ -15,6 +15,7 @@ const HELP = [
   "/repos · today's Builder picks",
   "/buzz · what's hot on GitHub, Hugging Face, Reddit and YouTube, with interviews",
   "/ask <i>your question</i> · ask about this week's news",
+  "/releases · the latest new AI models (official, verified)",
   "/news · run a fresh news check now",
   "/help · this message",
 ].join("\n");
@@ -24,7 +25,7 @@ const ASK_PROMPT =
   "Answer in at most 8 short lines of plain text. Name the date and source of each fact. " +
   "If the briefs don't cover the question, say so plainly instead of guessing.";
 
-const PUSH_KEYS = ["last_brief", "last_repos", "last_buzz", "free_models", "briefs"];
+const PUSH_KEYS = ["last_brief", "last_repos", "last_buzz", "free_models", "briefs", "last_releases"];
 
 export async function sha256(text) {
   const data = new TextEncoder().encode(text);
@@ -141,6 +142,9 @@ export async function handleMessage(env, message) {
     case "buzz":
       await sendStored(env, "last_buzz", "No Buzz yet. It arrives every 3 hours.");
       return command;
+    case "releases":
+      await sendStored(env, "last_releases", "No model releases recorded yet. The release monitor checks the official sources every run.");
+      return command;
     case "ask": {
       const question = raw.slice(first.length).trim();
       if (!question) {
@@ -164,7 +168,29 @@ export async function handleMessage(env, message) {
   }
 }
 
+// Optional dependable trigger for the release monitor. GitHub often skips scheduled runs when it is busy (the
+// hourly "Instant alerts" have run every 4-9 hours in practice), so when the deploy sets a cron for this worker
+// (repository variable RELEASE_CHECK_CRON), Cloudflare starts the "Model releases" workflow on time instead.
+export async function dispatchReleaseCheck(env) {
+  if (!env.BOT_GITHUB_TOKEN || !env.GH_REPO) return "not configured";
+  const r = await fetch(`https://api.github.com/repos/${env.GH_REPO}/actions/workflows/releases.yml/dispatches`, {
+    method: "POST",
+    headers: {
+      authorization: `Bearer ${env.BOT_GITHUB_TOKEN}`,
+      accept: "application/vnd.github+json",
+      "user-agent": "ai-news-bot",
+      "content-type": "application/json",
+    },
+    body: JSON.stringify({ ref: "main", inputs: { mode: "releases" } }),
+  });
+  return r.status === 204 ? "started" : `GitHub said HTTP ${r.status}`;
+}
+
 export default {
+  async scheduled(event, env, ctx) {
+    ctx.waitUntil(dispatchReleaseCheck(env));
+  },
+
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
     if (request.method === "POST" && url.pathname === "/telegram") {

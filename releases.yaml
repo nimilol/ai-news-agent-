@@ -1,0 +1,302 @@
+# Model Release Intelligence: where the agent looks for NEW AI MODELS from six labs, and how it decides
+# what counts as an official release. Read by `python -m agent releases` (see README → "Model release alerts").
+#
+# Every company lists only its OWN sources. Third-party listings (OpenRouter, models.dev, leak sites) are in
+# `early_signals` at the bottom and can never confirm a release on their own.
+#
+# Source fields:
+#   name     shown in alerts and in the health report (must be unique)
+#   role     announcement  the company's blog / news page (a post that introduces a model)
+#            changelog     API release notes (dated entries; "launched", "GA", "deprecated", ...)
+#            catalog       the official model list (a model id appearing here = officially listed)
+#            repo          the company's own Hugging Face / GitHub organisation (open-weight releases)
+#   type     how it is read:
+#            rss | page_links            reuse the news fetchers in agent/sources.py
+#            markdown | html | json_api  read by the parser named in `parser` (agent/releases/parsers.py)
+#            huggingface_org | github_org
+#   parser   which parser understands this page's layout
+#   detail_url  per-model page with specs ({id} is replaced), read only for a new model and its predecessor
+#   requires_env  only checked when this secret is set (otherwise skipped quietly, not counted as failing)
+#   verified how and when the endpoint was checked (2026-11-16 = fetched and parsed during the build)
+
+settings:
+  # Which categories send a Telegram message. Everything is saved in the release history either way.
+  notify:
+    NEW_MODEL_RELEASE: true                 # the full "🚨 NEW AI MODEL RELEASE" alert (OFFICIAL CONFIRMED only)
+    MAJOR_MODEL_UPGRADE: true               # a separate, shorter "⬆️ MAJOR MODEL UPGRADE" alert
+    MODEL_AVAILABILITY: true                # an existing model reaches a new API, app or region
+    DOCUMENTATION_OR_PRICING_CHANGE: false  # the hourly "Instant alerts" already ping these page changes
+    PRODUCT_OR_FEATURE_ANNOUNCEMENT: false
+    UNCONFIRMED_EARLY_SIGNAL: false         # set true for "👀 unconfirmed" pings from third-party listings
+    REQUIRES_MANUAL_REVIEW: true            # a possible new model the agent could not verify by itself
+  # A short delivery receipt follows these alerts once Telegram confirms them.
+  receipts_for: [NEW_MODEL_RELEASE, MAJOR_MODEL_UPGRADE]
+  max_delivery_attempts: 6        # then the notification is marked FAILED (still kept in the history)
+  failing_alert_after: 3          # runs in a row before a broken official source is reported on Telegram
+  max_llm_calls: 4                # AI calls per run (one per release that needs reading/comparison)
+  article_chars: 12000            # how much of an announcement the AI reads
+  max_notifications_per_run: 8
+
+companies:
+  # -------------------------------------------------------------------------------------------- Anthropic
+  anthropic:
+    label: Anthropic
+    product: Claude
+    official_hosts: [anthropic.com, claude.com, claude.ai]
+    # How model names look. Matched case-insensitively against titles, ids and announcement text.
+    model_patterns:
+      - 'claude-(?:opus|sonnet|haiku|fable|mythos)-\d+(?:-\d+)?(?:-\d{8})?\b'
+      - 'claude-\d+(?:-\d+)?-(?:opus|sonnet|haiku)(?:-\d{8})?\b'
+      - 'claude (?:opus|sonnet|haiku|fable|mythos) \d+(?:\.\d+)?\b'
+      - '(?<![\w-])(?:opus|sonnet|haiku|fable|mythos) \d+(?:\.\d+)?\b'
+    family_prefix: claude                   # "Opus 5" in a post means Claude Opus 5
+    tier_into_family: [opus, sonnet, haiku, fable, mythos]
+    sources:
+      - name: Anthropic news
+        role: announcement
+        type: page_links
+        url: https://www.anthropic.com/news
+        # Model launches live at the site root (/claude-opus-5-5), other posts under /news/.
+        pattern: '^/(?:news/[a-z0-9-]+|claude-[a-z0-9-]+)$'
+        exclude_url: '/news/(?:announcements|features|partnerships|product|policy|research|economic-research|societal-impacts|alignment|interpretability|events|customer-stories)$'
+        verified: "2026-11-16: listing parsed; launch posts such as /claude-fable-and-mythos-5-2 found"
+      - name: Claude Platform release notes
+        role: changelog
+        type: rss
+        parser: claude_release_rss
+        url: https://platform.claude.com/docs/en/release-notes/feed.xml
+        verified: "2026-11-16: RSS, 170 entries, newest 12 Nov 2026"
+      - name: Claude models overview
+        role: catalog
+        type: markdown
+        parser: claude_models_md
+        url: https://platform.claude.com/docs/en/models/overview.md
+        verified: "2026-11-16: Markdown tables with API ids, prices, context, max output, cutoffs"
+      - name: Claude model deprecations
+        role: catalog
+        type: markdown
+        parser: claude_deprecations_md
+        url: https://platform.claude.com/docs/en/about-claude/model-deprecations.md
+        verified: "2026-11-16: Markdown table with model state and retirement dates"
+      - name: Anthropic Models API
+        role: catalog
+        type: json_api
+        parser: anthropic_models_api
+        url: https://api.anthropic.com/v1/models
+        requires_env: ANTHROPIC_API_KEY
+        verified: "2026-11-16: endpoint answers 401 without a key (the key is optional)"
+
+  # -------------------------------------------------------------------------------------------- OpenAI
+  openai:
+    label: OpenAI
+    product: GPT
+    official_hosts: [openai.com, developers.openai.com, platform.openai.com, chatgpt.com]
+    model_patterns:
+      - 'gpt-\d+(?:\.\d+)?(?:-(?!and\b|or\b|class\b|level\b|style\b)[a-z]+)*\b'
+      - 'gpt-\d+(?:\.\d+)? (?:astra|sol|terra|luna|cyber|mini|nano|pro|codex|rosalind|instant|thinking)\b'
+      - 'gpt-(?:image|realtime|audio|live|transcribe)-\d+(?:\.\d+)?(?:[- ](?:flare|sunburst|mini|translate|whisper))*\b'
+      - 'gpt-oss-\d+b\b'
+    sources:
+      - name: OpenAI news
+        role: announcement
+        type: rss
+        url: https://openai.com/news/rss.xml
+        verified: "2026-11-16: RSS, newest 16 Nov 2026"
+      - name: OpenAI API changelog
+        role: changelog
+        type: markdown
+        parser: openai_changelog_md
+        url: https://developers.openai.com/api/docs/changelog.md
+        verified: "2026-11-16: entries tagged 'Feature · Model: <id>' / 'Update' / 'Fix'"
+      - name: OpenAI model catalog
+        role: catalog
+        type: markdown
+        parser: openai_models_md
+        url: https://developers.openai.com/api/docs/models/all.md
+        detail_url: https://developers.openai.com/api/docs/models/{id}.md
+        verified: "2026-11-16: all models incl. a 'Deprecated models' section; per-model pages list context, output, cutoff, price"
+      - name: OpenAI on Hugging Face
+        role: repo
+        type: huggingface_org
+        org: openai
+        verified: "2026-11-16: Hugging Face API, org openai"
+      - name: OpenAI on GitHub
+        role: repo
+        type: github_org
+        org: openai
+        verified: "used by the Buzz run in production (GitHub API)"
+
+  # -------------------------------------------------------------------------------------------- xAI
+  xai:
+    label: xAI
+    product: Grok
+    official_hosts: [x.ai, docs.x.ai]
+    model_patterns:
+      - 'grok-\d+(?:\.\d+)?(?:-[a-z0-9]+)*\b'
+      - 'grok \d+(?:\.\d+)?\b'
+      - 'grok-(?:imagine|voice|build|code)(?:-[a-z0-9.]+)*\b'
+      - 'grok (?:imagine|voice|build|code) \d+(?:\.\d+)?\b'
+    sources:
+      - name: xAI news
+        role: announcement
+        type: page_links
+        url: https://x.ai/news
+        pattern: '^(https://x\.ai)?/news/[a-z0-9-]+/?$'
+        verified: "2026-11-16: listing parsed; posts carry a datePublished"
+      - name: xAI API release notes
+        role: changelog
+        type: markdown
+        parser: xai_release_notes_md
+        url: https://docs.x.ai/developers/release-notes.md
+        verified: "2026-11-16: one heading per change (e.g. 'Grok 4.7') under month headings"
+      - name: xAI models and pricing
+        role: catalog
+        type: markdown
+        parser: xai_models_md
+        url: https://docs.x.ai/developers/models.md
+        verified: "2026-11-16: pricing tables with context window per model"
+      - name: xAI on Hugging Face
+        role: repo
+        type: huggingface_org
+        org: xai-org
+        verified: "2026-11-16: Hugging Face API, org xai-org"
+      - name: xAI on GitHub
+        role: repo
+        type: github_org
+        org: xai-org
+        verified: "used by the Buzz run in production (GitHub API)"
+
+  # -------------------------------------------------------------------------------------------- Google
+  google:
+    label: Google
+    product: Gemini
+    official_hosts: [deepmind.google, blog.google, developers.googleblog.com, ai.google.dev, aistudio.google.com,
+                     gemini.google, generativelanguage.googleapis.com]
+    model_patterns:
+      - 'gemini-\d+(?:\.\d+)?(?:-[a-z0-9]+)*\b'
+      # "Gemini 4 Hydrogen", "Gemini 3.8 Flash-Lite": the tier word must start with a capital letter.
+      - 'gemini \d+(?:\.\d+)?(?: (?-i:(?!(?:The|And|Is|In|On|For|With|To|Now|Model|Models|API|App|Is|Will|Can)\b)[A-Z][a-z]+(?:-[A-Z][a-z]+)?)){0,2}'
+      - 'gemma[- ]\d+(?:\.\d+)?(?:-[a-z0-9]+)*\b'
+    sources:
+      - name: Google DeepMind blog
+        role: announcement
+        type: rss
+        url: https://deepmind.google/blog/rss.xml
+        verified: "2026-11-16: RSS, newest 'Introducing Gemini 4 Hydrogen' (12 Nov 2026)"
+      - name: Google Gemini blog
+        role: announcement
+        type: rss
+        url: https://blog.google/products-and-platforms/products/gemini/rss/
+        verified: "2026-11-16: RSS, newest 13 Nov 2026"
+      - name: Google Developers Blog
+        role: announcement
+        type: rss
+        url: https://developers.googleblog.com/rss/
+        verified: "2026-11-16: RSS"
+      - name: Gemini API release notes
+        role: changelog
+        type: markdown
+        parser: gemini_changelog_md
+        url: https://aistudio.google.com/docs/changelog.md
+        verified: "2026-11-16: dated sections; 'generally available (GA)', 'Released', 'deprecated'"
+      - name: Gemini app release notes
+        role: changelog
+        type: html
+        parser: html_headings
+        url: https://gemini.google/release-notes/
+        verified: "2026-11-16: one heading per update (e.g. 'Introducing Gemini 4 Argon ...')"
+      - name: Gemini API models
+        role: catalog
+        type: markdown
+        parser: gemini_models_md
+        url: https://aistudio.google.com/docs/models.md
+        detail_url: https://aistudio.google.com/docs/models/{id}.md
+        verified: "2026-11-16: model codes; per-model pages list inputs, outputs, context and max output"
+      - name: Gemini API model list
+        role: catalog
+        type: json_api
+        parser: gemini_api_models
+        url: https://generativelanguage.googleapis.com/v1beta/models
+        requires_env: GEMINI_API_KEY
+        verified: "2026-11-16: endpoint answers 403 without a key; uses your existing GEMINI_API_KEY"
+      - name: Google on Hugging Face
+        role: repo
+        type: huggingface_org
+        org: google
+        verified: "2026-11-16: Hugging Face API, org google (Gemma releases)"
+
+  # -------------------------------------------------------------------------------------------- Moonshot AI
+  moonshot:
+    label: Moonshot AI
+    product: Kimi
+    official_hosts: [kimi.com, kimi.ai, moonshot.ai, moonshot.cn]
+    model_patterns:
+      - 'kimi[- ]k\d+(?:\.\d+)?(?:[- ](?:pro|thinking|instruct|base|turbo|highspeed|code|linear|vl|dev|preview|\d{4}))*\b'
+      - 'moonshot-v\d+(?:-[a-z0-9]+)*\b'
+      - 'kimi-(?:latest|thinking-preview)\b'
+    sources:
+      - name: Kimi blog
+        role: announcement
+        type: page_links
+        url: https://www.kimi.com/blog/
+        pattern: '^/(?:en/)?blog/[a-z0-9-]+/?$'
+        verified: "2026-11-16: listing parsed; posts such as /blog/kimi-k3-1-pro"
+      - name: Kimi API models
+        role: catalog
+        type: markdown
+        parser: kimi_models_md
+        url: https://platform.kimi.ai/docs/models.md
+        verified: "2026-11-16: current and deprecated model tables (platform.moonshot.ai redirects here)"
+      - name: Moonshot AI on Hugging Face
+        role: repo
+        type: huggingface_org
+        org: moonshotai
+        verified: "2026-11-16: Hugging Face API, org moonshotai"
+      - name: Moonshot AI on GitHub
+        role: repo
+        type: github_org
+        org: MoonshotAI
+        verified: "used by the Buzz run in production (GitHub API)"
+
+  # -------------------------------------------------------------------------------------------- Alibaba / Qwen
+  alibaba:
+    label: Alibaba
+    product: Qwen
+    official_hosts: [alibabacloud.com, qwen.ai, qwenlm.github.io]
+    # qwen.ai/research only renders in a browser (no readable HTML, no feed) and the qwenlm.github.io feed
+    # stopped in Sep 2025, so Qwen launches are confirmed through Alibaba Cloud's docs and Qwen's own repos.
+    model_patterns:
+      - 'qwen\d+(?:\.\d+)?(?:-[a-z0-9.]+)*\b'
+      - 'qwen-(?:image|audio|vl|max|plus|turbo|flash|coder|omni|mt|tts|asr|long)(?:-[a-z0-9.]+)*\b'
+      - 'qwq-[a-z0-9.-]+\b'
+    sources:
+      - name: Alibaba Cloud Model Studio new models
+        role: catalog
+        type: html
+        parser: alibaba_new_models
+        url: https://www.alibabacloud.com/help/en/model-studio/newly-released-models
+        verified: "2026-11-16: one heading per model id with a description (third-party models filtered out)"
+      - name: Qwen on Hugging Face
+        role: repo
+        type: huggingface_org
+        org: Qwen
+        verified: "2026-11-16: Hugging Face API, org Qwen"
+      - name: Qwen on GitHub
+        role: repo
+        type: github_org
+        org: QwenLM
+        verified: "used by the Buzz run in production (GitHub API)"
+
+# Third-party places where models often show up first. They can only produce UNCONFIRMED early signals.
+early_signals:
+  - name: OpenRouter model list (early signal)
+    type: openrouter
+    url: https://openrouter.ai/api/v1/models
+    prefixes: {"anthropic/": anthropic, "openai/": openai, "x-ai/": xai, "google/": google, "moonshotai/": moonshot, "qwen/": alibaba}
+  - name: models.dev listings (early signal)
+    type: models_dev
+    url: https://models.dev/api.json
+    providers: {anthropic: anthropic, openai: openai, xai: xai, google: google, moonshotai: moonshot, alibaba: alibaba}
+  - name: TestingCatalog (early signal)
+    type: rss
+    url: https://www.testingcatalog.com/rss/
