@@ -6,6 +6,12 @@
    "priority": "P2",
    "title": "The King’s Trust and OpenAI launch £1m partnership"
   },
+  "title:about amd anthropic claude days gpus mythos ported preview says three": {
+   "at": "2026-11-17T07:57:43+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic says Claude Mythos Preview ported to AMD GPUs in about three days"
+  },
   "title:access ai broadening scientists": {
    "at": "2026-11-16T22:19:08+00:00",
    "channel": "alerts",
@@ -24,11 +30,23 @@
    "priority": "P1",
    "title": "OpenAI adds CSAM Image Classifier and safety controls for developers"
   },
+  "title:adds claude code experimental guards mode tool": {
+   "at": "2026-11-17T07:57:43+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Claude Code Adds Experimental Code Mode and Tool Guards"
+  },
   "title:advancing agents computer-use healthcare teams": {
    "at": "2026-11-16T22:19:08+00:00",
    "channel": "alerts",
    "priority": "P2",
    "title": "Advancing computer-use agents for healthcare teams"
+  },
+  "title:ag agent california hacking incidents openai over rogue sues": {
+   "at": "2026-11-17T07:57:43+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "California AG Sues OpenAI Over Rogue Agent Hacking Incidents"
   },
   "title:agent attorney california general hacking incidents openai over rogue sues": {
    "at": "2026-11-16T22:02:32+00:00",
@@ -41,6 +59,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
+  },
+  "title:amid chip content crash curbs shares trimming us zhipu": {
+   "at": "2026-11-17T07:57:43+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Zhipu Shares Crash Amid US Chip Curbs and Content Trimming"
   },
   "title:anyone asks before dots extras get holiday work": {
    "at": "2026-11-16T22:19:08+00:00",
@@ -78,10 +102,28 @@
    "priority": "P3",
    "title": "OpenCode lists Hy4 flash Free as a new zero-cost model"
   },
+  "title:hardware ive jony large lease office openai s.f team": {
+   "at": "2026-11-17T07:57:43+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "OpenAI and Jony Ive Lease Large S.F. Office for Hardware Team"
+  },
+  "url:https://cnbc.com/2026/11/16/openai-california-bonta-ai-lawsuit.html": {
+   "at": "2026-11-17T07:57:43+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "California AG Sues OpenAI Over Rogue Agent Hacking Incidents"
+  },
   "url:https://github.com/alibaba/open-code-review": {
    "at": "2026-11-16T23:48:27+00:00",
    "channel": "discovery",
    "title": "alibaba/open-code-review"
+  },
+  "url:https://github.com/anthropics/claude-code/releases/tag/v2.1.326": {
+   "at": "2026-11-17T07:57:43+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Claude Code Adds Experimental Code Mode and Tool Guards"
   },
   "url:https://github.com/anthropics/flashprove": {
    "at": "2026-11-16T23:48:27+00:00",
@@ -124,6 +166,12 @@
    "priority": "P3",
    "title": "OpenCode lists Hy4 flash Free as a new zero-cost model"
   },
+  "url:https://nbcnews.com/tech/tech-news/california-sues-chatgpt-maker-openai-rogue-hacking-incidents-rcna609596": {
+   "at": "2026-11-17T07:57:43+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "California AG Sues OpenAI Over Rogue Agent Hacking Incidents"
+  },
   "url:https://news.google.com/rss/articles/cbmicefvx3lxte5ysxppr00yoxppmdgzmm44rfndsdb3x2l1qwtmvkj2zdzpvvfqeedrte5lcuhzogdndfpetufhbkvmbgtaov9vnw5nef9hm3nlmtv5wet3ym1hz1vxbg9qevhmdnkttgpjouo0u1i3mva": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
@@ -136,11 +184,23 @@
    "priority": "P2",
    "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
   },
+  "url:https://news.google.com/rss/articles/cbmihafbvv95cuxoem9ndlrta0lvanricmj3q0vbby14wkzhd3vranhrnvnjys1hztrorhq3wwhxymoztdrnq0o4mtj4y1znr0ruv0zdx3jqc3dhmnvod1fpm0t3elhoqxdnswlys2nxdgzvum5jmkjnq3huwnziehzpeer5bkjtqvc3uwyxsi0": {
+   "at": "2026-11-17T07:57:43+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "California AG Sues OpenAI Over Rogue Agent Hacking Incidents"
+  },
   "url:https://news.google.com/rss/articles/cbmikafbvv95cuxowxf2rxfiq05ocfg4z3foetvndkjgrvzzeuj1a3veuvczek9xsfi0dfphrdbzruhdwudxmc1lngj3v3npu0xzzmzktedtcdf1n3rjtunioflzshjvnzbem3nfzvfcaerjajzvawhky0fmvnjmri1vsk1nzjlwm0dqcwnon3i1cmppwnjvy1bqawe": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
    "priority": "P2",
    "title": "Chemical spill reported at xAI Southaven data center facility"
+  },
+  "url:https://news.google.com/rss/articles/cbmikwfbvv95cuxnnmrmyvn0sddxqwuyx3pyseixddvbtmw2slpyvmjhs0jtwv9lylqxslv5vtnyu25nvthrsjficxjut2hyagfbodc1mw5rtuhzeuw4wm1fbl9pvlnbvgzwzze0evbdcw96nmwymdgycdzscnhly09mc0jzz2pcegtfufhdewtwtmktsfdgx1psyw92dws": {
+   "at": "2026-11-17T07:57:43+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Zhipu Shares Crash Amid US Chip Curbs and Content Trimming"
   },
   "url:https://news.google.com/rss/articles/cbmilwfbvv95cuxpakxuc0pflxzpr1uzbw5ewufnektednp6znfzqllkunbqd1uxne1qbjhvvudotxr1vmt4of8towi4stjyww5yyk83sfbty0pmsld2xzmtcndgeu5vodm5nwyxn1fowflowm9lcehseup5yjfscwr1c2newvvjodnyovnpdg1mvhlrlwlidufucdvasvzyuvpj": {
    "at": "2026-11-16T22:02:32+00:00",
@@ -154,11 +214,23 @@
    "priority": "P2",
    "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
   },
+  "url:https://news.google.com/rss/articles/cbminafbvv95cuxqczl5qzngz2c2uwz5u0ppnffua3nxmvm2y1dfdjnnnu1md3rcrwtjr0vzqvkyclnwbfntt0vtuefvzehcwndwce5pwllxofb1udlgckhtbwrnvhrkthhldmctx0lmtgz6twfzcnpravp5txlxqwu0nzjhmly2ug94vfbhyy1ysxrwluxax0z1azayz3lychn0qnllm1u": {
+   "at": "2026-11-17T07:57:43+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "California AG Sues OpenAI Over Rogue Agent Hacking Incidents"
+  },
   "url:https://news.google.com/rss/articles/cbmingfbvv95cuxnyjnsslhmdnbsyunpluz4yv83axcxuxbvyvbnbletnwt3cjktwmlxdlnualfktulxcehjsknmnjboeljgcdzwykz4ukdrtzlkzmvic1d2r1dtmdk0dg1ialljzlzmcldvb3p2oxdbqvfxtze2a1fxsfduqmlhymviazrlzhbhbwzysgxitgdodmphuwozmgi2m193buvbdw": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
    "priority": "P2",
    "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
+  },
+  "url:https://news.google.com/rss/articles/cbmingfbvv95cuxpvenfr2jtexlpbexmq0pztflwaldlrtrhbtr4zeq1bzzxshzjqmhqb3hjms1itgxusvlsae1qqwnvamjsndnpztu4rlbzdlzanxoyvxddwtvztjjfadz1sjdhszhjaxfdug41ngfkn0fdwtvrqjvpqutxbgv5x1dwrzn0y2mty2zpvmveztb6uufjrzngtezzwu5zmngwdw": {
+   "at": "2026-11-17T07:57:43+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "California AG Sues OpenAI Over Rogue Agent Hacking Incidents"
   },
   "url:https://news.google.com/rss/articles/cbminwfbvv95cuxpzwsta3njmezjltlrchl5tgvlu0oyodvkt2xjv3nmwwr2dxhostzcetbrsflqv180etnhbw9hm0zwatzaejnqmuu4shzpqm5arnfodknrqvfrnuftv2i5bhbjuk5urdfmtm1uqnrqcxpvbdgyb3hregowr0otmdzwehvmbfhut1a4mwpynnnpc2vjnuzockhaqwr2cwxgzehsaaqbqvvfexfmt2ztedrvb2nxdvzfvuntelbysgvjy1nods1uvxjxb21cv05pykvloen4vgpua0y0bxrvahdjqln5dzy4u1prakxpmjvod05tsnu5umvjel9prkhredlnd1zuowndsgxru0rjagdddusxtvdurgdxu0rpqmlbtfdprjdnt3h3lvj5wek2c3cxufozegvgzehwsfdkrnnovhdpofptlww": {
    "at": "2026-11-16T22:02:32+00:00",
@@ -172,17 +244,41 @@
    "priority": "P2",
    "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
   },
+  "url:https://news.google.com/rss/articles/cbmiogfbvv95cuxob1hnrvllr3pomwzfqkcxa1jfexzmrut3z0ntduzhymvtlxj2vmxvbtvxbentlv9nc2hxdg9tr1dooudbtfbsy3rkcef4dg5jqjjmrw11z1iznmpgy01fqzdxbzfxbmzsx3zwb083tupxsnlwsw1mr0jhmwjrdun2vjhttvvxz2rpzehoafvumxdmr19aww1breo1vtnlanjoqle": {
+   "at": "2026-11-17T07:57:43+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "California AG Sues OpenAI Over Rogue Agent Hacking Incidents"
+  },
   "url:https://news.google.com/rss/articles/cbmiogfbvv95cuxqauvecerrwehnamzgx2xommzfrnj3nhowr1pcrgvoothuvk5vum1tb1gxzflmculkc1r5rg1pufktag9zqtfxm0lvwxbunw8wagfubzntzlexdxdlyu9vm29eufdrcjlfb3fjc21cmgxlvupvsjfpntdprthhohhfckczdjvratvnbu5kqznaqzv2bgvpmhhrvfzitnizzwvmt2c": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
    "priority": "P2",
    "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
   },
+  "url:https://news.google.com/rss/articles/cbmiowfbvv95cuxndm5evep6ovzvteldsumyx1lea251yvbhwxnjqs12cxlotur2znzqefrfrwvstw5wrhzjyvfgs0jeu240newtrhfrmhhkuf9irmyxtmvbtvpqumv5amjdx19squ1ivuvstenotnvbekyzxznmr0jssm1saulutekznzlqd2t2wvncx0hnwgp5emrrrefxb1ixvf9ptu8zslrksxrb": {
+   "at": "2026-11-17T07:57:43+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Zhipu Shares Crash Amid US Chip Curbs and Content Trimming"
+  },
+  "url:https://news.google.com/rss/articles/cbmipafbvv95cuxnzedxcl84zgnhtkpznhk4n0zywkvzmhdmswxzluzpznppqtgzn2dgvelnd1j2bdf3ckpvoedsddnsngzncfjpnun2azliltbkr3dpqmx1ve0zmti2znvlngnhunl5n2jpdjnlwnhpu0lbmjjjandzamzmatzzu1l6uzl5r3vez0fcyncxbhdur3lrbg13ddk2sesxclntv0uwm3pjtg": {
+   "at": "2026-11-17T07:57:43+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "California AG Sues OpenAI Over Rogue Agent Hacking Incidents"
+  },
   "url:https://news.google.com/rss/articles/cbmipgfbvv95cuxobxlst3nmahbyv0hxoxy5rmtqtwlpwtfyzxi1emk5au9jsmxwtun4mkzud2ftn3m0mwrkuuvjczjmvec2twtlx0fjb0iyq0thc3i4d0xwlvpeotqtykpvbzrmbzq4ddyyug9itezdywpxa3kybtmwdg9oqthelvfzzzy5wud0cxdebgfrsly3d04ytlrvnvl5bhvkovjymxn5yxplbdbb": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
    "priority": "P2",
    "title": "Chemical spill reported at xAI Southaven data center facility"
+  },
+  "url:https://news.google.com/rss/articles/cbmipgfbvv95cuxpx2llvlnkx0f5bnbrbwjysmrim1jawtjptfnlntzoag9yr3ayofjhc2tmexdozezaltfpmgvvem9jagvcoe5toxhvu2j1cvfzu0p4zwvctwvowgdxlutsdgz5skxetejnrhnfb1prvmjstm84nktecvfgshztm1vscjc5c2jlx0tywnpuwkc4yvc4deeyauhwcllmntvqwg0tylprzflr": {
+   "at": "2026-11-17T07:57:43+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Zhipu Shares Crash Amid US Chip Curbs and Content Trimming"
   },
   "url:https://news.google.com/rss/articles/cbmipwfbvv95cuxnauztwmfznmsyohznv2u2n2vmsjz5whrqrmxkbet2nnrrcfpqcnljodrzz09utzdwx1p4qm50vhp2nxqwohjrv1l5azzocl9ubtv6netrafg5wmp6cvv2og1zektuq1e1a3frqm83zgz3rgwyoxnktvfhdexzrkrpnvvet0r2ykpvc3pyuxbksk5waupqegx2mmvjm0y5bwexogjwq0dgvq": {
    "at": "2026-11-16T22:02:32+00:00",
@@ -196,6 +292,12 @@
    "priority": "P2",
    "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
   },
+  "url:https://news.google.com/rss/articles/cbmirafbvv95cuxnx3pyazfyrwxzmvjsd05yqxnbnmnzadiyuhc5bk9qodbuqxuyyur4c2zkedyzv1rhdvg4lujyndbhofzrq0xqru95mdf1v0vza0lts3vwcwpnzetrvhbbbudvlwlkqxq5t1vlodkwni1lznq3a19owkk4yvd5mnq3ckg3ue1sstzbek04vmr0n3bvnuyzzxrkakvfbv9srtv5axzqdlvzulrdq3vq": {
+   "at": "2026-11-17T07:57:43+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "OpenAI and Jony Ive Lease Large S.F. Office for Hardware Team"
+  },
   "url:https://news.google.com/rss/articles/cbmirgfbvv95cuxozejobhphml90wudvbnpzsgxlb1l3bi1bczhrn29ivw9ruzbtqwe4afnum2zgs1riqthldezpwmzjeexvahhraxbubkdqr3r3txjytlrqumrycxzxys1pv1lyrlexuddeuwj3ctg4aktjvwcxbkg5uw9oevrxlxhczjdrqmfnefjllxhpwtrmm1leuvlodgwxvhncse9ontlnem0yekw1ddnraelyzgc": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
@@ -207,6 +309,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
+  },
+  "url:https://news.google.com/rss/articles/cbmiswfbvv95cuxpww1vlvhlwlbptel0qkvzs2dwltc1mtfdzgxfy3nxmfjmufrzq3vmaktpn0zrrnrpdkkycxc3tfm2zhlomzz4djjrqtduoth0nhbnyk9xem9hv3pfvwy3mmzpr3bdv3htttuxnfm4r2dgajetug1zylbynkn5ou1hyzv4ugzvx3pvdw1fdvjwcefleuhyyvrzx2nxbxhmsmj3rdz1nlneczrsovvqzu1tc1payw": {
+   "at": "2026-11-17T07:57:43+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Zhipu Shares Crash Amid US Chip Curbs and Content Trimming"
   },
   "url:https://news.google.com/rss/articles/cbmitafbvv95cuxochdhb0tmcg13ejvvwmnks2g0ztfmwjcwy2ncahn2dzvvof9oukdqadzqaexqdu9fotndahf3wghxogews2powuv6zf9oz1atsefksxldrnczsvnnsi1omedtekhiemriu1axbevvqzlwcertwents3nic0jxnwpjugl3efjxsljiz3bmnllkafralwdkcm55c1fqmk1omw00twjyvnp1rg1hunniek4wyuytu1e": {
    "at": "2026-11-16T22:02:32+00:00",
@@ -286,6 +394,48 @@
    "priority": "P2",
    "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
   },
+  "url:https://reddit.com/r/artificial/comments/1xxzlte/california_sues_openai_over_hugging_face_other_ai": {
+   "at": "2026-11-17T07:57:43+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "California AG Sues OpenAI Over Rogue Agent Hacking Incidents"
+  },
+  "url:https://reddit.com/r/claudecode/comments/1xy0xr9/psa_claude_code_has_an_experimental_code_mode_now": {
+   "at": "2026-11-17T07:57:43+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Claude Code Adds Experimental Code Mode and Tool Guards"
+  },
+  "url:https://reddit.com/r/openai/comments/1xy1dim/do_we_need_another_device_just_to_talk_to_ai": {
+   "at": "2026-11-17T07:57:43+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "OpenAI and Jony Ive Lease Large S.F. Office for Hardware Team"
+  },
+  "url:https://reddit.com/r/openai/comments/1xy4hbi/california_sues_openai_over_dangerous_ai_models": {
+   "at": "2026-11-17T07:57:43+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "California AG Sues OpenAI Over Rogue Agent Hacking Incidents"
+  },
+  "url:https://reddit.com/r/openai/comments/1xy74gx/the_state_of_california_says_openai_agents_seized": {
+   "at": "2026-11-17T07:57:43+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "California AG Sues OpenAI Over Rogue Agent Hacking Incidents"
+  },
+  "url:https://reuters.com/business/california-sues-openai-over-ai-models-cyberattacks-hugging-face-other-companies-2026-11-16": {
+   "at": "2026-11-17T07:57:43+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "California AG Sues OpenAI Over Rogue Agent Hacking Incidents"
+  },
+  "url:https://shattered.io/glm-coding-plan-vs-kimi-code-vs-deepseek-api-mistral-pro-from-18-2026": {
+   "at": "2026-11-17T07:57:43+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Zhipu Shares Crash Amid US Chip Curbs and Content Trimming"
+  },
   "url:https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
@@ -315,6 +465,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "OpenAI adds CSAM Image Classifier and safety controls for developers"
+  },
+  "url:https://tomshardware.com/tech-industry/artificial-intelligence/anthropic-says-claude-mythos-slashed-software-work-to-onboard-amd-gpus-from-up-to-12-months-to-around-three-days-writing-almost-100-percent-of-kernels-autonomously-chips-away-at-nvidias-cuda-moat": {
+   "at": "2026-11-17T07:57:43+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic says Claude Mythos Preview ported to AMD GPUs in about three days"
   }
  }
 }
