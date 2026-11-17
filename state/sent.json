@@ -12,11 +12,35 @@
    "priority": "P1",
    "title": "Anthropic says Claude Mythos Preview ported to AMD GPUs in about three days"
   },
+  "title:above amid anthropic demand expected high ipo price range top": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic IPO price expected to price at top of range or above amid high demand"
+  },
   "title:access ai broadening scientists": {
    "at": "2026-11-16T22:19:08+00:00",
    "channel": "alerts",
    "priority": "P2",
    "title": "Broadening access to AI for scientists"
+  },
+  "title:accounting bot deploys end-to-end grok processes spacexsi teams xai": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "xAI deploys Grok Bot teams for end-to-end accounting processes at SpaceXSI"
+  },
+  "title:actions against california file legal major openai oregon": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "California and Oregon file major legal actions against OpenAI"
+  },
+  "title:adds anthropic channel claude desktop option release": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic adds release channel option to Claude Desktop"
   },
   "title:adds anthropic models opus outputs sonnet text watermarking": {
    "at": "2026-11-16T22:02:32+00:00",
@@ -78,11 +102,23 @@
    "priority": "P2",
    "title": "Zhipu Shares Crash Amid US Chip Curbs and Content Trimming"
   },
+  "title:anthropic beta billing claude developers launches linked platform": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Anthropic launches Linked billing beta for Claude platform developers"
+  },
   "title:anyone asks before dots extras get holiday work": {
    "at": "2026-11-16T22:19:08+00:00",
    "channel": "alerts",
    "priority": "P2",
    "title": "At Holiday Extras, dots get to work before anyone asks"
+  },
+  "title:astra gpt-6.2 introduces models openai sol": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P0",
+   "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol models"
   },
   "title:begins embedded evaluations external labs openai research safety": {
    "at": "2026-11-16T22:02:32+00:00",
@@ -259,10 +295,10 @@
    "title": "Zyphra/ZONOS3-Mini"
   },
   "url:https://models.dev/": {
-   "at": "2026-11-16T22:02:32+00:00",
+   "at": "2026-11-17T20:58:16+00:00",
    "channel": "digest",
-   "priority": "P3",
-   "title": "OpenCode lists Hy4 flash Free as a new zero-cost model"
+   "priority": "P0",
+   "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol models"
   },
   "url:https://nbcnews.com/tech/tech-news/california-sues-chatgpt-maker-openai-rogue-hacking-incidents-rcna609596": {
    "at": "2026-11-17T07:57:43+00:00",
@@ -270,11 +306,35 @@
    "priority": "P1",
    "title": "California AG Sues OpenAI Over Rogue Agent Hacking Incidents"
   },
+  "url:https://news.google.com/rss/articles/cbmi1gfbvv95cuxolvg2mlvrymq2yu5jnknpvgvhwvv6tknudmnis0lqbzm4unzqzjq2qljfv2rozljgbf8ynnc2m3dsu3zgsdi3yxfhnxg0v2g5v2duzgp6lut3m3ntqwnbswrtmwvuvex3nllts2p3b3dxedb6wuphmvpmx01as2k3lwvretnhduzoow9mbuozc194tnh0x2rtts1antv2vfrcdtzox0k4alhpbmhdcwvqmgftckqxuv90qs1wegv4vhfzn24za1neav9eadvnq21yn0lianvn": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "California and Oregon file major legal actions against OpenAI"
+  },
+  "url:https://news.google.com/rss/articles/cbmi2wfbvv95cuxqcwdoaelwzfvjavc3dtdpde54r1lhrm5ir1liahatyi02tejqci1pzzbjyxf5t0dzujzfevlcyulimzzrcgx4yum1qmlqehfzb3bumtnjr2zyotdou05rbhvuoxg4y0rmrgz3tlvfuwxneklja1pot2x2tnlimmpmatg1ykd5ogpmywtuwdblmurxuudqujjkn1l6s2zbslvkrek2tnfpzvddt3hluvpvzm80nvvqbw95zvvnwgi1unqtr25wvnzzzkpccflwmeo2ynhzdwsxqmpfn0k": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic IPO price expected to price at top of range or above amid high demand"
+  },
   "url:https://news.google.com/rss/articles/cbmicefvx3lxte5ysxppr00yoxppmdgzmm44rfndsdb3x2l1qwtmvkj2zdzpvvfqeedrte5lcuhzogdndfpetufhbkvmbgtaov9vnw5nef9hm3nlmtv5wet3ym1hz1vxbg9qevhmdnkttgpjouo0u1i3mva": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
    "priority": "P2",
    "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
+  },
+  "url:https://news.google.com/rss/articles/cbmie0fvx3lxtfbdx1u3ctjedupjtvrpeeu2edl3ne5zx09itelftl9kwerayw5wmlflv3duqkn5blzxtk5ini1sanztefricha2tmpfslpruhutsktaev80ourfc3jfbfrrb2fcsxrvei1us1rxwvnuclburfpptf9vwndfoa": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "xAI deploys Grok Bot teams for end-to-end accounting processes at SpaceXSI"
+  },
+  "url:https://news.google.com/rss/articles/cbmigafbvv95cuxoaexdnjnqb2llejl2ouhooexpmg5xr0zfx19eqjbjtxjgcmnmevhrq25acxnqnk0tvlnudln3yu5hsmhmtvpsn3uxmwxjsjjhx3nszm1uqnctyu9qrw1rzelkn3uxny1zm1nkmvb2ejhlrxh2y3hamvfvvwf0amu3sq": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic IPO price expected to price at top of range or above amid high demand"
   },
   "url:https://news.google.com/rss/articles/cbmigafbvv95cuxqexcxrtjra2oysnfctk1vaersvvfxtzz2dw4zcu9osu9ozviyogzxdu81m2habutrtffcsdhkrxg3bzmzwwzhynbmumx1tvqzzjc5si00uzlmzfm0cethauc2wdbxce5ssjhmdfzey19xevpkx2pbse4zm3cxzwy5yg": {
    "at": "2026-11-16T22:02:32+00:00",
@@ -288,6 +348,18 @@
    "priority": "P1",
    "title": "California AG Sues OpenAI Over Rogue Agent Hacking Incidents"
   },
+  "url:https://news.google.com/rss/articles/cbmijafbvv95cuxoylzsuva2zg1jr3e4vxj0wwtnyuqtadnymwf2cezvuxnyemt6sjy2ugvswulvz0vlrgv3mhvkbdvdtuvstxv0m1a1nm1urxzxbgdqetzia3rcnhm1ou5itxy1nfn5c3dzqlewq084evd2weq2zldhrjhose94qwk1czlldmttdkxtzerinw": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "xAI deploys Grok Bot teams for end-to-end accounting processes at SpaceXSI"
+  },
+  "url:https://news.google.com/rss/articles/cbmijgfbvv95cuxnwkv1ewdfcmvfbjqtlxhtvuv1z0powudhv1zwqlpvswjieenonkthq3nzeuhkwvdfde9wzmxpajqyutvhnnaxsi1yb1jwvjbowe9dwndiqwflqxrrctnad1rkoet6we8zunzjzuhcqs1czkg1t21xn01hvmdaxzjmu2mzejlpstzkr0r2vtzn": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic IPO price expected to price at top of range or above amid high demand"
+  },
   "url:https://news.google.com/rss/articles/cbmikafbvv95cuxowxf2rxfiq05ocfg4z3foetvndkjgrvzzeuj1a3veuvczek9xsfi0dfphrdbzruhdwudxmc1lngj3v3npu0xzzmzktedtcdf1n3rjtunioflzshjvnzbem3nfzvfcaerjajzvawhky0fmvnjmri1vsk1nzjlwm0dqcwnon3i1cmppwnjvy1bqawe": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
@@ -300,6 +372,12 @@
    "priority": "P2",
    "title": "Zhipu Shares Crash Amid US Chip Curbs and Content Trimming"
   },
+  "url:https://news.google.com/rss/articles/cbmilgfbvv95cuxot0finkfouthyzflsrefpsfqwrldzvmjdtgxxtvnsugdoenzucdjjdnlnreplz084nfdvue8xvfnqntrqsi1aq01owfvic3novhjedlbqzeozajhvyutwdfitv3vxywdywlf2nnrdbjrqy2gxrwpazwljbg5qdwx3vkmwvkm0azf4tljprgp2tnoxafjotve": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic IPO price expected to price at top of range or above amid high demand"
+  },
   "url:https://news.google.com/rss/articles/cbmilwfbvv95cuxpakxuc0pflxzpr1uzbw5ewufnektednp6znfzqllkunbqd1uxne1qbjhvvudotxr1vmt4of8towi4stjyww5yyk83sfbty0pmsld2xzmtcndgeu5vodm5nwyxn1fowflowm9lcehseup5yjfscwr1c2newvvjodnyovnpdg1mvhlrlwlidufucdvasvzyuvpj": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
@@ -311,6 +389,24 @@
    "channel": "digest",
    "priority": "P2",
    "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
+  },
+  "url:https://news.google.com/rss/articles/cbmimwfbvv95cuxna2fvwujvwjbkde9kuktjsgzit1jxnxnmoxoytuzir0o1cw53z25jn2xqdxbxudjeuxrhvk55r01ix3h3u2pqu19iutl5qwrzohzvnktncxjrddjvy2w2unfkm0toqjz5b1dgdm5mtgy1suvmofpqu29nmndtshbfdfq3y2lxntczymzsywhnwwpiy1y5b21uvus4qq": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic IPO price expected to price at top of range or above amid high demand"
+  },
+  "url:https://news.google.com/rss/articles/cbmimwfbvv95cuxnbupkafjebkhaohlxrnp0bjbut1vhzvzsul9wv1ewwjvibg0wnlnet3u1zlnwexh2rwrqsf9uwi13ewp5nzjdmgdjrjmzddhpwnzmsefneufrvujwaepiaku3zthhvgy3ugthntf0nhdnmnjtqtdudlduyvjizhrpmelloghotc1lwfhqswlvy2c2mgetwmzvwdr4na": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "xAI deploys Grok Bot teams for end-to-end accounting processes at SpaceXSI"
+  },
+  "url:https://news.google.com/rss/articles/cbmimwfbvv95cuxobe05djrsvzl5thawqlvbbk9vu3znd2fvz1u5cljqy1e3ehhstwvumwlsm0d4uhl3cujxowd5sfr0edbqt3jynvi1ovp6nelqmzhhc3zzz2xin3pcduxoweu3swx5r3z2z3l3tlvxqw9xmezfujnfvnzwvwozadu0reuwvc1eaxfotuxvutbru3ribndssdruzwv5yw": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "xAI deploys Grok Bot teams for end-to-end accounting processes at SpaceXSI"
   },
   "url:https://news.google.com/rss/articles/cbminafbvv95cuxqczl5qzngz2c2uwz5u0ppnffua3nxmvm2y1dfdjnnnu1md3rcrwtjr0vzqvkyclnwbfntt0vtuefvzehcwndwce5pwllxofb1udlgckhtbwrnvhrkthhldmctx0lmtgz6twfzcnpravp5txlxqwu0nzjhmly2ug94vfbhyy1ysxrwluxax0z1azayz3lychn0qnllm1u": {
    "at": "2026-11-17T07:57:43+00:00",
@@ -372,6 +468,12 @@
    "priority": "P2",
    "title": "Chemical spill reported at xAI Southaven data center facility"
   },
+  "url:https://news.google.com/rss/articles/cbmipgfbvv95cuxormtxtwpwb3zfoenecgnqb3brwhi3aluynfjcs0frne16cevlsl9oqmvwtvjldxjkltc3rluyunjfsmpdcjjjtmdsz19sudyxsu1lsnlungm1nuvzy3dvsf90zu5qrdqxwwd5thp4ajq5ogdhvjljsfznoxd5a0h1r09xdthls2nltkm2t2etymq3axhnww9pmvhxznvxlu80slppcnb3": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P0",
+   "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol models"
+  },
   "url:https://news.google.com/rss/articles/cbmipgfbvv95cuxpx2llvlnkx0f5bnbrbwjysmrim1jawtjptfnlntzoag9yr3ayofjhc2tmexdozezaltfpmgvvem9jagvcoe5toxhvu2j1cvfzu0p4zwvctwvowgdxlutsdgz5skxetejnrhnfb1prvmjstm84nktecvfgshztm1vscjc5c2jlx0tywnpuwkc4yvc4deeyauhwcllmntvqwg0tylprzflr": {
    "at": "2026-11-17T07:57:43+00:00",
    "channel": "digest",
@@ -396,11 +498,23 @@
    "priority": "P2",
    "title": "OpenAI and Jony Ive Lease Large S.F. Office for Hardware Team"
   },
+  "url:https://news.google.com/rss/articles/cbmirafbvv95cuxqexlrx2mzqu9hakfstmrjm0rrytncykzbqmnhc3loc3bfdjlrqunxr2k2awfwn3dkc1vfngj1yuffc3flmu1rszjsc0t3dtnhd2jtzl9umnyyq3leou1sthbnnzriuloyre1waefmmxlca3vey3b2dvnna3o0ylbvx0jxrjffy25sr1phc2zlrefrzzkwz1lftxfibzhdz3hcqxheujfzdengtmvp": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic IPO price expected to price at top of range or above amid high demand"
+  },
   "url:https://news.google.com/rss/articles/cbmirgfbvv95cuxozejobhphml90wudvbnpzsgxlb1l3bi1bczhrn29ivw9ruzbtqwe4afnum2zgs1riqthldezpwmzjeexvahhraxbubkdqr3r3txjytlrqumrycxzxys1pv1lyrlexuddeuwj3ctg4aktjvwcxbkg5uw9oevrxlxhczjdrqmfnefjllxhpwtrmm1leuvlodgwxvhncse9ontlnem0yekw1ddnraelyzgc": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
    "priority": "P2",
    "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
+  },
+  "url:https://news.google.com/rss/articles/cbmisgfbvv95cuxoumszbvz1suxdzmp2rfdenxz2tlozwdgyexpsqu11zlvorgrsdxrznfk5ehoxrfryufdpmg9uze9mym9szmlbrmdmrzcwtedlowfhdwjscvgxoehsshj6cetry09smfvodwtttnlongdzm1deset6ewptn3hna1lovufpbznirxuxz1lrrvfes19zskuyq0lkwfrjcng5n290stzcrvbccud0evdzudhredlr": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic IPO price expected to price at top of range or above amid high demand"
   },
   "url:https://news.google.com/rss/articles/cbmiswfbvv95cuxouwteogthd0vyahpjrnezcdytrklurlffcfbyafnfq2dhlvjtbkfosklxedd3x1dwdvrrr2jvyvrxazf4ngfzd1o5tvzsr0xwbwfuynd3eu1frznbmwnuy1fzefzlcwqzwfrpt0y4smrcuuvletvizzfkrmhcq1pkmjnlstvjmgi4atznd3k5d3lpug1xtfpnshlhn2zoa3bkuk1hufdkduczx20xnfewndu1yw": {
    "at": "2026-11-16T22:02:32+00:00",
@@ -426,6 +540,36 @@
    "priority": "P2",
    "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
   },
+  "url:https://news.google.com/rss/articles/cbmitwfbvv95cuxpajznuvbusthvqmnis1n4thjruuz3v3f4y3lkwhbnsm9xbdb4vvfhymxanvrauxpbvxk4ned2etmytgd4r2utmu8xc0m4wgzdawxsmenxugq0tfrayzrdbgxsagmwbdrjtgrkd3h1wti2mjdrdhpysg83r0o3zvbib056ug1ymtrpqkdpulm3ykq0b0v1rejuvfo5rxvlowrddejux3jkczvozmvrbg1wdw9zagnnemm": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "xAI deploys Grok Bot teams for end-to-end accounting processes at SpaceXSI"
+  },
+  "url:https://news.google.com/rss/articles/cbmiuafbvv95cuxqbzkwn0ngmlhfddv4u01ltkfpdklkwky3qkdhmnrcvvf5melru3ktd3przeneem9levvemgezx1ffrgq0vnitrji0zexvwlhiqnqwmtnjrxljbtdcv0zrny1sy3rkq2tetmjhwc0zy2zknzztvwg2ddutujbtn3htbdzfsvk4bljrzxbny1pctgxvcmkxmmtuqnpfvkrltni1a2nwv0rjbzjevxn2cex5txplyl9uowdk0ghmaufvx3lxte5hdhj3offxcepivhzlsm9ydgvnyvfheugxnuxdd0liznlzthd5a1a0s0n3rwn4n3niz3ply05nttqzvk9xunb6eja0t1k1wwtad0y2dndudjftenr6yun0exbttfr5mklmnwdcovvgdw1uu0jqd0dpoehhazdklw9ctuzpem53vwnnx3fiejnla09tznfsmgzhzek0lxlwtuvkx1k3oxzvevgwyvrrdm1ud3u5u3qzehnnemiyy1nhagxovw5ibkzjyjrhqw": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "California and Oregon file major legal actions against OpenAI"
+  },
+  "url:https://news.google.com/rss/articles/cbmiugfbvv95cuxore5jqtlzce5pdnh1yzdmb2j2nnf2c3yxutjymxhsq092cm1seencrtzhovfqalbrutmxzhrmautpvxnutmpjqk4zodvfeuvdvg1tnkljbujeymntovhvrvz5mvfrywu1zkvwmwpvru5zdfzpzddlqxnrafoyltjiawmzzvvevwpqzwxur1l3su51ck56snhsbkjhvup3dem0uvnizzb3ys05n0ffdhzgaldkddlhsxvox1e": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic IPO price expected to price at top of range or above amid high demand"
+  },
+  "url:https://news.google.com/rss/articles/cbmiuwfbvv95cuxps3jntjz1qkdumehpn0oxedrem0voc2ixm2dvafbqae0xqkpsatjlwtc2tkzls3lucvnmourblwpwcfezsxvlejvraergc1pzefzjt1iteg9psgtvqlhkre1ooc1yvjvmtvi2bgdpb3fvceztaelxdms4mnlxqu9udzlmvmvbyy1qwxz2auxbweq4umxynms0mwtwamdoefpgtzz5wxuxwuc1vfriotvlyklmmmuwvketrfaw": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "California and Oregon file major legal actions against OpenAI"
+  },
+  "url:https://news.google.com/rss/articles/cbmiz0fvx3lxte9ptuzvuhleruszrufvdjjsrw84tnpvq25ndkk1ty1kblozsvh6vuvytuz1zjbcdlfya0s3chhnyum5r3zrvedzevdpa2izt0lzbwkwuzvutjdazxdevtdla3h3zg14oddsawxbvv95cuxowmu0cwfuwmtwufzyzvrwtnd0nxvvrnbhngh2rtlmsgrachhxb1znotq3si1smuu2zke5mwltru50nny2v2npnnfxdejxew0zahrpzk1wajrowvp2b25iuxldbdf5azfxx2jzmjq": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic IPO price expected to price at top of range or above amid high demand"
+  },
   "url:https://openai.com/business/customer-stories/holiday-extras-dots": {
    "at": "2026-11-16T22:19:08+00:00",
    "channel": "alerts",
@@ -449,6 +593,12 @@
    "channel": "alerts",
    "priority": "P2",
    "title": "Broadening access to AI for scientists"
+  },
+  "url:https://openai.com/index/introducing-gpt-6-2-astra-sol": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P0",
+   "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol models"
   },
   "url:https://openai.com/index/introducing-openai-for-chile": {
    "at": "2026-11-17T14:39:48+00:00",
@@ -492,17 +642,53 @@
    "priority": "P2",
    "title": "The King’s Trust and OpenAI launch £1m partnership"
   },
-  "url:https://platform.claude.com/docs/release-notes/overview": {
-   "at": "2026-11-16T22:02:32+00:00",
+  "url:https://openrouter.ai/openai/gpt-6.2-astra": {
+   "at": "2026-11-17T20:58:16+00:00",
    "channel": "digest",
-   "priority": "P2",
-   "title": "Anthropic adds text watermarking to outputs from Opus and Sonnet models"
+   "priority": "P0",
+   "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol models"
+  },
+  "url:https://openrouter.ai/openai/gpt-6.2-astra-pro": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P0",
+   "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol models"
+  },
+  "url:https://openrouter.ai/openai/gpt-6.2-sol": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P0",
+   "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol models"
+  },
+  "url:https://openrouter.ai/openai/gpt-6.2-sol-pro": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P0",
+   "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol models"
+  },
+  "url:https://platform.claude.com/docs/release-notes/overview": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Anthropic launches Linked billing beta for Claude platform developers"
   },
   "url:https://platform.openai.com/docs/changelog": {
-   "at": "2026-11-16T22:02:32+00:00",
+   "at": "2026-11-17T20:58:16+00:00",
    "channel": "digest",
-   "priority": "P1",
-   "title": "OpenAI adds CSAM Image Classifier and safety controls for developers"
+   "priority": "P0",
+   "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol models"
+  },
+  "url:https://platform.openai.com/docs/models": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P0",
+   "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol models"
+  },
+  "url:https://platform.openai.com/docs/pricing": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P0",
+   "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol models"
   },
   "url:https://reddit.com/r/anthropic/comments/1xxnnbj/anthropic_founders_plan_ipo_share_sales_worth": {
    "at": "2026-11-16T22:02:32+00:00",
@@ -552,6 +738,12 @@
    "priority": "P2",
    "title": "Zhipu Shares Crash Amid US Chip Curbs and Content Trimming"
   },
+  "url:https://support.claude.com/articles/12138966-release-notes": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic adds release channel option to Claude Desktop"
+  },
   "url:https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
@@ -570,6 +762,24 @@
    "priority": "P1",
    "title": "OpenAI begins embedded safety evaluations with external research labs"
   },
+  "url:https://testingcatalog.com/openai-launches-gpt-6-2-astra-and-sol-on-chatgpt-and-apis": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P0",
+   "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol models"
+  },
+  "url:https://the-decoder.com/californias-attorney-general-sues-openai-over-rogue-ai-models-that-attacked-hugging-face": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "California and Oregon file major legal actions against OpenAI"
+  },
+  "url:https://the-decoder.com/openai-launches-gpt-6-2-astra-and-sol-with-lower-api-prices-and-some-benchmark-gains": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P0",
+   "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol models"
+  },
   "url:https://theverge.com/ai-artificial-intelligence/1034815/california-openai-hugging-face-lawsuit": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
@@ -587,6 +797,18 @@
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic says Claude Mythos Preview ported to AMD GPUs in about three days"
+  },
+  "url:https://x.ai/news/grok-bot-accounting": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "xAI deploys Grok Bot teams for end-to-end accounting processes at SpaceXSI"
+  },
+  "url:https://youtube.com/watch": {
+   "at": "2026-11-17T20:58:16+00:00",
+   "channel": "digest",
+   "priority": "P0",
+   "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol models"
   }
  }
 }
