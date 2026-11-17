@@ -114,6 +114,11 @@
    "priority": "P1",
    "title": "California AG Sues OpenAI Over Rogue Agent Hacking Incidents"
   },
+  "url:https://github.com/ag-ui-protocol/ag-ui": {
+   "at": "2026-11-17T08:15:30+00:00",
+   "channel": "discovery",
+   "title": "ag-ui-protocol/ag-ui"
+  },
   "url:https://github.com/alibaba/open-code-review": {
    "at": "2026-11-16T23:48:27+00:00",
    "channel": "discovery",
@@ -130,15 +135,45 @@
    "channel": "discovery",
    "title": "anthropics/FlashProve"
   },
+  "url:https://github.com/bazichart/bazichart-mcp": {
+   "at": "2026-11-17T08:15:30+00:00",
+   "channel": "discovery",
+   "title": "bazichart/bazichart-mcp"
+  },
+  "url:https://github.com/bytedance/deer-flow": {
+   "at": "2026-11-17T08:15:30+00:00",
+   "channel": "discovery",
+   "title": "bytedance/deer-flow"
+  },
   "url:https://github.com/chromedevtools/chrome-devtools-mcp": {
    "at": "2026-11-16T23:48:27+00:00",
    "channel": "discovery",
    "title": "ChromeDevTools/chrome-devtools-mcp"
   },
+  "url:https://github.com/cotal-ai/cotal": {
+   "at": "2026-11-17T08:15:30+00:00",
+   "channel": "discovery",
+   "title": "Cotal-AI/Cotal"
+  },
+  "url:https://github.com/elementalsouls/claude-bughunter": {
+   "at": "2026-11-17T08:15:30+00:00",
+   "channel": "discovery",
+   "title": "elementalsouls/Claude-BugHunter"
+  },
   "url:https://github.com/huggingface/pybot": {
    "at": "2026-11-16T23:48:27+00:00",
    "channel": "discovery",
    "title": "huggingface/pybot"
+  },
+  "url:https://github.com/juneyaooo/rea-video": {
+   "at": "2026-11-17T08:15:30+00:00",
+   "channel": "discovery",
+   "title": "JuneYaooo/rea-video"
+  },
+  "url:https://github.com/kajisho5/ffmpeg-skill": {
+   "at": "2026-11-17T08:15:30+00:00",
+   "channel": "discovery",
+   "title": "kajisho5/ffmpeg-skill"
   },
   "url:https://github.com/mvanhorn/last30days-skill": {
    "at": "2026-11-16T23:48:27+00:00",
@@ -159,6 +194,11 @@
    "at": "2026-11-16T23:48:27+00:00",
    "channel": "discovery",
    "title": "fforster/gitlab-mcp"
+  },
+  "url:https://huggingface.co/speridlabs/idol": {
+   "at": "2026-11-17T08:15:30+00:00",
+   "channel": "discovery",
+   "title": "speridlabs/idol"
   },
   "url:https://models.dev/": {
    "at": "2026-11-16T22:02:32+00:00",
