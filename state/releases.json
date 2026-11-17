@@ -4778,8 +4778,16 @@
      "OpenAI model catalog"
     ],
     "specs": {
-     "description": "Cybersecurity model for authorized vulnerability research and security testing."
+     "context_tokens": 400000,
+     "description": "Cybersecurity model for authorized vulnerability research and security testing.",
+     "input_modalities": "text, image",
+     "input_price": 12.5,
+     "knowledge_cutoff": "Feb 16, 2026",
+     "max_output_tokens": 128000,
+     "output_modalities": "text",
+     "output_price": 75.0
     },
+    "specs_checked": "2026-11-17T14:39:37+00:00",
     "status": "active"
    },
    "gpt-5.6-luna": {
@@ -4789,8 +4797,16 @@
      "OpenAI model catalog"
     ],
     "specs": {
-     "description": "GPT-5.6 model optimized for cost-sensitive workloads"
+     "context_tokens": 1050000,
+     "description": "GPT-5.6 model optimized for cost-sensitive workloads",
+     "input_modalities": "text, image",
+     "input_price": 0.2,
+     "knowledge_cutoff": "Feb 16, 2026",
+     "max_output_tokens": 128000,
+     "output_modalities": "text",
+     "output_price": 1.2
     },
+    "specs_checked": "2026-11-17T14:39:38+00:00",
     "status": "active"
    },
    "gpt-5.6-sol": {
@@ -4800,8 +4816,16 @@
      "OpenAI model catalog"
     ],
     "specs": {
-     "description": "GPT-5.6 flagship model for complex professional work"
+     "context_tokens": 1050000,
+     "description": "GPT-5.6 flagship model for complex professional work",
+     "input_modalities": "text, image",
+     "input_price": 4.0,
+     "knowledge_cutoff": "Feb 16, 2026",
+     "max_output_tokens": 128000,
+     "output_modalities": "text",
+     "output_price": 20.0
     },
+    "specs_checked": "2026-11-17T14:39:38+00:00",
     "status": "active"
    },
    "gpt-5.6-terra": {
@@ -4811,8 +4835,16 @@
      "OpenAI model catalog"
     ],
     "specs": {
-     "description": "GPT-5.6 model that balances intelligence and cost"
+     "context_tokens": 1050000,
+     "description": "GPT-5.6 model that balances intelligence and cost",
+     "input_modalities": "text, image",
+     "input_price": 2.0,
+     "knowledge_cutoff": "Feb 16, 2026",
+     "max_output_tokens": 128000,
+     "output_modalities": "text",
+     "output_price": 12.0
     },
+    "specs_checked": "2026-11-17T14:39:38+00:00",
     "status": "active"
    },
    "gpt-6-astra": {
@@ -4842,8 +4874,15 @@
      "OpenAI model catalog"
     ],
     "specs": {
-     "description": "Investigate a vulnerability, reproduce it in an authorized test environment, or verify a fix."
+     "context_tokens": 1050000,
+     "description": "Investigate a vulnerability, reproduce it in an authorized test environment, or verify a fix.",
+     "input_modalities": "text, image",
+     "input_price": 20.0,
+     "max_output_tokens": 128000,
+     "output_modalities": "text",
+     "output_price": 100.0
     },
+    "specs_checked": "2026-11-17T14:39:38+00:00",
     "status": "active"
    },
    "gpt-6-luna": {
@@ -4873,8 +4912,17 @@
      "OpenAI model catalog"
     ],
     "specs": {
-     "description": "Built to power complex coding and agentic workflows."
+     "context_tokens": 1050000,
+     "description": "Built to power complex coding and agentic workflows.",
+     "input_modalities": "text, image",
+     "input_price": 2.0,
+     "knowledge_cutoff": "Apr 20, 2026",
+     "max_output_tokens": 128000,
+     "output_modalities": "text",
+     "output_price": 10.0,
+     "reasoning": "reasoning effort: none, low, medium (default), high, xhigh, and max."
     },
+    "specs_checked": "2026-11-17T14:39:38+00:00",
     "status": "active"
    },
    "gpt-6.1-sol": {
@@ -4935,8 +4983,16 @@
      "OpenAI model catalog"
     ],
     "specs": {
-     "description": "The best voice model for audio in, audio out with Chat Completions."
+     "context_tokens": 128000,
+     "description": "The best voice model for audio in, audio out with Chat Completions.",
+     "input_modalities": "text, audio",
+     "input_price": 2.5,
+     "knowledge_cutoff": "Sep 30, 2024",
+     "max_output_tokens": 16384,
+     "output_modalities": "text, audio",
+     "output_price": 10.0
     },
+    "specs_checked": "2026-11-17T14:39:38+00:00",
     "status": "active"
    },
    "gpt-audio-mini": {
@@ -5087,8 +5143,12 @@
      "OpenAI model catalog"
     ],
     "specs": {
-     "description": "Our premier model for natural, expressive voice conversations with smooth interruption handling."
+     "description": "Our premier model for natural, expressive voice conversations with smooth interruption handling.",
+     "input_modalities": "audio, text",
+     "knowledge_cutoff": "Jul 31, 2025",
+     "output_modalities": "audio, text"
     },
+    "specs_checked": "2026-11-17T14:39:38+00:00",
     "status": "active"
    },
    "gpt-live-transcribe": {
@@ -8927,6 +8987,9 @@
   "OpenAI news": {
    "initialized": true,
    "seen": [
+    "c4804b6fbca175b5",
+    "5368932a706414f5",
+    "0ab47f17f2b893d1",
     "1f7e691cac2ce279",
     "b674062f3705a002",
     "fcf63e82cfd7888a",
