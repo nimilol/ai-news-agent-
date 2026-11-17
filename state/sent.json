@@ -1,5 +1,23 @@
 {
  "sent": {
+  "model:openai:gpt-6-2": {
+   "at": "2026-11-17T23:04:04+00:00",
+   "channel": "release",
+   "priority": "P0",
+   "title": "GPT-6.2 + GPT-6.2 Astra"
+  },
+  "model:openai:gpt-6-2-astra": {
+   "at": "2026-11-17T23:04:04+00:00",
+   "channel": "release",
+   "priority": "P0",
+   "title": "GPT-6.2 + GPT-6.2 Astra"
+  },
+  "model:openai:gpt-6-2-sol": {
+   "at": "2026-11-17T23:04:05+00:00",
+   "channel": "release",
+   "priority": "P0",
+   "title": "GPT-6.2 Sol"
+  },
   "title:1m king launch openai partnership trust": {
    "at": "2026-11-16T22:19:08+00:00",
    "channel": "alerts",
@@ -114,11 +132,23 @@
    "priority": "P2",
    "title": "At Holiday Extras, dots get to work before anyone asks"
   },
+  "title:astra gpt-6.2": {
+   "at": "2026-11-17T23:04:04+00:00",
+   "channel": "release",
+   "priority": "P0",
+   "title": "GPT-6.2 + GPT-6.2 Astra"
+  },
   "title:astra gpt-6.2 introduces models openai sol": {
    "at": "2026-11-17T20:58:16+00:00",
    "channel": "digest",
    "priority": "P0",
    "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol models"
+  },
+  "title:astra intelligence law leads legal": {
+   "at": "2026-11-17T23:04:15+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Astra for Law leads in legal intelligence"
   },
   "title:begins embedded evaluations external labs openai research safety": {
    "at": "2026-11-16T22:02:32+00:00",
@@ -144,6 +174,12 @@
    "priority": "P2",
    "title": "Science at the Frontier: How scientists use ChatGPT"
   },
+  "title:chatgpt introducing sales": {
+   "at": "2026-11-17T23:04:15+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Introducing ChatGPT for Sales"
+  },
   "title:chile introducing openai": {
    "at": "2026-11-17T14:39:48+00:00",
    "channel": "alerts",
@@ -156,6 +192,12 @@
    "priority": "P3",
    "title": "OpenCode lists Hy4 flash Free as a new zero-cost model"
   },
+  "title:gpt-6.2 sol": {
+   "at": "2026-11-17T23:04:05+00:00",
+   "channel": "release",
+   "priority": "P0",
+   "title": "GPT-6.2 Sol"
+  },
   "title:hardware ive jony large lease office openai s.f team": {
    "at": "2026-11-17T07:57:43+00:00",
    "channel": "digest",
@@ -167,6 +209,18 @@
    "channel": "digest",
    "priority": "P1",
    "title": "California AG Sues OpenAI Over Rogue Agent Hacking Incidents"
+  },
+  "url:https://developers.openai.com/api/docs/changelog.md": {
+   "at": "2026-11-17T23:04:05+00:00",
+   "channel": "release",
+   "priority": "P0",
+   "title": "GPT-6.2 Sol"
+  },
+  "url:https://developers.openai.com/api/docs/models/all.md": {
+   "at": "2026-11-17T23:04:05+00:00",
+   "channel": "release",
+   "priority": "P0",
+   "title": "GPT-6.2 Sol"
   },
   "url:https://github.com/affaan-m/ecc": {
    "at": "2026-11-17T18:43:32+00:00",
@@ -588,17 +642,29 @@
    "priority": "P2",
    "title": "Advancing computer-use agents for healthcare teams"
   },
+  "url:https://openai.com/index/astra-law-6-2": {
+   "at": "2026-11-17T23:04:15+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Astra for Law leads in legal intelligence"
+  },
   "url:https://openai.com/index/expanding-chatgpt-for-academic-researchers": {
    "at": "2026-11-16T22:19:08+00:00",
    "channel": "alerts",
    "priority": "P2",
    "title": "Broadening access to AI for scientists"
   },
+  "url:https://openai.com/index/introducing-chatgpt-for-sales": {
+   "at": "2026-11-17T23:04:15+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Introducing ChatGPT for Sales"
+  },
   "url:https://openai.com/index/introducing-gpt-6-2-astra-sol": {
-   "at": "2026-11-17T20:58:16+00:00",
-   "channel": "digest",
+   "at": "2026-11-17T23:04:04+00:00",
+   "channel": "release",
    "priority": "P0",
-   "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol models"
+   "title": "GPT-6.2 + GPT-6.2 Astra"
   },
   "url:https://openai.com/index/introducing-openai-for-chile": {
    "at": "2026-11-17T14:39:48+00:00",

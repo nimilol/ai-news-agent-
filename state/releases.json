@@ -1,11 +1,665 @@
 {
- "changes": [],
+ "changes": [
+  {
+   "at": "2026-11-17T23:04:02+00:00",
+   "category": "PRODUCT_OR_FEATURE_ANNOUNCEMENT",
+   "company": "google",
+   "model": "Gemini 4 Hydrogen",
+   "sources": [
+    "Google Developers Blog"
+   ],
+   "title": "Gemini 4 Hydrogen: a faster model for general purpose robotics"
+  },
+  {
+   "at": "2026-11-17T23:04:02+00:00",
+   "category": "PRODUCT_OR_FEATURE_ANNOUNCEMENT",
+   "company": "google",
+   "model": "Gemini 4 Carbon",
+   "sources": [
+    "Google Gemini blog"
+   ],
+   "title": "See what 5 builders are making with Gemini 4 Carbon"
+  },
+  {
+   "at": "2026-11-17T23:04:02+00:00",
+   "category": "PRODUCT_OR_FEATURE_ANNOUNCEMENT",
+   "company": "openai",
+   "model": "GPT-6 Luna",
+   "sources": [
+    "OpenAI API changelog"
+   ],
+   "title": "Feature · Model: gpt-6.2-astra · Model: gpt-6.2-sol · Model: gpt-6.1-terra · Model: gpt-6-luna · API: v1/responses"
+  },
+  {
+   "at": "2026-11-17T23:04:02+00:00",
+   "category": "PRODUCT_OR_FEATURE_ANNOUNCEMENT",
+   "company": "openai",
+   "model": "GPT-6.1 Terra",
+   "sources": [
+    "OpenAI API changelog"
+   ],
+   "title": "Feature · Model: gpt-6.2-astra · Model: gpt-6.2-sol · Model: gpt-6.1-terra · Model: gpt-6-luna · API: v1/responses"
+  },
+  {
+   "at": "2026-11-17T23:04:02+00:00",
+   "category": "DOCUMENTATION_OR_PRICING_CHANGE",
+   "company": "openai",
+   "model": "GPT-6 Astra",
+   "sources": [
+    "OpenAI model catalog"
+   ],
+   "title": "GPT-6 Astra: details changed on OpenAI model catalog"
+  }
+ ],
  "failures": {},
  "health": {},
- "history": {},
- "index": {},
+ "history": {
+  "openai:gpt-6": {
+   "announcement_date": null,
+   "availability_date": null,
+   "availability_status": null,
+   "classification": "UNCONFIRMED_EARLY_SIGNAL",
+   "company": "openai",
+   "comparison_summary": "OpenAI launches GPT-6.2 Astra and Sol on ChatGPT and APIs",
+   "delivery": {
+    "attempts": 0,
+    "last_error": null,
+    "message_ids": [],
+    "notification": null,
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "details": {
+    "reasons": [
+     "only third-party sources so far: TestingCatalog (early signal)"
+    ],
+    "text": "OpenAI launches GPT-6.2 Astra and Sol in ChatGPT Work, Codex and the API, with Astra beating GPT-6 Astra at lower cost and 20% cheaper tokens."
+   },
+   "duplicates": 0,
+   "events": [
+    {
+     "at": "2026-11-17T23:04:02+00:00",
+     "note": "only third-party sources so far: TestingCatalog (early signal)",
+     "type": "detected"
+    }
+   ],
+   "fingerprints": [
+    "https://testingcatalog.com/openai-launches-gpt-6-2-astra-and-sol-on-chatgpt-and-apis"
+   ],
+   "first_detected": "2026-11-17T23:04:02+00:00",
+   "id": "openai:gpt-6",
+   "last_updated": "2026-11-17T23:04:02+00:00",
+   "model_ids": [
+    "GPT-6"
+   ],
+   "model_name": "GPT-6",
+   "official_sources": [
+    {
+     "source": "TestingCatalog (early signal)",
+     "url": "https://www.testingcatalog.com/openai-launches-gpt-6-2-astra-and-sol-on-chatgpt-and-apis/"
+    }
+   ],
+   "previous_model": null,
+   "priority": "P2",
+   "source_url": "https://www.testingcatalog.com/openai-launches-gpt-6-2-astra-and-sol-on-chatgpt-and-apis/",
+   "verification": "UNCONFIRMED"
+  },
+  "openai:gpt-6-2+gpt-6-2-astra": {
+   "announcement_date": "2026-11-17",
+   "availability_date": "2026-11-17",
+   "availability_status": "Not stated in the official sources",
+   "classification": "NEW_MODEL_RELEASE",
+   "company": "openai",
+   "comparison_summary": "compared with GPT-5.5",
+   "delivery": {
+    "attempts": 1,
+    "last_error": null,
+    "message_ids": [
+     689,
+     690
+    ],
+    "notification": "openai:gpt-6-2+gpt-6-2-astra|release|8f76611e19",
+    "receipt": {
+     "at": "2026-11-17T23:04:04+00:00",
+     "message_id": 691,
+     "status": "SENT"
+    },
+    "sent_at": "2026-11-17T23:04:04+00:00",
+    "status": "SENT"
+   },
+   "details": {
+    "ai_model": "gemini/gemini-flash-latest",
+    "api_access": "Available via the Responses API and Chat Completions API, with tool calling requiring the Responses API.",
+    "benchmarks": [],
+    "claims": [
+     {
+      "quote": "Our most capable model for your hardest projects, from start to finish.",
+      "source": 4,
+      "text": "It is OpenAI's most capable model for demanding projects from start to finish."
+     },
+     {
+      "quote": "Use GPT-6.2 Astra for demanding reasoning and coding tasks",
+      "source": 2,
+      "text": "Designed for demanding reasoning and coding tasks."
+     }
+    ],
+    "comparison": {
+     "availability": {
+      "basis": "official specs",
+      "new": null,
+      "previous": "listed as available",
+      "quote": ""
+     },
+     "context": {
+      "basis": "official specs",
+      "new": null,
+      "previous": "1.05M tokens",
+      "quote": ""
+     },
+     "multimodal": {
+      "basis": "official specs",
+      "new": null,
+      "previous": "in: text, image · out: text",
+      "quote": ""
+     },
+     "output": {
+      "basis": "official specs",
+      "new": null,
+      "previous": "128K tokens",
+      "quote": ""
+     },
+     "pricing": {
+      "basis": "official specs",
+      "new": null,
+      "previous": "$5 input / $30 output per 1M tokens",
+      "quote": ""
+     }
+    },
+    "explain": {
+     "care": "Existing integrations relying on the Chat Completions API must update their architecture to the Responses API to use tools.",
+     "different": "Restricts tool calling exclusively to the Responses API and introduces discounted background completion windows.",
+     "does": "Processes text and multimodal inputs across ChatGPT Work, Codex, and OpenAI's APIs, supporting tool calling via the Responses API.",
+     "introduced": "GPT-6.2 Astra, a model designed for demanding reasoning, coding, and computer use tasks.",
+     "problem": "Handling demanding reasoning, coding, and computer use projects efficiently and at lower cost.",
+     "who": "Developers and enterprise users building complex coding agents, professional workflows, and computer use applications."
+    },
+    "flagship": true,
+    "improved": [],
+    "previous_specs": {
+     "context_tokens": 1050000,
+     "description": "A new class of intelligence for coding and professional work.",
+     "input_modalities": "text, image",
+     "input_price": 5.0,
+     "knowledge_cutoff": "Dec 01, 2025",
+     "max_output_tokens": 128000,
+     "output_modalities": "text",
+     "output_price": 30.0
+    },
+    "priority": "P0",
+    "reasons": [
+     "not seen in any official catalog before; introduced by: OpenAI news (announcement)",
+     "not seen in any official catalog before; introduced by: OpenAI news (announcement), OpenAI API changelog (changelog), OpenAI model catalog (listed)"
+    ],
+    "regressed": [],
+    "specs": {
+     "GPT-6.2": {
+      "name": null,
+      "specs": {},
+      "status": null
+     },
+     "gpt-6.2-astra": {
+      "name": "GPT-6.2 Astra",
+      "specs": {
+       "context_tokens": 1050000,
+       "description": "Our most capable model for your hardest projects, from start to finish.",
+       "input_modalities": "text, image",
+       "input_price": 8.0,
+       "knowledge_cutoff": "May 18, 2026",
+       "max_output_tokens": 128000,
+       "output_modalities": "text",
+       "output_price": 40.0
+      },
+      "status": "active"
+     }
+    },
+    "unchanged": [],
+    "whats_new": [
+     "GPT-6.2 Astra provides improved capabilities in professional outputs, coding, computer use, and efficiency.",
+     "Tool calling requires the Responses API instead of Chat Completions.",
+     "Background completion windows of two or eight hours offer up to 40% lower token rates in the Responses API public beta."
+    ]
+   },
+   "duplicates": 0,
+   "events": [
+    {
+     "at": "2026-11-17T23:01:21+00:00",
+     "note": "not seen in any official catalog before; introduced by: OpenAI news (announcement); not seen in any official catalog before; introduced by: OpenAI news (announcement), OpenAI API changelog (changelog), OpenAI model catalog (listed)",
+     "type": "detected"
+    }
+   ],
+   "fingerprints": [
+    "2e6464f4fc41d451",
+    "3591847c1ce2a7ff",
+    "ad6d9afeb066e7b2",
+    "https://developers.openai.com/api/docs/models/all.md#gpt-6.2-astra",
+    "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+   ],
+   "first_detected": "2026-11-17T23:01:21+00:00",
+   "id": "openai:gpt-6-2+gpt-6-2-astra",
+   "last_updated": "2026-11-17T23:04:04+00:00",
+   "model_ids": [
+    "GPT-6.2",
+    "gpt-6.2-astra"
+   ],
+   "model_name": "GPT-6.2 + GPT-6.2 Astra",
+   "official_sources": [
+    {
+     "kind": "announcement",
+     "source": "OpenAI news",
+     "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+    },
+    {
+     "kind": "announcement",
+     "source": "OpenAI news",
+     "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+    },
+    {
+     "kind": "changelog",
+     "source": "OpenAI API changelog",
+     "url": "https://developers.openai.com/api/docs/changelog.md"
+    },
+    {
+     "kind": "changelog",
+     "source": "OpenAI API changelog",
+     "url": "https://developers.openai.com/api/docs/changelog.md"
+    },
+    {
+     "kind": "listed",
+     "source": "OpenAI model catalog",
+     "url": "https://developers.openai.com/api/docs/models/all.md"
+    }
+   ],
+   "previous_model": {
+    "id": "gpt-5.5",
+    "method": "model lineage: same family and tier, previous version in the official catalog",
+    "name": "GPT-5.5"
+   },
+   "priority": "P0",
+   "source_url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+   "verification": "OFFICIAL_CONFIRMED"
+  },
+  "openai:gpt-6-2-astra-pro": {
+   "announcement_date": null,
+   "availability_date": null,
+   "availability_status": null,
+   "classification": "UNCONFIRMED_EARLY_SIGNAL",
+   "company": "openai",
+   "comparison_summary": "OpenRouter lists OpenAI: GPT-6.2 Astra Pro",
+   "delivery": {
+    "attempts": 0,
+    "last_error": null,
+    "message_ids": [],
+    "notification": null,
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "details": {
+    "reasons": [
+     "only third-party sources so far: OpenRouter model list (early signal)"
+    ],
+    "text": "GPT-6.2 Astra Pro is the same underlying model as [GPT-6.2 Astra](https://openrouter.ai/openai/gpt-6.2-astra), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more..."
+   },
+   "duplicates": 0,
+   "events": [
+    {
+     "at": "2026-11-17T23:04:02+00:00",
+     "note": "only third-party sources so far: OpenRouter model list (early signal)",
+     "type": "detected"
+    }
+   ],
+   "fingerprints": [
+    "https://openrouter.ai/openai/gpt-6.2-astra-pro"
+   ],
+   "first_detected": "2026-11-17T23:04:02+00:00",
+   "id": "openai:gpt-6-2-astra-pro",
+   "last_updated": "2026-11-17T23:04:02+00:00",
+   "model_ids": [
+    "gpt-6.2-astra-pro"
+   ],
+   "model_name": "GPT-6.2 Astra Pro",
+   "official_sources": [
+    {
+     "source": "OpenRouter model list (early signal)",
+     "url": "https://openrouter.ai/openai/gpt-6.2-astra-pro"
+    }
+   ],
+   "previous_model": null,
+   "priority": "P2",
+   "source_url": "https://openrouter.ai/openai/gpt-6.2-astra-pro",
+   "verification": "UNCONFIRMED"
+  },
+  "openai:gpt-6-2-sol": {
+   "announcement_date": "2026-11-17",
+   "availability_date": "2026-11-17",
+   "availability_status": "generally available",
+   "classification": "NEW_MODEL_RELEASE",
+   "company": "openai",
+   "comparison_summary": "compared with GPT-6.1 Sol",
+   "delivery": {
+    "attempts": 1,
+    "last_error": null,
+    "message_ids": [
+     692,
+     693
+    ],
+    "notification": "openai:gpt-6-2-sol|release|35ad71f0ad",
+    "receipt": {
+     "at": "2026-11-17T23:04:06+00:00",
+     "message_id": 694,
+     "status": "SENT"
+    },
+    "sent_at": "2026-11-17T23:04:05+00:00",
+    "status": "SENT"
+   },
+   "details": {
+    "ai_model": "gemini/gemini-flash-latest",
+    "api_access": "Available via Responses API and Chat Completions, with tool calling requiring the Responses API.",
+    "benchmarks": [],
+    "claims": [
+     {
+      "quote": "Use GPT-6.2 Astra for demanding reasoning and coding tasks, or GPT-6.2 Sol for everyday coding and agent workflows.",
+      "source": 1,
+      "text": "Designed as the primary model for everyday coding and agent workflows."
+     },
+     {
+      "quote": "Our go-to model for everyday work, from coding to powering agents at scale.",
+      "source": 3,
+      "text": "Serves as the go-to model for daily work ranging from programming to scaling agents."
+     }
+    ],
+    "comparison": {
+     "availability": {
+      "basis": "official specs",
+      "new": "listed as available",
+      "previous": "listed as available",
+      "quote": ""
+     },
+     "context": {
+      "basis": "official specs",
+      "new": "1.05M tokens",
+      "previous": "1.05M tokens",
+      "quote": ""
+     },
+     "multimodal": {
+      "basis": "official specs",
+      "new": "in: text, image · out: text",
+      "previous": "in: text, image · out: text",
+      "quote": ""
+     },
+     "output": {
+      "basis": "official specs",
+      "new": "128K tokens",
+      "previous": "128K tokens",
+      "quote": ""
+     },
+     "pricing": {
+      "basis": "official specs",
+      "new": "$2 input / $10 output per 1M tokens",
+      "previous": "$2 input / $10 output per 1M tokens",
+      "quote": ""
+     },
+     "reasoning": {
+      "basis": "official specs",
+      "new": null,
+      "previous": "reasoning effort: low, medium (default), high, xhigh, and max.",
+      "quote": ""
+     },
+     "tools": {
+      "basis": "company statement",
+      "new": "Tool calling requires the Responses API.",
+      "previous": null,
+      "quote": "Tool calling requires the Responses API."
+     }
+    },
+    "explain": {
+     "care": "Integrations must use the Responses API to access tool calling features and discounted background processing.",
+     "different": "Restricts tool calling exclusively to the Responses API rather than Chat Completions.",
+     "does": "Handles general coding, agent tasks, and background completions via the Responses API and Chat Completions.",
+     "introduced": "GPT-6.2 Sol, an everyday model for coding and agent workflows.",
+     "problem": "Reduces costs for non-immediate tasks through background completion windows.",
+     "who": "Developers and teams building everyday coding tools and scalable agent systems."
+    },
+    "flagship": true,
+    "improved": [],
+    "previous_specs": {
+     "context_tokens": 1050000,
+     "description": "Near-Astra performance for complex work at a lower cost.",
+     "input_modalities": "text, image",
+     "input_price": 2.0,
+     "knowledge_cutoff": "Apr 30, 2026",
+     "max_output_tokens": 128000,
+     "output_modalities": "text",
+     "output_price": 10.0,
+     "reasoning": "reasoning effort: low, medium (default), high, xhigh, and max."
+    },
+    "priority": "P0",
+    "reasons": [
+     "not seen in any official catalog before; introduced by: OpenAI API changelog (changelog), OpenAI model catalog (listed)"
+    ],
+    "regressed": [],
+    "specs": {
+     "gpt-6.2-sol": {
+      "name": "GPT-6.2 Sol",
+      "specs": {
+       "context_tokens": 1050000,
+       "description": "Our go-to model for everyday work, from coding to powering agents at scale.",
+       "input_modalities": "text, image",
+       "input_price": 2.0,
+       "knowledge_cutoff": "Jun 01, 2026",
+       "max_output_tokens": 128000,
+       "output_modalities": "text",
+       "output_price": 10.0
+      },
+      "status": "active"
+     }
+    },
+    "unchanged": [
+     "Context window unchanged (1.05M tokens)",
+     "Output limit unchanged (128K tokens)",
+     "Input price unchanged ($2 per 1M tokens)",
+     "Output price unchanged ($10 per 1M tokens)"
+    ],
+    "whats_new": [
+     "GPT-6.2 Sol supports both the Responses API and Chat Completions, while tool calling is restricted to the Responses API.",
+     "Background completions in the Responses API public beta offer reduced token rates for two-hour and eight-hour processing windows."
+    ]
+   },
+   "duplicates": 0,
+   "events": [
+    {
+     "at": "2026-11-17T23:04:02+00:00",
+     "note": "not seen in any official catalog before; introduced by: OpenAI API changelog (changelog), OpenAI model catalog (listed)",
+     "type": "detected"
+    }
+   ],
+   "fingerprints": [
+    "3591847c1ce2a7ff",
+    "ad6d9afeb066e7b2",
+    "https://developers.openai.com/api/docs/models/all.md#gpt-6.2-sol"
+   ],
+   "first_detected": "2026-11-17T23:04:02+00:00",
+   "id": "openai:gpt-6-2-sol",
+   "last_updated": "2026-11-17T23:04:05+00:00",
+   "model_ids": [
+    "gpt-6.2-sol"
+   ],
+   "model_name": "GPT-6.2 Sol",
+   "official_sources": [
+    {
+     "kind": "changelog",
+     "source": "OpenAI API changelog",
+     "url": "https://developers.openai.com/api/docs/changelog.md"
+    },
+    {
+     "kind": "changelog",
+     "source": "OpenAI API changelog",
+     "url": "https://developers.openai.com/api/docs/changelog.md"
+    },
+    {
+     "kind": "listed",
+     "source": "OpenAI model catalog",
+     "url": "https://developers.openai.com/api/docs/models/all.md"
+    }
+   ],
+   "previous_model": {
+    "id": "gpt-6.1-sol",
+    "method": "model lineage: same family and tier, previous version in the official catalog",
+    "name": "GPT-6.1 Sol"
+   },
+   "priority": "P0",
+   "source_url": "https://developers.openai.com/api/docs/changelog.md",
+   "verification": "OFFICIAL_CONFIRMED"
+  },
+  "openai:gpt-6-2-sol-pro": {
+   "announcement_date": null,
+   "availability_date": null,
+   "availability_status": null,
+   "classification": "UNCONFIRMED_EARLY_SIGNAL",
+   "company": "openai",
+   "comparison_summary": "OpenRouter lists OpenAI: GPT-6.2 Sol Pro",
+   "delivery": {
+    "attempts": 0,
+    "last_error": null,
+    "message_ids": [],
+    "notification": null,
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "details": {
+    "reasons": [
+     "only third-party sources so far: OpenRouter model list (early signal)"
+    ],
+    "text": "GPT-6.2 Sol Pro is the same underlying model as [GPT-6.2 Sol](https://openrouter.ai/openai/gpt-6.2-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more..."
+   },
+   "duplicates": 0,
+   "events": [
+    {
+     "at": "2026-11-17T23:04:02+00:00",
+     "note": "only third-party sources so far: OpenRouter model list (early signal)",
+     "type": "detected"
+    }
+   ],
+   "fingerprints": [
+    "https://openrouter.ai/openai/gpt-6.2-sol-pro"
+   ],
+   "first_detected": "2026-11-17T23:04:02+00:00",
+   "id": "openai:gpt-6-2-sol-pro",
+   "last_updated": "2026-11-17T23:04:02+00:00",
+   "model_ids": [
+    "gpt-6.2-sol-pro"
+   ],
+   "model_name": "GPT-6.2 Sol Pro",
+   "official_sources": [
+    {
+     "source": "OpenRouter model list (early signal)",
+     "url": "https://openrouter.ai/openai/gpt-6.2-sol-pro"
+    }
+   ],
+   "previous_model": null,
+   "priority": "P2",
+   "source_url": "https://openrouter.ai/openai/gpt-6.2-sol-pro",
+   "verification": "UNCONFIRMED"
+  }
+ },
+ "index": {
+  "openai:gpt-6": "openai:gpt-6",
+  "openai:gpt-6-2": "openai:gpt-6-2+gpt-6-2-astra",
+  "openai:gpt-6-2-astra": "openai:gpt-6-2+gpt-6-2-astra",
+  "openai:gpt-6-2-astra-pro": "openai:gpt-6-2-astra-pro",
+  "openai:gpt-6-2-sol": "openai:gpt-6-2-sol",
+  "openai:gpt-6-2-sol-pro": "openai:gpt-6-2-sol-pro"
+ },
  "meta": {},
- "outbox": {},
+ "outbox": {
+  "openai:gpt-6-2+gpt-6-2-astra|release|8f76611e19": {
+   "attempts": 1,
+   "category": "NEW_MODEL_RELEASE",
+   "created": "2026-11-17T23:01:21+00:00",
+   "id": "openai:gpt-6-2+gpt-6-2-astra|release|8f76611e19",
+   "kind": "release",
+   "last_error": null,
+   "log": [
+    "2026-11-17T23:04:04+00:00 SENT: Telegram confirmed message id(s) [689, 690]",
+    "2026-11-17T23:04:04+00:00 delivery receipt SENT (message id 691)"
+   ],
+   "model_name": "GPT-6.2 + GPT-6.2 Astra",
+   "parts": [
+    "🚨 <b>NEW AI MODEL RELEASE</b>\n<i>🚨 NEW MODEL RELEASES · 🔴 P0 Critical · flagship</i>\n\n<b>COMPANY:</b>\nOpenAI (GPT)\n\n<b>NEW MODEL:</b>\nGPT-6.2 + GPT-6.2 Astra\n<code>GPT-6.2</code>, <code>gpt-6.2-astra</code>\n\n<b>RELEASE INFORMATION:</b>\n• Announcement date: 17 November 2026\n• Availability date: 17 November 2026\n• Model category: New model release\n• Availability status: Not stated in the official sources\n• API access: Available via the Responses API and Chat Completions API, with tool calling requiring the Responses API.\n\n<b>WHAT'S NEW:</b>\n• GPT-6.2 Astra provides improved capabilities in professional outputs, coding, computer use, and efficiency.\n• Tool calling requires the Responses API instead of Chat Completions.\n• Background completion windows of two or eight hours offer up to 40% lower token rates in the Responses API public beta.\n\n<blockquote expandable><b>📘 Explained</b>\n<b>What was introduced:</b> GPT-6.2 Astra, a model designed for demanding reasoning, coding, and computer use tasks.\n<b>What it actually does:</b> Processes text and multimodal inputs across ChatGPT Work, Codex, and OpenAI&#x27;s APIs, supporting tool calling via the Responses API.\n<b>What problem it solves:</b> Handling demanding reasoning, coding, and computer use projects efficiently and at lower cost.\n<b>How it differs from before:</b> Restricts tool calling exclusively to the Responses API and introduces discounted background completion windows.\n<b>Who benefits:</b> Developers and enterprise users building complex coding agents, professional workflows, and computer use applications.\n<b>Why creators and developers should care:</b> Existing integrations relying on the Chat Completions API must update their architecture to the Responses API to use tools.</blockquote>\n\n<b>COMPARISON WITH PREVIOUS MODEL:</b>\nPrevious model: GPT-5.5 (<code>gpt-5.5</code>)\nNew model: GPT-6.2 + GPT-6.2 Astra (<code>GPT-6.2</code>)\n<i>How the previous model was chosen: model lineage: same family and tier, previous version in the official catalog</i>\n\n<b>🖼 Multimodal</b> <i>(official specs)</i>\n• Previous: in: text, image · out: text\n• New: <i>not established</i>\n\n<b>📏 Context window</b> <i>(official specs)</i>\n• Previous: 1.05M tokens\n• New: <i>not established</i>\n\n<b>📤 Output limit</b> <i>(official specs)</i>\n• Previous: 128K tokens\n• New: <i>not established</i>\n\n<b>💰 API pricing</b> <i>(official specs)</i>\n• Previous: $5 input / $30 output per 1M tokens\n• New: <i>not established</i>\n\n<b>🌍 Availability</b> <i>(official specs)</i>\n• Previous: listed as available\n• New: <i>not established</i>\n\n<b>📈 Benchmarks</b>\n• Company-reported: none found in the official sources\n• Independent: none collected (the agent only reads official sources)\n\n<b>💬 Qualitative claims by the company</b>\n• It is OpenAI&#x27;s most capable model for demanding projects from start to finish.\n• Designed for demanding reasoning and coding tasks.\n\n<b>WHAT ACTUALLY IMPROVED:</b>\n• OpenAI introduced GPT-6.2 Astra alongside Sol, focusing on demanding reasoning, coding, and computer use. <i>(interpretation by gemini/gemini-flash-latest, from the sources above)</i>\n• Tool use for GPT-6.2 models now strictly requires using the Responses API rather than Chat Completions. <i>(interpretation by gemini/gemini-flash-latest, from the sources above)</i>\n• Developers can lower token rates by 30% to 40% by utilizing background completion windows in the Responses API. <i>(interpretation by gemini/gemini-flash-latest, from the sources above)</i>\n\n<b>WHAT HAS NOT BEEN ESTABLISHED:</b>\n• No evidence yet for: Architecture / family, Reasoning, Coding, Math &amp; problem-solving, Tool use &amp; agents, Speed &amp; latency\n• Benchmark scores (none in the official sources)\n• Independent benchmark results\n<i>(1/2)</i>",
+    "<b>OFFICIAL SOURCES:</b>\n• Original announcement: <a href=\"https://openai.com/index/introducing-gpt-6-2-astra-sol\">OpenAI news</a>\n• Official documentation: <a href=\"https://developers.openai.com/api/docs/changelog.md\">OpenAI API changelog</a>\n• Model information / API page: <a href=\"https://developers.openai.com/api/docs/models/all.md\">OpenAI model catalog</a>\n\n<b>WHY THIS MATTERS:</b>\nDevelopers building agentic tools or complex reasoning systems must migrate to the Responses API to use tool calling with GPT-6.2. In exchange, background execution windows provide substantial cost savings for non-latency-sensitive workflows.\n\n<b>💡 CONTENT OPPORTUNITIES</b>\n<i>Based on: GPT-6.2 + GPT-6.2 Astra</i>\n<blockquote expandable><b>A. NEWS: OpenAI Introduces GPT-6.2 Astra and Sol</b>\n<i>Angle:</i> Overview of the GPT-6.2 release, new capabilities, and integration changes in the API.\n<i>Why it's interesting:</i> It introduces OpenAI&#x27;s newest flagship models and changes how API tool calling works.\n<i>Research or testing needed:</i> Review the GPT-6.2 migration guide to verify what changes between Chat Completions and the Responses API.\n\n<b>B. EDUCATION: Migrating to the Responses API for GPT-6.2 Tool Calling</b>\n<i>Angle:</i> A practical walkthrough on moving from Chat Completions to the Responses API for agent tool use.\n<i>Why it's interesting:</i> GPT-6.2 requires the Responses API for tool calling, making migration mandatory for builders.\n<i>Research or testing needed:</i> Test code samples implementing tool calling on the Responses API endpoint.\n\n<b>C. ANALYSIS: GPT-6.2 Astra vs Sol: Picking the Right Model and Window</b>\n<i>Angle:</i> Analyzing the trade-offs between Astra and Sol, as well as the cost savings from background completion windows.\n<i>Why it's interesting:</i> Helps developers optimize costs by choosing the right tier and latency tolerance for their workloads.\n<i>Research or testing needed:</i> Measure throughput and turnaround times on the two-hour and eight-hour background windows.\n\n<i>Ideas only. You decide what becomes a video or post.</i></blockquote>\n\n<b>VERIFICATION:</b>\nOFFICIAL CONFIRMED\n<i>not seen in any official catalog before; introduced by: OpenAI news (announcement); not seen in any official catalog before; introduced by: OpenAI news (announcement), OpenAI API changelog (changelog), OpenAI model catalog (listed)</i>\n<i>AI reading by gemini/gemini-flash-latest; 1 unsupported AI statements discarded</i>\n\n<b>DELIVERY:</b>\nPending Telegram confirmation.\n<i>(2/2)</i>"
+   ],
+   "priority": "P0",
+   "receipt": {
+    "at": "2026-11-17T23:04:04+00:00",
+    "message_id": 691,
+    "status": "SENT"
+   },
+   "release_id": "openai:gpt-6-2+gpt-6-2-astra",
+   "sent_at": "2026-11-17T23:04:04+00:00",
+   "sent_parts": {
+    "0": {
+     "at": "2026-11-17T23:04:03+00:00",
+     "message_id": 689,
+     "telegram_date": 1794956643
+    },
+    "1": {
+     "at": "2026-11-17T23:04:03+00:00",
+     "message_id": 690,
+     "telegram_date": 1794956643
+    }
+   },
+   "status": "SENT",
+   "verification": "OFFICIAL_CONFIRMED"
+  },
+  "openai:gpt-6-2-sol|release|35ad71f0ad": {
+   "attempts": 1,
+   "category": "NEW_MODEL_RELEASE",
+   "created": "2026-11-17T23:04:02+00:00",
+   "id": "openai:gpt-6-2-sol|release|35ad71f0ad",
+   "kind": "release",
+   "last_error": null,
+   "log": [
+    "2026-11-17T23:04:05+00:00 SENT: Telegram confirmed message id(s) [692, 693]",
+    "2026-11-17T23:04:06+00:00 delivery receipt SENT (message id 694)"
+   ],
+   "model_name": "GPT-6.2 Sol",
+   "parts": [
+    "🚨 <b>NEW AI MODEL RELEASE</b>\n<i>🚨 NEW MODEL RELEASES · 🔴 P0 Critical · flagship</i>\n\n<b>COMPANY:</b>\nOpenAI (GPT)\n\n<b>NEW MODEL:</b>\nGPT-6.2 Sol\n<code>gpt-6.2-sol</code>\n\n<b>RELEASE INFORMATION:</b>\n• Announcement date: 17 November 2026\n• Availability date: 17 November 2026\n• Model category: New model release\n• Availability status: generally available\n• API access: Available via Responses API and Chat Completions, with tool calling requiring the Responses API.\n\n<b>WHAT'S NEW:</b>\n• GPT-6.2 Sol supports both the Responses API and Chat Completions, while tool calling is restricted to the Responses API.\n• Background completions in the Responses API public beta offer reduced token rates for two-hour and eight-hour processing windows.\n\n<blockquote expandable><b>📘 Explained</b>\n<b>What was introduced:</b> GPT-6.2 Sol, an everyday model for coding and agent workflows.\n<b>What it actually does:</b> Handles general coding, agent tasks, and background completions via the Responses API and Chat Completions.\n<b>What problem it solves:</b> Reduces costs for non-immediate tasks through background completion windows.\n<b>How it differs from before:</b> Restricts tool calling exclusively to the Responses API rather than Chat Completions.\n<b>Who benefits:</b> Developers and teams building everyday coding tools and scalable agent systems.\n<b>Why creators and developers should care:</b> Integrations must use the Responses API to access tool calling features and discounted background processing.</blockquote>\n\n<b>COMPARISON WITH PREVIOUS MODEL:</b>\nPrevious model: GPT-6.1 Sol (<code>gpt-6.1-sol</code>)\nNew model: GPT-6.2 Sol (<code>gpt-6.2-sol</code>)\n<i>How the previous model was chosen: model lineage: same family and tier, previous version in the official catalog</i>\n\n<b>🧠 Reasoning</b> <i>(official specs)</i>\n• Previous: reasoning effort: low, medium (default), high, xhigh, and max.\n• New: <i>not established</i>\n\n<b>🖼 Multimodal</b> <i>(official specs)</i>\n• Previous: in: text, image · out: text\n• New: in: text, image · out: text\n\n<b>📏 Context window</b> <i>(official specs)</i>\n• Previous: 1.05M tokens\n• New: 1.05M tokens\n\n<b>📤 Output limit</b> <i>(official specs)</i>\n• Previous: 128K tokens\n• New: 128K tokens\n\n<b>🛠 Tool use &amp; agents</b> <i>(company statement)</i>\n• Previous: <i>not established</i>\n• New: Tool calling requires the Responses API.\n\n<b>💰 API pricing</b> <i>(official specs)</i>\n• Previous: $2 input / $10 output per 1M tokens\n• New: $2 input / $10 output per 1M tokens\n\n<b>🌍 Availability</b> <i>(official specs)</i>\n• Previous: listed as available\n• New: listed as available\n\n<b>📈 Benchmarks</b>\n• Company-reported: none found in the official sources\n• Independent: none collected (the agent only reads official sources)\n\n<b>💬 Qualitative claims by the company</b>\n• Designed as the primary model for everyday coding and agent workflows.\n• Serves as the go-to model for daily work ranging from programming to scaling agents.\n\n<b>WHAT ACTUALLY IMPROVED:</b>\n• GPT-6.2 Sol is positioned for standard coding tasks and scalable agent architectures. <i>(interpretation by gemini/gemini-flash-latest, from the sources above)</i>\n• Tool execution for the model has been made exclusive to the Responses API rather than standard Chat Completions. <i>(interpretation by gemini/gemini-flash-latest, from the sources above)</i>\n• Developers can leverage background completion windows to reduce token costs by up to 40%. <i>(interpretation by gemini/gemini-flash-latest, from the sources above)</i>\n<i>(1/2)</i>",
+    "<b>WHAT HAS NOT BEEN ESTABLISHED:</b>\n• No evidence yet for: Architecture / family, Coding, Math &amp; problem-solving, Speed &amp; latency\n• Benchmark scores (none in the official sources)\n• Independent benchmark results\n• Unchanged: Context window unchanged (1.05M tokens); Output limit unchanged (128K tokens); Input price unchanged ($2 per 1M tokens); Output price unchanged ($10 per 1M tokens)\n\n<b>OFFICIAL SOURCES:</b>\n• Original announcement: not published yet (the release was found in the official docs)\n• Official documentation: <a href=\"https://developers.openai.com/api/docs/changelog.md\">OpenAI API changelog</a>\n• Model information / API page: <a href=\"https://developers.openai.com/api/docs/models/all.md\">OpenAI model catalog</a>\n\n<b>WHY THIS MATTERS:</b>\nGPT-6.2 Sol provides an everyday coding and agent-oriented engine that requires adopting the Responses API for tool calling. Builders can also significantly cut token expenses by utilizing background execution windows.\n\n<b>💡 CONTENT OPPORTUNITIES</b>\n<i>Based on: GPT-6.2 Sol</i>\n<blockquote expandable><b>A. NEWS: OpenAI Introduces GPT-6.2 Sol with Responses API Tooling</b>\n<i>Angle:</i> Coverage of the GPT-6.2 Sol release and API access requirements.\n<i>Why it's interesting:</i> Developers need to know about the new model and the shift requiring the Responses API for tool calling.\n<i>Research or testing needed:</i> Review the GPT-6.2 migration guide to verify what changes from existing implementations.\n\n<b>B. EDUCATION: How to Implement Tool Calling with GPT-6.2 Sol on the Responses API</b>\n<i>Angle:</i> A technical tutorial on setting up agents and tools using the Responses API.\n<i>Why it's interesting:</i> Because tool calling is restricted to the Responses API, legacy Chat Completions code must be adapted.\n<i>Research or testing needed:</i> Test tool calling payloads and migration steps in the Responses API.\n\n<b>C. ANALYSIS: Responses API Background Windows: Analyzing the 30% to 40% Cost Savings</b>\n<i>Angle:</i> An evaluation of using two-hour and eight-hour completion windows for agent workloads.\n<i>Why it's interesting:</i> Teams running high-volume agents can significantly optimize their operational spend.\n<i>Research or testing needed:</i> Measure latency and evaluate batch workflows against the background window timelines.\n\n<i>Ideas only. You decide what becomes a video or post.</i></blockquote>\n\n<b>VERIFICATION:</b>\nOFFICIAL CONFIRMED\n<i>not seen in any official catalog before; introduced by: OpenAI API changelog (changelog), OpenAI model catalog (listed)</i>\n<i>AI reading by gemini/gemini-flash-latest; 1 unsupported AI statements discarded</i>\n\n<b>DELIVERY:</b>\nPending Telegram confirmation.\n<i>(2/2)</i>"
+   ],
+   "priority": "P0",
+   "receipt": {
+    "at": "2026-11-17T23:04:06+00:00",
+    "message_id": 694,
+    "status": "SENT"
+   },
+   "release_id": "openai:gpt-6-2-sol",
+   "sent_at": "2026-11-17T23:04:05+00:00",
+   "sent_parts": {
+    "0": {
+     "at": "2026-11-17T23:04:05+00:00",
+     "message_id": 692,
+     "telegram_date": 1794956645
+    },
+    "1": {
+     "at": "2026-11-17T23:04:05+00:00",
+     "message_id": 693,
+     "telegram_date": 1794956645
+    }
+   },
+   "status": "SENT",
+   "verification": "OFFICIAL_CONFIRMED"
+  }
+ },
  "registry": {
   "alibaba": {
    "Qwen-Audio-3.0-TTS-Plus": {
@@ -4855,7 +5509,7 @@
     ],
     "specs": {
      "context_tokens": 1050000,
-     "description": "Our most capable model for the most demanding work.",
+     "description": "A reasoning model for complex coding and professional work.",
      "input_modalities": "text, image",
      "input_price": 10.0,
      "knowledge_cutoff": "Apr 30, 2026",
@@ -4963,6 +5617,28 @@
      "reasoning": "reasoning effort: none, low, medium (default), high, xhigh, and max."
     },
     "specs_checked": "2026-11-16T22:18:58+00:00",
+    "status": "active"
+   },
+   "gpt-6.2-astra": {
+    "first_seen": "2026-11-17T22:59:05+00:00",
+    "name": "GPT-6.2 Astra",
+    "sources": [
+     "OpenAI model catalog"
+    ],
+    "specs": {
+     "description": "Our most capable model for your hardest projects, from start to finish."
+    },
+    "status": "active"
+   },
+   "gpt-6.2-sol": {
+    "first_seen": "2026-11-17T22:59:05+00:00",
+    "name": "GPT-6.2 Sol",
+    "sources": [
+     "OpenAI model catalog"
+    ],
+    "specs": {
+     "description": "Our go-to model for everyday work, from coding to powering agents at scale."
+    },
     "status": "active"
    },
    "gpt-audio": {
@@ -5158,8 +5834,11 @@
      "OpenAI model catalog"
     ],
     "specs": {
-     "description": "Low-latency speech-to-text model for realtime transcription"
+     "description": "Low-latency speech-to-text model for realtime transcription",
+     "input_modalities": "audio, text",
+     "output_modalities": "text"
     },
+    "specs_checked": "2026-11-17T23:04:02+00:00",
     "status": "active"
    },
    "gpt-oss-120b": {
@@ -5169,8 +5848,14 @@
      "OpenAI model catalog"
     ],
     "specs": {
-     "description": "Most powerful open-weight model, fits into an H100 GPU"
+     "context_tokens": 131072,
+     "description": "Most powerful open-weight model, fits into an H100 GPU",
+     "input_modalities": "text",
+     "knowledge_cutoff": "Jun 01, 2024",
+     "max_output_tokens": 131072,
+     "output_modalities": "text"
     },
+    "specs_checked": "2026-11-17T23:04:02+00:00",
     "status": "active"
    },
    "gpt-oss-20b": {
@@ -5180,8 +5865,14 @@
      "OpenAI model catalog"
     ],
     "specs": {
-     "description": "Medium-sized open-weight model for low latency"
+     "context_tokens": 131072,
+     "description": "Medium-sized open-weight model for low latency",
+     "input_modalities": "text",
+     "knowledge_cutoff": "Jun 01, 2024",
+     "max_output_tokens": 131072,
+     "output_modalities": "text"
     },
+    "specs_checked": "2026-11-17T23:04:02+00:00",
     "status": "active"
    },
    "gpt-realtime": {
@@ -5202,8 +5893,16 @@
      "OpenAI model catalog"
     ],
     "specs": {
-     "description": "The best voice model for audio in, audio out"
+     "context_tokens": 32000,
+     "description": "The best voice model for audio in, audio out",
+     "input_modalities": "text, audio, image",
+     "input_price": 4.0,
+     "knowledge_cutoff": "Sep 30, 2024",
+     "max_output_tokens": 4096,
+     "output_modalities": "text, audio",
+     "output_price": 16.0
     },
+    "specs_checked": "2026-11-17T23:04:02+00:00",
     "status": "active"
    },
    "gpt-realtime-2": {
@@ -5213,8 +5912,16 @@
      "OpenAI model catalog"
     ],
     "specs": {
-     "description": "Reasoning model with tool use"
+     "context_tokens": 128000,
+     "description": "Reasoning model with tool use",
+     "input_modalities": "text, audio, image",
+     "input_price": 4.0,
+     "knowledge_cutoff": "Sep 30, 2024",
+     "max_output_tokens": 32000,
+     "output_modalities": "text, audio",
+     "output_price": 24.0
     },
+    "specs_checked": "2026-11-17T23:04:02+00:00",
     "status": "active"
    },
    "gpt-realtime-2.1": {
@@ -5224,8 +5931,16 @@
      "OpenAI model catalog"
     ],
     "specs": {
-     "description": "Reasoning model with tool use"
+     "context_tokens": 128000,
+     "description": "Reasoning model with tool use",
+     "input_modalities": "text, audio, image",
+     "input_price": 4.0,
+     "knowledge_cutoff": "Sep 30, 2024",
+     "max_output_tokens": 32000,
+     "output_modalities": "text, audio",
+     "output_price": 24.0
     },
+    "specs_checked": "2026-11-17T23:04:02+00:00",
     "status": "active"
    },
    "gpt-realtime-2.1-mini": {
@@ -5235,8 +5950,16 @@
      "OpenAI model catalog"
     ],
     "specs": {
-     "description": "Reasoning model with tool use"
+     "context_tokens": 128000,
+     "description": "Reasoning model with tool use",
+     "input_modalities": "text, audio, image",
+     "input_price": 0.6,
+     "knowledge_cutoff": "Sep 30, 2024",
+     "max_output_tokens": 32000,
+     "output_modalities": "text, audio",
+     "output_price": 2.4
     },
+    "specs_checked": "2026-11-17T23:04:03+00:00",
     "status": "active"
    },
    "gpt-realtime-mini": {
@@ -5257,8 +5980,14 @@
      "OpenAI model catalog"
     ],
     "specs": {
-     "description": "Streaming speech-to-speech translation model"
+     "context_tokens": 16000,
+     "description": "Streaming speech-to-speech translation model",
+     "input_modalities": "audio",
+     "knowledge_cutoff": "Sep 30, 2024",
+     "max_output_tokens": 2000,
+     "output_modalities": "audio, text"
     },
+    "specs_checked": "2026-11-17T23:04:03+00:00",
     "status": "active"
    },
    "gpt-realtime-whisper": {
@@ -6655,6 +7384,7 @@
   "Claude Platform release notes": {
    "initialized": true,
    "seen": [
+    "372dfc8cab009bc2",
     "7b006ccdae83e3e8",
     "7fe112731c3cd618",
     "23bc5af8ae6d53b4",
@@ -7893,6 +8623,11 @@
   "Gemini app release notes": {
    "initialized": true,
    "seen": [
+    "89b8347b7187c0e2",
+    "46c34ea8001c487e",
+    "e61f65dc6b528f3e",
+    "66b3b274edc07ad7",
+    "16532b40a39c2c5f",
     "80c47724e322268d",
     "120b6d70e570d66e",
     "91323c8665f33a46",
@@ -8169,6 +8904,9 @@
   "Google Developers Blog": {
    "initialized": true,
    "seen": [
+    "93e75ce8d95e55a0",
+    "7716055afcc9ede1",
+    "3feb3569ae69ecc9",
     "e7415fd7df8f9999",
     "e32a362100cefe9c",
     "fe77526eb86915fb",
@@ -8194,6 +8932,8 @@
   "Google Gemini blog": {
    "initialized": true,
    "seen": [
+    "fa769522129537ae",
+    "9c971b7490b900a5",
     "e6125411e87c4537",
     "d059a531ef146aee",
     "266ffd5bcd58762a",
@@ -8359,6 +9099,8 @@
   "OpenAI API changelog": {
    "initialized": true,
    "seen": [
+    "dcbc84eb4767a216",
+    "816df30f2d12a363",
     "408dbd58db30c140",
     "cee198e380ac3583",
     "b453a67688bbc6c0",
@@ -8779,7 +9521,7 @@
      "status": "active"
     },
     "gpt-6-astra": {
-     "h": "88a1c5ad33c5",
+     "h": "11a9f2f5421b",
      "status": "active"
     },
     "gpt-6-cyber": {
@@ -8800,6 +9542,14 @@
     },
     "gpt-6.1-terra": {
      "h": "4945ffe1e5a3",
+     "status": "active"
+    },
+    "gpt-6.2-astra": {
+     "h": "7780088eef78",
+     "status": "active"
+    },
+    "gpt-6.2-sol": {
+     "h": "848273931de1",
      "status": "active"
     },
     "gpt-audio": {
@@ -8987,6 +9737,11 @@
   "OpenAI news": {
    "initialized": true,
    "seen": [
+    "524261da082104d6",
+    "23b98edb8005c3c0",
+    "6addf329a055b8f1",
+    "bb8ba645dce9bd30",
+    "364e2226c923dcfc",
     "c4804b6fbca175b5",
     "5368932a706414f5",
     "0ab47f17f2b893d1",
@@ -10402,6 +11157,10 @@
   "OpenRouter model list (early signal)": {
    "initialized": true,
    "seen": [
+    "openai/gpt-6.2-astra-pro",
+    "openai/gpt-6.2-astra",
+    "openai/gpt-6.2-sol-pro",
+    "openai/gpt-6.2-sol",
     "qwen/qwen4-max",
     "google/gemini-4-hydrogen",
     "google/gemini-4-carbon",
@@ -10613,6 +11372,7 @@
   "TestingCatalog (early signal)": {
    "initialized": true,
    "seen": [
+    "883b689bc385c548",
     "9c6281437cbcd9ec",
     "33243d02f346d950",
     "ba79a62cae209402",
@@ -10647,6 +11407,8 @@
   "models.dev listings (early signal)": {
    "initialized": true,
    "seen": [
+    "openai/gpt-6.2-sol",
+    "openai/gpt-6.2-astra",
     "anthropic/claude-opus-4-5-20251101",
     "anthropic/claude-sonnet-5-5",
     "anthropic/claude-haiku-4-5-20251001",
@@ -10951,6 +11713,7 @@
   "xAI news": {
    "initialized": true,
    "seen": [
+    "3f2d8fb7d5e7931f",
     "4277508f271b9dfc",
     "eff4b8a9b7ff453f",
     "5bb9ff693ed5b910",
