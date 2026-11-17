@@ -132,6 +132,11 @@
    "priority": "P1",
    "title": "California AG Sues OpenAI Over Rogue Agent Hacking Incidents"
   },
+  "url:https://github.com/affaan-m/ecc": {
+   "at": "2026-11-17T18:43:32+00:00",
+   "channel": "discovery",
+   "title": "affaan-m/ECC"
+  },
   "url:https://github.com/ag-ui-protocol/ag-ui": {
    "at": "2026-11-17T08:15:30+00:00",
    "channel": "discovery",
@@ -178,6 +183,16 @@
    "channel": "discovery",
    "title": "elementalsouls/Claude-BugHunter"
   },
+  "url:https://github.com/google-deepmind/gbench": {
+   "at": "2026-11-17T18:43:32+00:00",
+   "channel": "discovery",
+   "title": "google-deepmind/gbench"
+  },
+  "url:https://github.com/google-research/paper-orchestra": {
+   "at": "2026-11-17T18:43:32+00:00",
+   "channel": "discovery",
+   "title": "google-research/paper-orchestra"
+  },
   "url:https://github.com/huggingface/pybot": {
    "at": "2026-11-16T23:48:27+00:00",
    "channel": "discovery",
@@ -193,15 +208,35 @@
    "channel": "discovery",
    "title": "kajisho5/ffmpeg-skill"
   },
+  "url:https://github.com/morganlinton/beautifulrust": {
+   "at": "2026-11-17T18:43:32+00:00",
+   "channel": "discovery",
+   "title": "morganlinton/BeautifulRust"
+  },
   "url:https://github.com/mvanhorn/last30days-skill": {
    "at": "2026-11-16T23:48:27+00:00",
    "channel": "discovery",
    "title": "mvanhorn/last30days-skill"
   },
+  "url:https://github.com/obra/superpowers": {
+   "at": "2026-11-17T18:43:32+00:00",
+   "channel": "discovery",
+   "title": "obra/superpowers"
+  },
   "url:https://github.com/oldcircle/geo-sleuth": {
    "at": "2026-11-16T23:48:27+00:00",
    "channel": "discovery",
    "title": "Oldcircle/geo-sleuth"
+  },
+  "url:https://github.com/qybaihe/mu": {
+   "at": "2026-11-17T18:43:32+00:00",
+   "channel": "discovery",
+   "title": "qybaihe/mu"
+  },
+  "url:https://github.com/tencent/loopforge": {
+   "at": "2026-11-17T18:43:32+00:00",
+   "channel": "discovery",
+   "title": "Tencent/LoopForge"
   },
   "url:https://github.com/wgjsg/agilex-docs-mcp": {
    "at": "2026-11-16T23:48:27+00:00",
@@ -217,6 +252,11 @@
    "at": "2026-11-17T08:15:30+00:00",
    "channel": "discovery",
    "title": "speridlabs/idol"
+  },
+  "url:https://huggingface.co/zyphra/zonos3-mini": {
+   "at": "2026-11-17T18:43:32+00:00",
+   "channel": "discovery",
+   "title": "Zyphra/ZONOS3-Mini"
   },
   "url:https://models.dev/": {
    "at": "2026-11-16T22:02:32+00:00",
