@@ -74,6 +74,56 @@
  "failures": {},
  "health": {},
  "history": {
+  "google:gemini-4-neon": {
+   "announcement_date": null,
+   "availability_date": null,
+   "availability_status": null,
+   "classification": "UNCONFIRMED_EARLY_SIGNAL",
+   "company": "google",
+   "comparison_summary": "Google prepares to release Gemini 4 Neon model on APIs",
+   "delivery": {
+    "attempts": 0,
+    "last_error": null,
+    "message_ids": [],
+    "notification": null,
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "details": {
+    "reasons": [
+     "only third-party sources so far: TestingCatalog (early signal)"
+    ],
+    "text": "Gemini 4 Neon appears in Google Cloud's SKU catalog at $3 and $15 per million tokens and in Antigravity CLI as a Pro orchestrator model."
+   },
+   "duplicates": 0,
+   "events": [
+    {
+     "at": "2026-11-18T14:16:23+00:00",
+     "note": "only third-party sources so far: TestingCatalog (early signal)",
+     "type": "detected"
+    }
+   ],
+   "fingerprints": [
+    "https://testingcatalog.com/google-prepares-to-release-gemini-4-neon-model-on-apis"
+   ],
+   "first_detected": "2026-11-18T14:16:23+00:00",
+   "id": "google:gemini-4-neon",
+   "last_updated": "2026-11-18T14:16:23+00:00",
+   "model_ids": [
+    "Gemini 4 Neon"
+   ],
+   "model_name": "Gemini 4 Neon",
+   "official_sources": [
+    {
+     "source": "TestingCatalog (early signal)",
+     "url": "https://www.testingcatalog.com/google-prepares-to-release-gemini-4-neon-model-on-apis/"
+    }
+   ],
+   "previous_model": null,
+   "priority": "P2",
+   "source_url": "https://www.testingcatalog.com/google-prepares-to-release-gemini-4-neon-model-on-apis/",
+   "verification": "UNCONFIRMED"
+  },
   "openai:gpt-6": {
    "announcement_date": null,
    "availability_date": null,
@@ -658,6 +708,7 @@
   }
  },
  "index": {
+  "google:gemini-4-neon": "google:gemini-4-neon",
   "openai:gpt-6": "openai:gpt-6",
   "openai:gpt-6-2": "openai:gpt-6-2+gpt-6-2-astra",
   "openai:gpt-6-2-astra": "openai:gpt-6-2+gpt-6-2-astra",
@@ -3834,7 +3885,15 @@
     "sources": [
      "Gemini API models"
     ],
-    "specs": {},
+    "specs": {
+     "context_tokens": 1048576,
+     "input_modalities": "Audio, images, video, and text",
+     "knowledge_cutoff": "August 2024",
+     "latest_update": "February 2025",
+     "max_output_tokens": 8192,
+     "output_modalities": "Text"
+    },
+    "specs_checked": "2026-11-18T14:16:23+00:00",
     "status": "active"
    },
    "gemini-2.0-flash-lite": {
@@ -3843,7 +3902,15 @@
     "sources": [
      "Gemini API models"
     ],
-    "specs": {},
+    "specs": {
+     "context_tokens": 1048576,
+     "input_modalities": "Audio, images, video, and text",
+     "knowledge_cutoff": "August 2024",
+     "latest_update": "February 2025",
+     "max_output_tokens": 8192,
+     "output_modalities": "Text"
+    },
+    "specs_checked": "2026-11-18T14:16:23+00:00",
     "status": "active"
    },
    "gemini-2.5-computer-use-preview-10-2025": {
@@ -3948,7 +4015,15 @@
     "sources": [
      "Gemini API models"
     ],
-    "specs": {},
+    "specs": {
+     "context_tokens": 1048576,
+     "input_modalities": "Text, images, video, audio",
+     "knowledge_cutoff": "January 2025",
+     "latest_update": "September 2025",
+     "max_output_tokens": 65536,
+     "output_modalities": "Text"
+    },
+    "specs_checked": "2026-11-18T14:16:23+00:00",
     "status": "active"
    },
    "gemini-2.5-flash-preview-tts": {
@@ -4040,7 +4115,14 @@
     "sources": [
      "Gemini API models"
     ],
-    "specs": {},
+    "specs": {
+     "context_tokens": 1048576,
+     "input_modalities": "Text, Image, Video, Audio, and PDF",
+     "latest_update": "November 2025",
+     "max_output_tokens": 65536,
+     "output_modalities": "Text"
+    },
+    "specs_checked": "2026-11-18T14:16:24+00:00",
     "status": "active"
    },
    "gemini-3.1-flash-image": {
@@ -4506,8 +4588,14 @@
      "Gemini API models"
     ],
     "specs": {
-     "description": "Generate and edit up to 15 seconds of video with native audio, keyframe interpolation, video extension, and character consistency."
+     "context_tokens": 131072,
+     "description": "Generate and edit up to 15 seconds of video with native audio, keyframe interpolation, video extension, and character consistency.",
+     "input_modalities": "Text, Image, Video (up to 15s for editing and 10s lookback for extension)",
+     "latest_update": "November 2026",
+     "max_output_tokens": 65536,
+     "output_modalities": "Video with native Audio, Text"
     },
+    "specs_checked": "2026-11-18T14:16:24+00:00",
     "status": "active"
    },
    "gemini-omni-flash-preview": {
@@ -4542,7 +4630,15 @@
     "sources": [
      "Gemini API models"
     ],
-    "specs": {},
+    "specs": {
+     "context_tokens": 131072,
+     "input_modalities": "Text, images, video, audio",
+     "knowledge_cutoff": "January 2025",
+     "latest_update": "December 2025",
+     "max_output_tokens": 65536,
+     "output_modalities": "Text"
+    },
+    "specs_checked": "2026-11-18T14:16:24+00:00",
     "status": "active"
    },
    "gemini-robotics-er-2-preview": {
@@ -8507,6 +8603,7 @@
   "Gemini API release notes": {
    "initialized": true,
    "seen": [
+    "291f057638e7569c",
     "7a9a123c6f5d0bb5",
     "6f6d93e11105cccf",
     "fca47705e590eb7c",
@@ -9863,6 +9960,7 @@
   "OpenAI news": {
    "initialized": true,
    "seen": [
+    "e2c18561b557c4c1",
     "524261da082104d6",
     "23b98edb8005c3c0",
     "6addf329a055b8f1",
@@ -11498,6 +11596,7 @@
   "TestingCatalog (early signal)": {
    "initialized": true,
    "seen": [
+    "7595b89419bd9d11",
     "3f1a0056d7aac62e",
     "883b689bc385c548",
     "9c6281437cbcd9ec",
