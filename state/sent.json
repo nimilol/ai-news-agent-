@@ -1,5 +1,11 @@
 {
  "sent": {
+  "model:google:gemini-4-neon": {
+   "at": "2026-11-18T22:10:43+00:00",
+   "channel": "release",
+   "priority": "P0",
+   "title": "Gemini 4 Neon"
+  },
   "model:openai:gpt-6-2": {
    "at": "2026-11-17T23:04:04+00:00",
    "channel": "release",
@@ -71,6 +77,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "xAI's Grok Bot Sent 31 Unprompted Read Requests to Work Apps, All Blocked by an External Gateway - XenoSpectrum"
+  },
+  "title:4 gemini neon": {
+   "at": "2026-11-18T22:10:43+00:00",
+   "channel": "release",
+   "priority": "P0",
+   "title": "Gemini 4 Neon"
   },
   "title:6.2 astra gpt sol": {
    "at": "2026-11-18T07:29:18+00:00",
@@ -180,6 +192,12 @@
    "priority": "P2",
    "title": "Advancing computer-use agents for healthcare teams"
   },
+  "title:advancing chip design models openai": {
+   "at": "2026-11-18T22:10:54+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Advancing chip design with OpenAI models"
+  },
   "title:affecting connector docs elevated errors google": {
    "at": "2026-11-18T07:29:18+00:00",
    "channel": "digest",
@@ -221,6 +239,12 @@
    "channel": "alerts",
    "priority": "P2",
    "title": "Strengthening NATO and allied cyber defenses with AI"
+  },
+  "title:ai deployment frontier managing risk training": {
+   "at": "2026-11-18T22:10:54+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Managing frontier AI risk: From training to deployment"
   },
   "title:ambition bar lowering raises revolut without": {
    "at": "2026-11-17T14:39:48+00:00",
@@ -275,6 +299,12 @@
    "channel": "alerts",
    "priority": "P2",
    "title": "At Holiday Extras, dots get to work before anyone asks"
+  },
+  "title:api claude cloud platform pricing": {
+   "at": "2026-11-18T22:10:54+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Claude API pricing: Cloud platform pricing"
   },
   "title:approved current effingham openai plan site": {
    "at": "2026-11-18T07:29:18+00:00",
@@ -366,6 +396,18 @@
    "priority": "P1",
    "title": "Study Finds Claude Models Trained on Protein Sequences"
   },
+  "title:codex inside sandbox": {
+   "at": "2026-11-18T22:10:54+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Inside the Codex sandbox"
+  },
+  "title:consensus silent": {
+   "at": "2026-11-18T22:10:54+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "The Silent Consensus"
+  },
   "title:flash free hy4 lists model opencode zero-cost": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
@@ -408,6 +450,24 @@
    "priority": "P1",
    "title": "v2.1.327"
   },
+  "url:https://aistudio.google.com/docs/changelog.md": {
+   "at": "2026-11-18T22:10:43+00:00",
+   "channel": "release",
+   "priority": "P0",
+   "title": "Gemini 4 Neon"
+  },
+  "url:https://aistudio.google.com/docs/models.md": {
+   "at": "2026-11-18T22:10:43+00:00",
+   "channel": "release",
+   "priority": "P0",
+   "title": "Gemini 4 Neon"
+  },
+  "url:https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon": {
+   "at": "2026-11-18T22:10:43+00:00",
+   "channel": "release",
+   "priority": "P0",
+   "title": "Gemini 4 Neon"
+  },
   "url:https://bloomberg.com/news/articles/2026-11-18/anthropic-crypto-bets-imply-1-7-trillion-value-despite-ai-rout": {
    "at": "2026-11-18T07:29:18+00:00",
    "channel": "digest",
@@ -425,6 +485,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "California AG Sues OpenAI Over Rogue Agent Hacking Incidents"
+  },
+  "url:https://deepmind.google/blog/introducing-gemini-4-neon": {
+   "at": "2026-11-18T22:10:43+00:00",
+   "channel": "release",
+   "priority": "P0",
+   "title": "Gemini 4 Neon"
   },
   "url:https://developers.openai.com/api/docs/changelog.md": {
    "at": "2026-11-17T23:04:05+00:00",
@@ -449,6 +515,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "Anthropic IPO set to redraw venture capital’s power rankings - Financial Times"
+  },
+  "url:https://generativelanguage.googleapis.com/v1beta/models": {
+   "at": "2026-11-18T22:10:43+00:00",
+   "channel": "release",
+   "priority": "P0",
+   "title": "Gemini 4 Neon"
   },
   "url:https://github.com/affaan-m/ecc": {
    "at": "2026-11-17T18:43:32+00:00",
@@ -1146,6 +1218,12 @@
    "priority": "P2",
    "title": "How Revolut raises ambition without lowering the bar"
   },
+  "url:https://openai.com/index/advancing-chip-design-with-our-models": {
+   "at": "2026-11-18T22:10:54+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Advancing chip design with OpenAI models"
+  },
   "url:https://openai.com/index/advancing-computer-use-for-healthcare-teams": {
    "at": "2026-11-16T22:19:08+00:00",
    "channel": "alerts",
@@ -1163,6 +1241,12 @@
    "channel": "alerts",
    "priority": "P2",
    "title": "Broadening access to AI for scientists"
+  },
+  "url:https://openai.com/index/inside-the-codex-sandbox": {
+   "at": "2026-11-18T22:10:54+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Inside the Codex sandbox"
   },
   "url:https://openai.com/index/introducing-chatgpt-for-sales": {
    "at": "2026-11-18T07:29:18+00:00",
@@ -1187,6 +1271,12 @@
    "channel": "alerts",
    "priority": "P2",
    "title": "Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT"
+  },
+  "url:https://openai.com/index/managing-frontier-ai-risk": {
+   "at": "2026-11-18T22:10:54+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Managing frontier AI risk: From training to deployment"
   },
   "url:https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare": {
    "at": "2026-11-16T22:19:08+00:00",
@@ -1224,6 +1314,12 @@
    "priority": "P2",
    "title": "The King’s Trust and OpenAI launch £1m partnership"
   },
+  "url:https://openai.com/index/the-silent-consensus": {
+   "at": "2026-11-18T22:10:54+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "The Silent Consensus"
+  },
   "url:https://openrouter.ai/openai/gpt-6.2-astra": {
    "at": "2026-11-17T20:58:16+00:00",
    "channel": "digest",
@@ -1253,6 +1349,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "Qwen4-Max vs GLM-5.4: One Shipped, One Missed the Window - OrcaRouter"
+  },
+  "url:https://platform.claude.com/docs/about-claude/pricing": {
+   "at": "2026-11-18T22:10:54+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Claude API pricing: Cloud platform pricing"
   },
   "url:https://platform.claude.com/docs/release-notes/overview": {
    "at": "2026-11-17T20:58:16+00:00",

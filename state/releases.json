@@ -75,25 +75,150 @@
  "health": {},
  "history": {
   "google:gemini-4-neon": {
-   "announcement_date": null,
-   "availability_date": null,
-   "availability_status": null,
-   "classification": "UNCONFIRMED_EARLY_SIGNAL",
+   "announcement_date": "2026-11-18",
+   "availability_date": "2026-11-18",
+   "availability_status": "Available (listed in the official model catalog)",
+   "classification": "NEW_MODEL_RELEASE",
    "company": "google",
-   "comparison_summary": "Google prepares to release Gemini 4 Neon model on APIs",
+   "comparison_summary": "compared with Gemini 4",
    "delivery": {
-    "attempts": 0,
+    "attempts": 1,
     "last_error": null,
-    "message_ids": [],
-    "notification": null,
-    "sent_at": null,
-    "status": "NOT_SENT"
+    "message_ids": [
+     730,
+     731
+    ],
+    "notification": "google:gemini-4-neon|release|6e9d8aab4b",
+    "receipt": {
+     "at": "2026-11-18T22:10:44+00:00",
+     "message_id": 732,
+     "status": "SENT"
+    },
+    "sent_at": "2026-11-18T22:10:43+00:00",
+    "status": "SENT"
    },
    "details": {
-    "reasons": [
-     "only third-party sources so far: TestingCatalog (early signal)"
+    "ai_model": "gemini/gemini-flash-lite-latest",
+    "api_access": "Gemini API in Google AI Studio",
+    "benchmarks": [
+     {
+      "name": "Artificial Analysis Intelligence Index",
+      "new": "61",
+      "previous": "",
+      "quote": "Neon ranks ahead of comparable models and #3 overall with a score of 61 on the Artificial Analysis Intelligence Index at its xhigh thinking level",
+      "source": 1
+     },
+     {
+      "name": "Vals Index",
+      "new": "70.9%",
+      "previous": "",
+      "quote": "on benchmarks like the Vals Index , it ranks #2 (70.9%)",
+      "source": 1
+     },
+     {
+      "name": "Agents' Last Exam v1.1",
+      "new": "75.8%",
+      "previous": "",
+      "quote": "performs on par with leading models on Agents' Last Exam v1.1 (75.8%)",
+      "source": 1
+     },
+     {
+      "name": "Zapier’s AutomationBench",
+      "new": "56.3%",
+      "previous": "",
+      "quote": "It achieves #1 overall on both Zapier’s AutomationBench (56.3%)",
+      "source": 1
+     },
+     {
+      "name": "Andon Labs' Vending-Bench 2",
+      "new": "$16,843",
+      "previous": "",
+      "quote": "Andon Labs' Vending-Bench 2 ($16,843)",
+      "source": 1
+     },
+     {
+      "name": "Agent Arena Index",
+      "new": "1336",
+      "previous": "",
+      "quote": "it debuts #2 globally with a score of 1336 on Arena's new Agent Arena Index across 4,200+ real-world agent sessions.",
+      "source": 1
+     }
     ],
-    "text": "Gemini 4 Neon appears in Google Cloud's SKU catalog at $3 and $15 per million tokens and in Antigravity CLI as a Pro orchestrator model."
+    "claims": [
+     {
+      "quote": "Neon ranks ahead of comparable models and #3 overall with a score of 61 on the Artificial Analysis Intelligence Index at its xhigh thinking level, landing just behind larger, slower models.",
+      "source": 1,
+      "text": "Neon ranks ahead of comparable models and #3 overall with a score of 61 on the Artificial Analysis Intelligence Index at its xhigh thinking level, landing just behind larger, slower models."
+     }
+    ],
+    "comparison": {
+     "availability": {
+      "basis": "official specs",
+      "new": "listed as available",
+      "previous": null,
+      "quote": ""
+     },
+     "context": {
+      "basis": "official specs",
+      "new": "1,048,576 tokens",
+      "previous": null,
+      "quote": ""
+     },
+     "multimodal": {
+      "basis": "official specs",
+      "new": "in: Text, Image, Video, Audio, and PDF · out: Text",
+      "previous": null,
+      "quote": ""
+     },
+     "output": {
+      "basis": "official specs",
+      "new": "65,536 tokens",
+      "previous": null,
+      "quote": ""
+     },
+     "pricing": {
+      "basis": "official specs",
+      "new": "$3 input / $15 output per 1M tokens",
+      "previous": null,
+      "quote": ""
+     }
+    },
+    "explain": {
+     "care": "It offers an efficient balance of depth and execution speed with adjustable thinking levels for building advanced agentic workflows.",
+     "different": "It introduces four scalable thinking levels (low, medium, default high, and xhigh) to dynamically balance depth and efficiency at a lower cost per task.",
+     "does": "Sustains performance through complex, tool-heavy tasks end-to-end, synthesizing across text, images, video, audio, and PDFs in a single 1 million-token context window.",
+     "introduced": "Gemini 4 Neon",
+     "problem": "High costs and slow execution speeds typically required by larger frontier models for complex, multi-step agentic workflows.",
+     "who": "Developers, enterprise teams, cybersecurity defenders, and consumers using the Gemini app or API."
+    },
+    "flagship": true,
+    "improved": [],
+    "previous_specs": {},
+    "priority": "P0",
+    "reasons": [
+     "not seen in any official catalog before; introduced by: Google DeepMind blog (announcement), Google Gemini blog (announcement), Gemini API release notes (changelog), Gemini API models (listed), Gemini API model list (listed)"
+    ],
+    "regressed": [],
+    "specs": {
+     "gemini-4-neon": {
+      "name": "Gemini 4 Neon",
+      "specs": {
+       "context_tokens": 1048576,
+       "description": "Gemini 4 Neon",
+       "input_modalities": "Text, Image, Video, Audio, and PDF",
+       "input_price": 3.0,
+       "latest_update": "November 2026",
+       "max_output_tokens": 65536,
+       "output_modalities": "Text",
+       "output_price": 15.0
+      },
+      "status": "active"
+     }
+    },
+    "unchanged": [],
+    "whats_new": [
+     "Introduces four scalable thinking levels (low, medium, default high, and xhigh) to control intelligence and token spend."
+    ]
    },
    "duplicates": 0,
    "events": [
@@ -101,28 +226,63 @@
      "at": "2026-11-18T14:16:23+00:00",
      "note": "only third-party sources so far: TestingCatalog (early signal)",
      "type": "detected"
+    },
+    {
+     "at": "2026-11-18T22:10:42+00:00",
+     "note": "UNCONFIRMED → OFFICIAL_CONFIRMED",
+     "type": "confirmed"
     }
    ],
    "fingerprints": [
-    "https://testingcatalog.com/google-prepares-to-release-gemini-4-neon-model-on-apis"
+    "2673ad9cdf8e7fa6",
+    "8356dc9ad3ac2e4c",
+    "https://aistudio.google.com/docs/models.md#gemini-4-neon",
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon",
+    "https://deepmind.google/blog/introducing-gemini-4-neon",
+    "https://generativelanguage.googleapis.com/v1beta/models#gemini-4-neon"
    ],
    "first_detected": "2026-11-18T14:16:23+00:00",
    "id": "google:gemini-4-neon",
-   "last_updated": "2026-11-18T14:16:23+00:00",
+   "last_updated": "2026-11-18T22:10:43+00:00",
    "model_ids": [
-    "Gemini 4 Neon"
+    "gemini-4-neon"
    ],
    "model_name": "Gemini 4 Neon",
    "official_sources": [
     {
-     "source": "TestingCatalog (early signal)",
-     "url": "https://www.testingcatalog.com/google-prepares-to-release-gemini-4-neon-model-on-apis/"
+     "kind": "announcement",
+     "source": "Google DeepMind blog",
+     "url": "https://deepmind.google/blog/introducing-gemini-4-neon/"
+    },
+    {
+     "kind": "announcement",
+     "source": "Google Gemini blog",
+     "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+    },
+    {
+     "kind": "changelog",
+     "source": "Gemini API release notes",
+     "url": "https://aistudio.google.com/docs/changelog.md"
+    },
+    {
+     "kind": "listed",
+     "source": "Gemini API models",
+     "url": "https://aistudio.google.com/docs/models.md"
+    },
+    {
+     "kind": "listed",
+     "source": "Gemini API model list",
+     "url": "https://generativelanguage.googleapis.com/v1beta/models"
     }
    ],
-   "previous_model": null,
-   "priority": "P2",
-   "source_url": "https://www.testingcatalog.com/google-prepares-to-release-gemini-4-neon-model-on-apis/",
-   "verification": "UNCONFIRMED"
+   "previous_model": {
+    "id": null,
+    "method": "named by the company in the announcement",
+    "name": "Gemini 4"
+   },
+   "priority": "P0",
+   "source_url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+   "verification": "OFFICIAL_CONFIRMED"
   },
   "openai:gpt-6": {
    "announcement_date": null,
@@ -719,6 +879,45 @@
  },
  "meta": {},
  "outbox": {
+  "google:gemini-4-neon|release|6e9d8aab4b": {
+   "attempts": 1,
+   "category": "NEW_MODEL_RELEASE",
+   "created": "2026-11-18T22:10:42+00:00",
+   "id": "google:gemini-4-neon|release|6e9d8aab4b",
+   "kind": "release",
+   "last_error": null,
+   "log": [
+    "2026-11-18T22:10:43+00:00 SENT: Telegram confirmed message id(s) [730, 731]",
+    "2026-11-18T22:10:44+00:00 delivery receipt SENT (message id 732)"
+   ],
+   "model_name": "Gemini 4 Neon",
+   "parts": [
+    "🚨 <b>NEW AI MODEL RELEASE</b>\n<i>🚨 NEW MODEL RELEASES · 🔴 P0 Critical · flagship</i>\n\n<b>COMPANY:</b>\nGoogle (Gemini)\n\n<b>NEW MODEL:</b>\nGemini 4 Neon\n<code>gemini-4-neon</code>\n\n<b>RELEASE INFORMATION:</b>\n• Announcement date: 18 November 2026\n• Availability date: 18 November 2026\n• Model category: New model release\n• Availability status: Available (listed in the official model catalog)\n• API access: Gemini API in Google AI Studio\n\n<b>WHAT'S NEW:</b>\n• Introduces four scalable thinking levels (low, medium, default high, and xhigh) to control intelligence and token spend.\n\n<blockquote expandable><b>📘 Explained</b>\n<b>What was introduced:</b> Gemini 4 Neon\n<b>What it actually does:</b> Sustains performance through complex, tool-heavy tasks end-to-end, synthesizing across text, images, video, audio, and PDFs in a single 1 million-token context window.\n<b>What problem it solves:</b> High costs and slow execution speeds typically required by larger frontier models for complex, multi-step agentic workflows.\n<b>How it differs from before:</b> It introduces four scalable thinking levels (low, medium, default high, and xhigh) to dynamically balance depth and efficiency at a lower cost per task.\n<b>Who benefits:</b> Developers, enterprise teams, cybersecurity defenders, and consumers using the Gemini app or API.\n<b>Why creators and developers should care:</b> It offers an efficient balance of depth and execution speed with adjustable thinking levels for building advanced agentic workflows.</blockquote>\n\n<b>COMPARISON WITH PREVIOUS MODEL:</b>\nPrevious model: Gemini 4\nNew model: Gemini 4 Neon (<code>gemini-4-neon</code>)\n<i>How the previous model was chosen: named by the company in the announcement — \"ind Program . Gemini 4 Neon builds on improvements from our Gemini 4 safety and security\"</i>\n\n<b>🖼 Multimodal</b> <i>(official specs)</i>\n• Previous: <i>not established</i>\n• New: in: Text, Image, Video, Audio, and PDF · out: Text\n\n<b>📏 Context window</b> <i>(official specs)</i>\n• Previous: <i>not established</i>\n• New: 1,048,576 tokens\n\n<b>📤 Output limit</b> <i>(official specs)</i>\n• Previous: <i>not established</i>\n• New: 65,536 tokens\n\n<b>💰 API pricing</b> <i>(official specs)</i>\n• Previous: <i>not established</i>\n• New: $3 input / $15 output per 1M tokens\n\n<b>🌍 Availability</b> <i>(official specs)</i>\n• Previous: <i>not established</i>\n• New: listed as available\n\n<b>📈 Benchmarks</b>\n<i>Company-reported (from the official announcement):</i>\n• Artificial Analysis Intelligence Index: 61\n• Vals Index: 70.9%\n• Agents&#x27; Last Exam v1.1: 75.8%\n• Zapier’s AutomationBench: 56.3%\n• Andon Labs&#x27; Vending-Bench 2: $16,843\n• Agent Arena Index: 1336\n• Independent: none collected (the agent only reads official sources)\n\n<b>💬 Qualitative claims by the company</b>\n• Neon ranks ahead of comparable models and #3 overall with a score of 61 on the Artificial Analysis Intelligence Index at its xhigh thinking level, landing just behind larger, slower models.\n\n<b>WHAT ACTUALLY IMPROVED:</b>\n• Gemini 4 Neon delivers frontier-level intelligence with a 1 million-token context window and four scalable thinking levels. <i>(interpretation by gemini/gemini-flash-lite-latest, from the sources above)</i>\n• It achieves competitive or top-tier scores across multiple benchmarks for software engineering, agentic execution, and cybersecurity. <i>(interpretation by gemini/gemini-flash-lite-latest, from the sources above)</i>\n\n<b>WHAT HAS NOT BEEN ESTABLISHED:</b>\n• No evidence yet for: Architecture / family, Reasoning, Coding, Math &amp; problem-solving, Tool use &amp; agents, Speed &amp; latency\n• Independent benchmark results\n<i>(1/2)</i>",
+    "<b>OFFICIAL SOURCES:</b>\n• Original announcement: <a href=\"https://deepmind.google/blog/introducing-gemini-4-neon/\">Google DeepMind blog</a>\n• Official documentation: <a href=\"https://aistudio.google.com/docs/changelog.md\">Gemini API release notes</a>\n• Model information / API page: <a href=\"https://aistudio.google.com/docs/models.md\">Gemini API models</a>\n\n<b>WHY THIS MATTERS:</b>\nGemini 4 Neon provides builders with an efficient, lower-cost model that scales reasoning via configurable thinking levels for long-running agent workflows. Its 1 million-token context window and strong coding and cybersecurity agent benchmarks make it an important option for production-grade developer tasks.\n\n<b>💡 CONTENT OPPORTUNITIES</b>\n<i>Based on: Gemini 4 Neon</i>\n<blockquote expandable><b>A. NEWS: Google Announces Gemini 4 Neon: What You Need to Know</b>\n<i>Angle:</i> Covering the release, pricing, context window, and core benchmark placements of Gemini 4 Neon.\n<i>Why it's interesting:</i> It is a new model rollout with significant positioning in agentic workflows and coding benchmarks.\n<i>Research or testing needed:</i> Verify API pricing details and specific integration steps in Google AI Studio.\n\n<b>B. EDUCATION: How Thinking Levels Work in Gemini 4 Neon</b>\n<i>Angle:</i> Explaining the four thinking levels (low, medium, default high, xhigh) and how they scale compute and token spend.\n<i>Why it's interesting:</i> Understanding thinking levels helps developers optimize cost versus performance for different workloads.\n<i>Research or testing needed:</i> Review model card details regarding how each thinking level affects latency and token output.\n\n<b>C. ANALYSIS: Testing Gemini 4 Neon on Long-Horizon Coding and Cybersecurity Tasks</b>\n<i>Angle:</i> An evaluation of Neon&#x27;s claims on coding agent benchmarks and cybersecurity suites like SEC-bench Pro and CWE-bench v2.\n<i>Why it's interesting:</i> It claims state-of-the-art or competitive results against larger models at a fraction of the cost.\n<i>Research or testing needed:</i> Run practical tests on multi-file debugging and vulnerability patching using the API.\n\n<i>Ideas only. You decide what becomes a video or post.</i></blockquote>\n\n<b>VERIFICATION:</b>\nOFFICIAL CONFIRMED\n<i>not seen in any official catalog before; introduced by: Google DeepMind blog (announcement), Google Gemini blog (announcement), Gemini API release notes (changelog), Gemini API models (listed), Gemini API model list (listed)</i>\n<i>AI reading by gemini/gemini-flash-lite-latest; 3 unsupported AI statements discarded</i>\n\n<b>DELIVERY:</b>\nPending Telegram confirmation.\n<i>(2/2)</i>"
+   ],
+   "priority": "P0",
+   "receipt": {
+    "at": "2026-11-18T22:10:44+00:00",
+    "message_id": 732,
+    "status": "SENT"
+   },
+   "release_id": "google:gemini-4-neon",
+   "sent_at": "2026-11-18T22:10:43+00:00",
+   "sent_parts": {
+    "0": {
+     "at": "2026-11-18T22:10:42+00:00",
+     "message_id": 730,
+     "telegram_date": 1795039842
+    },
+    "1": {
+     "at": "2026-11-18T22:10:43+00:00",
+     "message_id": 731,
+     "telegram_date": 1795039843
+    }
+   },
+   "status": "SENT",
+   "verification": "OFFICIAL_CONFIRMED"
+  },
   "openai:gpt-6-2+gpt-6-2-astra|release|8f76611e19": {
    "attempts": 1,
    "category": "NEW_MODEL_RELEASE",
@@ -4457,6 +4656,20 @@
     },
     "status": "active"
    },
+   "gemini-4-neon": {
+    "first_seen": "2026-11-18T22:07:28+00:00",
+    "name": "Gemini 4 Neon",
+    "sources": [
+     "Gemini API models",
+     "Gemini API model list"
+    ],
+    "specs": {
+     "context_tokens": 1048576,
+     "description": "Gemini 4 Neon",
+     "max_output_tokens": 65536
+    },
+    "status": "active"
+   },
    "gemini-decision-1": {
     "first_seen": "2026-11-16T22:18:58+00:00",
     "name": "Gemini Decision 1",
@@ -7604,6 +7817,42 @@
   "Claude Platform release notes": {
    "initialized": true,
    "seen": [
+    "ee41ca5a5d051d65",
+    "9ce5807c1e468b4f",
+    "51f7da7858c2380f",
+    "6d1ad40702fd83ff",
+    "f22fe2c2dcc0326c",
+    "d9058762bffa8144",
+    "6ab17fa0c38a5e4d",
+    "ad736b7e487097f9",
+    "b988bbada0f1334b",
+    "45fe27c11e92754f",
+    "3aa2d62b86b55429",
+    "023531ff3a9b2e17",
+    "815006d37ec0adc0",
+    "8de689153146e801",
+    "6d9bb00bd8392991",
+    "58839081b74fc877",
+    "86ac8845664206eb",
+    "545a0123fe0b4727",
+    "7969273c7c0a81cc",
+    "8e19f7560e47f923",
+    "6a97bbc0246054a3",
+    "7d31c55154629316",
+    "8b8732c38a990d18",
+    "1b646a8f4aa59090",
+    "c9cc163b9629bfe3",
+    "02b51fb0ac79ccd1",
+    "125edaccb0e1c89e",
+    "8eee38e3c3473f54",
+    "511791aeb886ba8c",
+    "bfcbe6db08cedc9e",
+    "fe432acc7aacdb4f",
+    "680de4fdc6851b3f",
+    "ccd184ad0b1fbc6b",
+    "afde5e847b409c24",
+    "74cf1df0585c06aa",
+    "6548733fd384fc46",
     "372dfc8cab009bc2",
     "7b006ccdae83e3e8",
     "7fe112731c3cd618",
@@ -8337,6 +8586,10 @@
      "h": "b9a82854bc1e",
      "status": "active"
     },
+    "gemini-4-neon": {
+     "h": "82a210be0b7b",
+     "status": "active"
+    },
     "gemini-decision-1": {
      "h": "af25e4bf1c95",
      "status": "active"
@@ -8558,6 +8811,10 @@
      "h": "6093bb863b65",
      "status": "active"
     },
+    "gemini-4-neon": {
+     "h": "6093bb863b65",
+     "status": "active"
+    },
     "gemini-decision-1": {
      "h": "6093bb863b65",
      "status": "active"
@@ -8603,6 +8860,7 @@
   "Gemini API release notes": {
    "initialized": true,
    "seen": [
+    "c5b02517d5c1fae0",
     "291f057638e7569c",
     "7a9a123c6f5d0bb5",
     "6f6d93e11105cccf",
@@ -8845,6 +9103,7 @@
   "Gemini app release notes": {
    "initialized": true,
    "seen": [
+    "e1d45123a8af7840",
     "89b8347b7187c0e2",
     "46c34ea8001c487e",
     "e61f65dc6b528f3e",
@@ -9021,6 +9280,8 @@
   "Google DeepMind blog": {
    "initialized": true,
    "seen": [
+    "9ee12424a91a2976",
+    "d031709d30c1cda7",
     "d79d22c00e7156a8",
     "c076835f2a2d3dd9",
     "2692b5c1296897cd",
@@ -9154,6 +9415,9 @@
   "Google Gemini blog": {
    "initialized": true,
    "seen": [
+    "87ca9113031db1aa",
+    "0480a7cdc4520eff",
+    "ff5db82a42298dab",
     "fa769522129537ae",
     "9c971b7490b900a5",
     "e6125411e87c4537",
@@ -9960,6 +10224,10 @@
   "OpenAI news": {
    "initialized": true,
    "seen": [
+    "a503da2b08e3676c",
+    "a9a1bc7d1ebd9115",
+    "c8ac8f2bd8c9006d",
+    "4168ca33ce395f42",
     "e2c18561b557c4c1",
     "524261da082104d6",
     "23b98edb8005c3c0",
@@ -11381,6 +11649,7 @@
   "OpenRouter model list (early signal)": {
    "initialized": true,
    "seen": [
+    "google/gemini-4-neon",
     "openai/gpt-6.2-astra-pro",
     "openai/gpt-6.2-astra",
     "openai/gpt-6.2-sol-pro",
