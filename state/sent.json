@@ -18,6 +18,36 @@
    "priority": "P0",
    "title": "GPT-6.2 Sol"
   },
+  "title:0.169.1": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "0.169.1"
+  },
+  "title:0.170.0": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "0.170.0"
+  },
+  "title:1 2026 4 deepseek glm kimi qwen ranked shattered.io vs wins": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Kimi vs DeepSeek vs Qwen vs GLM: 4 Ranked, 1 Wins [2026] - shattered.io"
+  },
+  "title:1.7 ai anthropic bets bloomberg crypto despite imply rout trillion value": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Anthropic Crypto Bets Imply $1.7 Trillion Value Despite AI Rout - Bloomberg"
+  },
+  "title:14a 17 clo def form fund income india investing.com november opportunities xai": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Form DEF 14A XAI CLO & Income Opportunities Fund For: 17 November By Investing.com - Investing.com India"
+  },
   "title:1m king launch openai partnership trust": {
    "at": "2026-11-16T22:19:08+00:00",
    "channel": "alerts",
@@ -25,10 +55,34 @@
    "title": "The King’s Trust and OpenAI launch £1m partnership"
   },
   "title:2 cyber flash launches mai microsoft model security": {
-   "at": "2026-11-18T04:33:12+00:00",
-   "channel": "alerts",
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
    "priority": "P2",
    "title": "Microsoft launches MAI Cyber 2 Flash security model"
+  },
+  "title:2027 accused bugging courthouse engineer hq january news openai service stand trial": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Engineer accused of bugging OpenAI HQ to stand trial January 2027 - Courthouse News Service"
+  },
+  "title:31 all apps blocked bot external gateway grok read requests sent unprompted work xai xenospectrum": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "xAI's Grok Bot Sent 31 Unprompted Read Requests to Work Apps, All Blocked by an External Gateway - XenoSpectrum"
+  },
+  "title:6.2 astra gpt sol": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "GPT‑6.2 Astra and GPT‑6.2 Sol"
+  },
+  "title:740k anthropic firms linked lobbying paid rubio": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Anthropic paid lobbying firms linked to Rubio $740k"
   },
   "title:about amd anthropic claude days gpus mythos ported preview says three": {
    "at": "2026-11-17T07:57:43+00:00",
@@ -42,11 +96,29 @@
    "priority": "P2",
    "title": "Anthropic IPO price expected to price at top of range or above amid high demand"
   },
+  "title:accelerates agentic apis bot experience first-mover grok leadership next-gen proactive sabre travel webwire within": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Sabre Accelerates Agentic Travel Leadership with First-Mover Travel Experience within​ ​Grok Bot and Next-Gen Proactive Travel APIs - WebWire"
+  },
   "title:access ai broadening scientists": {
    "at": "2026-11-16T22:19:08+00:00",
    "channel": "alerts",
    "priority": "P2",
    "title": "Broadening access to AI for scientists"
+  },
+  "title:access bot data grok identify media researchers sc security unprompted": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Security researchers identify unprompted data access by Grok Bot - SC Media"
+  },
+  "title:accessories basenor bot corporate expense grok manager tesla works": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Grok Bot as Corporate Expense Manager: How It Works - BASENOR - Tesla Accessories"
   },
   "title:accounting bot deploys end-to-end grok processes spacexsi teams xai": {
    "at": "2026-11-17T20:58:16+00:00",
@@ -59,6 +131,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "California and Oregon file major legal actions against OpenAI"
+  },
+  "title:actually answered assigned attention before bot call can coworker decision ends every grok instead invite meeting never notes one pays questions repeat rest says sorry spot stop taking tracked unlike us who work you": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Stop taking meeting notes. Invite Grok Bot to the call instead. Unlike the rest of us, it actually pays attention. Questions answered on the spot. Work assigned"
   },
   "title:adds anthropic channel claude desktop option release": {
    "at": "2026-11-17T20:58:16+00:00",
@@ -84,11 +162,29 @@
    "priority": "P2",
    "title": "Claude Code Adds Experimental Code Mode and Tool Guards"
   },
+  "title:admin chatgpt life underrated use way": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "An underrated way to use ChatGPT: Life admin"
+  },
   "title:advancing agents computer-use healthcare teams": {
    "at": "2026-11-16T22:19:08+00:00",
    "channel": "alerts",
    "priority": "P2",
    "title": "Advancing computer-use agents for healthcare teams"
+  },
+  "title:affecting connector docs elevated errors google": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Elevated errors affecting the Google Docs connector"
+  },
+  "title:after anthropic buy finance goes here mega-ipo public spacex stock vs which yahoo": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "SpaceX vs. Anthropic: Here’s Which Mega-IPO Stock I’d Buy After Anthropic Goes Public. - Yahoo Finance"
   },
   "title:ag agent california hacking incidents openai over rogue sues": {
    "at": "2026-11-17T07:57:43+00:00",
@@ -101,6 +197,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "California Attorney General sues OpenAI over rogue agent hacking incidents"
+  },
+  "title:agents coding external sandboxes": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "External sandboxes for coding agents"
   },
   "title:ahead anthropic continue debut ipo nasdaq preparations": {
    "at": "2026-11-16T22:02:32+00:00",
@@ -120,11 +222,23 @@
    "priority": "P2",
    "title": "How Revolut raises ambition without lowering the bar"
   },
+  "title:americas anthropic bloomberg briefing evening ipo moon pricing shooting": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Anthropic Is Shooting for the IPO Pricing Moon: Evening Briefing Americas - Bloomberg"
+  },
   "title:amid chip content crash curbs shares trimming us zhipu": {
    "at": "2026-11-17T07:57:43+00:00",
    "channel": "digest",
    "priority": "P2",
    "title": "Zhipu Shares Crash Amid US Chip Curbs and Content Trimming"
+  },
+  "title:among car companies crash elon fatal gordon grok highest johnson musk ranks rate traders tsla u.s union": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Gordon Johnson: Elon Musk’s Grok ranks TSLA highest for fatal car crash rate among U.S. car companies - Traders Union"
   },
   "title:anthropic beta billing claude developers launches linked platform": {
    "at": "2026-11-17T20:58:16+00:00",
@@ -132,11 +246,35 @@
    "priority": "P3",
    "title": "Anthropic launches Linked billing beta for Claude platform developers"
   },
+  "title:anthropic bloomberg customers ipo may pay price": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Anthropic’s Customers May Pay the Price for Its IPO - Bloomberg"
+  },
+  "title:anthropic capital financial ipo power rankings redraw set times venture": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Anthropic IPO set to redraw venture capital’s power rankings - Financial Times"
+  },
   "title:anyone asks before dots extras get holiday work": {
    "at": "2026-11-16T22:19:08+00:00",
    "channel": "alerts",
    "priority": "P2",
    "title": "At Holiday Extras, dots get to work before anyone asks"
+  },
+  "title:approved current effingham openai plan site": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "OpenAI site plan approved for Effingham - The Current"
+  },
+  "title:arcticrat findings grok malware neoteo zimperium": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "ArcticRAT malware and Grok: Zimperium’s findings - NeoTeo"
   },
   "title:astra gpt-6.2": {
    "at": "2026-11-17T23:04:04+00:00",
@@ -156,11 +294,23 @@
    "priority": "P2",
    "title": "Astra for Law leads in legal intelligence"
   },
+  "title:axios copyright democrats doj fight openai probe role scoop": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Scoop: Democrats probe DOJ's role in OpenAI copyright fight - Axios"
+  },
   "title:begins embedded evaluations external labs openai research safety": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
    "priority": "P1",
    "title": "OpenAI begins embedded safety evaluations with external research labs"
+  },
+  "title:bot can corporate elon expenses grok help millions musk save traders union": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Elon Musk: Grok Bot can help save millions in corporate expenses - Traders Union"
   },
   "title:care chatgpt forward healthcare more move ways": {
    "at": "2026-11-16T22:19:08+00:00",
@@ -181,9 +331,9 @@
    "title": "Science at the Frontier: How scientists use ChatGPT"
   },
   "title:chatgpt introducing sales": {
-   "at": "2026-11-17T23:04:15+00:00",
-   "channel": "alerts",
-   "priority": "P2",
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P1",
    "title": "Introducing ChatGPT for Sales"
   },
   "title:chile introducing openai": {
@@ -198,6 +348,18 @@
    "priority": "P3",
    "title": "OpenCode lists Hy4 flash Free as a new zero-cost model"
   },
+  "title:fluid gallons heat-transfer site southaven spill thousands xai yahoo": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Thousands of Gallons of Heat-Transfer Fluid Spill at xAI’s Southaven Site - Yahoo"
+  },
+  "title:glm-5.4 missed one orcarouter qwen4-max shipped vs window": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Qwen4-Max vs GLM-5.4: One Shipped, One Missed the Window - OrcaRouter"
+  },
   "title:gpt-6.2 sol": {
    "at": "2026-11-17T23:04:05+00:00",
    "channel": "release",
@@ -209,6 +371,24 @@
    "channel": "digest",
    "priority": "P2",
    "title": "OpenAI and Jony Ive Lease Large S.F. Office for Hardware Team"
+  },
+  "title:v2.1.327": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "v2.1.327"
+  },
+  "url:https://bloomberg.com/news/articles/2026-11-18/anthropic-crypto-bets-imply-1-7-trillion-value-despite-ai-rout": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Anthropic Crypto Bets Imply $1.7 Trillion Value Despite AI Rout - Bloomberg"
+  },
+  "url:https://bloomberg.com/news/newsletters/2026-11-17/anthropic-is-shooting-for-the-ipo-pricing-moon-evening-briefing-americas": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Anthropic Is Shooting for the IPO Pricing Moon: Evening Briefing Americas - Bloomberg"
   },
   "url:https://cnbc.com/2026/11/16/openai-california-bonta-ai-lawsuit.html": {
    "at": "2026-11-17T07:57:43+00:00",
@@ -227,6 +407,18 @@
    "channel": "release",
    "priority": "P0",
    "title": "GPT-6.2 Sol"
+  },
+  "url:https://finance.yahoo.com/markets/stocks/articles/spacex-vs-anthropic-mega-ipo-062902689.html": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "SpaceX vs. Anthropic: Here’s Which Mega-IPO Stock I’d Buy After Anthropic Goes Public. - Yahoo Finance"
+  },
+  "url:https://ft.com/content/a3430f0d-0080-4970-8eec-2c14c8438b3d": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Anthropic IPO set to redraw venture capital’s power rankings - Financial Times"
   },
   "url:https://github.com/affaan-m/ecc": {
    "at": "2026-11-17T18:43:32+00:00",
@@ -248,6 +440,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "Claude Code Adds Experimental Code Mode and Tool Guards"
+  },
+  "url:https://github.com/anthropics/claude-code/releases/tag/v2.1.327": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "v2.1.327"
   },
   "url:https://github.com/anthropics/flashprove": {
    "at": "2026-11-16T23:48:27+00:00",
@@ -349,6 +547,18 @@
    "channel": "discovery",
    "title": "Oldcircle/geo-sleuth"
   },
+  "url:https://github.com/openai/codex/releases/tag/rust-v0.169.1": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "0.169.1"
+  },
+  "url:https://github.com/openai/codex/releases/tag/rust-v0.170.0": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "0.170.0"
+  },
   "url:https://github.com/paperclipai/paperclip": {
    "at": "2026-11-18T03:03:20+00:00",
    "channel": "discovery",
@@ -406,6 +616,12 @@
    "priority": "P1",
    "title": "California AG Sues OpenAI Over Rogue Agent Hacking Incidents"
   },
+  "url:https://neoteo.com/zimperium-says-arcticrat-used-grok-to-sort-stolen-android-data": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "ArcticRAT malware and Grok: Zimperium’s findings - NeoTeo"
+  },
   "url:https://news.google.com/rss/articles/cbmi1gfbvv95cuxolvg2mlvrymq2yu5jnknpvgvhwvv6tknudmnis0lqbzm4unzqzjq2qljfv2rozljgbf8ynnc2m3dsu3zgsdi3yxfhnxg0v2g5v2duzgp6lut3m3ntqwnbswrtmwvuvex3nllts2p3b3dxedb6wuphmvpmx01as2k3lwvretnhduzoow9mbuozc194tnh0x2rtts1antv2vfrcdtzox0k4alhpbmhdcwvqmgftckqxuv90qs1wegv4vhfzn24za1neav9eadvnq21yn0lianvn": {
    "at": "2026-11-17T20:58:16+00:00",
    "channel": "digest",
@@ -417,6 +633,18 @@
    "channel": "digest",
    "priority": "P2",
    "title": "Anthropic IPO price expected to price at top of range or above amid high demand"
+  },
+  "url:https://news.google.com/rss/articles/cbmia0fvx3lxte40znqzyursqu9tblnxyzvdsy1nmuzoetu4ttjrq3i2bhdizgrfswrkuzviq0nwckzpdy1tahm4yw4tnlzdd3netm9xagtsyurpnvbtamdwwljjdxr3ufrwohlaqy1erutwb21b": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "xAI's Grok Bot Sent 31 Unprompted Read Requests to Work Apps, All Blocked by an External Gateway - XenoSpectrum"
+  },
+  "url:https://news.google.com/rss/articles/cbmiaefvx3lxte9pynfsvxlryktmtzfdeudkszlbdgzwm1rzqvh6s2zyse5ayujrb0rtthu1eklpqklxmjzdmwpquy1bzdhydgvoctbschfzckffcnfmqxqwbm9xs0xzrtg3nfhtagd1n09r": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Sabre Accelerates Agentic Travel Leadership with First-Mover Travel Experience within​ ​Grok Bot and Next-Gen Proactive Travel APIs - WebWire"
   },
   "url:https://news.google.com/rss/articles/cbmicefvx3lxte5ysxppr00yoxppmdgzmm44rfndsdb3x2l1qwtmvkj2zdzpvvfqeedrte5lcuhzogdndfpetufhbkvmbgtaov9vnw5nef9hm3nlmtv5wet3ym1hz1vxbg9qevhmdnkttgpjouo0u1i3mva": {
    "at": "2026-11-16T22:02:32+00:00",
@@ -442,11 +670,35 @@
    "priority": "P2",
    "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
   },
+  "url:https://news.google.com/rss/articles/cbmiggfbvv95cuxncxrwahdowjzeow4zb0dyc3vxdutpd0pdve03rkrfsfhnykjvdu5qtudntgzmzfzisu1venfpvkw4dgtxthnga1dyai1owde0q3btogiyqi1tqtlaeutbwxfsd3nowjkyczg5wvzwukvntmlucfrgbnnuvzj4ymfxvul3": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "OpenAI site plan approved for Effingham - The Current"
+  },
   "url:https://news.google.com/rss/articles/cbmihafbvv95cuxoem9ndlrta0lvanricmj3q0vbby14wkzhd3vranhrnvnjys1hztrorhq3wwhxymoztdrnq0o4mtj4y1znr0ruv0zdx3jqc3dhmnvod1fpm0t3elhoqxdnswlys2nxdgzvum5jmkjnq3huwnziehzpeer5bkjtqvc3uwyxsi0": {
    "at": "2026-11-17T07:57:43+00:00",
    "channel": "digest",
    "priority": "P1",
    "title": "California AG Sues OpenAI Over Rogue Agent Hacking Incidents"
+  },
+  "url:https://news.google.com/rss/articles/cbmihgfbvv95cuxotnz4txzznjntqzhyb2his0zbdetks05eeexrdmm2b01xqvlqwevkrwzvzv9uatdpbjhwekjuow1hm0rvaxhpu2o3afrinvk5c1czlxzhnmmyzm1nyl9qa1pivejhrfblckjyehh6rk1ntdhuy2torevhzmw5dzftewxivefjdw": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Scoop: Democrats probe DOJ's role in OpenAI copyright fight - Axios"
+  },
+  "url:https://news.google.com/rss/articles/cbmiigfbvv95cuxny0jqsgfxlvzudzdpthlkeufreetmbulzzldxt2pcn3zitmqztno2ew54rgthwuxwm0oyser0cfdux3znmde5sxhbrvjwbkrhz09jcwhonv9onf9oy1vvv0str0xda3pnbevudzhjs0zpejz5y0vmsc1dx09tsw9hdkl3dkqxwtbsaue": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Gordon Johnson: Elon Musk’s Grok ranks TSLA highest for fatal car crash rate among U.S. car companies - Traders Union"
+  },
+  "url:https://news.google.com/rss/articles/cbmijafbvv95cuxnbjnkofnprvb0dmuxqza3zecyber0dxetb0jdsnoyuzhlewtuvg9bmwx4berhrxgttnh4wg0zn3njdjruzk9etgjjqmnmauviwurirxdooepjn1lnvfbbtlnjx3vlzunundh6rjdeac14t0xobwpbt1btm1rpvhriy3dknxzflujvd1uxba": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Elon Musk: Grok Bot can help save millions in corporate expenses - Traders Union"
   },
   "url:https://news.google.com/rss/articles/cbmijafbvv95cuxoylzsuva2zg1jr3e4vxj0wwtnyuqtadnymwf2cezvuxnyemt6sjy2ugvswulvz0vlrgv3mhvkbdvdtuvstxv0m1a1nm1urxzxbgdqetzia3rcnhm1ou5itxy1nfn5c3dzqlewq084evd2weq2zldhrjhose94qwk1czlldmttdkxtzerinw": {
    "at": "2026-11-17T20:58:16+00:00",
@@ -460,6 +712,12 @@
    "priority": "P2",
    "title": "Anthropic IPO price expected to price at top of range or above amid high demand"
   },
+  "url:https://news.google.com/rss/articles/cbmijgfbvv95cuxqtzu2blbryu1gsdizmkvfc2naown0mgzvuvnlrzrwsei3qvliueroumdfbnduy2nvsmpvzehct1dtmu5kt0htwu1dzgdrcwhjrk5qvxh0njn1vk9xmnjtuxhpck9lds1ea01sdnjpt3nwwgfwn0z3ehjfzky2nvv1mhfuvkm1zghcemvkogr3": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Grok Bot as Corporate Expense Manager: How It Works - BASENOR - Tesla Accessories"
+  },
   "url:https://news.google.com/rss/articles/cbmikafbvv95cuxowxf2rxfiq05ocfg4z3foetvndkjgrvzzeuj1a3veuvczek9xsfi0dfphrdbzruhdwudxmc1lngj3v3npu0xzzmzktedtcdf1n3rjtunioflzshjvnzbem3nfzvfcaerjajzvawhky0fmvnjmri1vsk1nzjlwm0dqcwnon3i1cmppwnjvy1bqawe": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
@@ -471,6 +729,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "Zhipu Shares Crash Amid US Chip Curbs and Content Trimming"
+  },
+  "url:https://news.google.com/rss/articles/cbmilgfbvv95cuxork91svbpdehpuxv0mjbjq0x2cwpwv3djz1f6dk96ufdut1npnk5trmxqc0hmrwzzsllzs3fys19omhhvtjk4tgkzwff6evhen3zltuqzzfj5nme3ulbiuzf4vhl2tkturze5mkw5b25wcu13x2fkyxpjtjjdnud3zvlad1o5s3u5d01sywzmrs1cwkfyz3c": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Thousands of Gallons of Heat-Transfer Fluid Spill at xAI’s Southaven Site - Yahoo"
   },
   "url:https://news.google.com/rss/articles/cbmilgfbvv95cuxot0finkfouthyzflsrefpsfqwrldzvmjdtgxxtvnsugdoenzucdjjdnlnreplz084nfdvue8xvfnqntrqsi1aq01owfvic3novhjedlbqzeozajhvyutwdfitv3vxywdywlf2nnrdbjrqy2gxrwpazwljbg5qdwx3vkmwvkm0azf4tljprgp2tnoxafjotve": {
    "at": "2026-11-17T20:58:16+00:00",
@@ -490,6 +754,12 @@
    "priority": "P2",
    "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
   },
+  "url:https://news.google.com/rss/articles/cbmimgfbvv95cuxocthtyklmx29idxv3evhjexdlrgxaddzot0r1zjjlqv8tvtflnepib3pvce9km1g2yzllzfh4tgn0bud3v0djttbwd1hvuenxlvvbwkk4vgptowjgnwtpznl3exfvbfbtc1njbf85yk5audhyrxv5c005bwzfm1v0dhznn1y5wuxnqurrd3nwru9qumhlwmzqzzbr": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Security researchers identify unprompted data access by Grok Bot - SC Media"
+  },
   "url:https://news.google.com/rss/articles/cbmimwfbvv95cuxna2fvwujvwjbkde9kuktjsgzit1jxnxnmoxoytuzir0o1cw53z25jn2xqdxbxudjeuxrhvk55r01ix3h3u2pqu19iutl5qwrzohzvnktncxjrddjvy2w2unfkm0toqjz5b1dgdm5mtgy1suvmofpqu29nmndtshbfdfq3y2lxntczymzsywhnwwpiy1y5b21uvus4qq": {
    "at": "2026-11-17T20:58:16+00:00",
    "channel": "digest",
@@ -507,6 +777,18 @@
    "channel": "digest",
    "priority": "P1",
    "title": "xAI deploys Grok Bot teams for end-to-end accounting processes at SpaceXSI"
+  },
+  "url:https://news.google.com/rss/articles/cbmimwfbvv95cuxprdfkegm2bjb4dvn4z3ixlwoyrgd4agn5ctdswu5eckx5mfu5eetjb3hgeg93z1rqrtn0c1jqewvsefetekv1qtdgbepyajrmvthpq0q1tjlxqlfbdno0oup1zlr5tnhcvwjxzzc4mk5fvxnjuejfzjryz2tivwfxzgxyd2m3nxq5dkgzvkz3t003lxowm21wx3jkbw": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Anthropic’s Customers May Pay the Price for Its IPO - Bloomberg"
+  },
+  "url:https://news.google.com/rss/articles/cbminafbvv95cuxndvjosmjfqi03q1jtmmj4snz4vzzhsmnubnzretbvwdzomfbntg83u2vxbw1pcwlzrknjltnctzjhnxlzvktmr1m5s3zatxvnnfppdv9rmvhyaty4vem1rjjxbm5sz3fhqtb3u1qttnpaz2dfszn6qnjqq3ljtwlslxnsadrsuxlhwnnkmhpsawhdv2fhvdu1z0cwdkc": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Engineer accused of bugging OpenAI HQ to stand trial January 2027 - Courthouse News Service"
   },
   "url:https://news.google.com/rss/articles/cbminafbvv95cuxqczl5qzngz2c2uwz5u0ppnffua3nxmvm2y1dfdjnnnu1md3rcrwtjr0vzqvkyclnwbfntt0vtuefvzehcwndwce5pwllxofb1udlgckhtbwrnvhrkthhldmctx0lmtgz6twfzcnpravp5txlxqwu0nzjhmly2ug94vfbhyy1ysxrwluxax0z1azayz3lychn0qnllm1u": {
    "at": "2026-11-17T07:57:43+00:00",
@@ -664,6 +946,12 @@
    "priority": "P2",
    "title": "California and Oregon file major legal actions against OpenAI"
   },
+  "url:https://news.google.com/rss/articles/cbmiwgfbvv95cuxpnxowzet4nhrtnjuxt3y5stdsnwi5t1z3b0pfzjbsaunemue1ajzomtkzru1dqllmbfj0r28wmejjunllcvlkzgtodlbpadl5yw1dadnzcnqwwlrsa2nasmxmwlj1ytvuuhbex2ttt2t2tkjicwi4mldxohp1twpjtlhtc2zxshl6qnktawgxeufmrlblvehybnhiywp5rezsefqzx1f4wf8tz0hkbmq4tthjyjzmeu43mwtyyvm3zu9huq": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Form DEF 14A XAI CLO & Income Opportunities Fund For: 17 November By Investing.com - Investing.com India"
+  },
   "url:https://news.google.com/rss/articles/cbmiz0fvx3lxte9ptuzvuhleruszrufvdjjsrw84tnpvq25ndkk1ty1kblozsvh6vuvytuz1zjbcdlfya0s3chhnyum5r3zrvedzevdpa2izt0lzbwkwuzvutjdazxdevtdla3h3zg14oddsawxbvv95cuxowmu0cwfuwmtwufzyzvrwtnd0nxvvrnbhngh2rtlmsgrachhxb1znotq3si1smuu2zke5mwltru50nny2v2npnnfxdejxew0zahrpzk1wajrowvp2b25iuxldbdf5azfxx2jzmjq": {
    "at": "2026-11-17T20:58:16+00:00",
    "channel": "digest",
@@ -701,9 +989,9 @@
    "title": "Broadening access to AI for scientists"
   },
   "url:https://openai.com/index/introducing-chatgpt-for-sales": {
-   "at": "2026-11-17T23:04:15+00:00",
-   "channel": "alerts",
-   "priority": "P2",
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P1",
    "title": "Introducing ChatGPT for Sales"
   },
   "url:https://openai.com/index/introducing-gpt-6-2-astra-sol": {
@@ -778,6 +1066,12 @@
    "priority": "P0",
    "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol models"
   },
+  "url:https://orcarouter.ai/blog/qwen-4-max-vs-glm-5-4": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Qwen4-Max vs GLM-5.4: One Shipped, One Missed the Window - OrcaRouter"
+  },
   "url:https://platform.claude.com/docs/release-notes/overview": {
    "at": "2026-11-17T20:58:16+00:00",
    "channel": "digest",
@@ -850,6 +1144,30 @@
    "priority": "P2",
    "title": "Zhipu Shares Crash Amid US Chip Curbs and Content Trimming"
   },
+  "url:https://shattered.io/open-weight-models-kimi-k3-1-pro-vs-deepseek-v4-1-flash-qwen4-max-glm-5-3-2026": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Kimi vs DeepSeek vs Qwen vs GLM: 4 Ranked, 1 Wins [2026] - shattered.io"
+  },
+  "url:https://simonwillison.net/2026/nov/17/external-sandboxes-for-coding-agents": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "External sandboxes for coding agents"
+  },
+  "url:https://simonwillison.net/2026/nov/17/gpt62-astra-and-sol": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "GPT‑6.2 Astra and GPT‑6.2 Sol"
+  },
+  "url:https://status.claude.com/incidents/6prv10gjdpz1": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Elevated errors affecting the Google Docs connector"
+  },
   "url:https://support.claude.com/articles/12138966-release-notes": {
    "at": "2026-11-17T20:58:16+00:00",
    "channel": "digest",
@@ -875,8 +1193,8 @@
    "title": "OpenAI begins embedded safety evaluations with external research labs"
   },
   "url:https://testingcatalog.com/microsoft-launches-mai-cyber-2-flash-security-model": {
-   "at": "2026-11-18T04:33:12+00:00",
-   "channel": "alerts",
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
    "priority": "P2",
    "title": "Microsoft launches MAI Cyber 2 Flash security model"
   },
@@ -922,11 +1240,29 @@
    "priority": "P1",
    "title": "xAI deploys Grok Bot teams for end-to-end accounting processes at SpaceXSI"
   },
-  "url:https://youtube.com/watch": {
-   "at": "2026-11-17T20:58:16+00:00",
+  "url:https://x.com/marionawfal/status/2122932824416145489/video/1": {
+   "at": "2026-11-18T07:29:18+00:00",
    "channel": "digest",
-   "priority": "P0",
-   "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol models"
+   "priority": "P3",
+   "title": "Stop taking meeting notes. Invite Grok Bot to the call instead. Unlike the rest of us, it actually pays attention. Questions answered on the spot. Work assigned"
+  },
+  "url:https://youtube.com/shorts/2pdf52evlbm": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "An underrated way to use ChatGPT: Life admin"
+  },
+  "url:https://youtube.com/watch": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Introducing ChatGPT for Sales"
+  },
+  "url:https://zerohedge.com/political/anthropic-paid-rubios-ex-chief-staffs-firm-740000-after-jensen-memo-it-lobbied-his-nsc": {
+   "at": "2026-11-18T07:29:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Anthropic paid lobbying firms linked to Rubio $740k"
   }
  }
 }
