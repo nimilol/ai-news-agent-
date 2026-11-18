@@ -2,6 +2,7 @@
  "aliases": {
   "gh:a1lane/a1lane-mcp": "github:R_kgDOVgg6qg",
   "gh:a2uicatalog/a2ui": "github:R_kgDOTA06WQ",
+  "gh:achromat-ai/achromat-mcp-server": "github:R_kgDOVK-lkw",
   "gh:affaan-m/ecc": "github:R_kgDOQ77-1A",
   "gh:ag-ui-protocol/ag-ui": "github:R_kgDOOmBWgw",
   "gh:agent-bev/bev-door": "github:R_kgDOUtmlqg",
@@ -14,6 +15,7 @@
   "gh:ankimcp/anki-mcp-server-addon": "github:R_kgDOQjOADQ",
   "gh:antcolombo/beliefstate-agent-integrations": "github:R_kgDOVZgSEg",
   "gh:anthropics/flashprove": "github:R_kgDOVdb1-Q",
+  "gh:appwrite/appwrite": "github:MDEwOlJlcG9zaXRvcnkxODAxOTA4NTQ=",
   "gh:asgeirtj/system_prompts_leaks": "github:R_kgDOOjqi0Q",
   "gh:ask-your-audience/askyouraudience": "github:R_kgDOVK5wyQ",
   "gh:backnotprop/plannotator": "github:R_kgDOQv43sg",
@@ -29,38 +31,56 @@
   "gh:elementalsouls/claude-bughunter": "github:R_kgDOSUzdDA",
   "gh:folkbench/folkbench": "github:R_kgDOU4i48w",
   "gh:google-deepmind/alphaevolve": "github:R_kgDOVinb9w",
+  "gh:google-deepmind/efficient_evals": "github:R_kgDOVwgsbQ",
   "gh:google-deepmind/gbench": "github:R_kgDOVccjOw",
   "gh:google-deepmind/hope": "github:R_kgDOVZrejw",
+  "gh:google-deepmind/origami-design": "github:R_kgDOVsJvBA",
   "gh:google-deepmind/robotics-antigravity-plugin": "github:R_kgDOVwxjKA",
+  "gh:google-deepmind/xyeval": "github:R_kgDOVobzAQ",
   "gh:google-gemini/gemini-managed-agents-workshop": "github:R_kgDOVog1uA",
   "gh:google-labs-code/stitch-skills": "github:R_kgDOQ7Opvg",
   "gh:google-research/paper-orchestra": "github:R_kgDOSR3Uuw",
   "gh:harvil1/codeagent": "github:R_kgDOU4NxhA",
+  "gh:hkuds/cli-anything": "github:R_kgDORhiEjA",
   "gh:huggingface/pybot": "github:R_kgDOVrzVgQ",
   "gh:huggingface/safeagents": "github:R_kgDOVak8Ug",
+  "gh:huggingface/traj2envs": "github:R_kgDOViuGMg",
   "gh:jingyaogong/minimind": "github:R_kgDOMbt5gA",
   "gh:juneyaooo/rea-video": "github:R_kgDOVcA9Ag",
   "gh:kaankiziltug/logo-design-skill": "github:R_kgDOUshxmQ",
   "gh:kajisho5/ffmpeg-skill": "github:R_kgDOUNQZzA",
+  "gh:kkkkhazix/agent-autoloop": "github:R_kgDOVhF2rg",
   "gh:lemomo-ai/lemo-opuscar": "github:R_kgDOUsqjIA",
+  "gh:leonxlnx/earshot": "github:R_kgDOVKgi0A",
   "gh:louis-cfm/coucou": "github:R_kgDOUu-p6g",
   "gh:microsoft/ai-agents-for-beginners": "github:R_kgDONWBgsA",
   "gh:microsoft/copilot-managed-runtime": "github:R_kgDOVjNm0g",
   "gh:microsoft/markitdown": "github:R_kgDONO810w",
   "gh:microsoft/tokeneconomizer": "github:R_kgDOVG0zYA",
+  "gh:microsoft/universeontheroad2026-resources": "github:R_kgDOVkMbqA",
   "gh:morganlinton/beautifulrust": "github:R_kgDOVUPmBg",
   "gh:mvanhorn/last30days-skill": "github:R_kgDOQ__jdA",
+  "gh:n8n-io/n8n": "github:MDEwOlJlcG9zaXRvcnkxOTMyMTU1NTQ=",
+  "gh:nvidia/skillevaluator": "github:R_kgDOTDcPlA",
   "gh:obra/superpowers": "github:R_kgDOP_gcWw",
   "gh:oil-oil/oil-ui": "github:R_kgDOU0Ob-A",
   "gh:oldcircle/geo-sleuth": "github:R_kgDOUf44tQ",
+  "gh:onehumanbeing/esp32-iphone-agent": "github:R_kgDOVFJing",
+  "gh:openai/auth-javascript": "github:R_kgDOViAkvA",
+  "gh:openvinotoolkit/openvino": "github:MDEwOlJlcG9zaXRvcnkxNTMwOTc2NDM=",
   "gh:paperclipai/paperclip": "github:R_kgDORclPyA",
+  "gh:punkpeye/awesome-mcp-servers": "github:R_kgDONWz9pg",
+  "gh:qybaihe/bla": "github:R_kgDOVWezCw",
   "gh:qybaihe/mu": "github:R_kgDOUlav9A",
+  "gh:reason-machines/reason-network": "github:R_kgDOVMdAHw",
+  "gh:sallyn0225/eidolon-sc": "github:R_kgDOUrOlvA",
   "gh:tencent/loopforge": "github:R_kgDOTlnVHA",
   "gh:underleveledbuilder/awesome-short-drama-skills": "github:R_kgDOVIQiug",
   "gh:wgjsg/agilex-docs-mcp": "github:R_kgDOVhPfQQ",
   "gh:yetone/magpie": "github:R_kgDOUns_9A",
   "url:https://github.com/a1lane/a1lane-mcp": "github:R_kgDOVgg6qg",
   "url:https://github.com/a2uicatalog/a2ui": "github:R_kgDOTA06WQ",
+  "url:https://github.com/achromat-ai/achromat-mcp-server": "github:R_kgDOVK-lkw",
   "url:https://github.com/affaan-m/ecc": "github:R_kgDOQ77-1A",
   "url:https://github.com/ag-ui-protocol/ag-ui": "github:R_kgDOOmBWgw",
   "url:https://github.com/agent-bev/bev-door": "github:R_kgDOUtmlqg",
@@ -73,6 +93,7 @@
   "url:https://github.com/ankimcp/anki-mcp-server-addon": "github:R_kgDOQjOADQ",
   "url:https://github.com/antcolombo/beliefstate-agent-integrations": "github:R_kgDOVZgSEg",
   "url:https://github.com/anthropics/flashprove": "github:R_kgDOVdb1-Q",
+  "url:https://github.com/appwrite/appwrite": "github:MDEwOlJlcG9zaXRvcnkxODAxOTA4NTQ=",
   "url:https://github.com/asgeirtj/system_prompts_leaks": "github:R_kgDOOjqi0Q",
   "url:https://github.com/ask-your-audience/askyouraudience": "github:R_kgDOVK5wyQ",
   "url:https://github.com/backnotprop/plannotator": "github:R_kgDOQv43sg",
@@ -88,32 +109,49 @@
   "url:https://github.com/elementalsouls/claude-bughunter": "github:R_kgDOSUzdDA",
   "url:https://github.com/folkbench/folkbench": "github:R_kgDOU4i48w",
   "url:https://github.com/google-deepmind/alphaevolve": "github:R_kgDOVinb9w",
+  "url:https://github.com/google-deepmind/efficient_evals": "github:R_kgDOVwgsbQ",
   "url:https://github.com/google-deepmind/gbench": "github:R_kgDOVccjOw",
   "url:https://github.com/google-deepmind/hope": "github:R_kgDOVZrejw",
+  "url:https://github.com/google-deepmind/origami-design": "github:R_kgDOVsJvBA",
   "url:https://github.com/google-deepmind/robotics-antigravity-plugin": "github:R_kgDOVwxjKA",
+  "url:https://github.com/google-deepmind/xyeval": "github:R_kgDOVobzAQ",
   "url:https://github.com/google-gemini/gemini-managed-agents-workshop": "github:R_kgDOVog1uA",
   "url:https://github.com/google-labs-code/stitch-skills": "github:R_kgDOQ7Opvg",
   "url:https://github.com/google-research/paper-orchestra": "github:R_kgDOSR3Uuw",
   "url:https://github.com/harvil1/codeagent": "github:R_kgDOU4NxhA",
+  "url:https://github.com/hkuds/cli-anything": "github:R_kgDORhiEjA",
   "url:https://github.com/huggingface/pybot": "github:R_kgDOVrzVgQ",
   "url:https://github.com/huggingface/safeagents": "github:R_kgDOVak8Ug",
+  "url:https://github.com/huggingface/traj2envs": "github:R_kgDOViuGMg",
   "url:https://github.com/jingyaogong/minimind": "github:R_kgDOMbt5gA",
   "url:https://github.com/juneyaooo/rea-video": "github:R_kgDOVcA9Ag",
   "url:https://github.com/kaankiziltug/logo-design-skill": "github:R_kgDOUshxmQ",
   "url:https://github.com/kajisho5/ffmpeg-skill": "github:R_kgDOUNQZzA",
+  "url:https://github.com/kkkkhazix/agent-autoloop": "github:R_kgDOVhF2rg",
   "url:https://github.com/lemomo-ai/lemo-opuscar": "github:R_kgDOUsqjIA",
+  "url:https://github.com/leonxlnx/earshot": "github:R_kgDOVKgi0A",
   "url:https://github.com/louis-cfm/coucou": "github:R_kgDOUu-p6g",
   "url:https://github.com/microsoft/ai-agents-for-beginners": "github:R_kgDONWBgsA",
   "url:https://github.com/microsoft/copilot-managed-runtime": "github:R_kgDOVjNm0g",
   "url:https://github.com/microsoft/markitdown": "github:R_kgDONO810w",
   "url:https://github.com/microsoft/tokeneconomizer": "github:R_kgDOVG0zYA",
+  "url:https://github.com/microsoft/universeontheroad2026-resources": "github:R_kgDOVkMbqA",
   "url:https://github.com/morganlinton/beautifulrust": "github:R_kgDOVUPmBg",
   "url:https://github.com/mvanhorn/last30days-skill": "github:R_kgDOQ__jdA",
+  "url:https://github.com/n8n-io/n8n": "github:MDEwOlJlcG9zaXRvcnkxOTMyMTU1NTQ=",
+  "url:https://github.com/nvidia/skillevaluator": "github:R_kgDOTDcPlA",
   "url:https://github.com/obra/superpowers": "github:R_kgDOP_gcWw",
   "url:https://github.com/oil-oil/oil-ui": "github:R_kgDOU0Ob-A",
   "url:https://github.com/oldcircle/geo-sleuth": "github:R_kgDOUf44tQ",
+  "url:https://github.com/onehumanbeing/esp32-iphone-agent": "github:R_kgDOVFJing",
+  "url:https://github.com/openai/auth-javascript": "github:R_kgDOViAkvA",
+  "url:https://github.com/openvinotoolkit/openvino": "github:MDEwOlJlcG9zaXRvcnkxNTMwOTc2NDM=",
   "url:https://github.com/paperclipai/paperclip": "github:R_kgDORclPyA",
+  "url:https://github.com/punkpeye/awesome-mcp-servers": "github:R_kgDONWz9pg",
+  "url:https://github.com/qybaihe/bla": "github:R_kgDOVWezCw",
   "url:https://github.com/qybaihe/mu": "github:R_kgDOUlav9A",
+  "url:https://github.com/reason-machines/reason-network": "github:R_kgDOVMdAHw",
+  "url:https://github.com/sallyn0225/eidolon-sc": "github:R_kgDOUrOlvA",
   "url:https://github.com/tencent/loopforge": "github:R_kgDOTlnVHA",
   "url:https://github.com/underleveledbuilder/awesome-short-drama-skills": "github:R_kgDOVIQiug",
   "url:https://github.com/wgjsg/agilex-docs-mcp": "github:R_kgDOVhPfQQ",
@@ -127,6 +165,7 @@
   "url:https://huggingface.co/MiniMaxAI/MiniMax-H3-Image": "hf:model:minimaxai/minimax-h3-image",
   "url:https://huggingface.co/Qwen/Qwen3.8-27B": "hf:model:qwen/qwen3.8-27b",
   "url:https://huggingface.co/Zyphra/ZONOS3-Mini": "hf:model:zyphra/zonos3-mini",
+  "url:https://huggingface.co/apple/FastFrames-L": "hf:model:apple/fastframes-l",
   "url:https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy": "hf:model:black-forest-labs/flux-3-image-klein-comfy",
   "url:https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized": "hf:model:chatrlabs/qwen-image-2.1-uncensored-omni-quantized",
   "url:https://huggingface.co/datasets/Angais/pixel-art-atlas-1.4m": "hf:dataset:angais/pixel-art-atlas-1.4m",
@@ -143,12 +182,15 @@
   "url:https://huggingface.co/datasets/nvidia/PhysicalAI-Human-1M-100K": "hf:dataset:nvidia/physicalai-human-1m-100k",
   "url:https://huggingface.co/datasets/nvidia/USDCraft-10K": "hf:dataset:nvidia/usdcraft-10k",
   "url:https://huggingface.co/datasets/nvidia/simready-assets": "hf:dataset:nvidia/simready-assets",
+  "url:https://huggingface.co/datasets/ropedia-ai/Ropedia-Xperience-2": "hf:dataset:ropedia-ai/ropedia-xperience-2",
   "url:https://huggingface.co/datasets/tencent/TailorRig": "hf:dataset:tencent/tailorrig",
   "url:https://huggingface.co/datasets/venvoo/china-a-share-l2-level2-limit-order-book-tick-data": "hf:dataset:venvoo/china-a-share-l2-level2-limit-order-book-tick-data",
   "url:https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017": "hf:model:deepseek-ai/deepseek-v4.1-flash-1017",
   "url:https://huggingface.co/facebook/sam3": "hf:model:facebook/sam3",
+  "url:https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted": "hf:model:harness-hub/qwen3.8-27b-pi-adapted",
   "url:https://huggingface.co/higurashi-ai/Haru-4B": "hf:model:higurashi-ai/haru-4b",
   "url:https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF": "hf:model:huihui-ai/huihui-qwen3.8-27b-abliterated-gguf",
+  "url:https://huggingface.co/internlm/Sage-S2.1-Flash": "hf:model:internlm/sage-s2.1-flash",
   "url:https://huggingface.co/maxwell-model/Maxwell-V1-Flash": "hf:model:maxwell-model/maxwell-v1-flash",
   "url:https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6": "hf:model:meituan-longcat/longcat-video-avatar-1.6",
   "url:https://huggingface.co/n4ze3m/tiny-voca": "hf:model:n4ze3m/tiny-voca",
@@ -156,15 +198,20 @@
   "url:https://huggingface.co/spaces/Agents-MCP-Hackathon/Graphify": "hf:space:agents-mcp-hackathon/graphify",
   "url:https://huggingface.co/spaces/FrameAI4687/Omni-Video-Factory": "hf:space:frameai4687/omni-video-factory",
   "url:https://huggingface.co/spaces/Heartsync/NSFW-Uncensored-video2": "hf:space:heartsync/nsfw-uncensored-video2",
+  "url:https://huggingface.co/spaces/KingNish/Instant-Video": "hf:space:kingnish/instant-video",
   "url:https://huggingface.co/spaces/Lightricks/ltx-video-distilled": "hf:space:lightricks/ltx-video-distilled",
   "url:https://huggingface.co/spaces/Qwen/Qwen3-TTS": "hf:space:qwen/qwen3-tts",
   "url:https://huggingface.co/spaces/TTS-AGI/TTS-Arena-V2": "hf:space:tts-agi/tts-arena-v2",
+  "url:https://huggingface.co/spaces/agent-memory-leaderboard/leaderboard": "hf:space:agent-memory-leaderboard/leaderboard",
   "url:https://huggingface.co/spaces/agents-course/First_agent_template": "hf:space:agents-course/first_agent_template",
   "url:https://huggingface.co/spaces/ali-vilab/modelscope-text-to-video-synthesis": "hf:space:ali-vilab/modelscope-text-to-video-synthesis",
+  "url:https://huggingface.co/spaces/elevenlabs/tts": "hf:space:elevenlabs/tts",
   "url:https://huggingface.co/spaces/hexgrad/Kokoro-TTS": "hf:space:hexgrad/kokoro-tts",
   "url:https://huggingface.co/spaces/hugging-apps/bfs-best-face-swap": "hf:space:hugging-apps/bfs-best-face-swap",
+  "url:https://huggingface.co/spaces/huggingface-projects/ai-video-composer": "hf:space:huggingface-projects/ai-video-composer",
   "url:https://huggingface.co/spaces/huggingface/moe-blogpost": "hf:space:huggingface/moe-blogpost",
   "url:https://huggingface.co/spaces/innoai/Edge-TTS-Text-to-Speech": "hf:space:innoai/edge-tts-text-to-speech",
+  "url:https://huggingface.co/spaces/innova-ai/video-background-removal": "hf:space:innova-ai/video-background-removal",
   "url:https://huggingface.co/spaces/kulkas2pintu/wan777": "hf:space:kulkas2pintu/wan777",
   "url:https://huggingface.co/spaces/mediasynthesismuseum/stable-video-diffusion": "hf:space:mediasynthesismuseum/stable-video-diffusion",
   "url:https://huggingface.co/spaces/microsoft/TRELLIS.2": "hf:space:microsoft/trellis.2",
@@ -173,18 +220,20 @@
   "url:https://huggingface.co/spaces/parler-tts/parler_tts": "hf:space:parler-tts/parler_tts",
   "url:https://huggingface.co/spaces/r3gm/SoniTranslate_translate_audio_of_a_video_content": "hf:space:r3gm/sonitranslate_translate_audio_of_a_video_content",
   "url:https://huggingface.co/spaces/selfit-camera/Omni-Image-Editor": "hf:space:selfit-camera/omni-image-editor",
+  "url:https://huggingface.co/spaces/skytnt/moe-tts": "hf:space:skytnt/moe-tts",
   "url:https://huggingface.co/spaces/smolagents/computer-agent": "hf:space:smolagents/computer-agent",
   "url:https://huggingface.co/spaces/tonyassi/video-face-swap": "hf:space:tonyassi/video-face-swap",
   "url:https://huggingface.co/speridlabs/idol": "hf:model:speridlabs/idol",
+  "url:https://huggingface.co/tencent/Hy4-flash": "hf:model:tencent/hy4-flash",
   "url:https://huggingface.co/thinkingmachines/Inkling-2-Small": "hf:model:thinkingmachines/inkling-2-small",
   "url:https://huggingface.co/unsloth/Qwen3.8-27B-GGUF": "hf:model:unsloth/qwen3.8-27b-gguf",
   "url:https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic": "hf:model:xtools-at/deepseek-v4-pro-qwen3.5-9b-uncensored-heretic"
  },
  "failures": {
-  "Codeberg": 4
+  "Codeberg": 5
  },
  "meta": {
-  "last_batch_at": "2026-11-18T03:03:20+00:00",
+  "last_batch_at": "2026-11-18T12:02:41+00:00",
   "pending_updates": []
  },
  "outbox": {
@@ -397,9 +446,326 @@
    "status": "SENT",
    "updates": [],
    "verification": ""
+  },
+  "discovery|2026-11-18T12:02:41+00:00": {
+   "applied": true,
+   "attempts": 1,
+   "category": "DISCOVERY",
+   "created": "2026-11-18T12:02:41+00:00",
+   "id": "discovery|2026-11-18T12:02:41+00:00",
+   "kind": "discovery",
+   "last_error": null,
+   "log": [
+    "2026-11-18T12:02:42+00:00 SENT: Telegram confirmed message id(s) [714, 715, 716]"
+   ],
+   "model_name": "AI skills & open-source discoveries",
+   "parts": [
+    "<b>🚀 AI SKILLS &amp; OPEN-SOURCE DISCOVERIES</b>\n<b>Date:</b> 18 Nov 2026, 12:02 UTC\n<b>Discovery period:</b> 18 Nov 03:03 – 18 Nov 12:02 UTC\n<b>New discoveries:</b> 8\n\n<b>🛠 AI SKILLS AND PROMPTS</b>\n<b>1. EL4CTEO/blender-skills</b>\n<i>🟠 P1 Highly useful · score 84/100</i>\n<i>★ 1,985 · 168 forks · 0 open issues · 3 contributors · updated today</i>\n<b>What it does:</b> Professional Blender 5.3 3D modeling and animation workflows packaged as agent skills for Claude Code, Codex, Gemini CLI, and Cursor.\n<b>Why it is useful:</b> It lets you control professional 3D asset generation directly through conversational AI agents.\n<b>Where it can be integrated:</b> Claude Code plugin or `~/.agents/skills` directory\n<b>Installation:</b> <code>git clone https://github.com/EL4CTEO/blender-skills</code>\n<b>Cost:</b> Free and open source\n💼 <i>How this could help your Claude Code, Codex and Gemini development: it plugs into the coding agents you already use.</i>\n<i>Also useful for: automation, agent building</i>\n🔗 <b>Original link:</b> <a href=\"https://github.com/el4cteo/blender-skills\">github.com/el4cteo/blender-skills</a>\n\n<b>2. NVIDIA/SkillEvaluator</b>\n<i>🟠 P1 Highly useful · score 84/100</i>\n<i>★ 3,454 · 477 forks · 56 open issues · 38 contributors · updated today</i>\n<b>What it does:</b> A multi-tier evaluation framework for testing AI agent skills and plugins against quality, security, and behavioral regressions.\n<b>Why it is useful:</b> Provides standardized benchmarking and security scanning without needing custom evaluation code.\n<b>Where it can be integrated:</b> A Python 3.12–3.14 environment, CI/CD pipeline, or terminal\n<b>Installation:</b> <code>pip install skillevaluator</code>\n<b>Cost:</b> Free and open source\n💼 <i>How this could help your Claude Code, Codex and Gemini development: it plugs into the coding agents you already use.</i>\n<i>Also useful for: agent building, creator tools</i>\n🔗 <b>Original link:</b> <a href=\"https://github.com/nvidia/skillevaluator\">github.com/nvidia/skillevaluator</a>\n\n<b>3. microsoft/TokenEconomizer</b>\n<i>🟠 P1 Highly useful · score 82/100</i>\n<i>★ 7,456 · 505 forks · 37 open issues · 47 contributors · updated 1 day ago</i>\n<b>What it does:</b> Experience-driven black-box cost control framework that reduces coding agent token consumption by learning from past repository sessions.\n<b>Why it is useful:</b> It significantly lowers API costs (18-30% on benchmarks) without modifying the underlying agent.\n<b>Where it can be integrated:</b> A Python project or coding agent workflow\n<b>Installation:</b> <code>git clone https://github.com/microsoft/TokenEconomizer.git</code>\n<b>Cost:</b> Free and open source\n💼 <i>How this could help your Claude Code, Codex and Gemini development: it plugs into the coding agents you already use.</i>\n<i>Also useful for: agent building, developer productivity</i>\n🔗 <b>Original link:</b> <a href=\"https://github.com/microsoft/tokeneconomizer\">github.com/microsoft/tokeneconomizer</a>\n<i>(1/3)</i>",
+    "<b>🏗 HACKATHON AND PROJECT RESOURCES</b>\n<b>4. Sallyn0225/eidolon-sc</b>\n<i>🟠 P1 Highly useful · score 81/100</i>\n<i>★ 444 · 93 forks · 14 open issues · 4 contributors · updated 1 day ago</i>\n<b>What you can build:</b> A custom interactive anime or character voice assistant for live demos or hackathons.\n<b>Why it is worth exploring:</b> It offers a complete Docker-ready template for real-time voice AI apps with WebRTC and Pipecat.\n<b>Technologies:</b> Python, Claude Code, Codex, Cursor, OpenAI API, Python, Node.js\n<b>Getting started:</b> <code>git clone https://github.com/Sallyn0225/eidolon-sc.git &amp;&amp; cd eidolon-sc</code>\n💼 <i>How this could help your Claude Code, Codex and Gemini development: it plugs into the coding agents you already use.</i>\n<i>Also useful for: creator tools</i>\n🔗 <b>Original link:</b> <a href=\"https://github.com/sallyn0225/eidolon-sc\">github.com/sallyn0225/eidolon-sc</a>\n\n<b>5. openvinotoolkit/openvino</b>\n<i>🟠 P1 Highly useful · score 80/100</i>\n<i>★ 11,214 · 3,574 forks · 1,154 open issues · 938 contributors · updated today</i>\n<b>What you can build:</b> A high-speed local AI application optimized for edge devices or consumer hardware.\n<b>Why it is worth exploring:</b> It drastically accelerates local model inference speeds across various consumer hardware setups.\n<b>Technologies:</b> C++, LangChain, Hugging Face, Python\n<b>Getting started:</b> <code>pip install -U openvino</code>\n💼 <i>Connects to your AI educational videos by providing concrete benchmarking material for local hardware optimization.</i>\n<i>Also useful for: creator tools</i>\n🔗 <b>Original link:</b> <a href=\"https://github.com/openvinotoolkit/openvino\">github.com/openvinotoolkit/openvino</a>\n\n<b>6. appwrite/appwrite</b>\n<i>🟠 P1 Highly useful · score 78/100</i>\n<i>★ 58,120 · 5,875 forks · 731 open issues · 556 contributors · updated today</i>\n<b>What you can build:</b> A full-stack AI-native application with self-hosted backend infrastructure for a hackathon.\n<b>Why it is worth exploring:</b> It provides a complete cloud backend that AI coding agents can interact with directly via MCP.\n<b>Technologies:</b> TypeScript, Claude Code, Codex, Cursor, VS Code, MCP, Node.js\n<b>Getting started:</b> <code>docker run -it --rm \\</code>\n💼 <i>How this could help your Claude Code, Codex and Gemini development: it plugs into the coding agents you already use.</i>\n<i>Also useful for: agent building, skills and instructions</i>\n🔗 <b>Original link:</b> <a href=\"https://github.com/appwrite/appwrite\">github.com/appwrite/appwrite</a>\n\n<b>🎬 AI CREATOR RESOURCES</b>\n<b>7. higurashi-ai/Haru-4B</b>\n<i>🟠 P1 Highly useful · score 75/100</i>\n<i>♥ 511 · 4,445 downloads · updated 5 days ago</i>\n<b>What it does:</b> A low-latency, multilingual full-duplex continuous spoken dialogue foundation model that listens and speaks simultaneously.\n<b>How creators can use it:</b> Demonstrate cutting-edge full-duplex voice models in your AI news updates and technical breakdowns.\n<b>Requirements:</b> no paid API, subscription or GPU mentioned in its README\n💼 <i>How this could help your prompting: it explains or tests prompting techniques you can apply directly.</i>\n<i>Also useful for: prompt engineering</i>\n🔗 <b>Hugging Face:</b> <a href=\"https://huggingface.co/higurashi-ai/Haru-4B\">huggingface.co/higurashi-ai/Haru-4B</a>\n<i>(2/3)</i>",
+    "<b>8. Leonxlnx/earshot</b>\n<i>🔵 P2 Worth exploring · score 69/100</i>\n<i>★ 5,132 · 342 forks · 19 open issues · updated today</i>\n<b>What it does:</b> An open-source tool that provides CPU-based audio listening, review, and sound synthesis capabilities for AI coding agents.\n<b>How creators can use it:</b> Build automated agent workflows to check audio levels and generate sound effects for video edits.\n<b>Requirements:</b> no paid API, subscription or GPU mentioned in its README\n💼 <i>Connects to your AI News Agent by giving your coding agents the ability to audit and review generated audio content.</i>\n<i>Also useful for: agent building, skills and instructions</i>\n🔗 <b>Original link:</b> <a href=\"https://github.com/leonxlnx/earshot\">github.com/leonxlnx/earshot</a>\n\n<b>🏆 BEST DISCOVERY</b>\n<b>appwrite/appwrite</b> · <a href=\"https://github.com/appwrite/appwrite\">open</a>\n<b>Why it ranked first:</b> Appwrite provides a production-grade backend with native MCP support, letting AI coding agents directly manage databases, auth, and storage during development.\n<b>What problem it solves:</b> Eliminates the friction of manually configuring backend services when building apps or entering hackathons.\n<b>What you could build or improve:</b> A complete full-stack AI application powered by a self-hosted backend that your coding agent can configure autonomously.\n\n<i>Discovered, checked and ranked automatically; nothing was installed or run. Read a repository&#x27;s code and licence before using it. Explanations by gemini/gemini-flash-lite-latest.</i>\n<i>(3/3)</i>"
+   ],
+   "priority": "P1",
+   "receipt": {
+    "status": "NOT_NEEDED"
+   },
+   "release_id": "discovery|2026-11-18T12:02:41+00:00",
+   "resource_ids": [
+    "github:R_kgDOVJ8ICw",
+    "github:R_kgDOTDcPlA",
+    "github:R_kgDOVG0zYA",
+    "github:R_kgDOUrOlvA",
+    "github:MDEwOlJlcG9zaXRvcnkxNTMwOTc2NDM=",
+    "github:MDEwOlJlcG9zaXRvcnkxODAxOTA4NTQ=",
+    "hf:model:higurashi-ai/haru-4b",
+    "github:R_kgDOVKgi0A"
+   ],
+   "sent_at": "2026-11-18T12:02:42+00:00",
+   "sent_parts": {
+    "0": {
+     "at": "2026-11-18T12:02:41+00:00",
+     "message_id": 714,
+     "telegram_date": 1795003361
+    },
+    "1": {
+     "at": "2026-11-18T12:02:42+00:00",
+     "message_id": 715,
+     "telegram_date": 1795003362
+    },
+    "2": {
+     "at": "2026-11-18T12:02:42+00:00",
+     "message_id": 716,
+     "telegram_date": 1795003362
+    }
+   },
+   "status": "SENT",
+   "updates": [],
+   "verification": ""
   }
  },
  "resources": {
+  "github:MDEwOlJlcG9zaXRvcnkxNTMwOTc2NDM=": {
+   "categories": [
+    "app_development",
+    "creator_tools",
+    "hackathon"
+   ],
+   "delivery": {
+    "message_ids": [
+     714,
+     715,
+     716
+    ],
+    "sent_at": "2026-11-18T12:02:42+00:00",
+    "status": "SENT"
+   },
+   "evaluated_at": "2026-11-18T12:01:40+00:00",
+   "first_discovered": "2026-11-18T12:01:40+00:00",
+   "id": "github:MDEwOlJlcG9zaXRvcnkxNTMwOTc2NDM=",
+   "identifier": "MDEwOlJlcG9zaXRvcnkxNTMwOTc2NDM=",
+   "kind": "repository",
+   "last_checked": "2026-11-18T12:01:40+00:00",
+   "last_notified": "2026-11-18T12:02:42+00:00",
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "openvinotoolkit/openvino",
+   "owner": "openvinotoolkit",
+   "platform": "github",
+   "priority": "P1",
+   "score": 80,
+   "snapshot": {
+    "created_at": "2018-10-15T10:54:40Z",
+    "default_branch": "master",
+    "description": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+    "display": "openvino",
+    "forks": 3574,
+    "found_by": [
+     "GitHub Trending"
+    ],
+    "kind": "repository",
+    "language": "C++",
+    "license_spdx": "Apache-2.0",
+    "name": "openvinotoolkit/openvino",
+    "node_id": "MDEwOlJlcG9zaXRvcnkxNTMwOTc2NDM=",
+    "open_issues": 1154,
+    "owner": "openvinotoolkit",
+    "platform": "github",
+    "platform_id": 153097643,
+    "pushed_at": "2026-11-18T12:00:29Z",
+    "rid": "github:MDEwOlJlcG9zaXRvcnkxNTMwOTc2NDM=",
+    "stars": 11214,
+    "topics": [
+     "ai",
+     "computer-vision",
+     "deep-learning",
+     "deploy-ai",
+     "diffusion-models",
+     "generative-ai",
+     "good-first-issue",
+     "inference",
+     "llm-inference",
+     "natural-language-processing",
+     "nlp",
+     "openvino",
+     "optimize-ai",
+     "performance-boost",
+     "recommendation-system",
+     "speech-recognition",
+     "stable-diffusion",
+     "transformers",
+     "yolo"
+    ],
+    "url": "https://github.com/openvinotoolkit/openvino"
+   },
+   "status": "delivered",
+   "url": "https://github.com/openvinotoolkit/openvino"
+  },
+  "github:MDEwOlJlcG9zaXRvcnkxODAxOTA4NTQ=": {
+   "categories": [
+    "app_development",
+    "agent_building",
+    "skills",
+    "automation",
+    "productivity"
+   ],
+   "delivery": {
+    "message_ids": [
+     714,
+     715,
+     716
+    ],
+    "sent_at": "2026-11-18T12:02:42+00:00",
+    "status": "SENT"
+   },
+   "evaluated_at": "2026-11-18T12:01:39+00:00",
+   "first_discovered": "2026-11-18T12:01:39+00:00",
+   "id": "github:MDEwOlJlcG9zaXRvcnkxODAxOTA4NTQ=",
+   "identifier": "MDEwOlJlcG9zaXRvcnkxODAxOTA4NTQ=",
+   "kind": "repository",
+   "last_checked": "2026-11-18T12:01:39+00:00",
+   "last_notified": "2026-11-18T12:02:42+00:00",
+   "licence_class": "FREE TIER AVAILABLE",
+   "name": "appwrite/appwrite",
+   "owner": "appwrite",
+   "platform": "github",
+   "priority": "P1",
+   "score": 78,
+   "snapshot": {
+    "created_at": "2019-04-08T16:36:25Z",
+    "default_branch": "main",
+    "description": "The open-source cloud for agents & devs. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime, WAF and more",
+    "display": "appwrite",
+    "forks": 5875,
+    "found_by": [
+     "GitHub Trending"
+    ],
+    "kind": "repository",
+    "language": "TypeScript",
+    "license_spdx": "BSD-3-Clause",
+    "name": "appwrite/appwrite",
+    "node_id": "MDEwOlJlcG9zaXRvcnkxODAxOTA4NTQ=",
+    "open_issues": 731,
+    "owner": "appwrite",
+    "platform": "github",
+    "platform_id": 180190854,
+    "pushed_at": "2026-11-18T11:58:52Z",
+    "rid": "github:MDEwOlJlcG9zaXRvcnkxODAxOTA4NTQ=",
+    "stars": 58120,
+    "topics": [
+     "android",
+     "appwrite",
+     "backend",
+     "backend-as-a-service",
+     "docker",
+     "firebase",
+     "firewall",
+     "flutter",
+     "hosting",
+     "ios",
+     "javascript",
+     "nextjs",
+     "react",
+     "react-native",
+     "reactnative",
+     "self-hosted",
+     "selfhosted",
+     "supabase",
+     "swift",
+     "web"
+    ],
+    "url": "https://github.com/appwrite/appwrite"
+   },
+   "status": "delivered",
+   "url": "https://github.com/appwrite/appwrite"
+  },
+  "github:MDEwOlJlcG9zaXRvcnkxOTMyMTU1NTQ=": {
+   "categories": [
+    "automation",
+    "productivity",
+    "app_development",
+    "hackathon"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-18T12:01:36+00:00",
+   "evaluation": {
+    "categories": [
+     "automation",
+     "productivity",
+     "app_development",
+     "hackathon"
+    ],
+    "compatibility": [
+     "MCP",
+     "LangChain",
+     "n8n",
+     "OpenAI API",
+     "Python",
+     "Node.js"
+    ],
+    "contributors": null,
+    "docs": "good",
+    "install": "docker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n8n.io/n8nio/n8n",
+    "licence_class": "LICENCE UNCLEAR",
+    "licence_note": "no recognised licence file",
+    "maintenance": "updated today",
+    "primary": "automation",
+    "priority": "P2",
+    "reject": null,
+    "relevance": {
+     "hint": "it saves setup time so you can spend a hackathon on the idea",
+     "project": "your hackathon projects"
+    },
+    "requirements": [
+     "commercial licence"
+    ],
+    "score": 58,
+    "warnings": [
+     "pipes a remote script straight into the shell (read it before running)",
+     "no clear licence: check before reusing the code"
+    ]
+   },
+   "first_discovered": "2026-11-18T12:01:36+00:00",
+   "id": "github:MDEwOlJlcG9zaXRvcnkxOTMyMTU1NTQ=",
+   "identifier": "MDEwOlJlcG9zaXRvcnkxOTMyMTU1NTQ=",
+   "kind": "repository",
+   "last_checked": "2026-11-18T12:01:36+00:00",
+   "last_notified": null,
+   "licence_class": "LICENCE UNCLEAR",
+   "name": "n8n-io/n8n",
+   "owner": "n8n-io",
+   "platform": "github",
+   "priority": "P2",
+   "score": 58,
+   "snapshot": {
+    "created_at": "2019-06-22T09:24:21Z",
+    "default_branch": "master",
+    "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+    "display": "n8n",
+    "forks": 61544,
+    "found_by": [
+     "GitHub Trending"
+    ],
+    "kind": "repository",
+    "language": "TypeScript",
+    "license_spdx": "NOASSERTION",
+    "name": "n8n-io/n8n",
+    "node_id": "MDEwOlJlcG9zaXRvcnkxOTMyMTU1NTQ=",
+    "open_issues": 1259,
+    "owner": "n8n-io",
+    "platform": "github",
+    "platform_id": 193215554,
+    "pushed_at": "2026-11-18T12:01:18Z",
+    "rid": "github:MDEwOlJlcG9zaXRvcnkxOTMyMTU1NTQ=",
+    "stars": 210836,
+    "topics": [
+     "ai",
+     "apis",
+     "automation",
+     "cli",
+     "data-flow",
+     "development",
+     "integration-framework",
+     "integrations",
+     "ipaas",
+     "low-code",
+     "low-code-platform",
+     "mcp",
+     "mcp-client",
+     "mcp-server",
+     "n8n",
+     "no-code",
+     "self-hosted",
+     "typescript",
+     "workflow",
+     "workflow-automation"
+    ],
+    "url": "https://github.com/n8n-io/n8n"
+   },
+   "status": "pool",
+   "url": "https://github.com/n8n-io/n8n"
+  },
   "github:R_kgDOIF8T9Q": {
    "categories": [
     "agent_building",
@@ -603,6 +969,7 @@
    "kind": "repository",
    "last_checked": "2026-11-18T03:00:02+00:00",
    "last_notified": "2026-11-18T03:03:20+00:00",
+   "last_update_check": "2026-11-18T12:01:41+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "microsoft/markitdown",
    "owner": "microsoft",
@@ -642,7 +1009,8 @@
     "url": "https://github.com/microsoft/markitdown"
    },
    "status": "delivered",
-   "url": "https://github.com/microsoft/markitdown"
+   "url": "https://github.com/microsoft/markitdown",
+   "version": "v0.1.9"
   },
   "github:R_kgDONWBgsA": {
    "categories": [
@@ -664,6 +1032,7 @@
    "kind": "repository",
    "last_checked": "2026-11-18T03:00:03+00:00",
    "last_notified": "2026-11-18T03:03:20+00:00",
+   "last_update_check": "2026-11-18T12:01:42+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "microsoft/ai-agents-for-beginners",
    "owner": "microsoft",
@@ -708,6 +1077,92 @@
    },
    "status": "delivered",
    "url": "https://github.com/microsoft/ai-agents-for-beginners"
+  },
+  "github:R_kgDONWz9pg": {
+   "categories": [
+    "automation",
+    "agent_building",
+    "creator_tools",
+    "productivity"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-18T12:01:37+00:00",
+   "evaluation": {
+    "categories": [
+     "automation",
+     "agent_building",
+     "creator_tools",
+     "productivity"
+    ],
+    "compatibility": [
+     "MCP",
+     "OpenAI API",
+     "Python",
+     "Node.js"
+    ],
+    "contributors": null,
+    "docs": "basic",
+    "install": null,
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "MIT",
+    "maintenance": "updated 1 day ago",
+    "primary": "automation",
+    "priority": "P2",
+    "reject": null,
+    "relevance": {
+     "hint": "it covers source monitoring, summarising or Telegram delivery, which your news agent does every day",
+     "project": "your AI News Agent"
+    },
+    "requirements": [],
+    "score": 60,
+    "warnings": [
+     "a link collection rather than a working implementation"
+    ]
+   },
+   "first_discovered": "2026-11-18T12:01:37+00:00",
+   "id": "github:R_kgDONWz9pg",
+   "identifier": "R_kgDONWz9pg",
+   "kind": "repository",
+   "last_checked": "2026-11-18T12:01:37+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "punkpeye/awesome-mcp-servers",
+   "owner": "punkpeye",
+   "platform": "github",
+   "priority": "P2",
+   "score": 60,
+   "snapshot": {
+    "created_at": "2024-11-30T04:49:10Z",
+    "default_branch": "main",
+    "description": "A collection of MCP servers.",
+    "display": "awesome-mcp-servers",
+    "forks": 20272,
+    "found_by": [
+     "GitHub Trending"
+    ],
+    "kind": "repository",
+    "license_spdx": "MIT",
+    "name": "punkpeye/awesome-mcp-servers",
+    "node_id": "R_kgDONWz9pg",
+    "open_issues": 4710,
+    "owner": "punkpeye",
+    "platform": "github",
+    "platform_id": 896335270,
+    "pushed_at": "2026-11-17T05:21:40Z",
+    "rid": "github:R_kgDONWz9pg",
+    "stars": 97855,
+    "topics": [
+     "ai",
+     "mcp"
+    ],
+    "url": "https://github.com/punkpeye/awesome-mcp-servers"
+   },
+   "status": "pool",
+   "url": "https://github.com/punkpeye/awesome-mcp-servers"
   },
   "github:R_kgDOOjqi0Q": {
    "categories": [
@@ -1518,6 +1973,7 @@
    "kind": "repository",
    "last_checked": "2026-11-17T08:15:05+00:00",
    "last_notified": "2026-11-18T03:03:20+00:00",
+   "last_update_check": "2026-11-18T12:01:42+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "paperclipai/paperclip",
    "owner": "paperclipai",
@@ -1570,7 +2026,93 @@
     "url": "https://github.com/paperclipai/paperclip"
    },
    "status": "delivered",
-   "url": "https://github.com/paperclipai/paperclip"
+   "url": "https://github.com/paperclipai/paperclip",
+   "version": "v2026.1106.0"
+  },
+  "github:R_kgDORhiEjA": {
+   "categories": [
+    "agent_building",
+    "productivity",
+    "automation",
+    "skills",
+    "hackathon"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-18T12:01:38+00:00",
+   "evaluation": {
+    "categories": [
+     "agent_building",
+     "productivity",
+     "automation",
+     "skills",
+     "hackathon"
+    ],
+    "compatibility": [
+     "Claude Code",
+     "Cursor",
+     "MCP",
+     "n8n",
+     "Python",
+     "Node.js"
+    ],
+    "contributors": null,
+    "docs": "basic",
+    "install": null,
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "Apache-2.0",
+    "maintenance": "updated 57 days ago",
+    "primary": "agent_building",
+    "priority": "P2",
+    "reject": null,
+    "relevance": {
+     "hint": "it helps produce or explain material for your videos",
+     "project": "your AI educational videos"
+    },
+    "requirements": [],
+    "score": 63,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-18T12:01:38+00:00",
+   "id": "github:R_kgDORhiEjA",
+   "identifier": "R_kgDORhiEjA",
+   "kind": "repository",
+   "last_checked": "2026-11-18T12:01:38+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "HKUDS/CLI-Anything",
+   "owner": "HKUDS",
+   "platform": "github",
+   "priority": "P2",
+   "score": 63,
+   "snapshot": {
+    "created_at": "2026-03-08T13:52:57Z",
+    "default_branch": "main",
+    "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+    "display": "CLI-Anything",
+    "forks": 5368,
+    "found_by": [
+     "GitHub Trending"
+    ],
+    "kind": "repository",
+    "language": "Python",
+    "license_spdx": "Apache-2.0",
+    "name": "HKUDS/CLI-Anything",
+    "node_id": "R_kgDORhiEjA",
+    "open_issues": 242,
+    "owner": "HKUDS",
+    "platform": "github",
+    "platform_id": 1176011916,
+    "pushed_at": "2026-09-22T02:01:29Z",
+    "rid": "github:R_kgDORhiEjA",
+    "stars": 59331,
+    "url": "https://github.com/hkuds/cli-anything"
+   },
+   "status": "pool",
+   "url": "https://github.com/hkuds/cli-anything"
   },
   "github:R_kgDOSR3Uuw": {
    "categories": [
@@ -2033,6 +2575,82 @@
    "status": "pool",
    "url": "https://github.com/a2uicatalog/a2ui"
   },
+  "github:R_kgDOTDcPlA": {
+   "categories": [
+    "skills",
+    "agent_building",
+    "creator_tools",
+    "productivity",
+    "hackathon"
+   ],
+   "delivery": {
+    "message_ids": [
+     714,
+     715,
+     716
+    ],
+    "sent_at": "2026-11-18T12:02:42+00:00",
+    "status": "SENT"
+   },
+   "evaluated_at": "2026-11-18T12:01:41+00:00",
+   "first_discovered": "2026-11-18T12:01:41+00:00",
+   "id": "github:R_kgDOTDcPlA",
+   "identifier": "R_kgDOTDcPlA",
+   "kind": "repository",
+   "last_checked": "2026-11-18T12:01:41+00:00",
+   "last_notified": "2026-11-18T12:02:42+00:00",
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "NVIDIA/SkillEvaluator",
+   "owner": "NVIDIA",
+   "platform": "github",
+   "priority": "P1",
+   "score": 84,
+   "snapshot": {
+    "created_at": "2026-06-24T02:32:26Z",
+    "default_branch": "main",
+    "description": "Multi-tier framework for evaluating AI agent skills and plugins with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
+    "display": "SkillEvaluator",
+    "forks": 477,
+    "found_by": [
+     "GitHub Trending"
+    ],
+    "kind": "repository",
+    "language": "Python",
+    "license_spdx": "Apache-2.0",
+    "name": "NVIDIA/SkillEvaluator",
+    "node_id": "R_kgDOTDcPlA",
+    "open_issues": 56,
+    "owner": "NVIDIA",
+    "platform": "github",
+    "platform_id": 1278676884,
+    "pushed_at": "2026-11-18T09:12:59Z",
+    "rid": "github:R_kgDOTDcPlA",
+    "stars": 3454,
+    "topics": [
+     "agent-evaluation",
+     "agent-plugins",
+     "agent-security",
+     "agent-skills",
+     "agentic-ai",
+     "benchmark",
+     "claude-code",
+     "codex",
+     "evaluate",
+     "evaluation",
+     "plugin",
+     "plugin-evaluation",
+     "security-scanner",
+     "skill-eval",
+     "skill-evals",
+     "skill-evaluation",
+     "skill-evaluator",
+     "skills"
+    ],
+    "url": "https://github.com/nvidia/skillevaluator"
+   },
+   "status": "delivered",
+   "url": "https://github.com/nvidia/skillevaluator"
+  },
   "github:R_kgDOTlnVHA": {
    "categories": [
     "agent_building",
@@ -2152,6 +2770,7 @@
    "kind": "repository",
    "last_checked": "2026-11-18T03:00:01+00:00",
    "last_notified": "2026-11-18T03:03:20+00:00",
+   "last_update_check": "2026-11-18T12:01:42+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "oil-oil/oil-ui",
    "owner": "oil-oil",
@@ -2198,7 +2817,8 @@
     "url": "https://github.com/oil-oil/oil-ui"
    },
    "status": "delivered",
-   "url": "https://github.com/oil-oil/oil-ui"
+   "url": "https://github.com/oil-oil/oil-ui",
+   "version": "v0.34.1"
   },
   "github:R_kgDOU4NxhA": {
    "categories": [
@@ -2937,6 +3557,81 @@
    "status": "pool",
    "url": "https://github.com/chipfighter/context-attachment-manager"
   },
+  "github:R_kgDOUrOlvA": {
+   "categories": [
+    "app_development",
+    "creator_tools"
+   ],
+   "delivery": {
+    "message_ids": [
+     714,
+     715,
+     716
+    ],
+    "sent_at": "2026-11-18T12:02:42+00:00",
+    "status": "SENT"
+   },
+   "evaluated_at": "2026-11-18T12:01:41+00:00",
+   "first_discovered": "2026-11-18T12:01:41+00:00",
+   "id": "github:R_kgDOUrOlvA",
+   "identifier": "R_kgDOUrOlvA",
+   "kind": "repository",
+   "last_checked": "2026-11-18T12:01:41+00:00",
+   "last_notified": "2026-11-18T12:02:42+00:00",
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "Sallyn0225/eidolon-sc",
+   "owner": "Sallyn0225",
+   "platform": "github",
+   "priority": "P1",
+   "score": 81,
+   "snapshot": {
+    "created_at": "2026-09-25T12:59:15Z",
+    "default_branch": "main",
+    "description": "和《偶像大师 闪耀色彩》偶像实时语音/文字对话的 AI 分身：日语原声 + 中文字幕、回忆原作剧情、跨角色共享记忆；支持 Google/GitHub 登录与自带密钥，Docker Compose 一键部署（参考 LAPLACE Eidolon）",
+    "display": "eidolon-sc",
+    "forks": 93,
+    "found_by": [
+     "search: topic:rag",
+     "search: topic:text-to-speech"
+    ],
+    "kind": "repository",
+    "language": "Python",
+    "license_spdx": "AGPL-3.0",
+    "name": "Sallyn0225/eidolon-sc",
+    "node_id": "R_kgDOUrOlvA",
+    "open_issues": 14,
+    "owner": "Sallyn0225",
+    "platform": "github",
+    "platform_id": 1387505084,
+    "pushed_at": "2026-11-16T21:03:26Z",
+    "rid": "github:R_kgDOUrOlvA",
+    "stars": 444,
+    "topics": [
+     "ai-companion",
+     "character-ai",
+     "docker-compose",
+     "fastapi",
+     "idolmaster",
+     "llm",
+     "nextjs",
+     "pipecat",
+     "python",
+     "rag",
+     "react",
+     "realtime-voice",
+     "roleplay",
+     "shinycolors",
+     "speech-to-text",
+     "text-to-speech",
+     "typescript",
+     "voice-chat",
+     "webrtc"
+    ],
+    "url": "https://github.com/sallyn0225/eidolon-sc"
+   },
+   "status": "delivered",
+   "url": "https://github.com/sallyn0225/eidolon-sc"
+  },
   "github:R_kgDOUshxmQ": {
    "categories": [
     "skills",
@@ -2958,6 +3653,7 @@
    "kind": "repository",
    "last_checked": "2026-11-18T03:00:01+00:00",
    "last_notified": "2026-11-18T03:03:20+00:00",
+   "last_update_check": "2026-11-18T12:01:42+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "kaankiziltug/logo-design-skill",
    "owner": "kaankiziltug",
@@ -2999,7 +3695,8 @@
     "url": "https://github.com/kaankiziltug/logo-design-skill"
    },
    "status": "delivered",
-   "url": "https://github.com/kaankiziltug/logo-design-skill"
+   "url": "https://github.com/kaankiziltug/logo-design-skill",
+   "version": "v1.4.5"
   },
   "github:R_kgDOUsqjIA": {
    "categories": [
@@ -3313,6 +4010,25 @@
    "status": "pool",
    "url": "https://github.com/louis-cfm/coucou"
   },
+  "github:R_kgDOVFJing": {
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "first_discovered": "2026-11-18T12:01:38+00:00",
+   "id": "github:R_kgDOVFJing",
+   "identifier": "R_kgDOVFJing",
+   "kind": "repository",
+   "last_checked": "2026-11-18T12:01:38+00:00",
+   "last_notified": null,
+   "name": "onehumanbeing/esp32-iphone-agent",
+   "owner": "onehumanbeing",
+   "platform": "github",
+   "reject_reason": "excluded topic (jailbreak)",
+   "status": "rejected",
+   "url": "https://github.com/onehumanbeing/esp32-iphone-agent"
+  },
   "github:R_kgDOVG0zYA": {
    "categories": [
     "skills",
@@ -3320,48 +4036,21 @@
     "productivity"
    ],
    "delivery": {
-    "message_ids": [],
-    "sent_at": null,
-    "status": "NOT_SENT"
+    "message_ids": [
+     714,
+     715,
+     716
+    ],
+    "sent_at": "2026-11-18T12:02:42+00:00",
+    "status": "SENT"
    },
    "evaluated_at": "2026-11-17T18:41:41+00:00",
-   "evaluation": {
-    "categories": [
-     "skills",
-     "agent_building",
-     "productivity"
-    ],
-    "compatibility": [
-     "Claude Code",
-     "Codex",
-     "Cursor",
-     "VS Code",
-     "OpenAI API",
-     "Python"
-    ],
-    "contributors": 47,
-    "docs": "good",
-    "install": "git clone https://github.com/microsoft/TokenEconomizer.git",
-    "licence_class": "FREE AND OPEN SOURCE",
-    "licence_note": "MIT",
-    "maintenance": "updated today",
-    "primary": "skills",
-    "priority": "P1",
-    "reject": null,
-    "relevance": {
-     "hint": "it plugs into the coding agents you already use",
-     "project": "your Claude Code, Codex and Gemini development"
-    },
-    "requirements": [],
-    "score": 82,
-    "warnings": []
-   },
    "first_discovered": "2026-11-17T18:41:41+00:00",
    "id": "github:R_kgDOVG0zYA",
    "identifier": "R_kgDOVG0zYA",
    "kind": "repository",
    "last_checked": "2026-11-17T18:41:41+00:00",
-   "last_notified": null,
+   "last_notified": "2026-11-18T12:02:42+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "microsoft/TokenEconomizer",
    "owner": "microsoft",
@@ -3413,7 +4102,7 @@
     ],
     "url": "https://github.com/microsoft/tokeneconomizer"
    },
-   "status": "pool",
+   "status": "delivered",
    "url": "https://github.com/microsoft/tokeneconomizer"
   },
   "github:R_kgDOVIQiug": {
@@ -3531,49 +4220,21 @@
     "productivity"
    ],
    "delivery": {
-    "message_ids": [],
-    "sent_at": null,
-    "status": "NOT_SENT"
+    "message_ids": [
+     714,
+     715,
+     716
+    ],
+    "sent_at": "2026-11-18T12:02:42+00:00",
+    "status": "SENT"
    },
    "evaluated_at": "2026-11-18T03:00:02+00:00",
-   "evaluation": {
-    "categories": [
-     "skills",
-     "automation",
-     "agent_building",
-     "productivity"
-    ],
-    "compatibility": [
-     "Claude Code",
-     "Codex",
-     "Gemini CLI",
-     "Cursor",
-     "MCP",
-     "Python"
-    ],
-    "contributors": 3,
-    "docs": "good",
-    "install": "git clone https://github.com/EL4CTEO/blender-skills",
-    "licence_class": "FREE AND OPEN SOURCE",
-    "licence_note": "MIT",
-    "maintenance": "updated today",
-    "primary": "skills",
-    "priority": "P1",
-    "reject": null,
-    "relevance": {
-     "hint": "it plugs into the coding agents you already use",
-     "project": "your Claude Code, Codex and Gemini development"
-    },
-    "requirements": [],
-    "score": 84,
-    "warnings": []
-   },
    "first_discovered": "2026-11-18T03:00:02+00:00",
    "id": "github:R_kgDOVJ8ICw",
    "identifier": "R_kgDOVJ8ICw",
    "kind": "repository",
    "last_checked": "2026-11-18T03:00:02+00:00",
-   "last_notified": null,
+   "last_notified": "2026-11-18T12:02:42+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "EL4CTEO/blender-skills",
    "owner": "EL4CTEO",
@@ -3624,8 +4285,93 @@
     ],
     "url": "https://github.com/el4cteo/blender-skills"
    },
-   "status": "pool",
+   "status": "delivered",
    "url": "https://github.com/el4cteo/blender-skills"
+  },
+  "github:R_kgDOVK-lkw": {
+   "categories": [
+    "agent_building",
+    "automation",
+    "hackathon"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-18T12:01:37+00:00",
+   "evaluation": {
+    "categories": [
+     "agent_building",
+     "automation",
+     "hackathon"
+    ],
+    "compatibility": [
+     "MCP",
+     "Node.js"
+    ],
+    "contributors": null,
+    "docs": "basic",
+    "install": "git clone https://github.com/achromat-ai/achromat-mcp-server.git",
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "MIT",
+    "maintenance": "updated today",
+    "primary": "agent_building",
+    "priority": "P2",
+    "reject": null,
+    "relevance": {
+     "hint": "it covers source monitoring, summarising or Telegram delivery, which your news agent does every day",
+     "project": "your AI News Agent"
+    },
+    "requirements": [],
+    "score": 68,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-18T12:01:37+00:00",
+   "id": "github:R_kgDOVK-lkw",
+   "identifier": "R_kgDOVK-lkw",
+   "kind": "repository",
+   "last_checked": "2026-11-18T12:01:37+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "achromat-ai/achromat-mcp-server",
+   "owner": "achromat-ai",
+   "platform": "github",
+   "priority": "P2",
+   "score": 68,
+   "snapshot": {
+    "created_at": "2026-10-15T13:44:02Z",
+    "default_branch": "main",
+    "description": "Achromat Machine Operational Memory MCP. Every lesson pairs a call that policy blocked with the corrected call that was then allowed. Your agent reads the lesson before it acts, and gets it right the first time.",
+    "display": "achromat-mcp-server",
+    "forks": 0,
+    "found_by": [
+     "MCP registry"
+    ],
+    "kind": "repository",
+    "language": "TypeScript",
+    "license_spdx": "MIT",
+    "name": "achromat-ai/achromat-mcp-server",
+    "node_id": "R_kgDOVK-lkw",
+    "open_issues": 0,
+    "owner": "achromat-ai",
+    "platform": "github",
+    "platform_id": 1420797331,
+    "pushed_at": "2026-11-18T06:44:55Z",
+    "rid": "github:R_kgDOVK-lkw",
+    "stars": 1,
+    "topics": [
+     "agent-memory",
+     "compliance",
+     "devsecops",
+     "fintech",
+     "mcp",
+     "robotics"
+    ],
+    "url": "https://github.com/achromat-ai/achromat-mcp-server"
+   },
+   "status": "pool",
+   "url": "https://github.com/achromat-ai/achromat-mcp-server"
   },
   "github:R_kgDOVK5wyQ": {
    "categories": [
@@ -3703,6 +4449,171 @@
    },
    "status": "pool",
    "url": "https://github.com/ask-your-audience/askyouraudience"
+  },
+  "github:R_kgDOVKgi0A": {
+   "categories": [
+    "creator_tools",
+    "agent_building",
+    "skills",
+    "automation",
+    "productivity"
+   ],
+   "delivery": {
+    "message_ids": [
+     714,
+     715,
+     716
+    ],
+    "sent_at": "2026-11-18T12:02:42+00:00",
+    "status": "SENT"
+   },
+   "evaluated_at": "2026-11-18T12:01:38+00:00",
+   "first_discovered": "2026-11-18T12:01:38+00:00",
+   "id": "github:R_kgDOVKgi0A",
+   "identifier": "R_kgDOVKgi0A",
+   "kind": "repository",
+   "last_checked": "2026-11-18T12:01:38+00:00",
+   "last_notified": "2026-11-18T12:02:42+00:00",
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "Leonxlnx/earshot",
+   "owner": "Leonxlnx",
+   "platform": "github",
+   "priority": "P2",
+   "score": 69,
+   "snapshot": {
+    "created_at": "2026-10-15T06:52:46Z",
+    "default_branch": "main",
+    "description": "Ears for coding agents: let AI hear, review and make sound. CPU-only, open source.",
+    "display": "earshot",
+    "forks": 342,
+    "found_by": [
+     "search: topic:claude-code",
+     "search: topic:ai-agents"
+    ],
+    "kind": "repository",
+    "language": "Python",
+    "license_spdx": "MIT",
+    "name": "Leonxlnx/earshot",
+    "node_id": "R_kgDOVKgi0A",
+    "open_issues": 19,
+    "owner": "Leonxlnx",
+    "platform": "github",
+    "platform_id": 1420305104,
+    "pushed_at": "2026-11-18T10:23:39Z",
+    "rid": "github:R_kgDOVKgi0A",
+    "stars": 5132,
+    "topics": [
+     "ai-agents",
+     "audio",
+     "claude-code",
+     "mcp",
+     "sound-design"
+    ],
+    "url": "https://github.com/leonxlnx/earshot"
+   },
+   "status": "delivered",
+   "url": "https://github.com/leonxlnx/earshot"
+  },
+  "github:R_kgDOVMdAHw": {
+   "categories": [
+    "skills",
+    "agent_building",
+    "automation",
+    "productivity"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-18T12:01:40+00:00",
+   "evaluation": {
+    "categories": [
+     "skills",
+     "agent_building",
+     "automation",
+     "productivity"
+    ],
+    "compatibility": [
+     "Claude Code",
+     "Codex",
+     "Gemini CLI",
+     "Cursor",
+     "MCP",
+     "Python"
+    ],
+    "contributors": null,
+    "docs": "basic",
+    "install": null,
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "Apache-2.0",
+    "maintenance": "updated 6 days ago",
+    "primary": "skills",
+    "priority": "P2",
+    "reject": null,
+    "relevance": {
+     "hint": "it plugs into the coding agents you already use",
+     "project": "your Claude Code, Codex and Gemini development"
+    },
+    "requirements": [],
+    "score": 67,
+    "warnings": [
+     "pipes a remote script straight into the shell (read it before running)"
+    ]
+   },
+   "first_discovered": "2026-11-18T12:01:40+00:00",
+   "id": "github:R_kgDOVMdAHw",
+   "identifier": "R_kgDOVMdAHw",
+   "kind": "repository",
+   "last_checked": "2026-11-18T12:01:40+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "reason-machines/reason-network",
+   "owner": "reason-machines",
+   "platform": "github",
+   "priority": "P2",
+   "score": 67,
+   "snapshot": {
+    "created_at": "2026-10-16T15:34:34Z",
+    "default_branch": "main",
+    "description": "Reason Network: your team's coding agents, talking to each other. The engine behind `reason network`.",
+    "display": "reason-network",
+    "forks": 158,
+    "found_by": [
+     "search: topic:ai-agents",
+     "search: topic:mcp-server"
+    ],
+    "kind": "repository",
+    "language": "Rust",
+    "license_spdx": "Apache-2.0",
+    "name": "reason-machines/reason-network",
+    "node_id": "R_kgDOVMdAHw",
+    "open_issues": 42,
+    "owner": "reason-machines",
+    "platform": "github",
+    "platform_id": 1422344223,
+    "pushed_at": "2026-11-12T10:13:53Z",
+    "rid": "github:R_kgDOVMdAHw",
+    "stars": 1785,
+    "topics": [
+     "agent-to-agent",
+     "ai-agents",
+     "claude-code",
+     "codex",
+     "coding-agents",
+     "cursor",
+     "grok",
+     "iroh",
+     "mcp",
+     "mcp-server",
+     "multi-agent",
+     "peer-to-peer",
+     "reason"
+    ],
+    "url": "https://github.com/reason-machines/reason-network"
+   },
+   "status": "pool",
+   "url": "https://github.com/reason-machines/reason-network"
   },
   "github:R_kgDOVUPmBg": {
    "categories": [
@@ -3860,6 +4771,111 @@
    "status": "pool",
    "url": "https://github.com/aistlabs-ai/aistlabs-mcp"
   },
+  "github:R_kgDOVWezCw": {
+   "categories": [
+    "skills",
+    "agent_building",
+    "productivity",
+    "automation"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-18T12:01:36+00:00",
+   "evaluation": {
+    "categories": [
+     "skills",
+     "agent_building",
+     "productivity",
+     "automation"
+    ],
+    "compatibility": [
+     "Claude Code",
+     "Codex",
+     "Gemini CLI",
+     "Cursor",
+     "VS Code",
+     "MCP"
+    ],
+    "contributors": 10,
+    "docs": "basic",
+    "install": "npx bla-agents harden .            # writes a partial mirror to .bla-hardened/ — nothing ships yet",
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "MIT",
+    "maintenance": "updated today",
+    "primary": "skills",
+    "priority": "P1",
+    "reject": null,
+    "relevance": {
+     "hint": "it plugs into the coding agents you already use",
+     "project": "your Claude Code, Codex and Gemini development"
+    },
+    "requirements": [],
+    "score": 81,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-18T12:01:36+00:00",
+   "id": "github:R_kgDOVWezCw",
+   "identifier": "R_kgDOVWezCw",
+   "kind": "repository",
+   "last_checked": "2026-11-18T12:01:36+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "qybaihe/bla",
+   "owner": "qybaihe",
+   "platform": "github",
+   "priority": "P1",
+   "score": 81,
+   "snapshot": {
+    "created_at": "2026-10-25T05:25:45Z",
+    "default_branch": "main",
+    "description": "🛡️ BLA (bla-agents / Blind LLM Agents) — Open-source Blue Defense MCP server & CLI protecting JS/TS, Electron ASAR, WASM, Python, Native Binaries, SQLite, GGUF/Safetensors & Android DEX against AI reverse-engineering agents (REA).",
+    "display": "bla",
+    "forks": 760,
+    "found_by": [
+     "search: topic:claude-code",
+     "search: topic:mcp-server"
+    ],
+    "kind": "repository",
+    "language": "TypeScript",
+    "license_spdx": "MIT",
+    "name": "qybaihe/bla",
+    "node_id": "R_kgDOVWezCw",
+    "open_issues": 6,
+    "owner": "qybaihe",
+    "platform": "github",
+    "platform_id": 1432859403,
+    "pushed_at": "2026-11-18T08:12:51Z",
+    "rid": "github:R_kgDOVWezCw",
+    "stars": 6106,
+    "topics": [
+     "adversarial-ai",
+     "ai-security",
+     "android-security",
+     "binary-protection",
+     "claude-code",
+     "codex",
+     "cursor",
+     "electron-security",
+     "gguf",
+     "ghidra",
+     "llm-security",
+     "mcp",
+     "mcp-server",
+     "obfuscation",
+     "python-security",
+     "reverse-engineering",
+     "safetensors",
+     "software-protection",
+     "webassembly"
+    ],
+    "url": "https://github.com/qybaihe/bla"
+   },
+   "status": "pool",
+   "url": "https://github.com/qybaihe/bla"
+  },
   "github:R_kgDOVWq3rA": {
    "categories": [
     "skills",
@@ -3883,6 +4899,7 @@
    "kind": "repository",
    "last_checked": "2026-11-18T03:00:02+00:00",
    "last_notified": "2026-11-18T03:03:20+00:00",
+   "last_update_check": "2026-11-18T12:01:42+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "DenisSergeevitch/ex-ussr-kinship-research",
    "owner": "DenisSergeevitch",
@@ -3924,7 +4941,8 @@
     "url": "https://github.com/denissergeevitch/ex-ussr-kinship-research"
    },
    "status": "delivered",
-   "url": "https://github.com/denissergeevitch/ex-ussr-kinship-research"
+   "url": "https://github.com/denissergeevitch/ex-ussr-kinship-research",
+   "version": "v1.48.0"
   },
   "github:R_kgDOVZgSEg": {
    "categories": [
@@ -4337,6 +5355,107 @@
    "status": "rejected",
    "url": "https://github.com/a1lane/a1lane-mcp"
   },
+  "github:R_kgDOVhF2rg": {
+   "categories": [
+    "skills",
+    "automation",
+    "agent_building",
+    "productivity",
+    "hackathon"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-18T12:01:37+00:00",
+   "evaluation": {
+    "categories": [
+     "skills",
+     "automation",
+     "agent_building",
+     "productivity",
+     "hackathon"
+    ],
+    "compatibility": [
+     "Claude Code",
+     "Codex",
+     "Gemini CLI",
+     "Cursor",
+     "MCP",
+     "OpenAI API"
+    ],
+    "contributors": null,
+    "docs": "basic",
+    "install": null,
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "MIT",
+    "maintenance": "updated today",
+    "primary": "skills",
+    "priority": "P2",
+    "reject": null,
+    "relevance": {
+     "hint": "it plugs into the coding agents you already use",
+     "project": "your Claude Code, Codex and Gemini development"
+    },
+    "requirements": [],
+    "score": 66,
+    "warnings": [
+     "pipes a remote script straight into the shell (read it before running)"
+    ]
+   },
+   "first_discovered": "2026-11-18T12:01:37+00:00",
+   "id": "github:R_kgDOVhF2rg",
+   "identifier": "R_kgDOVhF2rg",
+   "kind": "repository",
+   "last_checked": "2026-11-18T12:01:37+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "KKKKhazix/agent-autoloop",
+   "owner": "KKKKhazix",
+   "platform": "github",
+   "priority": "P2",
+   "score": 66,
+   "snapshot": {
+    "created_at": "2026-11-03T08:02:11Z",
+    "default_branch": "main",
+    "description": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
+    "display": "agent-autoloop",
+    "forks": 1085,
+    "found_by": [
+     "search: topic:claude-code",
+     "search: topic:ai-agents"
+    ],
+    "kind": "repository",
+    "language": "TypeScript",
+    "license_spdx": "MIT",
+    "name": "KKKKhazix/agent-autoloop",
+    "node_id": "R_kgDOVhF2rg",
+    "open_issues": 4,
+    "owner": "KKKKhazix",
+    "platform": "github",
+    "platform_id": 1443985070,
+    "pushed_at": "2026-11-18T01:23:27Z",
+    "rid": "github:R_kgDOVhF2rg",
+    "stars": 5868,
+    "topics": [
+     "ai-agents",
+     "automation",
+     "claude-code",
+     "cli",
+     "codex",
+     "event-driven",
+     "mcp",
+     "nodejs",
+     "self-hosted",
+     "typescript",
+     "workflow"
+    ],
+    "url": "https://github.com/kkkkhazix/agent-autoloop"
+   },
+   "status": "pool",
+   "url": "https://github.com/kkkkhazix/agent-autoloop"
+  },
   "github:R_kgDOVhPfQQ": {
    "categories": [
     "automation",
@@ -4396,6 +5515,80 @@
    "status": "delivered",
    "url": "https://github.com/wgjsg/agilex-docs-mcp"
   },
+  "github:R_kgDOViAkvA": {
+   "categories": [
+    "hackathon"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-18T12:01:38+00:00",
+   "evaluation": {
+    "categories": [
+     "hackathon"
+    ],
+    "compatibility": [
+     "OpenAI API",
+     "Node.js"
+    ],
+    "contributors": null,
+    "docs": "basic",
+    "install": "npm install @openai/auth @openai/auth-react",
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "Apache-2.0",
+    "maintenance": "updated 8 days ago",
+    "primary": "hackathon",
+    "priority": "P2",
+    "reject": null,
+    "relevance": {
+     "hint": "it shows how to package know-how as reusable skills or instructions",
+     "project": "your reusable AI skills"
+    },
+    "requirements": [],
+    "score": 62,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-18T12:01:38+00:00",
+   "id": "github:R_kgDOViAkvA",
+   "identifier": "R_kgDOViAkvA",
+   "kind": "repository",
+   "last_checked": "2026-11-18T12:01:38+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "openai/auth-javascript",
+   "owner": "openai",
+   "platform": "github",
+   "priority": "P2",
+   "score": 62,
+   "snapshot": {
+    "created_at": "2026-11-03T23:35:04Z",
+    "default_branch": "main",
+    "description": "Sign in with ChatGPT SDK for JavaScript, TypeScript, and React.",
+    "display": "auth-javascript",
+    "forks": 0,
+    "found_by": [
+     "new in official org openai"
+    ],
+    "kind": "repository",
+    "language": "TypeScript",
+    "license_spdx": "Apache-2.0",
+    "name": "openai/auth-javascript",
+    "node_id": "R_kgDOViAkvA",
+    "official_org": true,
+    "open_issues": 2,
+    "owner": "openai",
+    "platform": "github",
+    "platform_id": 1444947132,
+    "pushed_at": "2026-11-09T23:40:03Z",
+    "rid": "github:R_kgDOViAkvA",
+    "stars": 1,
+    "url": "https://github.com/openai/auth-javascript"
+   },
+   "status": "pool",
+   "url": "https://github.com/openai/auth-javascript"
+  },
   "github:R_kgDOVinb9w": {
    "delivery": {
     "message_ids": [],
@@ -4414,6 +5607,84 @@
    "reject_reason": "doesn't fit any discovery category",
    "status": "rejected",
    "url": "https://github.com/google-deepmind/alphaevolve"
+  },
+  "github:R_kgDOViuGMg": {
+   "categories": [
+    "productivity"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-18T12:01:40+00:00",
+   "evaluation": {
+    "categories": [
+     "productivity"
+    ],
+    "compatibility": [
+     "Claude Code",
+     "Codex",
+     "Hugging Face",
+     "Python",
+     "Docker"
+    ],
+    "contributors": null,
+    "docs": "basic",
+    "install": "pip install -e \".[llm]\"        # the llm extra is needed by the qa and build families",
+    "licence_class": "OPEN SOURCE WITH PAID OPTIONAL SERVICES",
+    "licence_note": "Apache-2.0 code; uses paid API (a free/local option is mentioned)",
+    "maintenance": "updated 13 days ago",
+    "primary": "productivity",
+    "priority": "P2",
+    "reject": null,
+    "relevance": {
+     "hint": "it plugs into the coding agents you already use",
+     "project": "your Claude Code, Codex and Gemini development"
+    },
+    "requirements": [
+     "paid API"
+    ],
+    "score": 59,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-18T12:01:40+00:00",
+   "id": "github:R_kgDOViuGMg",
+   "identifier": "R_kgDOViuGMg",
+   "kind": "repository",
+   "last_checked": "2026-11-18T12:01:40+00:00",
+   "last_notified": null,
+   "licence_class": "OPEN SOURCE WITH PAID OPTIONAL SERVICES",
+   "name": "huggingface/traj2envs",
+   "owner": "huggingface",
+   "platform": "github",
+   "priority": "P2",
+   "score": 59,
+   "snapshot": {
+    "created_at": "2026-11-04T13:24:42Z",
+    "default_branch": "main",
+    "display": "traj2envs",
+    "forks": 1,
+    "found_by": [
+     "new in official org huggingface"
+    ],
+    "kind": "repository",
+    "language": "Python",
+    "license_spdx": "Apache-2.0",
+    "name": "huggingface/traj2envs",
+    "node_id": "R_kgDOViuGMg",
+    "official_org": true,
+    "open_issues": 0,
+    "owner": "huggingface",
+    "platform": "github",
+    "platform_id": 1445692978,
+    "pushed_at": "2026-11-05T09:09:44Z",
+    "rid": "github:R_kgDOViuGMg",
+    "stars": 1,
+    "url": "https://github.com/huggingface/traj2envs"
+   },
+   "status": "pool",
+   "url": "https://github.com/huggingface/traj2envs"
   },
   "github:R_kgDOVjNm0g": {
    "categories": [
@@ -4496,6 +5767,81 @@
    },
    "status": "pool",
    "url": "https://github.com/microsoft/copilot-managed-runtime"
+  },
+  "github:R_kgDOVkMbqA": {
+   "categories": [
+    "productivity",
+    "agent_building",
+    "automation"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-18T12:01:37+00:00",
+   "evaluation": {
+    "categories": [
+     "productivity",
+     "agent_building",
+     "automation"
+    ],
+    "compatibility": [],
+    "contributors": null,
+    "docs": "thin",
+    "install": null,
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "MIT",
+    "maintenance": "updated today",
+    "primary": "productivity",
+    "priority": "P3",
+    "reject": null,
+    "relevance": {
+     "hint": "it shows how to package know-how as reusable skills or instructions",
+     "project": "your reusable AI skills"
+    },
+    "requirements": [],
+    "score": 53,
+    "warnings": [
+     "documentation is thin"
+    ]
+   },
+   "first_discovered": "2026-11-18T12:01:37+00:00",
+   "id": "github:R_kgDOVkMbqA",
+   "identifier": "R_kgDOVkMbqA",
+   "kind": "repository",
+   "last_checked": "2026-11-18T12:01:37+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "microsoft/universeontheroad2026-resources",
+   "owner": "microsoft",
+   "platform": "github",
+   "priority": "P3",
+   "score": 53,
+   "snapshot": {
+    "created_at": "2026-11-05T16:25:34Z",
+    "default_branch": "main",
+    "display": "universeontheroad2026-resources",
+    "forks": 1,
+    "found_by": [
+     "new in official org microsoft"
+    ],
+    "kind": "repository",
+    "license_spdx": "MIT",
+    "name": "microsoft/universeontheroad2026-resources",
+    "node_id": "R_kgDOVkMbqA",
+    "official_org": true,
+    "open_issues": 1,
+    "owner": "microsoft",
+    "platform": "github",
+    "platform_id": 1447238568,
+    "pushed_at": "2026-11-17T23:00:15Z",
+    "rid": "github:R_kgDOVkMbqA",
+    "stars": 3,
+    "url": "https://github.com/microsoft/universeontheroad2026-resources"
+   },
+   "status": "pool",
+   "url": "https://github.com/microsoft/universeontheroad2026-resources"
   },
   "github:R_kgDOVnPEAg": {
    "categories": [
@@ -4703,6 +6049,82 @@
    "status": "pool",
    "url": "https://github.com/agentes-chat/agentes-chat"
   },
+  "github:R_kgDOVobzAQ": {
+   "categories": [
+    "automation",
+    "agent_building",
+    "productivity"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-18T12:01:39+00:00",
+   "evaluation": {
+    "categories": [
+     "automation",
+     "agent_building",
+     "productivity"
+    ],
+    "compatibility": [
+     "MCP",
+     "Python"
+    ],
+    "contributors": null,
+    "docs": "basic",
+    "install": null,
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "Apache-2.0",
+    "maintenance": "updated 8 days ago",
+    "primary": "automation",
+    "priority": "P2",
+    "reject": null,
+    "relevance": {
+     "hint": "it automates searching, reading and citing sources",
+     "project": "your autonomous research systems"
+    },
+    "requirements": [],
+    "score": 60,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-18T12:01:39+00:00",
+   "id": "github:R_kgDOVobzAQ",
+   "identifier": "R_kgDOVobzAQ",
+   "kind": "repository",
+   "last_checked": "2026-11-18T12:01:39+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "google-deepmind/xyeval",
+   "owner": "google-deepmind",
+   "platform": "github",
+   "priority": "P2",
+   "score": 60,
+   "snapshot": {
+    "created_at": "2026-11-09T17:40:58Z",
+    "default_branch": "main",
+    "display": "xyeval",
+    "forks": 1,
+    "found_by": [
+     "new in official org google-deepmind"
+    ],
+    "kind": "repository",
+    "license_spdx": "Apache-2.0",
+    "name": "google-deepmind/xyeval",
+    "node_id": "R_kgDOVobzAQ",
+    "official_org": true,
+    "open_issues": 0,
+    "owner": "google-deepmind",
+    "platform": "github",
+    "platform_id": 1451684609,
+    "pushed_at": "2026-11-09T17:55:38Z",
+    "rid": "github:R_kgDOVobzAQ",
+    "stars": 1,
+    "url": "https://github.com/google-deepmind/xyeval"
+   },
+   "status": "pool",
+   "url": "https://github.com/google-deepmind/xyeval"
+  },
   "github:R_kgDOVog1uA": {
    "categories": [
     "skills",
@@ -4844,6 +6266,44 @@
    },
    "status": "delivered",
    "url": "https://github.com/huggingface/pybot"
+  },
+  "github:R_kgDOVsJvBA": {
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "first_discovered": "2026-11-18T12:01:36+00:00",
+   "id": "github:R_kgDOVsJvBA",
+   "identifier": "R_kgDOVsJvBA",
+   "kind": "repository",
+   "last_checked": "2026-11-18T12:01:36+00:00",
+   "last_notified": null,
+   "name": "google-deepmind/origami-design",
+   "owner": "google-deepmind",
+   "platform": "github",
+   "reject_reason": "doesn't fit any discovery category",
+   "status": "rejected",
+   "url": "https://github.com/google-deepmind/origami-design"
+  },
+  "github:R_kgDOVwgsbQ": {
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "first_discovered": "2026-11-18T12:01:38+00:00",
+   "id": "github:R_kgDOVwgsbQ",
+   "identifier": "R_kgDOVwgsbQ",
+   "kind": "repository",
+   "last_checked": "2026-11-18T12:01:38+00:00",
+   "last_notified": null,
+   "name": "google-deepmind/efficient_evals",
+   "owner": "google-deepmind",
+   "platform": "github",
+   "reject_reason": "doesn't fit any discovery category",
+   "status": "rejected",
+   "url": "https://github.com/google-deepmind/efficient_evals"
   },
   "github:R_kgDOVwnvQw": {
    "categories": [
@@ -5790,6 +7250,87 @@
    "status": "pool",
    "url": "https://huggingface.co/datasets/nvidia/USDCraft-10K"
   },
+  "hf:dataset:ropedia-ai/ropedia-xperience-2": {
+   "categories": [
+    "creator_tools"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-18T12:01:37+00:00",
+   "evaluation": {
+    "categories": [
+     "creator_tools"
+    ],
+    "compatibility": [
+     "Hugging Face",
+     "Python"
+    ],
+    "contributors": null,
+    "docs": "good",
+    "install": null,
+    "licence_class": "PAID OR RESTRICTED",
+    "licence_note": "licence cc-by-nc-4.0 restricts use",
+    "maintenance": "updated 5 days ago",
+    "primary": "creator_tools",
+    "priority": "P3",
+    "reject": null,
+    "relevance": {
+     "hint": "it automates searching, reading and citing sources",
+     "project": "your autonomous research systems"
+    },
+    "requirements": [],
+    "score": 51,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-18T12:01:37+00:00",
+   "id": "hf:dataset:ropedia-ai/ropedia-xperience-2",
+   "identifier": "ropedia-ai/Ropedia-Xperience-2",
+   "kind": "dataset",
+   "last_checked": "2026-11-18T12:01:37+00:00",
+   "last_notified": null,
+   "licence_class": "PAID OR RESTRICTED",
+   "name": "ropedia-ai/Ropedia-Xperience-2",
+   "owner": "ropedia-ai",
+   "platform": "huggingface",
+   "priority": "P3",
+   "score": 51,
+   "snapshot": {
+    "created_at": "2026-11-13T02:30:13.000Z",
+    "description": "Ropedia Xperience 2 A Gold Standard for Scaling Physical AI Environments and Behaviors. 1,500+ scanned scenes and 4,000+ egocentric recordings, registered in one metric frame. 📄 Paper (arXiv:2611.17060) · 🤗 Paper page · 🌐 Project page First batch online. Xperience 2 is being published in batches.…",
+    "display": "Ropedia-Xperience-2",
+    "downloads": 7110,
+    "found_by": [
+     "Hugging Face trending datasets"
+    ],
+    "kind": "dataset",
+    "license_spdx": "cc-by-nc-4.0",
+    "likes": 26,
+    "name": "ropedia-ai/Ropedia-Xperience-2",
+    "owner": "ropedia-ai",
+    "platform": "huggingface",
+    "pushed_at": "2026-11-13T08:12:01.000Z",
+    "rid": "hf:dataset:ropedia-ai/ropedia-xperience-2",
+    "topics": [
+     "egocentric",
+     "embodied-ai",
+     "physical-ai",
+     "motion-capture",
+     "hand-pose",
+     "mano",
+     "smpl",
+     "lidar",
+     "3d-gaussian-splatting",
+     "scene-reconstruction",
+     "real-to-sim"
+    ],
+    "url": "https://huggingface.co/datasets/ropedia-ai/Ropedia-Xperience-2"
+   },
+   "status": "pool",
+   "url": "https://huggingface.co/datasets/ropedia-ai/Ropedia-Xperience-2"
+  },
   "hf:dataset:tencent/tailorrig": {
    "categories": [
     "app_development"
@@ -5907,6 +7448,81 @@
    "score": 26,
    "status": "rejected",
    "url": "https://huggingface.co/datasets/Vyber07/cyber-security"
+  },
+  "hf:model:apple/fastframes-l": {
+   "categories": [
+    "creator_tools",
+    "hackathon"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-18T12:01:38+00:00",
+   "evaluation": {
+    "categories": [
+     "creator_tools",
+     "hackathon"
+    ],
+    "compatibility": [
+     "Hugging Face",
+     "Python"
+    ],
+    "contributors": null,
+    "docs": "good",
+    "install": null,
+    "licence_class": "LICENCE UNCLEAR",
+    "licence_note": "licence apple-amlr not recognised",
+    "maintenance": "updated today",
+    "primary": "creator_tools",
+    "priority": "P2",
+    "reject": null,
+    "relevance": {
+     "hint": "it automates searching, reading and citing sources",
+     "project": "your autonomous research systems"
+    },
+    "requirements": [],
+    "score": 62,
+    "warnings": [
+     "no clear licence: check before reusing the code"
+    ]
+   },
+   "first_discovered": "2026-11-18T12:01:38+00:00",
+   "id": "hf:model:apple/fastframes-l",
+   "identifier": "apple/FastFrames-L",
+   "kind": "model",
+   "last_checked": "2026-11-18T12:01:38+00:00",
+   "last_notified": null,
+   "licence_class": "LICENCE UNCLEAR",
+   "name": "apple/FastFrames-L",
+   "owner": "apple",
+   "platform": "huggingface",
+   "priority": "P2",
+   "score": 62,
+   "snapshot": {
+    "created_at": "2026-11-16T17:21:04.000Z",
+    "display": "FastFrames-L",
+    "downloads": 0,
+    "found_by": [
+     "Hugging Face trending models"
+    ],
+    "kind": "model",
+    "license_spdx": "apple-amlr",
+    "likes": 150,
+    "name": "apple/FastFrames-L",
+    "owner": "apple",
+    "platform": "huggingface",
+    "pushed_at": "2026-11-18T05:29:30.000Z",
+    "rid": "hf:model:apple/fastframes-l",
+    "topics": [
+     "safetensors",
+     "text-to-video"
+    ],
+    "url": "https://huggingface.co/apple/FastFrames-L"
+   },
+   "status": "pool",
+   "url": "https://huggingface.co/apple/FastFrames-L"
   },
   "hf:model:black-forest-labs/flux-3-image-klein-comfy": {
    "delivery": {
@@ -6159,48 +7775,111 @@
    "status": "rejected",
    "url": "https://huggingface.co/facebook/sam3"
   },
-  "hf:model:higurashi-ai/haru-4b": {
+  "hf:model:harness-hub/qwen3.8-27b-pi-adapted": {
    "categories": [
-    "creator_tools",
-    "prompting"
+    "agent_building"
    ],
    "delivery": {
     "message_ids": [],
     "sent_at": null,
     "status": "NOT_SENT"
    },
-   "evaluated_at": "2026-11-18T03:00:01+00:00",
+   "evaluated_at": "2026-11-18T12:01:37+00:00",
    "evaluation": {
     "categories": [
-     "creator_tools",
-     "prompting"
+     "agent_building"
     ],
     "compatibility": [
-     "Python"
+     "Claude Code",
+     "OpenAI API",
+     "Hugging Face",
+     "Python",
+     "Node.js"
     ],
     "contributors": null,
     "docs": "basic",
-    "install": "git clone https://github.com/higurashi-ai/Haru && cd Haru",
+    "install": "npm install -g --ignore-scripts @earendil-works/pi-coding-agent",
     "licence_class": "FREE AND OPEN SOURCE",
     "licence_note": "apache-2.0",
-    "maintenance": "updated 5 days ago",
-    "primary": "creator_tools",
-    "priority": "P1",
+    "maintenance": "updated today",
+    "primary": "agent_building",
+    "priority": "P2",
     "reject": null,
     "relevance": {
-     "hint": "it explains or tests prompting techniques you can apply directly",
-     "project": "your prompting"
+     "hint": "it plugs into the coding agents you already use",
+     "project": "your Claude Code, Codex and Gemini development"
     },
     "requirements": [],
-    "score": 75,
+    "score": 68,
     "warnings": []
    },
+   "first_discovered": "2026-11-18T12:01:37+00:00",
+   "id": "hf:model:harness-hub/qwen3.8-27b-pi-adapted",
+   "identifier": "harness-hub/Qwen3.8-27B-pi-adapted",
+   "kind": "model",
+   "last_checked": "2026-11-18T12:01:37+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "harness-hub/Qwen3.8-27B-pi-adapted",
+   "owner": "harness-hub",
+   "platform": "huggingface",
+   "priority": "P2",
+   "score": 68,
+   "snapshot": {
+    "created_at": "2026-11-16T06:52:31.000Z",
+    "display": "Qwen3.8-27B-pi-adapted",
+    "downloads": 377,
+    "found_by": [
+     "Hugging Face trending models"
+    ],
+    "kind": "model",
+    "license_spdx": "apache-2.0",
+    "likes": 269,
+    "name": "harness-hub/Qwen3.8-27B-pi-adapted",
+    "owner": "harness-hub",
+    "platform": "huggingface",
+    "pushed_at": "2026-11-18T11:07:41.000Z",
+    "rid": "hf:model:harness-hub/qwen3.8-27b-pi-adapted",
+    "topics": [
+     "peft",
+     "safetensors",
+     "trl",
+     "grpo",
+     "async-grpo",
+     "lora",
+     "agents",
+     "harbor",
+     "openenv",
+     "pi",
+     "image-text-to-text",
+     "conversational"
+    ],
+    "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted"
+   },
+   "status": "pool",
+   "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted"
+  },
+  "hf:model:higurashi-ai/haru-4b": {
+   "categories": [
+    "creator_tools",
+    "prompting"
+   ],
+   "delivery": {
+    "message_ids": [
+     714,
+     715,
+     716
+    ],
+    "sent_at": "2026-11-18T12:02:42+00:00",
+    "status": "SENT"
+   },
+   "evaluated_at": "2026-11-18T03:00:01+00:00",
    "first_discovered": "2026-11-18T03:00:01+00:00",
    "id": "hf:model:higurashi-ai/haru-4b",
    "identifier": "higurashi-ai/Haru-4B",
    "kind": "model",
    "last_checked": "2026-11-18T03:00:01+00:00",
-   "last_notified": null,
+   "last_notified": "2026-11-18T12:02:42+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "higurashi-ai/Haru-4B",
    "owner": "higurashi-ai",
@@ -6238,7 +7917,7 @@
     ],
     "url": "https://huggingface.co/higurashi-ai/Haru-4B"
    },
-   "status": "pool",
+   "status": "delivered",
    "url": "https://huggingface.co/higurashi-ai/Haru-4B"
   },
   "hf:model:huihui-ai/huihui-qwen3.8-27b-abliterated-gguf": {
@@ -6259,6 +7938,82 @@
    "reject_reason": "excluded topic (abliterat)",
    "status": "rejected",
    "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF"
+  },
+  "hf:model:internlm/sage-s2.1-flash": {
+   "categories": [
+    "productivity",
+    "agent_building",
+    "app_development"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-18T12:01:39+00:00",
+   "evaluation": {
+    "categories": [
+     "productivity",
+     "agent_building",
+     "app_development"
+    ],
+    "compatibility": [
+     "Hugging Face",
+     "Python"
+    ],
+    "contributors": null,
+    "docs": "basic",
+    "install": null,
+    "licence_class": "LICENCE UNCLEAR",
+    "licence_note": "no recognised licence file",
+    "maintenance": "updated 2 days ago",
+    "primary": "productivity",
+    "priority": "P3",
+    "reject": null,
+    "relevance": {
+     "hint": "it automates searching, reading and citing sources",
+     "project": "your autonomous research systems"
+    },
+    "requirements": [],
+    "score": 49,
+    "warnings": [
+     "no clear licence: check before reusing the code"
+    ]
+   },
+   "first_discovered": "2026-11-18T12:01:39+00:00",
+   "id": "hf:model:internlm/sage-s2.1-flash",
+   "identifier": "internlm/Sage-S2.1-Flash",
+   "kind": "model",
+   "last_checked": "2026-11-18T12:01:39+00:00",
+   "last_notified": null,
+   "licence_class": "LICENCE UNCLEAR",
+   "name": "internlm/Sage-S2.1-Flash",
+   "owner": "internlm",
+   "platform": "huggingface",
+   "priority": "P3",
+   "score": 49,
+   "snapshot": {
+    "created_at": "2026-11-15T02:34:59.000Z",
+    "display": "Sage-S2.1-Flash",
+    "downloads": 678,
+    "found_by": [
+     "Hugging Face trending models"
+    ],
+    "kind": "model",
+    "likes": 124,
+    "name": "internlm/Sage-S2.1-Flash",
+    "owner": "internlm",
+    "platform": "huggingface",
+    "pushed_at": "2026-11-16T08:30:35.000Z",
+    "rid": "hf:model:internlm/sage-s2.1-flash",
+    "topics": [
+     "safetensors",
+     "glm5_next"
+    ],
+    "url": "https://huggingface.co/internlm/Sage-S2.1-Flash"
+   },
+   "status": "pool",
+   "url": "https://huggingface.co/internlm/Sage-S2.1-Flash"
   },
   "hf:model:lightricks/ltx-2.5": {
    "delivery": {
@@ -6694,6 +8449,26 @@
    "status": "delivered",
    "url": "https://huggingface.co/speridlabs/idol"
   },
+  "hf:model:tencent/hy4-flash": {
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "first_discovered": "2026-11-18T12:01:38+00:00",
+   "id": "hf:model:tencent/hy4-flash",
+   "identifier": "tencent/Hy4-flash",
+   "kind": "model",
+   "last_checked": "2026-11-18T12:01:38+00:00",
+   "last_notified": null,
+   "name": "tencent/Hy4-flash",
+   "owner": "tencent",
+   "platform": "huggingface",
+   "reject_reason": "score 35 below the minimum",
+   "score": 35,
+   "status": "rejected",
+   "url": "https://huggingface.co/tencent/Hy4-flash"
+  },
   "hf:model:thinkingmachines/inkling-2-small": {
    "categories": [
     "app_development",
@@ -6935,6 +8710,26 @@
    "status": "delivered",
    "url": "https://huggingface.co/Zyphra/ZONOS3-Mini"
   },
+  "hf:space:agent-memory-leaderboard/leaderboard": {
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "first_discovered": "2026-11-18T12:01:41+00:00",
+   "id": "hf:space:agent-memory-leaderboard/leaderboard",
+   "identifier": "agent-memory-leaderboard/leaderboard",
+   "kind": "space",
+   "last_checked": "2026-11-18T12:01:41+00:00",
+   "last_notified": null,
+   "name": "agent-memory-leaderboard/leaderboard",
+   "owner": "agent-memory-leaderboard",
+   "platform": "huggingface",
+   "reject_reason": "score 43 below the minimum",
+   "score": 43,
+   "status": "rejected",
+   "url": "https://huggingface.co/spaces/agent-memory-leaderboard/leaderboard"
+  },
   "hf:space:agents-course/first_agent_template": {
    "delivery": {
     "message_ids": [],
@@ -6994,6 +8789,26 @@
    "score": 31,
    "status": "rejected",
    "url": "https://huggingface.co/spaces/ali-vilab/modelscope-text-to-video-synthesis"
+  },
+  "hf:space:elevenlabs/tts": {
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "first_discovered": "2026-11-18T12:01:39+00:00",
+   "id": "hf:space:elevenlabs/tts",
+   "identifier": "elevenlabs/tts",
+   "kind": "space",
+   "last_checked": "2026-11-18T12:01:39+00:00",
+   "last_notified": null,
+   "name": "elevenlabs/tts",
+   "owner": "elevenlabs",
+   "platform": "huggingface",
+   "reject_reason": "score 24 below the minimum",
+   "score": 24,
+   "status": "rejected",
+   "url": "https://huggingface.co/spaces/elevenlabs/tts"
   },
   "hf:space:frameai4687/omni-video-factory": {
    "categories": [
@@ -7127,6 +8942,26 @@
    "status": "rejected",
    "url": "https://huggingface.co/spaces/hugging-apps/bfs-best-face-swap"
   },
+  "hf:space:huggingface-projects/ai-video-composer": {
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "first_discovered": "2026-11-18T12:01:37+00:00",
+   "id": "hf:space:huggingface-projects/ai-video-composer",
+   "identifier": "huggingface-projects/ai-video-composer",
+   "kind": "space",
+   "last_checked": "2026-11-18T12:01:37+00:00",
+   "last_notified": null,
+   "name": "huggingface-projects/ai-video-composer",
+   "owner": "huggingface-projects",
+   "platform": "huggingface",
+   "reject_reason": "score 35 below the minimum",
+   "score": 35,
+   "status": "rejected",
+   "url": "https://huggingface.co/spaces/huggingface-projects/ai-video-composer"
+  },
   "hf:space:huggingface/moe-blogpost": {
    "delivery": {
     "message_ids": [],
@@ -7219,6 +9054,46 @@
    },
    "status": "pool",
    "url": "https://huggingface.co/spaces/innoai/Edge-TTS-Text-to-Speech"
+  },
+  "hf:space:innova-ai/video-background-removal": {
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "first_discovered": "2026-11-18T12:01:38+00:00",
+   "id": "hf:space:innova-ai/video-background-removal",
+   "identifier": "innova-ai/video-background-removal",
+   "kind": "space",
+   "last_checked": "2026-11-18T12:01:38+00:00",
+   "last_notified": null,
+   "name": "innova-ai/video-background-removal",
+   "owner": "innova-ai",
+   "platform": "huggingface",
+   "reject_reason": "score 36 below the minimum",
+   "score": 36,
+   "status": "rejected",
+   "url": "https://huggingface.co/spaces/innova-ai/video-background-removal"
+  },
+  "hf:space:kingnish/instant-video": {
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "first_discovered": "2026-11-18T12:01:40+00:00",
+   "id": "hf:space:kingnish/instant-video",
+   "identifier": "KingNish/Instant-Video",
+   "kind": "space",
+   "last_checked": "2026-11-18T12:01:40+00:00",
+   "last_notified": null,
+   "name": "KingNish/Instant-Video",
+   "owner": "KingNish",
+   "platform": "huggingface",
+   "reject_reason": "score 24 below the minimum",
+   "score": 24,
+   "status": "rejected",
+   "url": "https://huggingface.co/spaces/KingNish/Instant-Video"
   },
   "hf:space:kulkas2pintu/wan777": {
    "delivery": {
@@ -7579,6 +9454,26 @@
    "status": "rejected",
    "url": "https://huggingface.co/spaces/selfit-camera/Omni-Image-Editor"
   },
+  "hf:space:skytnt/moe-tts": {
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "first_discovered": "2026-11-18T12:01:36+00:00",
+   "id": "hf:space:skytnt/moe-tts",
+   "identifier": "skytnt/moe-tts",
+   "kind": "space",
+   "last_checked": "2026-11-18T12:01:36+00:00",
+   "last_notified": null,
+   "name": "skytnt/moe-tts",
+   "owner": "skytnt",
+   "platform": "huggingface",
+   "reject_reason": "score 36 below the minimum",
+   "score": 36,
+   "status": "rejected",
+   "url": "https://huggingface.co/spaces/skytnt/moe-tts"
+  },
   "hf:space:smolagents/computer-agent": {
    "delivery": {
     "message_ids": [],
@@ -7658,7 +9553,7 @@
    "results": 0
   },
   "github:hackathon starter ai in:name,description": {
-   "last_run": "2026-11-16T23:47:15+00:00",
+   "last_run": "2026-11-18T12:01:25+00:00",
    "results": 0
   },
   "github:notion ai agent in:name,description": {
@@ -7666,8 +9561,8 @@
    "results": 1
   },
   "github:orgs": {
-   "last_run": "2026-11-17T18:41:35+00:00",
-   "results": 29
+   "last_run": "2026-11-18T12:01:30+00:00",
+   "results": 27
   },
   "github:topic:agent-framework": {
    "last_run": "2026-11-17T18:41:27+00:00",
@@ -7678,7 +9573,7 @@
    "results": 20
   },
   "github:topic:ai-agents": {
-   "last_run": "2026-11-16T23:47:12+00:00",
+   "last_run": "2026-11-18T12:01:22+00:00",
    "results": 20
   },
   "github:topic:ai-video": {
@@ -7694,7 +9589,7 @@
    "results": 12
   },
   "github:topic:claude-code": {
-   "last_run": "2026-11-16T23:47:12+00:00",
+   "last_run": "2026-11-18T12:01:22+00:00",
    "results": 20
   },
   "github:topic:claude-skills": {
@@ -7734,7 +9629,7 @@
    "results": 20
   },
   "github:topic:mcp-server": {
-   "last_run": "2026-11-16T23:47:13+00:00",
+   "last_run": "2026-11-18T12:01:23+00:00",
    "results": 20
   },
   "github:topic:model-context-protocol": {
@@ -7746,15 +9641,15 @@
    "results": 20
   },
   "github:topic:n8n": {
-   "last_run": "2026-11-16T23:47:14+00:00",
+   "last_run": "2026-11-18T12:01:25+00:00",
    "results": 8
   },
   "github:topic:prompt-engineering": {
-   "last_run": "2026-11-16T23:47:14+00:00",
+   "last_run": "2026-11-18T12:01:25+00:00",
    "results": 20
   },
   "github:topic:rag": {
-   "last_run": "2026-11-16T23:47:13+00:00",
+   "last_run": "2026-11-18T12:01:24+00:00",
    "results": 20
   },
   "github:topic:telegram-bot llm": {
@@ -7762,7 +9657,7 @@
    "results": 12
   },
   "github:topic:text-to-speech": {
-   "last_run": "2026-11-16T23:47:15+00:00",
+   "last_run": "2026-11-18T12:01:26+00:00",
    "results": 20
   },
   "github:topic:vscode-extension llm": {

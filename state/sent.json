@@ -452,6 +452,11 @@
    "channel": "discovery",
    "title": "anthropics/FlashProve"
   },
+  "url:https://github.com/appwrite/appwrite": {
+   "at": "2026-11-18T12:02:42+00:00",
+   "channel": "discovery",
+   "title": "appwrite/appwrite"
+  },
   "url:https://github.com/bazichart/bazichart-mcp": {
    "at": "2026-11-17T08:15:30+00:00",
    "channel": "discovery",
@@ -476,6 +481,11 @@
    "at": "2026-11-18T03:03:20+00:00",
    "channel": "discovery",
    "title": "DenisSergeevitch/ex-ussr-kinship-research"
+  },
+  "url:https://github.com/el4cteo/blender-skills": {
+   "at": "2026-11-18T12:02:42+00:00",
+   "channel": "discovery",
+   "title": "EL4CTEO/blender-skills"
   },
   "url:https://github.com/elementalsouls/claude-bughunter": {
    "at": "2026-11-17T08:15:30+00:00",
@@ -512,6 +522,11 @@
    "channel": "discovery",
    "title": "kajisho5/ffmpeg-skill"
   },
+  "url:https://github.com/leonxlnx/earshot": {
+   "at": "2026-11-18T12:02:42+00:00",
+   "channel": "discovery",
+   "title": "Leonxlnx/earshot"
+  },
   "url:https://github.com/microsoft/ai-agents-for-beginners": {
    "at": "2026-11-18T03:03:20+00:00",
    "channel": "discovery",
@@ -522,6 +537,11 @@
    "channel": "discovery",
    "title": "microsoft/markitdown"
   },
+  "url:https://github.com/microsoft/tokeneconomizer": {
+   "at": "2026-11-18T12:02:42+00:00",
+   "channel": "discovery",
+   "title": "microsoft/TokenEconomizer"
+  },
   "url:https://github.com/morganlinton/beautifulrust": {
    "at": "2026-11-17T18:43:32+00:00",
    "channel": "discovery",
@@ -531,6 +551,11 @@
    "at": "2026-11-16T23:48:27+00:00",
    "channel": "discovery",
    "title": "mvanhorn/last30days-skill"
+  },
+  "url:https://github.com/nvidia/skillevaluator": {
+   "at": "2026-11-18T12:02:42+00:00",
+   "channel": "discovery",
+   "title": "NVIDIA/SkillEvaluator"
   },
   "url:https://github.com/obra/superpowers": {
    "at": "2026-11-17T18:43:32+00:00",
@@ -559,6 +584,11 @@
    "priority": "P1",
    "title": "0.170.0"
   },
+  "url:https://github.com/openvinotoolkit/openvino": {
+   "at": "2026-11-18T12:02:42+00:00",
+   "channel": "discovery",
+   "title": "openvinotoolkit/openvino"
+  },
   "url:https://github.com/paperclipai/paperclip": {
    "at": "2026-11-18T03:03:20+00:00",
    "channel": "discovery",
@@ -568,6 +598,11 @@
    "at": "2026-11-17T18:43:32+00:00",
    "channel": "discovery",
    "title": "qybaihe/mu"
+  },
+  "url:https://github.com/sallyn0225/eidolon-sc": {
+   "at": "2026-11-18T12:02:42+00:00",
+   "channel": "discovery",
+   "title": "Sallyn0225/eidolon-sc"
   },
   "url:https://github.com/tencent/loopforge": {
    "at": "2026-11-17T18:43:32+00:00",
@@ -583,6 +618,11 @@
    "at": "2026-11-16T23:48:27+00:00",
    "channel": "discovery",
    "title": "fforster/gitlab-mcp"
+  },
+  "url:https://huggingface.co/higurashi-ai/haru-4b": {
+   "at": "2026-11-18T12:02:42+00:00",
+   "channel": "discovery",
+   "title": "higurashi-ai/Haru-4B"
   },
   "url:https://huggingface.co/meituan-longcat/longcat-video-avatar-1.6": {
    "at": "2026-11-18T03:03:20+00:00",
