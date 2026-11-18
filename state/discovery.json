@@ -18,12 +18,16 @@
   "gh:ask-your-audience/askyouraudience": "github:R_kgDOVK5wyQ",
   "gh:backnotprop/plannotator": "github:R_kgDOQv43sg",
   "gh:bazichart/bazichart-mcp": "github:R_kgDOVwnvQw",
+  "gh:bloopodotai/bloopo-marketplace": "github:R_kgDOTmBVGg",
   "gh:bytedance/deer-flow": "github:R_kgDOOlwd1Q",
   "gh:chipfighter/context-attachment-manager": "github:R_kgDOUojiPw",
   "gh:chromedevtools/chrome-devtools-mcp": "github:R_kgDOPt7f_g",
   "gh:cotal-ai/cotal": "github:R_kgDOSufZ8A",
+  "gh:denissergeevitch/ex-ussr-kinship-research": "github:R_kgDOVWq3rA",
   "gh:dream-num/univer": "github:R_kgDOIF8T9Q",
+  "gh:el4cteo/blender-skills": "github:R_kgDOVJ8ICw",
   "gh:elementalsouls/claude-bughunter": "github:R_kgDOSUzdDA",
+  "gh:folkbench/folkbench": "github:R_kgDOU4i48w",
   "gh:google-deepmind/alphaevolve": "github:R_kgDOVinb9w",
   "gh:google-deepmind/gbench": "github:R_kgDOVccjOw",
   "gh:google-deepmind/hope": "github:R_kgDOVZrejw",
@@ -36,19 +40,25 @@
   "gh:huggingface/safeagents": "github:R_kgDOVak8Ug",
   "gh:jingyaogong/minimind": "github:R_kgDOMbt5gA",
   "gh:juneyaooo/rea-video": "github:R_kgDOVcA9Ag",
+  "gh:kaankiziltug/logo-design-skill": "github:R_kgDOUshxmQ",
   "gh:kajisho5/ffmpeg-skill": "github:R_kgDOUNQZzA",
   "gh:lemomo-ai/lemo-opuscar": "github:R_kgDOUsqjIA",
   "gh:louis-cfm/coucou": "github:R_kgDOUu-p6g",
+  "gh:microsoft/ai-agents-for-beginners": "github:R_kgDONWBgsA",
   "gh:microsoft/copilot-managed-runtime": "github:R_kgDOVjNm0g",
+  "gh:microsoft/markitdown": "github:R_kgDONO810w",
   "gh:microsoft/tokeneconomizer": "github:R_kgDOVG0zYA",
   "gh:morganlinton/beautifulrust": "github:R_kgDOVUPmBg",
   "gh:mvanhorn/last30days-skill": "github:R_kgDOQ__jdA",
   "gh:obra/superpowers": "github:R_kgDOP_gcWw",
+  "gh:oil-oil/oil-ui": "github:R_kgDOU0Ob-A",
   "gh:oldcircle/geo-sleuth": "github:R_kgDOUf44tQ",
   "gh:paperclipai/paperclip": "github:R_kgDORclPyA",
   "gh:qybaihe/mu": "github:R_kgDOUlav9A",
   "gh:tencent/loopforge": "github:R_kgDOTlnVHA",
+  "gh:underleveledbuilder/awesome-short-drama-skills": "github:R_kgDOVIQiug",
   "gh:wgjsg/agilex-docs-mcp": "github:R_kgDOVhPfQQ",
+  "gh:yetone/magpie": "github:R_kgDOUns_9A",
   "url:https://github.com/a1lane/a1lane-mcp": "github:R_kgDOVgg6qg",
   "url:https://github.com/a2uicatalog/a2ui": "github:R_kgDOTA06WQ",
   "url:https://github.com/affaan-m/ecc": "github:R_kgDOQ77-1A",
@@ -67,12 +77,16 @@
   "url:https://github.com/ask-your-audience/askyouraudience": "github:R_kgDOVK5wyQ",
   "url:https://github.com/backnotprop/plannotator": "github:R_kgDOQv43sg",
   "url:https://github.com/bazichart/bazichart-mcp": "github:R_kgDOVwnvQw",
+  "url:https://github.com/bloopodotai/bloopo-marketplace": "github:R_kgDOTmBVGg",
   "url:https://github.com/bytedance/deer-flow": "github:R_kgDOOlwd1Q",
   "url:https://github.com/chipfighter/context-attachment-manager": "github:R_kgDOUojiPw",
   "url:https://github.com/chromedevtools/chrome-devtools-mcp": "github:R_kgDOPt7f_g",
   "url:https://github.com/cotal-ai/cotal": "github:R_kgDOSufZ8A",
+  "url:https://github.com/denissergeevitch/ex-ussr-kinship-research": "github:R_kgDOVWq3rA",
   "url:https://github.com/dream-num/univer": "github:R_kgDOIF8T9Q",
+  "url:https://github.com/el4cteo/blender-skills": "github:R_kgDOVJ8ICw",
   "url:https://github.com/elementalsouls/claude-bughunter": "github:R_kgDOSUzdDA",
+  "url:https://github.com/folkbench/folkbench": "github:R_kgDOU4i48w",
   "url:https://github.com/google-deepmind/alphaevolve": "github:R_kgDOVinb9w",
   "url:https://github.com/google-deepmind/gbench": "github:R_kgDOVccjOw",
   "url:https://github.com/google-deepmind/hope": "github:R_kgDOVZrejw",
@@ -85,36 +99,47 @@
   "url:https://github.com/huggingface/safeagents": "github:R_kgDOVak8Ug",
   "url:https://github.com/jingyaogong/minimind": "github:R_kgDOMbt5gA",
   "url:https://github.com/juneyaooo/rea-video": "github:R_kgDOVcA9Ag",
+  "url:https://github.com/kaankiziltug/logo-design-skill": "github:R_kgDOUshxmQ",
   "url:https://github.com/kajisho5/ffmpeg-skill": "github:R_kgDOUNQZzA",
   "url:https://github.com/lemomo-ai/lemo-opuscar": "github:R_kgDOUsqjIA",
   "url:https://github.com/louis-cfm/coucou": "github:R_kgDOUu-p6g",
+  "url:https://github.com/microsoft/ai-agents-for-beginners": "github:R_kgDONWBgsA",
   "url:https://github.com/microsoft/copilot-managed-runtime": "github:R_kgDOVjNm0g",
+  "url:https://github.com/microsoft/markitdown": "github:R_kgDONO810w",
   "url:https://github.com/microsoft/tokeneconomizer": "github:R_kgDOVG0zYA",
   "url:https://github.com/morganlinton/beautifulrust": "github:R_kgDOVUPmBg",
   "url:https://github.com/mvanhorn/last30days-skill": "github:R_kgDOQ__jdA",
   "url:https://github.com/obra/superpowers": "github:R_kgDOP_gcWw",
+  "url:https://github.com/oil-oil/oil-ui": "github:R_kgDOU0Ob-A",
   "url:https://github.com/oldcircle/geo-sleuth": "github:R_kgDOUf44tQ",
   "url:https://github.com/paperclipai/paperclip": "github:R_kgDORclPyA",
   "url:https://github.com/qybaihe/mu": "github:R_kgDOUlav9A",
   "url:https://github.com/tencent/loopforge": "github:R_kgDOTlnVHA",
+  "url:https://github.com/underleveledbuilder/awesome-short-drama-skills": "github:R_kgDOVIQiug",
   "url:https://github.com/wgjsg/agilex-docs-mcp": "github:R_kgDOVhPfQQ",
+  "url:https://github.com/yetone/magpie": "github:R_kgDOUns_9A",
   "url:https://gitlab.com/fforster/gitlab-mcp": "gitlab:68941949",
   "url:https://gitlab.com/ghavenga/opencode-memory": "gitlab:81611835",
   "url:https://huggingface.co/Comfy-Org/MiniMax-H3-Image": "hf:model:comfy-org/minimax-h3-image",
   "url:https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF": "hf:model:davidau/qwen3.8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-neo-coder-max-mtp-gguf",
+  "url:https://huggingface.co/Edge0/Edge0-145B-NVFP4": "hf:model:edge0/edge0-145b-nvfp4",
   "url:https://huggingface.co/Lightricks/LTX-2.5": "hf:model:lightricks/ltx-2.5",
   "url:https://huggingface.co/MiniMaxAI/MiniMax-H3-Image": "hf:model:minimaxai/minimax-h3-image",
   "url:https://huggingface.co/Qwen/Qwen3.8-27B": "hf:model:qwen/qwen3.8-27b",
   "url:https://huggingface.co/Zyphra/ZONOS3-Mini": "hf:model:zyphra/zonos3-mini",
   "url:https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy": "hf:model:black-forest-labs/flux-3-image-klein-comfy",
+  "url:https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized": "hf:model:chatrlabs/qwen-image-2.1-uncensored-omni-quantized",
   "url:https://huggingface.co/datasets/Angais/pixel-art-atlas-1.4m": "hf:dataset:angais/pixel-art-atlas-1.4m",
+  "url:https://huggingface.co/datasets/HubLabs/HubEgo-100K": "hf:dataset:hublabs/hubego-100k",
   "url:https://huggingface.co/datasets/HuggingFaceFW/fineweb": "hf:dataset:huggingfacefw/fineweb",
+  "url:https://huggingface.co/datasets/KORMo-VL/EVIDENT": "hf:dataset:kormo-vl/evident",
   "url:https://huggingface.co/datasets/Vyber07/cyber-security": "hf:dataset:vyber07/cyber-security",
   "url:https://huggingface.co/datasets/bones-studio/seed": "hf:dataset:bones-studio/seed",
   "url:https://huggingface.co/datasets/ccore/ThreeJS-3D-Scenes": "hf:dataset:ccore/threejs-3d-scenes",
   "url:https://huggingface.co/datasets/codepawl/abo-glb": "hf:dataset:codepawl/abo-glb",
   "url:https://huggingface.co/datasets/google/multimodal-knowledge-agent": "hf:dataset:google/multimodal-knowledge-agent",
   "url:https://huggingface.co/datasets/google/physical-engineerings-last-exam": "hf:dataset:google/physical-engineerings-last-exam",
+  "url:https://huggingface.co/datasets/laion/laion-audio-xl": "hf:dataset:laion/laion-audio-xl",
   "url:https://huggingface.co/datasets/nvidia/PhysicalAI-Human-1M-100K": "hf:dataset:nvidia/physicalai-human-1m-100k",
   "url:https://huggingface.co/datasets/nvidia/USDCraft-10K": "hf:dataset:nvidia/usdcraft-10k",
   "url:https://huggingface.co/datasets/nvidia/simready-assets": "hf:dataset:nvidia/simready-assets",
@@ -122,29 +147,44 @@
   "url:https://huggingface.co/datasets/venvoo/china-a-share-l2-level2-limit-order-book-tick-data": "hf:dataset:venvoo/china-a-share-l2-level2-limit-order-book-tick-data",
   "url:https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017": "hf:model:deepseek-ai/deepseek-v4.1-flash-1017",
   "url:https://huggingface.co/facebook/sam3": "hf:model:facebook/sam3",
+  "url:https://huggingface.co/higurashi-ai/Haru-4B": "hf:model:higurashi-ai/haru-4b",
   "url:https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF": "hf:model:huihui-ai/huihui-qwen3.8-27b-abliterated-gguf",
+  "url:https://huggingface.co/maxwell-model/Maxwell-V1-Flash": "hf:model:maxwell-model/maxwell-v1-flash",
+  "url:https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6": "hf:model:meituan-longcat/longcat-video-avatar-1.6",
+  "url:https://huggingface.co/n4ze3m/tiny-voca": "hf:model:n4ze3m/tiny-voca",
+  "url:https://huggingface.co/sensenova/SenseNova-Loop-9B": "hf:model:sensenova/sensenova-loop-9b",
   "url:https://huggingface.co/spaces/Agents-MCP-Hackathon/Graphify": "hf:space:agents-mcp-hackathon/graphify",
   "url:https://huggingface.co/spaces/FrameAI4687/Omni-Video-Factory": "hf:space:frameai4687/omni-video-factory",
+  "url:https://huggingface.co/spaces/Heartsync/NSFW-Uncensored-video2": "hf:space:heartsync/nsfw-uncensored-video2",
   "url:https://huggingface.co/spaces/Lightricks/ltx-video-distilled": "hf:space:lightricks/ltx-video-distilled",
   "url:https://huggingface.co/spaces/Qwen/Qwen3-TTS": "hf:space:qwen/qwen3-tts",
+  "url:https://huggingface.co/spaces/TTS-AGI/TTS-Arena-V2": "hf:space:tts-agi/tts-arena-v2",
+  "url:https://huggingface.co/spaces/agents-course/First_agent_template": "hf:space:agents-course/first_agent_template",
   "url:https://huggingface.co/spaces/ali-vilab/modelscope-text-to-video-synthesis": "hf:space:ali-vilab/modelscope-text-to-video-synthesis",
   "url:https://huggingface.co/spaces/hexgrad/Kokoro-TTS": "hf:space:hexgrad/kokoro-tts",
+  "url:https://huggingface.co/spaces/hugging-apps/bfs-best-face-swap": "hf:space:hugging-apps/bfs-best-face-swap",
+  "url:https://huggingface.co/spaces/huggingface/moe-blogpost": "hf:space:huggingface/moe-blogpost",
   "url:https://huggingface.co/spaces/innoai/Edge-TTS-Text-to-Speech": "hf:space:innoai/edge-tts-text-to-speech",
   "url:https://huggingface.co/spaces/kulkas2pintu/wan777": "hf:space:kulkas2pintu/wan777",
   "url:https://huggingface.co/spaces/mediasynthesismuseum/stable-video-diffusion": "hf:space:mediasynthesismuseum/stable-video-diffusion",
   "url:https://huggingface.co/spaces/microsoft/TRELLIS.2": "hf:space:microsoft/trellis.2",
   "url:https://huggingface.co/spaces/mrfakename/E2-F5-TTS": "hf:space:mrfakename/e2-f5-tts",
+  "url:https://huggingface.co/spaces/multimodalart/jev-decision-index": "hf:space:multimodalart/jev-decision-index",
+  "url:https://huggingface.co/spaces/parler-tts/parler_tts": "hf:space:parler-tts/parler_tts",
+  "url:https://huggingface.co/spaces/r3gm/SoniTranslate_translate_audio_of_a_video_content": "hf:space:r3gm/sonitranslate_translate_audio_of_a_video_content",
   "url:https://huggingface.co/spaces/selfit-camera/Omni-Image-Editor": "hf:space:selfit-camera/omni-image-editor",
+  "url:https://huggingface.co/spaces/smolagents/computer-agent": "hf:space:smolagents/computer-agent",
   "url:https://huggingface.co/spaces/tonyassi/video-face-swap": "hf:space:tonyassi/video-face-swap",
   "url:https://huggingface.co/speridlabs/idol": "hf:model:speridlabs/idol",
+  "url:https://huggingface.co/thinkingmachines/Inkling-2-Small": "hf:model:thinkingmachines/inkling-2-small",
   "url:https://huggingface.co/unsloth/Qwen3.8-27B-GGUF": "hf:model:unsloth/qwen3.8-27b-gguf",
   "url:https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic": "hf:model:xtools-at/deepseek-v4-pro-qwen3.5-9b-uncensored-heretic"
  },
  "failures": {
-  "Codeberg": 3
+  "Codeberg": 4
  },
  "meta": {
-  "last_batch_at": "2026-11-17T18:43:31+00:00",
+  "last_batch_at": "2026-11-18T03:03:20+00:00",
   "pending_updates": []
  },
  "outbox": {
@@ -304,6 +344,54 @@
      "at": "2026-11-17T18:43:32+00:00",
      "message_id": 675,
      "telegram_date": 1794941012
+    }
+   },
+   "status": "SENT",
+   "updates": [],
+   "verification": ""
+  },
+  "discovery|2026-11-18T03:03:20+00:00": {
+   "applied": true,
+   "attempts": 1,
+   "category": "DISCOVERY",
+   "created": "2026-11-18T03:03:20+00:00",
+   "id": "discovery|2026-11-18T03:03:20+00:00",
+   "kind": "discovery",
+   "last_error": null,
+   "log": [
+    "2026-11-18T03:03:20+00:00 SENT: Telegram confirmed message id(s) [698, 699]"
+   ],
+   "model_name": "AI skills & open-source discoveries",
+   "parts": [
+    "<b>🚀 AI SKILLS &amp; OPEN-SOURCE DISCOVERIES</b>\n<b>Date:</b> 18 Nov 2026, 03:03 UTC\n<b>Discovery period:</b> 17 Nov 18:43 – 18 Nov 03:03 UTC\n<b>New discoveries:</b> 8\n\n<b>🧠 AI AGENT BUILDING</b>\n<b>1. microsoft/ai-agents-for-beginners</b>\n<i>🟠 P1 Highly useful · score 75/100</i>\n<i>★ 80,130 · 26,181 forks · 3 open issues · 119 contributors · updated today</i>\n<b>Developer:</b> microsoft\n<b>What it does:</b> A structured 18-lesson course teaching how to build AI agents.\n<b>Why it matters:</b> It covers foundational concepts using popular frameworks like AutoGen and Semantic Kernel.\n<b>Practical application:</b> Learn step-by-step how to construct multi-agent systems and agentic RAG.\n<b>Compatibility:</b> MCP, OpenAI API, Python\n<b>Cost:</b> Free and open source\n<b>Licence:</b> MIT\n💼 <i>Matches your interest in building personal AI agents.</i>\n<i>Also useful for: app development</i>\n🔗 <b>Repository:</b> <a href=\"https://github.com/microsoft/ai-agents-for-beginners\">github.com/microsoft/ai-agents-for-beginners</a>\n\n<b>2. paperclipai/paperclip</b>\n<i>🔵 P2 Worth exploring · score 70/100</i>\n<i>★ 114,421 · 18,979 forks · 6,794 open issues · updated today</i>\n<b>Developer:</b> paperclipai\n<b>What it does:</b> An open-source orchestration server and UI to manage teams of AI agents.\n<b>Why it matters:</b> It provides a centralized company-like dashboard with org charts and governance for agents.\n<b>Practical application:</b> Assign business goals and monitor execution across diverse AI worker agents.\n<b>Compatibility:</b> Claude Code, Codex, Gemini CLI, Cursor, MCP, Node.js\n<b>Cost:</b> Free and open source\n<b>Licence:</b> MIT\n💼 <i>Enhances your Claude Code, Codex and Gemini development orchestration.</i>\n<i>Also useful for: skills and instructions, automation</i>\n🔗 <b>Repository:</b> <a href=\"https://github.com/paperclipai/paperclip\">github.com/paperclipai/paperclip</a>\n\n<b>🛠 AI SKILLS AND PROMPTS</b>\n<b>3. kaankiziltug/logo-design-skill</b>\n<i>🔴 P0 Exceptional discovery · score 88/100</i>\n<i>★ 7,195 · 575 forks · 2 open issues · 4 contributors · updated 4 days ago</i>\n<b>What it does:</b> A comprehensive logo-design skill for Claude, Gemini CLI, Codex, and other AI agents.\n<b>Why it is useful:</b> It transforms coding assistants into disciplined brand designers with built-in SVG craft and testing tools.\n<b>Where it can be integrated:</b> Claude Code skills folder, Codex, or Gemini CLI\n<b>Installation:</b> <code>git clone https://github.com/kaankiziltug/logo-design-skill.git</code>\n<b>Cost:</b> Free and open source\n💼 <i>Enhances your Claude Code, Codex and Gemini development with specialized visual design capabilities.</i>\n<i>Also useful for: developer productivity, agent building</i>\n🔗 <b>Original link:</b> <a href=\"https://github.com/kaankiziltug/logo-design-skill\">github.com/kaankiziltug/logo-design-skill</a>\n\n<b>4. oil-oil/oil-ui</b>\n<i>🔴 P0 Exceptional discovery · score 88/100</i>\n<i>★ 3,492 · 199 forks · 3 open issues · 2 contributors · updated today</i>\n<b>What it does:</b> An interface and UI/UX design skill for AI coding agents.\n<b>Why it is useful:</b> It enforces robust visual hierarchies and compares multiple directions against real-browser screenshots.\n<b>Where it can be integrated:</b> Claude Code, Cursor, or Codex via npx skills add\n<b>Installation:</b> <code>npx skills add oil-oil/oil-ui</code>\n<b>Cost:</b> Free and open source\n💼 <i>Directly integrates into your Claude Code, Codex and Gemini development stack.</i>\n<i>Also useful for: agent building, creator tools</i>\n🔗 <b>Original link:</b> <a href=\"https://github.com/oil-oil/oil-ui\">github.com/oil-oil/oil-ui</a>\n<i>(1/2)</i>",
+    "<b>5. DenisSergeevitch/ex-ussr-kinship-research</b>\n<i>🔴 P0 Exceptional discovery · score 86/100</i>\n<i>★ 2,606 · 264 forks · 0 open issues · 54 contributors · updated today</i>\n<b>What it does:</b> An evidence-first genealogy and archival research skill for AI agents.\n<b>Why it is useful:</b> It applies strict historical jurisdiction models and name-variant matrices to maintain factual traceability.\n<b>Where it can be integrated:</b> Claude Code, Codex, or MCP configuration\n<b>Installation:</b> <code>npx skills add https://github.com/DenisSergeevitch/ex-ussr-kinship-research</code>\n<b>Cost:</b> Free and open source\n💼 <i>Matches your Claude Code, Codex and Gemini development focus.</i>\n<i>Also useful for: agent building, automation</i>\n🔗 <b>Original link:</b> <a href=\"https://github.com/denissergeevitch/ex-ussr-kinship-research\">github.com/denissergeevitch/ex-ussr-kinship-research</a>\n\n<b>🎬 AI CREATOR RESOURCES</b>\n<b>6. microsoft/markitdown</b>\n<i>🟠 P1 Highly useful · score 81/100</i>\n<i>★ 196,154 · 14,841 forks · 811 open issues · 134 contributors · updated 11 days ago</i>\n<b>What it does:</b> A lightweight Python utility for converting office documents and files into Markdown.\n<b>How creators can use it:</b> Convert source research materials and scripts into clean Markdown for prompts.\n<b>Requirements:</b> no paid API, subscription or GPU mentioned in its README\n💼 <i>Useful for preparing reference materials for your AI educational videos.</i>\n<i>Also useful for: agent building</i>\n🔗 <b>Original link:</b> <a href=\"https://github.com/microsoft/markitdown\">github.com/microsoft/markitdown</a>\n\n<b>7. meituan-longcat/LongCat-Video-Avatar-1.6</b>\n<i>🟠 P1 Highly useful · score 79/100</i>\n<i>♥ 205 · 489 downloads · updated 4 days ago</i>\n<b>What it does:</b> An open-source framework for audio-driven human video generation and avatar creation.\n<b>How creators can use it:</b> Produce talking-head presenter clips or custom AI avatars for your videos.\n<b>Requirements:</b> GPU\n💼 <i>Fits directly into your AI educational videos production pipeline.</i>\n🔗 <b>Hugging Face:</b> <a href=\"https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6\">huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6</a>\n\n<b>8. n4ze3m/tiny-voca</b>\n<i>🟠 P1 Highly useful · score 78/100</i>\n<i>♥ 233 · 3,042 downloads · updated 1 day ago</i>\n<b>What it does:</b> A tiny English text-to-speech model with multiple voices running efficiently on CPU.\n<b>How creators can use it:</b> Quickly prototype voiceovers for video tutorials.\n<b>Requirements:</b> GPU\n💼 <i>Directly supports the production of your AI educational videos.</i>\n🔗 <b>Hugging Face:</b> <a href=\"https://huggingface.co/n4ze3m/tiny-voca\">huggingface.co/n4ze3m/tiny-voca</a>\n\n<b>🏆 BEST DISCOVERY</b>\n<b>paperclipai/paperclip</b> · <a href=\"https://github.com/paperclipai/paperclip\">open</a>\n<b>Why it ranked first:</b> Paperclip provides a complete multi-agent orchestration layer with a dashboard, making it the most advanced platform for managing autonomous AI work teams.\n<b>What problem it solves:</b> It solves the chaos of coordinating multiple disconnected AI agents and tracking their operational costs.\n<b>What you could build or improve:</b> An autonomous multi-agent company dashboard for hackathons.\n\n<i>Discovered, checked and ranked automatically; nothing was installed or run. Read a repository&#x27;s code and licence before using it. Explanations by gemini/gemini-flash-lite-latest.</i>\n<i>(2/2)</i>"
+   ],
+   "priority": "P0",
+   "receipt": {
+    "status": "NOT_NEEDED"
+   },
+   "release_id": "discovery|2026-11-18T03:03:20+00:00",
+   "resource_ids": [
+    "github:R_kgDOUshxmQ",
+    "github:R_kgDOU0Ob-A",
+    "github:R_kgDOVWq3rA",
+    "github:R_kgDONO810w",
+    "hf:model:meituan-longcat/longcat-video-avatar-1.6",
+    "hf:model:n4ze3m/tiny-voca",
+    "github:R_kgDONWBgsA",
+    "github:R_kgDORclPyA"
+   ],
+   "sent_at": "2026-11-18T03:03:20+00:00",
+   "sent_parts": {
+    "0": {
+     "at": "2026-11-18T03:03:20+00:00",
+     "message_id": 698,
+     "telegram_date": 1794971000
+    },
+    "1": {
+     "at": "2026-11-18T03:03:20+00:00",
+     "message_id": 699,
+     "telegram_date": 1794971000
     }
    },
    "status": "SENT",
@@ -494,6 +582,132 @@
    },
    "status": "pool",
    "url": "https://github.com/jingyaogong/minimind"
+  },
+  "github:R_kgDONO810w": {
+   "categories": [
+    "creator_tools",
+    "agent_building"
+   ],
+   "delivery": {
+    "message_ids": [
+     698,
+     699
+    ],
+    "sent_at": "2026-11-18T03:03:20+00:00",
+    "status": "SENT"
+   },
+   "evaluated_at": "2026-11-18T03:00:02+00:00",
+   "first_discovered": "2026-11-18T03:00:02+00:00",
+   "id": "github:R_kgDONO810w",
+   "identifier": "R_kgDONO810w",
+   "kind": "repository",
+   "last_checked": "2026-11-18T03:00:02+00:00",
+   "last_notified": "2026-11-18T03:03:20+00:00",
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "microsoft/markitdown",
+   "owner": "microsoft",
+   "platform": "github",
+   "priority": "P1",
+   "score": 81,
+   "snapshot": {
+    "created_at": "2024-11-13T19:56:40Z",
+    "default_branch": "main",
+    "description": "Python tool for converting files and office documents to Markdown.",
+    "display": "markitdown",
+    "forks": 14841,
+    "found_by": [
+     "search: topic:autogen"
+    ],
+    "kind": "repository",
+    "language": "Python",
+    "license_spdx": "MIT",
+    "name": "microsoft/markitdown",
+    "node_id": "R_kgDONO810w",
+    "open_issues": 811,
+    "owner": "microsoft",
+    "platform": "github",
+    "platform_id": 888092115,
+    "pushed_at": "2026-11-07T00:14:01Z",
+    "rid": "github:R_kgDONO810w",
+    "stars": 196154,
+    "topics": [
+     "autogen",
+     "autogen-extension",
+     "langchain",
+     "markdown",
+     "microsoft-office",
+     "openai",
+     "pdf"
+    ],
+    "url": "https://github.com/microsoft/markitdown"
+   },
+   "status": "delivered",
+   "url": "https://github.com/microsoft/markitdown"
+  },
+  "github:R_kgDONWBgsA": {
+   "categories": [
+    "agent_building",
+    "app_development"
+   ],
+   "delivery": {
+    "message_ids": [
+     698,
+     699
+    ],
+    "sent_at": "2026-11-18T03:03:20+00:00",
+    "status": "SENT"
+   },
+   "evaluated_at": "2026-11-18T03:00:03+00:00",
+   "first_discovered": "2026-11-18T03:00:03+00:00",
+   "id": "github:R_kgDONWBgsA",
+   "identifier": "R_kgDONWBgsA",
+   "kind": "repository",
+   "last_checked": "2026-11-18T03:00:03+00:00",
+   "last_notified": "2026-11-18T03:03:20+00:00",
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "microsoft/ai-agents-for-beginners",
+   "owner": "microsoft",
+   "platform": "github",
+   "priority": "P1",
+   "score": 75,
+   "snapshot": {
+    "created_at": "2024-11-28T10:42:52Z",
+    "default_branch": "main",
+    "description": "18 Lessons to Get Started Building AI Agents",
+    "display": "ai-agents-for-beginners",
+    "forks": 26181,
+    "found_by": [
+     "search: topic:autogen"
+    ],
+    "kind": "repository",
+    "language": "Jupyter Notebook",
+    "license_spdx": "MIT",
+    "name": "microsoft/ai-agents-for-beginners",
+    "node_id": "R_kgDONWBgsA",
+    "open_issues": 3,
+    "owner": "microsoft",
+    "platform": "github",
+    "platform_id": 895508656,
+    "pushed_at": "2026-11-17T09:24:01Z",
+    "rid": "github:R_kgDONWBgsA",
+    "stars": 80130,
+    "topics": [
+     "agentic-ai",
+     "agentic-framework",
+     "agentic-rag",
+     "ai-agents",
+     "ai-agents-framework",
+     "autogen",
+     "foundry",
+     "foundry-local",
+     "generative-ai",
+     "microsoft-foundry",
+     "semantic-kernel"
+    ],
+    "url": "https://github.com/microsoft/ai-agents-for-beginners"
+   },
+   "status": "delivered",
+   "url": "https://github.com/microsoft/ai-agents-for-beginners"
   },
   "github:R_kgDOOjqi0Q": {
    "categories": [
@@ -764,6 +978,7 @@
    "kind": "repository",
    "last_checked": "2026-11-17T18:41:39+00:00",
    "last_notified": "2026-11-17T18:43:32+00:00",
+   "last_update_check": "2026-11-18T03:00:03+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "obra/superpowers",
    "owner": "obra",
@@ -804,7 +1019,8 @@
     "url": "https://github.com/obra/superpowers"
    },
    "status": "delivered",
-   "url": "https://github.com/obra/superpowers"
+   "url": "https://github.com/obra/superpowers",
+   "version": "v7.0.2"
   },
   "github:R_kgDOPt7f_g": {
    "categories": [
@@ -896,6 +1112,7 @@
    "kind": "repository",
    "last_checked": "2026-11-17T18:41:40+00:00",
    "last_notified": "2026-11-17T18:43:32+00:00",
+   "last_update_check": "2026-11-18T03:00:03+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "affaan-m/ECC",
    "owner": "affaan-m",
@@ -936,7 +1153,8 @@
     "url": "https://github.com/affaan-m/ecc"
    },
    "status": "delivered",
-   "url": "https://github.com/affaan-m/ecc"
+   "url": "https://github.com/affaan-m/ecc",
+   "version": "v2.2.3"
   },
   "github:R_kgDOQ7Opvg": {
    "categories": [
@@ -1286,50 +1504,20 @@
     "productivity"
    ],
    "delivery": {
-    "message_ids": [],
-    "sent_at": null,
-    "status": "NOT_SENT"
+    "message_ids": [
+     698,
+     699
+    ],
+    "sent_at": "2026-11-18T03:03:20+00:00",
+    "status": "SENT"
    },
    "evaluated_at": "2026-11-17T08:15:05+00:00",
-   "evaluation": {
-    "categories": [
-     "agent_building",
-     "skills",
-     "automation",
-     "hackathon",
-     "productivity"
-    ],
-    "compatibility": [
-     "Claude Code",
-     "Codex",
-     "Gemini CLI",
-     "Cursor",
-     "MCP",
-     "Node.js"
-    ],
-    "contributors": null,
-    "docs": "basic",
-    "install": null,
-    "licence_class": "FREE AND OPEN SOURCE",
-    "licence_note": "MIT",
-    "maintenance": "updated today",
-    "primary": "agent_building",
-    "priority": "P2",
-    "reject": null,
-    "relevance": {
-     "hint": "it plugs into the coding agents you already use",
-     "project": "your Claude Code, Codex and Gemini development"
-    },
-    "requirements": [],
-    "score": 70,
-    "warnings": []
-   },
    "first_discovered": "2026-11-17T08:15:05+00:00",
    "id": "github:R_kgDORclPyA",
    "identifier": "R_kgDORclPyA",
    "kind": "repository",
    "last_checked": "2026-11-17T08:15:05+00:00",
-   "last_notified": null,
+   "last_notified": "2026-11-18T03:03:20+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "paperclipai/paperclip",
    "owner": "paperclipai",
@@ -1381,7 +1569,7 @@
     ],
     "url": "https://github.com/paperclipai/paperclip"
    },
-   "status": "pool",
+   "status": "delivered",
    "url": "https://github.com/paperclipai/paperclip"
   },
   "github:R_kgDOSR3Uuw": {
@@ -1406,6 +1594,7 @@
    "kind": "repository",
    "last_checked": "2026-11-17T18:41:43+00:00",
    "last_notified": "2026-11-17T18:43:32+00:00",
+   "last_update_check": "2026-11-18T03:00:03+00:00",
    "licence_class": "OPEN SOURCE WITH PAID OPTIONAL SERVICES",
    "name": "google-research/paper-orchestra",
    "owner": "google-research",
@@ -1867,6 +2056,7 @@
    "kind": "repository",
    "last_checked": "2026-11-17T18:41:42+00:00",
    "last_notified": "2026-11-17T18:43:32+00:00",
+   "last_update_check": "2026-11-18T03:00:04+00:00",
    "licence_class": "LICENCE UNCLEAR",
    "name": "Tencent/LoopForge",
    "owner": "Tencent",
@@ -1919,7 +2109,96 @@
     "url": "https://github.com/tencent/loopforge"
    },
    "status": "delivered",
-   "url": "https://github.com/tencent/loopforge"
+   "url": "https://github.com/tencent/loopforge",
+   "version": "v0.4.0"
+  },
+  "github:R_kgDOTmBVGg": {
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "first_discovered": "2026-11-18T03:00:00+00:00",
+   "id": "github:R_kgDOTmBVGg",
+   "identifier": "R_kgDOTmBVGg",
+   "kind": "repository",
+   "last_checked": "2026-11-18T03:00:00+00:00",
+   "last_notified": null,
+   "name": "BloopodotAI/bloopo-marketplace",
+   "owner": "BloopodotAI",
+   "platform": "github",
+   "reject_reason": "security: asks for secrets (seed phrase, private key, password)",
+   "status": "rejected",
+   "url": "https://github.com/bloopodotai/bloopo-marketplace"
+  },
+  "github:R_kgDOU0Ob-A": {
+   "categories": [
+    "skills",
+    "agent_building",
+    "creator_tools"
+   ],
+   "delivery": {
+    "message_ids": [
+     698,
+     699
+    ],
+    "sent_at": "2026-11-18T03:03:20+00:00",
+    "status": "SENT"
+   },
+   "evaluated_at": "2026-11-18T03:00:01+00:00",
+   "first_discovered": "2026-11-18T03:00:01+00:00",
+   "id": "github:R_kgDOU0Ob-A",
+   "identifier": "R_kgDOU0Ob-A",
+   "kind": "repository",
+   "last_checked": "2026-11-18T03:00:01+00:00",
+   "last_notified": "2026-11-18T03:03:20+00:00",
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "oil-oil/oil-ui",
+   "owner": "oil-oil",
+   "platform": "github",
+   "priority": "P0",
+   "score": 88,
+   "snapshot": {
+    "created_at": "2026-09-30T03:55:35Z",
+    "default_branch": "main",
+    "description": "UI design skill for Claude Code, Codex and other AI agents: explore distinct directions, compare them side by side, refine against real screenshots. 给 AI Agent 用的 UI 设计 Skill。",
+    "display": "oil-ui",
+    "forks": 199,
+    "found_by": [
+     "search: topic:codex",
+     "search: \"claude code\" skills in:name,description"
+    ],
+    "kind": "repository",
+    "language": "Python",
+    "license_spdx": "MIT",
+    "name": "oil-oil/oil-ui",
+    "node_id": "R_kgDOU0Ob-A",
+    "open_issues": 3,
+    "owner": "oil-oil",
+    "platform": "github",
+    "platform_id": 1396939768,
+    "pushed_at": "2026-11-18T01:11:00Z",
+    "rid": "github:R_kgDOU0Ob-A",
+    "stars": 3492,
+    "topics": [
+     "agent-skills",
+     "ai-design",
+     "claude-code",
+     "claude-code-skill",
+     "claude-skills",
+     "codex",
+     "cursor",
+     "design",
+     "design-system",
+     "frontend",
+     "ui",
+     "ui-design",
+     "ux-design"
+    ],
+    "url": "https://github.com/oil-oil/oil-ui"
+   },
+   "status": "delivered",
+   "url": "https://github.com/oil-oil/oil-ui"
   },
   "github:R_kgDOU4NxhA": {
    "categories": [
@@ -2018,6 +2297,111 @@
    },
    "status": "pool",
    "url": "https://github.com/harvil1/codeagent"
+  },
+  "github:R_kgDOU4i48w": {
+   "categories": [
+    "skills",
+    "productivity",
+    "creator_tools"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-18T03:00:01+00:00",
+   "evaluation": {
+    "categories": [
+     "skills",
+     "productivity",
+     "creator_tools"
+    ],
+    "compatibility": [
+     "Claude Code",
+     "Codex",
+     "Gemini CLI",
+     "OpenAI API"
+    ],
+    "contributors": null,
+    "docs": "thin",
+    "install": null,
+    "licence_class": "LICENCE UNCLEAR",
+    "licence_note": "no recognised licence file",
+    "maintenance": "updated today",
+    "primary": "skills",
+    "priority": "P3",
+    "reject": null,
+    "relevance": {
+     "hint": "it plugs into the coding agents you already use",
+     "project": "your Claude Code, Codex and Gemini development"
+    },
+    "requirements": [],
+    "score": 56,
+    "warnings": [
+     "documentation is thin",
+     "no clear licence: check before reusing the code"
+    ]
+   },
+   "first_discovered": "2026-11-18T03:00:01+00:00",
+   "id": "github:R_kgDOU4i48w",
+   "identifier": "R_kgDOU4i48w",
+   "kind": "repository",
+   "last_checked": "2026-11-18T03:00:01+00:00",
+   "last_notified": null,
+   "licence_class": "LICENCE UNCLEAR",
+   "name": "Folkbench/folkbench",
+   "owner": "Folkbench",
+   "platform": "github",
+   "priority": "P3",
+   "score": 56,
+   "snapshot": {
+    "created_at": "2026-10-02T09:50:45Z",
+    "default_branch": "main",
+    "description": "AI API 中转站推荐与评测：中转站排行榜、中转站检测、Claude / GPT / Gemini 中转站对比 · AI API relay rankings · Folkbench Switch for Claude Code, Codex & Gemini CLI",
+    "display": "folkbench",
+    "forks": 19,
+    "found_by": [
+     "search: topic:codex",
+     "search: topic:gemini-cli"
+    ],
+    "kind": "repository",
+    "language": "TypeScript",
+    "license_spdx": "NOASSERTION",
+    "name": "Folkbench/folkbench",
+    "node_id": "R_kgDOU4i48w",
+    "open_issues": 0,
+    "owner": "Folkbench",
+    "platform": "github",
+    "platform_id": 1401469171,
+    "pushed_at": "2026-11-17T21:24:51Z",
+    "rid": "github:R_kgDOU4i48w",
+    "stars": 3956,
+    "topics": [
+     "ai-coding",
+     "aider",
+     "api-gateway",
+     "api-relay",
+     "benchmark",
+     "claude",
+     "claude-code",
+     "codex",
+     "data-security",
+     "deepseek",
+     "developer-tools",
+     "gemini",
+     "gemini-cli",
+     "llm",
+     "llm-benchmark",
+     "model-evaluation",
+     "openai-api",
+     "opencode",
+     "rust",
+     "tauri"
+    ],
+    "url": "https://github.com/folkbench/folkbench"
+   },
+   "status": "pool",
+   "url": "https://github.com/folkbench/folkbench"
   },
   "github:R_kgDOUDhkFw": {
    "categories": [
@@ -2296,6 +2680,7 @@
    "kind": "repository",
    "last_checked": "2026-11-17T18:41:40+00:00",
    "last_notified": "2026-11-17T18:43:32+00:00",
+   "last_update_check": "2026-11-18T03:00:04+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "qybaihe/mu",
    "owner": "qybaihe",
@@ -2346,7 +2731,102 @@
     "url": "https://github.com/qybaihe/mu"
    },
    "status": "delivered",
-   "url": "https://github.com/qybaihe/mu"
+   "url": "https://github.com/qybaihe/mu",
+   "version": "v0.3.13"
+  },
+  "github:R_kgDOUns_9A": {
+   "categories": [
+    "skills",
+    "productivity",
+    "agent_building"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-18T03:00:00+00:00",
+   "evaluation": {
+    "categories": [
+     "skills",
+     "productivity",
+     "agent_building"
+    ],
+    "compatibility": [
+     "Claude Code",
+     "Codex",
+     "Gemini CLI",
+     "Cursor",
+     "VS Code",
+     "OpenAI API"
+    ],
+    "contributors": null,
+    "docs": "good",
+    "install": null,
+    "licence_class": "OPEN SOURCE WITH PAID OPTIONAL SERVICES",
+    "licence_note": "MIT code; uses paid API (a free/local option is mentioned)",
+    "maintenance": "updated today",
+    "primary": "skills",
+    "priority": "P2",
+    "reject": null,
+    "relevance": {
+     "hint": "it plugs into the coding agents you already use",
+     "project": "your Claude Code, Codex and Gemini development"
+    },
+    "requirements": [
+     "paid API"
+    ],
+    "score": 63,
+    "warnings": [
+     "pipes a remote script straight into the shell (read it before running)"
+    ]
+   },
+   "first_discovered": "2026-11-18T03:00:00+00:00",
+   "id": "github:R_kgDOUns_9A",
+   "identifier": "R_kgDOUns_9A",
+   "kind": "repository",
+   "last_checked": "2026-11-18T03:00:00+00:00",
+   "last_notified": null,
+   "licence_class": "OPEN SOURCE WITH PAID OPTIONAL SERVICES",
+   "name": "yetone/magpie",
+   "owner": "yetone",
+   "platform": "github",
+   "priority": "P2",
+   "score": 63,
+   "snapshot": {
+    "created_at": "2026-09-23T16:22:35Z",
+    "default_branch": "main",
+    "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
+    "display": "magpie",
+    "forks": 3457,
+    "found_by": [
+     "search: topic:codex",
+     "search: topic:gemini-cli"
+    ],
+    "kind": "repository",
+    "language": "Go",
+    "license_spdx": "MIT",
+    "name": "yetone/magpie",
+    "node_id": "R_kgDOUns_9A",
+    "open_issues": 4479,
+    "owner": "yetone",
+    "platform": "github",
+    "platform_id": 1383809012,
+    "pushed_at": "2026-11-18T02:43:25Z",
+    "rid": "github:R_kgDOUns_9A",
+    "stars": 38195,
+    "topics": [
+     "claude-code",
+     "codex",
+     "deepseek",
+     "gemini-cli",
+     "llm",
+     "macos"
+    ],
+    "url": "https://github.com/yetone/magpie"
+   },
+   "status": "pool",
+   "url": "https://github.com/yetone/magpie"
   },
   "github:R_kgDOUojiPw": {
    "categories": [
@@ -2456,6 +2936,70 @@
    },
    "status": "pool",
    "url": "https://github.com/chipfighter/context-attachment-manager"
+  },
+  "github:R_kgDOUshxmQ": {
+   "categories": [
+    "skills",
+    "productivity",
+    "agent_building"
+   ],
+   "delivery": {
+    "message_ids": [
+     698,
+     699
+    ],
+    "sent_at": "2026-11-18T03:03:20+00:00",
+    "status": "SENT"
+   },
+   "evaluated_at": "2026-11-18T03:00:01+00:00",
+   "first_discovered": "2026-11-18T03:00:01+00:00",
+   "id": "github:R_kgDOUshxmQ",
+   "identifier": "R_kgDOUshxmQ",
+   "kind": "repository",
+   "last_checked": "2026-11-18T03:00:01+00:00",
+   "last_notified": "2026-11-18T03:03:20+00:00",
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "kaankiziltug/logo-design-skill",
+   "owner": "kaankiziltug",
+   "platform": "github",
+   "priority": "P0",
+   "score": 88,
+   "snapshot": {
+    "created_at": "2026-09-26T08:23:34Z",
+    "default_branch": "main",
+    "description": "A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI agents: principles, process, SVG craft, testing tools and a 1,400+ logo reference library.",
+    "display": "logo-design-skill",
+    "forks": 575,
+    "found_by": [
+     "search: topic:codex",
+     "search: topic:gemini-cli"
+    ],
+    "kind": "repository",
+    "language": "HTML",
+    "license_spdx": "MIT",
+    "name": "kaankiziltug/logo-design-skill",
+    "node_id": "R_kgDOUshxmQ",
+    "open_issues": 2,
+    "owner": "kaankiziltug",
+    "platform": "github",
+    "platform_id": 1388867993,
+    "pushed_at": "2026-11-13T16:32:36Z",
+    "rid": "github:R_kgDOUshxmQ",
+    "stars": 7195,
+    "topics": [
+     "agent-skills",
+     "branding",
+     "claude",
+     "claude-skills",
+     "codex",
+     "gemini-cli",
+     "logo-design",
+     "svg"
+    ],
+    "url": "https://github.com/kaankiziltug/logo-design-skill"
+   },
+   "status": "delivered",
+   "url": "https://github.com/kaankiziltug/logo-design-skill"
   },
   "github:R_kgDOUsqjIA": {
    "categories": [
@@ -2872,6 +3416,217 @@
    "status": "pool",
    "url": "https://github.com/microsoft/tokeneconomizer"
   },
+  "github:R_kgDOVIQiug": {
+   "categories": [
+    "skills",
+    "agent_building",
+    "prompting",
+    "creator_tools"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-18T03:00:02+00:00",
+   "evaluation": {
+    "categories": [
+     "skills",
+     "agent_building",
+     "prompting",
+     "creator_tools"
+    ],
+    "compatibility": [
+     "Claude Code",
+     "Codex",
+     "Python",
+     "Node.js"
+    ],
+    "contributors": null,
+    "docs": "thin",
+    "install": null,
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "CC0-1.0",
+    "maintenance": "updated today",
+    "primary": "skills",
+    "priority": "P2",
+    "reject": null,
+    "relevance": {
+     "hint": "it plugs into the coding agents you already use",
+     "project": "your Claude Code, Codex and Gemini development"
+    },
+    "requirements": [],
+    "score": 58,
+    "warnings": [
+     "a link collection rather than a working implementation",
+     "documentation is thin"
+    ]
+   },
+   "first_discovered": "2026-11-18T03:00:02+00:00",
+   "id": "github:R_kgDOVIQiug",
+   "identifier": "R_kgDOVIQiug",
+   "kind": "repository",
+   "last_checked": "2026-11-18T03:00:02+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "UnderleveledBuilder/awesome-short-drama-skills",
+   "owner": "UnderleveledBuilder",
+   "platform": "github",
+   "priority": "P2",
+   "score": 58,
+   "snapshot": {
+    "created_at": "2026-10-13T20:35:18Z",
+    "default_branch": "main",
+    "description": "AI 短剧 · 漫剧 Skill（技能包）精选：剧本、改编、分镜、Seedance / 可灵 / MiniMax 视频提示词，千问、豆包、龙虾 OpenClaw、WorkBuddy、Claude Code、Codex 等智能体可用 | Curated agent skills for AI short drama, micro drama / microdrama, vertical drama and manju (AI comic drama): screenwriting, storyboards, Seedance / Kling / MiniMax video prompts",
+    "display": "awesome-short-drama-skills",
+    "forks": 303,
+    "found_by": [
+     "search: topic:codex",
+     "search: \"claude code\" skills in:name,description"
+    ],
+    "kind": "repository",
+    "language": "HTML",
+    "license_spdx": "CC0-1.0",
+    "name": "UnderleveledBuilder/awesome-short-drama-skills",
+    "node_id": "R_kgDOVIQiug",
+    "open_issues": 9,
+    "owner": "UnderleveledBuilder",
+    "platform": "github",
+    "platform_id": 1417945786,
+    "pushed_at": "2026-11-17T21:31:11Z",
+    "rid": "github:R_kgDOVIQiug",
+    "stars": 2510,
+    "topics": [
+     "agent-skills",
+     "ai-drama",
+     "ai-short-drama",
+     "awesome",
+     "awesome-list",
+     "claude-code",
+     "claude-skills",
+     "codex",
+     "doubao",
+     "kimi",
+     "manju",
+     "micro-drama",
+     "microdrama",
+     "openclaw",
+     "qwen",
+     "seedance",
+     "short-drama",
+     "trae",
+     "vertical-drama",
+     "workbuddy"
+    ],
+    "url": "https://github.com/underleveledbuilder/awesome-short-drama-skills"
+   },
+   "status": "pool",
+   "url": "https://github.com/underleveledbuilder/awesome-short-drama-skills"
+  },
+  "github:R_kgDOVJ8ICw": {
+   "categories": [
+    "skills",
+    "automation",
+    "agent_building",
+    "productivity"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-18T03:00:02+00:00",
+   "evaluation": {
+    "categories": [
+     "skills",
+     "automation",
+     "agent_building",
+     "productivity"
+    ],
+    "compatibility": [
+     "Claude Code",
+     "Codex",
+     "Gemini CLI",
+     "Cursor",
+     "MCP",
+     "Python"
+    ],
+    "contributors": 3,
+    "docs": "good",
+    "install": "git clone https://github.com/EL4CTEO/blender-skills",
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "MIT",
+    "maintenance": "updated today",
+    "primary": "skills",
+    "priority": "P1",
+    "reject": null,
+    "relevance": {
+     "hint": "it plugs into the coding agents you already use",
+     "project": "your Claude Code, Codex and Gemini development"
+    },
+    "requirements": [],
+    "score": 84,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-18T03:00:02+00:00",
+   "id": "github:R_kgDOVJ8ICw",
+   "identifier": "R_kgDOVJ8ICw",
+   "kind": "repository",
+   "last_checked": "2026-11-18T03:00:02+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "EL4CTEO/blender-skills",
+   "owner": "EL4CTEO",
+   "platform": "github",
+   "priority": "P1",
+   "score": 84,
+   "snapshot": {
+    "created_at": "2026-10-14T19:08:14Z",
+    "default_branch": "main",
+    "description": "Professional Blender 5.3 workflows as Agent Skills for Claude Code, Codex, Gemini CLI, Copilot and Cursor: modeling, UVs, PBR, baking, rigging, animation, export and QA.",
+    "display": "blender-skills",
+    "forks": 168,
+    "found_by": [
+     "search: topic:gemini-cli",
+     "search: \"claude code\" skills in:name,description"
+    ],
+    "kind": "repository",
+    "language": "Python",
+    "license_spdx": "MIT",
+    "name": "EL4CTEO/blender-skills",
+    "node_id": "R_kgDOVJ8ICw",
+    "open_issues": 0,
+    "owner": "EL4CTEO",
+    "platform": "github",
+    "platform_id": 1419708427,
+    "pushed_at": "2026-11-17T15:20:14Z",
+    "rid": "github:R_kgDOVJ8ICw",
+    "stars": 1985,
+    "topics": [
+     "3d",
+     "agent-skills",
+     "ai-agents",
+     "blender",
+     "blender-python",
+     "bpy",
+     "claude-code",
+     "claude-skills",
+     "codex",
+     "game-assets",
+     "gemini-cli",
+     "godot",
+     "mcp",
+     "pbr",
+     "rigging",
+     "roblox",
+     "unity",
+     "unreal-engine"
+    ],
+    "url": "https://github.com/el4cteo/blender-skills"
+   },
+   "status": "pool",
+   "url": "https://github.com/el4cteo/blender-skills"
+  },
   "github:R_kgDOVK5wyQ": {
    "categories": [
     "skills",
@@ -2971,6 +3726,7 @@
    "kind": "repository",
    "last_checked": "2026-11-17T18:41:42+00:00",
    "last_notified": "2026-11-17T18:43:32+00:00",
+   "last_update_check": "2026-11-18T03:00:04+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "morganlinton/BeautifulRust",
    "owner": "morganlinton",
@@ -3014,7 +3770,8 @@
     "url": "https://github.com/morganlinton/beautifulrust"
    },
    "status": "delivered",
-   "url": "https://github.com/morganlinton/beautifulrust"
+   "url": "https://github.com/morganlinton/beautifulrust",
+   "version": "v1.5.0"
   },
   "github:R_kgDOVVO78A": {
    "categories": [
@@ -3102,6 +3859,72 @@
    },
    "status": "pool",
    "url": "https://github.com/aistlabs-ai/aistlabs-mcp"
+  },
+  "github:R_kgDOVWq3rA": {
+   "categories": [
+    "skills",
+    "agent_building",
+    "automation",
+    "hackathon",
+    "productivity"
+   ],
+   "delivery": {
+    "message_ids": [
+     698,
+     699
+    ],
+    "sent_at": "2026-11-18T03:03:20+00:00",
+    "status": "SENT"
+   },
+   "evaluated_at": "2026-11-18T03:00:02+00:00",
+   "first_discovered": "2026-11-18T03:00:02+00:00",
+   "id": "github:R_kgDOVWq3rA",
+   "identifier": "R_kgDOVWq3rA",
+   "kind": "repository",
+   "last_checked": "2026-11-18T03:00:02+00:00",
+   "last_notified": "2026-11-18T03:03:20+00:00",
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "DenisSergeevitch/ex-ussr-kinship-research",
+   "owner": "DenisSergeevitch",
+   "platform": "github",
+   "priority": "P0",
+   "score": 86,
+   "snapshot": {
+    "created_at": "2026-10-25T10:05:56Z",
+    "default_branch": "main",
+    "description": "Evidence-first genealogy skill for AI agents (Codex, Claude Code): church books, civil, military, deportation and repression records across the former USSR. Replies in your language.",
+    "display": "ex-ussr-kinship-research",
+    "forks": 264,
+    "found_by": [
+     "search: topic:codex",
+     "search: \"claude code\" skills in:name,description"
+    ],
+    "kind": "repository",
+    "language": "Python",
+    "license_spdx": "MIT",
+    "name": "DenisSergeevitch/ex-ussr-kinship-research",
+    "node_id": "R_kgDOVWq3rA",
+    "open_issues": 0,
+    "owner": "DenisSergeevitch",
+    "platform": "github",
+    "platform_id": 1433057196,
+    "pushed_at": "2026-11-17T21:12:45Z",
+    "rid": "github:R_kgDOVWq3rA",
+    "stars": 2606,
+    "topics": [
+     "agent-skills",
+     "archives",
+     "claude-code",
+     "codex",
+     "family-history",
+     "familysearch",
+     "genealogy",
+     "ussr"
+    ],
+    "url": "https://github.com/denissergeevitch/ex-ussr-kinship-research"
+   },
+   "status": "delivered",
+   "url": "https://github.com/denissergeevitch/ex-ussr-kinship-research"
   },
   "github:R_kgDOVZgSEg": {
    "categories": [
@@ -3404,6 +4227,7 @@
    "kind": "repository",
    "last_checked": "2026-11-17T18:41:40+00:00",
    "last_notified": "2026-11-17T18:43:32+00:00",
+   "last_update_check": "2026-11-18T03:00:04+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "google-deepmind/gbench",
    "owner": "google-deepmind",
@@ -3435,7 +4259,8 @@
     "url": "https://github.com/google-deepmind/gbench"
    },
    "status": "delivered",
-   "url": "https://github.com/google-deepmind/gbench"
+   "url": "https://github.com/google-deepmind/gbench",
+   "version": "v0.5.0"
   },
   "github:R_kgDOVdb1-Q": {
    "categories": [
@@ -4654,6 +5479,26 @@
    "status": "rejected",
    "url": "https://huggingface.co/datasets/google/physical-engineerings-last-exam"
   },
+  "hf:dataset:hublabs/hubego-100k": {
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "first_discovered": "2026-11-18T03:00:00+00:00",
+   "id": "hf:dataset:hublabs/hubego-100k",
+   "identifier": "HubLabs/HubEgo-100K",
+   "kind": "dataset",
+   "last_checked": "2026-11-18T03:00:00+00:00",
+   "last_notified": null,
+   "name": "HubLabs/HubEgo-100K",
+   "owner": "HubLabs",
+   "platform": "huggingface",
+   "reject_reason": "score 32 below the minimum",
+   "score": 32,
+   "status": "rejected",
+   "url": "https://huggingface.co/datasets/HubLabs/HubEgo-100K"
+  },
   "hf:dataset:huggingfacefw/fineweb": {
    "delivery": {
     "message_ids": [],
@@ -4673,6 +5518,101 @@
    "score": 28,
    "status": "rejected",
    "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb"
+  },
+  "hf:dataset:kormo-vl/evident": {
+   "categories": [
+    "agent_building"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-18T03:00:01+00:00",
+   "evaluation": {
+    "categories": [
+     "agent_building"
+    ],
+    "compatibility": [
+     "Hugging Face",
+     "Python"
+    ],
+    "contributors": null,
+    "docs": "basic",
+    "install": null,
+    "licence_class": "LICENCE UNCLEAR",
+    "licence_note": "no recognised licence file",
+    "maintenance": "updated today",
+    "primary": "agent_building",
+    "priority": "P3",
+    "reject": null,
+    "relevance": {
+     "hint": "it automates searching, reading and citing sources",
+     "project": "your autonomous research systems"
+    },
+    "requirements": [],
+    "score": 54,
+    "warnings": [
+     "no clear licence: check before reusing the code"
+    ]
+   },
+   "first_discovered": "2026-11-18T03:00:01+00:00",
+   "id": "hf:dataset:kormo-vl/evident",
+   "identifier": "KORMo-VL/EVIDENT",
+   "kind": "dataset",
+   "last_checked": "2026-11-18T03:00:01+00:00",
+   "last_notified": null,
+   "licence_class": "LICENCE UNCLEAR",
+   "name": "KORMo-VL/EVIDENT",
+   "owner": "KORMo-VL",
+   "platform": "huggingface",
+   "priority": "P3",
+   "score": 54,
+   "snapshot": {
+    "created_at": "2026-11-14T16:33:09.000Z",
+    "description": "EVIDENT: Task Metadata for Evidence-Grounded GUI Evaluation This release contains 220 GUI/web agent task records for evidence-grounded trajectory evaluation: 150 Korean and 70 English tasks. Task definitions pair a user request with its intended outcome and evidence checks. Evaluation code and…",
+    "display": "EVIDENT",
+    "downloads": 110,
+    "found_by": [
+     "Hugging Face trending datasets"
+    ],
+    "kind": "dataset",
+    "likes": 26,
+    "name": "KORMo-VL/EVIDENT",
+    "owner": "KORMo-VL",
+    "platform": "huggingface",
+    "pushed_at": "2026-11-17T08:34:04.000Z",
+    "rid": "hf:dataset:kormo-vl/evident",
+    "topics": [
+     "gui-agent",
+     "web-agent",
+     "evaluation",
+     "evidence-grounded"
+    ],
+    "url": "https://huggingface.co/datasets/KORMo-VL/EVIDENT"
+   },
+   "status": "pool",
+   "url": "https://huggingface.co/datasets/KORMo-VL/EVIDENT"
+  },
+  "hf:dataset:laion/laion-audio-xl": {
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "first_discovered": "2026-11-18T03:00:01+00:00",
+   "id": "hf:dataset:laion/laion-audio-xl",
+   "identifier": "laion/laion-audio-xl",
+   "kind": "dataset",
+   "last_checked": "2026-11-18T03:00:01+00:00",
+   "last_notified": null,
+   "name": "laion/laion-audio-xl",
+   "owner": "laion",
+   "platform": "huggingface",
+   "reject_reason": "score 27 below the minimum",
+   "score": 27,
+   "status": "rejected",
+   "url": "https://huggingface.co/datasets/laion/laion-audio-xl"
   },
   "hf:dataset:nvidia/physicalai-human-1m-100k": {
    "categories": [
@@ -4988,6 +5928,25 @@
    "status": "rejected",
    "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy"
   },
+  "hf:model:chatrlabs/qwen-image-2.1-uncensored-omni-quantized": {
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "first_discovered": "2026-11-18T03:00:00+00:00",
+   "id": "hf:model:chatrlabs/qwen-image-2.1-uncensored-omni-quantized",
+   "identifier": "chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
+   "kind": "model",
+   "last_checked": "2026-11-18T03:00:00+00:00",
+   "last_notified": null,
+   "name": "chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
+   "owner": "chatrlabs",
+   "platform": "huggingface",
+   "reject_reason": "excluded topic (uncensor)",
+   "status": "rejected",
+   "url": "https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized"
+  },
   "hf:model:comfy-org/minimax-h3-image": {
    "categories": [
     "creator_tools"
@@ -5160,6 +6119,26 @@
    "status": "pool",
    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017"
   },
+  "hf:model:edge0/edge0-145b-nvfp4": {
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "first_discovered": "2026-11-18T03:00:01+00:00",
+   "id": "hf:model:edge0/edge0-145b-nvfp4",
+   "identifier": "Edge0/Edge0-145B-NVFP4",
+   "kind": "model",
+   "last_checked": "2026-11-18T03:00:01+00:00",
+   "last_notified": null,
+   "name": "Edge0/Edge0-145B-NVFP4",
+   "owner": "Edge0",
+   "platform": "huggingface",
+   "reject_reason": "score 41 below the minimum",
+   "score": 41,
+   "status": "rejected",
+   "url": "https://huggingface.co/Edge0/Edge0-145B-NVFP4"
+  },
   "hf:model:facebook/sam3": {
    "delivery": {
     "message_ids": [],
@@ -5179,6 +6158,88 @@
    "score": 25,
    "status": "rejected",
    "url": "https://huggingface.co/facebook/sam3"
+  },
+  "hf:model:higurashi-ai/haru-4b": {
+   "categories": [
+    "creator_tools",
+    "prompting"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-18T03:00:01+00:00",
+   "evaluation": {
+    "categories": [
+     "creator_tools",
+     "prompting"
+    ],
+    "compatibility": [
+     "Python"
+    ],
+    "contributors": null,
+    "docs": "basic",
+    "install": "git clone https://github.com/higurashi-ai/Haru && cd Haru",
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "apache-2.0",
+    "maintenance": "updated 5 days ago",
+    "primary": "creator_tools",
+    "priority": "P1",
+    "reject": null,
+    "relevance": {
+     "hint": "it explains or tests prompting techniques you can apply directly",
+     "project": "your prompting"
+    },
+    "requirements": [],
+    "score": 75,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-18T03:00:01+00:00",
+   "id": "hf:model:higurashi-ai/haru-4b",
+   "identifier": "higurashi-ai/Haru-4B",
+   "kind": "model",
+   "last_checked": "2026-11-18T03:00:01+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "higurashi-ai/Haru-4B",
+   "owner": "higurashi-ai",
+   "platform": "huggingface",
+   "priority": "P1",
+   "score": 75,
+   "snapshot": {
+    "created_at": "2026-11-12T11:05:59.000Z",
+    "display": "Haru-4B",
+    "downloads": 4445,
+    "found_by": [
+     "Hugging Face trending models"
+    ],
+    "kind": "model",
+    "license_spdx": "apache-2.0",
+    "likes": 511,
+    "name": "higurashi-ai/Haru-4B",
+    "owner": "higurashi-ai",
+    "platform": "huggingface",
+    "pushed_at": "2026-11-13T01:22:38.000Z",
+    "rid": "hf:model:higurashi-ai/haru-4b",
+    "topics": [
+     "safetensors",
+     "haru",
+     "speech",
+     "full-duplex",
+     "speech-to-speech",
+     "audio-to-audio",
+     "en",
+     "es",
+     "pt",
+     "de",
+     "fr",
+     "zh"
+    ],
+    "url": "https://huggingface.co/higurashi-ai/Haru-4B"
+   },
+   "status": "pool",
+   "url": "https://huggingface.co/higurashi-ai/Haru-4B"
   },
   "hf:model:huihui-ai/huihui-qwen3.8-27b-abliterated-gguf": {
    "delivery": {
@@ -5218,6 +6279,141 @@
    "score": 40,
    "status": "rejected",
    "url": "https://huggingface.co/Lightricks/LTX-2.5"
+  },
+  "hf:model:maxwell-model/maxwell-v1-flash": {
+   "categories": [
+    "agent_building"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-18T03:00:03+00:00",
+   "evaluation": {
+    "categories": [
+     "agent_building"
+    ],
+    "compatibility": [
+     "Hugging Face"
+    ],
+    "contributors": null,
+    "docs": "thin",
+    "install": null,
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "apache-2.0",
+    "maintenance": "updated 3 days ago",
+    "primary": "agent_building",
+    "priority": "P3",
+    "reject": null,
+    "relevance": {
+     "hint": "it covers source monitoring, summarising or Telegram delivery, which your news agent does every day",
+     "project": "your AI News Agent"
+    },
+    "requirements": [],
+    "score": 54,
+    "warnings": [
+     "documentation is thin"
+    ]
+   },
+   "first_discovered": "2026-11-18T03:00:03+00:00",
+   "id": "hf:model:maxwell-model/maxwell-v1-flash",
+   "identifier": "maxwell-model/Maxwell-V1-Flash",
+   "kind": "model",
+   "last_checked": "2026-11-18T03:00:03+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "maxwell-model/Maxwell-V1-Flash",
+   "owner": "maxwell-model",
+   "platform": "huggingface",
+   "priority": "P3",
+   "score": 54,
+   "snapshot": {
+    "created_at": "2026-10-13T07:53:39.000Z",
+    "display": "Maxwell-V1-Flash",
+    "downloads": 287,
+    "found_by": [
+     "Hugging Face trending models"
+    ],
+    "kind": "model",
+    "license_spdx": "apache-2.0",
+    "likes": 161,
+    "name": "maxwell-model/Maxwell-V1-Flash",
+    "owner": "maxwell-model",
+    "platform": "huggingface",
+    "pushed_at": "2026-11-14T03:50:21.000Z",
+    "rid": "hf:model:maxwell-model/maxwell-v1-flash",
+    "topics": [
+     "safetensors",
+     "maxwell_moe",
+     "moe",
+     "text-generation",
+     "conversational",
+     "custom_code"
+    ],
+    "url": "https://huggingface.co/maxwell-model/Maxwell-V1-Flash"
+   },
+   "status": "pool",
+   "url": "https://huggingface.co/maxwell-model/Maxwell-V1-Flash"
+  },
+  "hf:model:meituan-longcat/longcat-video-avatar-1.6": {
+   "categories": [
+    "creator_tools"
+   ],
+   "delivery": {
+    "message_ids": [
+     698,
+     699
+    ],
+    "sent_at": "2026-11-18T03:03:20+00:00",
+    "status": "SENT"
+   },
+   "evaluated_at": "2026-11-18T03:00:02+00:00",
+   "first_discovered": "2026-11-18T03:00:02+00:00",
+   "id": "hf:model:meituan-longcat/longcat-video-avatar-1.6",
+   "identifier": "meituan-longcat/LongCat-Video-Avatar-1.6",
+   "kind": "model",
+   "last_checked": "2026-11-18T03:00:02+00:00",
+   "last_notified": "2026-11-18T03:03:20+00:00",
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "meituan-longcat/LongCat-Video-Avatar-1.6",
+   "owner": "meituan-longcat",
+   "platform": "huggingface",
+   "priority": "P1",
+   "score": 79,
+   "snapshot": {
+    "created_at": "2026-11-13T02:45:33.000Z",
+    "display": "LongCat-Video-Avatar-1.6",
+    "downloads": 489,
+    "found_by": [
+     "Hugging Face trending models"
+    ],
+    "kind": "model",
+    "license_spdx": "mit",
+    "likes": 205,
+    "name": "meituan-longcat/LongCat-Video-Avatar-1.6",
+    "owner": "meituan-longcat",
+    "platform": "huggingface",
+    "pushed_at": "2026-11-13T11:27:11.000Z",
+    "rid": "hf:model:meituan-longcat/longcat-video-avatar-1.6",
+    "topics": [
+     "longcat-video-avatar-1.6",
+     "onnx",
+     "diffusers",
+     "safetensors",
+     "audio-text-to-video",
+     "audio-image-text-to-video",
+     "audio-driven-video-continuation",
+     "transformers",
+     "avatar",
+     "video-generation",
+     "en",
+     "zh"
+    ],
+    "url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6"
+   },
+   "status": "delivered",
+   "url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.6"
   },
   "hf:model:minimaxai/minimax-h3-image": {
    "categories": [
@@ -5294,6 +6490,57 @@
    },
    "status": "pool",
    "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image"
+  },
+  "hf:model:n4ze3m/tiny-voca": {
+   "categories": [
+    "creator_tools"
+   ],
+   "delivery": {
+    "message_ids": [
+     698,
+     699
+    ],
+    "sent_at": "2026-11-18T03:03:20+00:00",
+    "status": "SENT"
+   },
+   "evaluated_at": "2026-11-18T03:00:02+00:00",
+   "first_discovered": "2026-11-18T03:00:02+00:00",
+   "id": "hf:model:n4ze3m/tiny-voca",
+   "identifier": "n4ze3m/tiny-voca",
+   "kind": "model",
+   "last_checked": "2026-11-18T03:00:02+00:00",
+   "last_notified": "2026-11-18T03:03:20+00:00",
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "n4ze3m/tiny-voca",
+   "owner": "n4ze3m",
+   "platform": "huggingface",
+   "priority": "P1",
+   "score": 78,
+   "snapshot": {
+    "created_at": "2026-11-14T15:46:27.000Z",
+    "display": "tiny-voca",
+    "downloads": 3042,
+    "found_by": [
+     "Hugging Face trending models"
+    ],
+    "kind": "model",
+    "license_spdx": "apache-2.0",
+    "likes": 233,
+    "name": "n4ze3m/tiny-voca",
+    "owner": "n4ze3m",
+    "platform": "huggingface",
+    "pushed_at": "2026-11-16T18:45:01.000Z",
+    "rid": "hf:model:n4ze3m/tiny-voca",
+    "topics": [
+     "onnx",
+     "gguf",
+     "text-to-speech",
+     "en"
+    ],
+    "url": "https://huggingface.co/n4ze3m/tiny-voca"
+   },
+   "status": "delivered",
+   "url": "https://huggingface.co/n4ze3m/tiny-voca"
   },
   "hf:model:qwen/qwen3.8-27b": {
    "categories": [
@@ -5374,6 +6621,26 @@
    "status": "pool",
    "url": "https://huggingface.co/Qwen/Qwen3.8-27B"
   },
+  "hf:model:sensenova/sensenova-loop-9b": {
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "first_discovered": "2026-11-18T03:00:02+00:00",
+   "id": "hf:model:sensenova/sensenova-loop-9b",
+   "identifier": "sensenova/SenseNova-Loop-9B",
+   "kind": "model",
+   "last_checked": "2026-11-18T03:00:02+00:00",
+   "last_notified": null,
+   "name": "sensenova/SenseNova-Loop-9B",
+   "owner": "sensenova",
+   "platform": "huggingface",
+   "reject_reason": "score 22 below the minimum",
+   "score": 22,
+   "status": "rejected",
+   "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B"
+  },
   "hf:model:speridlabs/idol": {
    "categories": [
     "hackathon",
@@ -5426,6 +6693,88 @@
    },
    "status": "delivered",
    "url": "https://huggingface.co/speridlabs/idol"
+  },
+  "hf:model:thinkingmachines/inkling-2-small": {
+   "categories": [
+    "app_development",
+    "hackathon"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-18T03:00:01+00:00",
+   "evaluation": {
+    "categories": [
+     "app_development",
+     "hackathon"
+    ],
+    "compatibility": [
+     "Hugging Face"
+    ],
+    "contributors": null,
+    "docs": "basic",
+    "install": null,
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "apache-2.0",
+    "maintenance": "updated today",
+    "primary": "app_development",
+    "priority": "P3",
+    "reject": null,
+    "relevance": {
+     "hint": "it covers source monitoring, summarising or Telegram delivery, which your news agent does every day",
+     "project": "your AI News Agent"
+    },
+    "requirements": [
+     "GPU"
+    ],
+    "score": 56,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-18T03:00:01+00:00",
+   "id": "hf:model:thinkingmachines/inkling-2-small",
+   "identifier": "thinkingmachines/Inkling-2-Small",
+   "kind": "model",
+   "last_checked": "2026-11-18T03:00:01+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "thinkingmachines/Inkling-2-Small",
+   "owner": "thinkingmachines",
+   "platform": "huggingface",
+   "priority": "P3",
+   "score": 56,
+   "snapshot": {
+    "created_at": "2026-11-04T19:51:05.000Z",
+    "display": "Inkling-2-Small",
+    "downloads": 18359,
+    "found_by": [
+     "Hugging Face trending models"
+    ],
+    "kind": "model",
+    "license_spdx": "apache-2.0",
+    "likes": 442,
+    "name": "thinkingmachines/Inkling-2-Small",
+    "owner": "thinkingmachines",
+    "platform": "huggingface",
+    "pushed_at": "2026-11-17T18:39:09.000Z",
+    "rid": "hf:model:thinkingmachines/inkling-2-small",
+    "topics": [
+     "transformers",
+     "safetensors",
+     "inkling2",
+     "image-text-to-text",
+     "conversational",
+     "moe",
+     "eval-results",
+     "endpoints_compatible",
+     "8-bit",
+     "modelopt"
+    ],
+    "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small"
+   },
+   "status": "pool",
+   "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small"
   },
   "hf:model:unsloth/qwen3.8-27b-gguf": {
    "categories": [
@@ -5586,6 +6935,26 @@
    "status": "delivered",
    "url": "https://huggingface.co/Zyphra/ZONOS3-Mini"
   },
+  "hf:space:agents-course/first_agent_template": {
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "first_discovered": "2026-11-18T03:00:03+00:00",
+   "id": "hf:space:agents-course/first_agent_template",
+   "identifier": "agents-course/First_agent_template",
+   "kind": "space",
+   "last_checked": "2026-11-18T03:00:03+00:00",
+   "last_notified": null,
+   "name": "agents-course/First_agent_template",
+   "owner": "agents-course",
+   "platform": "huggingface",
+   "reject_reason": "score 24 below the minimum",
+   "score": 24,
+   "status": "rejected",
+   "url": "https://huggingface.co/spaces/agents-course/First_agent_template"
+  },
   "hf:space:agents-mcp-hackathon/graphify": {
    "delivery": {
     "message_ids": [],
@@ -5699,6 +7068,25 @@
    "status": "pool",
    "url": "https://huggingface.co/spaces/FrameAI4687/Omni-Video-Factory"
   },
+  "hf:space:heartsync/nsfw-uncensored-video2": {
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "first_discovered": "2026-11-18T03:00:00+00:00",
+   "id": "hf:space:heartsync/nsfw-uncensored-video2",
+   "identifier": "Heartsync/NSFW-Uncensored-video2",
+   "kind": "space",
+   "last_checked": "2026-11-18T03:00:00+00:00",
+   "last_notified": null,
+   "name": "Heartsync/NSFW-Uncensored-video2",
+   "owner": "Heartsync",
+   "platform": "huggingface",
+   "reject_reason": "excluded topic (uncensor)",
+   "status": "rejected",
+   "url": "https://huggingface.co/spaces/Heartsync/NSFW-Uncensored-video2"
+  },
   "hf:space:hexgrad/kokoro-tts": {
    "delivery": {
     "message_ids": [],
@@ -5718,6 +7106,46 @@
    "score": 38,
    "status": "rejected",
    "url": "https://huggingface.co/spaces/hexgrad/Kokoro-TTS"
+  },
+  "hf:space:hugging-apps/bfs-best-face-swap": {
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "first_discovered": "2026-11-18T03:00:01+00:00",
+   "id": "hf:space:hugging-apps/bfs-best-face-swap",
+   "identifier": "hugging-apps/bfs-best-face-swap",
+   "kind": "space",
+   "last_checked": "2026-11-18T03:00:01+00:00",
+   "last_notified": null,
+   "name": "hugging-apps/bfs-best-face-swap",
+   "owner": "hugging-apps",
+   "platform": "huggingface",
+   "reject_reason": "score 28 below the minimum",
+   "score": 28,
+   "status": "rejected",
+   "url": "https://huggingface.co/spaces/hugging-apps/bfs-best-face-swap"
+  },
+  "hf:space:huggingface/moe-blogpost": {
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "first_discovered": "2026-11-18T03:00:03+00:00",
+   "id": "hf:space:huggingface/moe-blogpost",
+   "identifier": "huggingface/moe-blogpost",
+   "kind": "space",
+   "last_checked": "2026-11-18T03:00:03+00:00",
+   "last_notified": null,
+   "name": "huggingface/moe-blogpost",
+   "owner": "huggingface",
+   "platform": "huggingface",
+   "reject_reason": "score 32 below the minimum",
+   "score": 32,
+   "status": "rejected",
+   "url": "https://huggingface.co/spaces/huggingface/moe-blogpost"
   },
   "hf:space:innoai/edge-tts-text-to-speech": {
    "categories": [
@@ -5947,6 +7375,150 @@
    "status": "pool",
    "url": "https://huggingface.co/spaces/mrfakename/E2-F5-TTS"
   },
+  "hf:space:multimodalart/jev-decision-index": {
+   "categories": [
+    "creator_tools"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-18T03:00:02+00:00",
+   "evaluation": {
+    "categories": [
+     "creator_tools"
+    ],
+    "compatibility": [
+     "Hugging Face"
+    ],
+    "contributors": null,
+    "docs": "thin",
+    "install": null,
+    "licence_class": "LICENCE UNCLEAR",
+    "licence_note": "no recognised licence file",
+    "maintenance": "updated today",
+    "primary": "creator_tools",
+    "priority": "P3",
+    "reject": null,
+    "relevance": {
+     "hint": "it helps produce or explain material for your videos",
+     "project": "your AI educational videos"
+    },
+    "requirements": [],
+    "score": 45,
+    "warnings": [
+     "documentation is thin",
+     "no clear licence: check before reusing the code"
+    ]
+   },
+   "first_discovered": "2026-11-18T03:00:02+00:00",
+   "id": "hf:space:multimodalart/jev-decision-index",
+   "identifier": "multimodalart/jev-decision-index",
+   "kind": "space",
+   "last_checked": "2026-11-18T03:00:02+00:00",
+   "last_notified": null,
+   "licence_class": "LICENCE UNCLEAR",
+   "name": "multimodalart/jev-decision-index",
+   "owner": "multimodalart",
+   "platform": "huggingface",
+   "priority": "P3",
+   "score": 45,
+   "snapshot": {
+    "created_at": "2026-09-17T20:05:16.000Z",
+    "description": "Benchmarks and news on various repros of TypeSafe's Jev",
+    "display": "jev-decision-index",
+    "downloads": 0,
+    "found_by": [
+     "Hugging Face trending Spaces"
+    ],
+    "kind": "space",
+    "likes": 940,
+    "name": "multimodalart/jev-decision-index",
+    "owner": "multimodalart",
+    "platform": "huggingface",
+    "pushed_at": "2026-11-17T18:38:27.000Z",
+    "rid": "hf:space:multimodalart/jev-decision-index",
+    "topics": [
+     "static"
+    ],
+    "url": "https://huggingface.co/spaces/multimodalart/jev-decision-index"
+   },
+   "status": "pool",
+   "url": "https://huggingface.co/spaces/multimodalart/jev-decision-index"
+  },
+  "hf:space:parler-tts/parler_tts": {
+   "categories": [
+    "creator_tools"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-18T03:00:02+00:00",
+   "evaluation": {
+    "categories": [
+     "creator_tools"
+    ],
+    "compatibility": [
+     "Hugging Face"
+    ],
+    "contributors": null,
+    "docs": "thin",
+    "install": null,
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "apache-2.0",
+    "maintenance": "updated 12 months ago",
+    "primary": "creator_tools",
+    "priority": "P3",
+    "reject": null,
+    "relevance": {
+     "hint": "it helps produce or explain material for your videos",
+     "project": "your AI educational videos"
+    },
+    "requirements": [],
+    "score": 47,
+    "warnings": [
+     "documentation is thin"
+    ]
+   },
+   "first_discovered": "2026-11-18T03:00:02+00:00",
+   "id": "hf:space:parler-tts/parler_tts",
+   "identifier": "parler-tts/parler_tts",
+   "kind": "space",
+   "last_checked": "2026-11-18T03:00:02+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "parler-tts/parler_tts",
+   "owner": "parler-tts",
+   "platform": "huggingface",
+   "priority": "P3",
+   "score": 47,
+   "snapshot": {
+    "created_at": "2024-04-09T10:59:03.000Z",
+    "description": "High-fidelity Text-To-Speech",
+    "display": "parler_tts",
+    "downloads": 0,
+    "found_by": [
+     "Hugging Face Spaces: tts"
+    ],
+    "kind": "space",
+    "license_spdx": "apache-2.0",
+    "likes": 850,
+    "name": "parler-tts/parler_tts",
+    "owner": "parler-tts",
+    "platform": "huggingface",
+    "pushed_at": "2025-11-18T12:10:26.000Z",
+    "rid": "hf:space:parler-tts/parler_tts",
+    "topics": [
+     "gradio"
+    ],
+    "url": "https://huggingface.co/spaces/parler-tts/parler_tts"
+   },
+   "status": "pool",
+   "url": "https://huggingface.co/spaces/parler-tts/parler_tts"
+  },
   "hf:space:qwen/qwen3-tts": {
    "delivery": {
     "message_ids": [],
@@ -5966,6 +7538,26 @@
    "score": 40,
    "status": "rejected",
    "url": "https://huggingface.co/spaces/Qwen/Qwen3-TTS"
+  },
+  "hf:space:r3gm/sonitranslate_translate_audio_of_a_video_content": {
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "first_discovered": "2026-11-18T03:00:02+00:00",
+   "id": "hf:space:r3gm/sonitranslate_translate_audio_of_a_video_content",
+   "identifier": "r3gm/SoniTranslate_translate_audio_of_a_video_content",
+   "kind": "space",
+   "last_checked": "2026-11-18T03:00:02+00:00",
+   "last_notified": null,
+   "name": "r3gm/SoniTranslate_translate_audio_of_a_video_content",
+   "owner": "r3gm",
+   "platform": "huggingface",
+   "reject_reason": "score 43 below the minimum",
+   "score": 43,
+   "status": "rejected",
+   "url": "https://huggingface.co/spaces/r3gm/SoniTranslate_translate_audio_of_a_video_content"
   },
   "hf:space:selfit-camera/omni-image-editor": {
    "delivery": {
@@ -5987,6 +7579,26 @@
    "status": "rejected",
    "url": "https://huggingface.co/spaces/selfit-camera/Omni-Image-Editor"
   },
+  "hf:space:smolagents/computer-agent": {
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "first_discovered": "2026-11-18T03:00:01+00:00",
+   "id": "hf:space:smolagents/computer-agent",
+   "identifier": "smolagents/computer-agent",
+   "kind": "space",
+   "last_checked": "2026-11-18T03:00:01+00:00",
+   "last_notified": null,
+   "name": "smolagents/computer-agent",
+   "owner": "smolagents",
+   "platform": "huggingface",
+   "reject_reason": "score 24 below the minimum",
+   "score": 24,
+   "status": "rejected",
+   "url": "https://huggingface.co/spaces/smolagents/computer-agent"
+  },
   "hf:space:tonyassi/video-face-swap": {
    "delivery": {
     "message_ids": [],
@@ -6006,9 +7618,37 @@
    "score": 28,
    "status": "rejected",
    "url": "https://huggingface.co/spaces/tonyassi/video-face-swap"
+  },
+  "hf:space:tts-agi/tts-arena-v2": {
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "first_discovered": "2026-11-18T03:00:01+00:00",
+   "id": "hf:space:tts-agi/tts-arena-v2",
+   "identifier": "TTS-AGI/TTS-Arena-V2",
+   "kind": "space",
+   "last_checked": "2026-11-18T03:00:01+00:00",
+   "last_notified": null,
+   "name": "TTS-AGI/TTS-Arena-V2",
+   "owner": "TTS-AGI",
+   "platform": "huggingface",
+   "reject_reason": "score 37 below the minimum",
+   "score": 37,
+   "status": "rejected",
+   "url": "https://huggingface.co/spaces/TTS-AGI/TTS-Arena-V2"
   }
  },
  "searches": {
+  "github:\"claude code\" skills in:name,description": {
+   "last_run": "2026-11-18T02:59:52+00:00",
+   "results": 20
+  },
+  "github:\"codex cli\" in:name,description": {
+   "last_run": "2026-11-18T02:59:50+00:00",
+   "results": 20
+  },
   "github:\"system prompts\" in:name,description": {
    "last_run": "2026-11-17T08:14:57+00:00",
    "results": 13
@@ -6020,6 +7660,10 @@
   "github:hackathon starter ai in:name,description": {
    "last_run": "2026-11-16T23:47:15+00:00",
    "results": 0
+  },
+  "github:notion ai agent in:name,description": {
+   "last_run": "2026-11-18T02:59:48+00:00",
+   "results": 1
   },
   "github:orgs": {
    "last_run": "2026-11-17T18:41:35+00:00",
@@ -6041,6 +7685,10 @@
    "last_run": "2026-11-17T18:41:29+00:00",
    "results": 20
   },
+  "github:topic:autogen": {
+   "last_run": "2026-11-18T02:59:51+00:00",
+   "results": 15
+  },
   "github:topic:browser-automation llm": {
    "last_run": "2026-11-17T08:14:57+00:00",
    "results": 12
@@ -6053,6 +7701,10 @@
    "last_run": "2026-11-17T18:41:26+00:00",
    "results": 20
   },
+  "github:topic:codex": {
+   "last_run": "2026-11-18T02:59:49+00:00",
+   "results": 20
+  },
   "github:topic:coding-agent": {
    "last_run": "2026-11-17T18:41:29+00:00",
    "results": 20
@@ -6061,12 +7713,24 @@
    "last_run": "2026-11-17T18:41:28+00:00",
    "results": 20
   },
+  "github:topic:crewai": {
+   "last_run": "2026-11-18T02:59:49+00:00",
+   "results": 4
+  },
   "github:topic:developer-tools llm": {
    "last_run": "2026-11-17T18:41:25+00:00",
    "results": 20
   },
+  "github:topic:gemini-cli": {
+   "last_run": "2026-11-18T02:59:51+00:00",
+   "results": 20
+  },
   "github:topic:langgraph": {
    "last_run": "2026-11-17T18:41:30+00:00",
+   "results": 20
+  },
+  "github:topic:llm-evaluation": {
+   "last_run": "2026-11-18T02:59:48+00:00",
    "results": 20
   },
   "github:topic:mcp-server": {
@@ -6110,7 +7774,7 @@
    "results": 11
   },
   "gitlab": {
-   "last_run": "2026-11-16T23:47:26+00:00",
+   "last_run": "2026-11-18T02:59:58+00:00",
    "results": 2
   }
  },

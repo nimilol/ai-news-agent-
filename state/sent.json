@@ -268,6 +268,11 @@
    "channel": "discovery",
    "title": "Cotal-AI/Cotal"
   },
+  "url:https://github.com/denissergeevitch/ex-ussr-kinship-research": {
+   "at": "2026-11-18T03:03:20+00:00",
+   "channel": "discovery",
+   "title": "DenisSergeevitch/ex-ussr-kinship-research"
+  },
   "url:https://github.com/elementalsouls/claude-bughunter": {
    "at": "2026-11-17T08:15:30+00:00",
    "channel": "discovery",
@@ -293,10 +298,25 @@
    "channel": "discovery",
    "title": "JuneYaooo/rea-video"
   },
+  "url:https://github.com/kaankiziltug/logo-design-skill": {
+   "at": "2026-11-18T03:03:20+00:00",
+   "channel": "discovery",
+   "title": "kaankiziltug/logo-design-skill"
+  },
   "url:https://github.com/kajisho5/ffmpeg-skill": {
    "at": "2026-11-17T08:15:30+00:00",
    "channel": "discovery",
    "title": "kajisho5/ffmpeg-skill"
+  },
+  "url:https://github.com/microsoft/ai-agents-for-beginners": {
+   "at": "2026-11-18T03:03:20+00:00",
+   "channel": "discovery",
+   "title": "microsoft/ai-agents-for-beginners"
+  },
+  "url:https://github.com/microsoft/markitdown": {
+   "at": "2026-11-18T03:03:20+00:00",
+   "channel": "discovery",
+   "title": "microsoft/markitdown"
   },
   "url:https://github.com/morganlinton/beautifulrust": {
    "at": "2026-11-17T18:43:32+00:00",
@@ -313,10 +333,20 @@
    "channel": "discovery",
    "title": "obra/superpowers"
   },
+  "url:https://github.com/oil-oil/oil-ui": {
+   "at": "2026-11-18T03:03:20+00:00",
+   "channel": "discovery",
+   "title": "oil-oil/oil-ui"
+  },
   "url:https://github.com/oldcircle/geo-sleuth": {
    "at": "2026-11-16T23:48:27+00:00",
    "channel": "discovery",
    "title": "Oldcircle/geo-sleuth"
+  },
+  "url:https://github.com/paperclipai/paperclip": {
+   "at": "2026-11-18T03:03:20+00:00",
+   "channel": "discovery",
+   "title": "paperclipai/paperclip"
   },
   "url:https://github.com/qybaihe/mu": {
    "at": "2026-11-17T18:43:32+00:00",
@@ -337,6 +367,16 @@
    "at": "2026-11-16T23:48:27+00:00",
    "channel": "discovery",
    "title": "fforster/gitlab-mcp"
+  },
+  "url:https://huggingface.co/meituan-longcat/longcat-video-avatar-1.6": {
+   "at": "2026-11-18T03:03:20+00:00",
+   "channel": "discovery",
+   "title": "meituan-longcat/LongCat-Video-Avatar-1.6"
+  },
+  "url:https://huggingface.co/n4ze3m/tiny-voca": {
+   "at": "2026-11-18T03:03:20+00:00",
+   "channel": "discovery",
+   "title": "n4ze3m/tiny-voca"
   },
   "url:https://huggingface.co/speridlabs/idol": {
    "at": "2026-11-17T08:15:30+00:00",
