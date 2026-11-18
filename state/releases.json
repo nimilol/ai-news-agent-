@@ -1,6 +1,26 @@
 {
  "changes": [
   {
+   "at": "2026-11-18T04:33:03+00:00",
+   "category": "PRODUCT_OR_FEATURE_ANNOUNCEMENT",
+   "company": "google",
+   "model": "Gemini 3.5 Transcribe Live",
+   "sources": [
+    "Gemini API release notes"
+   ],
+   "title": "Voice editing in Gemini 3.5 Transcribe"
+  },
+  {
+   "at": "2026-11-18T04:33:03+00:00",
+   "category": "PRODUCT_OR_FEATURE_ANNOUNCEMENT",
+   "company": "google",
+   "model": "Gemini 3.5 Transcribe",
+   "sources": [
+    "Gemini API release notes"
+   ],
+   "title": "Voice editing in Gemini 3.5 Transcribe"
+  },
+  {
    "at": "2026-11-17T23:04:02+00:00",
    "category": "PRODUCT_OR_FEATURE_ANNOUNCEMENT",
    "company": "google",
@@ -81,14 +101,20 @@
      "at": "2026-11-17T23:04:02+00:00",
      "note": "only third-party sources so far: TestingCatalog (early signal)",
      "type": "detected"
+    },
+    {
+     "at": "2026-11-18T04:33:03+00:00",
+     "note": "TestingCatalog (early signal)",
+     "type": "signal"
     }
    ],
    "fingerprints": [
+    "https://testingcatalog.com/microsoft-launches-mai-cyber-2-flash-security-model",
     "https://testingcatalog.com/openai-launches-gpt-6-2-astra-and-sol-on-chatgpt-and-apis"
    ],
    "first_detected": "2026-11-17T23:04:02+00:00",
    "id": "openai:gpt-6",
-   "last_updated": "2026-11-17T23:04:02+00:00",
+   "last_updated": "2026-11-18T04:33:03+00:00",
    "model_ids": [
     "GPT-6"
    ],
@@ -229,12 +255,17 @@
      "Background completion windows of two or eight hours offer up to 40% lower token rates in the Responses API public beta."
     ]
    },
-   "duplicates": 0,
+   "duplicates": 1,
    "events": [
     {
      "at": "2026-11-17T23:01:21+00:00",
      "note": "not seen in any official catalog before; introduced by: OpenAI news (announcement); not seen in any official catalog before; introduced by: OpenAI news (announcement), OpenAI API changelog (changelog), OpenAI model catalog (listed)",
      "type": "detected"
+    },
+    {
+     "at": "2026-11-18T04:33:03+00:00",
+     "note": "OpenAI API changelog",
+     "type": "duplicate"
     }
    ],
    "fingerprints": [
@@ -246,7 +277,7 @@
    ],
    "first_detected": "2026-11-17T23:01:21+00:00",
    "id": "openai:gpt-6-2+gpt-6-2-astra",
-   "last_updated": "2026-11-17T23:04:04+00:00",
+   "last_updated": "2026-11-18T04:33:03+00:00",
    "model_ids": [
     "GPT-6.2",
     "gpt-6.2-astra"
@@ -474,12 +505,17 @@
      "Background completions in the Responses API public beta offer reduced token rates for two-hour and eight-hour processing windows."
     ]
    },
-   "duplicates": 0,
+   "duplicates": 1,
    "events": [
     {
      "at": "2026-11-17T23:04:02+00:00",
      "note": "not seen in any official catalog before; introduced by: OpenAI API changelog (changelog), OpenAI model catalog (listed)",
      "type": "detected"
+    },
+    {
+     "at": "2026-11-18T04:33:03+00:00",
+     "note": "OpenAI API changelog",
+     "type": "duplicate"
     }
    ],
    "fingerprints": [
@@ -489,7 +525,7 @@
    ],
    "first_detected": "2026-11-17T23:04:02+00:00",
    "id": "openai:gpt-6-2-sol",
-   "last_updated": "2026-11-17T23:04:05+00:00",
+   "last_updated": "2026-11-18T04:33:03+00:00",
    "model_ids": [
     "gpt-6.2-sol"
    ],
@@ -569,6 +605,56 @@
    "priority": "P2",
    "source_url": "https://openrouter.ai/openai/gpt-6.2-sol-pro",
    "verification": "UNCONFIRMED"
+  },
+  "openai:gpt-6-astra": {
+   "announcement_date": null,
+   "availability_date": null,
+   "availability_status": null,
+   "classification": "UNCONFIRMED_EARLY_SIGNAL",
+   "company": "openai",
+   "comparison_summary": "Microsoft launches MAI Cyber 2 Flash security model",
+   "delivery": {
+    "attempts": 0,
+    "last_error": null,
+    "message_ids": [],
+    "notification": null,
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "details": {
+    "reasons": [
+     "only third-party sources so far: TestingCatalog (early signal)"
+    ],
+    "text": "Microsoft unveils MAI Cyber 2 Flash, a security model that tops GPT-6 Astra on CyberGym-E2E at under 2% of the cost, coming to MDASH in December."
+   },
+   "duplicates": 0,
+   "events": [
+    {
+     "at": "2026-11-18T04:33:03+00:00",
+     "note": "only third-party sources so far: TestingCatalog (early signal)",
+     "type": "detected"
+    }
+   ],
+   "fingerprints": [
+    "https://testingcatalog.com/microsoft-launches-mai-cyber-2-flash-security-model"
+   ],
+   "first_detected": "2026-11-18T04:33:03+00:00",
+   "id": "openai:gpt-6-astra",
+   "last_updated": "2026-11-18T04:33:03+00:00",
+   "model_ids": [
+    "GPT-6 Astra"
+   ],
+   "model_name": "GPT-6 Astra",
+   "official_sources": [
+    {
+     "source": "TestingCatalog (early signal)",
+     "url": "https://www.testingcatalog.com/microsoft-launches-mai-cyber-2-flash-security-model/"
+    }
+   ],
+   "previous_model": null,
+   "priority": "P2",
+   "source_url": "https://www.testingcatalog.com/microsoft-launches-mai-cyber-2-flash-security-model/",
+   "verification": "UNCONFIRMED"
   }
  },
  "index": {
@@ -577,7 +663,8 @@
   "openai:gpt-6-2-astra": "openai:gpt-6-2+gpt-6-2-astra",
   "openai:gpt-6-2-astra-pro": "openai:gpt-6-2-astra-pro",
   "openai:gpt-6-2-sol": "openai:gpt-6-2-sol",
-  "openai:gpt-6-2-sol-pro": "openai:gpt-6-2-sol-pro"
+  "openai:gpt-6-2-sol-pro": "openai:gpt-6-2-sol-pro",
+  "openai:gpt-6-astra": "openai:gpt-6-astra"
  },
  "meta": {},
  "outbox": {
@@ -5626,8 +5713,16 @@
      "OpenAI model catalog"
     ],
     "specs": {
-     "description": "Our most capable model for your hardest projects, from start to finish."
+     "context_tokens": 1050000,
+     "description": "Our most capable model for your hardest projects, from start to finish.",
+     "input_modalities": "text, image",
+     "input_price": 8.0,
+     "knowledge_cutoff": "May 18, 2026",
+     "max_output_tokens": 128000,
+     "output_modalities": "text",
+     "output_price": 40.0
     },
+    "specs_checked": "2026-11-18T04:33:03+00:00",
     "status": "active"
    },
    "gpt-6.2-sol": {
@@ -5637,8 +5732,16 @@
      "OpenAI model catalog"
     ],
     "specs": {
-     "description": "Our go-to model for everyday work, from coding to powering agents at scale."
+     "context_tokens": 1050000,
+     "description": "Our go-to model for everyday work, from coding to powering agents at scale.",
+     "input_modalities": "text, image",
+     "input_price": 2.0,
+     "knowledge_cutoff": "Jun 01, 2026",
+     "max_output_tokens": 128000,
+     "output_modalities": "text",
+     "output_price": 10.0
     },
+    "specs_checked": "2026-11-18T04:33:03+00:00",
     "status": "active"
    },
    "gpt-audio": {
@@ -5997,8 +6100,14 @@
      "OpenAI model catalog"
     ],
     "specs": {
-     "description": "Streaming speech-to-text model for realtime transcription"
+     "context_tokens": 16000,
+     "description": "Streaming speech-to-text model for realtime transcription",
+     "input_modalities": "audio, text",
+     "knowledge_cutoff": "Sep 30, 2024",
+     "max_output_tokens": 2000,
+     "output_modalities": "text"
     },
+    "specs_checked": "2026-11-18T04:33:03+00:00",
     "status": "active"
    },
    "gpt-transcribe": {
@@ -6008,8 +6117,11 @@
      "OpenAI model catalog"
     ],
     "specs": {
-     "description": "High-accuracy speech-to-text model for file and Realtime input transcription"
+     "description": "High-accuracy speech-to-text model for file and Realtime input transcription",
+     "input_modalities": "audio, text",
+     "output_modalities": "text"
     },
+    "specs_checked": "2026-11-18T04:33:03+00:00",
     "status": "active"
    },
    "o1": {
@@ -6129,8 +6241,11 @@
      "OpenAI model catalog"
     ],
     "specs": {
-     "description": "Identify potentially harmful content in text and images"
+     "description": "Identify potentially harmful content in text and images",
+     "input_modalities": "text, image",
+     "output_modalities": "text"
     },
+    "specs_checked": "2026-11-18T04:33:03+00:00",
     "status": "active"
    },
    "text-embedding-3-large": {
@@ -6140,8 +6255,11 @@
      "OpenAI model catalog"
     ],
     "specs": {
-     "description": "Most capable embedding model"
+     "description": "Most capable embedding model",
+     "input_modalities": "text",
+     "output_modalities": "text"
     },
+    "specs_checked": "2026-11-18T04:33:03+00:00",
     "status": "active"
    },
    "text-embedding-3-small": {
@@ -6151,8 +6269,11 @@
      "OpenAI model catalog"
     ],
     "specs": {
-     "description": "Small embedding model"
+     "description": "Small embedding model",
+     "input_modalities": "text",
+     "output_modalities": "text"
     },
+    "specs_checked": "2026-11-18T04:33:03+00:00",
     "status": "active"
    },
    "text-embedding-ada-002": {
@@ -6162,8 +6283,11 @@
      "OpenAI model catalog"
     ],
     "specs": {
-     "description": "Older embedding model"
+     "description": "Older embedding model",
+     "input_modalities": "text",
+     "output_modalities": "text"
     },
+    "specs_checked": "2026-11-18T04:33:03+00:00",
     "status": "active"
    },
    "text-moderation-latest": {
@@ -8383,6 +8507,7 @@
   "Gemini API release notes": {
    "initialized": true,
    "seen": [
+    "7a9a123c6f5d0bb5",
     "6f6d93e11105cccf",
     "fca47705e590eb7c",
     "1444d1b3ea2ab94b",
@@ -9099,6 +9224,7 @@
   "OpenAI API changelog": {
    "initialized": true,
    "seen": [
+    "fda539efe8c50bef",
     "dcbc84eb4767a216",
     "816df30f2d12a363",
     "408dbd58db30c140",
@@ -11372,6 +11498,7 @@
   "TestingCatalog (early signal)": {
    "initialized": true,
    "seen": [
+    "3f1a0056d7aac62e",
     "883b689bc385c548",
     "9c6281437cbcd9ec",
     "33243d02f346d950",

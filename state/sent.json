@@ -24,6 +24,12 @@
    "priority": "P2",
    "title": "The King’s Trust and OpenAI launch £1m partnership"
   },
+  "title:2 cyber flash launches mai microsoft model security": {
+   "at": "2026-11-18T04:33:12+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Microsoft launches MAI Cyber 2 Flash security model"
+  },
   "title:about amd anthropic claude days gpus mythos ported preview says three": {
    "at": "2026-11-17T07:57:43+00:00",
    "channel": "digest",
@@ -867,6 +873,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "OpenAI begins embedded safety evaluations with external research labs"
+  },
+  "url:https://testingcatalog.com/microsoft-launches-mai-cyber-2-flash-security-model": {
+   "at": "2026-11-18T04:33:12+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Microsoft launches MAI Cyber 2 Flash security model"
   },
   "url:https://testingcatalog.com/openai-launches-gpt-6-2-astra-and-sol-on-chatgpt-and-apis": {
    "at": "2026-11-17T20:58:16+00:00",
