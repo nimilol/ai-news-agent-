@@ -502,6 +502,11 @@
    "channel": "discovery",
    "title": "ChromeDevTools/chrome-devtools-mcp"
   },
+  "url:https://github.com/codewhale-hq/codewhale": {
+   "at": "2026-11-18T20:50:39+00:00",
+   "channel": "discovery",
+   "title": "codewhale-hq/Codewhale"
+  },
   "url:https://github.com/cotal-ai/cotal": {
    "at": "2026-11-17T08:15:30+00:00",
    "channel": "discovery",
@@ -527,6 +532,11 @@
    "channel": "discovery",
    "title": "google-deepmind/gbench"
   },
+  "url:https://github.com/google-deepmind/robotics-antigravity-plugin": {
+   "at": "2026-11-18T20:50:39+00:00",
+   "channel": "discovery",
+   "title": "google-deepmind/robotics-antigravity-plugin"
+  },
   "url:https://github.com/google-research/paper-orchestra": {
    "at": "2026-11-17T18:43:32+00:00",
    "channel": "discovery",
@@ -536,6 +546,16 @@
    "at": "2026-11-16T23:48:27+00:00",
    "channel": "discovery",
    "title": "huggingface/pybot"
+  },
+  "url:https://github.com/jakeschincariol/replica-skill": {
+   "at": "2026-11-18T20:50:39+00:00",
+   "channel": "discovery",
+   "title": "Jakeschincariol/replica-skill"
+  },
+  "url:https://github.com/jub0t/concat": {
+   "at": "2026-11-18T20:50:39+00:00",
+   "channel": "discovery",
+   "title": "jub0t/Concat"
   },
   "url:https://github.com/juneyaooo/rea-video": {
    "at": "2026-11-17T08:15:30+00:00",
@@ -624,6 +644,16 @@
    "channel": "discovery",
    "title": "paperclipai/paperclip"
   },
+  "url:https://github.com/prefecthq/fastmcp": {
+   "at": "2026-11-18T20:50:39+00:00",
+   "channel": "discovery",
+   "title": "PrefectHQ/fastmcp"
+  },
+  "url:https://github.com/qybaihe/bla": {
+   "at": "2026-11-18T20:50:39+00:00",
+   "channel": "discovery",
+   "title": "qybaihe/bla"
+  },
   "url:https://github.com/qybaihe/mu": {
    "at": "2026-11-17T18:43:32+00:00",
    "channel": "discovery",
@@ -633,6 +663,11 @@
    "at": "2026-11-18T12:02:42+00:00",
    "channel": "discovery",
    "title": "Sallyn0225/eidolon-sc"
+  },
+  "url:https://github.com/team-commonly/commonly": {
+   "at": "2026-11-18T20:50:39+00:00",
+   "channel": "discovery",
+   "title": "Team-Commonly/commonly"
   },
   "url:https://github.com/tencent/loopforge": {
    "at": "2026-11-17T18:43:32+00:00",
@@ -648,6 +683,11 @@
    "at": "2026-11-16T23:48:27+00:00",
    "channel": "discovery",
    "title": "fforster/gitlab-mcp"
+  },
+  "url:https://huggingface.co/datasets/llamaindex/parsebench-2": {
+   "at": "2026-11-18T20:50:39+00:00",
+   "channel": "discovery",
+   "title": "llamaindex/ParseBench-2"
   },
   "url:https://huggingface.co/higurashi-ai/haru-4b": {
    "at": "2026-11-18T12:02:42+00:00",
