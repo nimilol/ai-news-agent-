@@ -48,6 +48,12 @@
    "priority": "P3",
    "title": "Anthropic Crypto Bets Imply $1.7 Trillion Value Despite AI Rout - Bloomberg"
   },
+  "title:1080p api character openai output references sora updates": {
+   "at": "2026-11-19T07:27:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "OpenAI updates Sora API with 1080p output and character references"
+  },
   "title:14a 17 clo def form fund income india investing.com november opportunities xai": {
    "at": "2026-11-18T07:29:18+00:00",
    "channel": "digest",
@@ -95,6 +101,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "Anthropic paid lobbying firms linked to Rubio $740k"
+  },
+  "title:83 anthropic initial offering per prices public share": {
+   "at": "2026-11-19T07:27:18+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic prices initial public offering at $83 per share"
   },
   "title:about amd anthropic claude days gpus mythos ported preview says three": {
    "at": "2026-11-17T07:57:43+00:00",
@@ -161,6 +173,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "Stop taking meeting notes. Invite Grok Bot to the call instead. Unlike the rest of us, it actually pays attention. Questions answered on the spot. Work assigned"
+  },
+  "title:added alpha free model opencode tidepool": {
+   "at": "2026-11-19T07:27:18+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "New free model added to OpenCode: Tidepool Alpha Free"
   },
   "title:adds anthropic channel claude desktop option release": {
    "at": "2026-11-17T20:58:16+00:00",
@@ -251,6 +269,12 @@
    "channel": "alerts",
    "priority": "P2",
    "title": "Strengthening NATO and allied cyber defenses with AI"
+  },
+  "title:ai attack finds gao major models planning report vulnerable": {
+   "at": "2026-11-19T07:27:18+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "GAO report finds major AI models vulnerable to attack planning"
   },
   "title:ai deployment frontier managing risk training": {
    "at": "2026-11-18T22:10:54+00:00",
@@ -487,10 +511,10 @@
    "title": "Gemini 4 Neon"
   },
   "url:https://anthropic.com/news/anthropic-prices-initial-public-offering": {
-   "at": "2026-11-19T03:40:14+00:00",
-   "channel": "alerts",
-   "priority": "P2",
-   "title": "Anthropic prices initial public offering"
+   "at": "2026-11-19T07:27:18+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic prices initial public offering at $83 per share"
   },
   "url:https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon": {
    "at": "2026-11-18T22:10:43+00:00",
@@ -857,10 +881,10 @@
    "title": "Zyphra/ZONOS3-Mini"
   },
   "url:https://models.dev/": {
-   "at": "2026-11-17T20:58:16+00:00",
+   "at": "2026-11-19T07:27:18+00:00",
    "channel": "digest",
-   "priority": "P0",
-   "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol models"
+   "priority": "P3",
+   "title": "New free model added to OpenCode: Tidepool Alpha Free"
   },
   "url:https://nbcnews.com/tech/tech-news/california-sues-chatgpt-maker-openai-rogue-hacking-incidents-rcna609596": {
    "at": "2026-11-17T07:57:43+00:00",
@@ -904,6 +928,12 @@
    "priority": "P3",
    "title": "Sabre Accelerates Agentic Travel Leadership with First-Mover Travel Experience within​ ​Grok Bot and Next-Gen Proactive Travel APIs - WebWire"
   },
+  "url:https://news.google.com/rss/articles/cbmiaefvx3lxtfbvqw5fquflukpzu1bnr2rjv2q0eg1rwvnnys0tu0rezu9pnwv0cmi2ntd2ogqyevheai04c2cxogd3lvdrnwfjbvdscgdstmthblg4snjrcvvnsi1orddxyndnvui3sdlp": {
+   "at": "2026-11-19T07:27:18+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic prices initial public offering at $83 per share"
+  },
   "url:https://news.google.com/rss/articles/cbmicefvx3lxte5ysxppr00yoxppmdgzmm44rfndsdb3x2l1qwtmvkj2zdzpvvfqeedrte5lcuhzogdndfpetufhbkvmbgtaov9vnw5nef9hm3nlmtv5wet3ym1hz1vxbg9qevhmdnkttgpjouo0u1i3mva": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
@@ -915,6 +945,18 @@
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic Finalizes Pricing for Blockbuster IPO Amid High Demand"
+  },
+  "url:https://news.google.com/rss/articles/cbmidefvx3lxtfbasepysejvdke1yuztn3ftvfnfu1jirwvytnk4quj2t0tivjjtzjl2duzwsgvbs0ralwpveu1jr0zong5tr0rpqnpuoglnz1jbqmxfb0tzugc0rucyn1ddtdniqtdkmdbluez0cknlsdzitvff": {
+   "at": "2026-11-19T07:27:18+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic prices initial public offering at $83 per share"
+  },
+  "url:https://news.google.com/rss/articles/cbmie0fvx3lxte45zv9azupntgl2cujrtez3szr5a2zjcw42vurgbelxz1b1tutise4zexhevlftww11ajjpv2fsnzncm0lrylbwrepxmursuwjgulppbtdnbupjdxnuvu1yq3vflw1wam5kndvzq1o1cde2bvg0uufwewe3vq": {
+   "at": "2026-11-19T07:27:18+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic prices initial public offering at $83 per share"
   },
   "url:https://news.google.com/rss/articles/cbmie0fvx3lxtfbdx1u3ctjedupjtvrpeeu2edl3ne5zx09itelftl9kwerayw5wmlflv3duqkn5blzxtk5ini1sanztefricha2tmpfslpruhutsktaev80ourfc3jfbfrrb2fcsxrvei1us1rxwvnuclburfpptf9vwndfoa": {
    "at": "2026-11-17T20:58:16+00:00",
@@ -970,6 +1012,18 @@
    "priority": "P1",
    "title": "California AG Sues OpenAI Over Rogue Agent Hacking Incidents"
   },
+  "url:https://news.google.com/rss/articles/cbmihafbvv95cuxox1bxz1lwwhztqwl3dhvtu0ptvfhgumkxvvbkczk3betanzlsn0rjy21hn0t6oujhqlpkqlbgr09gy3jsehvhcty0clp4ew54cvjht1rkn3jqdeu2aevxx2hqvzd3udbsrmxzufcyb0tgyunuce4zunf6yzhvave1cml1ako": {
+   "at": "2026-11-19T07:27:18+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic prices initial public offering at $83 per share"
+  },
+  "url:https://news.google.com/rss/articles/cbmihafbvv95cuxpb1dqs0xwagdea3nfs3b0nzlpznjyuc01vjfhu0s1tkjnzkeychpwum1uqtbfyuyzre1zujjsq05xelp2sglybwl3aklqdwdloxfxbf9artc4sk50dw5mqwzsrnvuluvaafbmtmpmai1fb3rsenbwwhbotet5mmnrztlwsfy": {
+   "at": "2026-11-19T07:27:18+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic prices initial public offering at $83 per share"
+  },
   "url:https://news.google.com/rss/articles/cbmihafbvv95cuxqqmznm3dbm3hkbkvsb2iwdu51tuhiz1ozmelwszninudrckh4weutaknpznnrazh5z3hlawk5sjhwovbdte1dyw96rhzztmjiohdfu1r4bw9kmvlrwdiwukq2adfga3czs3nyem52udrlxy1hcmjpwg5vse9wdkp4wuozudbsaywbqvvfexfmt3bfc19yynrttghszwruwkhlshj6mgnlvy0xs2zbb2l3ckfwu1uxrjjjy2hbtfpjnw5oqla5ynviaxj3rulxluhqrxp3rfp3wmhesno1ewdvbnbms2x1wmzuexzkqjr0r1k3szryb045mwvvszc4ae9rwjhacmrizzznx2dilwg2nmvxyxq": {
    "at": "2026-11-18T20:33:37+00:00",
    "channel": "digest",
@@ -981,6 +1035,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "Scoop: Democrats probe DOJ's role in OpenAI copyright fight - Axios"
+  },
+  "url:https://news.google.com/rss/articles/cbmiiafbvv95cuxnevvmszl3dvbhbddfbtmttul2lwvhu1frb2hvyzjznwdfu0zdtmu3nfbvndvwqxnxqlk2qmkzbln4mupllwvgc1nhehnrzvpzthz1eg9ome53suntoexjqznfstjpluw0cwxnsjr4vwlxlwzhzuzsc0dna1j6bmxzttnbb0l2lupq": {
+   "at": "2026-11-19T07:27:18+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic prices initial public offering at $83 per share"
   },
   "url:https://news.google.com/rss/articles/cbmiigfbvv95cuxny0jqsgfxlvzudzdpthlkeufreetmbulzzldxt2pcn3zitmqztno2ew54rgthwuxwm0oyser0cfdux3znmde5sxhbrvjwbkrhz09jcwhonv9onf9oy1vvv0str0xda3pnbevudzhjs0zpejz5y0vmsc1dx09tsw9hdkl3dkqxwtbsaue": {
    "at": "2026-11-18T07:29:18+00:00",
@@ -1024,6 +1084,12 @@
    "priority": "P2",
    "title": "Chemical spill reported at xAI Southaven data center facility"
   },
+  "url:https://news.google.com/rss/articles/cbmikafbvv95cuxpdgrju3hwamu4sdu5r1fsbklqwlfpvzzldg1uadm5vvzmvzn2ngdyohrotxlnv2g4v3z3d1zwc0xxahldbfffd0vrskj3y0j5zndhdxjhtwteq290zdk3wlzarxvnakz0zk5qzgppvnqwtkpgu0lnmxbybgm0ofhgrwrmrtnduzfhntzzoghwdfe": {
+   "at": "2026-11-19T07:27:18+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "GAO report finds major AI models vulnerable to attack planning"
+  },
   "url:https://news.google.com/rss/articles/cbmikwfbvv95cuxnnmrmyvn0sddxqwuyx3pyseixddvbtmw2slpyvmjhs0jtwv9lylqxslv5vtnyu25nvthrsjficxjut2hyagfbodc1mw5rtuhzeuw4wm1fbl9pvlnbvgzwzze0evbdcw96nmwymdgycdzscnhly09mc0jzz2pcegtfufhdewtwtmktsfdgx1psyw92dws": {
    "at": "2026-11-17T07:57:43+00:00",
    "channel": "digest",
@@ -1059,6 +1125,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "Security researchers identify unprompted data access by Grok Bot - SC Media"
+  },
+  "url:https://news.google.com/rss/articles/cbmimgfbvv95cuxqrfn2vzfnbfbtqk5za2jbmdbmdu1zy1hxaei5vedobvpyzwl1tglwts1nuk84expjdfdvqwjys0n2x2tnmejjtth2rge4zhlkq0jbsf8ydkptoxzfmhpuoejnd2w4whhan25wtdu1qwvuq1nzz01tuv8yykj4bdddefvstkc4z3hoenpvmfpjnhjpmxhryu5fqjhn": {
+   "at": "2026-11-19T07:27:18+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "GAO report finds major AI models vulnerable to attack planning"
   },
   "url:https://news.google.com/rss/articles/cbmimwfbvv95cuxna2fvwujvwjbkde9kuktjsgzit1jxnxnmoxoytuzir0o1cw53z25jn2xqdxbxudjeuxrhvk55r01ix3h3u2pqu19iutl5qwrzohzvnktncxjrddjvy2w2unfkm0toqjz5b1dgdm5mtgy1suvmofpqu29nmndtshbfdfq3y2lxntczymzsywhnwwpiy1y5b21uvus4qq": {
    "at": "2026-11-17T20:58:16+00:00",
@@ -1113,6 +1185,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "California AG Sues OpenAI Over Rogue Agent Hacking Incidents"
+  },
+  "url:https://news.google.com/rss/articles/cbmingfbvv95cuxqa3bkqzh0zfbouzzmtzu4akxvefyzz2pzwem0aklqwu50rlbfaw4yadntmwxkbzfmz1d3qw96zkvjoc0zohh6euhgwhhzbkvqrhdgc09wsnk3ek56utjzyjztzxi5cvo5umlrd1jjue9qa29hrxzen0jzzlfnr01yx2xpykvgwdnstvnxegfctznbz3vdc29bqlv6dzdbdw": {
+   "at": "2026-11-19T07:27:18+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic prices initial public offering at $83 per share"
   },
   "url:https://news.google.com/rss/articles/cbminwfbvv95cuxpzwsta3njmezjltlrchl5tgvlu0oyodvkt2xjv3nmwwr2dxhostzcetbrsflqv180etnhbw9hm0zwatzaejnqmuu4shzpqm5arnfodknrqvfrnuftv2i5bhbjuk5urdfmtm1uqnrqcxpvbdgyb3hregowr0otmdzwehvmbfhut1a4mwpynnnpc2vjnuzockhaqwr2cwxgzehsaaqbqvvfexfmt2ztedrvb2nxdvzfvuntelbysgvjy1nods1uvxjxb21cv05pykvloen4vgpua0y0bxrvahdjqln5dzy4u1prakxpmjvod05tsnu5umvjel9prkhredlnd1zuowndsgxru0rjagdddusxtvdurgdxu0rpqmlbtfdprjdnt3h3lvj5wek2c3cxufozegvgzehwsfdkrnnovhdpofptlww": {
    "at": "2026-11-16T22:02:32+00:00",
@@ -1173,6 +1251,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "Chemical spill reported at xAI Southaven data center facility"
+  },
+  "url:https://news.google.com/rss/articles/cbmiqafbvv95cuxpcnfyulh5we5vsfrrswxnvgruxzlrofrsb0vodmzwamrwyjj2swhvtgp4ztb3egnyywztdkr0wkjlmdixx2rza20wog4yy2xjdvhutfpwakvuvdj3x0njqurrvknur0xpzmxtmm56ndq0ohl2tzdzvdvsc04yyulmy2hpshj1u2jlamhzallleezdvwozbgvobjbewwnvy205rmh3rk9ltwe": {
+   "at": "2026-11-19T07:27:18+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic prices initial public offering at $83 per share"
   },
   "url:https://news.google.com/rss/articles/cbmiqwfbvv95cuxns2yyd1r5sknxsldhdjfxzuu2a21fm3c4evdftl96z3loehk5cjbyylnuvzhndxrnau1orevuzhrowuy0z1l2udnqv3dtx1jeu2dbotzdnuxvahrptwxuyzfynhpjec1acvjjsjm0d3byovp2se9rmgdqvkvyahhybxvmmnhhqmzkquzda1frwmvoeerib0dfmdmttenpav84zk1mqmvht2zjata": {
    "at": "2026-11-16T22:02:32+00:00",
@@ -1263,6 +1347,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "California and Oregon file major legal actions against OpenAI"
+  },
+  "url:https://news.google.com/rss/articles/cbmiw0fvx3lxte15evfiwe5uzfrsshfuotnczwjysy1legw3nhyxbvzkzvpfu01mawdfyw5fu1lry25nsdewqv9nrxbpag5lsdb5dehxcw83x3jtvef4aglim0frvm8": {
+   "at": "2026-11-19T07:27:18+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic prices initial public offering at $83 per share"
   },
   "url:https://news.google.com/rss/articles/cbmiwgfbvv95cuxpnxowzet4nhrtnjuxt3y5stdsnwi5t1z3b0pfzjbsaunemue1ajzomtkzru1dqllmbfj0r28wmejjunllcvlkzgtodlbpadl5yw1dadnzcnqwwlrsa2nasmxmwlj1ytvuuhbex2ttt2t2tkjicwi4mldxohp1twpjtlhtc2zxshl6qnktawgxeufmrlblvehybnhiywp5rezsefqzx1f4wf8tz0hkbmq4tthjyjzmeu43mwtyyvm3zu9huq": {
    "at": "2026-11-18T07:29:18+00:00",
@@ -1445,10 +1535,10 @@
    "title": "Anthropic launches Linked billing beta for Claude platform developers"
   },
   "url:https://platform.openai.com/docs/changelog": {
-   "at": "2026-11-17T20:58:16+00:00",
+   "at": "2026-11-19T07:27:18+00:00",
    "channel": "digest",
-   "priority": "P0",
-   "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol models"
+   "priority": "P3",
+   "title": "OpenAI updates Sora API with 1080p output and character references"
   },
   "url:https://platform.openai.com/docs/deprecations": {
    "at": "2026-11-19T03:40:14+00:00",
@@ -1563,6 +1653,24 @@
    "channel": "digest",
    "priority": "P1",
    "title": "OpenAI begins embedded safety evaluations with external research labs"
+  },
+  "url:https://techcrunch.com/2026/11/17/amazon-and-google-will-together-own-nearly-30-of-anthropic-after-its-ipo": {
+   "at": "2026-11-19T07:27:18+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic prices initial public offering at $83 per share"
+  },
+  "url:https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range": {
+   "at": "2026-11-19T07:27:18+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic prices initial public offering at $83 per share"
+  },
+  "url:https://techtimes.com/articles/331074/20261119/gao-bypassed-ai-chatbot-safeguards-chatgpt-claude-gemini-grok-attack-plans-under-12-hours.htm": {
+   "at": "2026-11-19T07:27:18+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "GAO report finds major AI models vulnerable to attack planning"
   },
   "url:https://testingcatalog.com/microsoft-launches-mai-cyber-2-flash-security-model": {
    "at": "2026-11-18T07:29:18+00:00",
