@@ -628,6 +628,11 @@
    "channel": "discovery",
    "title": "bytedance/deer-flow"
   },
+  "url:https://github.com/cathrynlavery/diagram-design": {
+   "at": "2026-11-19T12:01:00+00:00",
+   "channel": "discovery",
+   "title": "cathrynlavery/diagram-design"
+  },
   "url:https://github.com/chromedevtools/chrome-devtools-mcp": {
    "at": "2026-11-16T23:48:27+00:00",
    "channel": "discovery",
@@ -637,6 +642,11 @@
    "at": "2026-11-18T20:50:39+00:00",
    "channel": "discovery",
    "title": "codewhale-hq/Codewhale"
+  },
+  "url:https://github.com/comet-ml/opik": {
+   "at": "2026-11-19T12:01:00+00:00",
+   "channel": "discovery",
+   "title": "comet-ml/opik"
   },
   "url:https://github.com/cotal-ai/cotal": {
    "at": "2026-11-17T08:15:30+00:00",
@@ -662,6 +672,11 @@
    "at": "2026-11-17T08:15:30+00:00",
    "channel": "discovery",
    "title": "elementalsouls/Claude-BugHunter"
+  },
+  "url:https://github.com/firecrawl/firecrawl": {
+   "at": "2026-11-19T12:01:00+00:00",
+   "channel": "discovery",
+   "title": "firecrawl/firecrawl"
   },
   "url:https://github.com/google-deepmind/gbench": {
    "at": "2026-11-17T18:43:32+00:00",
@@ -728,6 +743,16 @@
    "channel": "discovery",
    "title": "microsoft/ai-agents-for-beginners"
   },
+  "url:https://github.com/microsoft/autogen": {
+   "at": "2026-11-19T12:01:00+00:00",
+   "channel": "discovery",
+   "title": "microsoft/autogen"
+  },
+  "url:https://github.com/microsoft/magentic-ui": {
+   "at": "2026-11-19T12:01:00+00:00",
+   "channel": "discovery",
+   "title": "microsoft/magentic-ui"
+  },
   "url:https://github.com/microsoft/markitdown": {
    "at": "2026-11-18T03:03:20+00:00",
    "channel": "discovery",
@@ -785,6 +810,11 @@
    "priority": "P1",
    "title": "0.170.0"
   },
+  "url:https://github.com/openfilm/openfilm": {
+   "at": "2026-11-19T12:01:00+00:00",
+   "channel": "discovery",
+   "title": "openfilm/openfilm"
+  },
   "url:https://github.com/openvinotoolkit/openvino": {
    "at": "2026-11-18T12:02:42+00:00",
    "channel": "discovery",
@@ -819,6 +849,11 @@
    "at": "2026-11-17T18:43:32+00:00",
    "channel": "discovery",
    "title": "qybaihe/mu"
+  },
+  "url:https://github.com/rehan-remade/universal-modder": {
+   "at": "2026-11-19T12:01:00+00:00",
+   "channel": "discovery",
+   "title": "rehan-remade/universal-modder"
   },
   "url:https://github.com/sallyn0225/eidolon-sc": {
    "at": "2026-11-18T12:02:42+00:00",
@@ -859,6 +894,11 @@
    "at": "2026-11-18T12:02:42+00:00",
    "channel": "discovery",
    "title": "higurashi-ai/Haru-4B"
+  },
+  "url:https://huggingface.co/inworld/voice-isolator": {
+   "at": "2026-11-19T12:01:00+00:00",
+   "channel": "discovery",
+   "title": "inworld/voice-isolator"
   },
   "url:https://huggingface.co/meituan-longcat/longcat-video-avatar-1.6": {
    "at": "2026-11-18T03:03:20+00:00",
