@@ -709,6 +709,16 @@
    "channel": "discovery",
    "title": "elementalsouls/Claude-BugHunter"
   },
+  "url:https://github.com/erkamyaman/rust-anything": {
+   "at": "2026-11-19T20:54:44+00:00",
+   "channel": "discovery",
+   "title": "erkamyaman/rust-anything"
+  },
+  "url:https://github.com/expo/exact": {
+   "at": "2026-11-19T20:54:44+00:00",
+   "channel": "discovery",
+   "title": "expo/exact"
+  },
   "url:https://github.com/firecrawl/firecrawl": {
    "at": "2026-11-19T12:01:00+00:00",
    "channel": "discovery",
@@ -733,6 +743,11 @@
    "at": "2026-11-17T18:43:32+00:00",
    "channel": "discovery",
    "title": "google-research/paper-orchestra"
+  },
+  "url:https://github.com/haydenschmitty/floorplan": {
+   "at": "2026-11-19T20:54:44+00:00",
+   "channel": "discovery",
+   "title": "haydenschmitty/floorplan"
   },
   "url:https://github.com/huggingface/pybot": {
    "at": "2026-11-16T23:48:27+00:00",
@@ -774,6 +789,11 @@
    "channel": "discovery",
    "title": "Leonxlnx/earshot"
   },
+  "url:https://github.com/mdiri-ai/soduwork": {
+   "at": "2026-11-19T20:54:44+00:00",
+   "channel": "discovery",
+   "title": "mdiri-ai/SoduWork"
+  },
   "url:https://github.com/microsoft/ai-agents-for-beginners": {
    "at": "2026-11-18T03:03:20+00:00",
    "channel": "discovery",
@@ -813,6 +833,11 @@
    "at": "2026-11-16T23:48:27+00:00",
    "channel": "discovery",
    "title": "mvanhorn/last30days-skill"
+  },
+  "url:https://github.com/n8n-io/nod": {
+   "at": "2026-11-19T20:54:44+00:00",
+   "channel": "discovery",
+   "title": "n8n-io/nod"
   },
   "url:https://github.com/nvidia/skillevaluator": {
    "at": "2026-11-18T12:02:42+00:00",
@@ -876,6 +901,11 @@
    "channel": "discovery",
    "title": "pydantic/pydantic-ai"
   },
+  "url:https://github.com/qingyuna/answer-me-with-html": {
+   "at": "2026-11-19T20:54:44+00:00",
+   "channel": "discovery",
+   "title": "QingYunA/answer-me-with-html"
+  },
   "url:https://github.com/qybaihe/bla": {
    "at": "2026-11-18T20:50:39+00:00",
    "channel": "discovery",
@@ -911,6 +941,11 @@
    "channel": "discovery",
    "title": "Tencent/LoopForge"
   },
+  "url:https://github.com/vapi-network/vapi-network": {
+   "at": "2026-11-19T20:54:44+00:00",
+   "channel": "discovery",
+   "title": "vAPI-Network/vapi-network"
+  },
   "url:https://github.com/wgjsg/agilex-docs-mcp": {
    "at": "2026-11-16T23:48:27+00:00",
    "channel": "discovery",
@@ -930,6 +965,11 @@
    "at": "2026-11-18T12:02:42+00:00",
    "channel": "discovery",
    "title": "higurashi-ai/Haru-4B"
+  },
+  "url:https://huggingface.co/huggingfacetb/smolvlm2-256m-video-instruct": {
+   "at": "2026-11-19T20:54:44+00:00",
+   "channel": "discovery",
+   "title": "HuggingFaceTB/SmolVLM2-256M-Video-Instruct"
   },
   "url:https://huggingface.co/inworld/voice-isolator": {
    "at": "2026-11-19T12:01:00+00:00",
