@@ -74,6 +74,131 @@
  "failures": {},
  "health": {},
  "history": {
+  "google:gemini-3-6": {
+   "announcement_date": "2026-11-19",
+   "availability_date": null,
+   "availability_status": "Not stated in the official sources",
+   "classification": "NEW_MODEL_RELEASE",
+   "company": "google",
+   "comparison_summary": "compared with Gemini 3.5 Flash",
+   "delivery": {
+    "attempts": 1,
+    "last_error": null,
+    "message_ids": [
+     773
+    ],
+    "notification": "google:gemini-3-6|review|a44c039e6b",
+    "sent_at": "2026-11-19T22:22:21+00:00",
+    "status": "SENT"
+   },
+   "details": {
+    "ai_model": "gemini/gemini-flash-latest",
+    "api_access": "Interactions API",
+    "benchmarks": [],
+    "claims": [],
+    "comparison": {
+     "availability": {
+      "basis": "official specs",
+      "new": null,
+      "previous": "listed as available",
+      "quote": ""
+     },
+     "context": {
+      "basis": "official specs",
+      "new": null,
+      "previous": "1,048,576 tokens",
+      "quote": ""
+     },
+     "multimodal": {
+      "basis": "official specs",
+      "new": null,
+      "previous": "in: Text, Image, Video, Audio, and PDF · out: Text",
+      "quote": ""
+     },
+     "output": {
+      "basis": "official specs",
+      "new": null,
+      "previous": "65,536 tokens",
+      "quote": ""
+     },
+     "tools": {
+      "basis": "company statement",
+      "new": "Interactions API can load function schemas on demand using defer_loading and tool_search",
+      "previous": "large tool sets no longer have to be sent in full on every request",
+      "quote": "so large tool sets no longer have to be sent in full on every request."
+     }
+    },
+    "explain": {
+     "care": "It makes calling large catalogs of agent tools more efficient directly within the Interactions API.",
+     "different": "Allows marking tools with defer_loading: true alongside Gemini tool_search or custom client retrieval.",
+     "does": "Searches tool libraries and loads function schemas dynamically when needed rather than sending all definitions per request.",
+     "introduced": "Tool Retrieval in preview for the Interactions API.",
+     "problem": "Large tool libraries previously had to be sent entirely on every API call, consuming prompt overhead.",
+     "who": "Developers using large tool collections or remote MCP servers with Gemini 3.6 and later models."
+    },
+    "flagship": false,
+    "improved": [],
+    "previous_specs": {
+     "context_tokens": 1048576,
+     "description": "Gemini 3.5 Flash",
+     "input_modalities": "Text, Image, Video, Audio, and PDF",
+     "latest_update": "May 2026",
+     "max_output_tokens": 65536,
+     "output_modalities": "Text"
+    },
+    "priority": "P1",
+    "reasons": [
+     "an official source mentions a model the agent has not seen before, without introducing it"
+    ],
+    "regressed": [],
+    "specs": {
+     "Gemini 3.6": {
+      "name": null,
+      "specs": {},
+      "status": null
+     }
+    },
+    "unchanged": [],
+    "whats_new": [
+     "The Interactions API can search tool libraries and load function schemas on demand.",
+     "Tools can be deferred for loading and retrieved automatically via tool_search or custom client logic.",
+     "Remote Model Context Protocol (MCP) servers support deferred loading."
+    ]
+   },
+   "duplicates": 0,
+   "events": [
+    {
+     "at": "2026-11-19T22:19:46+00:00",
+     "note": "an official source mentions a model the agent has not seen before, without introducing it",
+     "type": "detected"
+    }
+   ],
+   "fingerprints": [
+    "a17bf97935d7c1c4"
+   ],
+   "first_detected": "2026-11-19T22:19:46+00:00",
+   "id": "google:gemini-3-6",
+   "last_updated": "2026-11-19T22:22:21+00:00",
+   "model_ids": [
+    "Gemini 3.6"
+   ],
+   "model_name": "Gemini 3.6",
+   "official_sources": [
+    {
+     "kind": "changelog",
+     "source": "Gemini API release notes",
+     "url": "https://aistudio.google.com/docs/changelog.md"
+    }
+   ],
+   "previous_model": {
+    "id": "gemini-3.5-flash",
+    "method": "model lineage: same family, previous version (different tier, lower confidence)",
+    "name": "Gemini 3.5 Flash"
+   },
+   "priority": "P1",
+   "source_url": "https://aistudio.google.com/docs/changelog.md",
+   "verification": "REQUIRES_MANUAL_REVIEW"
+  },
   "google:gemini-4-neon": {
    "announcement_date": "2026-11-18",
    "availability_date": "2026-11-18",
@@ -287,6 +412,168 @@
    },
    "priority": "P0",
    "source_url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+   "verification": "OFFICIAL_CONFIRMED"
+  },
+  "google:gemma-4@MAJOR_MODEL_UPGRADE:gemma-4": {
+   "announcement_date": null,
+   "availability_date": null,
+   "availability_status": null,
+   "classification": "MAJOR_MODEL_UPGRADE",
+   "company": "google",
+   "comparison_summary": "Multi-Turn Agentic Reinforcement Learning with Tunix and Gemma 4 on Google TPUs",
+   "delivery": {
+    "attempts": 1,
+    "last_error": null,
+    "message_ids": [
+     777
+    ],
+    "notification": "google:gemma-4@MAJOR_MODEL_UPGRADE:gemma-4|update|39ad57bffb",
+    "receipt": {
+     "at": "2026-11-19T22:22:24+00:00",
+     "message_id": 778,
+     "status": "SENT"
+    },
+    "sent_at": "2026-11-19T22:22:23+00:00",
+    "status": "SENT"
+   },
+   "details": {
+    "reasons": [
+     "new snapshot or variant of a known model: Gemma 4"
+    ],
+    "text": "This post walks developers through training a multi-turn, tool-using LLM agent using Tunix and Gemma 4 on Cloud TPUs. By leveraging agentic Group Relative Policy Optimization (GRPO) and asynchronous vLLM rollouts, the approach significantly improves complex reasoning and tool compliance in interactive environments."
+   },
+   "duplicates": 0,
+   "events": [
+    {
+     "at": "2026-11-19T22:22:19+00:00",
+     "note": "new snapshot or variant of a known model: Gemma 4",
+     "type": "detected"
+    }
+   ],
+   "fingerprints": [
+    "87dd468e14e1638d",
+    "https://developers.googleblog.com/multi-turn-agentic-reinforcement-learning-with-tunix-and-gemma-4-on-google-tpus"
+   ],
+   "first_detected": "2026-11-19T22:22:19+00:00",
+   "id": "google:gemma-4@MAJOR_MODEL_UPGRADE:gemma-4",
+   "last_updated": "2026-11-19T22:22:23+00:00",
+   "model_ids": [
+    "Gemma 4"
+   ],
+   "model_name": "Gemma 4 26B A4B IT",
+   "official_sources": [
+    {
+     "source": "Google Developers Blog",
+     "url": "https://developers.googleblog.com/multi-turn-agentic-reinforcement-learning-with-tunix-and-gemma-4-on-google-tpus/"
+    }
+   ],
+   "previous_model": null,
+   "priority": "P1",
+   "source_url": "https://developers.googleblog.com/multi-turn-agentic-reinforcement-learning-with-tunix-and-gemma-4-on-google-tpus/",
+   "verification": "OFFICIAL_UPDATE"
+  },
+  "google:genie-4": {
+   "announcement_date": null,
+   "availability_date": null,
+   "availability_status": "Available (listed in the official model catalog)",
+   "classification": "NEW_MODEL_RELEASE",
+   "company": "google",
+   "comparison_summary": "",
+   "delivery": {
+    "attempts": 1,
+    "last_error": null,
+    "message_ids": [
+     774,
+     775
+    ],
+    "notification": "google:genie-4|release|12c672556c",
+    "receipt": {
+     "at": "2026-11-19T22:22:23+00:00",
+     "message_id": 776,
+     "status": "SENT"
+    },
+    "sent_at": "2026-11-19T22:22:22+00:00",
+    "status": "SENT"
+   },
+   "details": {
+    "ai_model": "gemini/gemini-flash-latest",
+    "api_access": "WebRTC and WebSockets",
+    "benchmarks": [],
+    "claims": [
+     {
+      "quote": "Stream real-time, steerable 24 fps interactive worlds with synchronized 48 kHz stereo audio",
+      "source": 1,
+      "text": "Streams steerable interactive worlds at 24 fps with synchronized 48 kHz stereo audio in real time."
+     }
+    ],
+    "comparison": {},
+    "explain": {
+     "care": "Developers can stream interactive generative worlds in real time using standard WebRTC and WebSocket protocols.",
+     "does": "Streams real-time, steerable 24 fps interactive worlds with synchronized 48 kHz stereo audio over WebRTC and WebSockets.",
+     "introduced": "Genie 4, a real-time audio-video generation model."
+    },
+    "flagship": false,
+    "improved": [],
+    "previous_specs": {},
+    "priority": "P1",
+    "reasons": [
+     "not seen in any official catalog before; introduced by: Gemini API models (listed), Gemini API model list (listed)"
+    ],
+    "regressed": [],
+    "specs": {
+     "genie-4": {
+      "name": "Genie 4",
+      "specs": {
+       "context_tokens": 1048576,
+       "description": "Real-time audio-video generation model",
+       "input_modalities": "Text (`world_setup` and mid-session `input` steering), 16:9 Reference Image (`world_setup`), Keyboard and camera controls (`user_action`)",
+       "latest_update": "November 2026",
+       "max_output_tokens": 65536,
+       "output_modalities": "Streaming Video (`16:9`, `24 fps`) with synchronized `48 kHz` stereo Audio"
+      },
+      "status": "active"
+     }
+    },
+    "unchanged": [],
+    "whats_new": [
+     "Streams real-time, steerable 24 fps interactive worlds with synchronized 48 kHz stereo audio.",
+     "Serves as a real-time audio-video generation model."
+    ]
+   },
+   "duplicates": 0,
+   "events": [
+    {
+     "at": "2026-11-19T22:22:19+00:00",
+     "note": "not seen in any official catalog before; introduced by: Gemini API models (listed), Gemini API model list (listed)",
+     "type": "detected"
+    }
+   ],
+   "fingerprints": [
+    "https://aistudio.google.com/docs/models.md#genie-4",
+    "https://generativelanguage.googleapis.com/v1beta/models#genie-4"
+   ],
+   "first_detected": "2026-11-19T22:22:19+00:00",
+   "id": "google:genie-4",
+   "last_updated": "2026-11-19T22:22:22+00:00",
+   "model_ids": [
+    "genie-4"
+   ],
+   "model_name": "Genie 4",
+   "official_sources": [
+    {
+     "kind": "listed",
+     "source": "Gemini API models",
+     "url": "https://aistudio.google.com/docs/models.md"
+    },
+    {
+     "kind": "listed",
+     "source": "Gemini API model list",
+     "url": "https://generativelanguage.googleapis.com/v1beta/models"
+    }
+   ],
+   "previous_model": null,
+   "priority": "P1",
+   "source_url": "https://aistudio.google.com/docs/models.md",
    "verification": "OFFICIAL_CONFIRMED"
   },
   "openai:gpt-6": {
@@ -870,20 +1157,180 @@
    "priority": "P2",
    "source_url": "https://www.testingcatalog.com/microsoft-launches-mai-cyber-2-flash-security-model/",
    "verification": "UNCONFIRMED"
+  },
+  "openai:gpt-live-1-1": {
+   "announcement_date": "2026-11-19",
+   "availability_date": "2026-11-19",
+   "availability_status": "Available (listed in the official model catalog)",
+   "classification": "NEW_MODEL_RELEASE",
+   "company": "openai",
+   "comparison_summary": "compared with GPT-Live-1",
+   "delivery": {
+    "attempts": 1,
+    "last_error": null,
+    "message_ids": [
+     770,
+     771
+    ],
+    "notification": "openai:gpt-live-1-1|release|7273569ec1",
+    "receipt": {
+     "at": "2026-11-19T22:22:21+00:00",
+     "message_id": 772,
+     "status": "SENT"
+    },
+    "sent_at": "2026-11-19T22:22:20+00:00",
+    "status": "SENT"
+   },
+   "details": {
+    "ai_model": "gemini/gemini-flash-latest",
+    "api_access": "Specified as gpt-live-1.1 in an existing Live session configuration via v1/live/sessions API.",
+    "benchmarks": [],
+    "claims": [
+     {
+      "quote": "GPT-Live-1.1 improves pronunciation, accent consistency, and transcription in multilingual voice conversations.",
+      "source": 1,
+      "text": "GPT-Live-1.1 improves pronunciation, accent consistency, and transcription in multilingual voice conversations."
+     }
+    ],
+    "comparison": {
+     "availability": {
+      "basis": "official specs",
+      "new": "listed as available",
+      "previous": "listed as available",
+      "quote": ""
+     },
+     "multimodal": {
+      "basis": "official specs + company statement",
+      "new": "in: audio, text · out: audio, text — Improves pronunciation, accent consistency, and transcription in multilingual voice conversations.",
+      "previous": "in: audio, text · out: audio, text",
+      "quote": "GPT-Live-1.1 improves pronunciation, accent consistency, and transcription in multilingual voice conversations."
+     }
+    },
+    "explain": {
+     "care": "It makes voice agents more reliable across different languages and accents while offering direct mechanisms to reduce inference costs during inactivity.",
+     "different": "Compared to GPT-Live-1, it provides improved multilingual transcription, accent consistency, and pronunciation, alongside standby pausing support.",
+     "does": "Enables full-duplex multilingual voice conversations, pauses inference during silent standby, and delegates tasks to backends using plain-language instructions.",
+     "introduced": "GPT-Live-1.1, a full-duplex voice model update accessible via the Live sessions API.",
+     "problem": "Addresses issues with pronunciation, inconsistent accents, and transcription errors in multilingual voice calls, as well as wasteful continuous inference during periods of silence.",
+     "who": "Developers and AI builders deploying interactive, multilingual voice agents over WebRTC."
+    },
+    "flagship": false,
+    "improved": [],
+    "previous_specs": {
+     "description": "Our premier model for natural, expressive voice conversations with smooth interruption handling.",
+     "input_modalities": "audio, text",
+     "knowledge_cutoff": "Jul 31, 2025",
+     "output_modalities": "audio, text"
+    },
+    "priority": "P1",
+    "reasons": [
+     "not seen in any official catalog before; introduced by: OpenAI API changelog (changelog), OpenAI model catalog (listed)"
+    ],
+    "regressed": [],
+    "specs": {
+     "gpt-live-1.1": {
+      "name": "GPT-Live-1.1",
+      "specs": {
+       "description": "Full-duplex voice model for multilingual conversations.",
+       "input_modalities": "audio, text",
+       "output_modalities": "audio, text"
+      },
+      "status": "active"
+     }
+    },
+    "unchanged": [],
+    "whats_new": [
+     "Enhanced pronunciation, accent consistency, and transcription quality for multilingual voice conversations.",
+     "Developers can specify backend delegation in plain language within Live session configurations.",
+     "Standby mode can be configured for WebRTC sessions to pause inference during inactivity and resume on speech."
+    ]
+   },
+   "duplicates": 0,
+   "events": [
+    {
+     "at": "2026-11-19T22:17:58+00:00",
+     "note": "not seen in any official catalog before; introduced by: OpenAI API changelog (changelog), OpenAI model catalog (listed)",
+     "type": "detected"
+    }
+   ],
+   "fingerprints": [
+    "4104a0ac399905a0",
+    "https://developers.openai.com/api/docs/models/all.md#gpt-live-1.1"
+   ],
+   "first_detected": "2026-11-19T22:17:58+00:00",
+   "id": "openai:gpt-live-1-1",
+   "last_updated": "2026-11-19T22:22:20+00:00",
+   "model_ids": [
+    "gpt-live-1.1"
+   ],
+   "model_name": "GPT-Live-1.1",
+   "official_sources": [
+    {
+     "kind": "changelog",
+     "source": "OpenAI API changelog",
+     "url": "https://developers.openai.com/api/docs/changelog.md"
+    },
+    {
+     "kind": "listed",
+     "source": "OpenAI model catalog",
+     "url": "https://developers.openai.com/api/docs/models/all.md"
+    }
+   ],
+   "previous_model": {
+    "id": "gpt-live-1",
+    "method": "named in the official sources (read by AI, quote checked)",
+    "name": "GPT-Live-1"
+   },
+   "priority": "P1",
+   "source_url": "https://developers.openai.com/api/docs/changelog.md",
+   "verification": "OFFICIAL_CONFIRMED"
   }
  },
  "index": {
+  "google:gemini-3-6": "google:gemini-3-6",
   "google:gemini-4-neon": "google:gemini-4-neon",
+  "google:genie-4": "google:genie-4",
   "openai:gpt-6": "openai:gpt-6",
   "openai:gpt-6-2": "openai:gpt-6-2+gpt-6-2-astra",
   "openai:gpt-6-2-astra": "openai:gpt-6-2+gpt-6-2-astra",
   "openai:gpt-6-2-astra-pro": "openai:gpt-6-2-astra-pro",
   "openai:gpt-6-2-sol": "openai:gpt-6-2-sol",
   "openai:gpt-6-2-sol-pro": "openai:gpt-6-2-sol-pro",
-  "openai:gpt-6-astra": "openai:gpt-6-astra"
+  "openai:gpt-6-astra": "openai:gpt-6-astra",
+  "openai:gpt-live-1-1": "openai:gpt-live-1-1"
  },
  "meta": {},
  "outbox": {
+  "google:gemini-3-6|review|a44c039e6b": {
+   "attempts": 1,
+   "category": "NEW_MODEL_RELEASE",
+   "created": "2026-11-19T22:19:46+00:00",
+   "id": "google:gemini-3-6|review|a44c039e6b",
+   "kind": "review",
+   "last_error": null,
+   "log": [
+    "2026-11-19T22:22:21+00:00 SENT: Telegram confirmed message id(s) [773]"
+   ],
+   "model_name": "Gemini 3.6",
+   "parts": [
+    "<b>🚨 POSSIBLE NEW MODEL: REQUIRES MANUAL REVIEW</b>\n<b>Possible new model: Gemini 3.6</b>\n<i>🟠 P1 High · REQUIRES MANUAL REVIEW · 📅 19 Nov 2026</i>\n🏢 Google\n<b>What happened:</b> An official Google source points to Gemini 3.6 (Gemini 3.6), but it could not be verified automatically.\n<b>Why it matters:</b> It may be a new model. Check the sources before posting about it.\n<b>Details:</b> an official source mentions a model the agent has not seen before, without introducing it\n🔗 <a href=\"https://aistudio.google.com/docs/changelog.md\">Gemini API release notes</a>\n<b>DELIVERY:</b> Pending Telegram confirmation."
+   ],
+   "priority": "P1",
+   "receipt": {
+    "status": "NOT_NEEDED"
+   },
+   "release_id": "google:gemini-3-6",
+   "sent_at": "2026-11-19T22:22:21+00:00",
+   "sent_parts": {
+    "0": {
+     "at": "2026-11-19T22:22:21+00:00",
+     "message_id": 773,
+     "telegram_date": 1795126941
+    }
+   },
+   "status": "SENT",
+   "verification": "REQUIRES_MANUAL_REVIEW"
+  },
   "google:gemini-4-neon|release|6e9d8aab4b": {
    "attempts": 1,
    "category": "NEW_MODEL_RELEASE",
@@ -918,6 +1365,78 @@
      "at": "2026-11-18T22:10:43+00:00",
      "message_id": 731,
      "telegram_date": 1795039843
+    }
+   },
+   "status": "SENT",
+   "verification": "OFFICIAL_CONFIRMED"
+  },
+  "google:gemma-4@MAJOR_MODEL_UPGRADE:gemma-4|update|39ad57bffb": {
+   "attempts": 1,
+   "category": "MAJOR_MODEL_UPGRADE",
+   "created": "2026-11-19T22:22:19+00:00",
+   "id": "google:gemma-4@MAJOR_MODEL_UPGRADE:gemma-4|update|39ad57bffb",
+   "kind": "update",
+   "last_error": null,
+   "log": [
+    "2026-11-19T22:22:23+00:00 SENT: Telegram confirmed message id(s) [777]",
+    "2026-11-19T22:22:24+00:00 delivery receipt SENT (message id 778)"
+   ],
+   "model_name": "Gemma 4 26B A4B IT",
+   "parts": [
+    "<b>🔄 MAJOR MODEL UPGRADE</b>\n<b>Gemma 4 26B A4B IT: Multi-Turn Agentic Reinforcement Learning with Tunix and Gemma 4 on Google TPUs</b>\n<i>🟠 P1 High · OFFICIAL UPDATE</i>\n🏢 Google\n<b>What happened:</b> This post walks developers through training a multi-turn, tool-using LLM agent using Tunix and Gemma 4 on Cloud TPUs. By leveraging agentic Group Relative Policy Optimization (GRPO) and asynchronous vLLM rollouts, the approach significantly improves complex reasoning and tool compliance in interactive environments.\n<b>Why it matters:</b> A new version of a model people already use: behaviour, quality or price may change.\n<b>Details:</b> Gemma 4\n🔗 <a href=\"https://developers.googleblog.com/multi-turn-agentic-reinforcement-learning-with-tunix-and-gemma-4-on-google-tpus/\">Google Developers Blog</a>\n<i>new snapshot or variant of a known model: Gemma 4</i>\n<b>DELIVERY:</b> Pending Telegram confirmation."
+   ],
+   "priority": "P1",
+   "receipt": {
+    "at": "2026-11-19T22:22:24+00:00",
+    "message_id": 778,
+    "status": "SENT"
+   },
+   "release_id": "google:gemma-4@MAJOR_MODEL_UPGRADE:gemma-4",
+   "sent_at": "2026-11-19T22:22:23+00:00",
+   "sent_parts": {
+    "0": {
+     "at": "2026-11-19T22:22:23+00:00",
+     "message_id": 777,
+     "telegram_date": 1795126943
+    }
+   },
+   "status": "SENT",
+   "verification": "OFFICIAL_UPDATE"
+  },
+  "google:genie-4|release|12c672556c": {
+   "attempts": 1,
+   "category": "NEW_MODEL_RELEASE",
+   "created": "2026-11-19T22:22:19+00:00",
+   "id": "google:genie-4|release|12c672556c",
+   "kind": "release",
+   "last_error": null,
+   "log": [
+    "2026-11-19T22:22:22+00:00 SENT: Telegram confirmed message id(s) [774, 775]",
+    "2026-11-19T22:22:23+00:00 delivery receipt SENT (message id 776)"
+   ],
+   "model_name": "Genie 4",
+   "parts": [
+    "🚨 <b>NEW AI MODEL RELEASE</b>\n<i>🚨 NEW MODEL RELEASES · 🟠 P1 High</i>\n\n<b>COMPANY:</b>\nGoogle (Gemini)\n\n<b>NEW MODEL:</b>\nGenie 4\n<code>genie-4</code>\n\n<b>RELEASE INFORMATION:</b>\n• Announcement date: Not stated in the official sources\n• Availability date: Not stated in the official sources\n• Model category: New model release\n• Availability status: Available (listed in the official model catalog)\n• API access: WebRTC and WebSockets\n\n<b>WHAT'S NEW:</b>\n• Streams real-time, steerable 24 fps interactive worlds with synchronized 48 kHz stereo audio.\n• Serves as a real-time audio-video generation model.\n\n<blockquote expandable><b>📘 Explained</b>\n<b>What was introduced:</b> Genie 4, a real-time audio-video generation model.\n<b>What it actually does:</b> Streams real-time, steerable 24 fps interactive worlds with synchronized 48 kHz stereo audio over WebRTC and WebSockets.\n<b>Why creators and developers should care:</b> Developers can stream interactive generative worlds in real time using standard WebRTC and WebSocket protocols.</blockquote>\n\n<b>COMPARISON WITH PREVIOUS MODEL:</b>\nPrevious model: <i>not established</i> (no earlier model in the same family was found in the official sources)\n\n<b>📈 Benchmarks</b>\n• Company-reported: none found in the official sources\n• Independent: none collected (the agent only reads official sources)\n\n<b>💬 Qualitative claims by the company</b>\n• Streams steerable interactive worlds at 24 fps with synchronized 48 kHz stereo audio in real time.\n\n<b>WHAT ACTUALLY IMPROVED:</b>\n• Google listed Genie 4 as a real-time audio-video generation model. <i>(interpretation by gemini/gemini-flash-latest, from the sources above)</i>\n• It supports streaming steerable interactive worlds at 24 fps with synchronized 48 kHz stereo audio over WebRTC and WebSockets. <i>(interpretation by gemini/gemini-flash-latest, from the sources above)</i>\n\n<b>WHAT HAS NOT BEEN ESTABLISHED:</b>\n• Which model this replaces\n• No evidence yet for: Architecture / family, Reasoning, Coding, Math &amp; problem-solving, Multimodal, Context window, Output limit, Tool use &amp; agents, Speed &amp; latency, API pricing, Availability\n• Benchmark scores (none in the official sources)\n• Independent benchmark results\n• The availability date\n\n<b>OFFICIAL SOURCES:</b>\n• Original announcement: not published yet (the release was found in the official docs)\n• Official documentation: no release note yet\n• Model information / API page: <a href=\"https://aistudio.google.com/docs/models.md\">Gemini API models</a>\n\n<b>WHY THIS MATTERS:</b>\nGenie 4 introduces interactive, real-time world generation with synchronized audio via streaming protocols like WebRTC. For developers and creators, this opens up possibilities for building controllable, low-latency generative audiovisual environments.\n<i>(1/2)</i>",
+    "<b>💡 CONTENT OPPORTUNITIES</b>\n<i>Based on: Genie 4</i>\n<blockquote expandable><b>A. NEWS: Google Lists Genie 4: Real-Time Interactive World Generation</b>\n<i>Angle:</i> Cover the appearance of Genie 4 in the Gemini API model listings.\n<i>Why it's interesting:</i> It introduces real-time steerable video and audio streaming via WebSockets and WebRTC.\n<i>Research or testing needed:</i> Check API availability, pricing, and access permissions in Google AI Studio.\n\n<b>B. EDUCATION: How Real-Time Steerable Worlds Work: Exploring Genie 4&#x27;s Interface</b>\n<i>Angle:</i> Explain the mechanics of streaming 24 fps generative video with synchronized audio over WebRTC.\n<i>Why it's interesting:</i> Developers need to understand how real-time steering and bidirectional protocols integrate with generative models.\n<i>Research or testing needed:</i> Verify the exact input schema, steering controls, and latency requirements.\n\n<b>C. ANALYSIS: Genie 4 and the Future of Interactive Generative Environments</b>\n<i>Angle:</i> Evaluate the feasibility of building real-time interactive applications over WebRTC.\n<i>Why it's interesting:</i> Interactive real-time generation bridges video synthesis with interactive software and gaming.\n<i>Research or testing needed:</i> Benchmark responsiveness, frame stability, and visual consistency under live steering.\n\n<i>Ideas only. You decide what becomes a video or post.</i></blockquote>\n\n<b>VERIFICATION:</b>\nOFFICIAL CONFIRMED\n<i>not seen in any official catalog before; introduced by: Gemini API models (listed), Gemini API model list (listed)</i>\n<i>AI reading by gemini/gemini-flash-latest; 0 unsupported AI statements discarded</i>\n\n<b>DELIVERY:</b>\nPending Telegram confirmation.\n<i>(2/2)</i>"
+   ],
+   "priority": "P1",
+   "receipt": {
+    "at": "2026-11-19T22:22:23+00:00",
+    "message_id": 776,
+    "status": "SENT"
+   },
+   "release_id": "google:genie-4",
+   "sent_at": "2026-11-19T22:22:22+00:00",
+   "sent_parts": {
+    "0": {
+     "at": "2026-11-19T22:22:22+00:00",
+     "message_id": 774,
+     "telegram_date": 1795126942
+    },
+    "1": {
+     "at": "2026-11-19T22:22:22+00:00",
+     "message_id": 775,
+     "telegram_date": 1795126942
     }
    },
    "status": "SENT",
@@ -996,6 +1515,45 @@
      "at": "2026-11-17T23:04:05+00:00",
      "message_id": 693,
      "telegram_date": 1794956645
+    }
+   },
+   "status": "SENT",
+   "verification": "OFFICIAL_CONFIRMED"
+  },
+  "openai:gpt-live-1-1|release|7273569ec1": {
+   "attempts": 1,
+   "category": "NEW_MODEL_RELEASE",
+   "created": "2026-11-19T22:17:58+00:00",
+   "id": "openai:gpt-live-1-1|release|7273569ec1",
+   "kind": "release",
+   "last_error": null,
+   "log": [
+    "2026-11-19T22:22:20+00:00 SENT: Telegram confirmed message id(s) [770, 771]",
+    "2026-11-19T22:22:21+00:00 delivery receipt SENT (message id 772)"
+   ],
+   "model_name": "GPT-Live-1.1",
+   "parts": [
+    "🚨 <b>NEW AI MODEL RELEASE</b>\n<i>🚨 NEW MODEL RELEASES · 🟠 P1 High</i>\n\n<b>COMPANY:</b>\nOpenAI (GPT)\n\n<b>NEW MODEL:</b>\nGPT-Live-1.1\n<code>gpt-live-1.1</code>\n\n<b>RELEASE INFORMATION:</b>\n• Announcement date: 19 November 2026\n• Availability date: 19 November 2026\n• Model category: New model release\n• Availability status: Available (listed in the official model catalog)\n• API access: Specified as gpt-live-1.1 in an existing Live session configuration via v1/live/sessions API.\n\n<b>WHAT'S NEW:</b>\n• Enhanced pronunciation, accent consistency, and transcription quality for multilingual voice conversations.\n• Developers can specify backend delegation in plain language within Live session configurations.\n• Standby mode can be configured for WebRTC sessions to pause inference during inactivity and resume on speech.\n\n<blockquote expandable><b>📘 Explained</b>\n<b>What was introduced:</b> GPT-Live-1.1, a full-duplex voice model update accessible via the Live sessions API.\n<b>What it actually does:</b> Enables full-duplex multilingual voice conversations, pauses inference during silent standby, and delegates tasks to backends using plain-language instructions.\n<b>What problem it solves:</b> Addresses issues with pronunciation, inconsistent accents, and transcription errors in multilingual voice calls, as well as wasteful continuous inference during periods of silence.\n<b>How it differs from before:</b> Compared to GPT-Live-1, it provides improved multilingual transcription, accent consistency, and pronunciation, alongside standby pausing support.\n<b>Who benefits:</b> Developers and AI builders deploying interactive, multilingual voice agents over WebRTC.\n<b>Why creators and developers should care:</b> It makes voice agents more reliable across different languages and accents while offering direct mechanisms to reduce inference costs during inactivity.</blockquote>\n\n<b>COMPARISON WITH PREVIOUS MODEL:</b>\nPrevious model: GPT-Live-1 (<code>gpt-live-1</code>)\nNew model: GPT-Live-1.1 (<code>gpt-live-1.1</code>)\n<i>How the previous model was chosen: named in the official sources (read by AI, quote checked)</i>\n\n<b>🖼 Multimodal</b> <i>(official specs + company statement)</i>\n• Previous: in: audio, text · out: audio, text\n• New: in: audio, text · out: audio, text — Improves pronunciation, accent consistency, and transcription in multilingual voice conversations.\n\n<b>🌍 Availability</b> <i>(official specs)</i>\n• Previous: listed as available\n• New: listed as available\n\n<b>📈 Benchmarks</b>\n• Company-reported: none found in the official sources\n• Independent: none collected (the agent only reads official sources)\n\n<b>💬 Qualitative claims by the company</b>\n• GPT-Live-1.1 improves pronunciation, accent consistency, and transcription in multilingual voice conversations.\n\n<b>WHAT ACTUALLY IMPROVED:</b>\n• Multilingual voice capabilities received targeted upgrades in pronunciation, accent consistency, and transcription accuracy. <i>(interpretation by gemini/gemini-flash-latest, from the sources above)</i>\n• WebRTC sessions now support standby mode to avoid unnecessary inference while waiting for speech. <i>(interpretation by gemini/gemini-flash-latest, from the sources above)</i>\n• Developers can now define backend delegation logic using plain language prompts inside session configurations. <i>(interpretation by gemini/gemini-flash-latest, from the sources above)</i>\n\n<b>WHAT HAS NOT BEEN ESTABLISHED:</b>\n• No evidence yet for: Architecture / family, Reasoning, Coding, Math &amp; problem-solving, Context window, Output limit, Tool use &amp; agents, Speed &amp; latency, API pricing\n• Benchmark scores (none in the official sources)\n• Independent benchmark results\n<i>(1/2)</i>",
+    "<b>OFFICIAL SOURCES:</b>\n• Original announcement: not published yet (the release was found in the official docs)\n• Official documentation: <a href=\"https://developers.openai.com/api/docs/changelog.md\">OpenAI API changelog</a>\n• Model information / API page: <a href=\"https://developers.openai.com/api/docs/models/all.md\">OpenAI model catalog</a>\n\n<b>WHY THIS MATTERS:</b>\nFor creators and developers building real-time audio apps, this release reduces inference waste via standby mode while making multilingual conversational agents sound more natural. It also simplifies routing between the model and backend systems with plain-language delegation prompts.\n\n<b>💡 CONTENT OPPORTUNITIES</b>\n<i>Based on: GPT-Live-1.1</i>\n<blockquote expandable><b>A. NEWS: OpenAI Releases GPT-Live-1.1: Better Multilingual Voice and Standby Mode</b>\n<i>Angle:</i> Covering the new changelog release focusing on improved accent consistency, multilingual transcription, and standby capabilities.\n<i>Why it's interesting:</i> Real-time voice developers need to know about improvements to multilingual interactions and session cost optimizations.\n<i>Research or testing needed:</i> Test whether standby mode noticeably cuts down latency when resuming inference, and verify pronunciation quality across multiple languages.\n\n<b>B. EDUCATION: How to Build Real-Time Voice Agents with GPT-Live-1.1 and WebRTC Standby</b>\n<i>Angle:</i> A tutorial detailing session configuration, standby inference management, and plain-language backend delegation.\n<i>Why it's interesting:</i> Developers need practical guides to implement the new session features and optimize WebRTC voice setups.\n<i>Research or testing needed:</i> Document exact configurations for standby mode and test backend delegation triggers using natural language prompts.\n\n<b>C. ANALYSIS: GPT-Live-1.1 Multilingual Test: Did Pronunciation and Accents Actually Improve?</b>\n<i>Angle:</i> An experimental comparison testing speech quality, pronunciation accuracy, and multilingual transcription against GPT-Live-1.\n<i>Why it's interesting:</i> OpenAI claims targeted improvements in multilingual interactions, which creators must benchmark against real conversational audio.\n<i>Research or testing needed:</i> Run side-by-side audio tests in multiple non-English languages to evaluate accent stability and transcription error rates.\n\n<i>Ideas only. You decide what becomes a video or post.</i></blockquote>\n\n<b>VERIFICATION:</b>\nOFFICIAL CONFIRMED\n<i>not seen in any official catalog before; introduced by: OpenAI API changelog (changelog), OpenAI model catalog (listed)</i>\n<i>AI reading by gemini/gemini-flash-latest; 2 unsupported AI statements discarded</i>\n\n<b>DELIVERY:</b>\nPending Telegram confirmation.\n<i>(2/2)</i>"
+   ],
+   "priority": "P1",
+   "receipt": {
+    "at": "2026-11-19T22:22:21+00:00",
+    "message_id": 772,
+    "status": "SENT"
+   },
+   "release_id": "openai:gpt-live-1-1",
+   "sent_at": "2026-11-19T22:22:20+00:00",
+   "sent_parts": {
+    "0": {
+     "at": "2026-11-19T22:22:20+00:00",
+     "message_id": 770,
+     "telegram_date": 1795126940
+    },
+    "1": {
+     "at": "2026-11-19T22:22:20+00:00",
+     "message_id": 771,
+     "telegram_date": 1795126940
     }
    },
    "status": "SENT",
@@ -4912,6 +5470,20 @@
     },
     "status": "active"
    },
+   "genie-4": {
+    "first_seen": "2026-11-19T22:17:03+00:00",
+    "name": "Genie 4",
+    "sources": [
+     "Gemini API models",
+     "Gemini API model list"
+    ],
+    "specs": {
+     "context_tokens": 1048576,
+     "description": "Real-time audio-video generation model",
+     "max_output_tokens": 65536
+    },
+    "status": "active"
+   },
    "lyria-3-clip-preview": {
     "first_seen": "2026-11-16T22:18:58+00:00",
     "name": "Lyria 3 Clip Preview",
@@ -6242,6 +6814,20 @@
      "output_modalities": "audio, text"
     },
     "specs_checked": "2026-11-17T14:39:38+00:00",
+    "status": "active"
+   },
+   "gpt-live-1.1": {
+    "first_seen": "2026-11-19T22:17:03+00:00",
+    "name": "GPT-Live-1.1",
+    "sources": [
+     "OpenAI model catalog"
+    ],
+    "specs": {
+     "description": "Full-duplex voice model for multilingual conversations.",
+     "input_modalities": "audio, text",
+     "output_modalities": "audio, text"
+    },
+    "specs_checked": "2026-11-19T22:22:19+00:00",
     "status": "active"
    },
    "gpt-live-transcribe": {
@@ -8656,6 +9242,10 @@
      "h": "f255b5a72e91",
      "status": "active"
     },
+    "genie-4": {
+     "h": "bf7781f59100",
+     "status": "active"
+    },
     "lyria-3-clip-preview": {
      "h": "cd254538da6f",
      "status": "active"
@@ -8860,12 +9450,18 @@
     "gemini-robotics-er-2-preview": {
      "h": "6093bb863b65",
      "status": "active"
+    },
+    "genie-4": {
+     "h": "9bcf9230953a",
+     "status": "active"
     }
    }
   },
   "Gemini API release notes": {
    "initialized": true,
    "seen": [
+    "67df12c396732ed7",
+    "cb08cfcb99716a49",
     "c5b02517d5c1fae0",
     "291f057638e7569c",
     "7a9a123c6f5d0bb5",
@@ -9109,6 +9705,7 @@
   "Gemini app release notes": {
    "initialized": true,
    "seen": [
+    "ab1b4bc86b590aa4",
     "e1d45123a8af7840",
     "89b8347b7187c0e2",
     "46c34ea8001c487e",
@@ -9393,6 +9990,8 @@
   "Google Developers Blog": {
    "initialized": true,
    "seen": [
+    "57aae3fcbb818f47",
+    "68d7e4e7cf251261",
     "93e75ce8d95e55a0",
     "7716055afcc9ede1",
     "3feb3569ae69ecc9",
@@ -9421,6 +10020,8 @@
   "Google Gemini blog": {
    "initialized": true,
    "seen": [
+    "f633fe4c76408be8",
+    "60fb76fee2d6c18d",
     "87ca9113031db1aa",
     "0480a7cdc4520eff",
     "ff5db82a42298dab",
@@ -9591,6 +10192,7 @@
   "OpenAI API changelog": {
    "initialized": true,
    "seen": [
+    "5d36d9b6ca2337bd",
     "c98d9dc796bd5bfb",
     "324acda84bd1baaf",
     "11227c1a87ede4f7",
@@ -10104,6 +10706,10 @@
      "h": "f408787b89f2",
      "status": "active"
     },
+    "gpt-live-1.1": {
+     "h": "a3f760c7f11e",
+     "status": "active"
+    },
     "gpt-live-transcribe": {
      "h": "3d4213e45fd1",
      "status": "active"
@@ -10233,6 +10839,7 @@
   "OpenAI news": {
    "initialized": true,
    "seen": [
+    "017f90b8cd4e2547",
     "87696b8aabf3f121",
     "312d464ae9591112",
     "a503da2b08e3676c",
