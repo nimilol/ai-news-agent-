@@ -114,6 +114,12 @@
    "priority": "P3",
    "title": "Sabre Accelerates Agentic Travel Leadership with First-Mover Travel Experience within​ ​Grok Bot and Next-Gen Proactive Travel APIs - WebWire"
   },
+  "title:acceleration frontier jagged research": {
+   "at": "2026-11-19T03:40:14+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Research acceleration: The jagged frontier"
+  },
   "title:access ai broadening scientists": {
    "at": "2026-11-16T22:19:08+00:00",
    "channel": "alerts",
@@ -185,6 +191,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "An underrated way to use ChatGPT: Life admin"
+  },
+  "title:adopt chatgpt enterprise helped leaders life sumitomo teams": {
+   "at": "2026-11-19T03:40:14+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise"
   },
   "title:advancing agents computer-use healthcare teams": {
    "at": "2026-11-16T22:19:08+00:00",
@@ -293,6 +305,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "Anthropic IPO set to redraw venture capital’s power rankings - Financial Times"
+  },
+  "title:anthropic initial offering prices public": {
+   "at": "2026-11-19T03:40:14+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Anthropic prices initial public offering"
   },
   "title:anyone asks before dots extras get holiday work": {
    "at": "2026-11-16T22:19:08+00:00",
@@ -408,6 +426,12 @@
    "priority": "P2",
    "title": "The Silent Consensus"
   },
+  "title:deprecations endpoint feature openai": {
+   "at": "2026-11-19T03:40:14+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "OpenAI deprecations: Feature and endpoint deprecations"
+  },
   "title:flash free hy4 lists model opencode zero-cost": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
@@ -461,6 +485,12 @@
    "channel": "release",
    "priority": "P0",
    "title": "Gemini 4 Neon"
+  },
+  "url:https://anthropic.com/news/anthropic-prices-initial-public-offering": {
+   "at": "2026-11-19T03:40:14+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Anthropic prices initial public offering"
   },
   "url:https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon": {
    "at": "2026-11-18T22:10:43+00:00",
@@ -1258,6 +1288,12 @@
    "priority": "P2",
    "title": "How Revolut raises ambition without lowering the bar"
   },
+  "url:https://openai.com/business/customer-stories/sumitomo-life": {
+   "at": "2026-11-19T03:40:14+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise"
+  },
   "url:https://openai.com/index/advancing-chip-design-with-our-models": {
    "at": "2026-11-18T22:10:54+00:00",
    "channel": "alerts",
@@ -1329,6 +1365,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "OpenAI begins embedded safety evaluations with external research labs"
+  },
+  "url:https://openai.com/index/research-acceleration-jagged-frontier": {
+   "at": "2026-11-19T03:40:14+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Research acceleration: The jagged frontier"
   },
   "url:https://openai.com/index/science-at-the-frontier": {
    "at": "2026-11-16T22:19:08+00:00",
@@ -1407,6 +1449,12 @@
    "channel": "digest",
    "priority": "P0",
    "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol models"
+  },
+  "url:https://platform.openai.com/docs/deprecations": {
+   "at": "2026-11-19T03:40:14+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "OpenAI deprecations: Feature and endpoint deprecations"
   },
   "url:https://platform.openai.com/docs/models": {
    "at": "2026-11-17T20:58:16+00:00",

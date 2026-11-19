@@ -220,7 +220,7 @@
      "Introduces four scalable thinking levels (low, medium, default high, and xhigh) to control intelligence and token spend."
     ]
    },
-   "duplicates": 0,
+   "duplicates": 1,
    "events": [
     {
      "at": "2026-11-18T14:16:23+00:00",
@@ -231,6 +231,11 @@
      "at": "2026-11-18T22:10:42+00:00",
      "note": "UNCONFIRMED → OFFICIAL_CONFIRMED",
      "type": "confirmed"
+    },
+    {
+     "at": "2026-11-19T03:40:07+00:00",
+     "note": "models.dev listings (early signal); TestingCatalog (early signal)",
+     "type": "duplicate"
     }
    ],
    "fingerprints": [
@@ -243,7 +248,7 @@
    ],
    "first_detected": "2026-11-18T14:16:23+00:00",
    "id": "google:gemini-4-neon",
-   "last_updated": "2026-11-18T22:10:43+00:00",
+   "last_updated": "2026-11-19T03:40:07+00:00",
    "model_ids": [
     "gemini-4-neon"
    ],
@@ -7787,6 +7792,7 @@
   "Anthropic news": {
    "initialized": true,
    "seen": [
+    "8898e6f37647566e",
     "68da069bce5aee47",
     "30ad240e2a442630",
     "8c1a251afa0c341b",
@@ -9585,6 +9591,9 @@
   "OpenAI API changelog": {
    "initialized": true,
    "seen": [
+    "c98d9dc796bd5bfb",
+    "324acda84bd1baaf",
+    "11227c1a87ede4f7",
     "fda539efe8c50bef",
     "dcbc84eb4767a216",
     "816df30f2d12a363",
@@ -10224,6 +10233,8 @@
   "OpenAI news": {
    "initialized": true,
    "seen": [
+    "87696b8aabf3f121",
+    "312d464ae9591112",
     "a503da2b08e3676c",
     "a9a1bc7d1ebd9115",
     "c8ac8f2bd8c9006d",
@@ -11865,6 +11876,7 @@
   "TestingCatalog (early signal)": {
    "initialized": true,
    "seen": [
+    "33c09688ed95513e",
     "7595b89419bd9d11",
     "3f1a0056d7aac62e",
     "883b689bc385c548",
@@ -11902,6 +11914,7 @@
   "models.dev listings (early signal)": {
    "initialized": true,
    "seen": [
+    "google/gemini-4-neon",
     "openai/gpt-6.2-sol",
     "openai/gpt-6.2-astra",
     "anthropic/claude-opus-4-5-20251101",
