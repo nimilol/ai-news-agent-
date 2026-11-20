@@ -780,6 +780,11 @@
    "channel": "discovery",
    "title": "amontlabs/lcu"
   },
+  "url:https://github.com/andyhuo520/digital-human-koubo": {
+   "at": "2026-11-20T20:40:57+00:00",
+   "channel": "discovery",
+   "title": "andyhuo520/digital-human-koubo"
+  },
   "url:https://github.com/anthropics/claude-code/releases/tag/v2.1.326": {
    "at": "2026-11-17T07:57:43+00:00",
    "channel": "digest",
@@ -828,6 +833,11 @@
    "channel": "discovery",
    "title": "bytedance/deer-flow"
   },
+  "url:https://github.com/can4hou6joeng4/boss-agent-cli": {
+   "at": "2026-11-20T20:40:57+00:00",
+   "channel": "discovery",
+   "title": "can4hou6joeng4/boss-agent-cli"
+  },
   "url:https://github.com/cathrynlavery/diagram-design": {
    "at": "2026-11-19T12:01:00+00:00",
    "channel": "discovery",
@@ -863,6 +873,16 @@
    "channel": "discovery",
    "title": "DenisSergeevitch/ex-ussr-kinship-research"
   },
+  "url:https://github.com/doobidoo/mcp-memory-service": {
+   "at": "2026-11-20T20:40:57+00:00",
+   "channel": "discovery",
+   "title": "doobidoo/mcp-memory-service"
+  },
+  "url:https://github.com/dzhng/jevgrep": {
+   "at": "2026-11-20T20:40:57+00:00",
+   "channel": "discovery",
+   "title": "dzhng/jevgrep"
+  },
   "url:https://github.com/ebony-vinyl/eac-design-world": {
    "at": "2026-11-20T12:00:37+00:00",
    "channel": "discovery",
@@ -887,6 +907,11 @@
    "at": "2026-11-17T08:15:30+00:00",
    "channel": "discovery",
    "title": "elementalsouls/Claude-BugHunter"
+  },
+  "url:https://github.com/ericjujianzou/rederive": {
+   "at": "2026-11-20T20:40:57+00:00",
+   "channel": "discovery",
+   "title": "EricJujianZou/rederive"
   },
   "url:https://github.com/erkamyaman/rust-anything": {
    "at": "2026-11-19T20:54:44+00:00",
@@ -942,6 +967,11 @@
    "at": "2026-11-16T23:48:27+00:00",
    "channel": "discovery",
    "title": "huggingface/pybot"
+  },
+  "url:https://github.com/ibm/assetopsbench": {
+   "at": "2026-11-20T20:40:57+00:00",
+   "channel": "discovery",
+   "title": "IBM/AssetOpsBench"
   },
   "url:https://github.com/jakeschincariol/day-trader-skill": {
    "at": "2026-11-19T02:46:27+00:00",
@@ -1078,6 +1108,11 @@
    "channel": "discovery",
    "title": "Oldcircle/geo-sleuth"
   },
+  "url:https://github.com/oomol-lab/open-connector": {
+   "at": "2026-11-20T20:40:57+00:00",
+   "channel": "discovery",
+   "title": "oomol-lab/open-connector"
+  },
   "url:https://github.com/openai/codex/releases/tag/rust-v0.169.1": {
    "at": "2026-11-18T07:29:18+00:00",
    "channel": "digest",
@@ -1159,6 +1194,11 @@
    "at": "2026-11-17T18:43:32+00:00",
    "channel": "discovery",
    "title": "Tencent/LoopForge"
+  },
+  "url:https://github.com/test-zeus-ai/testzeus-hercules": {
+   "at": "2026-11-20T20:40:57+00:00",
+   "channel": "discovery",
+   "title": "test-zeus-ai/testzeus-hercules"
   },
   "url:https://github.com/vapi-network/vapi-network": {
    "at": "2026-11-19T20:54:44+00:00",
