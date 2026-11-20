@@ -204,6 +204,12 @@
    "priority": "P1",
    "title": "xAI deploys Grok Bot teams for end-to-end accounting processes at SpaceXSI"
   },
+  "title:action pr scans see": {
+   "at": "2026-11-20T03:31:17+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "See PR scans in action"
+  },
   "title:actions against california file legal major openai oregon": {
    "at": "2026-11-17T20:58:16+00:00",
    "channel": "digest",
@@ -444,6 +450,12 @@
    "priority": "P1",
    "title": "OpenAI begins embedded safety evaluations with external research labs"
   },
+  "title:blue daybreak get started": {
+   "at": "2026-11-20T03:31:17+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Get started with Daybreak Blue"
+  },
   "title:bot can corporate elon expenses grok help millions musk save traders union": {
    "at": "2026-11-18T07:29:18+00:00",
    "channel": "digest",
@@ -492,6 +504,12 @@
    "priority": "P1",
    "title": "Study Finds Claude Models Trained on Protein Sequences"
   },
+  "title:codex explore plugin security": {
+   "at": "2026-11-20T03:31:17+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Explore the Codex Security Plugin"
+  },
   "title:codex inside sandbox": {
    "at": "2026-11-18T22:10:54+00:00",
    "channel": "alerts",
@@ -503,6 +521,12 @@
    "channel": "alerts",
    "priority": "P2",
    "title": "The Silent Consensus"
+  },
+  "title:daybreak deploying red": {
+   "at": "2026-11-20T03:31:17+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Deploying Daybreak Red"
   },
   "title:deprecations endpoint feature openai": {
    "at": "2026-11-19T03:40:14+00:00",
@@ -1671,6 +1695,30 @@
    "channel": "alerts",
    "priority": "P2",
    "title": "How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise"
+  },
+  "url:https://openai.com/business/learn/codex-security-plugin-demo": {
+   "at": "2026-11-20T03:31:17+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Explore the Codex Security Plugin"
+  },
+  "url:https://openai.com/business/learn/daybreak-blue-onboarding-demo": {
+   "at": "2026-11-20T03:31:17+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Get started with Daybreak Blue"
+  },
+  "url:https://openai.com/business/learn/deploying-daybreak-red": {
+   "at": "2026-11-20T03:31:17+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Deploying Daybreak Red"
+  },
+  "url:https://openai.com/business/learn/pr-scans-demo": {
+   "at": "2026-11-20T03:31:17+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "See PR scans in action"
   },
   "url:https://openai.com/index/advancing-chip-design-with-our-models": {
    "at": "2026-11-18T22:10:54+00:00",
