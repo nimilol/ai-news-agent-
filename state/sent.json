@@ -60,6 +60,12 @@
    "priority": "P3",
    "title": "Kimi vs DeepSeek vs Qwen vs GLM: 4 Ranked, 1 Wins [2026] - shattered.io"
   },
+  "title:1.5 81.3 anthropic completes ipo nasdaq record valuation": {
+   "at": "2026-11-20T07:17:37+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic completes record $81.3 B IPO on Nasdaq at $1.5 T valuation"
+  },
   "title:1.7 ai anthropic bets bloomberg crypto despite imply rout trillion value": {
    "at": "2026-11-18T07:29:18+00:00",
    "channel": "digest",
@@ -198,6 +204,12 @@
    "priority": "P3",
    "title": "Grok Bot as Corporate Expense Manager: How It Works - BASENOR - Tesla Accessories"
   },
+  "title:accounting adds bots five full-time grok spacexsi team": {
+   "at": "2026-11-20T07:17:37+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "SpaceXSI adds five full-time Grok bots to its accounting team"
+  },
   "title:accounting bot deploys end-to-end grok processes spacexsi teams xai": {
    "at": "2026-11-17T20:58:16+00:00",
    "channel": "digest",
@@ -252,6 +264,12 @@
    "priority": "P2",
    "title": "Claude Code Adds Experimental Code Mode and Tool Guards"
   },
+  "title:adds claude code loops task trust v2.1.329 warnings": {
+   "at": "2026-11-20T07:17:37+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Claude Code v2.1.329 adds trust warnings and task loops"
+  },
   "title:admin chatgpt life underrated use way": {
    "at": "2026-11-18T07:29:18+00:00",
    "channel": "digest",
@@ -288,6 +306,12 @@
    "priority": "P3",
    "title": "SpaceX vs. Anthropic: Here’s Which Mega-IPO Stock I’d Buy After Anthropic Goes Public. - Yahoo Finance"
   },
+  "title:after business chatgpt hub legal openai revises scrutiny terms": {
+   "at": "2026-11-20T07:17:37+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "OpenAI revises ChatGPT Business Hub terms after legal scrutiny"
+  },
   "title:ag agent california hacking incidents openai over rogue sues": {
    "at": "2026-11-17T07:57:43+00:00",
    "channel": "digest",
@@ -299,6 +323,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "California Attorney General sues OpenAI over rogue agent hacking incidents"
+  },
+  "title:agent email independently internal openai plans surveillance unauthorized": {
+   "at": "2026-11-20T07:17:37+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI internal agent independently plans unauthorized email surveillance"
   },
   "title:agents coding external sandboxes": {
    "at": "2026-11-18T07:29:18+00:00",
@@ -395,6 +425,12 @@
    "channel": "alerts",
    "priority": "P2",
    "title": "Claude API pricing: Cloud platform pricing"
+  },
+  "title:api deprecation openai pricing timelines updates": {
+   "at": "2026-11-20T07:17:37+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "OpenAI updates API pricing and deprecation timelines"
   },
   "title:approved current effingham openai plan site": {
    "at": "2026-11-18T07:29:18+00:00",
@@ -600,6 +636,12 @@
    "priority": "P1",
    "title": "Genie 4"
   },
+  "url:https://aljazeera.com/economy/2026/11/20/asias-stock-markets-dive-as-anthropic-debut-fails-to-allay-ai-bubble-fears": {
+   "at": "2026-11-20T07:17:37+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic completes record $81.3 B IPO on Nasdaq at $1.5 T valuation"
+  },
   "url:https://anthropic.com/news/anthropic-prices-initial-public-offering": {
    "at": "2026-11-19T07:27:18+00:00",
    "channel": "digest",
@@ -660,6 +702,12 @@
    "priority": "P1",
    "title": "GPT-Live-1.1"
   },
+  "url:https://digiday.com/media/openai-rewrites-chatgpt-business-hub-terms-after-legal-language-raises-concerns": {
+   "at": "2026-11-20T07:17:37+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "OpenAI revises ChatGPT Business Hub terms after legal scrutiny"
+  },
   "url:https://eweek.com/news/gao-chatgpt-claude-gemini-grok-attack-guidance": {
    "at": "2026-11-19T20:39:31+00:00",
    "channel": "digest",
@@ -671,6 +719,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "SpaceX vs. Anthropic: Here’s Which Mega-IPO Stock I’d Buy After Anthropic Goes Public. - Yahoo Finance"
+  },
+  "url:https://finance.yahoo.com/technology/ai/articles/elon-musk-says-grok-accounting-043007297.html": {
+   "at": "2026-11-20T07:17:37+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "SpaceXSI adds five full-time Grok bots to its accounting team"
   },
   "url:https://ft.com/content/a3430f0d-0080-4970-8eec-2c14c8438b3d": {
    "at": "2026-11-18T07:29:18+00:00",
@@ -725,6 +779,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "v2.1.327"
+  },
+  "url:https://github.com/anthropics/claude-code/releases/tag/v2.1.329": {
+   "at": "2026-11-20T07:17:37+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Claude Code v2.1.329 adds trust warnings and task loops"
   },
   "url:https://github.com/anthropics/flashprove": {
    "at": "2026-11-16T23:48:27+00:00",
@@ -1068,6 +1128,12 @@
    "channel": "discovery",
    "title": "fforster/gitlab-mcp"
   },
+  "url:https://hollywoodreporter.com/news/general-news/ashton-kutcher-billionaire-anthropic-ipo-1236759822": {
+   "at": "2026-11-20T07:17:37+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic completes record $81.3 B IPO on Nasdaq at $1.5 T valuation"
+  },
   "url:https://huggingface.co/datasets/llamaindex/parsebench-2": {
    "at": "2026-11-18T20:50:39+00:00",
    "channel": "discovery",
@@ -1107,6 +1173,12 @@
    "at": "2026-11-17T18:43:32+00:00",
    "channel": "discovery",
    "title": "Zyphra/ZONOS3-Mini"
+  },
+  "url:https://latent.space/p/ainews-anthropic-successfully-completes-largest-ipo-in-history-valued-at-1-5t": {
+   "at": "2026-11-20T07:17:37+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic completes record $81.3 B IPO on Nasdaq at $1.5 T valuation"
   },
   "url:https://models.dev/": {
    "at": "2026-11-19T07:27:18+00:00",
@@ -1180,17 +1252,41 @@
    "priority": "P2",
    "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
   },
+  "url:https://news.google.com/rss/articles/cbmickfvx3lxtfbzoefpti1iumxawvoyvm5zuwnurm14dxa2muozdfnbny1bsdlwy0tdekwzue96mfjtuhd5rhbmngm1b29fc3j3vkxqbdhqvgnnaxa1bkhozti1b1h4ckhhm2jiztrkrdbwafpqdtg5nkjaz9ibd0fvx3lxtfa2ctbdslrpdgv5ekoyrelpluv1tdrimwtguy04nmgxdxrfc0xqwghjcl8wys01ekvhegk1tzg1blf1ruldnzdyewjusjfhrjnsmkhpcmfxndjvoufpnwxnazv4vxrxetq4y3v6tuterhgyakzuuefr": {
+   "at": "2026-11-20T07:17:37+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic completes record $81.3 B IPO on Nasdaq at $1.5 T valuation"
+  },
   "url:https://news.google.com/rss/articles/cbmid0fvx3lxte5fn2zowvz6ykv0emdtawu3mglktzhwcfngrl9pyxn2d2kwcnrozw9hs0luwlp4clhwsxk3eexteeljd1n4sklrz3ltvkdruzrcze9sufpoadfyytnya19kthnzszvkaev0rxl5ymjwqk9nrnrxr08w0gf8qvvfexfmtlzsnhk0mjhxnte4mvdny1m5clbuykjkx1zonlrrzexmbf9leu5jn3jswk83zkc1quvunlzcrdvfeexrqw1zuulweve0nvvvvgj1metuywfhsvnxx2i5bglfb0lcszlkaexmexnnsvpfltdpu0ozn0vptmdxna": {
    "at": "2026-11-18T20:33:37+00:00",
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic Finalizes Pricing for Blockbuster IPO Amid High Demand"
   },
+  "url:https://news.google.com/rss/articles/cbmid0fvx3lxtfbpvdhkb3heegntukqzahdotglpwwd3v3vlew9waedhvgver1ktzk9iswrfs2ljqvjyu19abvh0unjiafu5ynruumwwoho1ng9hae9quhfjxy1vcut2n1czsxa4awcwqtbrvxbynhbltku2ntiwbw5z0gf8qvvfexfmt2hoajr1zljzb1nvx0lmqul2uuw1renlexrubnu5czezmvvynnu4tfy1depvm09ovwjvcnjnwwk0mwm2ownvxznyajhac2r2tkm1zjdnehrqtlptr2v4wffwovhwvjzvndnongo2vg5nsvjamkznnglqrm8xug": {
+   "at": "2026-11-20T07:17:37+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic completes record $81.3 B IPO on Nasdaq at $1.5 T valuation"
+  },
+  "url:https://news.google.com/rss/articles/cbmidefvx3lxte1deg9qvgitc0nmqmtguznfrlzyn0xkrlm4vvvpvzzecen1s09tcmhdn2liwkjwoxnfsvpeevjaa0laywvurgfnz3dtlwlrcex1cmpnsgzdque4bldkrdy5wnfpdthndc1xvuswtjjvxzkweuiy": {
+   "at": "2026-11-20T07:17:37+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic completes record $81.3 B IPO on Nasdaq at $1.5 T valuation"
+  },
   "url:https://news.google.com/rss/articles/cbmidefvx3lxtfbasepysejvdke1yuztn3ftvfnfu1jirwvytnk4quj2t0tivjjtzjl2duzwsgvbs0ralwpveu1jr0zong5tr0rpqnpuoglnz1jbqmxfb0tzugc0rucyn1ddtdniqtdkmdbluez0cknlsdzitvff": {
    "at": "2026-11-19T07:27:18+00:00",
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic prices initial public offering at $83 per share"
+  },
+  "url:https://news.google.com/rss/articles/cbmidkfvx3lxte45btr3zzh2oenusmxiywhgsmf6qwh2q2jsbm5kzldsy0pequktevnqvtfwswvrevvwcez2bddjbtryexndnmrvmxf6ndnqckxnmhayay05ukh4enrndg1joxjoqvf5b01iwg10cwffohbsvwlwbve": {
+   "at": "2026-11-20T07:17:37+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic completes record $81.3 B IPO on Nasdaq at $1.5 T valuation"
   },
   "url:https://news.google.com/rss/articles/cbmie0fvx3lxte45zv9azupntgl2cujrtez3szr5a2zjcw42vurgbelxz1b1tutise4zexhevlftww11ajjpv2fsnzncm0lrylbwrepxmursuwjgulppbtdnbupjdxnuvu1yq3vflw1wam5kndvzq1o1cde2bvg0uufwewe3vq": {
    "at": "2026-11-19T07:27:18+00:00",
@@ -1221,6 +1317,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic hits Nasdaq in largest IPO in history at $2T valuation"
+  },
+  "url:https://news.google.com/rss/articles/cbmifefvx3lxte16buu5s2zdslz3agzmnffjajdwqlpjuwnnbfndvkpzx3lrr3k1azqybwvnvtzntlplvu9xtxlrttr1bflyofhqbjhhnupfsmnhdxuwa2ngahdozdfrrc1stmjuewx0skpmamkxn21ix1uwzhnvruztufbxeno": {
+   "at": "2026-11-20T07:17:37+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic completes record $81.3 B IPO on Nasdaq at $1.5 T valuation"
   },
   "url:https://news.google.com/rss/articles/cbmifefvx3lxte1nq3jieuuxqkdyelmxelhauudmatflstfva2pnr2fhy08wbxdmt01jvk56auvhrgtqrufhc1j2sfr0cep4thbgc3m3aghlale3muleb3dqbelfrezhylvjemrowdrvrm51qxviakzkm2pmzi03by1hui1fn04": {
    "at": "2026-11-18T20:33:37+00:00",
@@ -1258,6 +1360,12 @@
    "priority": "P2",
    "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
   },
+  "url:https://news.google.com/rss/articles/cbmigafbvv95cuxqyznwbdzmakzjthnpzmrjotftv0fpand6yzjlz182zxg2u0peszczyjvrof9neg1sadjrcexbagnxntkxckvtekndsziteljvrl9vy2xqbmrxnu1ss3ncdvhfumtkztrzu1rewlzvme55snv0vgnsmdnpml9fm19vbq": {
+   "at": "2026-11-20T07:17:37+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic completes record $81.3 B IPO on Nasdaq at $1.5 T valuation"
+  },
   "url:https://news.google.com/rss/articles/cbmiggfbvv95cuxncxrwahdowjzeow4zb0dyc3vxdutpd0pdve03rkrfsfhnykjvdu5qtudntgzmzfzisu1venfpvkw4dgtxthnga1dyai1owde0q3btogiyqi1tqtlaeutbwxfsd3nowjkyczg5wvzwukvntmlucfrgbnnuvzj4ymfxvul3": {
    "at": "2026-11-18T07:29:18+00:00",
    "channel": "digest",
@@ -1293,6 +1401,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "Scoop: Democrats probe DOJ's role in OpenAI copyright fight - Axios"
+  },
+  "url:https://news.google.com/rss/articles/cbmiiafbvv95cuxncwfrmhvmwfrorex5em8wywddz2pvuk9nlv9ozs10bjzcvve4nmd3bet3zfzhzufsdju3s3rwmthtzzvssuy5ted4rlywbgp0dvrzx3dtogvjtvlvnwgxego5b0i2ag92ztnmttb3szffx2s5anzdtfztbgpteddny2jtakfkthdd": {
+   "at": "2026-11-20T07:17:37+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic completes record $81.3 B IPO on Nasdaq at $1.5 T valuation"
   },
   "url:https://news.google.com/rss/articles/cbmiiafbvv95cuxnevvmszl3dvbhbddfbtmttul2lwvhu1frb2hvyzjznwdfu0zdtmu3nfbvndvwqxnxqlk2qmkzbln4mupllwvgc1nhehnrzvpzthz1eg9ome53suntoexjqznfstjpluw0cwxnsjr4vwlxlwzhzuzsc0dna1j6bmxzttnbb0l2lupq": {
    "at": "2026-11-19T07:27:18+00:00",
@@ -1606,6 +1720,12 @@
    "priority": "P2",
    "title": "Zhipu Shares Crash Amid US Chip Curbs and Content Trimming"
   },
+  "url:https://news.google.com/rss/articles/cbmiswfbvv95cuxqavm0ams5zktgweryuzfcuza0rv9qq1dvatmxsuxwckc5ajhvyzn3m1hhdndzttzmbghlr0h1qmn5bzlbshjzanj2u0psnznwb3vvs0uzyjduzje1b3r2sugtxzlztxptt0txnnduqkpnnu9rzm1av2e4bm1srzfumtjuunl5v3viqtlkyzm4rjjqqutquzvkvddflultqvfkawdnwgzhtjm1zxpqmlhbovvaz9ibuafbvv95cuxozdgwuxlys0rfagntvhrobkcxces5whrjswtuaezmnu9gvvcxnxfom3fpckk3nhhhzudxymkxyzdem0w5d29qqnveuzvvdkh5qnlisf9jeepnte9zx01lnnm3mza1slfxu2teqmvedejiv3rqsgzzvmutswh2vevyb3ruclzonff6rlzzegoxue04unzrek1juwlqzgfqymfvr2hkx3n6ngg1bmxkqnrnv0rmcxzjbhbj": {
+   "at": "2026-11-20T07:17:37+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic completes record $81.3 B IPO on Nasdaq at $1.5 T valuation"
+  },
   "url:https://news.google.com/rss/articles/cbmitafbvv95cuxochdhb0tmcg13ejvvwmnks2g0ztfmwjcwy2ncahn2dzvvof9oukdqadzqaexqdu9fotndahf3wghxogews2powuv6zf9oz1atsefksxldrnczsvnnsi1omedtekhiemriu1axbevvqzlwcertwents3nic0jxnwpjugl3efjxsljiz3bmnllkafralwdkcm55c1fqmk1omw00twjyvnp1rg1hunniek4wyuytu1e": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
@@ -1642,6 +1762,12 @@
    "priority": "P2",
    "title": "Anthropic IPO price expected to price at top of range or above amid high demand"
   },
+  "url:https://news.google.com/rss/articles/cbmiuwfbvv95cuxncvk2clruvfzntgjtcg1qowptrmlsqmrjtxdovfhimgq1cu1idu5rtvfqovhob2nmqxyywlvteehpu2n2cek5d0pjslhic2nsahj2m0v1b3n2ww9balfiz3vnqnpuy1vkv3fwd1pkmww0n1fnrlnpzmdxrfvudkhgoha5ohnsvzbpwnrwawnntmrtnfbqqtvksef1wndcevhnsmz3s1zcvzbtcdbwsk9vs3vitny5uthfahfz": {
+   "at": "2026-11-20T07:17:37+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic completes record $81.3 B IPO on Nasdaq at $1.5 T valuation"
+  },
   "url:https://news.google.com/rss/articles/cbmiuwfbvv95cuxps3jntjz1qkdumehpn0oxedrem0voc2ixm2dvafbqae0xqkpsatjlwtc2tkzls3lucvnmourblwpwcfezsxvlejvraergc1pzefzjt1iteg9psgtvqlhkre1ooc1yvjvmtvi2bgdpb3fvceztaelxdms4mnlxqu9udzlmvmvbyy1qwxz2auxbweq4umxynms0mwtwamdoefpgtzz5wxuxwuc1vfriotvlyklmmmuwvketrfaw": {
    "at": "2026-11-17T20:58:16+00:00",
    "channel": "digest",
@@ -1665,6 +1791,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic hits Nasdaq in largest IPO in history at $2T valuation"
+  },
+  "url:https://news.google.com/rss/articles/cbmixwfbvv95cuxor1hiug5qcxvkueryxzhlu0vrtfpiwkjvsvlmedm1wlpwdmk2tedtduvfogg1ngmwevhpmwlqx2viytbxu0fwv1plztbsu1blywtrogdsdxlpajffajhvedhwa2z3mxvvovjryme0ruv3bvfkamn0zlc5vmf1ak5cenlwwlg5yljfbdu0tmy2qwpjbw1lsw9yc2druxhwludmowi4mww0qk94sefxdw9ssl9hqko4wlzzbmvotzfsclp1dutrzejr": {
+   "at": "2026-11-20T07:17:37+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic completes record $81.3 B IPO on Nasdaq at $1.5 T valuation"
   },
   "url:https://news.google.com/rss/articles/cbmiygfbvv95cuxqmzhvtfyxa3ayugjgvfjncfjycuxbrxdowjdnqv8xrkt0afvocmxtcnrpnndxndhzovdns3e5qzdptdlps2divg44u3zisk1vz0foamv2t0jfoxdtowvhbjl4aedqdeezethwa01lnljhm2y1zhldueg0otnpeunns2lnndkys1hkdxzfm2ppcjhmrgrbmmdpuvkwswhqdldrd3o1nmrgmnfqmzlxbg1yddm4shjoel9zs19mm28tmxpky0njvgq5wunb": {
    "at": "2026-11-19T20:39:31+00:00",
@@ -1895,10 +2027,10 @@
    "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol models"
   },
   "url:https://platform.openai.com/docs/pricing": {
-   "at": "2026-11-19T20:39:31+00:00",
+   "at": "2026-11-20T07:17:37+00:00",
    "channel": "digest",
-   "priority": "P1",
-   "title": "OpenAI rolls out Live Dictation and releases GPT-Live-1.1"
+   "priority": "P2",
+   "title": "OpenAI updates API pricing and deprecation timelines"
   },
   "url:https://reddit.com/r/anthropic/comments/1xxnnbj/anthropic_founders_plan_ipo_share_sales_worth": {
    "at": "2026-11-16T22:02:32+00:00",
@@ -2026,6 +2158,12 @@
    "priority": "P1",
    "title": "Anthropic hits Nasdaq in largest IPO in history at $2T valuation"
   },
+  "url:https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo": {
+   "at": "2026-11-20T07:17:37+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic completes record $81.3 B IPO on Nasdaq at $1.5 T valuation"
+  },
   "url:https://techcrunch.com/2026/11/19/anthropics-ipo-could-deliver-156-billion-to-charity": {
    "at": "2026-11-19T20:39:31+00:00",
    "channel": "digest",
@@ -2061,6 +2199,12 @@
    "channel": "digest",
    "priority": "P0",
    "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol models"
+  },
+  "url:https://the-decoder.com/an-openai-agent-assigned-a-simple-writing-task-decided-on-its-own-to-build-a-secret-email-surveillance-tool": {
+   "at": "2026-11-20T07:17:37+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI internal agent independently plans unauthorized email surveillance"
   },
   "url:https://the-decoder.com/anthropics-81-3-billion-ipo-shatters-spacexs-record-as-rising-rates-and-political-headwinds-shake-the-sector": {
    "at": "2026-11-19T20:39:31+00:00",
@@ -2153,10 +2297,10 @@
    "title": "Anthropic hits Nasdaq in largest IPO in history at $2T valuation"
   },
   "url:https://youtube.com/watch": {
-   "at": "2026-11-19T20:39:31+00:00",
+   "at": "2026-11-20T07:17:37+00:00",
    "channel": "digest",
    "priority": "P1",
-   "title": "Anthropic hits Nasdaq in largest IPO in history at $2T valuation"
+   "title": "Anthropic completes record $81.3 B IPO on Nasdaq at $1.5 T valuation"
   },
   "url:https://zerohedge.com/political/anthropic-paid-rubios-ex-chief-staffs-firm-740000-after-jensen-memo-it-lobbied-his-nsc": {
    "at": "2026-11-18T07:29:18+00:00",
