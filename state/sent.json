@@ -240,6 +240,12 @@
    "priority": "P3",
    "title": "New free model added to OpenCode: Tidepool Alpha Free"
   },
+  "title:additional announces anthropic closing concurrent exercise full including initial offering option placement private public purchase shares underwriters": {
+   "at": "2026-11-20T13:11:42+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ option to purchase additional shares, and closing of concurrent"
+  },
   "title:adds anthropic channel claude desktop option release": {
    "at": "2026-11-17T20:58:16+00:00",
    "channel": "digest",
@@ -647,6 +653,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic prices initial public offering at $83 per share"
+  },
+  "url:https://anthropic.com/news/ipo-close": {
+   "at": "2026-11-20T13:11:42+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ option to purchase additional shares, and closing of concurrent"
   },
   "url:https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon": {
    "at": "2026-11-18T22:10:43+00:00",
