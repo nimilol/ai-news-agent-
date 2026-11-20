@@ -1,6 +1,17 @@
 {
  "changes": [
   {
+   "at": "2026-11-20T21:18:24+00:00",
+   "category": "DOCUMENTATION_OR_PRICING_CHANGE",
+   "company": "xai",
+   "model": "grok-build-0.1",
+   "sources": [
+    "xAI API release notes",
+    "xAI models and pricing"
+   ],
+   "title": "grok-build-0.1 end of life"
+  },
+  {
    "at": "2026-11-18T04:33:03+00:00",
    "category": "PRODUCT_OR_FEATURE_ANNOUNCEMENT",
    "company": "google",
@@ -577,25 +588,133 @@
    "verification": "OFFICIAL_CONFIRMED"
   },
   "openai:gpt-6": {
-   "announcement_date": null,
+   "announcement_date": "2026-11-20",
    "availability_date": null,
-   "availability_status": null,
-   "classification": "UNCONFIRMED_EARLY_SIGNAL",
+   "availability_status": "prerelease build",
+   "classification": "NEW_MODEL_RELEASE",
    "company": "openai",
-   "comparison_summary": "OpenAI launches GPT-6.2 Astra and Sol on ChatGPT and APIs",
+   "comparison_summary": "compared with GPT-5.5",
    "delivery": {
-    "attempts": 0,
+    "attempts": 1,
     "last_error": null,
-    "message_ids": [],
-    "notification": null,
-    "sent_at": null,
-    "status": "NOT_SENT"
+    "message_ids": [
+     804
+    ],
+    "notification": "openai:gpt-6|review|91db9bd4d7",
+    "sent_at": "2026-11-20T21:18:24+00:00",
+    "status": "SENT"
    },
    "details": {
-    "reasons": [
-     "only third-party sources so far: TestingCatalog (early signal)"
+    "ai_model": "gemini/gemini-flash-lite-latest",
+    "api_access": "Not stated in the official sources",
+    "benchmarks": [
+     {
+      "name": "citing the required types of sources",
+      "new": "13.6 percentage points above the best alternative tested",
+      "previous": "",
+      "quote": "It scored 13.6 percentage points above the best alternative tested on citing the required types of sources",
+      "source": 1
+     },
+     {
+      "name": "relevant excerpts cited",
+      "new": "99.5%",
+      "previous": "",
+      "quote": "while 99.5% of the excerpts it cited were relevant to the question.",
+      "source": 1
+     },
+     {
+      "name": "applicable presentation requirements met",
+      "new": "97.9%",
+      "previous": "",
+      "quote": "It met 97.9% of the applicable presentation requirements, putting it 14.4 percentage points ahead of the best alternative tested on that measure.",
+      "source": 1
+     }
     ],
-    "text": "OpenAI launches GPT-6.2 Astra and Sol in ChatGPT Work, Codex and the API, with Astra beating GPT-6 Astra at lower cost and 20% cheaper tokens."
+    "claims": [
+     {
+      "quote": "It scored 13.6 percentage points above the best alternative tested on citing the required types of sources, while 99.5% of the excerpts it cited were relevant to the question.",
+      "source": 1,
+      "text": "GPT-6 Astra scored 13.6 percentage points above the best alternative tested on citing the required types of sources."
+     },
+     {
+      "quote": "while 99.5% of the excerpts it cited were relevant to the question.",
+      "source": 1,
+      "text": "99.5% of the excerpts cited by GPT-6 Astra were relevant to the question."
+     },
+     {
+      "quote": "It met 97.9% of the applicable presentation requirements, putting it 14.4 percentage points ahead of the best alternative tested on that measure.",
+      "source": 1,
+      "text": "GPT-6 Astra met 97.9% of the applicable presentation requirements in Hebbia's tests."
+     }
+    ],
+    "comparison": {
+     "availability": {
+      "basis": "official specs",
+      "new": null,
+      "previous": "listed as available",
+      "quote": ""
+     },
+     "context": {
+      "basis": "official specs",
+      "new": null,
+      "previous": "1.05M tokens",
+      "quote": ""
+     },
+     "multimodal": {
+      "basis": "official specs",
+      "new": null,
+      "previous": "in: text, image · out: text",
+      "quote": ""
+     },
+     "output": {
+      "basis": "official specs",
+      "new": null,
+      "previous": "128K tokens",
+      "quote": ""
+     },
+     "pricing": {
+      "basis": "official specs",
+      "new": null,
+      "previous": "$5 input / $30 output per 1M tokens",
+      "quote": ""
+     }
+    },
+    "explain": {
+     "care": "It demonstrates advancements in source traceability and native document generation that can power more reliable professional AI agents.",
+     "different": "It ranks first on both instruction following and presentation craft, whereas previous models traded off one for the other.",
+     "does": "Finds required sources, cites relevant excerpts, and builds presentation slides that follow user instructions and branding guidelines.",
+     "introduced": "GPT-6 Astra",
+     "problem": "Financial research and deck preparation traditionally require manual source checking and tedious reformatting.",
+     "who": "Finance professionals and enterprise knowledge workers."
+    },
+    "flagship": true,
+    "improved": [],
+    "previous_specs": {
+     "context_tokens": 1050000,
+     "description": "A new class of intelligence for coding and professional work.",
+     "input_modalities": "text, image",
+     "input_price": 5.0,
+     "knowledge_cutoff": "Dec 01, 2025",
+     "max_output_tokens": 128000,
+     "output_modalities": "text",
+     "output_price": 30.0
+    },
+    "priority": "P1",
+    "reasons": [
+     "an official source mentions a model the agent has not seen before, without introducing it"
+    ],
+    "regressed": [],
+    "specs": {
+     "GPT-6": {
+      "name": null,
+      "specs": {},
+      "status": null
+     }
+    },
+    "unchanged": [],
+    "whats_new": [
+     "GPT-6 Astra combines broader source coverage with highly relevant citations and presentation generation capabilities."
+    ]
    },
    "duplicates": 0,
    "events": [
@@ -608,29 +727,91 @@
      "at": "2026-11-18T04:33:03+00:00",
      "note": "TestingCatalog (early signal)",
      "type": "signal"
+    },
+    {
+     "at": "2026-11-20T21:18:24+00:00",
+     "note": "UNCONFIRMED → REQUIRES_MANUAL_REVIEW",
+     "type": "confirmed"
     }
    ],
    "fingerprints": [
-    "https://testingcatalog.com/microsoft-launches-mai-cyber-2-flash-security-model",
-    "https://testingcatalog.com/openai-launches-gpt-6-2-astra-and-sol-on-chatgpt-and-apis"
+    "e3d92c736c1174dd",
+    "https://openai.com/business/customer-stories/hebbia"
    ],
    "first_detected": "2026-11-17T23:04:02+00:00",
    "id": "openai:gpt-6",
-   "last_updated": "2026-11-18T04:33:03+00:00",
+   "last_updated": "2026-11-20T21:18:24+00:00",
    "model_ids": [
     "GPT-6"
    ],
-   "model_name": "GPT-6",
+   "model_name": "GPT-6 Astra",
    "official_sources": [
     {
-     "source": "TestingCatalog (early signal)",
-     "url": "https://www.testingcatalog.com/openai-launches-gpt-6-2-astra-and-sol-on-chatgpt-and-apis/"
+     "kind": "announcement",
+     "source": "OpenAI news",
+     "url": "https://openai.com/business/customer-stories/hebbia"
+    }
+   ],
+   "previous_model": {
+    "id": "gpt-5.5",
+    "method": "model lineage: same family and tier, previous version in the official catalog",
+    "name": "GPT-5.5"
+   },
+   "priority": "P1",
+   "source_url": "https://openai.com/business/customer-stories/hebbia",
+   "verification": "REQUIRES_MANUAL_REVIEW"
+  },
+  "openai:gpt-6-1-terra@MODEL_AVAILABILITY:2026-11": {
+   "announcement_date": "2026-11-17",
+   "availability_date": null,
+   "availability_status": null,
+   "classification": "MODEL_AVAILABILITY",
+   "company": "openai",
+   "comparison_summary": "Feature · Model: gpt-6.2-astra · Model: gpt-6.2-sol · Model: gpt-6.1-terra · Model: gpt-6-luna · API: v1/responses",
+   "delivery": {
+    "attempts": 1,
+    "last_error": null,
+    "message_ids": [
+     807
+    ],
+    "notification": "openai:gpt-6-1-terra@MODEL_AVAILABILITY:2026-11|update|14b19be9e5",
+    "sent_at": "2026-11-20T21:18:27+00:00",
+    "status": "SENT"
+   },
+   "details": {
+    "reasons": [
+     "an existing model reaches more users, APIs or regions"
+    ],
+    "text": "Choose a two-hour or eight-hour background completion window in the Responses API public beta. Model token rates are 30% lower than Standard for the two-hour window and 40% lower for the eight-hour window. New models will not support Flex processing. Flex remains available on supported models while the beta winds down."
+   },
+   "duplicates": 0,
+   "events": [
+    {
+     "at": "2026-11-20T21:18:24+00:00",
+     "note": "an existing model reaches more users, APIs or regions",
+     "type": "detected"
+    }
+   ],
+   "fingerprints": [
+    "eedd6ea9099869f1"
+   ],
+   "first_detected": "2026-11-20T21:18:24+00:00",
+   "id": "openai:gpt-6-1-terra@MODEL_AVAILABILITY:2026-11",
+   "last_updated": "2026-11-20T21:18:27+00:00",
+   "model_ids": [
+    "gpt-6.1-terra"
+   ],
+   "model_name": "GPT-6.1 Terra",
+   "official_sources": [
+    {
+     "source": "OpenAI API changelog",
+     "url": "https://developers.openai.com/api/docs/changelog.md"
     }
    ],
    "previous_model": null,
    "priority": "P2",
-   "source_url": "https://www.testingcatalog.com/openai-launches-gpt-6-2-astra-and-sol-on-chatgpt-and-apis/",
-   "verification": "UNCONFIRMED"
+   "source_url": "https://developers.openai.com/api/docs/changelog.md",
+   "verification": "OFFICIAL_UPDATE"
   },
   "openai:gpt-6-2+gpt-6-2-astra": {
    "announcement_date": "2026-11-17",
@@ -757,7 +938,7 @@
      "Background completion windows of two or eight hours offer up to 40% lower token rates in the Responses API public beta."
     ]
    },
-   "duplicates": 1,
+   "duplicates": 2,
    "events": [
     {
      "at": "2026-11-17T23:01:21+00:00",
@@ -766,6 +947,11 @@
     },
     {
      "at": "2026-11-18T04:33:03+00:00",
+     "note": "OpenAI API changelog",
+     "type": "duplicate"
+    },
+    {
+     "at": "2026-11-20T21:18:24+00:00",
      "note": "OpenAI API changelog",
      "type": "duplicate"
     }
@@ -779,7 +965,7 @@
    ],
    "first_detected": "2026-11-17T23:01:21+00:00",
    "id": "openai:gpt-6-2+gpt-6-2-astra",
-   "last_updated": "2026-11-18T04:33:03+00:00",
+   "last_updated": "2026-11-20T21:18:24+00:00",
    "model_ids": [
     "GPT-6.2",
     "gpt-6.2-astra"
@@ -1007,7 +1193,7 @@
      "Background completions in the Responses API public beta offer reduced token rates for two-hour and eight-hour processing windows."
     ]
    },
-   "duplicates": 1,
+   "duplicates": 2,
    "events": [
     {
      "at": "2026-11-17T23:04:02+00:00",
@@ -1016,6 +1202,11 @@
     },
     {
      "at": "2026-11-18T04:33:03+00:00",
+     "note": "OpenAI API changelog",
+     "type": "duplicate"
+    },
+    {
+     "at": "2026-11-20T21:18:24+00:00",
      "note": "OpenAI API changelog",
      "type": "duplicate"
     }
@@ -1027,7 +1218,7 @@
    ],
    "first_detected": "2026-11-17T23:04:02+00:00",
    "id": "openai:gpt-6-2-sol",
-   "last_updated": "2026-11-18T04:33:03+00:00",
+   "last_updated": "2026-11-20T21:18:24+00:00",
    "model_ids": [
     "gpt-6.2-sol"
    ],
@@ -1157,6 +1348,116 @@
    "priority": "P2",
    "source_url": "https://www.testingcatalog.com/microsoft-launches-mai-cyber-2-flash-security-model/",
    "verification": "UNCONFIRMED"
+  },
+  "openai:gpt-6-astra@MAJOR_MODEL_UPGRADE:gpt-6-astra": {
+   "announcement_date": "2026-11-20",
+   "availability_date": null,
+   "availability_status": null,
+   "classification": "MAJOR_MODEL_UPGRADE",
+   "company": "openai",
+   "comparison_summary": "Hebbia sees improvements in financial research with GPT-6 Astra",
+   "delivery": {
+    "attempts": 1,
+    "last_error": null,
+    "message_ids": [
+     805
+    ],
+    "notification": "openai:gpt-6-astra@MAJOR_MODEL_UPGRADE:gpt-6-astra|update|da4b8ffb75",
+    "receipt": {
+     "at": "2026-11-20T21:18:27+00:00",
+     "message_id": 806,
+     "status": "SENT"
+    },
+    "sent_at": "2026-11-20T21:18:25+00:00",
+    "status": "SENT"
+   },
+   "details": {
+    "reasons": [
+     "official update to an existing model"
+    ],
+    "text": "Hebbia tested GPT-6 Astra for financial research. Its prerelease evaluations found gains in source coverage, citation relevance, and presentation quality."
+   },
+   "duplicates": 0,
+   "events": [
+    {
+     "at": "2026-11-20T21:18:24+00:00",
+     "note": "official update to an existing model",
+     "type": "detected"
+    }
+   ],
+   "fingerprints": [
+    "e3d92c736c1174dd",
+    "https://openai.com/business/customer-stories/hebbia"
+   ],
+   "first_detected": "2026-11-20T21:18:24+00:00",
+   "id": "openai:gpt-6-astra@MAJOR_MODEL_UPGRADE:gpt-6-astra",
+   "last_updated": "2026-11-20T21:18:25+00:00",
+   "model_ids": [
+    "GPT-6 Astra"
+   ],
+   "model_name": "GPT-6 Astra",
+   "official_sources": [
+    {
+     "source": "OpenAI news",
+     "url": "https://openai.com/business/customer-stories/hebbia"
+    }
+   ],
+   "previous_model": null,
+   "priority": "P1",
+   "source_url": "https://openai.com/business/customer-stories/hebbia",
+   "verification": "OFFICIAL_UPDATE"
+  },
+  "openai:gpt-6-luna@MODEL_AVAILABILITY:2026-11": {
+   "announcement_date": "2026-11-17",
+   "availability_date": null,
+   "availability_status": null,
+   "classification": "MODEL_AVAILABILITY",
+   "company": "openai",
+   "comparison_summary": "Feature · Model: gpt-6.2-astra · Model: gpt-6.2-sol · Model: gpt-6.1-terra · Model: gpt-6-luna · API: v1/responses",
+   "delivery": {
+    "attempts": 1,
+    "last_error": null,
+    "message_ids": [
+     808
+    ],
+    "notification": "openai:gpt-6-luna@MODEL_AVAILABILITY:2026-11|update|287c9b708c",
+    "sent_at": "2026-11-20T21:18:28+00:00",
+    "status": "SENT"
+   },
+   "details": {
+    "reasons": [
+     "an existing model reaches more users, APIs or regions"
+    ],
+    "text": "Choose a two-hour or eight-hour background completion window in the Responses API public beta. Model token rates are 30% lower than Standard for the two-hour window and 40% lower for the eight-hour window. New models will not support Flex processing. Flex remains available on supported models while the beta winds down."
+   },
+   "duplicates": 0,
+   "events": [
+    {
+     "at": "2026-11-20T21:18:24+00:00",
+     "note": "an existing model reaches more users, APIs or regions",
+     "type": "detected"
+    }
+   ],
+   "fingerprints": [
+    "eedd6ea9099869f1"
+   ],
+   "first_detected": "2026-11-20T21:18:24+00:00",
+   "id": "openai:gpt-6-luna@MODEL_AVAILABILITY:2026-11",
+   "last_updated": "2026-11-20T21:18:28+00:00",
+   "model_ids": [
+    "gpt-6-luna"
+   ],
+   "model_name": "GPT-6 Luna",
+   "official_sources": [
+    {
+     "source": "OpenAI API changelog",
+     "url": "https://developers.openai.com/api/docs/changelog.md"
+    }
+   ],
+   "previous_model": null,
+   "priority": "P2",
+   "source_url": "https://developers.openai.com/api/docs/changelog.md",
+   "verification": "OFFICIAL_UPDATE"
   },
   "openai:gpt-live-1-1": {
    "announcement_date": "2026-11-19",
@@ -1442,6 +1743,36 @@
    "status": "SENT",
    "verification": "OFFICIAL_CONFIRMED"
   },
+  "openai:gpt-6-1-terra@MODEL_AVAILABILITY:2026-11|update|14b19be9e5": {
+   "attempts": 1,
+   "category": "MODEL_AVAILABILITY",
+   "created": "2026-11-20T21:18:24+00:00",
+   "id": "openai:gpt-6-1-terra@MODEL_AVAILABILITY:2026-11|update|14b19be9e5",
+   "kind": "update",
+   "last_error": null,
+   "log": [
+    "2026-11-20T21:18:27+00:00 SENT: Telegram confirmed message id(s) [807]"
+   ],
+   "model_name": "GPT-6.1 Terra",
+   "parts": [
+    "<b>🔄 MODEL AVAILABILITY</b>\n<b>GPT-6.1 Terra: Feature · Model: gpt-6.2-astra · Model: gpt-6.2-sol · Model: gpt-6.1-terra · Model: gpt-6-luna · API: v1/responses</b>\n<i>🔵 P2 Normal · OFFICIAL UPDATE · 📅 17 Nov 2026</i>\n🏢 OpenAI\n<b>What happened:</b> Choose a two-hour or eight-hour background completion window in the Responses API public beta. Model token rates are 30% lower than Standard for the two-hour window and 40% lower for the eight-hour window. New models will not support Flex processing. Flex remains available on supported models while the beta winds down.\n<b>Why it matters:</b> More people can use this model now (a new API, app, region or tier).\n<b>Details:</b> gpt-6.1-terra\n🔗 <a href=\"https://developers.openai.com/api/docs/changelog.md\">OpenAI API changelog</a>\n<i>an existing model reaches more users, APIs or regions</i>\n<b>DELIVERY:</b> Pending Telegram confirmation."
+   ],
+   "priority": "P2",
+   "receipt": {
+    "status": "NOT_NEEDED"
+   },
+   "release_id": "openai:gpt-6-1-terra@MODEL_AVAILABILITY:2026-11",
+   "sent_at": "2026-11-20T21:18:27+00:00",
+   "sent_parts": {
+    "0": {
+     "at": "2026-11-20T21:18:27+00:00",
+     "message_id": 807,
+     "telegram_date": 1795209507
+    }
+   },
+   "status": "SENT",
+   "verification": "OFFICIAL_UPDATE"
+  },
   "openai:gpt-6-2+gpt-6-2-astra|release|8f76611e19": {
    "attempts": 1,
    "category": "NEW_MODEL_RELEASE",
@@ -1519,6 +1850,99 @@
    },
    "status": "SENT",
    "verification": "OFFICIAL_CONFIRMED"
+  },
+  "openai:gpt-6-astra@MAJOR_MODEL_UPGRADE:gpt-6-astra|update|da4b8ffb75": {
+   "attempts": 1,
+   "category": "MAJOR_MODEL_UPGRADE",
+   "created": "2026-11-20T21:18:24+00:00",
+   "id": "openai:gpt-6-astra@MAJOR_MODEL_UPGRADE:gpt-6-astra|update|da4b8ffb75",
+   "kind": "update",
+   "last_error": null,
+   "log": [
+    "2026-11-20T21:18:25+00:00 SENT: Telegram confirmed message id(s) [805]",
+    "2026-11-20T21:18:27+00:00 delivery receipt SENT (message id 806)"
+   ],
+   "model_name": "GPT-6 Astra",
+   "parts": [
+    "<b>🔄 MAJOR MODEL UPGRADE</b>\n<b>GPT-6 Astra: Hebbia sees improvements in financial research with GPT-6 Astra</b>\n<i>🟠 P1 High · OFFICIAL UPDATE · 📅 20 Nov 2026</i>\n🏢 OpenAI\n<b>What happened:</b> Hebbia tested GPT-6 Astra for financial research. Its prerelease evaluations found gains in source coverage, citation relevance, and presentation quality.\n<b>Why it matters:</b> A new version of a model people already use: behaviour, quality or price may change.\n<b>Details:</b> GPT-6 Astra\n🔗 <a href=\"https://openai.com/business/customer-stories/hebbia\">OpenAI news</a>\n<i>official update to an existing model</i>\n<b>DELIVERY:</b> Pending Telegram confirmation."
+   ],
+   "priority": "P1",
+   "receipt": {
+    "at": "2026-11-20T21:18:27+00:00",
+    "message_id": 806,
+    "status": "SENT"
+   },
+   "release_id": "openai:gpt-6-astra@MAJOR_MODEL_UPGRADE:gpt-6-astra",
+   "sent_at": "2026-11-20T21:18:25+00:00",
+   "sent_parts": {
+    "0": {
+     "at": "2026-11-20T21:18:25+00:00",
+     "message_id": 805,
+     "telegram_date": 1795209505
+    }
+   },
+   "status": "SENT",
+   "verification": "OFFICIAL_UPDATE"
+  },
+  "openai:gpt-6-luna@MODEL_AVAILABILITY:2026-11|update|287c9b708c": {
+   "attempts": 1,
+   "category": "MODEL_AVAILABILITY",
+   "created": "2026-11-20T21:18:24+00:00",
+   "id": "openai:gpt-6-luna@MODEL_AVAILABILITY:2026-11|update|287c9b708c",
+   "kind": "update",
+   "last_error": null,
+   "log": [
+    "2026-11-20T21:18:28+00:00 SENT: Telegram confirmed message id(s) [808]"
+   ],
+   "model_name": "GPT-6 Luna",
+   "parts": [
+    "<b>🔄 MODEL AVAILABILITY</b>\n<b>GPT-6 Luna: Feature · Model: gpt-6.2-astra · Model: gpt-6.2-sol · Model: gpt-6.1-terra · Model: gpt-6-luna · API: v1/responses</b>\n<i>🔵 P2 Normal · OFFICIAL UPDATE · 📅 17 Nov 2026</i>\n🏢 OpenAI\n<b>What happened:</b> Choose a two-hour or eight-hour background completion window in the Responses API public beta. Model token rates are 30% lower than Standard for the two-hour window and 40% lower for the eight-hour window. New models will not support Flex processing. Flex remains available on supported models while the beta winds down.\n<b>Why it matters:</b> More people can use this model now (a new API, app, region or tier).\n<b>Details:</b> gpt-6-luna\n🔗 <a href=\"https://developers.openai.com/api/docs/changelog.md\">OpenAI API changelog</a>\n<i>an existing model reaches more users, APIs or regions</i>\n<b>DELIVERY:</b> Pending Telegram confirmation."
+   ],
+   "priority": "P2",
+   "receipt": {
+    "status": "NOT_NEEDED"
+   },
+   "release_id": "openai:gpt-6-luna@MODEL_AVAILABILITY:2026-11",
+   "sent_at": "2026-11-20T21:18:28+00:00",
+   "sent_parts": {
+    "0": {
+     "at": "2026-11-20T21:18:28+00:00",
+     "message_id": 808,
+     "telegram_date": 1795209508
+    }
+   },
+   "status": "SENT",
+   "verification": "OFFICIAL_UPDATE"
+  },
+  "openai:gpt-6|review|91db9bd4d7": {
+   "attempts": 1,
+   "category": "NEW_MODEL_RELEASE",
+   "created": "2026-11-20T21:18:24+00:00",
+   "id": "openai:gpt-6|review|91db9bd4d7",
+   "kind": "review",
+   "last_error": null,
+   "log": [
+    "2026-11-20T21:18:24+00:00 SENT: Telegram confirmed message id(s) [804]"
+   ],
+   "model_name": "GPT-6 Astra",
+   "parts": [
+    "<b>🚨 POSSIBLE NEW MODEL: REQUIRES MANUAL REVIEW</b>\n<b>Possible new model: GPT-6 Astra</b>\n<i>🟠 P1 High · REQUIRES MANUAL REVIEW · 📅 20 Nov 2026</i>\n🏢 OpenAI\n<b>What happened:</b> An official OpenAI source points to GPT-6 Astra (GPT-6), but it could not be verified automatically.\n<b>Why it matters:</b> It may be a new model. Check the sources before posting about it.\n<b>Details:</b> an official source mentions a model the agent has not seen before, without introducing it\n🔗 <a href=\"https://openai.com/business/customer-stories/hebbia\">OpenAI news</a>\n<b>DELIVERY:</b> Pending Telegram confirmation."
+   ],
+   "priority": "P1",
+   "receipt": {
+    "status": "NOT_NEEDED"
+   },
+   "release_id": "openai:gpt-6",
+   "sent_at": "2026-11-20T21:18:24+00:00",
+   "sent_parts": {
+    "0": {
+     "at": "2026-11-20T21:18:24+00:00",
+     "message_id": 804,
+     "telegram_date": 1795209504
+    }
+   },
+   "status": "SENT",
+   "verification": "REQUIRES_MANUAL_REVIEW"
   },
   "openai:gpt-live-1-1|release|7273569ec1": {
    "attempts": 1,
@@ -7345,7 +7769,7 @@
      "xAI models and pricing"
     ],
     "specs": {
-     "context_tokens": 256000,
+     "context_tokens": 500000,
      "input_price": 1.0,
      "output_price": 2.0
     },
@@ -9992,6 +10416,9 @@
   "Google Developers Blog": {
    "initialized": true,
    "seen": [
+    "1db9ddaf91911f6e",
+    "0c86b6fe5ad4a011",
+    "49f489e3dca12b67",
     "57aae3fcbb818f47",
     "68d7e4e7cf251261",
     "93e75ce8d95e55a0",
@@ -10194,6 +10621,7 @@
   "OpenAI API changelog": {
    "initialized": true,
    "seen": [
+    "154939ca3880c01c",
     "5d36d9b6ca2337bd",
     "c98d9dc796bd5bfb",
     "324acda84bd1baaf",
@@ -10841,6 +11269,9 @@
   "OpenAI news": {
    "initialized": true,
    "seen": [
+    "3bfe80ddf02507a0",
+    "b8d0beaa4013d3b3",
+    "4430396a9c0c88d9",
     "1a2fc608beb89d5d",
     "45abc280d1f1b166",
     "b87afcd2e011f2b2",
@@ -12713,6 +13144,7 @@
   "xAI API release notes": {
    "initialized": true,
    "seen": [
+    "14d25f247f8b354b",
     "c1b10ac525850570",
     "419196ab68ba4d63",
     "f96b543606d30506",
@@ -12806,7 +13238,7 @@
      "status": "active"
     },
     "grok-build-0.1": {
-     "h": "98e71aacf80a",
+     "h": "c8a7c63e983e",
      "status": "active"
     },
     "grok-imagine-image": {

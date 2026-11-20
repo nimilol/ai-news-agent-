@@ -18,6 +18,12 @@
    "priority": "P1",
    "title": "Genie 4"
   },
+  "model:openai:gpt-6": {
+   "at": "2026-11-20T21:18:24+00:00",
+   "channel": "release",
+   "priority": "P1",
+   "title": "GPT-6 Astra"
+  },
   "model:openai:gpt-6-2": {
    "at": "2026-11-17T23:04:04+00:00",
    "channel": "release",
@@ -41,6 +47,12 @@
    "channel": "release",
    "priority": "P1",
    "title": "GPT-Live-1.1"
+  },
+  "model:xai:grok-build-0-1": {
+   "at": "2026-11-20T21:18:38+00:00",
+   "channel": "alerts",
+   "priority": "P1",
+   "title": "xAI API release notes: grok-build-0.1 end of life"
   },
   "title:0.169.1": {
    "at": "2026-11-18T07:29:18+00:00",
@@ -300,6 +312,12 @@
    "priority": "P2",
    "title": "Advancing chip design with OpenAI models"
   },
+  "title:adversarial combatting distillation": {
+   "at": "2026-11-20T21:18:38+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Combatting adversarial distillation"
+  },
   "title:affecting connector docs elevated errors google": {
    "at": "2026-11-18T07:29:18+00:00",
    "channel": "digest",
@@ -359,6 +377,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "GAO report finds major AI models vulnerable to attack planning"
+  },
+  "title:ai can candidates drug help identify promising scientists": {
+   "at": "2026-11-20T21:18:38+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Can AI help scientists identify promising drug candidates?"
   },
   "title:ai deployment frontier managing risk training": {
    "at": "2026-11-18T22:10:54+00:00",
@@ -438,6 +462,12 @@
    "priority": "P2",
    "title": "OpenAI updates API pricing and deprecation timelines"
   },
+  "title:api end grok-build-0.1 life notes release xai": {
+   "at": "2026-11-20T21:18:38+00:00",
+   "channel": "alerts",
+   "priority": "P1",
+   "title": "xAI API release notes: grok-build-0.1 end of life"
+  },
   "title:approved current effingham openai plan site": {
    "at": "2026-11-18T07:29:18+00:00",
    "channel": "digest",
@@ -449,6 +479,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "ArcticRAT malware and Grok: Zimperium’s findings - NeoTeo"
+  },
+  "title:astra gpt-6": {
+   "at": "2026-11-20T21:18:25+00:00",
+   "channel": "release",
+   "priority": "P1",
+   "title": "GPT-6 Astra"
   },
   "title:astra gpt-6.2": {
    "at": "2026-11-17T23:04:04+00:00",
@@ -534,6 +570,12 @@
    "priority": "P1",
    "title": "Introducing ChatGPT for Sales"
   },
+  "title:chatgpt notes out plus release rolling space": {
+   "at": "2026-11-20T21:18:38+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "ChatGPT release notes: ChatGPT Space is rolling out to Plus"
+  },
   "title:chile introducing openai": {
    "at": "2026-11-17T14:39:48+00:00",
    "channel": "alerts",
@@ -605,6 +647,18 @@
    "channel": "digest",
    "priority": "P3",
    "title": "Qwen4-Max vs GLM-5.4: One Shipped, One Missed the Window - OrcaRouter"
+  },
+  "title:gpt-6 luna": {
+   "at": "2026-11-20T21:18:28+00:00",
+   "channel": "release",
+   "priority": "P2",
+   "title": "GPT-6 Luna"
+  },
+  "title:gpt-6.1 terra": {
+   "at": "2026-11-20T21:18:27+00:00",
+   "channel": "release",
+   "priority": "P2",
+   "title": "GPT-6.1 Terra"
   },
   "title:gpt-6.2 sol": {
    "at": "2026-11-17T23:04:05+00:00",
@@ -703,10 +757,10 @@
    "title": "Gemma 4 26B A4B IT"
   },
   "url:https://developers.openai.com/api/docs/changelog.md": {
-   "at": "2026-11-19T22:22:20+00:00",
+   "at": "2026-11-20T21:18:28+00:00",
    "channel": "release",
-   "priority": "P1",
-   "title": "GPT-Live-1.1"
+   "priority": "P2",
+   "title": "GPT-6 Luna"
   },
   "url:https://developers.openai.com/api/docs/models/all.md": {
    "at": "2026-11-19T22:22:20+00:00",
@@ -719,6 +773,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "OpenAI revises ChatGPT Business Hub terms after legal scrutiny"
+  },
+  "url:https://docs.x.ai/docs/release-notes": {
+   "at": "2026-11-20T21:18:38+00:00",
+   "channel": "alerts",
+   "priority": "P1",
+   "title": "xAI API release notes: grok-build-0.1 end of life"
   },
   "url:https://eweek.com/news/gao-chatgpt-claude-gemini-grok-attack-guidance": {
    "at": "2026-11-19T20:39:31+00:00",
@@ -1219,6 +1279,12 @@
    "at": "2026-11-16T23:48:27+00:00",
    "channel": "discovery",
    "title": "fforster/gitlab-mcp"
+  },
+  "url:https://help.openai.com/articles/6825453-chatgpt-release-notes": {
+   "at": "2026-11-20T21:18:38+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "ChatGPT release notes: ChatGPT Space is rolling out to Plus"
   },
   "url:https://hollywoodreporter.com/news/general-news/ashton-kutcher-billionaire-anthropic-ipo-1236759822": {
    "at": "2026-11-20T07:17:37+00:00",
@@ -1902,6 +1968,12 @@
    "priority": "P2",
    "title": "Anthropic IPO price expected to price at top of range or above amid high demand"
   },
+  "url:https://openai.com/business/customer-stories/hebbia": {
+   "at": "2026-11-20T21:18:25+00:00",
+   "channel": "release",
+   "priority": "P1",
+   "title": "GPT-6 Astra"
+  },
   "url:https://openai.com/business/customer-stories/holiday-extras-dots": {
    "at": "2026-11-16T22:19:08+00:00",
    "channel": "alerts",
@@ -1962,6 +2034,12 @@
    "priority": "P2",
    "title": "Astra for Law leads in legal intelligence"
   },
+  "url:https://openai.com/index/combatting-adversarial-distillation": {
+   "at": "2026-11-20T21:18:38+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Combatting adversarial distillation"
+  },
   "url:https://openai.com/index/expanding-chatgpt-for-academic-researchers": {
    "at": "2026-11-16T22:19:08+00:00",
    "channel": "alerts",
@@ -1991,6 +2069,12 @@
    "channel": "release",
    "priority": "P0",
    "title": "GPT-6.2 + GPT-6.2 Astra"
+  },
+  "url:https://openai.com/index/introducing-medchembench": {
+   "at": "2026-11-20T21:18:38+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Can AI help scientists identify promising drug candidates?"
   },
   "url:https://openai.com/index/introducing-openai-for-chile": {
    "at": "2026-11-17T14:39:48+00:00",
