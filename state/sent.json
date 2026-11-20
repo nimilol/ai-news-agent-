@@ -675,10 +675,20 @@
    "channel": "discovery",
    "title": "agentgates-ai/agentgates"
   },
+  "url:https://github.com/agentscope-ai/agentscope": {
+   "at": "2026-11-20T02:29:58+00:00",
+   "channel": "discovery",
+   "title": "agentscope-ai/agentscope"
+  },
   "url:https://github.com/alibaba/open-code-review": {
    "at": "2026-11-16T23:48:27+00:00",
    "channel": "discovery",
    "title": "alibaba/open-code-review"
+  },
+  "url:https://github.com/amontlabs/lcu": {
+   "at": "2026-11-20T02:29:58+00:00",
+   "channel": "discovery",
+   "title": "amontlabs/lcu"
   },
   "url:https://github.com/anthropics/claude-code/releases/tag/v2.1.326": {
    "at": "2026-11-17T07:57:43+00:00",
@@ -767,6 +777,11 @@
    "channel": "discovery",
    "title": "expo/exact"
   },
+  "url:https://github.com/fei2411/ds-bot": {
+   "at": "2026-11-20T02:29:58+00:00",
+   "channel": "discovery",
+   "title": "Fei2411/DS-Bot"
+  },
   "url:https://github.com/firecrawl/firecrawl": {
    "at": "2026-11-19T12:01:00+00:00",
    "channel": "discovery",
@@ -807,10 +822,20 @@
    "channel": "discovery",
    "title": "Jakeschincariol/day-trader-skill"
   },
+  "url:https://github.com/jakeschincariol/founder-skill": {
+   "at": "2026-11-20T02:29:58+00:00",
+   "channel": "discovery",
+   "title": "Jakeschincariol/founder-skill"
+  },
   "url:https://github.com/jakeschincariol/replica-skill": {
    "at": "2026-11-18T20:50:39+00:00",
    "channel": "discovery",
    "title": "Jakeschincariol/replica-skill"
+  },
+  "url:https://github.com/josssphzhou/poki": {
+   "at": "2026-11-20T02:29:58+00:00",
+   "channel": "discovery",
+   "title": "JosssphZhou/poki"
   },
   "url:https://github.com/jub0t/concat": {
    "at": "2026-11-18T20:50:39+00:00",
@@ -836,6 +861,11 @@
    "at": "2026-11-18T12:02:42+00:00",
    "channel": "discovery",
    "title": "Leonxlnx/earshot"
+  },
+  "url:https://github.com/lodyai/lody": {
+   "at": "2026-11-20T02:29:58+00:00",
+   "channel": "discovery",
+   "title": "LodyAI/Lody"
   },
   "url:https://github.com/mdiri-ai/soduwork": {
    "at": "2026-11-19T20:54:44+00:00",
@@ -886,6 +916,11 @@
    "at": "2026-11-19T20:54:44+00:00",
    "channel": "discovery",
    "title": "n8n-io/nod"
+  },
+  "url:https://github.com/nanaism/yomiyasu": {
+   "at": "2026-11-20T02:29:58+00:00",
+   "channel": "discovery",
+   "title": "nanaism/yomiyasu"
   },
   "url:https://github.com/nvidia/skillevaluator": {
    "at": "2026-11-18T12:02:42+00:00",
@@ -993,6 +1028,11 @@
    "at": "2026-11-19T20:54:44+00:00",
    "channel": "discovery",
    "title": "vAPI-Network/vapi-network"
+  },
+  "url:https://github.com/vibheksoni/stealth-browser-mcp": {
+   "at": "2026-11-20T02:29:58+00:00",
+   "channel": "discovery",
+   "title": "vibheksoni/stealth-browser-mcp"
   },
   "url:https://github.com/wgjsg/agilex-docs-mcp": {
    "at": "2026-11-16T23:48:27+00:00",
