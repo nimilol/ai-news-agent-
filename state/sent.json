@@ -132,6 +132,12 @@
    "priority": "P1",
    "title": "Gemini 3.6"
   },
+  "title:300 billion confirms deal fully funded infrastructure openai oracle": {
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Oracle confirms its $300 billion OpenAI infrastructure deal is fully funded"
+  },
   "title:31 all apps blocked bot external gateway grok read requests sent unprompted work xai xenospectrum": {
    "at": "2026-11-18T07:29:18+00:00",
    "channel": "digest",
@@ -167,6 +173,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic prices initial public offering at $83 per share"
+  },
+  "title:93.5b anthropic closes initial nasdaq offering public": {
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic closes $93.5B initial public offering on Nasdaq"
   },
   "title:about amd anthropic claude days gpus mythos ported preview says three": {
    "at": "2026-11-17T07:57:43+00:00",
@@ -258,6 +270,12 @@
    "priority": "P2",
    "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ option to purchase additional shares, and closing of concurrent"
   },
+  "title:adds anthropic beta claude computer enterprise meetings team use": {
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic adds computer use beta and Claude Meetings for Team and Enterprise"
+  },
   "title:adds anthropic channel claude desktop option release": {
    "at": "2026-11-17T20:58:16+00:00",
    "channel": "digest",
@@ -311,6 +329,12 @@
    "channel": "alerts",
    "priority": "P2",
    "title": "Advancing chip design with OpenAI models"
+  },
+  "title:adversarial against details distillation multi-layered openai strategy": {
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI details multi-layered strategy against adversarial distillation"
   },
   "title:adversarial combatting distillation": {
    "at": "2026-11-20T21:18:38+00:00",
@@ -420,6 +444,12 @@
    "priority": "P3",
    "title": "Gordon Johnson: Elon Musk’s Grok ranks TSLA highest for fatal car crash rate among U.S. car companies - Traders Union"
   },
+  "title:announces api end grok-build-0.1 including life updates xai": {
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "xAI announces API updates including grok-build-0.1 end of life"
+  },
   "title:anthropic beta billing claude developers launches linked platform": {
    "at": "2026-11-17T20:58:16+00:00",
    "channel": "digest",
@@ -438,6 +468,12 @@
    "priority": "P3",
    "title": "Anthropic IPO set to redraw venture capital’s power rankings - Financial Times"
   },
+  "title:anthropic claims claude discover helped hypothesis proof researcher riemann": {
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic researcher claims Claude helped discover Riemann Hypothesis proof"
+  },
   "title:anthropic initial offering prices public": {
    "at": "2026-11-19T03:40:14+00:00",
    "channel": "alerts",
@@ -449,6 +485,12 @@
    "channel": "alerts",
    "priority": "P2",
    "title": "At Holiday Extras, dots get to work before anyone asks"
+  },
+  "title:api astra gpt-6.2 introduces openai sol": {
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P0",
+   "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol in API"
   },
   "title:api claude cloud platform pricing": {
    "at": "2026-11-18T22:10:54+00:00",
@@ -564,6 +606,12 @@
    "priority": "P2",
    "title": "Science at the Frontier: How scientists use ChatGPT"
   },
+  "title:chatgpt globally out plus rolls space users": {
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "ChatGPT Space rolls out globally to Plus users"
+  },
   "title:chatgpt introducing sales": {
    "at": "2026-11-18T07:29:18+00:00",
    "channel": "digest",
@@ -575,6 +623,12 @@
    "channel": "alerts",
    "priority": "P2",
    "title": "ChatGPT release notes: ChatGPT Space is rolling out to Plus"
+  },
+  "title:chemistry evaluation introduces medchembench medicinal openai": {
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "OpenAI introduces MedChemBench for medicinal chemistry evaluation"
   },
   "title:chile introducing openai": {
    "at": "2026-11-17T14:39:48+00:00",
@@ -709,10 +763,10 @@
    "title": "Anthropic prices initial public offering at $83 per share"
   },
   "url:https://anthropic.com/news/ipo-close": {
-   "at": "2026-11-20T13:11:42+00:00",
-   "channel": "alerts",
-   "priority": "P2",
-   "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ option to purchase additional shares, and closing of concurrent"
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic closes $93.5B initial public offering on Nasdaq"
   },
   "url:https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon": {
    "at": "2026-11-18T22:10:43+00:00",
@@ -775,10 +829,10 @@
    "title": "OpenAI revises ChatGPT Business Hub terms after legal scrutiny"
   },
   "url:https://docs.x.ai/docs/release-notes": {
-   "at": "2026-11-20T21:18:38+00:00",
-   "channel": "alerts",
-   "priority": "P1",
-   "title": "xAI API release notes: grok-build-0.1 end of life"
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "xAI announces API updates including grok-build-0.1 end of life"
   },
   "url:https://eweek.com/news/gao-chatgpt-claude-gemini-grok-attack-guidance": {
    "at": "2026-11-19T20:39:31+00:00",
@@ -1321,10 +1375,16 @@
    "title": "fforster/gitlab-mcp"
   },
   "url:https://help.openai.com/articles/6825453-chatgpt-release-notes": {
-   "at": "2026-11-20T21:18:38+00:00",
-   "channel": "alerts",
-   "priority": "P2",
-   "title": "ChatGPT release notes: ChatGPT Space is rolling out to Plus"
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "ChatGPT Space rolls out globally to Plus users"
+  },
+  "url:https://help.openai.com/articles/9624314-model-release-notes": {
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P0",
+   "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol in API"
   },
   "url:https://hollywoodreporter.com/news/general-news/ashton-kutcher-billionaire-anthropic-ipo-1236759822": {
    "at": "2026-11-20T07:17:37+00:00",
@@ -1396,6 +1456,18 @@
    "priority": "P3",
    "title": "ArcticRAT malware and Grok: Zimperium’s findings - NeoTeo"
   },
+  "url:https://news.google.com/rss/articles/cbmi0gfbvv95cuxnmwd2vzbfuvrkbwfbsddctkzmuerpyzznqv9tmmi1metryl91ow5nngg2afbnrnjxx1nseejqt2e3lwlfdk1ktgjhu0jmnmdwdmduqkxxvuxmsu0za05sqnfrcw1kavnpbmfxngs0lwxiotzxuvbnoflpvehrsghrskvsn1z6ylbkmhywodblxzfozfu4whzvd2lhz2fjzwz0tna5shvknhzvrgzfcuznsvjsz0t5rzb5edqtt0nhtzfednbbchaxd2y1ejm4ajzfm0e": {
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic closes $93.5B initial public offering on Nasdaq"
+  },
+  "url:https://news.google.com/rss/articles/cbmi0wfbvv95cuxncl9drerizlvix1bnafbryu1wbji4ejnhb2x6b2d1axjrenvwq3ntuuttb1vvtnryuwnvue5pqy1vbkpvcepxehu4bldwvxpfm3pwdzvtmjjyt3bvctdyu0lzqudtdzjen2xoa1atr1prqkd3q1fdakxizi1xrwvnsmt5ahnytzlvrdhwcxl3emnnd2nnttneswf5bnfiwk5kywzvqkdishftx2rvyjlrnelmov9lq1c5r0dlqnn5rlrqemlir0hutghzmjzmb1zrnu5r": {
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic researcher claims Claude helped discover Riemann Hypothesis proof"
+  },
   "url:https://news.google.com/rss/articles/cbmi0wfbvv95cuxotm43q3dkrmotuxzfv3zyluj3dvnrn2vrewp0sja1ohkxyxbmb05tn042qk1rd0hdtvh2zgo2clzbn0vruzdtb0pfzvzhovlpr0j1x3vfxzzrtm8wamfnmfp0ykvpuuj4btqwtvrfzgprqmdxtkdaazftufhir2dsbndrdxbpbmzkqwdidfgxzwpnc3hywmpsrkrybgfox0tuzhhfnuoyu3i4dzzps1rinnzibuxkrk5vnezzmhzxwxj5vkpqrw9wzwozak1oewx3tmhj": {
    "at": "2026-11-19T20:39:31+00:00",
    "channel": "digest",
@@ -1413,6 +1485,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "Anthropic IPO price expected to price at top of range or above amid high demand"
+  },
+  "url:https://news.google.com/rss/articles/cbmi4wfbvv95cuxod0t0og1cqv9pby11wdlvwgp0wezit3vwuzzhddg0dzbwqudyx29tngcywfv3me5mskx2vmhzqu5tc2rxseh6r2ztzhuyy3zlzmnuaxdxdwzsetf5c18zwlntwmv3mwhmwfpcblbvmmdssep5yjy1thr1nhlqskptx081clbjru13zznkzhnhzxnirfbpy1vmdgrknf9iwg1vt3fyzjrvyutvmdleay0zc1rxdkdytu5twnb3rgk5nuhvogprujexc2dyt2jsbhq1bld5v0zls3l3ewftuhvbwmpeuq": {
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic closes $93.5B initial public offering on Nasdaq"
   },
   "url:https://news.google.com/rss/articles/cbmi5gfbvv95cuxprmktq2jeuxfszmvlatl4we9rlwjzrutscezxdnf1q3b3lvfutv9rskfuvuppwxfianq3agcxvtrbcgdjd1zodkgzymvdtzjonw5prexpednzwfp5t1fyuefjq05pz19xq2oyeedmmkfoule1adg1wuftrkxyauq2cdv5t0ddexbra3zkr0ktddldavvxulvlueffawxvetjjwhdfngvssvdxekvsrgjmdgn1odleaglulwtuohrfodjirvh5ckpcvepluxfxb1ftnze5mknklvn6ylhqslnjukn3zzlbuq": {
    "at": "2026-11-19T20:39:31+00:00",
@@ -1443,6 +1521,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic prices initial public offering at $83 per share"
+  },
+  "url:https://news.google.com/rss/articles/cbmibkfvx3lxte1ang5qzg9tatjhtlrrtmjbuzninzvjt1b2cxzzelbwexritxj1zgphvkm0mwxysk4yddzea2dfdnzrehljyjlpcvbfaglyewj1wmvjsui1tzfzedm3serwzkd2d2vsngvrrmhfyxbb": {
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI details multi-layered strategy against adversarial distillation"
   },
   "url:https://news.google.com/rss/articles/cbmicefvx3lxte5ysxppr00yoxppmdgzmm44rfndsdb3x2l1qwtmvkj2zdzpvvfqeedrte5lcuhzogdndfpetufhbkvmbgtaov9vnw5nef9hm3nlmtv5wet3ym1hz1vxbg9qevhmdnkttgpjouo0u1i3mva": {
    "at": "2026-11-16T22:02:32+00:00",
@@ -1504,6 +1588,12 @@
    "priority": "P1",
    "title": "Anthropic Finalizes Pricing for Blockbuster IPO Amid High Demand"
   },
+  "url:https://news.google.com/rss/articles/cbmieefvx3lxte9lt3pucfhra290udvtqvlwcvbjeddbx1nlx1lpmgvjm3lprhzdzk04ehi3cdk1stflejbdoddhzwytvfjzrnd3q2zdlw5edjn1rtzzt3zlblnoa004bmn6bjrswxf4y0roqws1ugr4uthyr004a1hwcw": {
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic closes $93.5B initial public offering on Nasdaq"
+  },
   "url:https://news.google.com/rss/articles/cbmieefvx3lxtfbwn3rzuulsz2xnx2reuk5useh0rtdschbhqvd5x1j2dk1eams5c1pdahlwm3pjnkl3mxr0zzr3qzriowy3a24zbtzpb21qvlrzmhlvyjmtttnyows1cmozwhneyxpls1z6rwtyoelvrmi1nfa0mgpvyw": {
    "at": "2026-11-18T20:33:37+00:00",
    "channel": "digest",
@@ -1515,6 +1605,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic hits Nasdaq in largest IPO in history at $2T valuation"
+  },
+  "url:https://news.google.com/rss/articles/cbmif0fvx3lxte90ywjymjbrbtlbb2jwm2huektmru45awpytgfweedwynpkbnuxzw5zzmprzldwoe1dtknjnw03rmlxrxj2ehpkam42wvdjskvksnhqtxvqzvpnaufqdwlwqtvwznrma3dyyulqajrzdhlvq1fxrvbin2ywq0hbmttsayqbqvvfexfmt3nhn0pit3zmvktfx1pjre5gv1jqufcyqmhtsnczmjhly2nnuxyyyujit3btq0juew5oltbmenpsn0vvcvn1s245ohaxd29fmfdmzjy4ektwmw15q29vmvhfrkh0texjds16ovdrog1bbhn6cv9vwvpnzedha1rfnk5tuvzs": {
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic closes $93.5B initial public offering on Nasdaq"
   },
   "url:https://news.google.com/rss/articles/cbmifefvx3lxte16buu5s2zdslz3agzmnffjajdwqlpjuwnnbfndvkpzx3lrr3k1azqybwvnvtzntlplvu9xtxlrttr1bflyofhqbjhhnupfsmnhdxuwa2ngahdozdfrrc1stmjuewx0skpmamkxn21ix1uwzhnvruztufbxeno": {
    "at": "2026-11-20T07:17:37+00:00",
@@ -1569,6 +1665,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "OpenAI site plan approved for Effingham - The Current"
+  },
+  "url:https://news.google.com/rss/articles/cbmigwfbvv95cuxodvkzqlndalfhchrtsenwwer3chp5ndbszgyxbnvkwuzgn0tdsndssvfeu21lq3n4n3htzgtzs3o5rljzrvvcqxnrx2npc2vgzmp5twpqsxvhcfnqvejsrxfpa3hmshhac0xzbkrnullnnljty3vjwfbkynfvzu9vbvhcqq": {
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic researcher claims Claude helped discover Riemann Hypothesis proof"
   },
   "url:https://news.google.com/rss/articles/cbmihafbvv95cuxoem9ndlrta0lvanricmj3q0vbby14wkzhd3vranhrnvnjys1hztrorhq3wwhxymoztdrnq0o4mtj4y1znr0ruv0zdx3jqc3dhmnvod1fpm0t3elhoqxdnswlys2nxdgzvum5jmkjnq3huwnziehzpeer5bkjtqvc3uwyxsi0": {
    "at": "2026-11-17T07:57:43+00:00",
@@ -1636,6 +1738,12 @@
    "priority": "P1",
    "title": "xAI deploys Grok Bot teams for end-to-end accounting processes at SpaceXSI"
   },
+  "url:https://news.google.com/rss/articles/cbmijafbvv95cuxqmu96r3pxbvo0ndizsul5szd6t0vkzzruy1f3re9nunrpwu1tbnbrzkvpowndclphx3hutxo1qndxdenhb2q1cfu2wnvwlwp0eg00ddfwctbnr042y3nfdudtzgy4odzusnrtmfzgunnfnfyyrgdvahjcdvnra2k0t2ntedznbtdhce83wq": {
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic researcher claims Claude helped discover Riemann Hypothesis proof"
+  },
   "url:https://news.google.com/rss/articles/cbmijgfbvv95cuxncunqb1nachrjturfvzvwdxpiymplsm15egzrukrtnvrnmtnznmo4ujd5zw93ewewa3dcd1pxqvbiyxdiy0dasf92dg0wv1q4ynbvnwj1znjztljeotrolulkquxpyxldtnl2d1vsm3ljdudytznxcfzzv2xbn3jxrlz0v292u0humg9ub2vr": {
    "at": "2026-11-18T20:33:37+00:00",
    "channel": "digest",
@@ -1683,6 +1791,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "OpenAI rolls out Live Dictation and releases GPT-Live-1.1"
+  },
+  "url:https://news.google.com/rss/articles/cbmilafbvv95cuxodzbqn0dfd2vquktzz1rxeeixzxf3b0m4z2swx3niwtffzv9bavfjrly0b2lxc1n5chjocgtra01ubxjsluvfti1fdjnymtzyuly0aw10sjbpzzrhv0ppm3noehpqt3vqwflvuwn2nmtwufvrcdyxbwhvynlsqudjnlbpwjzjbxfssgricwjbrgjfwdzt": {
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "ChatGPT Space rolls out globally to Plus users"
   },
   "url:https://news.google.com/rss/articles/cbmilgfbvv95cuxork91svbpdehpuxv0mjbjq0x2cwpwv3djz1f6dk96ufdut1npnk5trmxqc0hmrwzzsllzs3fys19omhhvtjk4tgkzwff6evhen3zltuqzzfj5nme3ulbiuzf4vhl2tkturze5mkw5b25wcu13x2fkyxpjtjjdnud3zvlad1o5s3u5d01sywzmrs1cwkfyz3c": {
    "at": "2026-11-18T07:29:18+00:00",
@@ -1864,6 +1978,12 @@
    "priority": "P1",
    "title": "Anthropic prices initial public offering at $83 per share"
   },
+  "url:https://news.google.com/rss/articles/cbmiqgfbvv95cuxqvefvndbodhpvulp4s085vfjqrgzsa1drmzjrqxzywjqtnhnfru1wr3z5vg95ddnmwjflmgrxmtntympqvhlrs1hvd1dymme2rhdiznbqaffqveqwwerxadd6awnqa1pxwnbyvnvcmtuyblg5zhnpytngbwf5ehdlzk40qudrcmziztl0cw5emuphwxzpcedqmjrqagjtwc1qq2jetnbhwf9kqq": {
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic closes $93.5B initial public offering on Nasdaq"
+  },
   "url:https://news.google.com/rss/articles/cbmiqwfbvv95cuxns2yyd1r5sknxsldhdjfxzuu2a21fm3c4evdftl96z3loehk5cjbyylnuvzhndxrnau1orevuzhrowuy0z1l2udnqv3dtx1jeu2dbotzdnuxvahrptwxuyzfynhpjec1acvjjsjm0d3byovp2se9rmgdqvkvyahhybxvmmnhhqmzkquzda1frwmvoeerib0dfmdmttenpav84zk1mqmvht2zjata": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
@@ -1875,6 +1995,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "OpenAI and Jony Ive Lease Large S.F. Office for Hardware Team"
+  },
+  "url:https://news.google.com/rss/articles/cbmirafbvv95cuxqd0p4qvlqugxnceqwuvjfwku2cnbwogromjk0zdrsaflnzzzmdmt5d3p0qzzzedzxzks1tghyn1jpndi0clrkshmtswpodhnmeumynhu5ylpjy0nitnj4muhjetbywmtkdu9qdlzizgtvymjlzw1otjvkz25wrgowqvrxswp1cdzyltronxrovkrsc3zjddnvwe5jluhny2lhd202lxd5umk3zlqt": {
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic closes $93.5B initial public offering on Nasdaq"
   },
   "url:https://news.google.com/rss/articles/cbmirafbvv95cuxqexlrx2mzqu9hakfstmrjm0rrytncykzbqmnhc3loc3bfdjlrqunxr2k2awfwn3dkc1vfngj1yuffc3flmu1rszjsc0t3dtnhd2jtzl9umnyyq3leou1sthbnnzriuloyre1waefmmxlca3vey3b2dvnna3o0ylbvx0jxrjffy25sr1phc2zlrefrzzkwz1lftxfibzhdz3hcqxheujfzdengtmvp": {
    "at": "2026-11-17T20:58:16+00:00",
@@ -1893,6 +2019,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "Anthropic IPO price expected to price at top of range or above amid high demand"
+  },
+  "url:https://news.google.com/rss/articles/cbmisgfbvv95cuxqmvpnx3c3wnlyc1zcq3fvudbubgpez0pha2m0vnhsvnzyu2puyurbr1hayte0nffptxjsm2lhthh3zhlmsldizwvuz2nltuk1xzrvcfaxrnbomjnzutdpejm5nefvmkxmyxfuzum3vdjwq2lhtxjxavg0bus2vet3czfra1c5exl3m0faewzhwuk2awcyd0plx0mzb3zpttv5wmzmetnyaknodklhsek2d2nb": {
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic closes $93.5B initial public offering on Nasdaq"
   },
   "url:https://news.google.com/rss/articles/cbmiswfbvv95cuxon2q5zgtyedhkr1nhznnznnvhmzzzqxfwveh2dhpzskxjz2r0sxh4sdnfmuffvtn3vtzfwxe5exblnuozbjztxzr6nfj1eknjznvxdzfpqvzkotdgq0wyotvja0nkrdloexr1mux2ruvuexrjsuyyal93r0e2dkjnzddxei1nb2xiedrzutfiwetuv1lcctztru9udhnhvkmzy0kwdfa0nkrgrkljq0rfzklhwq": {
    "at": "2026-11-18T20:33:37+00:00",
@@ -1972,6 +2104,12 @@
    "priority": "P2",
    "title": "California and Oregon file major legal actions against OpenAI"
   },
+  "url:https://news.google.com/rss/articles/cbmivwfbvv95cuxqwkjpzfu4ls1fa3ctdfjqcutsdxbrcxflohfaunduy3vbvk5qyku5ovrkagnunhhhvutwvgzrbfhpd0vqdfhiagrkv2vhmlz1ykxhufbkzfbzttfsmznelwdrckv5bwzkalqztgvduwhpnwu2atzqeffnnunhztnyu0exdhfntc1tejnoy3vsakxootbhrdf1cvjwaelxetnwueflodvozg5law51ylrnvk81dufowxdpluzmltbzbw": {
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic closes $93.5B initial public offering on Nasdaq"
+  },
   "url:https://news.google.com/rss/articles/cbmiw0fvx3lxte15evfiwe5uzfrsshfuotnczwjysy1legw3nhyxbvzkzvpfu01mawdfyw5fu1lry25nsdewqv9nrxbpag5lsdb5dehxcw83x3jtvef4aglim0frvm8": {
    "at": "2026-11-19T07:27:18+00:00",
    "channel": "digest",
@@ -1983,6 +2121,18 @@
    "channel": "digest",
    "priority": "P3",
    "title": "Form DEF 14A XAI CLO & Income Opportunities Fund For: 17 November By Investing.com - Investing.com India"
+  },
+  "url:https://news.google.com/rss/articles/cbmiwwfbvv95cuxpsmpqqvdqrtfynlzsvvfszg8yngj5wwraou1zrxjxqkjjm05gaxy5zupqtndmvvljnxnpyujdumf1t3hqcwkzni1udwc4c3pmv3f6rfk1ductcg5joflrcujdmv9im2hbdv9kbujqsmjva1lxs19ltuvjcug3alfnwl9rregwruvrru9lskforgzjuwpxlvb1bzlldwe4vdrhrmczzvbmbxfiylrvshq2s293m1jnzunmstdzdevktvpmxza": {
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Oracle confirms its $300 billion OpenAI infrastructure deal is fully funded"
+  },
+  "url:https://news.google.com/rss/articles/cbmix0fvx3lxtfbzvkjrrejfwezldktltuzsrjjqcxytnnhurknwwhhzzmz2bf9nrw1oswfkoxnoamrpsvrhrs1yywlyyvlhs3pore9nu3vku0lnywf5vgj1r3fovdg2wei4": {
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "OpenAI introduces MedChemBench for medicinal chemistry evaluation"
   },
   "url:https://news.google.com/rss/articles/cbmixwfbvv95cuxnlwhvbudlvenordjza3puuzzsafnwmtljwxzlbeo0u05fazewedr3utbzowrvru1selfizzltwdfctgfqnkpxtzntr0ytejdwr185a1dlzm9qnezhx0iynxrjykzgwuzkanpjrkx5anfjvdzybxhaehlwc0dsu0dpnu9ivdbiowrnb0jwnwnfaznidmrkzmvhsxlxsduwdkxka00yz245mhpbbgh3skpibwpmwhloy3rtde1xzjzwsfphz1zpvldj0ghhaufvx3lxtfbzc2iwy2tjsnv2luxvz1pra3lca1netdj3mwpqntg4ewjkddjpunr5z2fydeq3mnfbuwg4txr3mvjgzhpjytnhqwtwodbvcexlcgtht3flrklzdgpmykfxnnz3qmhinehktum4wez2eurltl9fmml6s05usfy5znlfzxfuodbtslrws2lwxznddzv0ng5inurwymdelvzgekrgcxfouhhhvta0vxcwallisdfdvjrcewftm19xu0rmwmdpz2pwsta": {
    "at": "2026-11-19T20:39:31+00:00",
@@ -2075,10 +2225,10 @@
    "title": "Astra for Law leads in legal intelligence"
   },
   "url:https://openai.com/index/combatting-adversarial-distillation": {
-   "at": "2026-11-20T21:18:38+00:00",
-   "channel": "alerts",
-   "priority": "P2",
-   "title": "Combatting adversarial distillation"
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI details multi-layered strategy against adversarial distillation"
   },
   "url:https://openai.com/index/expanding-chatgpt-for-academic-researchers": {
    "at": "2026-11-16T22:19:08+00:00",
@@ -2111,10 +2261,10 @@
    "title": "GPT-6.2 + GPT-6.2 Astra"
   },
   "url:https://openai.com/index/introducing-medchembench": {
-   "at": "2026-11-20T21:18:38+00:00",
-   "channel": "alerts",
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
    "priority": "P2",
-   "title": "Can AI help scientists identify promising drug candidates?"
+   "title": "OpenAI introduces MedChemBench for medicinal chemistry evaluation"
   },
   "url:https://openai.com/index/introducing-openai-for-chile": {
    "at": "2026-11-17T14:39:48+00:00",
@@ -2225,10 +2375,10 @@
    "title": "Anthropic launches Linked billing beta for Claude platform developers"
   },
   "url:https://platform.openai.com/docs/changelog": {
-   "at": "2026-11-19T20:39:31+00:00",
+   "at": "2026-11-21T07:09:49+00:00",
    "channel": "digest",
-   "priority": "P1",
-   "title": "OpenAI rolls out Live Dictation and releases GPT-Live-1.1"
+   "priority": "P0",
+   "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol in API"
   },
   "url:https://platform.openai.com/docs/deprecations": {
    "at": "2026-11-19T03:40:14+00:00",
@@ -2326,6 +2476,18 @@
    "priority": "P3",
    "title": "GPT‑6.2 Astra and GPT‑6.2 Sol"
   },
+  "url:https://simonwillison.net/2026/nov/20/levent-alpoge": {
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic researcher claims Claude helped discover Riemann Hypothesis proof"
+  },
+  "url:https://startupfortune.com/oracle-says-its-300-billion-openai-buildout-is-fully-funded-after-a-20-billion-raise": {
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Oracle confirms its $300 billion OpenAI infrastructure deal is fully funded"
+  },
   "url:https://status.claude.com/incidents/6prv10gjdpz1": {
    "at": "2026-11-18T07:29:18+00:00",
    "channel": "digest",
@@ -2333,10 +2495,10 @@
    "title": "Elevated errors affecting the Google Docs connector"
   },
   "url:https://support.claude.com/articles/12138966-release-notes": {
-   "at": "2026-11-17T20:58:16+00:00",
+   "at": "2026-11-21T07:09:49+00:00",
    "channel": "digest",
    "priority": "P1",
-   "title": "Anthropic adds release channel option to Claude Desktop"
+   "title": "Anthropic adds computer use beta and Claude Meetings for Team and Enterprise"
   },
   "url:https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents": {
    "at": "2026-11-16T22:02:32+00:00",
@@ -2440,11 +2602,29 @@
    "priority": "P0",
    "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol models"
   },
+  "url:https://the-decoder.com/openai-makes-it-much-harder-for-attackers-to-extract-how-its-latest-ai-models-think": {
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI details multi-layered strategy against adversarial distillation"
+  },
   "url:https://the-decoder.com/openai-opens-its-ai-systems-to-four-independent-on-site-auditors-for-the-first-time": {
    "at": "2026-11-18T20:33:37+00:00",
    "channel": "digest",
    "priority": "P2",
    "title": "OpenAI Gives Independent Auditors Direct Access to Unreleased Models"
+  },
+  "url:https://theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off": {
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic closes $93.5B initial public offering on Nasdaq"
+  },
+  "url:https://theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem": {
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic researcher claims Claude helped discover Riemann Hypothesis proof"
   },
   "url:https://theverge.com/ai-artificial-intelligence/1034815/california-openai-hugging-face-lawsuit": {
    "at": "2026-11-16T22:02:32+00:00",
@@ -2482,6 +2662,12 @@
    "priority": "P1",
    "title": "Anthropic says Claude Mythos Preview ported to AMD GPUs in about three days"
   },
+  "url:https://wsj.com/finance/stocks/anthropics-ipo-bust-punctuates-4-trillion-ai-wipeout-on-wall-street-f1f1ec90": {
+   "at": "2026-11-21T07:09:49+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic closes $93.5B initial public offering on Nasdaq"
+  },
   "url:https://x.ai/news/grok-bot-accounting": {
    "at": "2026-11-17T20:58:16+00:00",
    "channel": "digest",
@@ -2513,10 +2699,10 @@
    "title": "Anthropic hits Nasdaq in largest IPO in history at $2T valuation"
   },
   "url:https://youtube.com/watch": {
-   "at": "2026-11-20T07:17:37+00:00",
+   "at": "2026-11-21T07:09:49+00:00",
    "channel": "digest",
    "priority": "P1",
-   "title": "Anthropic completes record $81.3 B IPO on Nasdaq at $1.5 T valuation"
+   "title": "Anthropic researcher claims Claude helped discover Riemann Hypothesis proof"
   },
   "url:https://zerohedge.com/political/anthropic-paid-rubios-ex-chief-staffs-firm-740000-after-jensen-memo-it-lobbied-his-nsc": {
    "at": "2026-11-18T07:29:18+00:00",
