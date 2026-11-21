@@ -932,6 +932,11 @@
    "channel": "discovery",
    "title": "appwrite/appwrite"
   },
+  "url:https://github.com/baarai/artex": {
+   "at": "2026-11-21T11:33:38+00:00",
+   "channel": "discovery",
+   "title": "BaaRai/ARTEX"
+  },
   "url:https://github.com/bazichart/bazichart-mcp": {
    "at": "2026-11-17T08:15:30+00:00",
    "channel": "discovery",
@@ -966,6 +971,11 @@
    "at": "2026-11-16T23:48:27+00:00",
    "channel": "discovery",
    "title": "ChromeDevTools/chrome-devtools-mcp"
+  },
+  "url:https://github.com/clacky-ai/openclacky": {
+   "at": "2026-11-21T11:33:38+00:00",
+   "channel": "discovery",
+   "title": "clacky-ai/openclacky"
   },
   "url:https://github.com/codepawl/crucible": {
    "at": "2026-11-21T02:42:19+00:00",
@@ -1011,6 +1021,11 @@
    "at": "2026-11-20T20:40:57+00:00",
    "channel": "discovery",
    "title": "doobidoo/mcp-memory-service"
+  },
+  "url:https://github.com/dozentwelve/papermorph": {
+   "at": "2026-11-21T11:33:38+00:00",
+   "channel": "discovery",
+   "title": "DozenTwelve/Papermorph"
   },
   "url:https://github.com/dzhng/jevgrep": {
    "at": "2026-11-20T20:40:57+00:00",
@@ -1062,6 +1077,11 @@
    "channel": "discovery",
    "title": "expo/exact"
   },
+  "url:https://github.com/fainir/most-capable-agent-system-prompt": {
+   "at": "2026-11-21T11:33:38+00:00",
+   "channel": "discovery",
+   "title": "fainir/most-capable-agent-system-prompt"
+  },
   "url:https://github.com/fei2411/ds-bot": {
    "at": "2026-11-20T02:29:58+00:00",
    "channel": "discovery",
@@ -1076,6 +1096,11 @@
    "at": "2026-11-19T12:01:00+00:00",
    "channel": "discovery",
    "title": "firecrawl/firecrawl"
+  },
+  "url:https://github.com/framerslab/agentos": {
+   "at": "2026-11-21T11:33:38+00:00",
+   "channel": "discovery",
+   "title": "framerslab/agentos"
   },
   "url:https://github.com/google-deepmind/gbench": {
    "at": "2026-11-17T18:43:32+00:00",
@@ -1207,6 +1232,11 @@
    "channel": "discovery",
    "title": "microsoft/web-grounding-evals"
   },
+  "url:https://github.com/modelengine-group/nexent": {
+   "at": "2026-11-21T11:33:38+00:00",
+   "channel": "discovery",
+   "title": "ModelEngine-Group/nexent"
+  },
   "url:https://github.com/morganlinton/beautifulrust": {
    "at": "2026-11-17T18:43:32+00:00",
    "channel": "discovery",
@@ -1261,6 +1291,11 @@
    "at": "2026-11-20T20:40:57+00:00",
    "channel": "discovery",
    "title": "oomol-lab/open-connector"
+  },
+  "url:https://github.com/open-mercato/cezar": {
+   "at": "2026-11-21T11:33:38+00:00",
+   "channel": "discovery",
+   "title": "open-mercato/cezar"
   },
   "url:https://github.com/openai/codex/releases/tag/rust-v0.169.1": {
    "at": "2026-11-18T07:29:18+00:00",
@@ -1368,6 +1403,11 @@
    "at": "2026-11-16T23:48:27+00:00",
    "channel": "discovery",
    "title": "wgjsg/agilex-docs-mcp"
+  },
+  "url:https://github.com/zleap-ai/sag-wiki": {
+   "at": "2026-11-21T11:33:38+00:00",
+   "channel": "discovery",
+   "title": "Zleap-AI/SAG-Wiki"
   },
   "url:https://gitlab.com/fforster/gitlab-mcp": {
    "at": "2026-11-16T23:48:27+00:00",
