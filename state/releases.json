@@ -1600,7 +1600,15 @@
   "openai:gpt-6-astra": "openai:gpt-6-astra",
   "openai:gpt-live-1-1": "openai:gpt-live-1-1"
  },
- "meta": {},
+ "meta": {
+  "weekly_reported": {
+   "google:gemini-4-neon": "2026-11-21",
+   "google:genie-4": "2026-11-21",
+   "openai:gpt-6-2+gpt-6-2-astra": "2026-11-21",
+   "openai:gpt-6-2-sol": "2026-11-21",
+   "openai:gpt-live-1-1": "2026-11-21"
+  }
+ },
  "outbox": {
   "google:gemini-3-6|review|a44c039e6b": {
    "attempts": 1,
