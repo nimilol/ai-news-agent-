@@ -830,6 +830,11 @@
    "channel": "discovery",
    "title": "agentscope-ai/agentscope"
   },
+  "url:https://github.com/alexeyw/lot-map": {
+   "at": "2026-11-21T02:42:19+00:00",
+   "channel": "discovery",
+   "title": "alexeyw/lot-map"
+  },
   "url:https://github.com/alibaba/open-code-review": {
    "at": "2026-11-16T23:48:27+00:00",
    "channel": "discovery",
@@ -908,6 +913,11 @@
    "channel": "discovery",
    "title": "ChromeDevTools/chrome-devtools-mcp"
   },
+  "url:https://github.com/codepawl/crucible": {
+   "at": "2026-11-21T02:42:19+00:00",
+   "channel": "discovery",
+   "title": "codepawl/crucible"
+  },
   "url:https://github.com/codewhale-hq/codewhale": {
    "at": "2026-11-18T20:50:39+00:00",
    "channel": "discovery",
@@ -918,10 +928,20 @@
    "channel": "discovery",
    "title": "comet-ml/opik"
   },
+  "url:https://github.com/cortexkit/magic-context": {
+   "at": "2026-11-21T02:42:19+00:00",
+   "channel": "discovery",
+   "title": "cortexkit/magic-context"
+  },
   "url:https://github.com/cotal-ai/cotal": {
    "at": "2026-11-17T08:15:30+00:00",
    "channel": "discovery",
    "title": "Cotal-AI/Cotal"
+  },
+  "url:https://github.com/daveebbelaar/bama": {
+   "at": "2026-11-21T02:42:19+00:00",
+   "channel": "discovery",
+   "title": "daveebbelaar/bama"
   },
   "url:https://github.com/deepset-ai/haystack": {
    "at": "2026-11-20T12:00:37+00:00",
@@ -978,6 +998,11 @@
    "channel": "discovery",
    "title": "erkamyaman/rust-anything"
   },
+  "url:https://github.com/evalstate/fast-agent": {
+   "at": "2026-11-21T02:42:19+00:00",
+   "channel": "discovery",
+   "title": "evalstate/fast-agent"
+  },
   "url:https://github.com/expo/exact": {
    "at": "2026-11-19T20:54:44+00:00",
    "channel": "discovery",
@@ -987,6 +1012,11 @@
    "at": "2026-11-20T02:29:58+00:00",
    "channel": "discovery",
    "title": "Fei2411/DS-Bot"
+  },
+  "url:https://github.com/fengzhenfei/carrel": {
+   "at": "2026-11-21T02:42:19+00:00",
+   "channel": "discovery",
+   "title": "FengZhenfei/carrel"
   },
   "url:https://github.com/firecrawl/firecrawl": {
    "at": "2026-11-19T12:01:00+00:00",
@@ -1133,6 +1163,11 @@
    "channel": "discovery",
    "title": "mvanhorn/last30days-skill"
   },
+  "url:https://github.com/n4ze3m/tiny-voca": {
+   "at": "2026-11-21T02:42:19+00:00",
+   "channel": "discovery",
+   "title": "n4ze3m/tiny-voca"
+  },
   "url:https://github.com/n8n-io/nod": {
    "at": "2026-11-19T20:54:44+00:00",
    "channel": "discovery",
@@ -1269,6 +1304,11 @@
    "at": "2026-11-20T02:29:58+00:00",
    "channel": "discovery",
    "title": "vibheksoni/stealth-browser-mcp"
+  },
+  "url:https://github.com/vincentsch/explainroo": {
+   "at": "2026-11-21T02:42:19+00:00",
+   "channel": "discovery",
+   "title": "vincentsch/explainroo"
   },
   "url:https://github.com/wgjsg/agilex-docs-mcp": {
    "at": "2026-11-16T23:48:27+00:00",
