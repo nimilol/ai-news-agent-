@@ -558,6 +558,12 @@
    "priority": "P2",
    "title": "Managing frontier AI risk: From training to deployment"
   },
+  "title:ai development frontier limits openai perplexity-based proposes": {
+   "at": "2026-11-22T19:39:39+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI Proposes Perplexity-Based Limits for Frontier AI Development"
+  },
   "title:ambition bar lowering raises revolut without": {
    "at": "2026-11-17T14:39:48+00:00",
    "channel": "alerts",
@@ -953,6 +959,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic closes $93.5B initial public offering on Nasdaq"
+  },
+  "url:https://app.dealroom.co/news/note/openai-publishes-its-internal-pretraining-curve-and-proposes-industry-wide-limits-based-on-perplexity": {
+   "at": "2026-11-22T19:39:39+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI Proposes Perplexity-Based Limits for Frontier AI Development"
   },
   "url:https://barrons.com/articles/spacex-stock-price-anthropic-ipo-0ea1c91b": {
    "at": "2026-11-22T06:47:48+00:00",
@@ -2780,6 +2792,12 @@
    "priority": "P1",
    "title": "OpenAI begins embedded safety evaluations with external research labs"
   },
+  "url:https://openai.com/index/perplexity-and-intelligence": {
+   "at": "2026-11-22T19:39:39+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI Proposes Perplexity-Based Limits for Frontier AI Development"
+  },
   "url:https://openai.com/index/research-acceleration-jagged-frontier": {
    "at": "2026-11-19T03:40:14+00:00",
    "channel": "alerts",
@@ -3205,6 +3223,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic says Claude Mythos Preview ported to AMD GPUs in about three days"
+  },
+  "url:https://unite.ai/openai-proposes-shared-ai-development-limits-tied-to-safety-milestones": {
+   "at": "2026-11-22T19:39:39+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI Proposes Perplexity-Based Limits for Frontier AI Development"
   },
   "url:https://wsj.com/finance/stocks/anthropics-ipo-bust-punctuates-4-trillion-ai-wipeout-on-wall-street-f1f1ec90": {
    "at": "2026-11-21T07:09:49+00:00",
