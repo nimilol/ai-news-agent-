@@ -1074,6 +1074,11 @@
    "priority": "P1",
    "title": "Genie 4"
   },
+  "url:https://github.com/0xs4n4tg/papercut-explainer": {
+   "at": "2026-11-22T01:33:01+00:00",
+   "channel": "discovery",
+   "title": "0xS4N4TG/papercut-explainer"
+  },
   "url:https://github.com/affaan-m/ecc": {
    "at": "2026-11-17T18:43:32+00:00",
    "channel": "discovery",
@@ -1151,6 +1156,11 @@
    "at": "2026-11-18T12:02:42+00:00",
    "channel": "discovery",
    "title": "appwrite/appwrite"
+  },
+  "url:https://github.com/awslabs/uaef": {
+   "at": "2026-11-22T01:33:01+00:00",
+   "channel": "discovery",
+   "title": "awslabs/uaef"
   },
   "url:https://github.com/baarai/artex": {
    "at": "2026-11-21T11:33:38+00:00",
@@ -1247,6 +1257,11 @@
    "channel": "discovery",
    "title": "doobidoo/mcp-memory-service"
   },
+  "url:https://github.com/dougtrajano/pydantic-ai-skills": {
+   "at": "2026-11-22T01:33:01+00:00",
+   "channel": "discovery",
+   "title": "DougTrajano/pydantic-ai-skills"
+  },
   "url:https://github.com/dozentwelve/papermorph": {
    "at": "2026-11-21T11:33:38+00:00",
    "channel": "discovery",
@@ -1291,6 +1306,11 @@
    "at": "2026-11-19T20:54:44+00:00",
    "channel": "discovery",
    "title": "erkamyaman/rust-anything"
+  },
+  "url:https://github.com/ersinkoc/ai-video-factory": {
+   "at": "2026-11-22T01:33:01+00:00",
+   "channel": "discovery",
+   "title": "ersinkoc/AI-Video-Factory"
   },
   "url:https://github.com/evalstate/fast-agent": {
    "at": "2026-11-21T02:42:19+00:00",
@@ -1477,6 +1497,11 @@
    "channel": "discovery",
    "title": "mvanhorn/last30days-skill"
   },
+  "url:https://github.com/n1neman/sapper-v2": {
+   "at": "2026-11-22T01:33:01+00:00",
+   "channel": "discovery",
+   "title": "N1nEmAn/sapper-v2"
+  },
   "url:https://github.com/n4ze3m/tiny-voca": {
    "at": "2026-11-21T02:42:19+00:00",
    "channel": "discovery",
@@ -1579,6 +1604,16 @@
    "channel": "discovery",
    "title": "pydantic/pydantic-ai"
   },
+  "url:https://github.com/q00/ouroboros": {
+   "at": "2026-11-22T01:33:01+00:00",
+   "channel": "discovery",
+   "title": "Q00/ouroboros"
+  },
+  "url:https://github.com/qianshuixia/shrimpreel": {
+   "at": "2026-11-22T01:33:01+00:00",
+   "channel": "discovery",
+   "title": "qianshuixia/shrimpreel"
+  },
   "url:https://github.com/qingyuna/answer-me-with-html": {
    "at": "2026-11-19T20:54:44+00:00",
    "channel": "discovery",
@@ -1633,6 +1668,11 @@
    "at": "2026-11-20T20:40:57+00:00",
    "channel": "discovery",
    "title": "test-zeus-ai/testzeus-hercules"
+  },
+  "url:https://github.com/uclanlp/openvlharness": {
+   "at": "2026-11-22T01:33:01+00:00",
+   "channel": "discovery",
+   "title": "uclanlp/OpenVLHarness"
   },
   "url:https://github.com/vapi-network/vapi-network": {
    "at": "2026-11-19T20:54:44+00:00",
