@@ -1175,10 +1175,20 @@
    "channel": "discovery",
    "title": "agentscope-ai/agentscope-java"
   },
+  "url:https://github.com/alchaincyf/huashu-art-motion": {
+   "at": "2026-11-22T11:50:20+00:00",
+   "channel": "discovery",
+   "title": "alchaincyf/huashu-art-motion"
+  },
   "url:https://github.com/alexeyw/lot-map": {
    "at": "2026-11-21T02:42:19+00:00",
    "channel": "discovery",
    "title": "alexeyw/lot-map"
+  },
+  "url:https://github.com/alexturkey/voxcpm2-turkce-ses-tasarimi": {
+   "at": "2026-11-22T11:50:20+00:00",
+   "channel": "discovery",
+   "title": "alexturkey/voxcpm2-turkce-ses-tasarimi"
   },
   "url:https://github.com/alibaba/open-code-review": {
    "at": "2026-11-16T23:48:27+00:00",
@@ -1222,6 +1232,11 @@
    "at": "2026-11-18T12:02:42+00:00",
    "channel": "discovery",
    "title": "appwrite/appwrite"
+  },
+  "url:https://github.com/awdr74100/figwright": {
+   "at": "2026-11-22T11:50:20+00:00",
+   "channel": "discovery",
+   "title": "awdr74100/figwright"
   },
   "url:https://github.com/awslabs/uaef": {
    "at": "2026-11-22T01:33:01+00:00",
@@ -1317,6 +1332,11 @@
    "at": "2026-11-18T03:03:20+00:00",
    "channel": "discovery",
    "title": "DenisSergeevitch/ex-ussr-kinship-research"
+  },
+  "url:https://github.com/didi/helixharness": {
+   "at": "2026-11-22T11:50:20+00:00",
+   "channel": "discovery",
+   "title": "didi/helixharness"
   },
   "url:https://github.com/doobidoo/mcp-memory-service": {
    "at": "2026-11-20T20:40:57+00:00",
@@ -1467,6 +1487,11 @@
    "at": "2026-11-18T20:50:39+00:00",
    "channel": "discovery",
    "title": "Jakeschincariol/replica-skill"
+  },
+  "url:https://github.com/jmanico/grim-prompter": {
+   "at": "2026-11-22T11:50:20+00:00",
+   "channel": "discovery",
+   "title": "jmanico/grim-prompter"
   },
   "url:https://github.com/josssphzhou/poki": {
    "at": "2026-11-20T02:29:58+00:00",
@@ -1735,6 +1760,11 @@
    "channel": "discovery",
    "title": "test-zeus-ai/testzeus-hercules"
   },
+  "url:https://github.com/truera/trulens": {
+   "at": "2026-11-22T11:50:20+00:00",
+   "channel": "discovery",
+   "title": "truera/trulens"
+  },
   "url:https://github.com/uclanlp/openvlharness": {
    "at": "2026-11-22T01:33:01+00:00",
    "channel": "discovery",
@@ -1760,10 +1790,20 @@
    "channel": "discovery",
    "title": "wgjsg/agilex-docs-mcp"
   },
+  "url:https://github.com/yolow92/pagesift": {
+   "at": "2026-11-22T11:50:20+00:00",
+   "channel": "discovery",
+   "title": "YOLOW92/pagesift"
+  },
   "url:https://github.com/zleap-ai/sag-wiki": {
    "at": "2026-11-21T11:33:38+00:00",
    "channel": "discovery",
    "title": "Zleap-AI/SAG-Wiki"
+  },
+  "url:https://github.com/zyphra/zonos3-mini": {
+   "at": "2026-11-22T11:50:20+00:00",
+   "channel": "discovery",
+   "title": "Zyphra/ZONOS3-Mini"
   },
   "url:https://gitlab.com/fforster/gitlab-mcp": {
    "at": "2026-11-16T23:48:27+00:00",
