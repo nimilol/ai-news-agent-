@@ -1207,6 +1207,11 @@
    "channel": "discovery",
    "title": "alibaba/open-code-review"
   },
+  "url:https://github.com/alibaba/qz-browser-agent": {
+   "at": "2026-11-22T19:54:50+00:00",
+   "channel": "discovery",
+   "title": "alibaba/qz-browser-agent"
+  },
   "url:https://github.com/amontlabs/lcu": {
    "at": "2026-11-20T02:29:58+00:00",
    "channel": "discovery",
@@ -1330,6 +1335,11 @@
    "channel": "discovery",
    "title": "Cotal-AI/Cotal"
   },
+  "url:https://github.com/dagoste/squadra": {
+   "at": "2026-11-22T19:54:50+00:00",
+   "channel": "discovery",
+   "title": "dagoSte/squadra"
+  },
   "url:https://github.com/daveebbelaar/bama": {
    "at": "2026-11-21T02:42:19+00:00",
    "channel": "discovery",
@@ -1395,6 +1405,11 @@
    "channel": "discovery",
    "title": "elementalsouls/Claude-BugHunter"
   },
+  "url:https://github.com/elvarofficial/teardown": {
+   "at": "2026-11-22T19:54:50+00:00",
+   "channel": "discovery",
+   "title": "elvarofficial/teardown"
+  },
   "url:https://github.com/ericjujianzou/rederive": {
    "at": "2026-11-20T20:40:57+00:00",
    "channel": "discovery",
@@ -1439,6 +1454,11 @@
    "at": "2026-11-19T12:01:00+00:00",
    "channel": "discovery",
    "title": "firecrawl/firecrawl"
+  },
+  "url:https://github.com/firecrawl/firecrawl-mcp-server": {
+   "at": "2026-11-22T19:54:50+00:00",
+   "channel": "discovery",
+   "title": "firecrawl/firecrawl-mcp-server"
   },
   "url:https://github.com/framerslab/agentos": {
    "at": "2026-11-21T11:33:38+00:00",
@@ -1535,6 +1555,11 @@
    "channel": "discovery",
    "title": "Leonxlnx/earshot"
   },
+  "url:https://github.com/ling-stack-org/ling-stack": {
+   "at": "2026-11-22T19:54:50+00:00",
+   "channel": "discovery",
+   "title": "ling-stack-org/ling-stack"
+  },
   "url:https://github.com/lodyai/lody": {
    "at": "2026-11-20T02:29:58+00:00",
    "channel": "discovery",
@@ -1619,6 +1644,11 @@
    "at": "2026-11-20T02:29:58+00:00",
    "channel": "discovery",
    "title": "nanaism/yomiyasu"
+  },
+  "url:https://github.com/nanako0129/pilotfish": {
+   "at": "2026-11-22T19:54:50+00:00",
+   "channel": "discovery",
+   "title": "Nanako0129/pilotfish"
   },
   "url:https://github.com/niazmorshed2007/reanimate": {
    "at": "2026-11-20T12:00:37+00:00",
@@ -1772,6 +1802,11 @@
    "channel": "discovery",
    "title": "test-zeus-ai/testzeus-hercules"
   },
+  "url:https://github.com/the-open-engine/zeroshot": {
+   "at": "2026-11-22T19:54:50+00:00",
+   "channel": "discovery",
+   "title": "the-open-engine/zeroshot"
+  },
   "url:https://github.com/truera/trulens": {
    "at": "2026-11-22T11:50:20+00:00",
    "channel": "discovery",
@@ -1806,6 +1841,11 @@
    "at": "2026-11-22T11:50:20+00:00",
    "channel": "discovery",
    "title": "YOLOW92/pagesift"
+  },
+  "url:https://github.com/zichuanlan/agent-purge": {
+   "at": "2026-11-22T19:54:50+00:00",
+   "channel": "discovery",
+   "title": "ZiChuanLan/agent-purge"
   },
   "url:https://github.com/zleap-ai/sag-wiki": {
    "at": "2026-11-21T11:33:38+00:00",
