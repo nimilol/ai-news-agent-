@@ -162,6 +162,12 @@
    "priority": "P3",
    "title": "ChatGPT AI Predicts XRP’s Price for the End of 2029 - Yahoo Finance"
   },
+  "title:20b contract fully fund infrastructure openai oracle raise secures": {
+   "at": "2026-11-22T06:47:48+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Oracle Secures $20B Raise to Fully Fund OpenAI Infrastructure Contract"
+  },
   "title:26b 4 a4b gemma": {
    "at": "2026-11-19T22:22:23+00:00",
    "channel": "release",
@@ -221,6 +227,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "Anthropic paid lobbying firms linked to Rubio $740k"
+  },
+  "title:81.3 83 anthropic billion ipo nasdaq prices raises": {
+   "at": "2026-11-22T06:47:48+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic Prices IPO at $83 and Raises $81.3 Billion on Nasdaq"
   },
   "title:83 anthropic initial offering per prices public share": {
    "at": "2026-11-19T07:27:18+00:00",
@@ -492,6 +504,12 @@
    "priority": "P3",
    "title": "External sandboxes for coding agents"
   },
+  "title:agreement california openai signs systemwide university": {
+   "at": "2026-11-22T06:47:48+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "University of California Signs Systemwide Agreement with OpenAI"
+  },
   "title:ahead anthropic continue debut ipo nasdaq preparations": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
@@ -599,6 +617,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "Anthropic launches Linked billing beta for Claude platform developers"
+  },
+  "title:anthropic beta claude computer expands mobile updates use": {
+   "at": "2026-11-22T06:47:48+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Anthropic Updates Claude Mobile and Expands Computer Use Beta"
   },
   "title:anthropic bloomberg customers ipo may pay price": {
    "at": "2026-11-18T07:29:18+00:00",
@@ -804,11 +828,23 @@
    "priority": "P2",
    "title": "Inside the Codex sandbox"
   },
+  "title:combine data elon grok musk plans tesla traffic": {
+   "at": "2026-11-22T06:47:48+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Elon Musk Plans to Combine Tesla Traffic Data with Grok on X"
+  },
   "title:consensus silent": {
    "at": "2026-11-18T22:10:54+00:00",
    "channel": "alerts",
    "priority": "P2",
    "title": "The Silent Consensus"
+  },
+  "title:copilot gpt-6.2 microsoft openai out rolls sol worldwide": {
+   "at": "2026-11-22T06:47:48+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Microsoft Rolls Out OpenAI's GPT-6.2 Sol Worldwide in Copilot"
   },
   "title:daybreak deploying red": {
    "at": "2026-11-20T03:31:17+00:00",
@@ -918,6 +954,12 @@
    "priority": "P1",
    "title": "Anthropic closes $93.5B initial public offering on Nasdaq"
   },
+  "url:https://barrons.com/articles/spacex-stock-price-anthropic-ipo-0ea1c91b": {
+   "at": "2026-11-22T06:47:48+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic Prices IPO at $83 and Raises $81.3 Billion on Nasdaq"
+  },
   "url:https://blog.adafruit.com/2026/11/21/chatgpt-for-the-snes": {
    "at": "2026-11-21T19:19:33+00:00",
    "channel": "digest",
@@ -954,6 +996,12 @@
    "priority": "P1",
    "title": "Anthropic hits Nasdaq in largest IPO in history at $2T valuation"
   },
+  "url:https://chosun.com/english/market-money-en/2026/11/22/n66dd65jpfa55hkfjqmh25idai": {
+   "at": "2026-11-22T06:47:48+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic Prices IPO at $83 and Raises $81.3 Billion on Nasdaq"
+  },
   "url:https://cnbc.com/2026/11/16/openai-california-bonta-ai-lawsuit.html": {
    "at": "2026-11-17T07:57:43+00:00",
    "channel": "digest",
@@ -977,6 +1025,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "OpenAI’s GPT-6.2 Astra ranks sixth on the new Agent Arena Index - Crypto Briefing"
+  },
+  "url:https://dailybruin.com/2026/11/21/uc-signs-deal-with-openai-to-expand-ai-access-lower-costs": {
+   "at": "2026-11-22T06:47:48+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "University of California Signs Systemwide Agreement with OpenAI"
   },
   "url:https://deepmind.google/blog/introducing-gemini-4-neon": {
    "at": "2026-11-18T22:10:43+00:00",
@@ -1038,6 +1092,12 @@
    "priority": "P3",
    "title": "SpaceX vs. Anthropic: Here’s Which Mega-IPO Stock I’d Buy After Anthropic Goes Public. - Yahoo Finance"
   },
+  "url:https://finance.yahoo.com/technology/ai/articles/anthropic-ipo-buzz-builds-crypto-043005175.html": {
+   "at": "2026-11-22T06:47:48+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic Prices IPO at $83 and Raises $81.3 Billion on Nasdaq"
+  },
   "url:https://finance.yahoo.com/technology/ai/articles/elon-musk-says-grok-accounting-043007297.html": {
    "at": "2026-11-20T07:17:37+00:00",
    "channel": "digest",
@@ -1055,6 +1115,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "Here's How Much Cash Anthropic Has After Its IPO, and Why It Could Be the Most Important Number for Investors to Know - The Motley Fool"
+  },
+  "url:https://fool.com/investing/2026/11/21/prediction-some-anthropic-investors-are-about-to-learn-an-expensive-lesson": {
+   "at": "2026-11-22T06:47:48+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic Prices IPO at $83 and Raises $81.3 Billion on Nasdaq"
   },
   "url:https://foxbusiness.com/economy/anthropic-ipo-signals-beginning-gold-rush-small-businesses-says-biz-tech-ceo": {
    "at": "2026-11-21T19:19:33+00:00",
@@ -2008,6 +2074,12 @@
    "priority": "P3",
    "title": "OpenAI site plan approved for Effingham - The Current"
   },
+  "url:https://news.google.com/rss/articles/cbmiggfbvv95cuxpckx2b2tgyjrhr01zsjfvn1dznlfsthlst1fidjh2v1zsvzfwwgl1r3pzul9zc2jkotfvtja4ognaq3vxnfnnz0jknxjiwhm4zk5wchjqckpzqwtmtvetuwxjclz1s0tusghjtmzvqkn1zvrgwgruvmxlbupjd1a3rxl3": {
+   "at": "2026-11-22T06:47:48+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic Prices IPO at $83 and Raises $81.3 Billion on Nasdaq"
+  },
   "url:https://news.google.com/rss/articles/cbmigwfbvv95cuxodvkzqlndalfhchrtsenwwer3chp5ndbszgyxbnvkwuzgn0tdsndssvfeu21lq3n4n3htzgtzs3o5rljzrvvcqxnrx2npc2vgzmp5twpqsxvhcfnqvejsrxfpa3hmshhac0xzbkrnullnnljty3vjwfbkynfvzu9vbvhcqq": {
    "at": "2026-11-21T07:09:49+00:00",
    "channel": "digest",
@@ -2842,6 +2914,18 @@
    "priority": "P3",
    "title": "Kimi vs DeepSeek vs Qwen vs GLM: 4 Ranked, 1 Wins [2026] - shattered.io"
   },
+  "url:https://shattered.io/oracle-says-openai-contract-fully-funded-20-billion-final-raise": {
+   "at": "2026-11-22T06:47:48+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Oracle Secures $20B Raise to Fully Fund OpenAI Infrastructure Contract"
+  },
+  "url:https://shattered.io/tristan-thompson-anthropic-early-stake-warriors-dinners-1-5-trillion-ipo": {
+   "at": "2026-11-22T06:47:48+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic Prices IPO at $83 and Raises $81.3 Billion on Nasdaq"
+  },
   "url:https://simonwillison.net/2026/nov/17/external-sandboxes-for-coding-agents": {
    "at": "2026-11-18T07:29:18+00:00",
    "channel": "digest",
@@ -2860,6 +2944,12 @@
    "priority": "P1",
    "title": "Anthropic researcher claims Claude helped discover Riemann Hypothesis proof"
   },
+  "url:https://startupfortune.com/microsoft-puts-openais-gpt-62-sol-in-copilot-worldwide-as-mai-models-push-in": {
+   "at": "2026-11-22T06:47:48+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Microsoft Rolls Out OpenAI's GPT-6.2 Sol Worldwide in Copilot"
+  },
   "url:https://startupfortune.com/oracle-says-its-300-billion-openai-buildout-is-fully-funded-after-a-20-billion-raise": {
    "at": "2026-11-21T07:09:49+00:00",
    "channel": "digest",
@@ -2873,10 +2963,10 @@
    "title": "Elevated errors affecting the Google Docs connector"
   },
   "url:https://support.claude.com/articles/12138966-release-notes": {
-   "at": "2026-11-21T07:09:49+00:00",
+   "at": "2026-11-22T06:47:48+00:00",
    "channel": "digest",
-   "priority": "P1",
-   "title": "Anthropic adds computer use beta and Claude Meetings for Team and Enterprise"
+   "priority": "P3",
+   "title": "Anthropic Updates Claude Mobile and Expands Computer Use Beta"
   },
   "url:https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents": {
    "at": "2026-11-16T22:02:32+00:00",
@@ -2949,6 +3039,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "Cursor’s command-line tool pulls prerelease of Grok Build 2.0: Report"
+  },
+  "url:https://teslanorth.com/2026/11/21/tesla-grok-live-traffic-destination-updates": {
+   "at": "2026-11-22T06:47:48+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Elon Musk Plans to Combine Tesla Traffic Data with Grok on X"
   },
   "url:https://testingcatalog.com/microsoft-launches-mai-cyber-2-flash-security-model": {
    "at": "2026-11-18T07:29:18+00:00",
