@@ -7,6 +7,8 @@
   "gh:a1lane/a1lane-mcp": "github:R_kgDOVgg6qg",
   "gh:a2uicatalog/a2ui": "github:R_kgDOTA06WQ",
   "gh:aaddrick/building-with-typesafe-jev": "github:R_kgDOUr_YHg",
+  "gh:aashish254/burn": "github:R_kgDOUr_s5w",
+  "gh:abdiraimov-otabek/dashboard-design-skill": "github:R_kgDOVQgKvw",
   "gh:achromat-ai/achromat-mcp-server": "github:R_kgDOVK-lkw",
   "gh:affaan-m/ecc": "github:R_kgDOQ77-1A",
   "gh:ag-ui-protocol/ag-ui": "github:R_kgDOOmBWgw",
@@ -86,11 +88,13 @@
   "gh:cortexkit/magic-context": "github:R_kgDORxZYKA",
   "gh:cotal-ai/cotal": "github:R_kgDOSufZ8A",
   "gh:cowork-os/cowork-os": "github:R_kgDORAlv2A",
+  "gh:crommaai/crommacode": "github:R_kgDOVraVzA",
   "gh:crow-hq/llm-wiki-v2": "github:R_kgDOUqDs8w",
   "gh:cuongyd196/cit-voice-studio": "github:R_kgDOUnGR6g",
   "gh:cygnux-labs/tracekit": "github:R_kgDOUsvuUg",
   "gh:cynicalight/neoread": "github:R_kgDOU6TsFg",
   "gh:dagoste/squadra": "github:R_kgDOUvVpFQ",
+  "gh:danepps/legal-research-skills": "github:R_kgDOVOi0NQ",
   "gh:daniel3303/equibles": "github:R_kgDORv73HA",
   "gh:dansugc/reverse-engineer-marketing": "github:R_kgDOVOeacg",
   "gh:data-goblin/claude-code-filetree": "github:R_kgDOU4U5Ng",
@@ -134,7 +138,9 @@
   "gh:erkamyaman/rust-anything": "github:R_kgDOVwVmZA",
   "gh:ersinkoc/ai-video-factory": "github:R_kgDOVcW76w",
   "gh:ersinkoc/phonebox": "github:R_kgDOVmZZOQ",
+  "gh:evaleval/every_eval_ever": "github:R_kgDOP-vP7A",
   "gh:evalstate/fast-agent": "github:R_kgDONsNzVQ",
+  "gh:evergreen-it-dev/folio": "github:R_kgDOUztUmA",
   "gh:evolvinglmms-lab/lmms-eval": "github:R_kgDOLdAZwA",
   "gh:expo/exact": "github:R_kgDOVfkMyg",
   "gh:fainir/most-capable-agent-system-prompt": "github:R_kgDORzRc2g",
@@ -151,7 +157,9 @@
   "gh:gathin23/cleanyourtv": "github:R_kgDOVNLNMw",
   "gh:genieincodebottle/generative-ai": "github:R_kgDOLCmz3A",
   "gh:geniuspath/apipod-agent-plugins": "github:R_kgDOVhQnkg",
+  "gh:giskard-ai/giskard-oss": "github:R_kgDOG9PI5A",
   "gh:glanderness/beeftv": "github:R_kgDOUolfTw",
+  "gh:glen-web-app/best-memory-plugins": "github:R_kgDOVjYtnA",
   "gh:google-deepmind/alphaevolve": "github:R_kgDOVinb9w",
   "gh:google-deepmind/efficient_evals": "github:R_kgDOVwgsbQ",
   "gh:google-deepmind/extract_frag_trees": "github:R_kgDOV29acQ",
@@ -186,6 +194,7 @@
   "gh:huggingface/traj2envs": "github:R_kgDOViuGMg",
   "gh:huggingface/transformers-perf": "github:R_kgDOVwNn1g",
   "gh:hujjun/mcd-saver-strategist": "github:R_kgDOVB2Xgw",
+  "gh:iamvicliu/agenthub": "github:R_kgDOVDA2wg",
   "gh:ibm/assetopsbench": "github:R_kgDOOjD0cQ",
   "gh:ifixai-ai/ifixai": "github:R_kgDOSN5LZA",
   "gh:iflytek/skillhub": "github:R_kgDORkOSsQ",
@@ -212,11 +221,13 @@
   "gh:jonigl/mcp-client-for-ollama": "github:R_kgDOOeox5Q",
   "gh:josssphzhou/poki": "github:R_kgDOVkGvGA",
   "gh:jub0t/concat": "github:R_kgDOUEHx5A",
+  "gh:judgmentlabs/judgeval": "github:R_kgDONFlf-w",
   "gh:juneyaooo/rea-video": "github:R_kgDOVcA9Ag",
   "gh:justxor/claude-code-pro-course": "github:R_kgDOU1FZRg",
   "gh:kaankiziltug/logo-design-skill": "github:R_kgDOUshxmQ",
   "gh:kajisho5/ffmpeg-skill": "github:R_kgDOUNQZzA",
   "gh:kalarislabs/claude-systems-prompts": "github:R_kgDOS2UmGg",
+  "gh:kettuai/kettu": "github:R_kgDOVROqjQ",
   "gh:kitfunso/hippo-memory": "github:R_kgDORniRRA",
   "gh:kkkkhazix/agent-autoloop": "github:R_kgDOVhF2rg",
   "gh:kostja94/bricks": "github:R_kgDOUqkO-w",
@@ -229,6 +240,7 @@
   "gh:langfuse/langfuse": "github:R_kgDOJku7Qg",
   "gh:langgptai/awesome-system-prompts": "github:R_kgDOOpn9KQ",
   "gh:lanqiao-luca/ai-video-marker": "github:R_kgDOVW-ZOg",
+  "gh:laulauraluo/looks-good-to-ai": "github:R_kgDOVUJgAA",
   "gh:lemomo-ai/lemo-opuscar": "github:R_kgDOUsqjIA",
   "gh:leonxlnx/earshot": "github:R_kgDOVKgi0A",
   "gh:ling-stack-org/ling-stack": "github:R_kgDOSimCXQ",
@@ -243,9 +255,11 @@
   "gh:louis-cfm/coucou": "github:R_kgDOUu-p6g",
   "gh:louisshark/chatgpt_system_prompt": "github:R_kgDOKn3x8g",
   "gh:lumidarin/agy-capsule": "github:R_kgDOVuNJ4w",
+  "gh:mamawai/wtfibought": "github:R_kgDORJs5nw",
   "gh:marclou/mailcheap": "github:R_kgDOVDuGdA",
   "gh:marketzy/codex-cli-repo-workbench": "github:R_kgDOV1ooPg",
   "gh:maximhq/bifrost": "github:R_kgDOOLDdQA",
+  "gh:mdalamin5/end-to-end-agentic-ai-automation-lab": "github:R_kgDOOr79Dg",
   "gh:mdiri-ai/soduwork": "github:R_kgDOVbQmEQ",
   "gh:mdpsec/bug-bounty-hunting-prompts": "github:R_kgDOU0XiBQ",
   "gh:microsoft/agent-governance-toolkit": "github:R_kgDORc2-Kw",
@@ -275,6 +289,8 @@
   "gh:modelengine-group/nexent": "github:R_kgDOOhB3Gw",
   "gh:morganlinton/beautifulrust": "github:R_kgDOVUPmBg",
   "gh:morluto/awesome-reverse-engineering": "github:R_kgDOVCnBgg",
+  "gh:msoedov/agentic_security": "github:R_kgDOLs9BZw",
+  "gh:mu-zi-lee/hitl-dev-loop": "github:R_kgDOVOAn9w",
   "gh:muaaz9329/cheap-ag": "github:R_kgDOVbF6Bw",
   "gh:mvanhorn/last30days-skill": "github:R_kgDOQ__jdA",
   "gh:mvschwarz/openrig": "github:R_kgDOR2ntBw",
@@ -285,6 +301,7 @@
   "gh:nanaism/yomiyasu": "github:R_kgDOU1BOZg",
   "gh:nanako0129/pilotfish": "github:R_kgDOTRjXgA",
   "gh:nano-muse/nanomuse": "github:R_kgDOUmzacQ",
+  "gh:naxianjin/codex-pair": "github:R_kgDOVKl7GA",
   "gh:nb-corp/gpt-with-taste": "github:R_kgDOVGR42A",
   "gh:neerazz/hermes-antigravity-oauth": "github:R_kgDOUvcyrg",
   "gh:niazmorshed2007/reanimate": "github:R_kgDOVbaVRw",
@@ -295,6 +312,7 @@
   "gh:obra/superpowers": "github:R_kgDOP_gcWw",
   "gh:oil-oil/oil-ui": "github:R_kgDOU0Ob-A",
   "gh:okf-memory/okf-agent-memory": "github:R_kgDOUPoneg",
+  "gh:old-friends-gathering/sedimem": "github:R_kgDOVfyvlg",
   "gh:oldcircle/geo-sleuth": "github:R_kgDOUf44tQ",
   "gh:ollaya-dev/ollaya": "github:R_kgDOUoIjTg",
   "gh:omnigent-ai/omnigent": "github:R_kgDOS3jeow",
@@ -325,6 +343,7 @@
   "gh:promptfoo/promptfoo": "github:R_kgDOJcj3uQ",
   "gh:pugarte7/spanish-top-tech-companies": "github:R_kgDOUEQDKQ",
   "gh:punkpeye/awesome-mcp-servers": "github:R_kgDONWz9pg",
+  "gh:pvjbuilds/delegate-router": "github:R_kgDOU01nQg",
   "gh:pydantic/pydantic-ai": "github:R_kgDOMMa-Pg",
   "gh:q00/ouroboros": "github:R_kgDOQ5X3RQ",
   "gh:qianshuixia/shrimpreel": "github:R_kgDOVRRIDw",
@@ -338,6 +357,7 @@
   "gh:repoprompt/repoprompt-ce": "github:R_kgDOSbtU7Q",
   "gh:reticlehq/reticle": "github:R_kgDOS3TU6Q",
   "gh:rhesis-ai/rhesis": "github:R_kgDOM9-tIA",
+  "gh:rikinshah787/dotpals": "github:R_kgDOU14BGQ",
   "gh:rlaope/deepseek-bot": "github:R_kgDOU9zSoA",
   "gh:rocketride-org/rocketride-server": "github:R_kgDOROCxSw",
   "gh:rose22/openlumara": "github:R_kgDORaTFAA",
@@ -349,6 +369,7 @@
   "gh:sarthzk/internship-tracker": "github:R_kgDOVTaHkA",
   "gh:scaleapi/agentenv-framework": "github:R_kgDOUp-cEA",
   "gh:scarletkc/seiso": "github:R_kgDOUucdqA",
+  "gh:seehiong/seehiong.github.io": "github:R_kgDOJg7Puw",
   "gh:shaongitbd/doory": "github:R_kgDOVDInUQ",
   "gh:shinyobjectz/raea": "github:R_kgDOVOrBtQ",
   "gh:sidiora-labs/paxeer-monorepo": "github:R_kgDOT4tZ7Q",
@@ -378,15 +399,19 @@
   "gh:tiger-ai-lab/websitebench": "github:R_kgDOVisUYg",
   "gh:tim-today/tim-agent": "github:R_kgDOU4GrjA",
   "gh:timoncool/speech-studio": "github:R_kgDOVKVTZA",
+  "gh:timwuhaotian/killi": "github:R_kgDOVSdnwA",
   "gh:totec448-spec/chat-on-steroids": "github:R_kgDOUAqsTg",
   "gh:tracer-cloud/opensre": "github:R_kgDOQ4pdCg",
   "gh:truera/trulens": "github:MDEwOlJlcG9zaXRvcnkzMDk1MDQ4ODU=",
+  "gh:trustabl/agent-dashboard": "github:R_kgDOVO98NQ",
+  "gh:trustabl/agent-reliability-skills": "github:R_kgDOVcnjyQ",
   "gh:tylerprogramming/ai": "github:R_kgDOKlJVHQ",
   "gh:uclanlp/openvlharness": "github:R_kgDOVKdNfQ",
   "gh:ucsandman/dashclaw": "github:R_kgDORLJAog",
   "gh:uernamezzj/workbuddy-prompt-patcher": "github:R_kgDOThMc0g",
   "gh:underleveledbuilder/awesome-short-drama-skills": "github:R_kgDOVIQiug",
   "gh:vapi-network/vapi-network": "github:R_kgDOU4zrqA",
+  "gh:vayungodara/cliproxy-rs": "github:R_kgDOU56ZJA",
   "gh:verifywise-ai/verifywise": "github:R_kgDOMlKt8g",
   "gh:vibheksoni/stealth-browser-mcp": "github:R_kgDOPa3YDg",
   "gh:vincentsch/explainroo": "github:R_kgDOUrdHXw",
@@ -432,6 +457,8 @@
   "url:https://github.com/a1lane/a1lane-mcp": "github:R_kgDOVgg6qg",
   "url:https://github.com/a2uicatalog/a2ui": "github:R_kgDOTA06WQ",
   "url:https://github.com/aaddrick/building-with-typesafe-jev": "github:R_kgDOUr_YHg",
+  "url:https://github.com/aashish254/burn": "github:R_kgDOUr_s5w",
+  "url:https://github.com/abdiraimov-otabek/dashboard-design-skill": "github:R_kgDOVQgKvw",
   "url:https://github.com/achromat-ai/achromat-mcp-server": "github:R_kgDOVK-lkw",
   "url:https://github.com/affaan-m/ecc": "github:R_kgDOQ77-1A",
   "url:https://github.com/ag-ui-protocol/ag-ui": "github:R_kgDOOmBWgw",
@@ -511,11 +538,13 @@
   "url:https://github.com/cortexkit/magic-context": "github:R_kgDORxZYKA",
   "url:https://github.com/cotal-ai/cotal": "github:R_kgDOSufZ8A",
   "url:https://github.com/cowork-os/cowork-os": "github:R_kgDORAlv2A",
+  "url:https://github.com/crommaai/crommacode": "github:R_kgDOVraVzA",
   "url:https://github.com/crow-hq/llm-wiki-v2": "github:R_kgDOUqDs8w",
   "url:https://github.com/cuongyd196/cit-voice-studio": "github:R_kgDOUnGR6g",
   "url:https://github.com/cygnux-labs/tracekit": "github:R_kgDOUsvuUg",
   "url:https://github.com/cynicalight/neoread": "github:R_kgDOU6TsFg",
   "url:https://github.com/dagoste/squadra": "github:R_kgDOUvVpFQ",
+  "url:https://github.com/danepps/legal-research-skills": "github:R_kgDOVOi0NQ",
   "url:https://github.com/daniel3303/equibles": "github:R_kgDORv73HA",
   "url:https://github.com/dansugc/reverse-engineer-marketing": "github:R_kgDOVOeacg",
   "url:https://github.com/data-goblin/claude-code-filetree": "github:R_kgDOU4U5Ng",
@@ -559,7 +588,9 @@
   "url:https://github.com/erkamyaman/rust-anything": "github:R_kgDOVwVmZA",
   "url:https://github.com/ersinkoc/ai-video-factory": "github:R_kgDOVcW76w",
   "url:https://github.com/ersinkoc/phonebox": "github:R_kgDOVmZZOQ",
+  "url:https://github.com/evaleval/every_eval_ever": "github:R_kgDOP-vP7A",
   "url:https://github.com/evalstate/fast-agent": "github:R_kgDONsNzVQ",
+  "url:https://github.com/evergreen-it-dev/folio": "github:R_kgDOUztUmA",
   "url:https://github.com/evolvinglmms-lab/lmms-eval": "github:R_kgDOLdAZwA",
   "url:https://github.com/expo/exact": "github:R_kgDOVfkMyg",
   "url:https://github.com/fainir/most-capable-agent-system-prompt": "github:R_kgDORzRc2g",
@@ -576,7 +607,9 @@
   "url:https://github.com/gathin23/cleanyourtv": "github:R_kgDOVNLNMw",
   "url:https://github.com/genieincodebottle/generative-ai": "github:R_kgDOLCmz3A",
   "url:https://github.com/geniuspath/apipod-agent-plugins": "github:R_kgDOVhQnkg",
+  "url:https://github.com/giskard-ai/giskard-oss": "github:R_kgDOG9PI5A",
   "url:https://github.com/glanderness/beeftv": "github:R_kgDOUolfTw",
+  "url:https://github.com/glen-web-app/best-memory-plugins": "github:R_kgDOVjYtnA",
   "url:https://github.com/google-deepmind/alphaevolve": "github:R_kgDOVinb9w",
   "url:https://github.com/google-deepmind/efficient_evals": "github:R_kgDOVwgsbQ",
   "url:https://github.com/google-deepmind/extract_frag_trees": "github:R_kgDOV29acQ",
@@ -611,6 +644,7 @@
   "url:https://github.com/huggingface/traj2envs": "github:R_kgDOViuGMg",
   "url:https://github.com/huggingface/transformers-perf": "github:R_kgDOVwNn1g",
   "url:https://github.com/hujjun/mcd-saver-strategist": "github:R_kgDOVB2Xgw",
+  "url:https://github.com/iamvicliu/agenthub": "github:R_kgDOVDA2wg",
   "url:https://github.com/ibm/assetopsbench": "github:R_kgDOOjD0cQ",
   "url:https://github.com/ifixai-ai/ifixai": "github:R_kgDOSN5LZA",
   "url:https://github.com/iflytek/skillhub": "github:R_kgDORkOSsQ",
@@ -637,11 +671,13 @@
   "url:https://github.com/jonigl/mcp-client-for-ollama": "github:R_kgDOOeox5Q",
   "url:https://github.com/josssphzhou/poki": "github:R_kgDOVkGvGA",
   "url:https://github.com/jub0t/concat": "github:R_kgDOUEHx5A",
+  "url:https://github.com/judgmentlabs/judgeval": "github:R_kgDONFlf-w",
   "url:https://github.com/juneyaooo/rea-video": "github:R_kgDOVcA9Ag",
   "url:https://github.com/justxor/claude-code-pro-course": "github:R_kgDOU1FZRg",
   "url:https://github.com/kaankiziltug/logo-design-skill": "github:R_kgDOUshxmQ",
   "url:https://github.com/kajisho5/ffmpeg-skill": "github:R_kgDOUNQZzA",
   "url:https://github.com/kalarislabs/claude-systems-prompts": "github:R_kgDOS2UmGg",
+  "url:https://github.com/kettuai/kettu": "github:R_kgDOVROqjQ",
   "url:https://github.com/kitfunso/hippo-memory": "github:R_kgDORniRRA",
   "url:https://github.com/kkkkhazix/agent-autoloop": "github:R_kgDOVhF2rg",
   "url:https://github.com/kostja94/bricks": "github:R_kgDOUqkO-w",
@@ -654,6 +690,7 @@
   "url:https://github.com/langfuse/langfuse": "github:R_kgDOJku7Qg",
   "url:https://github.com/langgptai/awesome-system-prompts": "github:R_kgDOOpn9KQ",
   "url:https://github.com/lanqiao-luca/ai-video-marker": "github:R_kgDOVW-ZOg",
+  "url:https://github.com/laulauraluo/looks-good-to-ai": "github:R_kgDOVUJgAA",
   "url:https://github.com/lemomo-ai/lemo-opuscar": "github:R_kgDOUsqjIA",
   "url:https://github.com/leonxlnx/earshot": "github:R_kgDOVKgi0A",
   "url:https://github.com/ling-stack-org/ling-stack": "github:R_kgDOSimCXQ",
@@ -668,9 +705,11 @@
   "url:https://github.com/louis-cfm/coucou": "github:R_kgDOUu-p6g",
   "url:https://github.com/louisshark/chatgpt_system_prompt": "github:R_kgDOKn3x8g",
   "url:https://github.com/lumidarin/agy-capsule": "github:R_kgDOVuNJ4w",
+  "url:https://github.com/mamawai/wtfibought": "github:R_kgDORJs5nw",
   "url:https://github.com/marclou/mailcheap": "github:R_kgDOVDuGdA",
   "url:https://github.com/marketzy/codex-cli-repo-workbench": "github:R_kgDOV1ooPg",
   "url:https://github.com/maximhq/bifrost": "github:R_kgDOOLDdQA",
+  "url:https://github.com/mdalamin5/end-to-end-agentic-ai-automation-lab": "github:R_kgDOOr79Dg",
   "url:https://github.com/mdiri-ai/soduwork": "github:R_kgDOVbQmEQ",
   "url:https://github.com/mdpsec/bug-bounty-hunting-prompts": "github:R_kgDOU0XiBQ",
   "url:https://github.com/microsoft/agent-governance-toolkit": "github:R_kgDORc2-Kw",
@@ -700,6 +739,8 @@
   "url:https://github.com/modelengine-group/nexent": "github:R_kgDOOhB3Gw",
   "url:https://github.com/morganlinton/beautifulrust": "github:R_kgDOVUPmBg",
   "url:https://github.com/morluto/awesome-reverse-engineering": "github:R_kgDOVCnBgg",
+  "url:https://github.com/msoedov/agentic_security": "github:R_kgDOLs9BZw",
+  "url:https://github.com/mu-zi-lee/hitl-dev-loop": "github:R_kgDOVOAn9w",
   "url:https://github.com/muaaz9329/cheap-ag": "github:R_kgDOVbF6Bw",
   "url:https://github.com/mvanhorn/last30days-skill": "github:R_kgDOQ__jdA",
   "url:https://github.com/mvschwarz/openrig": "github:R_kgDOR2ntBw",
@@ -710,6 +751,7 @@
   "url:https://github.com/nanaism/yomiyasu": "github:R_kgDOU1BOZg",
   "url:https://github.com/nanako0129/pilotfish": "github:R_kgDOTRjXgA",
   "url:https://github.com/nano-muse/nanomuse": "github:R_kgDOUmzacQ",
+  "url:https://github.com/naxianjin/codex-pair": "github:R_kgDOVKl7GA",
   "url:https://github.com/nb-corp/gpt-with-taste": "github:R_kgDOVGR42A",
   "url:https://github.com/neerazz/hermes-antigravity-oauth": "github:R_kgDOUvcyrg",
   "url:https://github.com/niazmorshed2007/reanimate": "github:R_kgDOVbaVRw",
@@ -720,6 +762,7 @@
   "url:https://github.com/obra/superpowers": "github:R_kgDOP_gcWw",
   "url:https://github.com/oil-oil/oil-ui": "github:R_kgDOU0Ob-A",
   "url:https://github.com/okf-memory/okf-agent-memory": "github:R_kgDOUPoneg",
+  "url:https://github.com/old-friends-gathering/sedimem": "github:R_kgDOVfyvlg",
   "url:https://github.com/oldcircle/geo-sleuth": "github:R_kgDOUf44tQ",
   "url:https://github.com/ollaya-dev/ollaya": "github:R_kgDOUoIjTg",
   "url:https://github.com/omnigent-ai/omnigent": "github:R_kgDOS3jeow",
@@ -750,6 +793,7 @@
   "url:https://github.com/promptfoo/promptfoo": "github:R_kgDOJcj3uQ",
   "url:https://github.com/pugarte7/spanish-top-tech-companies": "github:R_kgDOUEQDKQ",
   "url:https://github.com/punkpeye/awesome-mcp-servers": "github:R_kgDONWz9pg",
+  "url:https://github.com/pvjbuilds/delegate-router": "github:R_kgDOU01nQg",
   "url:https://github.com/pydantic/pydantic-ai": "github:R_kgDOMMa-Pg",
   "url:https://github.com/q00/ouroboros": "github:R_kgDOQ5X3RQ",
   "url:https://github.com/qianshuixia/shrimpreel": "github:R_kgDOVRRIDw",
@@ -763,6 +807,7 @@
   "url:https://github.com/repoprompt/repoprompt-ce": "github:R_kgDOSbtU7Q",
   "url:https://github.com/reticlehq/reticle": "github:R_kgDOS3TU6Q",
   "url:https://github.com/rhesis-ai/rhesis": "github:R_kgDOM9-tIA",
+  "url:https://github.com/rikinshah787/dotpals": "github:R_kgDOU14BGQ",
   "url:https://github.com/rlaope/deepseek-bot": "github:R_kgDOU9zSoA",
   "url:https://github.com/rocketride-org/rocketride-server": "github:R_kgDOROCxSw",
   "url:https://github.com/rose22/openlumara": "github:R_kgDORaTFAA",
@@ -774,6 +819,7 @@
   "url:https://github.com/sarthzk/internship-tracker": "github:R_kgDOVTaHkA",
   "url:https://github.com/scaleapi/agentenv-framework": "github:R_kgDOUp-cEA",
   "url:https://github.com/scarletkc/seiso": "github:R_kgDOUucdqA",
+  "url:https://github.com/seehiong/seehiong.github.io": "github:R_kgDOJg7Puw",
   "url:https://github.com/shaongitbd/doory": "github:R_kgDOVDInUQ",
   "url:https://github.com/shinyobjectz/raea": "github:R_kgDOVOrBtQ",
   "url:https://github.com/sidiora-labs/paxeer-monorepo": "github:R_kgDOT4tZ7Q",
@@ -803,15 +849,19 @@
   "url:https://github.com/tiger-ai-lab/websitebench": "github:R_kgDOVisUYg",
   "url:https://github.com/tim-today/tim-agent": "github:R_kgDOU4GrjA",
   "url:https://github.com/timoncool/speech-studio": "github:R_kgDOVKVTZA",
+  "url:https://github.com/timwuhaotian/killi": "github:R_kgDOVSdnwA",
   "url:https://github.com/totec448-spec/chat-on-steroids": "github:R_kgDOUAqsTg",
   "url:https://github.com/tracer-cloud/opensre": "github:R_kgDOQ4pdCg",
   "url:https://github.com/truera/trulens": "github:MDEwOlJlcG9zaXRvcnkzMDk1MDQ4ODU=",
+  "url:https://github.com/trustabl/agent-dashboard": "github:R_kgDOVO98NQ",
+  "url:https://github.com/trustabl/agent-reliability-skills": "github:R_kgDOVcnjyQ",
   "url:https://github.com/tylerprogramming/ai": "github:R_kgDOKlJVHQ",
   "url:https://github.com/uclanlp/openvlharness": "github:R_kgDOVKdNfQ",
   "url:https://github.com/ucsandman/dashclaw": "github:R_kgDORLJAog",
   "url:https://github.com/uernamezzj/workbuddy-prompt-patcher": "github:R_kgDOThMc0g",
   "url:https://github.com/underleveledbuilder/awesome-short-drama-skills": "github:R_kgDOVIQiug",
   "url:https://github.com/vapi-network/vapi-network": "github:R_kgDOU4zrqA",
+  "url:https://github.com/vayungodara/cliproxy-rs": "github:R_kgDOU56ZJA",
   "url:https://github.com/verifywise-ai/verifywise": "github:R_kgDOMlKt8g",
   "url:https://github.com/vibheksoni/stealth-browser-mcp": "github:R_kgDOPa3YDg",
   "url:https://github.com/vincentsch/explainroo": "github:R_kgDOUrdHXw",
@@ -886,6 +936,7 @@
   "url:https://huggingface.co/datasets/alphaXiv/AgentAlphaXiv": "hf:dataset:alphaxiv/agentalphaxiv",
   "url:https://huggingface.co/datasets/bones-studio/seed": "hf:dataset:bones-studio/seed",
   "url:https://huggingface.co/datasets/ccore/ThreeJS-3D-Scenes": "hf:dataset:ccore/threejs-3d-scenes",
+  "url:https://huggingface.co/datasets/ccore/ThreeJS-3D-Scenes-v2": "hf:dataset:ccore/threejs-3d-scenes-v2",
   "url:https://huggingface.co/datasets/codepawl/abo-glb": "hf:dataset:codepawl/abo-glb",
   "url:https://huggingface.co/datasets/codepawl/cmu-mocap-glb": "hf:dataset:codepawl/cmu-mocap-glb",
   "url:https://huggingface.co/datasets/google/multimodal-knowledge-agent": "hf:dataset:google/multimodal-knowledge-agent",
@@ -946,6 +997,7 @@
   "url:https://huggingface.co/spaces/agents-course/unit_1_quiz": "hf:space:agents-course/unit_1_quiz",
   "url:https://huggingface.co/spaces/ali-vilab/modelscope-text-to-video-synthesis": "hf:space:ali-vilab/modelscope-text-to-video-synthesis",
   "url:https://huggingface.co/spaces/amisima/Qwen-2.1-Turbo-Qwen-Face-Swap-MOSS-Image-Edit-Outpaint-Qwen-Detail-Enhancer": "hf:space:amisima/qwen-2.1-turbo-qwen-face-swap-moss-image-edit-outpaint-qwen-detail-enhancer",
+  "url:https://huggingface.co/spaces/briaai/BRIA-RMBG-3.0": "hf:space:briaai/bria-rmbg-3.0",
   "url:https://huggingface.co/spaces/cfahlgren1/pixel-search": "hf:space:cfahlgren1/pixel-search",
   "url:https://huggingface.co/spaces/cfahlgren1/slack-moji": "hf:space:cfahlgren1/slack-moji",
   "url:https://huggingface.co/spaces/elevenlabs/tts": "hf:space:elevenlabs/tts",
@@ -963,6 +1015,7 @@
   "url:https://huggingface.co/spaces/jupyter-agent/jupyter-agent": "hf:space:jupyter-agent/jupyter-agent",
   "url:https://huggingface.co/spaces/kazufusa/MiniMax-H3-Turbo-Lora-UNCENSORED-Workflow": "hf:space:kazufusa/minimax-h3-turbo-lora-uncensored-workflow",
   "url:https://huggingface.co/spaces/kulkas2pintu/wan777": "hf:space:kulkas2pintu/wan777",
+  "url:https://huggingface.co/spaces/lewtun/from-llms-to-swarms": "hf:space:lewtun/from-llms-to-swarms",
   "url:https://huggingface.co/spaces/linoyts/qwen-image-2-1-realtime": "hf:space:linoyts/qwen-image-2-1-realtime",
   "url:https://huggingface.co/spaces/lvwerra/jupyter-agent-2": "hf:space:lvwerra/jupyter-agent-2",
   "url:https://huggingface.co/spaces/mcp-tools/Z-Image-Turbo": "hf:space:mcp-tools/z-image-turbo",
@@ -971,6 +1024,7 @@
   "url:https://huggingface.co/spaces/mrfakename/E2-F5-TTS": "hf:space:mrfakename/e2-f5-tts",
   "url:https://huggingface.co/spaces/multimodalart/jev-decision-index": "hf:space:multimodalart/jev-decision-index",
   "url:https://huggingface.co/spaces/nvidia/PhysicalAI-Human-1M-Explorer": "hf:space:nvidia/physicalai-human-1m-explorer",
+  "url:https://huggingface.co/spaces/observantdistressed/minimax-h3-turbo": "hf:space:observantdistressed/minimax-h3-turbo",
   "url:https://huggingface.co/spaces/parler-tts/parler_tts": "hf:space:parler-tts/parler_tts",
   "url:https://huggingface.co/spaces/r3gm/SoniTranslate_translate_audio_of_a_video_content": "hf:space:r3gm/sonitranslate_translate_audio_of_a_video_content",
   "url:https://huggingface.co/spaces/rdata92/LTX-2.3-10Eros": "hf:space:rdata92/ltx-2.3-10eros",
@@ -978,6 +1032,7 @@
   "url:https://huggingface.co/spaces/selfit-camera/Omni-Image-Editor": "hf:space:selfit-camera/omni-image-editor",
   "url:https://huggingface.co/spaces/skytnt/moe-tts": "hf:space:skytnt/moe-tts",
   "url:https://huggingface.co/spaces/smolagents/computer-agent": "hf:space:smolagents/computer-agent",
+  "url:https://huggingface.co/spaces/software-mansion/Reverb-TTS-runntime": "hf:space:software-mansion/reverb-tts-runntime",
   "url:https://huggingface.co/spaces/speridlabs/idol": "hf:space:speridlabs/idol",
   "url:https://huggingface.co/spaces/stepfun-ai/StepAudio-3-Music": "hf:space:stepfun-ai/stepaudio-3-music",
   "url:https://huggingface.co/spaces/thejagstudio/tessera-pixel-studio": "hf:space:thejagstudio/tessera-pixel-studio",
@@ -997,10 +1052,10 @@
   "url:https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic": "hf:model:xtools-at/deepseek-v4-pro-qwen3.5-9b-uncensored-heretic"
  },
  "failures": {
-  "Codeberg": 19
+  "Codeberg": 20
  },
  "meta": {
-  "last_batch_at": "2026-11-23T01:58:59+00:00",
+  "last_batch_at": "2026-11-23T13:26:41+00:00",
   "pending_updates": []
  },
  "outbox": {
@@ -2023,6 +2078,60 @@
    "status": "SENT",
    "updates": [],
    "verification": ""
+  },
+  "discovery|2026-11-23T13:26:41+00:00": {
+   "applied": true,
+   "attempts": 1,
+   "category": "DISCOVERY",
+   "created": "2026-11-23T13:26:41+00:00",
+   "id": "discovery|2026-11-23T13:26:41+00:00",
+   "kind": "discovery",
+   "last_error": null,
+   "log": [
+    "2026-11-23T13:26:43+00:00 SENT: Telegram confirmed message id(s) [882, 883, 884]"
+   ],
+   "model_name": "AI skills & open-source discoveries",
+   "parts": [
+    "<b>🚀 AI SKILLS &amp; OPEN-SOURCE DISCOVERIES</b>\n<b>Date:</b> 23 Nov 2026, 13:26 UTC\n<b>Discovery period:</b> 23 Nov 01:58 – 23 Nov 13:26 UTC\n<b>New discoveries:</b> 8\n\n<b>🧠 AI AGENT BUILDING</b>\n<b>1. mamawai/wtfibought</b>\n<i>🟠 P1 Highly useful · score 84/100</i>\n<i>★ 146 · 24 forks · 1 open issues · 2 contributors · updated today</i>\n<b>Developer:</b> mamawai\n<b>What it does:</b> Runs a public arena where LLM agents trade live market data with virtual money, logging every action.\n<b>Why it matters:</b> It provides an open, observable environment for research, competition, and debugging of trading agents.\n<b>Practical application:</b> Deploy the Docker stack, supply your own LLM API key, and let an agent interact via the provided trading API.\n<b>Compatibility:</b> Cursor, LangGraph, Node.js, Docker\n<b>Cost:</b> Free and open source\n<b>Licence:</b> AGPL-3.0\n💼 <i>could feed news data from your AI News Agent into trading decisions</i>\n<i>Also useful for: developer productivity</i>\n🔗 <b>Repository:</b> <a href=\"https://github.com/mamawai/wtfibought\">github.com/mamawai/wtfibought</a>\n\n<b>2. JudgmentLabs/judgeval</b>\n<i>🟠 P1 Highly useful · score 82/100</i>\n<i>★ 1,073 · 107 forks · 53 open issues · 31 contributors · updated today</i>\n<b>Developer:</b> JudgmentLabs\n<b>What it does:</b> Provides a Python SDK that instruments LLM agents with OpenTelemetry tracing and evaluation metrics for continuous improvement.\n<b>Why it matters:</b> It enables developers to capture inputs, outputs, token usage and run automated judges to validate fixes.\n<b>Practical application:</b> Decorate agent functions with @Tracer.observe() and run built‑in eval suites to monitor performance.\n<b>Compatibility:</b> MCP, LangChain, LangGraph, OpenAI API, Python\n<b>Cost:</b> Free and open source\n<b>Licence:</b> Apache-2.0\n💼 <i>matches your AI News Agent</i>\n<i>Also useful for: prompt engineering, app development</i>\n🔗 <b>Repository:</b> <a href=\"https://github.com/judgmentlabs/judgeval\">github.com/judgmentlabs/judgeval</a>\n\n<b>3. scaleapi/agentenv-framework</b>\n<i>🟠 P1 Highly useful · score 79/100</i>\n<i>★ 445 · 65 forks · 93 open issues · 35 contributors · updated 2 days ago</i>\n<b>Developer:</b> scaleapi\n<b>What it does:</b> Offers a Python SDK and CLI to build, version, containerize, and evaluate RL‑style environments for LLM agents.\n<b>Why it matters:</b> Standardizes environment packaging and scoring, enabling fair benchmarking of agent capabilities.\n<b>Practical application:</b> Define an environment, run the CLI to build a Docker image, point an agent at it, and collect scores automatically.\n<b>Compatibility:</b> MCP, Hugging Face, Python, Docker\n<b>Cost:</b> Free and open source\n<b>Licence:</b> Apache-2.0\n💼 <i>How this could help your AI News Agent: it covers source monitoring, summarising or Telegram delivery, which your news agent does every day.</i>\n<i>Also useful for: automation, developer productivity</i>\n🔗 <b>Repository:</b> <a href=\"https://github.com/scaleapi/agentenv-framework\">github.com/scaleapi/agentenv-framework</a>\n<i>(1/3)</i>",
+    "<b>🛠 AI SKILLS AND PROMPTS</b>\n<b>4. abdiraimov-otabek/dashboard-design-skill</b>\n<i>🔴 P0 Exceptional discovery · score 88/100</i>\n<i>★ 1,141 · 70 forks · 0 open issues · 1 contributors · updated 1 day ago</i>\n<b>What it does:</b> Provides a Claude Code skill that generates complete dashboard UI layouts with KPI tiles, charts, filters and responsive designs.\n<b>Why it is useful:</b> It gives coding agents senior‑designer judgment, speeding up UI production for analytics apps.\n<b>Where it can be integrated:</b> Add to the Claude Code skills folder; also usable via Docker containers for other agents.\n<b>Installation:</b> <code>git clone https://github.com/abdiraimov-otabek/dashboard-design-skill</code>\n<b>Cost:</b> Free and open source\n💼 <i>matches your Claude Code, Codex and Gemini development</i>\n<i>Also useful for: agent building</i>\n🔗 <b>Original link:</b> <a href=\"https://github.com/abdiraimov-otabek/dashboard-design-skill\">github.com/abdiraimov-otabek/dashboard-design-skill</a>\n\n<b>5. laulauraluo/looks-good-to-ai</b>\n<i>🔴 P0 Exceptional discovery · score 85/100</i>\n<i>★ 115 · 0 open issues · 2 contributors · updated today</i>\n<b>What it does:</b> Offers an agent skill that reviews AI‑generated pull requests and produces a concise sign‑off report.\n<b>Why it is useful:</b> It automates triage, catching bugs and context mismatches before human review.\n<b>Where it can be integrated:</b> Install as a Claude Code/Codex/Gemini CLI plugin; also callable from Python or Node scripts.\n<b>Installation:</b> <code>npx skills add laulauraluo/looks-good-to-ai</code>\n<b>Cost:</b> Free and open source\n💼 <i>matches your Claude Code, Codex and Gemini development</i>\n<i>Also useful for: developer productivity, agent building</i>\n🔗 <b>Original link:</b> <a href=\"https://github.com/laulauraluo/looks-good-to-ai\">github.com/laulauraluo/looks-good-to-ai</a>\n\n<b>6. kostja94/bricks</b>\n<i>🟠 P1 Highly useful · score 82/100</i>\n<i>★ 193 · 1 forks · 0 open issues · 2 contributors · updated 16 days ago</i>\n<b>What it does:</b> Defines implementation‑aware contracts that guide agents to generate UI components compatible with existing design systems.\n<b>Why it is useful:</b> Structured contracts give agents the context needed to write reusable, standards‑compliant code.\n<b>Where it can be integrated:</b> Installed as a Claude Code skill and as a JavaScript library in Node.js front‑end projects.\n<b>Installation:</b> <code>npx skills add kostja94/bricks --skill component-builder</code>\n<b>Cost:</b> Free and open source\n💼 <i>matches your Claude Code, Codex and Gemini development</i>\n<i>Also useful for: agent building, hackathon projects</i>\n🔗 <b>Original link:</b> <a href=\"https://github.com/kostja94/bricks\">github.com/kostja94/bricks</a>\n\n<b>⚡ AI AUTOMATION AND WORKFLOWS</b>\n<b>7. daniel3303/Equibles</b>\n<i>🟠 P1 Highly useful · score 79/100</i>\n<i>★ 247 · 33 forks · 43 open issues · 8 contributors · updated today</i>\n<b>What it does:</b> Runs a self‑hosted MCP server that serves extensive financial data (SEC filings, prices, insider trades, etc.) to LLM agents.\n<b>Workflow it improves:</b> Supplies a rich data layer for finance‑focused agents, eliminating external API calls.\n<b>Practical use:</b> Start the Docker‑compose stack and query financial endpoints from Claude, Cursor or any MCP‑compatible agent.\n<b>Requirements:</b> no paid API, subscription or GPU mentioned in its README\n💼 <i>matches your AI News Agent</i>\n<i>Also useful for: creator tools, agent building</i>\n🔗 <b>Original link:</b> <a href=\"https://github.com/daniel3303/equibles\">github.com/daniel3303/equibles</a>\n<i>(2/3)</i>",
+    "<b>💻 DEVELOPER PRODUCTIVITY</b>\n<b>8. praetorian-inc/julius</b>\n<i>🟠 P1 Highly useful · score 77/100</i>\n<i>★ 256 · 33 forks · 2 open issues · 17 contributors · updated 1 day ago</i>\n<b>What it does:</b> A CLI tool that fingerprints LLM service endpoints to identify the underlying server software (Ollama, vLLM, LiteLLM, etc.).\n<b>Workflow it improves:</b> Adds a security verification step before agents connect to external LLM endpoints.\n<b>Compatibility:</b> MCP, Ollama, OpenAI API, Hugging Face\n<b>Cost:</b> Free and open source\n💼 <i>How this could help your personal AI agents: it is a building block for agents that remember, use tools and act on their own.</i>\n<i>Also useful for: app development, automation</i>\n🔗 <b>Original link:</b> <a href=\"https://github.com/praetorian-inc/julius\">github.com/praetorian-inc/julius</a>\n\n<b>🏆 BEST DISCOVERY</b>\n<b>JudgmentLabs/judgeval</b> · <a href=\"https://github.com/judgmentlabs/judgeval\">open</a>\n<b>Why it ranked first:</b> Judgeval gives universal observability and automated improvement for any LLM agent, making debugging and iteration far faster.\n<b>What problem it solves:</b> Agents typically lack built‑in tracing and systematic evaluation, leading to silent failures.\n<b>What you could build or improve:</b> A monitoring dashboard that tracks agent errors, token usage, and regression test results, enabling continuous improvement.\n\n<i>Discovered, checked and ranked automatically; nothing was installed or run. Read a repository&#x27;s code and licence before using it. Explanations by groq/openai/gpt-oss-120b.</i>\n<i>(3/3)</i>"
+   ],
+   "priority": "P0",
+   "receipt": {
+    "status": "NOT_NEEDED"
+   },
+   "release_id": "discovery|2026-11-23T13:26:41+00:00",
+   "resource_ids": [
+    "github:R_kgDOVQgKvw",
+    "github:R_kgDOVUJgAA",
+    "github:R_kgDORJs5nw",
+    "github:R_kgDOUqkO-w",
+    "github:R_kgDONFlf-w",
+    "github:R_kgDORv73HA",
+    "github:R_kgDOUp-cEA",
+    "github:R_kgDOQ4oDlQ"
+   ],
+   "sent_at": "2026-11-23T13:26:43+00:00",
+   "sent_parts": {
+    "0": {
+     "at": "2026-11-23T13:26:42+00:00",
+     "message_id": 882,
+     "telegram_date": 1795440402
+    },
+    "1": {
+     "at": "2026-11-23T13:26:42+00:00",
+     "message_id": 883,
+     "telegram_date": 1795440402
+    },
+    "2": {
+     "at": "2026-11-23T13:26:43+00:00",
+     "message_id": 884,
+     "telegram_date": 1795440403
+    }
+   },
+   "status": "SENT",
+   "updates": [],
+   "verification": ""
   }
  },
  "resources": {
@@ -2551,6 +2660,102 @@
    "url": "https://github.com/truera/trulens",
    "version": "trulens-2.16.0"
   },
+  "github:R_kgDOG9PI5A": {
+   "categories": [
+    "agent_building",
+    "app_development",
+    "productivity"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-23T13:25:22+00:00",
+   "evaluation": {
+    "categories": [
+     "agent_building",
+     "app_development",
+     "productivity"
+    ],
+    "compatibility": [
+     "OpenAI API",
+     "Python"
+    ],
+    "contributors": 94,
+    "docs": "good",
+    "install": "pip install giskard           # checks (+ agents, llm, core)",
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "Apache-2.0",
+    "maintenance": "updated today",
+    "primary": "agent_building",
+    "priority": "P1",
+    "reject": null,
+    "relevance": {
+     "hint": "it covers source monitoring, summarising or Telegram delivery, which your news agent does every day",
+     "project": "your AI News Agent"
+    },
+    "requirements": [],
+    "score": 77,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-23T13:25:22+00:00",
+   "id": "github:R_kgDOG9PI5A",
+   "identifier": "R_kgDOG9PI5A",
+   "kind": "repository",
+   "last_checked": "2026-11-23T13:25:22+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "Giskard-AI/giskard-oss",
+   "owner": "Giskard-AI",
+   "platform": "github",
+   "priority": "P1",
+   "score": 77,
+   "snapshot": {
+    "created_at": "2022-03-06T21:45:37Z",
+    "default_branch": "main",
+    "description": "🐢 Open-Source Evaluation & Testing library for LLM Agents",
+    "display": "giskard-oss",
+    "forks": 575,
+    "found_by": [
+     "search: topic:llm-evaluation"
+    ],
+    "kind": "repository",
+    "language": "Python",
+    "license_spdx": "Apache-2.0",
+    "name": "Giskard-AI/giskard-oss",
+    "node_id": "R_kgDOG9PI5A",
+    "open_issues": 89,
+    "owner": "Giskard-AI",
+    "platform": "github",
+    "platform_id": 466864356,
+    "pushed_at": "2026-11-23T08:27:59Z",
+    "rid": "github:R_kgDOG9PI5A",
+    "stars": 5972,
+    "topics": [
+     "agent-evaluation",
+     "ai-red-team",
+     "ai-security",
+     "ai-testing",
+     "fairness-ai",
+     "llm",
+     "llm-eval",
+     "llm-evaluation",
+     "llm-security",
+     "llmops",
+     "ml-testing",
+     "ml-validation",
+     "mlops",
+     "rag-evaluation",
+     "red-team-tools",
+     "responsible-ai",
+     "trustworthy-ai"
+    ],
+    "url": "https://github.com/giskard-ai/giskard-oss"
+   },
+   "status": "pool",
+   "url": "https://github.com/giskard-ai/giskard-oss"
+  },
   "github:R_kgDOIF8T9Q": {
    "categories": [
     "agent_building",
@@ -2868,6 +3073,25 @@
    },
    "status": "pool",
    "url": "https://github.com/promptfoo/promptfoo"
+  },
+  "github:R_kgDOJg7Puw": {
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "first_discovered": "2026-11-23T13:25:27+00:00",
+   "id": "github:R_kgDOJg7Puw",
+   "identifier": "R_kgDOJg7Puw",
+   "kind": "repository",
+   "last_checked": "2026-11-23T13:25:27+00:00",
+   "last_notified": null,
+   "name": "seehiong/seehiong.github.io",
+   "owner": "seehiong",
+   "platform": "github",
+   "reject_reason": "not an AI resource (AI tags only)",
+   "status": "rejected",
+   "url": "https://github.com/seehiong/seehiong.github.io"
   },
   "github:R_kgDOJhWgDg": {
    "categories": [
@@ -4069,6 +4293,98 @@
    "status": "pool",
    "url": "https://github.com/azure-samples/ai-gateway"
   },
+  "github:R_kgDOLs9BZw": {
+   "categories": [
+    "agent_building",
+    "prompting",
+    "productivity"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-23T13:25:23+00:00",
+   "evaluation": {
+    "categories": [
+     "agent_building",
+     "prompting",
+     "productivity"
+    ],
+    "compatibility": [],
+    "contributors": null,
+    "docs": "no README",
+    "install": null,
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "Apache-2.0",
+    "maintenance": "updated today",
+    "primary": "agent_building",
+    "priority": "P3",
+    "reject": null,
+    "relevance": {
+     "hint": "it explains or tests prompting techniques you can apply directly",
+     "project": "your prompting"
+    },
+    "requirements": [],
+    "score": 55,
+    "warnings": [
+     "documentation is no README"
+    ]
+   },
+   "first_discovered": "2026-11-23T13:25:23+00:00",
+   "id": "github:R_kgDOLs9BZw",
+   "identifier": "R_kgDOLs9BZw",
+   "kind": "repository",
+   "last_checked": "2026-11-23T13:25:23+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "msoedov/agentic_security",
+   "owner": "msoedov",
+   "platform": "github",
+   "priority": "P3",
+   "score": 55,
+   "snapshot": {
+    "created_at": "2024-04-11T17:18:54Z",
+    "default_branch": "main",
+    "description": "Agentic LLM Vulnerability Scanner / AI red teaming kit 🧪",
+    "display": "agentic_security",
+    "forks": 317,
+    "found_by": [
+     "search: topic:llm-evaluation"
+    ],
+    "kind": "repository",
+    "language": "Python",
+    "license_spdx": "Apache-2.0",
+    "name": "msoedov/agentic_security",
+    "node_id": "R_kgDOLs9BZw",
+    "open_issues": 22,
+    "owner": "msoedov",
+    "platform": "github",
+    "platform_id": 785334631,
+    "pushed_at": "2026-11-23T11:30:01Z",
+    "rid": "github:R_kgDOLs9BZw",
+    "stars": 2049,
+    "topics": [
+     "agent-framework",
+     "agent-security",
+     "ai-red-team",
+     "llm-evaluation",
+     "llm-evaluation-framework",
+     "llm-fuzzer",
+     "llm-fuzzer-aggregator",
+     "llm-fuzzing",
+     "llm-guardrails",
+     "llm-jailbreaks",
+     "llm-scanner",
+     "llm-security",
+     "llm-vulnerabilities",
+     "prompt-testing"
+    ],
+    "url": "https://github.com/msoedov/agentic_security"
+   },
+   "status": "pool",
+   "url": "https://github.com/msoedov/agentic_security"
+  },
   "github:R_kgDOLunVBg": {
    "categories": [
     "automation",
@@ -4687,6 +5003,78 @@
    },
    "status": "pool",
    "url": "https://github.com/lmnr-ai/lmnr"
+  },
+  "github:R_kgDONFlf-w": {
+   "categories": [
+    "agent_building",
+    "prompting",
+    "app_development",
+    "hackathon"
+   ],
+   "delivery": {
+    "message_ids": [
+     882,
+     883,
+     884
+    ],
+    "sent_at": "2026-11-23T13:26:43+00:00",
+    "status": "SENT"
+   },
+   "evaluated_at": "2026-11-23T13:25:24+00:00",
+   "first_discovered": "2026-11-23T13:25:24+00:00",
+   "id": "github:R_kgDONFlf-w",
+   "identifier": "R_kgDONFlf-w",
+   "kind": "repository",
+   "last_checked": "2026-11-23T13:25:24+00:00",
+   "last_notified": "2026-11-23T13:26:43+00:00",
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "JudgmentLabs/judgeval",
+   "owner": "JudgmentLabs",
+   "platform": "github",
+   "priority": "P1",
+   "score": 82,
+   "snapshot": {
+    "created_at": "2024-10-25T04:49:15Z",
+    "default_branch": "main",
+    "description": "The Continuous-Improvement Stack for Agents. Our environment data and evals power agent improvement and monitoring.",
+    "display": "judgeval",
+    "forks": 107,
+    "found_by": [
+     "search: topic:llm-evaluation"
+    ],
+    "kind": "repository",
+    "language": "Python",
+    "license_spdx": "Apache-2.0",
+    "name": "JudgmentLabs/judgeval",
+    "node_id": "R_kgDONFlf-w",
+    "open_issues": 53,
+    "owner": "JudgmentLabs",
+    "platform": "github",
+    "platform_id": 878272507,
+    "pushed_at": "2026-11-23T10:14:52Z",
+    "rid": "github:R_kgDONFlf-w",
+    "stars": 1073,
+    "topics": [
+     "agent",
+     "agentic-ai",
+     "agents",
+     "grpo",
+     "langchain",
+     "langgraph",
+     "llama-index",
+     "llm",
+     "llm-evaluation",
+     "llm-observability",
+     "open-source",
+     "openai",
+     "prompt-engineering",
+     "reinforcement-learning",
+     "rl"
+    ],
+    "url": "https://github.com/judgmentlabs/judgeval"
+   },
+   "status": "delivered",
+   "url": "https://github.com/judgmentlabs/judgeval"
   },
   "github:R_kgDONKixcg": {
    "categories": [
@@ -6276,6 +6664,7 @@
    "kind": "repository",
    "last_checked": "2026-11-21T11:32:13+00:00",
    "last_notified": "2026-11-23T01:59:00+00:00",
+   "last_update_check": "2026-11-23T13:25:32+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "jonigl/mcp-client-for-ollama",
    "owner": "jonigl",
@@ -6328,7 +6717,8 @@
     "url": "https://github.com/jonigl/mcp-client-for-ollama"
    },
    "status": "delivered",
-   "url": "https://github.com/jonigl/mcp-client-for-ollama"
+   "url": "https://github.com/jonigl/mcp-client-for-ollama",
+   "version": "v0.35.1"
   },
   "github:R_kgDOOhB3Gw": {
    "categories": [
@@ -7044,6 +7434,196 @@
    "status": "delivered",
    "url": "https://github.com/strands-agents/harness-sdk",
    "version": "python/v1.65.0"
+  },
+  "github:R_kgDOOr79Dg": {
+   "categories": [
+    "agent_building",
+    "automation",
+    "app_development",
+    "hackathon",
+    "skills",
+    "prompting"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-23T13:25:26+00:00",
+   "evaluation": {
+    "categories": [
+     "agent_building",
+     "automation",
+     "app_development",
+     "hackathon",
+     "skills",
+     "prompting"
+    ],
+    "compatibility": [
+     "MCP",
+     "LangChain",
+     "LangGraph",
+     "CrewAI",
+     "n8n",
+     "Hugging Face"
+    ],
+    "contributors": 2,
+    "docs": "basic",
+    "install": null,
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "MIT",
+    "maintenance": "updated today",
+    "primary": "agent_building",
+    "priority": "P1",
+    "reject": null,
+    "relevance": {
+     "hint": "it covers source monitoring, summarising or Telegram delivery, which your news agent does every day",
+     "project": "your AI News Agent"
+    },
+    "requirements": [],
+    "score": 74,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-23T13:25:26+00:00",
+   "id": "github:R_kgDOOr79Dg",
+   "identifier": "R_kgDOOr79Dg",
+   "kind": "repository",
+   "last_checked": "2026-11-23T13:25:26+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "MDalamin5/End-to-End-Agentic-Ai-Automation-Lab",
+   "owner": "MDalamin5",
+   "platform": "github",
+   "priority": "P1",
+   "score": 74,
+   "snapshot": {
+    "created_at": "2025-05-18T05:26:32Z",
+    "default_branch": "main",
+    "description": "This repository contains hands-on projects, code examples, and deployment workflows. Explore multi-agent systems, LangChain, LangGraph, AutoGen, CrewAI, RAG, MCP, automation with n8n, and scalable agent deployment using Docker, AWS, and BentoML.",
+    "display": "End-to-End-Agentic-Ai-Automation-Lab",
+    "forks": 42,
+    "found_by": [
+     "search: topic:autogen"
+    ],
+    "kind": "repository",
+    "language": "Jupyter Notebook",
+    "license_spdx": "MIT",
+    "name": "MDalamin5/End-to-End-Agentic-Ai-Automation-Lab",
+    "node_id": "R_kgDOOr79Dg",
+    "open_issues": 0,
+    "owner": "MDalamin5",
+    "platform": "github",
+    "platform_id": 985595150,
+    "pushed_at": "2026-11-22T17:36:00Z",
+    "rid": "github:R_kgDOOr79Dg",
+    "stars": 106,
+    "topics": [
+     "agentic-ai",
+     "agentic-rag",
+     "ambient-ai",
+     "autogen",
+     "deep-agents",
+     "docker",
+     "fine-tuning",
+     "guardrails",
+     "langchain",
+     "langgraph",
+     "langsmit",
+     "mcp-server",
+     "n8n",
+     "reranking",
+     "rrf-fusion",
+     "vllm"
+    ],
+    "url": "https://github.com/mdalamin5/end-to-end-agentic-ai-automation-lab"
+   },
+   "status": "pool",
+   "url": "https://github.com/mdalamin5/end-to-end-agentic-ai-automation-lab"
+  },
+  "github:R_kgDOP-vP7A": {
+   "categories": [
+    "automation",
+    "agent_building",
+    "productivity"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-23T13:25:24+00:00",
+   "evaluation": {
+    "categories": [
+     "automation",
+     "agent_building",
+     "productivity"
+    ],
+    "compatibility": [
+     "Hugging Face",
+     "Python",
+     "Docker"
+    ],
+    "contributors": null,
+    "docs": "basic",
+    "install": "uv add every-eval-ever",
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "MIT",
+    "maintenance": "updated today",
+    "primary": "automation",
+    "priority": "P2",
+    "reject": null,
+    "relevance": {
+     "hint": "it covers source monitoring, summarising or Telegram delivery, which your news agent does every day",
+     "project": "your AI News Agent"
+    },
+    "requirements": [],
+    "score": 71,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-23T13:25:24+00:00",
+   "id": "github:R_kgDOP-vP7A",
+   "identifier": "R_kgDOP-vP7A",
+   "kind": "repository",
+   "last_checked": "2026-11-23T13:25:24+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "evaleval/every_eval_ever",
+   "owner": "evaleval",
+   "platform": "github",
+   "priority": "P2",
+   "score": 71,
+   "snapshot": {
+    "created_at": "2025-10-08T17:35:36Z",
+    "default_branch": "main",
+    "description": "Every Eval Ever is a shared schema and crowdsourced eval database. It defines a standardized metadata format for storing AI evaluation results — from leaderboard scrapes and research papers to local evaluation runs — so that results from different frameworks can be compared, reproduced, and reused.",
+    "display": "every_eval_ever",
+    "forks": 56,
+    "found_by": [
+     "search: topic:llm-evaluation"
+    ],
+    "kind": "repository",
+    "language": "Python",
+    "license_spdx": "MIT",
+    "name": "evaleval/every_eval_ever",
+    "node_id": "R_kgDOP-vP7A",
+    "open_issues": 55,
+    "owner": "evaleval",
+    "platform": "github",
+    "platform_id": 1072418796,
+    "pushed_at": "2026-11-23T12:14:11Z",
+    "rid": "github:R_kgDOP-vP7A",
+    "stars": 142,
+    "topics": [
+     "agent-evaluation",
+     "ai-evaluation",
+     "evaluations",
+     "infra",
+     "llm-evaluation"
+    ],
+    "url": "https://github.com/evaleval/every_eval_ever"
+   },
+   "status": "pool",
+   "url": "https://github.com/evaleval/every_eval_ever"
   },
   "github:R_kgDOP1FeWw": {
    "categories": [
@@ -8080,46 +8660,21 @@
     "automation"
    ],
    "delivery": {
-    "message_ids": [],
-    "sent_at": null,
-    "status": "NOT_SENT"
+    "message_ids": [
+     882,
+     883,
+     884
+    ],
+    "sent_at": "2026-11-23T13:26:43+00:00",
+    "status": "SENT"
    },
    "evaluated_at": "2026-11-22T01:28:42+00:00",
-   "evaluation": {
-    "categories": [
-     "productivity",
-     "app_development",
-     "automation"
-    ],
-    "compatibility": [
-     "MCP",
-     "Ollama",
-     "OpenAI API",
-     "Hugging Face"
-    ],
-    "contributors": 17,
-    "docs": "good",
-    "install": "go install github.com/praetorian-inc/julius/cmd/julius@latest",
-    "licence_class": "FREE AND OPEN SOURCE",
-    "licence_note": "Apache-2.0",
-    "maintenance": "updated today",
-    "primary": "productivity",
-    "priority": "P1",
-    "reject": null,
-    "relevance": {
-     "hint": "it is a building block for agents that remember, use tools and act on their own",
-     "project": "your personal AI agents"
-    },
-    "requirements": [],
-    "score": 77,
-    "warnings": []
-   },
    "first_discovered": "2026-11-22T01:28:42+00:00",
    "id": "github:R_kgDOQ4oDlQ",
    "identifier": "R_kgDOQ4oDlQ",
    "kind": "repository",
    "last_checked": "2026-11-22T01:28:42+00:00",
-   "last_notified": null,
+   "last_notified": "2026-11-23T13:26:43+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "praetorian-inc/julius",
    "owner": "praetorian-inc",
@@ -8165,7 +8720,7 @@
     ],
     "url": "https://github.com/praetorian-inc/julius"
    },
-   "status": "pool",
+   "status": "delivered",
    "url": "https://github.com/praetorian-inc/julius"
   },
   "github:R_kgDOQ4pdCg": {
@@ -10626,6 +11181,75 @@
    "status": "pool",
    "url": "https://github.com/pardnchiu/agenvoy"
   },
+  "github:R_kgDORJs5nw": {
+   "categories": [
+    "agent_building",
+    "productivity"
+   ],
+   "delivery": {
+    "message_ids": [
+     882,
+     883,
+     884
+    ],
+    "sent_at": "2026-11-23T13:26:43+00:00",
+    "status": "SENT"
+   },
+   "evaluated_at": "2026-11-23T13:25:24+00:00",
+   "first_discovered": "2026-11-23T13:25:24+00:00",
+   "id": "github:R_kgDORJs5nw",
+   "identifier": "R_kgDORJs5nw",
+   "kind": "repository",
+   "last_checked": "2026-11-23T13:25:24+00:00",
+   "last_notified": "2026-11-23T13:26:43+00:00",
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "mamawai/wtfibought",
+   "owner": "mamawai",
+   "platform": "github",
+   "priority": "P1",
+   "score": 84,
+   "snapshot": {
+    "created_at": "2026-02-06T00:49:58Z",
+    "default_branch": "master",
+    "description": "A live arena where LLM agents trade real market data with virtual money — every thought, tool call, thesis and post-mortem is public. Bring your own model and key.",
+    "display": "wtfibought",
+    "forks": 24,
+    "found_by": [
+     "search: topic:llm-evaluation"
+    ],
+    "kind": "repository",
+    "language": "Java",
+    "license_spdx": "AGPL-3.0",
+    "name": "mamawai/wtfibought",
+    "node_id": "R_kgDORJs5nw",
+    "open_issues": 1,
+    "owner": "mamawai",
+    "platform": "github",
+    "platform_id": 1151023519,
+    "pushed_at": "2026-11-23T08:08:42Z",
+    "rid": "github:R_kgDORJs5nw",
+    "stars": 146,
+    "topics": [
+     "agentic-ai",
+     "ai-agents",
+     "backtesting",
+     "crypto",
+     "java",
+     "langgraph",
+     "llm",
+     "llm-agents",
+     "llm-evaluation",
+     "paper-trading-simulator",
+     "react",
+     "spring-ai",
+     "spring-boot",
+     "trading-strategy-simulation"
+    ],
+    "url": "https://github.com/mamawai/wtfibought"
+   },
+   "status": "delivered",
+   "url": "https://github.com/mamawai/wtfibought"
+  },
   "github:R_kgDORLJAog": {
    "categories": [
     "agent_building",
@@ -11150,6 +11774,7 @@
    "kind": "repository",
    "last_checked": "2026-11-22T01:28:43+00:00",
    "last_notified": "2026-11-23T01:59:00+00:00",
+   "last_update_check": "2026-11-23T13:25:32+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "OWASP/www-project-agent-memory-guard",
    "owner": "OWASP",
@@ -11202,7 +11827,8 @@
     "url": "https://github.com/owasp/www-project-agent-memory-guard"
    },
    "status": "delivered",
-   "url": "https://github.com/owasp/www-project-agent-memory-guard"
+   "url": "https://github.com/owasp/www-project-agent-memory-guard",
+   "version": "v0.4.0"
   },
   "github:R_kgDORVTEtA": {
    "categories": [
@@ -12399,46 +13025,21 @@
     "productivity"
    ],
    "delivery": {
-    "message_ids": [],
-    "sent_at": null,
-    "status": "NOT_SENT"
+    "message_ids": [
+     882,
+     883,
+     884
+    ],
+    "sent_at": "2026-11-23T13:26:43+00:00",
+    "status": "SENT"
    },
    "evaluated_at": "2026-11-22T19:54:03+00:00",
-   "evaluation": {
-    "categories": [
-     "automation",
-     "creator_tools",
-     "agent_building",
-     "productivity"
-    ],
-    "compatibility": [
-     "Cursor",
-     "MCP",
-     "Docker"
-    ],
-    "contributors": 8,
-    "docs": "good",
-    "install": "git clone https://github.com/daniel3303/Equibles.git",
-    "licence_class": "FREE AND OPEN SOURCE",
-    "licence_note": "AGPL-3.0",
-    "maintenance": "updated today",
-    "primary": "automation",
-    "priority": "P1",
-    "reject": null,
-    "relevance": {
-     "hint": "it covers source monitoring, summarising or Telegram delivery, which your news agent does every day",
-     "project": "your AI News Agent"
-    },
-    "requirements": [],
-    "score": 79,
-    "warnings": []
-   },
    "first_discovered": "2026-11-22T19:54:03+00:00",
    "id": "github:R_kgDORv73HA",
    "identifier": "R_kgDORv73HA",
    "kind": "repository",
    "last_checked": "2026-11-22T19:54:03+00:00",
-   "last_notified": null,
+   "last_notified": "2026-11-23T13:26:43+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "daniel3303/Equibles",
    "owner": "daniel3303",
@@ -12490,7 +13091,7 @@
     ],
     "url": "https://github.com/daniel3303/equibles"
    },
-   "status": "pool",
+   "status": "delivered",
    "url": "https://github.com/daniel3303/equibles"
   },
   "github:R_kgDORxZYKA": {
@@ -12682,6 +13283,7 @@
    "kind": "repository",
    "last_checked": "2026-11-22T19:54:02+00:00",
    "last_notified": "2026-11-23T01:59:00+00:00",
+   "last_update_check": "2026-11-23T13:25:32+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "sonichi/sutando",
    "owner": "sonichi",
@@ -12726,7 +13328,8 @@
     "url": "https://github.com/sonichi/sutando"
    },
    "status": "delivered",
-   "url": "https://github.com/sonichi/sutando"
+   "url": "https://github.com/sonichi/sutando",
+   "version": "v0.13.0"
   },
   "github:R_kgDORzRc2g": {
    "categories": [
@@ -14026,6 +14629,7 @@
    "kind": "repository",
    "last_checked": "2026-11-22T19:54:00+00:00",
    "last_notified": "2026-11-23T01:59:00+00:00",
+   "last_update_check": "2026-11-23T13:25:32+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "repoprompt/repoprompt-ce",
    "owner": "repoprompt",
@@ -14067,7 +14671,8 @@
     "url": "https://github.com/repoprompt/repoprompt-ce"
    },
    "status": "delivered",
-   "url": "https://github.com/repoprompt/repoprompt-ce"
+   "url": "https://github.com/repoprompt/repoprompt-ce",
+   "version": "v1.10.0"
   },
   "github:R_kgDOSgbPIg": {
    "categories": [
@@ -14483,6 +15088,7 @@
    "kind": "repository",
    "last_checked": "2026-11-22T19:54:04+00:00",
    "last_notified": "2026-11-23T01:59:00+00:00",
+   "last_update_check": "2026-11-23T13:25:33+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "oaslananka/kicad-mcp-pro",
    "owner": "oaslananka",
@@ -14535,7 +15141,8 @@
     "url": "https://github.com/oaslananka/kicad-mcp-pro"
    },
    "status": "delivered",
-   "url": "https://github.com/oaslananka/kicad-mcp-pro"
+   "url": "https://github.com/oaslananka/kicad-mcp-pro",
+   "version": "mcp-npm-v4.22.0"
   },
   "github:R_kgDOSufZ8A": {
    "categories": [
@@ -16480,6 +17087,111 @@
    "status": "pool",
    "url": "https://github.com/heychengc/vibe-knowledge-film"
   },
+  "github:R_kgDOU01nQg": {
+   "categories": [
+    "skills",
+    "agent_building",
+    "creator_tools",
+    "productivity",
+    "automation"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-23T13:25:32+00:00",
+   "evaluation": {
+    "categories": [
+     "skills",
+     "agent_building",
+     "creator_tools",
+     "productivity",
+     "automation"
+    ],
+    "compatibility": [
+     "Claude Code",
+     "Codex",
+     "OpenAI API",
+     "Python"
+    ],
+    "contributors": 1,
+    "docs": "good",
+    "install": "git clone https://github.com/pvjbuilds/delegate-router ~/.delegate-router",
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "MIT",
+    "maintenance": "updated 3 days ago",
+    "primary": "skills",
+    "priority": "P1",
+    "reject": null,
+    "relevance": {
+     "hint": "it plugs into the coding agents you already use",
+     "project": "your Claude Code, Codex and Gemini development"
+    },
+    "requirements": [],
+    "score": 82,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-23T13:25:32+00:00",
+   "id": "github:R_kgDOU01nQg",
+   "identifier": "R_kgDOU01nQg",
+   "kind": "repository",
+   "last_checked": "2026-11-23T13:25:32+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "pvjbuilds/delegate-router",
+   "owner": "pvjbuilds",
+   "platform": "github",
+   "priority": "P1",
+   "score": 82,
+   "snapshot": {
+    "created_at": "2026-09-30T10:15:55Z",
+    "default_branch": "main",
+    "description": "Claude Code and Codex CLI skill: an LLM router that delegates bulk, already-decided coding tasks to another model you already pay for (GPT via Codex, Gemini via agy, a Claude Opus subagent), on another subscription first. Benchmark-checked routes, cost per task measured on a bench, cross-model review. The host verifies every diff.",
+    "display": "delegate-router",
+    "forks": 9,
+    "found_by": [
+     "search: \"codex cli\" in:name,description"
+    ],
+    "kind": "repository",
+    "language": "Python",
+    "license_spdx": "MIT",
+    "name": "pvjbuilds/delegate-router",
+    "node_id": "R_kgDOU01nQg",
+    "open_issues": 0,
+    "owner": "pvjbuilds",
+    "platform": "github",
+    "platform_id": 1397581634,
+    "pushed_at": "2026-11-20T00:36:23Z",
+    "rid": "github:R_kgDOU01nQg",
+    "stars": 43,
+    "topics": [
+     "agent-skills",
+     "agentic-coding",
+     "ai-agents",
+     "ai-coding",
+     "claude-code",
+     "claude-code-skills",
+     "claude-skills",
+     "codex",
+     "codex-cli",
+     "codex-skills",
+     "coding-agent",
+     "developer-tools",
+     "llm-router",
+     "llm-routing",
+     "model-routing",
+     "multi-llm",
+     "multi-model",
+     "subagents",
+     "task-delegation",
+     "token-optimization"
+    ],
+    "url": "https://github.com/pvjbuilds/delegate-router"
+   },
+   "status": "pool",
+   "url": "https://github.com/pvjbuilds/delegate-router"
+  },
   "github:R_kgDOU0Ob-A": {
    "categories": [
     "skills",
@@ -16707,6 +17419,109 @@
    },
    "status": "pool",
    "url": "https://github.com/mdpsec/bug-bounty-hunting-prompts"
+  },
+  "github:R_kgDOU14BGQ": {
+   "categories": [
+    "skills",
+    "productivity",
+    "automation",
+    "agent_building",
+    "creator_tools"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-23T13:25:29+00:00",
+   "evaluation": {
+    "categories": [
+     "skills",
+     "productivity",
+     "automation",
+     "agent_building",
+     "creator_tools"
+    ],
+    "compatibility": [
+     "Claude Code",
+     "Codex",
+     "Gemini CLI",
+     "Cursor",
+     "MCP",
+     "Ollama"
+    ],
+    "contributors": 5,
+    "docs": "good",
+    "install": "npx dotpals@latest setup",
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "MIT",
+    "maintenance": "updated 4 days ago",
+    "primary": "skills",
+    "priority": "P1",
+    "reject": null,
+    "relevance": {
+     "hint": "it plugs into the coding agents you already use",
+     "project": "your Claude Code, Codex and Gemini development"
+    },
+    "requirements": [],
+    "score": 82,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-23T13:25:29+00:00",
+   "id": "github:R_kgDOU14BGQ",
+   "identifier": "R_kgDOU14BGQ",
+   "kind": "repository",
+   "last_checked": "2026-11-23T13:25:29+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "Rikinshah787/dotpals",
+   "owner": "Rikinshah787",
+   "platform": "github",
+   "priority": "P1",
+   "score": 82,
+   "snapshot": {
+    "created_at": "2026-09-30T19:43:43Z",
+    "default_branch": "main",
+    "description": "See what your coding agent actually did. A desktop pal and notch for Claude Code, Codex, Cursor, Gemini CLI and any agent: test results read from the output, faked passes caught, and an MCP server any AI tool can ask. New: talk to Blu, who sees your screen, draws on it as it explains and uses your apps.",
+    "display": "dotpals",
+    "forks": 9,
+    "found_by": [
+     "search: topic:gemini-cli"
+    ],
+    "kind": "repository",
+    "language": "JavaScript",
+    "license_spdx": "MIT",
+    "name": "Rikinshah787/dotpals",
+    "node_id": "R_kgDOU14BGQ",
+    "open_issues": 7,
+    "owner": "Rikinshah787",
+    "platform": "github",
+    "platform_id": 1398669593,
+    "pushed_at": "2026-11-19T01:55:13Z",
+    "rid": "github:R_kgDOU14BGQ",
+    "stars": 96,
+    "topics": [
+     "agent-observability",
+     "ai-agents",
+     "ai-coding",
+     "anthropic",
+     "claude-code",
+     "codex",
+     "coding-agent",
+     "cursor",
+     "developer-tools",
+     "devtools",
+     "electron",
+     "gemini-cli",
+     "opencode",
+     "subagents",
+     "testing",
+     "web-components"
+    ],
+    "url": "https://github.com/rikinshah787/dotpals"
+   },
+   "status": "pool",
+   "url": "https://github.com/rikinshah787/dotpals"
   },
   "github:R_kgDOU1BOZg": {
    "categories": [
@@ -17539,6 +18354,109 @@
    "status": "delivered",
    "url": "https://github.com/vapi-network/vapi-network",
    "version": "v0.15.0"
+  },
+  "github:R_kgDOU56ZJA": {
+   "categories": [
+    "skills",
+    "productivity"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-23T13:25:29+00:00",
+   "evaluation": {
+    "categories": [
+     "skills",
+     "productivity"
+    ],
+    "compatibility": [
+     "Claude Code",
+     "Codex",
+     "Gemini CLI",
+     "Ollama",
+     "OpenAI API",
+     "Docker"
+    ],
+    "contributors": null,
+    "docs": "good",
+    "install": "docker run -d --name cliproxy -p 127.0.0.1:8317:8317 -v \"$PWD/data:/data\" ghcr.io/vayungodara/cliproxy-rs:latest",
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "MIT",
+    "maintenance": "updated 2 days ago",
+    "primary": "skills",
+    "priority": "P2",
+    "reject": null,
+    "relevance": {
+     "hint": "it plugs into the coding agents you already use",
+     "project": "your Claude Code, Codex and Gemini development"
+    },
+    "requirements": [],
+    "score": 70,
+    "warnings": [
+     "pipes a remote script straight into the shell (read it before running)"
+    ]
+   },
+   "first_discovered": "2026-11-23T13:25:29+00:00",
+   "id": "github:R_kgDOU56ZJA",
+   "identifier": "R_kgDOU56ZJA",
+   "kind": "repository",
+   "last_checked": "2026-11-23T13:25:29+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "vayungodara/cliproxy-rs",
+   "owner": "vayungodara",
+   "platform": "github",
+   "priority": "P2",
+   "score": 70,
+   "snapshot": {
+    "created_at": "2026-10-03T08:42:43Z",
+    "default_branch": "master",
+    "description": "Use DeepSeek, GLM, Kimi, OpenRouter and more in Codex CLI and Claude Code: one local endpoint, API translation, failover. Single Rust binary, CLIProxyAPI-compatible.",
+    "display": "cliproxy-rs",
+    "forks": 12,
+    "found_by": [
+     "search: \"codex cli\" in:name,description"
+    ],
+    "kind": "repository",
+    "language": "Rust",
+    "license_spdx": "MIT",
+    "name": "vayungodara/cliproxy-rs",
+    "node_id": "R_kgDOU56ZJA",
+    "open_issues": 0,
+    "owner": "vayungodara",
+    "platform": "github",
+    "platform_id": 1402902820,
+    "pushed_at": "2026-11-21T12:21:19Z",
+    "rid": "github:R_kgDOU56ZJA",
+    "stars": 78,
+    "topics": [
+     "ai-gateway",
+     "anthropic",
+     "claude",
+     "claude-code",
+     "cliproxyapi",
+     "codex",
+     "codex-cli",
+     "deepseek",
+     "gemini",
+     "gemini-cli",
+     "glm",
+     "kimi",
+     "llm",
+     "llm-gateway",
+     "llm-proxy",
+     "openai",
+     "opencode",
+     "openrouter",
+     "rust",
+     "self-hosted"
+    ],
+    "url": "https://github.com/vayungodara/cliproxy-rs"
+   },
+   "status": "pool",
+   "url": "https://github.com/vayungodara/cliproxy-rs"
   },
   "github:R_kgDOU5QMuA": {
    "categories": [
@@ -20238,46 +21156,21 @@
     "productivity"
    ],
    "delivery": {
-    "message_ids": [],
-    "sent_at": null,
-    "status": "NOT_SENT"
+    "message_ids": [
+     882,
+     883,
+     884
+    ],
+    "sent_at": "2026-11-23T13:26:43+00:00",
+    "status": "SENT"
    },
    "evaluated_at": "2026-11-20T20:37:48+00:00",
-   "evaluation": {
-    "categories": [
-     "agent_building",
-     "automation",
-     "productivity"
-    ],
-    "compatibility": [
-     "MCP",
-     "Hugging Face",
-     "Python",
-     "Docker"
-    ],
-    "contributors": 35,
-    "docs": "good",
-    "install": "uv tool install agentenv-framework",
-    "licence_class": "FREE AND OPEN SOURCE",
-    "licence_note": "Apache-2.0",
-    "maintenance": "updated today",
-    "primary": "agent_building",
-    "priority": "P1",
-    "reject": null,
-    "relevance": {
-     "hint": "it covers source monitoring, summarising or Telegram delivery, which your news agent does every day",
-     "project": "your AI News Agent"
-    },
-    "requirements": [],
-    "score": 79,
-    "warnings": []
-   },
    "first_discovered": "2026-11-20T20:37:48+00:00",
    "id": "github:R_kgDOUp-cEA",
    "identifier": "R_kgDOUp-cEA",
    "kind": "repository",
    "last_checked": "2026-11-20T20:37:48+00:00",
-   "last_notified": null,
+   "last_notified": "2026-11-23T13:26:43+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "scaleapi/agentenv-framework",
    "owner": "scaleapi",
@@ -20321,7 +21214,7 @@
     ],
     "url": "https://github.com/scaleapi/agentenv-framework"
    },
-   "status": "pool",
+   "status": "delivered",
    "url": "https://github.com/scaleapi/agentenv-framework"
   },
   "github:R_kgDOUpoe6g": {
@@ -20705,46 +21598,21 @@
     "hackathon"
    ],
    "delivery": {
-    "message_ids": [],
-    "sent_at": null,
-    "status": "NOT_SENT"
+    "message_ids": [
+     882,
+     883,
+     884
+    ],
+    "sent_at": "2026-11-23T13:26:43+00:00",
+    "status": "SENT"
    },
    "evaluated_at": "2026-11-23T01:54:01+00:00",
-   "evaluation": {
-    "categories": [
-     "skills",
-     "agent_building",
-     "hackathon"
-    ],
-    "compatibility": [
-     "Claude Code",
-     "Codex",
-     "Cursor",
-     "Node.js"
-    ],
-    "contributors": 2,
-    "docs": "good",
-    "install": "npx skills add kostja94/bricks --skill component-builder",
-    "licence_class": "FREE AND OPEN SOURCE",
-    "licence_note": "MIT",
-    "maintenance": "updated 16 days ago",
-    "primary": "skills",
-    "priority": "P1",
-    "reject": null,
-    "relevance": {
-     "hint": "it plugs into the coding agents you already use",
-     "project": "your Claude Code, Codex and Gemini development"
-    },
-    "requirements": [],
-    "score": 82,
-    "warnings": []
-   },
    "first_discovered": "2026-11-23T01:54:01+00:00",
    "id": "github:R_kgDOUqkO-w",
    "identifier": "R_kgDOUqkO-w",
    "kind": "repository",
    "last_checked": "2026-11-23T01:54:01+00:00",
-   "last_notified": null,
+   "last_notified": "2026-11-23T13:26:43+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "kostja94/bricks",
    "owner": "kostja94",
@@ -20789,7 +21657,7 @@
     ],
     "url": "https://github.com/kostja94/bricks"
    },
-   "status": "pool",
+   "status": "delivered",
    "url": "https://github.com/kostja94/bricks"
   },
   "github:R_kgDOUrHcRg": {
@@ -21222,6 +22090,107 @@
    },
    "status": "pool",
    "url": "https://github.com/aaddrick/building-with-typesafe-jev"
+  },
+  "github:R_kgDOUr_s5w": {
+   "categories": [
+    "skills",
+    "creator_tools",
+    "productivity",
+    "agent_building"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-23T13:25:28+00:00",
+   "evaluation": {
+    "categories": [
+     "skills",
+     "creator_tools",
+     "productivity",
+     "agent_building"
+    ],
+    "compatibility": [
+     "Claude Code",
+     "Codex",
+     "Gemini CLI",
+     "Cursor",
+     "Python",
+     "Node.js"
+    ],
+    "contributors": null,
+    "docs": "good",
+    "install": "git clone https://github.com/aashish254/burn && cd burn && npm link",
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "MIT",
+    "maintenance": "updated 12 days ago",
+    "primary": "skills",
+    "priority": "P2",
+    "reject": null,
+    "relevance": {
+     "hint": "it plugs into the coding agents you already use",
+     "project": "your Claude Code, Codex and Gemini development"
+    },
+    "requirements": [],
+    "score": 68,
+    "warnings": [
+     "pipes a remote script straight into the shell (read it before running)"
+    ]
+   },
+   "first_discovered": "2026-11-23T13:25:28+00:00",
+   "id": "github:R_kgDOUr_s5w",
+   "identifier": "R_kgDOUr_s5w",
+   "kind": "repository",
+   "last_checked": "2026-11-23T13:25:28+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "aashish254/burn",
+   "owner": "aashish254",
+   "platform": "github",
+   "priority": "P2",
+   "score": 68,
+   "snapshot": {
+    "created_at": "2026-09-26T00:10:24Z",
+    "default_branch": "main",
+    "description": "Local-first, zero-dependency cost ledger for your AI coding agents. Reads the transcripts Claude Code / OpenCode / Codex / Gemini CLI already leave on disk — spend per repo, model, day, and git branch, with honest billed/estimated/unpriced provenance. No network, no account, no telemetry. ULP 1.0 reference implementation.",
+    "display": "burn",
+    "forks": 0,
+    "found_by": [
+     "search: topic:gemini-cli"
+    ],
+    "kind": "repository",
+    "language": "JavaScript",
+    "license_spdx": "MIT",
+    "name": "aashish254/burn",
+    "node_id": "R_kgDOUr_s5w",
+    "open_issues": 0,
+    "owner": "aashish254",
+    "platform": "github",
+    "platform_id": 1388309735,
+    "pushed_at": "2026-11-10T17:12:04Z",
+    "rid": "github:R_kgDOUr_s5w",
+    "stars": 101,
+    "topics": [
+     "ai-coding",
+     "claude-code",
+     "cli",
+     "codex",
+     "cost-tracking",
+     "developer-tools",
+     "gemini-cli",
+     "local-first",
+     "nodejs",
+     "observability",
+     "opencode",
+     "ulp",
+     "usage-ledger",
+     "zero-dependencies"
+    ],
+    "url": "https://github.com/aashish254/burn"
+   },
+   "status": "pool",
+   "url": "https://github.com/aashish254/burn"
   },
   "github:R_kgDOUrdHXw": {
    "categories": [
@@ -23613,6 +24582,105 @@
    "status": "pool",
    "url": "https://github.com/oss-invisible/playwright_mcp"
   },
+  "github:R_kgDOUztUmA": {
+   "categories": [
+    "automation",
+    "productivity",
+    "agent_building",
+    "hackathon",
+    "creator_tools"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-23T13:25:29+00:00",
+   "evaluation": {
+    "categories": [
+     "automation",
+     "productivity",
+     "agent_building",
+     "hackathon",
+     "creator_tools"
+    ],
+    "compatibility": [
+     "Claude Code",
+     "Cursor",
+     "MCP",
+     "Docker"
+    ],
+    "contributors": 1,
+    "docs": "basic",
+    "install": "git clone https://github.com/evergreen-it-dev/folio.git",
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "MIT",
+    "maintenance": "updated 4 days ago",
+    "primary": "automation",
+    "priority": "P1",
+    "reject": null,
+    "relevance": {
+     "hint": "it covers source monitoring, summarising or Telegram delivery, which your news agent does every day",
+     "project": "your AI News Agent"
+    },
+    "requirements": [],
+    "score": 75,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-23T13:25:29+00:00",
+   "id": "github:R_kgDOUztUmA",
+   "identifier": "R_kgDOUztUmA",
+   "kind": "repository",
+   "last_checked": "2026-11-23T13:25:29+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "evergreen-it-dev/folio",
+   "owner": "evergreen-it-dev",
+   "platform": "github",
+   "priority": "P1",
+   "score": 75,
+   "snapshot": {
+    "created_at": "2026-09-29T18:57:20Z",
+    "default_branch": "main",
+    "description": "The AI-assisted, open-source alternative to Notion and Confluence: a team wiki that lives in Git, with real-time editing, data tables, whiteboards, offline mode, and first-class AI agents. Live demo: https://demo.foliowiki.online",
+    "display": "folio",
+    "forks": 6,
+    "found_by": [
+     "search: notion ai agent in:name,description"
+    ],
+    "kind": "repository",
+    "language": "TypeScript",
+    "license_spdx": "MIT",
+    "name": "evergreen-it-dev/folio",
+    "node_id": "R_kgDOUztUmA",
+    "open_issues": 4,
+    "owner": "evergreen-it-dev",
+    "platform": "github",
+    "platform_id": 1396397208,
+    "pushed_at": "2026-11-19T09:15:02Z",
+    "rid": "github:R_kgDOUztUmA",
+    "stars": 92,
+    "topics": [
+     "collaboration",
+     "docs-as-code",
+     "documentation",
+     "documentation-tool",
+     "excalidraw",
+     "git",
+     "gitbook-alternative",
+     "knowledge-base",
+     "markdown",
+     "mcp",
+     "self-hosted",
+     "technical-writing",
+     "wiki",
+     "yjs"
+    ],
+    "url": "https://github.com/evergreen-it-dev/folio"
+   },
+   "status": "pool",
+   "url": "https://github.com/evergreen-it-dev/folio"
+  },
   "github:R_kgDOV0cDSA": {
    "categories": [
     "automation",
@@ -24996,6 +26064,103 @@
    },
    "status": "pool",
    "url": "https://github.com/songconmaisaix31-design/mcpet"
+  },
+  "github:R_kgDOVDA2wg": {
+   "categories": [
+    "skills",
+    "agent_building",
+    "productivity"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-23T13:25:28+00:00",
+   "evaluation": {
+    "categories": [
+     "skills",
+     "agent_building",
+     "productivity"
+    ],
+    "compatibility": [
+     "Claude Code",
+     "Codex",
+     "Gemini CLI",
+     "Cursor",
+     "Node.js"
+    ],
+    "contributors": 15,
+    "docs": "basic",
+    "install": "pnpm install --frozen-lockfile",
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "MIT",
+    "maintenance": "updated 33 days ago",
+    "primary": "skills",
+    "priority": "P1",
+    "reject": null,
+    "relevance": {
+     "hint": "it plugs into the coding agents you already use",
+     "project": "your Claude Code, Codex and Gemini development"
+    },
+    "requirements": [],
+    "score": 72,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-23T13:25:28+00:00",
+   "id": "github:R_kgDOVDA2wg",
+   "identifier": "R_kgDOVDA2wg",
+   "kind": "repository",
+   "last_checked": "2026-11-23T13:25:28+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "iamvicliu/AgentHub",
+   "owner": "iamvicliu",
+   "platform": "github",
+   "priority": "P1",
+   "score": 72,
+   "snapshot": {
+    "created_at": "2026-10-09T20:59:52Z",
+    "default_branch": "main",
+    "description": "把 Claude Code、Codex、Cursor 等 10 种 AI Agent 的本地会话汇到一处，统一搜索、阅读和管理（macOS，支持 Apple 芯片和 Intel 芯片）。",
+    "display": "AgentHub",
+    "forks": 4,
+    "found_by": [
+     "search: topic:gemini-cli"
+    ],
+    "kind": "repository",
+    "language": "TypeScript",
+    "license_spdx": "MIT",
+    "name": "iamvicliu/AgentHub",
+    "node_id": "R_kgDOVDA2wg",
+    "open_issues": 0,
+    "owner": "iamvicliu",
+    "platform": "github",
+    "platform_id": 1412445890,
+    "pushed_at": "2026-10-21T04:43:15Z",
+    "rid": "github:R_kgDOVDA2wg",
+    "stars": 102,
+    "topics": [
+     "ai-tools",
+     "claude-code",
+     "codex",
+     "cursor",
+     "deepseek-harness",
+     "developer-tools",
+     "electron",
+     "gemini-cli",
+     "hermes",
+     "local-first",
+     "macos",
+     "openclaw",
+     "opencode",
+     "pi",
+     "workbuddy"
+    ],
+    "url": "https://github.com/iamvicliu/agenthub"
+   },
+   "status": "pool",
+   "url": "https://github.com/iamvicliu/agenthub"
   },
   "github:R_kgDOVDInUQ": {
    "delivery": {
@@ -26596,6 +27761,7 @@
    "kind": "repository",
    "last_checked": "2026-11-23T01:53:57+00:00",
    "last_notified": "2026-11-23T01:59:00+00:00",
+   "last_update_check": "2026-11-23T13:25:33+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "Entelligence-AI/agentplay",
    "owner": "Entelligence-AI",
@@ -27704,6 +28870,89 @@
    "url": "https://github.com/leonxlnx/earshot",
    "version": "v0.4.1"
   },
+  "github:R_kgDOVKl7GA": {
+   "categories": [
+    "skills",
+    "productivity"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-23T13:25:26+00:00",
+   "evaluation": {
+    "categories": [
+     "skills",
+     "productivity"
+    ],
+    "compatibility": [
+     "Codex",
+     "OpenAI API",
+     "Python"
+    ],
+    "contributors": null,
+    "docs": "basic",
+    "install": "git clone --branch v1.4.0-preview.1 --single-branch https://github.com/naxianjin/codex-pair.git",
+    "licence_class": "LICENCE UNCLEAR",
+    "licence_note": "no recognised licence file",
+    "maintenance": "updated 12 days ago",
+    "primary": "skills",
+    "priority": "P2",
+    "reject": null,
+    "relevance": {
+     "hint": "it plugs into the coding agents you already use",
+     "project": "your Claude Code, Codex and Gemini development"
+    },
+    "requirements": [],
+    "score": 63,
+    "warnings": [
+     "no clear licence: check before reusing the code"
+    ]
+   },
+   "first_discovered": "2026-11-23T13:25:26+00:00",
+   "id": "github:R_kgDOVKl7GA",
+   "identifier": "R_kgDOVKl7GA",
+   "kind": "repository",
+   "last_checked": "2026-11-23T13:25:26+00:00",
+   "last_notified": null,
+   "licence_class": "LICENCE UNCLEAR",
+   "name": "naxianjin/codex-pair",
+   "owner": "naxianjin",
+   "platform": "github",
+   "priority": "P2",
+   "score": 63,
+   "snapshot": {
+    "created_at": "2026-10-15T08:18:24Z",
+    "default_branch": "main",
+    "description": "让当前打开的两个官方 Codex CLI 窗口协作：本地消息桥、问答、任务交付整合及独立规划接续；支持 OpenAI 账号与已配置 DeepSeek API，不固定账号目录。验收边界见 README。",
+    "display": "codex-pair",
+    "forks": 4,
+    "found_by": [
+     "search: \"codex cli\" in:name,description"
+    ],
+    "kind": "repository",
+    "language": "Python",
+    "name": "naxianjin/codex-pair",
+    "node_id": "R_kgDOVKl7GA",
+    "open_issues": 0,
+    "owner": "naxianjin",
+    "platform": "github",
+    "platform_id": 1420393240,
+    "pushed_at": "2026-11-11T03:31:37Z",
+    "rid": "github:R_kgDOVKl7GA",
+    "stars": 105,
+    "topics": [
+     "codex",
+     "codex-cli",
+     "codex-skill",
+     "deepseek"
+    ],
+    "url": "https://github.com/naxianjin/codex-pair"
+   },
+   "status": "pool",
+   "url": "https://github.com/naxianjin/codex-pair"
+  },
   "github:R_kgDOVKmAxg": {
    "categories": [
     "agent_building",
@@ -28250,6 +29499,190 @@
    "status": "rejected",
    "url": "https://github.com/gathin23/cleanyourtv"
   },
+  "github:R_kgDOVO98NQ": {
+   "categories": [
+    "skills",
+    "agent_building",
+    "automation",
+    "productivity"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-23T13:25:29+00:00",
+   "evaluation": {
+    "categories": [
+     "skills",
+     "agent_building",
+     "automation",
+     "productivity"
+    ],
+    "compatibility": [
+     "Claude Code",
+     "Codex",
+     "Cursor",
+     "MCP",
+     "LangChain",
+     "LangGraph"
+    ],
+    "contributors": null,
+    "docs": "basic",
+    "install": "git clone https://github.com/trustabl/agent-dashboard.git",
+    "licence_class": "OPEN SOURCE WITH PAID OPTIONAL SERVICES",
+    "licence_note": "Apache-2.0 code; uses paid API (a free/local option is mentioned)",
+    "maintenance": "updated today",
+    "primary": "skills",
+    "priority": "P2",
+    "reject": null,
+    "relevance": {
+     "hint": "it plugs into the coding agents you already use",
+     "project": "your Claude Code, Codex and Gemini development"
+    },
+    "requirements": [
+     "paid API"
+    ],
+    "score": 71,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-23T13:25:29+00:00",
+   "id": "github:R_kgDOVO98NQ",
+   "identifier": "R_kgDOVO98NQ",
+   "kind": "repository",
+   "last_checked": "2026-11-23T13:25:29+00:00",
+   "last_notified": null,
+   "licence_class": "OPEN SOURCE WITH PAID OPTIONAL SERVICES",
+   "name": "trustabl/agent-dashboard",
+   "owner": "trustabl",
+   "platform": "github",
+   "priority": "P2",
+   "score": 71,
+   "snapshot": {
+    "created_at": "2026-10-19T01:29:58Z",
+    "default_branch": "main",
+    "description": "Agent dashboard runs reliability scans, skills, and network access probes.",
+    "display": "agent-dashboard",
+    "forks": 51,
+    "found_by": [
+     "search: topic:crewai"
+    ],
+    "kind": "repository",
+    "language": "TypeScript",
+    "license_spdx": "Apache-2.0",
+    "name": "trustabl/agent-dashboard",
+    "node_id": "R_kgDOVO98NQ",
+    "open_issues": 1,
+    "owner": "trustabl",
+    "platform": "github",
+    "platform_id": 1424981045,
+    "pushed_at": "2026-11-22T16:32:02Z",
+    "rid": "github:R_kgDOVO98NQ",
+    "stars": 62,
+    "topics": [
+     "adk",
+     "agent-reliability",
+     "agents",
+     "ai",
+     "anthropic",
+     "claude",
+     "codex",
+     "crewai",
+     "cursor",
+     "langchain",
+     "langgraph",
+     "llm",
+     "mcp",
+     "openai",
+     "openshell",
+     "pydantic",
+     "reliability",
+     "sandbox",
+     "static-analysis",
+     "vercel"
+    ],
+    "url": "https://github.com/trustabl/agent-dashboard"
+   },
+   "status": "pool",
+   "url": "https://github.com/trustabl/agent-dashboard"
+  },
+  "github:R_kgDOVOAn9w": {
+   "categories": [
+    "skills",
+    "productivity"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-23T13:25:31+00:00",
+   "evaluation": {
+    "categories": [
+     "skills",
+     "productivity"
+    ],
+    "compatibility": [
+     "Claude Code",
+     "Codex",
+     "OpenAI API",
+     "Python"
+    ],
+    "contributors": 1,
+    "docs": "basic",
+    "install": "git clone https://github.com/mu-zi-lee/hitl-dev-loop",
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "MIT",
+    "maintenance": "updated 36 days ago",
+    "primary": "skills",
+    "priority": "P1",
+    "reject": null,
+    "relevance": {
+     "hint": "it plugs into the coding agents you already use",
+     "project": "your Claude Code, Codex and Gemini development"
+    },
+    "requirements": [],
+    "score": 72,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-23T13:25:31+00:00",
+   "id": "github:R_kgDOVOAn9w",
+   "identifier": "R_kgDOVOAn9w",
+   "kind": "repository",
+   "last_checked": "2026-11-23T13:25:31+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "mu-zi-lee/hitl-dev-loop",
+   "owner": "mu-zi-lee",
+   "platform": "github",
+   "priority": "P1",
+   "score": 72,
+   "snapshot": {
+    "created_at": "2026-10-18T04:10:03Z",
+    "default_branch": "main",
+    "description": "面向 Claude Code + Codex CLI 的人机协作（Human-in-the-Loop）开发循环",
+    "display": "hitl-dev-loop",
+    "forks": 6,
+    "found_by": [
+     "search: \"codex cli\" in:name,description"
+    ],
+    "kind": "repository",
+    "language": "Shell",
+    "license_spdx": "MIT",
+    "name": "mu-zi-lee/hitl-dev-loop",
+    "node_id": "R_kgDOVOAn9w",
+    "open_issues": 0,
+    "owner": "mu-zi-lee",
+    "platform": "github",
+    "platform_id": 1423976439,
+    "pushed_at": "2026-10-18T05:35:04Z",
+    "rid": "github:R_kgDOVOAn9w",
+    "stars": 46,
+    "url": "https://github.com/mu-zi-lee/hitl-dev-loop"
+   },
+   "status": "pool",
+   "url": "https://github.com/mu-zi-lee/hitl-dev-loop"
+  },
   "github:R_kgDOVOB3Zg": {
    "categories": [
     "agent_building",
@@ -28708,6 +30141,82 @@
    "url": "https://github.com/zleap-ai/sag-wiki",
    "version": "v0.4.1"
   },
+  "github:R_kgDOVOi0NQ": {
+   "categories": [
+    "skills",
+    "productivity"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-23T13:25:31+00:00",
+   "evaluation": {
+    "categories": [
+     "skills",
+     "productivity"
+    ],
+    "compatibility": [
+     "Claude Code",
+     "Codex",
+     "OpenAI API"
+    ],
+    "contributors": 2,
+    "docs": "good",
+    "install": null,
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "MIT",
+    "maintenance": "updated today",
+    "primary": "skills",
+    "priority": "P1",
+    "reject": null,
+    "relevance": {
+     "hint": "it plugs into the coding agents you already use",
+     "project": "your Claude Code, Codex and Gemini development"
+    },
+    "requirements": [],
+    "score": 75,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-23T13:25:31+00:00",
+   "id": "github:R_kgDOVOi0NQ",
+   "identifier": "R_kgDOVOi0NQ",
+   "kind": "repository",
+   "last_checked": "2026-11-23T13:25:31+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "danepps/legal-research-skills",
+   "owner": "danepps",
+   "platform": "github",
+   "priority": "P1",
+   "score": 75,
+   "snapshot": {
+    "created_at": "2026-10-18T15:44:21Z",
+    "default_branch": "main",
+    "description": "Claude Code and Codex CLI skills for legal scholarship: verified research memos, cite-checking, proofreading, Zotero library building, SCOTUS case prep",
+    "display": "legal-research-skills",
+    "forks": 10,
+    "found_by": [
+     "search: \"codex cli\" in:name,description"
+    ],
+    "kind": "repository",
+    "language": "Python",
+    "license_spdx": "MIT",
+    "name": "danepps/legal-research-skills",
+    "node_id": "R_kgDOVOi0NQ",
+    "open_issues": 1,
+    "owner": "danepps",
+    "platform": "github",
+    "platform_id": 1424536629,
+    "pushed_at": "2026-11-22T21:47:00Z",
+    "rid": "github:R_kgDOVOi0NQ",
+    "stars": 47,
+    "url": "https://github.com/danepps/legal-research-skills"
+   },
+   "status": "pool",
+   "url": "https://github.com/danepps/legal-research-skills"
+  },
   "github:R_kgDOVOrBtQ": {
    "categories": [
     "skills",
@@ -29155,6 +30664,69 @@
    "status": "pool",
    "url": "https://github.com/joasasantos/rea-prompts"
   },
+  "github:R_kgDOVQgKvw": {
+   "categories": [
+    "skills",
+    "agent_building"
+   ],
+   "delivery": {
+    "message_ids": [
+     882,
+     883,
+     884
+    ],
+    "sent_at": "2026-11-23T13:26:43+00:00",
+    "status": "SENT"
+   },
+   "evaluated_at": "2026-11-23T13:25:23+00:00",
+   "first_discovered": "2026-11-23T13:25:23+00:00",
+   "id": "github:R_kgDOVQgKvw",
+   "identifier": "R_kgDOVQgKvw",
+   "kind": "repository",
+   "last_checked": "2026-11-23T13:25:23+00:00",
+   "last_notified": "2026-11-23T13:26:43+00:00",
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "abdiraimov-otabek/dashboard-design-skill",
+   "owner": "abdiraimov-otabek",
+   "platform": "github",
+   "priority": "P0",
+   "score": 88,
+   "snapshot": {
+    "created_at": "2026-10-20T06:20:46Z",
+    "default_branch": "main",
+    "description": "A Claude Code skill for clean, honest dashboard UI: KPI tiles, charts, date pickers, ranked lists, states, layouts and a screenshot QA pass. Distilled from 127 shipped dashboards.",
+    "display": "dashboard-design-skill",
+    "forks": 70,
+    "found_by": [
+     "search: \"claude code\" skills in:name,description"
+    ],
+    "kind": "repository",
+    "license_spdx": "MIT",
+    "name": "abdiraimov-otabek/dashboard-design-skill",
+    "node_id": "R_kgDOVQgKvw",
+    "open_issues": 0,
+    "owner": "abdiraimov-otabek",
+    "platform": "github",
+    "platform_id": 1426590399,
+    "pushed_at": "2026-11-22T08:08:37Z",
+    "rid": "github:R_kgDOVQgKvw",
+    "stars": 1141,
+    "topics": [
+     "agent-skills",
+     "analytics",
+     "claude-code",
+     "claude-skill",
+     "dashboard",
+     "dashboard-design",
+     "data-visualization",
+     "tailwindcss",
+     "ui-design"
+    ],
+    "url": "https://github.com/abdiraimov-otabek/dashboard-design-skill"
+   },
+   "status": "delivered",
+   "url": "https://github.com/abdiraimov-otabek/dashboard-design-skill"
+  },
   "github:R_kgDOVRA2_g": {
    "categories": [
     "skills",
@@ -29215,6 +30787,110 @@
    },
    "status": "delivered",
    "url": "https://github.com/jakeschincariol/day-trader-skill"
+  },
+  "github:R_kgDOVROqjQ": {
+   "categories": [
+    "skills",
+    "productivity",
+    "agent_building",
+    "automation"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-23T13:25:25+00:00",
+   "evaluation": {
+    "categories": [
+     "skills",
+     "productivity",
+     "agent_building",
+     "automation"
+    ],
+    "compatibility": [
+     "Claude Code",
+     "Codex",
+     "Gemini CLI",
+     "Cursor",
+     "MCP",
+     "LangChain"
+    ],
+    "contributors": 2,
+    "docs": "good",
+    "install": "docker run -d --name kettu -p 4567:4567 -v kettu:/home/node -v ~/code:/workspace ghcr.io/kettuai/kettu",
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "AGPL-3.0",
+    "maintenance": "updated today",
+    "primary": "skills",
+    "priority": "P1",
+    "reject": null,
+    "relevance": {
+     "hint": "it plugs into the coding agents you already use",
+     "project": "your Claude Code, Codex and Gemini development"
+    },
+    "requirements": [],
+    "score": 72,
+    "warnings": [
+     "pipes a remote script straight into the shell (read it before running)"
+    ]
+   },
+   "first_discovered": "2026-11-23T13:25:25+00:00",
+   "id": "github:R_kgDOVROqjQ",
+   "identifier": "R_kgDOVROqjQ",
+   "kind": "repository",
+   "last_checked": "2026-11-23T13:25:25+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "KettuAI/Kettu",
+   "owner": "KettuAI",
+   "platform": "github",
+   "priority": "P1",
+   "score": 72,
+   "snapshot": {
+    "created_at": "2026-10-20T17:30:35Z",
+    "default_branch": "main",
+    "description": "Beauty is productivity. Claude Code, Codex, OpenCode, Pi and 40+ more coding agents, side by side in one window.",
+    "display": "Kettu",
+    "forks": 13,
+    "found_by": [
+     "search: topic:gemini-cli"
+    ],
+    "kind": "repository",
+    "language": "TypeScript",
+    "license_spdx": "AGPL-3.0",
+    "name": "KettuAI/Kettu",
+    "node_id": "R_kgDOVROqjQ",
+    "open_issues": 80,
+    "owner": "KettuAI",
+    "platform": "github",
+    "platform_id": 1427352205,
+    "pushed_at": "2026-11-23T09:45:00Z",
+    "rid": "github:R_kgDOVROqjQ",
+    "stars": 125,
+    "topics": [
+     "agent-client-protocol",
+     "agentic-coding",
+     "ai-agents",
+     "ai-coding",
+     "claude-code",
+     "codex",
+     "coding-agents",
+     "desktop-app",
+     "developer-tools",
+     "gemini-cli",
+     "gui",
+     "linux",
+     "macos",
+     "mcp",
+     "opencode",
+     "productivity",
+     "windows"
+    ],
+    "url": "https://github.com/kettuai/kettu"
+   },
+   "status": "pool",
+   "url": "https://github.com/kettuai/kettu"
   },
   "github:R_kgDOVROsMg": {
    "categories": [
@@ -29456,6 +31132,113 @@
    },
    "status": "pool",
    "url": "https://github.com/zuiho-kai/bothouse"
+  },
+  "github:R_kgDOVSdnwA": {
+   "categories": [
+    "skills",
+    "agent_building",
+    "productivity",
+    "prompting",
+    "automation"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-23T13:25:30+00:00",
+   "evaluation": {
+    "categories": [
+     "skills",
+     "agent_building",
+     "productivity",
+     "prompting",
+     "automation"
+    ],
+    "compatibility": [
+     "Claude Code",
+     "Codex",
+     "MCP",
+     "OpenAI API"
+    ],
+    "contributors": null,
+    "docs": "good",
+    "install": "cargo install --path crates/killi",
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "MIT",
+    "maintenance": "updated today",
+    "primary": "skills",
+    "priority": "P2",
+    "reject": null,
+    "relevance": {
+     "hint": "it plugs into the coding agents you already use",
+     "project": "your Claude Code, Codex and Gemini development"
+    },
+    "requirements": [],
+    "score": 69,
+    "warnings": [
+     "pipes a remote script straight into the shell (read it before running)"
+    ]
+   },
+   "first_discovered": "2026-11-23T13:25:30+00:00",
+   "id": "github:R_kgDOVSdnwA",
+   "identifier": "R_kgDOVSdnwA",
+   "kind": "repository",
+   "last_checked": "2026-11-23T13:25:30+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "timwuhaotian/killi",
+   "owner": "timwuhaotian",
+   "platform": "github",
+   "priority": "P2",
+   "score": 69,
+   "snapshot": {
+    "created_at": "2026-10-21T16:28:28Z",
+    "default_branch": "main",
+    "description": "Open-source AI coding agent for your terminal, written in Rust. One 7 MB native binary for Apple Silicon Macs, ~18 MB RAM, 70–90% prompt-cache hits. Works with OpenAI, Anthropic and any compatible LLM; MCP, subagents, plan mode, skills, hooks, AGENTS.md. A lightweight Claude Code / Codex CLI alternative.",
+    "display": "killi",
+    "forks": 12,
+    "found_by": [
+     "search: \"codex cli\" in:name,description"
+    ],
+    "kind": "repository",
+    "language": "Rust",
+    "license_spdx": "MIT",
+    "name": "timwuhaotian/killi",
+    "node_id": "R_kgDOVSdnwA",
+    "open_issues": 0,
+    "owner": "timwuhaotian",
+    "platform": "github",
+    "platform_id": 1428645824,
+    "pushed_at": "2026-11-23T06:43:53Z",
+    "rid": "github:R_kgDOVSdnwA",
+    "stars": 55,
+    "topics": [
+     "agentic-coding",
+     "ai-agent",
+     "ai-agents",
+     "ai-coding-agent",
+     "anthropic",
+     "apple-silicon",
+     "claude-code",
+     "cli",
+     "coding-agent",
+     "developer-tools",
+     "llm",
+     "macos",
+     "mcp",
+     "model-context-protocol",
+     "open-source",
+     "openai",
+     "prompt-caching",
+     "rust",
+     "terminal",
+     "tui"
+    ],
+    "url": "https://github.com/timwuhaotian/killi"
+   },
+   "status": "pool",
+   "url": "https://github.com/timwuhaotian/killi"
   },
   "github:R_kgDOVT40aQ": {
    "categories": [
@@ -29830,6 +31613,74 @@
    "score": 41,
    "status": "rejected",
    "url": "https://github.com/sarthzk/internship-tracker"
+  },
+  "github:R_kgDOVUJgAA": {
+   "categories": [
+    "skills",
+    "productivity",
+    "agent_building"
+   ],
+   "delivery": {
+    "message_ids": [
+     882,
+     883,
+     884
+    ],
+    "sent_at": "2026-11-23T13:26:43+00:00",
+    "status": "SENT"
+   },
+   "evaluated_at": "2026-11-23T13:25:26+00:00",
+   "first_discovered": "2026-11-23T13:25:26+00:00",
+   "id": "github:R_kgDOVUJgAA",
+   "identifier": "R_kgDOVUJgAA",
+   "kind": "repository",
+   "last_checked": "2026-11-23T13:25:26+00:00",
+   "last_notified": "2026-11-23T13:26:43+00:00",
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "laulauraluo/looks-good-to-ai",
+   "owner": "laulauraluo",
+   "platform": "github",
+   "priority": "P0",
+   "score": 85,
+   "snapshot": {
+    "created_at": "2026-10-23T00:30:44Z",
+    "default_branch": "main",
+    "description": "Agent Skill for reviewing AI-written PRs in Claude Code, Codex, Copilot, Cursor and Gemini CLI: catch bugs, align context, own the sign-off.",
+    "display": "looks-good-to-ai",
+    "forks": 0,
+    "found_by": [
+     "search: topic:gemini-cli"
+    ],
+    "kind": "repository",
+    "language": "Python",
+    "license_spdx": "MIT",
+    "name": "laulauraluo/looks-good-to-ai",
+    "node_id": "R_kgDOVUJgAA",
+    "open_issues": 0,
+    "owner": "laulauraluo",
+    "platform": "github",
+    "platform_id": 1430413312,
+    "pushed_at": "2026-11-22T20:37:25Z",
+    "rid": "github:R_kgDOVUJgAA",
+    "stars": 115,
+    "topics": [
+     "agent-skills",
+     "ai-agents",
+     "ai-code-review",
+     "claude-code",
+     "claude-code-plugin",
+     "claude-skill",
+     "code-review",
+     "codex",
+     "cursor",
+     "gemini-cli",
+     "github-copilot",
+     "pull-requests"
+    ],
+    "url": "https://github.com/laulauraluo/looks-good-to-ai"
+   },
+   "status": "delivered",
+   "url": "https://github.com/laulauraluo/looks-good-to-ai"
   },
   "github:R_kgDOVUPmBg": {
    "categories": [
@@ -31032,6 +32883,7 @@
    "kind": "repository",
    "last_checked": "2026-11-23T01:54:00+00:00",
    "last_notified": "2026-11-23T01:59:00+00:00",
+   "last_update_check": "2026-11-23T13:25:33+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "erensrtky/cogit",
    "owner": "erensrtky",
@@ -31074,7 +32926,8 @@
     "url": "https://github.com/erensrtky/cogit"
    },
    "status": "delivered",
-   "url": "https://github.com/erensrtky/cogit"
+   "url": "https://github.com/erensrtky/cogit",
+   "version": "v1.5.2"
   },
   "github:R_kgDOVZ9Lng": {
    "categories": [
@@ -31784,6 +33637,7 @@
    "kind": "repository",
    "last_checked": "2026-11-23T01:53:59+00:00",
    "last_notified": "2026-11-23T01:59:00+00:00",
+   "last_update_check": "2026-11-23T13:25:33+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "muaaz9329/cheap-ag",
    "owner": "muaaz9329",
@@ -31836,7 +33690,8 @@
     "url": "https://github.com/muaaz9329/cheap-ag"
    },
    "status": "delivered",
-   "url": "https://github.com/muaaz9329/cheap-ag"
+   "url": "https://github.com/muaaz9329/cheap-ag",
+   "version": "v1.5.1"
   },
   "github:R_kgDOVbQmEQ": {
    "categories": [
@@ -32396,6 +34251,109 @@
    "status": "delivered",
    "url": "https://github.com/google-deepmind/gbench",
    "version": "v0.5.0"
+  },
+  "github:R_kgDOVcnjyQ": {
+   "categories": [
+    "agent_building",
+    "skills",
+    "automation"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-23T13:25:30+00:00",
+   "evaluation": {
+    "categories": [
+     "agent_building",
+     "skills",
+     "automation"
+    ],
+    "compatibility": [
+     "Claude Code",
+     "Cursor",
+     "MCP",
+     "LangChain",
+     "LangGraph",
+     "CrewAI"
+    ],
+    "contributors": 4,
+    "docs": "good",
+    "install": "claude mcp add agent-reliability-skills -- npx -y https://github.com/trustabl/agent-reliability-skills/releases/download/v0.1.0-rc.3/agent-r",
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "Apache-2.0",
+    "maintenance": "updated today",
+    "primary": "agent_building",
+    "priority": "P1",
+    "reject": null,
+    "relevance": {
+     "hint": "it plugs into the coding agents you already use",
+     "project": "your Claude Code, Codex and Gemini development"
+    },
+    "requirements": [],
+    "score": 79,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-23T13:25:30+00:00",
+   "id": "github:R_kgDOVcnjyQ",
+   "identifier": "R_kgDOVcnjyQ",
+   "kind": "repository",
+   "last_checked": "2026-11-23T13:25:30+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "trustabl/agent-reliability-skills",
+   "owner": "trustabl",
+   "platform": "github",
+   "priority": "P1",
+   "score": 79,
+   "snapshot": {
+    "created_at": "2026-10-30T04:59:40Z",
+    "default_branch": "main",
+    "description": "Forge Claude Code skills generate more reliable agents",
+    "display": "agent-reliability-skills",
+    "forks": 51,
+    "found_by": [
+     "search: topic:crewai"
+    ],
+    "kind": "repository",
+    "language": "JavaScript",
+    "license_spdx": "Apache-2.0",
+    "name": "trustabl/agent-reliability-skills",
+    "node_id": "R_kgDOVcnjyQ",
+    "open_issues": 2,
+    "owner": "trustabl",
+    "platform": "github",
+    "platform_id": 1439294409,
+    "pushed_at": "2026-11-22T21:21:16Z",
+    "rid": "github:R_kgDOVcnjyQ",
+    "stars": 62,
+    "topics": [
+     "adk",
+     "ag2",
+     "ai",
+     "anthropic",
+     "autogen",
+     "coding",
+     "constraints",
+     "crewai",
+     "failures",
+     "forge",
+     "guardrails",
+     "langchain",
+     "langgraph",
+     "llm",
+     "mcp",
+     "openai",
+     "pydantic",
+     "reliable",
+     "skill",
+     "vercel"
+    ],
+    "url": "https://github.com/trustabl/agent-reliability-skills"
+   },
+   "status": "pool",
+   "url": "https://github.com/trustabl/agent-reliability-skills"
   },
   "github:R_kgDOVcsWsA": {
    "categories": [
@@ -33237,6 +35195,97 @@
    },
    "status": "delivered",
    "url": "https://github.com/expo/exact"
+  },
+  "github:R_kgDOVfyvlg": {
+   "categories": [
+    "skills",
+    "agent_building",
+    "automation",
+    "productivity"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-23T13:25:28+00:00",
+   "evaluation": {
+    "categories": [
+     "skills",
+     "agent_building",
+     "automation",
+     "productivity"
+    ],
+    "compatibility": [
+     "Claude Code",
+     "Codex",
+     "MCP",
+     "OpenAI API"
+    ],
+    "contributors": 2,
+    "docs": "basic",
+    "install": "git clone https://github.com/Old-Friends-Gathering/sedimem && cd sedimem",
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "MIT",
+    "maintenance": "updated 3 days ago",
+    "primary": "skills",
+    "priority": "P1",
+    "reject": null,
+    "relevance": {
+     "hint": "it plugs into the coding agents you already use",
+     "project": "your Claude Code, Codex and Gemini development"
+    },
+    "requirements": [],
+    "score": 75,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-23T13:25:28+00:00",
+   "id": "github:R_kgDOVfyvlg",
+   "identifier": "R_kgDOVfyvlg",
+   "kind": "repository",
+   "last_checked": "2026-11-23T13:25:28+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "Old-Friends-Gathering/sedimem",
+   "owner": "Old-Friends-Gathering",
+   "platform": "github",
+   "priority": "P1",
+   "score": 75,
+   "snapshot": {
+    "created_at": "2026-11-02T07:04:12Z",
+    "default_branch": "main",
+    "description": "sedimem · 本地跨会话「自我迭代」记忆层：DSH / Codex CLI / Claude Code 共用一份只追加的真相层，重点治冗余·重复·冲突·过时（MCP + 四道写入卫生 + Agent 裁决闭环）",
+    "display": "sedimem",
+    "forks": 5,
+    "found_by": [
+     "search: \"codex cli\" in:name,description"
+    ],
+    "kind": "repository",
+    "language": "JavaScript",
+    "license_spdx": "MIT",
+    "name": "Old-Friends-Gathering/sedimem",
+    "node_id": "R_kgDOVfyvlg",
+    "open_issues": 2,
+    "owner": "Old-Friends-Gathering",
+    "platform": "github",
+    "platform_id": 1442623382,
+    "pushed_at": "2026-11-19T17:06:37Z",
+    "rid": "github:R_kgDOVfyvlg",
+    "stars": 101,
+    "topics": [
+     "ai-memory",
+     "claude-code",
+     "codex-cli",
+     "deepseek-harness",
+     "dsh-plugin",
+     "local-first",
+     "mcp",
+     "memory-hygiene"
+    ],
+    "url": "https://github.com/old-friends-gathering/sedimem"
+   },
+   "status": "pool",
+   "url": "https://github.com/old-friends-gathering/sedimem"
   },
   "github:R_kgDOVg0oYg": {
    "categories": [
@@ -34310,6 +36359,109 @@
    },
    "status": "pool",
    "url": "https://github.com/imsai-sh/fish-pocket"
+  },
+  "github:R_kgDOVjYtnA": {
+   "categories": [
+    "skills",
+    "agent_building",
+    "automation",
+    "productivity"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-23T13:25:27+00:00",
+   "evaluation": {
+    "categories": [
+     "skills",
+     "agent_building",
+     "automation",
+     "productivity"
+    ],
+    "compatibility": [
+     "Claude Code",
+     "Codex",
+     "Gemini CLI",
+     "Cursor",
+     "MCP"
+    ],
+    "contributors": null,
+    "docs": "basic",
+    "install": null,
+    "licence_class": "FREE TIER AVAILABLE",
+    "licence_note": "CC0-1.0 code; a hosted version has a free tier",
+    "maintenance": "updated 18 days ago",
+    "primary": "skills",
+    "priority": "P2",
+    "reject": null,
+    "relevance": {
+     "hint": "it plugs into the coding agents you already use",
+     "project": "your Claude Code, Codex and Gemini development"
+    },
+    "requirements": [],
+    "score": 63,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-23T13:25:27+00:00",
+   "id": "github:R_kgDOVjYtnA",
+   "identifier": "R_kgDOVjYtnA",
+   "kind": "repository",
+   "last_checked": "2026-11-23T13:25:27+00:00",
+   "last_notified": null,
+   "licence_class": "FREE TIER AVAILABLE",
+   "name": "Glen-Web-App/best-memory-plugins",
+   "owner": "Glen-Web-App",
+   "platform": "github",
+   "priority": "P2",
+   "score": 63,
+   "snapshot": {
+    "created_at": "2026-11-05T01:24:29Z",
+    "default_branch": "main",
+    "description": "Best Memory Plugins for AI coding agents: Claude Code, Codex, Cursor, OpenCode, Cline and more. Glen, claude-mem, Supermemory, Hindsight, agentmemory, Mem0, Cognee, MemPalace and others ranked on automatic capture vs tool calls, local vs hosted, team sharing, privacy and install steps, plus built-in agent memory compared.",
+    "display": "best-memory-plugins",
+    "forks": 5,
+    "found_by": [
+     "search: topic:gemini-cli"
+    ],
+    "kind": "repository",
+    "license_spdx": "CC0-1.0",
+    "name": "Glen-Web-App/best-memory-plugins",
+    "node_id": "R_kgDOVjYtnA",
+    "open_issues": 2,
+    "owner": "Glen-Web-App",
+    "platform": "github",
+    "platform_id": 1446391196,
+    "pushed_at": "2026-11-05T02:38:00Z",
+    "rid": "github:R_kgDOVjYtnA",
+    "stars": 102,
+    "topics": [
+     "agent-memory",
+     "ai-coding",
+     "ai-memory",
+     "awesome",
+     "awesome-list",
+     "claude-code",
+     "claude-code-memory",
+     "claude-code-plugin",
+     "claude-plugins",
+     "codex",
+     "codex-plugin",
+     "coding-agent-memory",
+     "cursor",
+     "cursor-plugin",
+     "gemini-cli",
+     "long-term-memory",
+     "mcp",
+     "memory-plugin",
+     "opencode",
+     "persistent-memory"
+    ],
+    "url": "https://github.com/glen-web-app/best-memory-plugins"
+   },
+   "status": "pool",
+   "url": "https://github.com/glen-web-app/best-memory-plugins"
   },
   "github:R_kgDOVk3OIg": {
    "categories": [
@@ -35990,6 +38142,104 @@
    "status": "pool",
    "url": "https://github.com/microsoft/gdlchat"
   },
+  "github:R_kgDOVraVzA": {
+   "categories": [
+    "skills",
+    "agent_building",
+    "productivity"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-23T13:25:25+00:00",
+   "evaluation": {
+    "categories": [
+     "skills",
+     "agent_building",
+     "productivity"
+    ],
+    "compatibility": [
+     "Claude Code",
+     "Codex",
+     "Gemini CLI",
+     "Cursor",
+     "OpenAI API"
+    ],
+    "contributors": null,
+    "docs": "basic",
+    "install": null,
+    "licence_class": "LICENCE UNCLEAR",
+    "licence_note": "no recognised licence file",
+    "maintenance": "updated 11 days ago",
+    "primary": "skills",
+    "priority": "P2",
+    "reject": null,
+    "relevance": {
+     "hint": "it plugs into the coding agents you already use",
+     "project": "your Claude Code, Codex and Gemini development"
+    },
+    "requirements": [],
+    "score": 61,
+    "warnings": [
+     "no clear licence: check before reusing the code"
+    ]
+   },
+   "first_discovered": "2026-11-23T13:25:25+00:00",
+   "id": "github:R_kgDOVraVzA",
+   "identifier": "R_kgDOVraVzA",
+   "kind": "repository",
+   "last_checked": "2026-11-23T13:25:25+00:00",
+   "last_notified": null,
+   "licence_class": "LICENCE UNCLEAR",
+   "name": "CrommaAI/crommacode",
+   "owner": "CrommaAI",
+   "platform": "github",
+   "priority": "P2",
+   "score": 61,
+   "snapshot": {
+    "created_at": "2026-11-12T04:02:00Z",
+    "default_branch": "main",
+    "description": "CrommaCode — the gamified IDE for coding agents. Watch Claude Code, Codex, Gemini CLI, Cursor CLI or OpenCode work as a game, and send a swarm of worker agents. Free for macOS, Windows and Linux.",
+    "display": "crommacode",
+    "forks": 17,
+    "found_by": [
+     "search: topic:gemini-cli"
+    ],
+    "kind": "repository",
+    "license_spdx": "NOASSERTION",
+    "name": "CrommaAI/crommacode",
+    "node_id": "R_kgDOVraVzA",
+    "open_issues": 0,
+    "owner": "CrommaAI",
+    "platform": "github",
+    "platform_id": 1454806476,
+    "pushed_at": "2026-11-12T04:02:15Z",
+    "rid": "github:R_kgDOVraVzA",
+    "stars": 121,
+    "topics": [
+     "agent",
+     "agent-client-protocol",
+     "ai-coding",
+     "claude-code",
+     "codex",
+     "coding-agent",
+     "cursor",
+     "desktop-app",
+     "gamified-ide",
+     "gemini-cli",
+     "gpui",
+     "ide",
+     "opencode",
+     "rust",
+     "vibecoding"
+    ],
+    "url": "https://github.com/crommaai/crommacode"
+   },
+   "status": "pool",
+   "url": "https://github.com/crommaai/crommacode"
+  },
   "github:R_kgDOVrzVgQ": {
    "categories": [
     "agent_building",
@@ -37384,6 +39634,87 @@
    },
    "status": "pool",
    "url": "https://huggingface.co/datasets/ccore/ThreeJS-3D-Scenes"
+  },
+  "hf:dataset:ccore/threejs-3d-scenes-v2": {
+   "categories": [
+    "prompting",
+    "hackathon"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-23T13:25:22+00:00",
+   "evaluation": {
+    "categories": [
+     "prompting",
+     "hackathon"
+    ],
+    "compatibility": [
+     "Hugging Face",
+     "Python"
+    ],
+    "contributors": null,
+    "docs": "basic",
+    "install": null,
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "mit",
+    "maintenance": "updated 5 days ago",
+    "primary": "prompting",
+    "priority": "P2",
+    "reject": null,
+    "relevance": {
+     "hint": "it explains or tests prompting techniques you can apply directly",
+     "project": "your prompting"
+    },
+    "requirements": [],
+    "score": 58,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-23T13:25:22+00:00",
+   "id": "hf:dataset:ccore/threejs-3d-scenes-v2",
+   "identifier": "ccore/ThreeJS-3D-Scenes-v2",
+   "kind": "dataset",
+   "last_checked": "2026-11-23T13:25:22+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "ccore/ThreeJS-3D-Scenes-v2",
+   "owner": "ccore",
+   "platform": "huggingface",
+   "priority": "P2",
+   "score": 58,
+   "snapshot": {
+    "created_at": "2026-11-17T22:46:50.000Z",
+    "description": "CCORE Three.js 3D Scenes v2 3,445 curated scene examples across 50 domains, including 1,431 voxel scenes, with scene prompts, curated reasoning traces, HTML/JavaScript responses and rendered references. ThreeJS-3D-Scenes-v2 extends ThreeJS-3D-Scenes with knowledge-oriented 3D scenes. The…",
+    "display": "ThreeJS-3D-Scenes-v2",
+    "downloads": 2112,
+    "found_by": [
+     "Hugging Face trending datasets"
+    ],
+    "kind": "dataset",
+    "license_spdx": "mit",
+    "likes": 67,
+    "name": "ccore/ThreeJS-3D-Scenes-v2",
+    "owner": "ccore",
+    "platform": "huggingface",
+    "pushed_at": "2026-11-17T22:47:16.000Z",
+    "rid": "hf:dataset:ccore/threejs-3d-scenes-v2",
+    "topics": [
+     "3d",
+     "threejs",
+     "code",
+     "reasoning",
+     "conversational",
+     "html",
+     "javascript",
+     "voxel",
+     "multidomain"
+    ],
+    "url": "https://huggingface.co/datasets/ccore/ThreeJS-3D-Scenes-v2"
+   },
+   "status": "pool",
+   "url": "https://huggingface.co/datasets/ccore/ThreeJS-3D-Scenes-v2"
   },
   "hf:dataset:codepawl/abo-glb": {
    "categories": [
@@ -41132,6 +43463,26 @@
    "status": "rejected",
    "url": "https://huggingface.co/spaces/AST-1320/Qwen-2511-Plus-Flux.2-klein"
   },
+  "hf:space:briaai/bria-rmbg-3.0": {
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "first_discovered": "2026-11-23T13:25:24+00:00",
+   "id": "hf:space:briaai/bria-rmbg-3.0",
+   "identifier": "briaai/BRIA-RMBG-3.0",
+   "kind": "space",
+   "last_checked": "2026-11-23T13:25:24+00:00",
+   "last_notified": null,
+   "name": "briaai/BRIA-RMBG-3.0",
+   "owner": "briaai",
+   "platform": "huggingface",
+   "reject_reason": "score 23 below the minimum",
+   "score": 23,
+   "status": "rejected",
+   "url": "https://huggingface.co/spaces/briaai/BRIA-RMBG-3.0"
+  },
   "hf:space:cfahlgren1/pixel-search": {
    "delivery": {
     "message_ids": [],
@@ -41984,6 +44335,26 @@
    "status": "rejected",
    "url": "https://huggingface.co/spaces/Lakonik/pi-H3"
   },
+  "hf:space:lewtun/from-llms-to-swarms": {
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "first_discovered": "2026-11-23T13:25:23+00:00",
+   "id": "hf:space:lewtun/from-llms-to-swarms",
+   "identifier": "lewtun/from-llms-to-swarms",
+   "kind": "space",
+   "last_checked": "2026-11-23T13:25:23+00:00",
+   "last_notified": null,
+   "name": "lewtun/from-llms-to-swarms",
+   "owner": "lewtun",
+   "platform": "huggingface",
+   "reject_reason": "score 42 below the minimum",
+   "score": 42,
+   "status": "rejected",
+   "url": "https://huggingface.co/spaces/lewtun/from-llms-to-swarms"
+  },
   "hf:space:lightricks/ltx-video-distilled": {
    "delivery": {
     "message_ids": [],
@@ -42388,6 +44759,77 @@
    "status": "pool",
    "url": "https://huggingface.co/spaces/nvidia/PhysicalAI-Human-1M-Explorer"
   },
+  "hf:space:observantdistressed/minimax-h3-turbo": {
+   "categories": [
+    "creator_tools"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-23T13:25:22+00:00",
+   "evaluation": {
+    "categories": [
+     "creator_tools"
+    ],
+    "compatibility": [
+     "Hugging Face"
+    ],
+    "contributors": null,
+    "docs": "basic",
+    "install": null,
+    "licence_class": "LICENCE UNCLEAR",
+    "licence_note": "no recognised licence file",
+    "maintenance": "updated today",
+    "primary": "creator_tools",
+    "priority": "P3",
+    "reject": null,
+    "relevance": {
+     "hint": "it is a building block for agents that remember, use tools and act on their own",
+     "project": "your personal AI agents"
+    },
+    "requirements": [],
+    "score": 48,
+    "warnings": [
+     "no clear licence: check before reusing the code"
+    ]
+   },
+   "first_discovered": "2026-11-23T13:25:22+00:00",
+   "id": "hf:space:observantdistressed/minimax-h3-turbo",
+   "identifier": "observantdistressed/minimax-h3-turbo",
+   "kind": "space",
+   "last_checked": "2026-11-23T13:25:22+00:00",
+   "last_notified": null,
+   "licence_class": "LICENCE UNCLEAR",
+   "name": "observantdistressed/minimax-h3-turbo",
+   "owner": "observantdistressed",
+   "platform": "huggingface",
+   "priority": "P3",
+   "score": 48,
+   "snapshot": {
+    "created_at": "2026-10-11T12:42:45.000Z",
+    "description": "Video generation with a synchronized soundtrack",
+    "display": "minimax-h3-turbo",
+    "downloads": 0,
+    "found_by": [
+     "Hugging Face trending Spaces"
+    ],
+    "kind": "space",
+    "likes": 113,
+    "name": "observantdistressed/minimax-h3-turbo",
+    "owner": "observantdistressed",
+    "platform": "huggingface",
+    "pushed_at": "2026-11-22T21:00:43.000Z",
+    "rid": "hf:space:observantdistressed/minimax-h3-turbo",
+    "topics": [
+     "gradio"
+    ],
+    "url": "https://huggingface.co/spaces/observantdistressed/minimax-h3-turbo"
+   },
+   "status": "pool",
+   "url": "https://huggingface.co/spaces/observantdistressed/minimax-h3-turbo"
+  },
   "hf:space:parler-tts/parler_tts": {
    "categories": [
     "creator_tools"
@@ -42766,6 +45208,26 @@
    "score": 24,
    "status": "rejected",
    "url": "https://huggingface.co/spaces/smolagents/computer-agent"
+  },
+  "hf:space:software-mansion/reverb-tts-runntime": {
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "first_discovered": "2026-11-23T13:25:23+00:00",
+   "id": "hf:space:software-mansion/reverb-tts-runntime",
+   "identifier": "software-mansion/Reverb-TTS-runntime",
+   "kind": "space",
+   "last_checked": "2026-11-23T13:25:23+00:00",
+   "last_notified": null,
+   "name": "software-mansion/Reverb-TTS-runntime",
+   "owner": "software-mansion",
+   "platform": "huggingface",
+   "reject_reason": "score 44 below the minimum",
+   "score": 44,
+   "status": "rejected",
+   "url": "https://huggingface.co/spaces/software-mansion/Reverb-TTS-runntime"
   },
   "hf:space:speridlabs/idol": {
    "delivery": {
@@ -43146,11 +45608,11 @@
  },
  "searches": {
   "github:\"claude code\" skills in:name,description": {
-   "last_run": "2026-11-22T01:28:33+00:00",
+   "last_run": "2026-11-23T13:25:16+00:00",
    "results": 20
   },
   "github:\"codex cli\" in:name,description": {
-   "last_run": "2026-11-22T01:28:31+00:00",
+   "last_run": "2026-11-23T13:25:14+00:00",
    "results": 20
   },
   "github:\"system prompts\" in:name,description": {
@@ -43166,7 +45628,7 @@
    "results": 0
   },
   "github:notion ai agent in:name,description": {
-   "last_run": "2026-11-22T01:28:29+00:00",
+   "last_run": "2026-11-23T13:25:11+00:00",
    "results": 1
   },
   "github:orgs": {
@@ -43190,7 +45652,7 @@
    "results": 20
   },
   "github:topic:autogen": {
-   "last_run": "2026-11-22T01:28:32+00:00",
+   "last_run": "2026-11-23T13:25:14+00:00",
    "results": 13
   },
   "github:topic:browser-automation llm": {
@@ -43206,7 +45668,7 @@
    "results": 20
   },
   "github:topic:codex": {
-   "last_run": "2026-11-22T01:28:30+00:00",
+   "last_run": "2026-11-23T13:25:12+00:00",
    "results": 20
   },
   "github:topic:coding-agent": {
@@ -43218,7 +45680,7 @@
    "results": 20
   },
   "github:topic:crewai": {
-   "last_run": "2026-11-22T01:28:31+00:00",
+   "last_run": "2026-11-23T13:25:13+00:00",
    "results": 6
   },
   "github:topic:developer-tools llm": {
@@ -43226,7 +45688,7 @@
    "results": 20
   },
   "github:topic:gemini-cli": {
-   "last_run": "2026-11-22T01:28:32+00:00",
+   "last_run": "2026-11-23T13:25:15+00:00",
    "results": 20
   },
   "github:topic:langgraph": {
@@ -43234,7 +45696,7 @@
    "results": 20
   },
   "github:topic:llm-evaluation": {
-   "last_run": "2026-11-22T01:28:30+00:00",
+   "last_run": "2026-11-23T13:25:12+00:00",
    "results": 20
   },
   "github:topic:mcp-server": {
