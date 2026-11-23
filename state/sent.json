@@ -1410,6 +1410,16 @@
    "channel": "discovery",
    "title": "elvarofficial/teardown"
   },
+  "url:https://github.com/entelligence-ai/agentplay": {
+   "at": "2026-11-23T01:59:00+00:00",
+   "channel": "discovery",
+   "title": "Entelligence-AI/agentplay"
+  },
+  "url:https://github.com/erensrtky/cogit": {
+   "at": "2026-11-23T01:59:00+00:00",
+   "channel": "discovery",
+   "title": "erensrtky/cogit"
+  },
   "url:https://github.com/ericjujianzou/rederive": {
    "at": "2026-11-20T20:40:57+00:00",
    "channel": "discovery",
@@ -1525,6 +1535,11 @@
    "channel": "discovery",
    "title": "jmanico/grim-prompter"
   },
+  "url:https://github.com/jonigl/mcp-client-for-ollama": {
+   "at": "2026-11-23T01:59:00+00:00",
+   "channel": "discovery",
+   "title": "jonigl/mcp-client-for-ollama"
+  },
   "url:https://github.com/josssphzhou/poki": {
    "at": "2026-11-20T02:29:58+00:00",
    "channel": "discovery",
@@ -1620,6 +1635,11 @@
    "channel": "discovery",
    "title": "morganlinton/BeautifulRust"
   },
+  "url:https://github.com/muaaz9329/cheap-ag": {
+   "at": "2026-11-23T01:59:00+00:00",
+   "channel": "discovery",
+   "title": "muaaz9329/cheap-ag"
+  },
   "url:https://github.com/mvanhorn/last30days-skill": {
    "at": "2026-11-16T23:48:27+00:00",
    "channel": "discovery",
@@ -1659,6 +1679,11 @@
    "at": "2026-11-18T12:02:42+00:00",
    "channel": "discovery",
    "title": "NVIDIA/SkillEvaluator"
+  },
+  "url:https://github.com/oaslananka/kicad-mcp-pro": {
+   "at": "2026-11-23T01:59:00+00:00",
+   "channel": "discovery",
+   "title": "oaslananka/kicad-mcp-pro"
   },
   "url:https://github.com/obra/superpowers": {
    "at": "2026-11-17T18:43:32+00:00",
@@ -1717,6 +1742,11 @@
    "channel": "discovery",
    "title": "outcrawlai/scout"
   },
+  "url:https://github.com/owasp/www-project-agent-memory-guard": {
+   "at": "2026-11-23T01:59:00+00:00",
+   "channel": "discovery",
+   "title": "OWASP/www-project-agent-memory-guard"
+  },
   "url:https://github.com/paperclipai/paperclip": {
    "at": "2026-11-18T03:03:20+00:00",
    "channel": "discovery",
@@ -1767,6 +1797,11 @@
    "channel": "discovery",
    "title": "rehan-remade/universal-modder"
   },
+  "url:https://github.com/repoprompt/repoprompt-ce": {
+   "at": "2026-11-23T01:59:00+00:00",
+   "channel": "discovery",
+   "title": "repoprompt/repoprompt-ce"
+  },
   "url:https://github.com/rustxng/rustxng": {
    "at": "2026-11-21T19:40:04+00:00",
    "channel": "discovery",
@@ -1776,6 +1811,11 @@
    "at": "2026-11-18T12:02:42+00:00",
    "channel": "discovery",
    "title": "Sallyn0225/eidolon-sc"
+  },
+  "url:https://github.com/sonichi/sutando": {
+   "at": "2026-11-23T01:59:00+00:00",
+   "channel": "discovery",
+   "title": "sonichi/sutando"
   },
   "url:https://github.com/strands-agents/harness-sdk": {
    "at": "2026-11-19T02:46:27+00:00",
