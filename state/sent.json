@@ -216,6 +216,12 @@
    "priority": "P1",
    "title": "Genie 4"
   },
+  "title:4.5 announces anthropic claude deprecation opus schedule": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic announces deprecation schedule for Claude Opus 4.5"
+  },
   "title:6.2 astra gpt sol": {
    "at": "2026-11-18T07:29:18+00:00",
    "channel": "digest",
@@ -630,6 +636,12 @@
    "priority": "P3",
    "title": "Anthropic launches Linked billing beta for Claude platform developers"
   },
+  "title:anthropic beta claude code launches prs reviews ship": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Anthropic launches Claude Ship in beta for code reviews and PRs"
+  },
   "title:anthropic beta claude computer expands mobile updates use": {
    "at": "2026-11-22T06:47:48+00:00",
    "channel": "digest",
@@ -713,6 +725,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "ArcticRAT malware and Grok: Zimperium’s findings - NeoTeo"
+  },
+  "title:astra complex gpt-6.2 invents math proof solves strategy theorem": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "GPT-6.2 Astra solves complex math theorem and invents proof strategy"
   },
   "title:astra gpt-6": {
    "at": "2026-11-20T21:18:25+00:00",
@@ -798,6 +816,12 @@
    "priority": "P2",
    "title": "Chemical spill reported at xAI Southaven data center facility"
   },
+  "title:chat gpt-6.2 openai out rolls search sol tab web": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI rolls out GPT-6.2 Sol for chat tab and web search"
+  },
   "title:chatgpt frontier science scientists use": {
    "at": "2026-11-16T22:19:08+00:00",
    "channel": "alerts",
@@ -833,6 +857,12 @@
    "channel": "alerts",
    "priority": "P2",
    "title": "Introducing OpenAI for Chile"
+  },
+  "title:cisco ebpf introduce open-source openai runtime security shirudo": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "OpenAI and Cisco introduce Shirudo open-source eBPF security runtime"
   },
   "title:claude finds models protein sequences study trained": {
    "at": "2026-11-18T20:33:37+00:00",
@@ -876,6 +906,12 @@
    "priority": "P1",
    "title": "Microsoft Rolls Out OpenAI's GPT-6.2 Sol Worldwide in Copilot"
   },
+  "title:csam deepfake generation grok oregon over spacex sue virginia": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Virginia and Oregon sue SpaceX over Grok CSAM and deepfake generation"
+  },
   "title:daybreak deploying red": {
    "at": "2026-11-20T03:31:17+00:00",
    "channel": "alerts",
@@ -895,9 +931,9 @@
    "title": "OpenAI rolls out Live Dictation and releases GPT-Live-1.1"
   },
   "title:first glm-5.4 launches loop model transformer z.ai": {
-   "at": "2026-11-23T14:56:40+00:00",
-   "channel": "alerts",
-   "priority": "P2",
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P0",
    "title": "Z.ai launches GLM-5.4, its first Loop Transformer model"
   },
   "title:flash free hy4 lists model opencode zero-cost": {
@@ -911,6 +947,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "Thousands of Gallons of Heat-Transfer Fluid Spill at xAI’s Southaven Site - Yahoo"
+  },
+  "title:free lists max model opencode qwen4": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "OpenCode lists Qwen4 Max Free model"
   },
   "title:frontier gao leading models reveal tests vulnerabilities": {
    "at": "2026-11-18T20:33:37+00:00",
@@ -1991,10 +2033,10 @@
    "title": "fforster/gitlab-mcp"
   },
   "url:https://help.openai.com/articles/6825453-chatgpt-release-notes": {
-   "at": "2026-11-21T07:09:49+00:00",
+   "at": "2026-11-23T23:53:32+00:00",
    "channel": "digest",
-   "priority": "P3",
-   "title": "ChatGPT Space rolls out globally to Plus users"
+   "priority": "P1",
+   "title": "OpenAI rolls out GPT-6.2 Sol for chat tab and web search"
   },
   "url:https://help.openai.com/articles/9624314-model-release-notes": {
    "at": "2026-11-21T07:09:49+00:00",
@@ -2055,10 +2097,10 @@
    "title": "Anthropic completes record $81.3 B IPO on Nasdaq at $1.5 T valuation"
   },
   "url:https://models.dev/": {
-   "at": "2026-11-19T07:27:18+00:00",
+   "at": "2026-11-23T23:53:32+00:00",
    "channel": "digest",
    "priority": "P3",
-   "title": "New free model added to OpenCode: Tidepool Alpha Free"
+   "title": "OpenCode lists Qwen4 Max Free model"
   },
   "url:https://nbcnews.com/tech/tech-news/california-sues-chatgpt-maker-openai-rogue-hacking-incidents-rcna609596": {
    "at": "2026-11-17T07:57:43+00:00",
@@ -2144,6 +2186,12 @@
    "priority": "P1",
    "title": "OpenAI details multi-layered strategy against adversarial distillation"
   },
+  "url:https://news.google.com/rss/articles/cbmic0fvx3lxte1vykn2emttnkv2dehfcnndy0hbnwtbzvhhsm04s3vqvmgwt3vmwvnxrlnmb05vbl9kdgj6mtfzzzyzzfzmq2ntchj5u0xwevu0x2phu1pty0nstwhrnlnwazmym0v0tgi3c1h2zvfrm3fpzek": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Virginia and Oregon sue SpaceX over Grok CSAM and deepfake generation"
+  },
   "url:https://news.google.com/rss/articles/cbmicefvx3lxte5ysxppr00yoxppmdgzmm44rfndsdb3x2l1qwtmvkj2zdzpvvfqeedrte5lcuhzogdndfpetufhbkvmbgtaov9vnw5nef9hm3nlmtv5wet3ym1hz1vxbg9qevhmdnkttgpjouo0u1i3mva": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
@@ -2173,6 +2221,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic completes record $81.3 B IPO on Nasdaq at $1.5 T valuation"
+  },
+  "url:https://news.google.com/rss/articles/cbmidefvx3lxte10aed4shj6sgl5ymd0sg0xvfftbhpnwuxmnumtrdqzekxmounyyuvncfhyykfszuvjykrqv1f0dvq0q3u0vjeym3vqqwhonmnmmv9xvhnpazaxmfcxsjrovmxncznkb0dwsmtxqu52otdjymty": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Virginia and Oregon sue SpaceX over Grok CSAM and deepfake generation"
   },
   "url:https://news.google.com/rss/articles/cbmidefvx3lxte1deg9qvgitc0nmqmtguznfrlzyn0xkrlm4vvvpvzzecen1s09tcmhdn2liwkjwoxnfsvpeevjaa0laywvurgfnz3dtlwlrcex1cmpnsgzdque4bldkrdy5wnfpdthndc1xvuswtjjvxzkweuiy": {
    "at": "2026-11-20T07:17:37+00:00",
@@ -2288,6 +2342,12 @@
    "priority": "P1",
    "title": "Anthropic completes record $81.3 B IPO on Nasdaq at $1.5 T valuation"
   },
+  "url:https://news.google.com/rss/articles/cbmiggfbvv95cuxncu9icwxwnxo5a2zrve5uelvlt0hfyy1argfrdhnkvzdtbg9ks0tmzuhgwk95sjdgtnrztllsnhrfwtjsq01youq3d1fjelfgb1hintfwmg16ttuxveyzoue0oxp2b002vmdludnqzhvhx0puwfnsu1dnakxfde9fwl93": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P0",
+   "title": "Z.ai launches GLM-5.4, its first Loop Transformer model"
+  },
   "url:https://news.google.com/rss/articles/cbmiggfbvv95cuxncxrwahdowjzeow4zb0dyc3vxdutpd0pdve03rkrfsfhnykjvdu5qtudntgzmzfzisu1venfpvkw4dgtxthnga1dyai1owde0q3btogiyqi1tqtlaeutbwxfsd3nowjkyczg5wvzwukvntmlucfrgbnnuvzj4ymfxvul3": {
    "at": "2026-11-18T07:29:18+00:00",
    "channel": "digest",
@@ -2336,6 +2396,12 @@
    "priority": "P3",
    "title": "Scoop: Democrats probe DOJ's role in OpenAI copyright fight - Axios"
   },
+  "url:https://news.google.com/rss/articles/cbmihwfbvv95cuxpmnfpyudjntlxmw5jq0ziz0hulvlccgfjq3ywvznnrng2rvpib182utbcwfjbx2m1ajrrvk1vt1jex1i1dflmuw96bmpds3dvahrby2cwwhdqlxbxuhptlxbysujjzhmydfhoturgzlhotwxyrux5tgday25ubw5lvxdinengsda": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P0",
+   "title": "Z.ai launches GLM-5.4, its first Loop Transformer model"
+  },
   "url:https://news.google.com/rss/articles/cbmiiafbvv95cuxncwfrmhvmwfrorex5em8wywddz2pvuk9nlv9ozs10bjzcvve4nmd3bet3zfzhzufsdju3s3rwmthtzzvssuy5ted4rlywbgp0dvrzx3dtogvjtvlvnwgxego5b0i2ag92ztnmttb3szffx2s5anzdtfztbgpteddny2jtakfkthdd": {
    "at": "2026-11-20T07:17:37+00:00",
    "channel": "digest",
@@ -2353,6 +2419,24 @@
    "channel": "digest",
    "priority": "P3",
    "title": "Gordon Johnson: Elon Musk’s Grok ranks TSLA highest for fatal car crash rate among U.S. car companies - Traders Union"
+  },
+  "url:https://news.google.com/rss/articles/cbmiigfbvv95cuxqbhnwnvzowunjlxjxql9wtkzntfdznkvtzxllr2pxslfmewxns0xendrnuxzbsencv3lybg1tsxffwf9xdwjimhvxylhwsxvkmu9ltflfr200qkg2evpor2nzre55rxhudhrnb1qztezidxfquwl2bdrvmdvxt2fqbknntxjvs1j5bgfsay8bqvvfexfmtzdxqvnetle0ogxpy0fsejh4thjeszbwq0znv1nxrwtwuee5t0hpbgs2smpymxvtdthma1bqr2xqttn2zwzqb1jkz0rfoc1kzm0yrldlx19pwwzpzupbvgxptxrywf9ktw1hsudhcenavdlqn0qtcfdnstjymel3ejngnhryc093blfaakhhs0k": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Virginia and Oregon sue SpaceX over Grok CSAM and deepfake generation"
+  },
+  "url:https://news.google.com/rss/articles/cbmiigfbvv95cuxquvhvtwfneuhqmdi1q2xjakiybvpkew0zt2jea09noec5mf8xtwxkblrydw15rwvune9iswvusgz1tvz2cwzurc00whe0cup4utdfbhvpythkmgvzoekxltiyc0hlrktddhbnbjv6v3p1mnvlvgxun1llmxkxc1mxdvdqagpwdm9aahc": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P0",
+   "title": "Z.ai launches GLM-5.4, its first Loop Transformer model"
+  },
+  "url:https://news.google.com/rss/articles/cbmiiwfbvv95cuxox0swtkrbnwfvd1rtq0vjc0nntmtlzdi0vllzvlzxyzvowge3mnq4exv2nwvfeldialhazkxolxkydhl5dc1xeuxueg5mc1m1tkr3ujlzbnniywxbqzn3nmpkueyyrujyqnntcwzknhlwzwpwn2huykjeowjpdm91dedxmc1euffiseff": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P0",
+   "title": "Z.ai launches GLM-5.4, its first Loop Transformer model"
   },
   "url:https://news.google.com/rss/articles/cbmiiwfbvv95cuxqzxdyuexsdjhga000mwtxaur0yzhivhjnnzn0n0ltunnonktkawzkuvuwdexouxhxmtljn0nez3f3m2rybuzyelpinfhpoe14lwdtyjf1mnb2m00xmk1gbenmci1ueflxa3v0ahm4twlxvvznefbwukzjmta2zwhcsfbvavvbb0fudnpj": {
    "at": "2026-11-19T20:39:31+00:00",
@@ -2395,6 +2479,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "Grok Bot as Corporate Expense Manager: How It Works - BASENOR - Tesla Accessories"
+  },
+  "url:https://news.google.com/rss/articles/cbmijwfbvv95cuxonnnuslozd1fjn2xvmk5lqnjoy054ufroltdltkznvnb4s3jxaujsutjtzfhwsjbbcnbargfsz0v3dejfnkxkagkzbdngvghnq1zqy0m4c1iyx1axdkvtamtlwhfjlup1vgm2dnb3cgtruzetws0tnec5duzcq3hsvwfvtvfsm0tlohdbnmkxwq": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P0",
+   "title": "Z.ai launches GLM-5.4, its first Loop Transformer model"
   },
   "url:https://news.google.com/rss/articles/cbmijwfbvv95cuxqrflfngllognslw5lwgp5dlc2ou0xnuxgy3b5wtfbvxpkqjdkevzkv2nttg54wkrcq3i1tmwzvxc2chjnuxizrgy0u1zkd2ptwjjvsgjfwgnts3psyk1tdxzobxvzyuv2udmzdhv3qljavfjvckp5ynjybmg3yvbarzf0mtbxcerytuutmupsma": {
    "at": "2026-11-19T20:39:31+00:00",
@@ -2522,6 +2612,12 @@
    "priority": "P3",
    "title": "Anthropic’s Customers May Pay the Price for Its IPO - Bloomberg"
   },
+  "url:https://news.google.com/rss/articles/cbmimwfbvv95cuxpvgk3ndrpmmxiawzhcettqktcvvrsykv6bmhkmvjftdmxcxzmouxvtkk5azn3yl93mgtjqjzzsdkxqjzovdh5twppvfhwvf9lq21dym83a0m1ylfvdkniekvjykyxshbyzgfkwwl1dvbvwfh3x0x4tfrpv2lhr0xtrhrqnmitvxlfyv9urjhlbez0qxjtsxljvfhorq": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Virginia and Oregon sue SpaceX over Grok CSAM and deepfake generation"
+  },
   "url:https://news.google.com/rss/articles/cbminafbvv95cuxndvjosmjfqi03q1jtmmj4snz4vzzhsmnubnzretbvwdzomfbntg83u2vxbw1pcwlzrknjltnctzjhnxlzvktmr1m5s3zatxvnnfppdv9rmvhyaty4vem1rjjxbm5sz3fhqtb3u1qttnpaz2dfszn6qnjqq3ljtwlslxnsadrsuxlhwnnkmhpsawhdv2fhvdu1z0cwdkc": {
    "at": "2026-11-18T07:29:18+00:00",
    "channel": "digest",
@@ -2569,6 +2665,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
+  },
+  "url:https://news.google.com/rss/articles/cbminwfbvv95cuxquw42q3gysjyzdurothrgx0faq28yt1nua0letl9yvnnft3h5otdsogpabm1wzvfat1fjdutks1b4n1c4ufnzuxnlzhjgeu9ozmzbu2k0r2tscghfnknitw82t0lhtnrrx3dwb0stqnzzagnyec1mb012wlhzdwtwaejidtfduutumc04eldwadvjm1z0mlfwee9eatz2uta": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Anthropic launches Claude Ship in beta for code reviews and PRs"
   },
   "url:https://news.google.com/rss/articles/cbmioafbvv95cuxndmdknwxjvjfsb28zuvfzsddvtef0nuddvmrxznlxdwpqrfvobdvda01im2y0au1jr3pjqzzjoghtzmppmdlzsf9lzgl4cezfykxwry1ldlhgt1frdtlqnmtrmvbkohzjsuyzaxa4ekz4mjjktfn4tjnhr181s2xrall1vfbyuklxa0zrrzb2zlfjoeplvnf1tndnafq5z0lr": {
    "at": "2026-11-16T22:02:32+00:00",
@@ -2636,6 +2738,12 @@
    "priority": "P2",
    "title": "Chemical spill reported at xAI Southaven data center facility"
   },
+  "url:https://news.google.com/rss/articles/cbmiqafbvv95cuxoznbutghdyjfynujevdfozznja296qlpkatrqyk1ivtz1zlhpugzwtunbqw13u09pym5hrfzyzgq4wc1pymrpa1vfedhwludpauuwv1zyrzvhrznwu0m1nw9jvgfhyudiugvvqljwyxl0bnh0cujot2n5s1o5cetyr1zhs3jtvxvlu0ktwedlzs0yvnmwrgdhvwhreuqyluvatkjqaxhurgo": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI rolls out GPT-6.2 Sol for chat tab and web search"
+  },
   "url:https://news.google.com/rss/articles/cbmiqafbvv95cuxpcnfyulh5we5vsfrrswxnvgruxzlrofrsb0vodmzwamrwyjj2swhvtgp4ztb3egnyywztdkr0wkjlmdixx2rza20wog4yy2xjdvhutfpwakvuvdj3x0njqurrvknur0xpzmxtmm56ndq0ohl2tzdzvdvsc04yyulmy2hpshj1u2jlamhzallleezdvwozbgvobjbewwnvy205rmh3rk9ltwe": {
    "at": "2026-11-19T07:27:18+00:00",
    "channel": "digest",
@@ -2648,11 +2756,23 @@
    "priority": "P1",
    "title": "Anthropic closes $93.5B initial public offering on Nasdaq"
   },
+  "url:https://news.google.com/rss/articles/cbmiqkfvx3lxte1qcvpqwdfvvgwtdularvdfmwxtr1owmghnzjjjnnd0ekh2txnecjizyvhnnu9zeu1yamf5aflrmdfvdw": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P0",
+   "title": "Z.ai launches GLM-5.4, its first Loop Transformer model"
+  },
   "url:https://news.google.com/rss/articles/cbmiqwfbvv95cuxns2yyd1r5sknxsldhdjfxzuu2a21fm3c4evdftl96z3loehk5cjbyylnuvzhndxrnau1orevuzhrowuy0z1l2udnqv3dtx1jeu2dbotzdnuxvahrptwxuyzfynhpjec1acvjjsjm0d3byovp2se9rmgdqvkvyahhybxvmmnhhqmzkquzda1frwmvoeerib0dfmdmttenpav84zk1mqmvht2zjata": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
    "priority": "P2",
    "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
+  },
+  "url:https://news.google.com/rss/articles/cbmirafbvv95cuxnvurirfnowllbmdkzlvhtnfloskdutfz2zmzwn2pmmm52cki0n1dxt3pvx0vda3nzyw1ynw5nmvlvdkjcsxvttgjvc0rxvvnndnhcdta2ddrivfiyempcd0mxtec4szjothjszgvnttndrulmn1rwb0tzrwrzx2rbzzfkltlfqkf3vllouv9rehg0vhq4cwtld3psmwpiytvdzer3uuj0cxpsewpj": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Anthropic launches Claude Ship in beta for code reviews and PRs"
   },
   "url:https://news.google.com/rss/articles/cbmirafbvv95cuxnx3pyazfyrwxzmvjsd05yqxnbnmnzadiyuhc5bk9qodbuqxuyyur4c2zkedyzv1rhdvg4lujyndbhofzrq0xqru95mdf1v0vza0lts3vwcwpnzetrvhbbbudvlwlkqxq5t1vlodkwni1lznq3a19owkk4yvd5mnq3ckg3ue1sstzbek04vmr0n3bvnuyzzxrkakvfbv9srtv5axzqdlvzulrdq3vq": {
    "at": "2026-11-17T07:57:43+00:00",
@@ -2671,6 +2791,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "Anthropic IPO price expected to price at top of range or above amid high demand"
+  },
+  "url:https://news.google.com/rss/articles/cbmirgfbvv95cuxnawpsrhqwn1u1vfrvzwnmag9rrzj0yja5nnv3vuitbljtq0fkrkjtck9qzhzzsxpiegd0blhoakj3r3vhsli2nelvzi0wqxeztujqc2g5owlqnxzkmuq1qkrzv0tivfh3wxiwy1bsmfd2cfzrt3e3tun0snhmagrqzlowr0nqetnec2deqtrhx3zod3ppexnot0fjcthmszrayzrfn25zq05rwxjyuve": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P0",
+   "title": "Z.ai launches GLM-5.4, its first Loop Transformer model"
   },
   "url:https://news.google.com/rss/articles/cbmirgfbvv95cuxozejobhphml90wudvbnpzsgxlb1l3bi1bczhrn29ivw9ruzbtqwe4afnum2zgs1riqthldezpwmzjeexvahhraxbubkdqr3r3txjytlrqumrycxzxys1pv1lyrlexuddeuwj3ctg4aktjvwcxbkg5uw9oevrxlxhczjdrqmfnefjllxhpwtrmm1leuvlodgwxvhncse9ontlnem0yekw1ddnraelyzgc": {
    "at": "2026-11-16T22:02:32+00:00",
@@ -2726,6 +2852,24 @@
    "priority": "P2",
    "title": "Chemical spill reported at xAI Southaven data center facility"
   },
+  "url:https://news.google.com/rss/articles/cbmitafbvv95cuxowdr4s2hhczdmmmgxrezty1dzuxzhzmjjs1bhy3nhywnqa3hpv0jit2park5qdv9zszbhotvlx0hlmu1cmhr5z0uxyvzndldzumhytwdss1jmtdbrv2llnndjb29kwgu0zwxjz18zq2jjwejuuknwu2jnqtrbzkljq19eodbfodzfz3ntwkytduvsdmzicln4x2fim1bjegj3ugdummnqb0zlvktfcer1axn2dme": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Virginia and Oregon sue SpaceX over Grok CSAM and deepfake generation"
+  },
+  "url:https://news.google.com/rss/articles/cbmitafbvv95cuxpyjzqwxnuau95wej4ttgwuu95szaxqxuwnjzucvfsztvxcfnzc1gzemy2qzl3xzzbs05tuznqqzfmrwk5wvhncng2d1disnfondrjbfrezhz2z3rknxzwsuy4lwzbvv9dovdlsuz0mc1swfnewu1nm3rqohzfq3lyafjms2jjvehxsgdoy3lpuee2aly1wmxrd2jwd2t1n0vibufsme1mx2xqevpuvki1qxljt1i": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P0",
+   "title": "Z.ai launches GLM-5.4, its first Loop Transformer model"
+  },
+  "url:https://news.google.com/rss/articles/cbmitgfbvv95cuxontrlelzwbm1uuwr5udazsjzpblfwcmhusmjqtufezdj6mwqtmjjsaef0q0p6c3f6u0fkcwq1swvvtxrnunbrbfn2sfzyz2xianjjcxjulwvinxe0s21gyktxz2tic25rmzl1b0j5uvpfme45mgdldwo2rvnrnepsbdbgqwhmz3l2x3b6zkvoexz0c2l1rglgac1zc18tmldozlndcnhpshl4qnqzn01smlvezdn0zw": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "OpenAI and Cisco introduce Shirudo open-source eBPF security runtime"
+  },
   "url:https://news.google.com/rss/articles/cbmitgfbvv95cuxqu2zzdhhtcxzma2jztghtukruekr0akplexlrlu9mwnzfmmxxzujowkxjotnmvnjqovvxrevjwtjlnjh6uetras1zavnorhd6vfvvzw1mbk1ot1rgzf8waejwtjhyajvnuenycwpozmliuvnxsgllmgzmcmpzandnajm0ymtxouv2tfj0zkpdauh1cwpeszm0lwmxcdr4avpzow5ft3rddgfxymlkss04uhp6sjngzw": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
@@ -2756,11 +2900,23 @@
    "priority": "P2",
    "title": "Anthropic IPO price expected to price at top of range or above amid high demand"
   },
+  "url:https://news.google.com/rss/articles/cbmiugfbvv95cuxpbmfgujloukoxmhpjq29pq192zmvgbkxxnmhtmwi4mxrvvda0ajzpegxxsndtcnhtzmz6ajvuswd4vlvunkq4a0kyazfmcmx4c1dyruj6y2fhx1ruexm5c1g2ttrrmkjcd09rqzeyt2pkd0ftx2z1tkzit1vhmuvzs0dpeeg4qwjvwwxxofhkwvhxv3nzs0fwadhox1dyuhptb2diyxzpwndnbxitvfzevm9rzlbbehy4cgfsab8bqvvfexfmudrcemjnduvpuzrtbgrzbnb0c19wmmxvm1l0ujhor0nzq0gzohytukn2swy2ofnza3fqsvzfum5bsxdkvlznyjnlrdc4tw9sq2znt1heotqtquz6nxlwb1detvz6ymrpsguyuzjkoefochvnzudpmnvteg1ktxcwt3bmwhvxmnz5q3owy043murnakzqs3bls1jsmepxdvbqqxpjuerkckjsm0njcfo4rw1csgg0rzdvufzjsvq0bk0": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P0",
+   "title": "Z.ai launches GLM-5.4, its first Loop Transformer model"
+  },
   "url:https://news.google.com/rss/articles/cbmiuwfbvv95cuxncvk2clruvfzntgjtcg1qowptrmlsqmrjtxdovfhimgq1cu1idu5rtvfqovhob2nmqxyywlvteehpu2n2cek5d0pjslhic2nsahj2m0v1b3n2ww9balfiz3vnqnpuy1vkv3fwd1pkmww0n1fnrlnpzmdxrfvudkhgoha5ohnsvzbpwnrwawnntmrtnfbqqtvksef1wndcevhnsmz3s1zcvzbtcdbwsk9vs3vitny5uthfahfz": {
    "at": "2026-11-20T07:17:37+00:00",
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic completes record $81.3 B IPO on Nasdaq at $1.5 T valuation"
+  },
+  "url:https://news.google.com/rss/articles/cbmiuwfbvv95cuxpoudksufquudsadiwclbodjhns2ltr3hsow4tqtlmtzazvjvrazzln3j1ewjsym02ndbocufllxdorv9cy3f2ohdwb215cm5mamdrztbbs19kedhiexziq080snjltfvsnepjnkezmlbjouhtshnhtzzwnhjiytbzsnpdemuwdfnxtxndrhb3ves5cnhiutjpz1fmd3z1otbxrg00q0dlsmlquw53eed2ddjkavjlrdvqdxfb": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Anthropic launches Claude Ship in beta for code reviews and PRs"
   },
   "url:https://news.google.com/rss/articles/cbmiuwfbvv95cuxps3jntjz1qkdumehpn0oxedrem0voc2ixm2dvafbqae0xqkpsatjlwtc2tkzls3lucvnmourblwpwcfezsxvlejvraergc1pzefzjt1iteg9psgtvqlhkre1ooc1yvjvmtvi2bgdpb3fvceztaelxdms4mnlxqu9udzlmvmvbyy1qwxz2auxbweq4umxynms0mwtwamdoefpgtzz5wxuxwuc1vfriotvlyklmmmuwvketrfaw": {
    "at": "2026-11-17T20:58:16+00:00",
@@ -2768,11 +2924,23 @@
    "priority": "P2",
    "title": "California and Oregon file major legal actions against OpenAI"
   },
+  "url:https://news.google.com/rss/articles/cbmiuwfbvv95cuxqtffiedlnaxixeghqtdytddhwnefymnnjm29sy3poc2f6r3viek9oexjad2dku3ziz1hhz3birw9vx1rvas05zfjccnlebwdss3nzrkjtvgixtenddzjdsk90ne1ysdnusf9iylvsovpmcgryrnzwlwjmsudmy0d3wufvblrnn3brwmroy1jqqzctm2itcdf0s1v1cvd3dzhmu213d0f0uddhx0hysefrrxiywujmm3blww1z0ghaaufvx3lxte9owfjxnu4tm0gxyzrpddbwelp4tm5uzlf1suvgqva2mxc1aldssvjyoxhcehnntfbucm1odvpasunktmw5ovhmvfhjx2jlb3j1tg9ivg1ottziz2fzzxbpzzmzbng3uu8ymupnudfywk5fmnpavlhozu5qvvvpahzjuklmvu13dfppdfd0awpjcdk0tufaclbqzxhgsndwytdwnutkrglftdzjsvhecefcm3pfx1djowhfsmmzztk0nq": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Virginia and Oregon sue SpaceX over Grok CSAM and deepfake generation"
+  },
   "url:https://news.google.com/rss/articles/cbmivafbvv95cuxqwldfbmv2bkz2bevgzlpavdc3r3f1y2zydhf2cdd2outealdcaddqvud6akjkswx3nlc5umzyzkz6yjlmdhnxse5sz2nuyzb4q09pdethms1atdy5mdjqq3vhxzv2s3riqzbjy3ztytk4qzf2berpavjizxbmvulpr0txampywdn3nghlckvlmmd4sfzhd2vzztfocmjdv2xznurxuhdfq1zxcwm0wvjjbwzhm1vymdjra3e1mq": {
    "at": "2026-11-21T19:19:33+00:00",
    "channel": "digest",
    "priority": "P3",
    "title": "US advertisers pour $70.7 million into ChatGPT ads in just six months - The American Bazaar"
+  },
+  "url:https://news.google.com/rss/articles/cbmivgfbvv95cuxowxfirlrpqkkyy0f5yuvjb1rmn1g2cudpwhj3zkhtvnvzcvnjag5qy0lhrlv1cedbnmfqwhq3c0lpweu1rgllanphd1ppbmzjc0dvme9ucxfsnwnstwj0vdnstmcywgvnag1lrzawtemxnxvychc3yjitwkvxrxfindrzewvwvezzz2nld2fcohvhsgvvtejdmtewdg1jvvrjddbvszqys0lhy1q5mnnyzmzfdmvwulr2tmhzdg1r": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Virginia and Oregon sue SpaceX over Grok CSAM and deepfake generation"
   },
   "url:https://news.google.com/rss/articles/cbmivwfbvv95cuxqwkjpzfu4ls1fa3ctdfjqcutsdxbrcxflohfaunduy3vbvk5qyku5ovrkagnunhhhvutwvgzrbfhpd0vqdfhiagrkv2vhmlz1ykxhufbkzfbzttfsmznelwdrckv5bwzkalqztgvduwhpnwu2atzqeffnnunhztnyu0exdhfntc1tejnoy3vsakxootbhrdf1cvjwaelxetnwueflodvozg5law51ylrnvk81dufowxdpluzmltbzbw": {
    "at": "2026-11-21T07:09:49+00:00",
@@ -2780,11 +2948,23 @@
    "priority": "P1",
    "title": "Anthropic closes $93.5B initial public offering on Nasdaq"
   },
+  "url:https://news.google.com/rss/articles/cbmivwfbvv95cuxqwlyzs3hiltvywhvlr2x4ttfsewrvluw5ykznd2nlwvljafjhbkzsuzzczglyeulqbkjynjjbcwt6uf9oeudfungwwkzsrhlrcvzosdffbdl0ntdzdw5qrfe1evvyn0zqwgnsz2xzu09ieuxcvnpqzkzxafvkr2q0v0i2bedmylo0ywl6b01wvxblzzexvhpjn21mac1oqxg1cevashlsv1g1eu0ynut1s0fzn1hratnvvkoytgjgma": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI rolls out GPT-6.2 Sol for chat tab and web search"
+  },
   "url:https://news.google.com/rss/articles/cbmiw0fvx3lxte15evfiwe5uzfrsshfuotnczwjysy1legw3nhyxbvzkzvpfu01mawdfyw5fu1lry25nsdewqv9nrxbpag5lsdb5dehxcw83x3jtvef4aglim0frvm8": {
    "at": "2026-11-19T07:27:18+00:00",
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic prices initial public offering at $83 per share"
+  },
+  "url:https://news.google.com/rss/articles/cbmiwefvx3lxte1lbhe3ntf3zwjrr0tzofo1mlrjvevoyjnkaddwsfvuynpqqtz0ytvnmc1nqm04dwzywkp5tmrveeg2v2fwzmroofljv295ewxlmlzuath2z3y": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "OpenAI and Cisco introduce Shirudo open-source eBPF security runtime"
   },
   "url:https://news.google.com/rss/articles/cbmiwgfbvv95cuxpnxowzet4nhrtnjuxt3y5stdsnwi5t1z3b0pfzjbsaunemue1ajzomtkzru1dqllmbfj0r28wmejjunllcvlkzgtodlbpadl5yw1dadnzcnqwwlrsa2nasmxmwlj1ytvuuhbex2ttt2t2tkjicwi4mldxohp1twpjtlhtc2zxshl6qnktawgxeufmrlblvehybnhiywp5rezsefqzx1f4wf8tz0hkbmq4tthjyjzmeu43mwtyyvm3zu9huq": {
    "at": "2026-11-18T07:29:18+00:00",
@@ -2792,17 +2972,35 @@
    "priority": "P3",
    "title": "Form DEF 14A XAI CLO & Income Opportunities Fund For: 17 November By Investing.com - Investing.com India"
   },
+  "url:https://news.google.com/rss/articles/cbmiwgfbvv95cuxqyknvoxb4shrnszl2ekk5dw1vtc1ty21fnkfvbzlcumjzbmjovmpaahdprwtzejvfewx2u2y2nhvdde5udw5aclh4uvbryxjaznl2ymnenzhwym5bcndzazeznlnhr0s3znk2ohjsynzqt0g2akzod0v2shnutviws2u4bzdvedvjte0tymtltlzyb29utxnlrewwz0dlvtzmmlzptwrhdzf4qldjujlny1dmsvfhaetobfzwwu1vzezwzw": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Virginia and Oregon sue SpaceX over Grok CSAM and deepfake generation"
+  },
   "url:https://news.google.com/rss/articles/cbmiwwfbvv95cuxpsmpqqvdqrtfynlzsvvfszg8yngj5wwraou1zrxjxqkjjm05gaxy5zupqtndmvvljnxnpyujdumf1t3hqcwkzni1udwc4c3pmv3f6rfk1ductcg5joflrcujdmv9im2hbdv9kbujqsmjva1lxs19ltuvjcug3alfnwl9rregwruvrru9lskforgzjuwpxlvb1bzlldwe4vdrhrmczzvbmbxfiylrvshq2s293m1jnzunmstdzdevktvpmxza": {
    "at": "2026-11-21T07:09:49+00:00",
    "channel": "digest",
    "priority": "P2",
    "title": "Oracle confirms its $300 billion OpenAI infrastructure deal is fully funded"
   },
+  "url:https://news.google.com/rss/articles/cbmix0fvx3lxte9kms1yr0jkmkdvthvwwge4s1lhwdhwvtqxz25wwkvtykjpvfviaxb1wmrwoc1lsdzvctrsz044dfm3owppy3voudbsow5poerpwndgc0nqofhonf9uy1pz": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P0",
+   "title": "Z.ai launches GLM-5.4, its first Loop Transformer model"
+  },
   "url:https://news.google.com/rss/articles/cbmix0fvx3lxtfbzvkjrrejfwezldktltuzsrjjqcxytnnhurknwwhhzzmz2bf9nrw1oswfkoxnoamrpsvrhrs1yywlyyvlhs3pore9nu3vku0lnywf5vgj1r3fovdg2wei4": {
    "at": "2026-11-21T07:09:49+00:00",
    "channel": "digest",
    "priority": "P2",
    "title": "OpenAI introduces MedChemBench for medicinal chemistry evaluation"
+  },
+  "url:https://news.google.com/rss/articles/cbmixgfbvv95cuxobnvxu21qwwfoshyzcw1sajgxs25dundftgd6dth6uzdyafr5u0qtmwlrowixz01icu0wng5flxramwzos1o0dhheuufiaditwfvibe01s1ptbdzxyvzgn1hmahlnyxbzck84n3jpaw1xcw5vmhdnefbhswzmrvn6mzlhzjdecl8wtkverghbu3m0dvbxshbfuhnpm1pcc1q0mv9htwlvevjsv1hisefawjjdmei0b2p2bzbizedrampivflvwee": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Virginia and Oregon sue SpaceX over Grok CSAM and deepfake generation"
   },
   "url:https://news.google.com/rss/articles/cbmixwfbvv95cuxnlwhvbudlvenordjza3puuzzsafnwmtljwxzlbeo0u05fazewedr3utbzowrvru1selfizzltwdfctgfqnkpxtzntr0ytejdwr185a1dlzm9qnezhx0iynxrjykzgwuzkanpjrkx5anfjvdzybxhaehlwc0dsu0dpnu9ivdbiowrnb0jwnwnfaznidmrkzmvhsxlxsduwdkxka00yz245mhpbbgh3skpibwpmwhloy3rtde1xzjzwsfphz1zpvldj0ghhaufvx3lxtfbzc2iwy2tjsnv2luxvz1pra3lca1netdj3mwpqntg4ewjkddjpunr5z2fydeq3mnfbuwg4txr3mvjgzhpjytnhqwtwodbvcexlcgtht3flrklzdgpmykfxnnz3qmhinehktum4wez2eurltl9fmml6s05usfy5znlfzxfuodbtslrws2lwxznddzv0ng5inurwymdelvzgekrgcxfouhhhvta0vxcwallisdfdvjrcewftm19xu0rmwmdpz2pwsta": {
    "at": "2026-11-19T20:39:31+00:00",
@@ -2948,6 +3146,12 @@
    "priority": "P2",
    "title": "Introducing OpenAI for Chile"
   },
+  "url:https://openai.com/index/introducing-shirudo": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "OpenAI and Cisco introduce Shirudo open-source eBPF security runtime"
+  },
   "url:https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership": {
    "at": "2026-11-18T14:16:32+00:00",
    "channel": "alerts",
@@ -3056,6 +3260,12 @@
    "priority": "P3",
    "title": "Qwen4-Max vs GLM-5.4: One Shipped, One Missed the Window - OrcaRouter"
   },
+  "url:https://platform.claude.com/docs/about-claude/model-deprecations": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic announces deprecation schedule for Claude Opus 4.5"
+  },
   "url:https://platform.claude.com/docs/about-claude/pricing": {
    "at": "2026-11-18T22:10:54+00:00",
    "channel": "alerts",
@@ -3063,10 +3273,10 @@
    "title": "Claude API pricing: Cloud platform pricing"
   },
   "url:https://platform.claude.com/docs/release-notes/overview": {
-   "at": "2026-11-17T20:58:16+00:00",
+   "at": "2026-11-23T23:53:32+00:00",
    "channel": "digest",
-   "priority": "P3",
-   "title": "Anthropic launches Linked billing beta for Claude platform developers"
+   "priority": "P2",
+   "title": "Anthropic announces deprecation schedule for Claude Opus 4.5"
   },
   "url:https://platform.openai.com/docs/changelog": {
    "at": "2026-11-21T07:09:49+00:00",
@@ -3272,6 +3482,12 @@
    "priority": "P1",
    "title": "Anthropic hits Nasdaq in largest IPO in history at $2T valuation"
   },
+  "url:https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Anthropic launches Claude Ship in beta for code reviews and PRs"
+  },
   "url:https://technode.com/2026/11/23/zhipu-rolls-out-glm-5-4-with-vision-and-million-token-context": {
    "at": "2026-11-23T07:37:38+00:00",
    "channel": "digest",
@@ -3296,6 +3512,12 @@
    "priority": "P3",
    "title": "Elon Musk Plans to Combine Tesla Traffic Data with Grok on X"
   },
+  "url:https://testingcatalog.com/anthropic-launches-claude-ship-to-review-and-approve-prs": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Anthropic launches Claude Ship in beta for code reviews and PRs"
+  },
   "url:https://testingcatalog.com/grok-bot-to-get-local-computer-use-and-dictation-in-any-app": {
    "at": "2026-11-23T07:37:38+00:00",
    "channel": "digest",
@@ -3315,9 +3537,9 @@
    "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol models"
   },
   "url:https://testingcatalog.com/z-ai-launches-glm-5-4-its-first-loop-transformer-model": {
-   "at": "2026-11-23T14:56:40+00:00",
-   "channel": "alerts",
-   "priority": "P2",
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P0",
    "title": "Z.ai launches GLM-5.4, its first Loop Transformer model"
   },
   "url:https://the-decoder.com/an-openai-agent-assigned-a-simple-writing-task-decided-on-its-own-to-build-a-secret-email-surveillance-tool": {
@@ -3337,6 +3559,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "California and Oregon file major legal actions against OpenAI"
+  },
+  "url:https://the-decoder.com/gpt-6-2-astra-solved-a-math-theorem-no-other-ai-could-crack-then-invented-its-own-proof-strategy": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "GPT-6.2 Astra solves complex math theorem and invents proof strategy"
   },
   "url:https://the-decoder.com/openai-launches-gpt-6-2-astra-and-sol-with-lower-api-prices-and-some-benchmark-gains": {
    "at": "2026-11-17T20:58:16+00:00",
@@ -3361,6 +3589,18 @@
    "channel": "digest",
    "priority": "P3",
    "title": "OpenAI shares new prompting tips for GPT-6.2 Astra and Sol to fix brief answers and unnecessary questions"
+  },
+  "url:https://the-decoder.com/openai-updates-chatgpt-to-handle-complex-everyday-questions-web-searches-and-images-more-reliably": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI rolls out GPT-6.2 Sol for chat tab and web search"
+  },
+  "url:https://the-decoder.com/z-ai-follows-openai-into-loop-transformer-territory-with-its-new-750b-flagship-model": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P0",
+   "title": "Z.ai launches GLM-5.4, its first Loop Transformer model"
   },
   "url:https://theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off": {
    "at": "2026-11-21T07:09:49+00:00",
@@ -3404,6 +3644,18 @@
    "priority": "P1",
    "title": "OpenAI rolls out Live Dictation and releases GPT-Live-1.1"
   },
+  "url:https://theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Anthropic launches Claude Ship in beta for code reviews and PRs"
+  },
+  "url:https://theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Virginia and Oregon sue SpaceX over Grok CSAM and deepfake generation"
+  },
   "url:https://theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure": {
    "at": "2026-11-21T19:19:33+00:00",
    "channel": "digest",
@@ -3427,6 +3679,18 @@
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic says Claude Mythos Preview ported to AMD GPUs in about three days"
+  },
+  "url:https://twitter.com/zai_org/status/2124719658074825004": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P0",
+   "title": "Z.ai launches GLM-5.4, its first Loop Transformer model"
+  },
+  "url:https://twitter.com/zixuanli_/status/2124719275864670681": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P0",
+   "title": "Z.ai launches GLM-5.4, its first Loop Transformer model"
   },
   "url:https://unite.ai/openai-proposes-shared-ai-development-limits-tied-to-safety-milestones": {
    "at": "2026-11-22T19:39:39+00:00",
@@ -3475,6 +3739,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "Spend the Lead on Safety: Biden AI Advisors Ben Buchanan & Tantum Collins on the Fate of the World"
+  },
+  "url:https://z.ai/blog/glm-5.4": {
+   "at": "2026-11-23T23:53:32+00:00",
+   "channel": "digest",
+   "priority": "P0",
+   "title": "Z.ai launches GLM-5.4, its first Loop Transformer model"
   },
   "url:https://zerohedge.com/political/anthropic-paid-rubios-ex-chief-staffs-firm-740000-after-jensen-memo-it-lobbied-his-nsc": {
    "at": "2026-11-18T07:29:18+00:00",
