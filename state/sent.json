@@ -660,6 +660,12 @@
    "priority": "P2",
    "title": "Anthropic prices initial public offering"
   },
+  "title:any app bot computer dictation get grok local use": {
+   "at": "2026-11-23T03:47:19+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Grok Bot to get local Computer Use and Dictation in any app"
+  },
   "title:anyone asks before dots extras get holiday work": {
    "at": "2026-11-16T22:19:08+00:00",
    "channel": "alerts",
@@ -3183,6 +3189,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "Elon Musk Plans to Combine Tesla Traffic Data with Grok on X"
+  },
+  "url:https://testingcatalog.com/grok-bot-to-get-local-computer-use-and-dictation-in-any-app": {
+   "at": "2026-11-23T03:47:19+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Grok Bot to get local Computer Use and Dictation in any app"
   },
   "url:https://testingcatalog.com/microsoft-launches-mai-cyber-2-flash-security-model": {
    "at": "2026-11-18T07:29:18+00:00",
