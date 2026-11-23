@@ -85,6 +85,115 @@
  "failures": {},
  "health": {},
  "history": {
+  "alibaba:qwen-audio-3-1-live": {
+   "announcement_date": null,
+   "availability_date": null,
+   "availability_status": "Available (listed in the official model catalog)",
+   "classification": "NEW_MODEL_RELEASE",
+   "company": "alibaba",
+   "comparison_summary": "compared with Qwen Audio 3.0 Tts Plus",
+   "delivery": {
+    "attempts": 1,
+    "last_error": null,
+    "message_ids": [
+     888,
+     889
+    ],
+    "notification": "alibaba:qwen-audio-3-1-live|release|8ce5a68ad0",
+    "receipt": {
+     "at": "2026-11-23T14:56:31+00:00",
+     "message_id": 890,
+     "status": "SENT"
+    },
+    "sent_at": "2026-11-23T14:56:30+00:00",
+    "status": "SENT"
+   },
+   "details": {
+    "ai_model": "gemini/gemini-flash-lite-latest",
+    "api_access": "Yes: listed in Alibaba Cloud Model Studio new models as `qwen-audio-3.1-live`",
+    "benchmarks": [],
+    "claims": [
+     {
+      "quote": "The model supports real-time voice conversations.",
+      "source": 1,
+      "text": "The model supports real-time voice conversations."
+     }
+    ],
+    "comparison": {
+     "availability": {
+      "basis": "official specs",
+      "new": "listed as available",
+      "previous": "listed as available",
+      "quote": ""
+     }
+    },
+    "explain": {
+     "care": "it allows you to create fluid real-time voice experiences where the assistant remains active while processing tasks",
+     "different": "it can keep talking with the user while an application or background model handles a task",
+     "does": "supports real-time voice conversations and keeps talking with the user while a background model handles a task, speaking the result when it is ready",
+     "introduced": "qwen-audio-3.1-live",
+     "problem": "awkward silences or dead air while waiting for background tasks to complete during voice interactions",
+     "who": "developers building voice applications"
+    },
+    "flagship": false,
+    "improved": [],
+    "previous_specs": {
+     "description": "Qwen-Audio-3.0-TTS-Plus is a high-performance speech synthesis model, designed for high-quality speech generation scenarios. Compared with the previous version, it supports more low-resource languages and Chinese dialects, significantly improves dialect authenticity, and enhances free-style instruction following and fine-grained tag control for more accurate control over emotion, tone,…"
+    },
+    "priority": "P1",
+    "reasons": [
+     "not seen in any official catalog before; introduced by: Alibaba Cloud Model Studio new models (listed)"
+    ],
+    "regressed": [],
+    "specs": {
+     "qwen-audio-3.1-live": {
+      "name": null,
+      "specs": {
+       "description": "The model supports real-time voice conversations. While an application or a background model handles a task, the voice model can keep talking with the user and speak the result when it is ready."
+      },
+      "status": "active"
+     }
+    },
+    "unchanged": [],
+    "whats_new": [
+     "The model supports real-time voice conversations.",
+     "While an application or a background model handles a task, the voice model can keep talking with the user and speak the result when it is ready."
+    ]
+   },
+   "duplicates": 0,
+   "events": [
+    {
+     "at": "2026-11-23T14:56:30+00:00",
+     "note": "not seen in any official catalog before; introduced by: Alibaba Cloud Model Studio new models (listed)",
+     "type": "detected"
+    }
+   ],
+   "fingerprints": [
+    "https://alibabacloud.com/help/model-studio/newly-released-models#qwen-audio-3.1-live"
+   ],
+   "first_detected": "2026-11-23T14:56:30+00:00",
+   "id": "alibaba:qwen-audio-3-1-live",
+   "last_updated": "2026-11-23T14:56:30+00:00",
+   "model_ids": [
+    "qwen-audio-3.1-live"
+   ],
+   "model_name": "qwen-audio-3.1-live",
+   "official_sources": [
+    {
+     "kind": "listed",
+     "source": "Alibaba Cloud Model Studio new models",
+     "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models"
+    }
+   ],
+   "previous_model": {
+    "id": "Qwen-Audio-3.0-TTS-Plus",
+    "method": "model lineage: same family, previous version (different tier, lower confidence)",
+    "name": "Qwen Audio 3.0 Tts Plus"
+   },
+   "priority": "P1",
+   "source_url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+   "verification": "OFFICIAL_CONFIRMED"
+  },
   "google:gemini-3-6": {
    "announcement_date": "2026-11-19",
    "availability_date": null,
@@ -1588,6 +1697,7 @@
   }
  },
  "index": {
+  "alibaba:qwen-audio-3-1-live": "alibaba:qwen-audio-3-1-live",
   "google:gemini-3-6": "google:gemini-3-6",
   "google:gemini-4-neon": "google:gemini-4-neon",
   "google:genie-4": "google:genie-4",
@@ -1610,6 +1720,45 @@
   }
  },
  "outbox": {
+  "alibaba:qwen-audio-3-1-live|release|8ce5a68ad0": {
+   "attempts": 1,
+   "category": "NEW_MODEL_RELEASE",
+   "created": "2026-11-23T14:56:30+00:00",
+   "id": "alibaba:qwen-audio-3-1-live|release|8ce5a68ad0",
+   "kind": "release",
+   "last_error": null,
+   "log": [
+    "2026-11-23T14:56:30+00:00 SENT: Telegram confirmed message id(s) [888, 889]",
+    "2026-11-23T14:56:31+00:00 delivery receipt SENT (message id 890)"
+   ],
+   "model_name": "qwen-audio-3.1-live",
+   "parts": [
+    "🚨 <b>NEW AI MODEL RELEASE</b>\n<i>🚨 NEW MODEL RELEASES · 🟠 P1 High</i>\n\n<b>COMPANY:</b>\nAlibaba (Qwen)\n\n<b>NEW MODEL:</b>\nqwen-audio-3.1-live\n<code>qwen-audio-3.1-live</code>\n\n<b>RELEASE INFORMATION:</b>\n• Announcement date: Not stated in the official sources\n• Availability date: Not stated in the official sources\n• Model category: New model release\n• Availability status: Available (listed in the official model catalog)\n• API access: Yes: listed in Alibaba Cloud Model Studio new models as <code>qwen-audio-3.1-live</code>\n\n<b>WHAT'S NEW:</b>\n• The model supports real-time voice conversations.\n• While an application or a background model handles a task, the voice model can keep talking with the user and speak the result when it is ready.\n\n<blockquote expandable><b>📘 Explained</b>\n<b>What was introduced:</b> qwen-audio-3.1-live\n<b>What it actually does:</b> supports real-time voice conversations and keeps talking with the user while a background model handles a task, speaking the result when it is ready\n<b>What problem it solves:</b> awkward silences or dead air while waiting for background tasks to complete during voice interactions\n<b>How it differs from before:</b> it can keep talking with the user while an application or background model handles a task\n<b>Who benefits:</b> developers building voice applications\n<b>Why creators and developers should care:</b> it allows you to create fluid real-time voice experiences where the assistant remains active while processing tasks</blockquote>\n\n<b>COMPARISON WITH PREVIOUS MODEL:</b>\nPrevious model: Qwen Audio 3.0 Tts Plus (<code>Qwen-Audio-3.0-TTS-Plus</code>)\nNew model: qwen-audio-3.1-live (<code>qwen-audio-3.1-live</code>)\n<i>How the previous model was chosen: model lineage: same family, previous version (different tier, lower confidence)</i>\n\n<b>🌍 Availability</b> <i>(official specs)</i>\n• Previous: listed as available\n• New: listed as available\n\n<b>📈 Benchmarks</b>\n• Company-reported: none found in the official sources\n• Independent: none collected (the agent only reads official sources)\n\n<b>💬 Qualitative claims by the company</b>\n• The model supports real-time voice conversations.\n\n<b>WHAT ACTUALLY IMPROVED:</b>\n• Qwen-Audio-3.1-Live introduces support for real-time voice conversations. <i>(interpretation by gemini/gemini-flash-lite-latest, from the sources above)</i>\n• It enables the voice model to keep talking with the user while an application or background model handles a task, speaking the result when ready. <i>(interpretation by gemini/gemini-flash-lite-latest, from the sources above)</i>\n\n<b>WHAT HAS NOT BEEN ESTABLISHED:</b>\n• No evidence yet for: Architecture / family, Reasoning, Coding, Math &amp; problem-solving, Multimodal, Context window, Output limit, Tool use &amp; agents, Speed &amp; latency, API pricing\n• Benchmark scores (none in the official sources)\n• Independent benchmark results\n• The availability date\n\n<b>OFFICIAL SOURCES:</b>\n• Original announcement: not published yet (the release was found in the official docs)\n• Official documentation: no release note yet\n• Model information / API page: <a href=\"https://www.alibabacloud.com/help/en/model-studio/newly-released-models\">Alibaba Cloud Model Studio new models</a>\n\n<b>WHY THIS MATTERS:</b>\nThis model enables smoother voice interactions by maintaining conversation while background tasks process. Developers can build more responsive voice assistants that avoid awkward silences during computation.\n<i>(1/2)</i>",
+    "<b>💡 CONTENT OPPORTUNITIES</b>\n<i>Based on: qwen-audio-3.1-live</i>\n<blockquote expandable><b>A. NEWS: Alibaba Releases Qwen-Audio-3.1-Live for Real-Time Voice</b>\n<i>Angle:</i> Covering the release of qwen-audio-3.1-live and its real-time conversational capabilities.\n<i>Why it's interesting:</i> It brings real-time voice capabilities that keep users engaged while background tasks execute.\n<i>Research or testing needed:</i> Test how the model handles interruptions and background task handoffs in practice.\n\n<b>B. EDUCATION: Building Real-Time Voice Apps with Qwen-Audio-3.1-Live</b>\n<i>Angle:</i> A tutorial on integrating the model to manage background tasks during voice conversations.\n<i>Why it's interesting:</i> Developers need to know how to coordinate background models and the voice model.\n<i>Research or testing needed:</i> Verify API implementation details and latency for background task synchronization.\n\n<b>C. ANALYSIS: Testing Qwen-Audio-3.1-Live Conversational Flow</b>\n<i>Angle:</i> Evaluating how effectively the voice model maintains conversation during heavy background processing.\n<i>Why it's interesting:</i> Assessing the practical utility of keeping users engaged while waiting for results.\n<i>Research or testing needed:</i> Measure perceived latency and conversational naturalness during task execution.\n\n<i>Ideas only. You decide what becomes a video or post.</i></blockquote>\n\n<b>VERIFICATION:</b>\nOFFICIAL CONFIRMED\n<i>not seen in any official catalog before; introduced by: Alibaba Cloud Model Studio new models (listed)</i>\n<i>AI reading by gemini/gemini-flash-lite-latest; 0 unsupported AI statements discarded</i>\n\n<b>DELIVERY:</b>\nPending Telegram confirmation.\n<i>(2/2)</i>"
+   ],
+   "priority": "P1",
+   "receipt": {
+    "at": "2026-11-23T14:56:31+00:00",
+    "message_id": 890,
+    "status": "SENT"
+   },
+   "release_id": "alibaba:qwen-audio-3-1-live",
+   "sent_at": "2026-11-23T14:56:30+00:00",
+   "sent_parts": {
+    "0": {
+     "at": "2026-11-23T14:56:30+00:00",
+     "message_id": 888,
+     "telegram_date": 1795445790
+    },
+    "1": {
+     "at": "2026-11-23T14:56:30+00:00",
+     "message_id": 889,
+     "telegram_date": 1795445790
+    }
+   },
+   "status": "SENT",
+   "verification": "OFFICIAL_CONFIRMED"
+  },
   "google:gemini-3-6|review|a44c039e6b": {
    "attempts": 1,
    "category": "NEW_MODEL_RELEASE",
@@ -2317,6 +2466,17 @@
     ],
     "specs": {
      "description": "Qwen-Audio-3.1-ASR-Flash-Streaming is an end-to-end real-time speech recognition model designed for scenarios such as real-time conferencing, live subtitles, and intelligent interaction. It features low latency and high accuracy in streaming speech transcription. The model supports multilingual and multi-regional Chinese dialect recognition, seamless switching between Chinese and English, hot…"
+    },
+    "status": "active"
+   },
+   "qwen-audio-3.1-live": {
+    "first_seen": "2026-11-23T14:55:51+00:00",
+    "name": "qwen-audio-3.1-live",
+    "sources": [
+     "Alibaba Cloud Model Studio new models"
+    ],
+    "specs": {
+     "description": "The model supports real-time voice conversations. While an application or a background model handles a task, the voice model can keep talking with the user and speak the result when it is ready."
     },
     "status": "active"
    },
@@ -7963,6 +8123,10 @@
     },
     "qwen-audio-3.1-asr-flash-streaming": {
      "h": "a0ec1c7300df",
+     "status": "active"
+    },
+    "qwen-audio-3.1-live": {
+     "h": "0995a8cb7df9",
      "status": "active"
     },
     "qwen-audio-3.1-realtime-flash": {

@@ -1,5 +1,11 @@
 {
  "sent": {
+  "model:alibaba:qwen-audio-3-1-live": {
+   "at": "2026-11-23T14:56:30+00:00",
+   "channel": "release",
+   "priority": "P1",
+   "title": "qwen-audio-3.1-live"
+  },
   "model:google:gemini-3-6": {
    "at": "2026-11-19T22:22:21+00:00",
    "channel": "release",
@@ -888,6 +894,12 @@
    "priority": "P1",
    "title": "OpenAI rolls out Live Dictation and releases GPT-Live-1.1"
   },
+  "title:first glm-5.4 launches loop model transformer z.ai": {
+   "at": "2026-11-23T14:56:40+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Z.ai launches GLM-5.4, its first Loop Transformer model"
+  },
   "title:flash free hy4 lists model opencode zero-cost": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
@@ -942,6 +954,12 @@
    "priority": "P2",
    "title": "OpenAI and Jony Ive Lease Large S.F. Office for Hardware Team"
   },
+  "title:qwen-audio-3.1-live": {
+   "at": "2026-11-23T14:56:30+00:00",
+   "channel": "release",
+   "priority": "P1",
+   "title": "qwen-audio-3.1-live"
+  },
   "title:v2.1.327": {
    "at": "2026-11-18T07:29:18+00:00",
    "channel": "digest",
@@ -959,6 +977,12 @@
    "channel": "release",
    "priority": "P1",
    "title": "Genie 4"
+  },
+  "url:https://alibabacloud.com/help/model-studio/newly-released-models": {
+   "at": "2026-11-23T14:56:30+00:00",
+   "channel": "release",
+   "priority": "P1",
+   "title": "qwen-audio-3.1-live"
   },
   "url:https://aljazeera.com/economy/2026/11/20/asias-stock-markets-dive-as-anthropic-debut-fails-to-allay-ai-bubble-fears": {
    "at": "2026-11-20T07:17:37+00:00",
@@ -3289,6 +3313,12 @@
    "channel": "digest",
    "priority": "P0",
    "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol models"
+  },
+  "url:https://testingcatalog.com/z-ai-launches-glm-5-4-its-first-loop-transformer-model": {
+   "at": "2026-11-23T14:56:40+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Z.ai launches GLM-5.4, its first Loop Transformer model"
   },
   "url:https://the-decoder.com/an-openai-agent-assigned-a-simple-writing-task-decided-on-its-own-to-build-a-secret-email-surveillance-tool": {
    "at": "2026-11-20T07:17:37+00:00",
