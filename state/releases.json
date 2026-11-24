@@ -1,6 +1,16 @@
 {
  "changes": [
   {
+   "at": "2026-11-24T23:11:45+00:00",
+   "category": "PRODUCT_OR_FEATURE_ANNOUNCEMENT",
+   "company": "google",
+   "model": "Gemini 4 Neon",
+   "sources": [
+    "Google Gemini blog"
+   ],
+   "title": "See what 5 builders are making with Gemini 4 Neon"
+  },
+  {
    "at": "2026-11-24T02:21:12+00:00",
    "category": "PRODUCT_OR_FEATURE_ANNOUNCEMENT",
    "company": "google",
@@ -117,6 +127,206 @@
  "failures": {},
  "health": {},
  "history": {
+  "alibaba:glm-5-3-prime": {
+   "announcement_date": null,
+   "availability_date": null,
+   "availability_status": null,
+   "classification": "UNCONFIRMED_EARLY_SIGNAL",
+   "company": "alibaba",
+   "comparison_summary": "models.dev lists GLM-5.3 Prime for alibaba",
+   "delivery": {
+    "attempts": 0,
+    "last_error": null,
+    "message_ids": [],
+    "notification": null,
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "details": {
+    "reasons": [
+     "only third-party sources so far: models.dev listings (early signal)"
+    ],
+    "text": "Release date on models.dev: 2026-08-14."
+   },
+   "duplicates": 0,
+   "events": [
+    {
+     "at": "2026-11-24T23:11:45+00:00",
+     "note": "only third-party sources so far: models.dev listings (early signal)",
+     "type": "detected"
+    }
+   ],
+   "fingerprints": [
+    "https://models.dev/"
+   ],
+   "first_detected": "2026-11-24T23:11:45+00:00",
+   "id": "alibaba:glm-5-3-prime",
+   "last_updated": "2026-11-24T23:11:45+00:00",
+   "model_ids": [
+    "glm-5.3-prime"
+   ],
+   "model_name": "GLM 5.3 Prime",
+   "official_sources": [
+    {
+     "source": "models.dev listings (early signal)",
+     "url": "https://models.dev/?search=glm-5.3-prime"
+    }
+   ],
+   "previous_model": null,
+   "priority": "P2",
+   "source_url": "https://models.dev/?search=glm-5.3-prime",
+   "verification": "UNCONFIRMED"
+  },
+  "alibaba:kimi-k-3-1-pro": {
+   "announcement_date": null,
+   "availability_date": null,
+   "availability_status": null,
+   "classification": "UNCONFIRMED_EARLY_SIGNAL",
+   "company": "alibaba",
+   "comparison_summary": "models.dev lists Kimi K3.1 Pro for alibaba",
+   "delivery": {
+    "attempts": 0,
+    "last_error": null,
+    "message_ids": [],
+    "notification": null,
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "details": {
+    "reasons": [
+     "only third-party sources so far: models.dev listings (early signal)"
+    ],
+    "text": "Release date on models.dev: 2026-10-23."
+   },
+   "duplicates": 0,
+   "events": [
+    {
+     "at": "2026-11-24T23:11:45+00:00",
+     "note": "only third-party sources so far: models.dev listings (early signal)",
+     "type": "detected"
+    }
+   ],
+   "fingerprints": [
+    "https://models.dev/"
+   ],
+   "first_detected": "2026-11-24T23:11:45+00:00",
+   "id": "alibaba:kimi-k-3-1-pro",
+   "last_updated": "2026-11-24T23:11:45+00:00",
+   "model_ids": [
+    "kimi-k3.1-pro"
+   ],
+   "model_name": "Kimi K3.1 Pro",
+   "official_sources": [
+    {
+     "source": "models.dev listings (early signal)",
+     "url": "https://models.dev/?search=kimi-k3.1-pro"
+    }
+   ],
+   "previous_model": null,
+   "priority": "P2",
+   "source_url": "https://models.dev/?search=kimi-k3.1-pro",
+   "verification": "UNCONFIRMED"
+  },
+  "alibaba:kimi-k-3-1-pro-prime": {
+   "announcement_date": null,
+   "availability_date": null,
+   "availability_status": null,
+   "classification": "UNCONFIRMED_EARLY_SIGNAL",
+   "company": "alibaba",
+   "comparison_summary": "models.dev lists Kimi K3.1 Pro Prime for alibaba",
+   "delivery": {
+    "attempts": 0,
+    "last_error": null,
+    "message_ids": [],
+    "notification": null,
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "details": {
+    "reasons": [
+     "only third-party sources so far: models.dev listings (early signal)"
+    ],
+    "text": "Release date on models.dev: 2026-10-23."
+   },
+   "duplicates": 0,
+   "events": [
+    {
+     "at": "2026-11-24T23:11:45+00:00",
+     "note": "only third-party sources so far: models.dev listings (early signal)",
+     "type": "detected"
+    }
+   ],
+   "fingerprints": [
+    "https://models.dev/"
+   ],
+   "first_detected": "2026-11-24T23:11:45+00:00",
+   "id": "alibaba:kimi-k-3-1-pro-prime",
+   "last_updated": "2026-11-24T23:11:45+00:00",
+   "model_ids": [
+    "kimi-k3.1-pro-prime"
+   ],
+   "model_name": "Kimi K3.1 Pro Prime",
+   "official_sources": [
+    {
+     "source": "models.dev listings (early signal)",
+     "url": "https://models.dev/?search=kimi-k3.1-pro-prime"
+    }
+   ],
+   "previous_model": null,
+   "priority": "P2",
+   "source_url": "https://models.dev/?search=kimi-k3.1-pro-prime",
+   "verification": "UNCONFIRMED"
+  },
+  "alibaba:qwen-4-max": {
+   "announcement_date": null,
+   "availability_date": null,
+   "availability_status": null,
+   "classification": "UNCONFIRMED_EARLY_SIGNAL",
+   "company": "alibaba",
+   "comparison_summary": "models.dev lists Qwen4 Max for alibaba",
+   "delivery": {
+    "attempts": 0,
+    "last_error": null,
+    "message_ids": [],
+    "notification": null,
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "details": {
+    "reasons": [
+     "only third-party sources so far: models.dev listings (early signal)"
+    ],
+    "text": "Release date on models.dev: 2026-11-16."
+   },
+   "duplicates": 0,
+   "events": [
+    {
+     "at": "2026-11-24T23:11:45+00:00",
+     "note": "only third-party sources so far: models.dev listings (early signal)",
+     "type": "detected"
+    }
+   ],
+   "fingerprints": [
+    "https://models.dev/"
+   ],
+   "first_detected": "2026-11-24T23:11:45+00:00",
+   "id": "alibaba:qwen-4-max",
+   "last_updated": "2026-11-24T23:11:45+00:00",
+   "model_ids": [
+    "qwen4-max"
+   ],
+   "model_name": "qwen4-max",
+   "official_sources": [
+    {
+     "source": "models.dev listings (early signal)",
+     "url": "https://models.dev/?search=qwen4-max"
+    }
+   ],
+   "previous_model": null,
+   "priority": "P2",
+   "source_url": "https://models.dev/?search=qwen4-max",
+   "verification": "UNCONFIRMED"
+  },
   "alibaba:qwen-audio-3-1-live": {
    "announcement_date": null,
    "availability_date": null,
@@ -778,8 +988,65 @@
    "source_url": "https://aistudio.google.com/docs/models.md",
    "verification": "OFFICIAL_CONFIRMED"
   },
+  "openai:chat-latest@MAJOR_MODEL_UPGRADE:chat-latest": {
+   "announcement_date": "2026-11-24",
+   "availability_date": null,
+   "availability_status": null,
+   "classification": "MAJOR_MODEL_UPGRADE",
+   "company": "openai",
+   "comparison_summary": "Update · Model: chat-latest",
+   "delivery": {
+    "attempts": 1,
+    "last_error": null,
+    "message_ids": [
+     931
+    ],
+    "notification": "openai:chat-latest@MAJOR_MODEL_UPGRADE:chat-latest|update|c1b189326e",
+    "receipt": {
+     "at": "2026-11-24T23:11:50+00:00",
+     "message_id": 932,
+     "status": "SENT"
+    },
+    "sent_at": "2026-11-24T23:11:49+00:00",
+    "status": "SENT"
+   },
+   "details": {
+    "reasons": [
+     "official update to an existing model"
+    ],
+    "text": "Updated the **chat-latest** snapshot, which points to the latest model available in ChatGPT for Plus, Pro, Business and Enterprise users. We recommend leveraging the GPT-6.2 model family for production API usage, but feel free to use this model to test the latest improvements for chat use cases. The underlying model snapshot will be regularly updated. Read more here."
+   },
+   "duplicates": 0,
+   "events": [
+    {
+     "at": "2026-11-24T23:11:45+00:00",
+     "note": "official update to an existing model",
+     "type": "detected"
+    }
+   ],
+   "fingerprints": [
+    "1b008e68dbeb30ae"
+   ],
+   "first_detected": "2026-11-24T23:11:45+00:00",
+   "id": "openai:chat-latest@MAJOR_MODEL_UPGRADE:chat-latest",
+   "last_updated": "2026-11-24T23:11:49+00:00",
+   "model_ids": [
+    "chat-latest"
+   ],
+   "model_name": "Chat Latest",
+   "official_sources": [
+    {
+     "source": "OpenAI API changelog",
+     "url": "https://developers.openai.com/api/docs/changelog.md"
+    }
+   ],
+   "previous_model": null,
+   "priority": "P1",
+   "source_url": "https://developers.openai.com/api/docs/changelog.md",
+   "verification": "OFFICIAL_UPDATE"
+  },
   "openai:gpt-6": {
-   "announcement_date": "2026-11-23",
+   "announcement_date": "2026-11-24",
    "availability_date": null,
    "availability_status": "Not stated in the official sources",
    "classification": "NEW_MODEL_RELEASE",
@@ -789,23 +1056,17 @@
     "attempts": 1,
     "last_error": null,
     "message_ids": [
-     901
+     927
     ],
-    "notification": "openai:gpt-6|review|d45c1b144d",
-    "sent_at": "2026-11-24T02:21:13+00:00",
+    "notification": "openai:gpt-6|review|b51d89ad09",
+    "sent_at": "2026-11-24T23:11:46+00:00",
     "status": "SENT"
    },
    "details": {
-    "ai_model": "gemini/gemini-flash-latest",
+    "ai_model": null,
     "api_access": "Not stated in the official sources",
     "benchmarks": [],
-    "claims": [
-     {
-      "quote": "In each of the cases, the AI is beating human support agents when it comes to customer satisfaction.",
-      "source": 1,
-      "text": "The deployed AI customer support agents outperform human agents in customer satisfaction."
-     }
-    ],
+    "claims": [],
     "comparison": {
      "availability": {
       "basis": "official specs",
@@ -839,11 +1100,7 @@
      }
     },
     "explain": {
-     "care": "Demonstrates an architecture where expensive models build procedures while economical models handle conversation volume.",
-     "does": "Handles tool configuration, procedure generation, and high-volume customer support conversations across long contexts.",
-     "introduced": "GPT-6 Astra, GPT-6.1 Sol, and GPT-6 Luna referenced in an enterprise support agent deployment.",
-     "problem": "Manual forward-deployed engineering and setup bottlenecks required to connect agents to complex business systems.",
-     "who": "Customer support automation platforms and businesses needing cost-effective multi-agent operations."
+     "introduced": "GPT-6, a new GPT model from OpenAI."
     },
     "flagship": true,
     "improved": [],
@@ -871,7 +1128,10 @@
     },
     "unchanged": [],
     "whats_new": [
-     "OpenAI provides models capable of handling long context and longer tasks cost-efficiently."
+     "Our GPT‑6 family of models can design new protein shapes and the sequence of their chemical building blocks using only reasoning and code, without calling specialized biology models to generate those designs.",
+     "The models’ written reasoning and code suggest they draw on math, physics, chemistry, and biological knowledge to reason about protein shapes and interactions with other molecules.",
+     "ChatGPT and Codex integrations help Clay users research deals and turn data into go-to-market plays, and GPT‑6 models handle the reasoning.",
+     "Clay ⁠ (opens in a new window) is a self-learning revenue engine designed to help."
     ]
    },
    "duplicates": 0,
@@ -895,15 +1155,22 @@
      "at": "2026-11-24T02:21:12+00:00",
      "note": "REQUIRES_MANUAL_REVIEW → REQUIRES_MANUAL_REVIEW",
      "type": "updated"
+    },
+    {
+     "at": "2026-11-24T23:08:31+00:00",
+     "note": "REQUIRES_MANUAL_REVIEW → REQUIRES_MANUAL_REVIEW",
+     "type": "updated"
     }
    ],
    "fingerprints": [
-    "b4ece334f56cbe45",
-    "https://openai.com/business/customer-stories/richpanel-ai-customer-support"
+    "4bea1d27e163b115",
+    "88745bf604df5832",
+    "https://openai.com/business/customer-stories/clay-plugins-openai",
+    "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities"
    ],
    "first_detected": "2026-11-17T23:04:02+00:00",
    "id": "openai:gpt-6",
-   "last_updated": "2026-11-24T02:21:13+00:00",
+   "last_updated": "2026-11-24T23:11:46+00:00",
    "model_ids": [
     "GPT-6"
    ],
@@ -912,7 +1179,12 @@
     {
      "kind": "announcement",
      "source": "OpenAI news",
-     "url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support"
+     "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities"
+    },
+    {
+     "kind": "announcement",
+     "source": "OpenAI news",
+     "url": "https://openai.com/business/customer-stories/clay-plugins-openai"
     }
    ],
    "previous_model": {
@@ -921,8 +1193,174 @@
     "name": "GPT-5.5"
    },
    "priority": "P1",
-   "source_url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
+   "source_url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
    "verification": "REQUIRES_MANUAL_REVIEW"
+  },
+  "openai:gpt-6-1-sol-healthcare+gpt-6-2-astra-healthcare+gpt-6-2-sol-healthcare+gpt-6-astra-healthcare": {
+   "announcement_date": "2026-11-24",
+   "availability_date": "2026-11-24",
+   "availability_status": "Not stated in the official sources",
+   "classification": "NEW_MODEL_RELEASE",
+   "company": "openai",
+   "comparison_summary": "compared with GPT-6.1 Sol",
+   "delivery": {
+    "attempts": 1,
+    "last_error": null,
+    "message_ids": [
+     928,
+     929
+    ],
+    "notification": "openai:gpt-6-1-sol-healthcare+gpt-6-2-astra-healthcare+gpt-6-2-sol-healthcare+gpt-6-astra-healthcare|release|374b516523",
+    "receipt": {
+     "at": "2026-11-24T23:11:48+00:00",
+     "message_id": 930,
+     "status": "SENT"
+    },
+    "sent_at": "2026-11-24T23:11:47+00:00",
+    "status": "SENT"
+   },
+   "details": {
+    "ai_model": "gemini/gemini-flash-lite-latest",
+    "api_access": "Not stated in the official sources",
+    "benchmarks": [],
+    "claims": [],
+    "comparison": {
+     "availability": {
+      "basis": "official specs",
+      "new": null,
+      "previous": "listed as available",
+      "quote": ""
+     },
+     "context": {
+      "basis": "official specs",
+      "new": null,
+      "previous": "1.05M tokens",
+      "quote": ""
+     },
+     "multimodal": {
+      "basis": "official specs",
+      "new": null,
+      "previous": "in: text, image · out: text",
+      "quote": ""
+     },
+     "output": {
+      "basis": "official specs",
+      "new": null,
+      "previous": "128K tokens",
+      "quote": ""
+     },
+     "pricing": {
+      "basis": "official specs",
+      "new": null,
+      "previous": "$2 input / $10 output per 1M tokens",
+      "quote": ""
+     },
+     "reasoning": {
+      "basis": "official specs",
+      "new": null,
+      "previous": "reasoning effort: low, medium (default), high, xhigh, and max.",
+      "quote": ""
+     }
+    },
+    "explain": {
+     "introduced": "GPT-6.2 Astra Healthcare + GPT-6.2 Sol Healthcare + GPT-6 Astra Healthcare + GPT-6.1 Sol Healthcare, a new GPT model from OpenAI."
+    },
+    "flagship": false,
+    "improved": [],
+    "previous_specs": {
+     "context_tokens": 1050000,
+     "description": "Near-Astra performance for complex work at a lower cost.",
+     "input_modalities": "text, image",
+     "input_price": 2.0,
+     "knowledge_cutoff": "Apr 30, 2026",
+     "max_output_tokens": 128000,
+     "output_modalities": "text",
+     "output_price": 10.0,
+     "reasoning": "reasoning effort: low, medium (default), high, xhigh, and max."
+    },
+    "priority": "P1",
+    "reasons": [
+     "not seen in any official catalog before; introduced by: OpenAI API changelog (changelog)"
+    ],
+    "regressed": [],
+    "specs": {
+     "gpt-6-astra-healthcare": {
+      "name": null,
+      "specs": {},
+      "status": null
+     },
+     "gpt-6.1-sol-healthcare": {
+      "name": null,
+      "specs": {},
+      "status": null
+     },
+     "gpt-6.2-astra-healthcare": {
+      "name": null,
+      "specs": {},
+      "status": null
+     },
+     "gpt-6.2-sol-healthcare": {
+      "name": null,
+      "specs": {},
+      "status": null
+     }
+    },
+    "unchanged": [],
+    "whats_new": [
+     "Released Healthcare model configurations for the Responses API, pairing select OpenAI models with a harness tailored to clinical questions."
+    ]
+   },
+   "duplicates": 0,
+   "events": [
+    {
+     "at": "2026-11-24T23:11:45+00:00",
+     "note": "not seen in any official catalog before; introduced by: OpenAI API changelog (changelog)",
+     "type": "detected"
+    }
+   ],
+   "fingerprints": [
+    "ac8c3523e1393781"
+   ],
+   "first_detected": "2026-11-24T23:11:45+00:00",
+   "id": "openai:gpt-6-1-sol-healthcare+gpt-6-2-astra-healthcare+gpt-6-2-sol-healthcare+gpt-6-astra-healthcare",
+   "last_updated": "2026-11-24T23:11:47+00:00",
+   "model_ids": [
+    "gpt-6.2-astra-healthcare",
+    "gpt-6.2-sol-healthcare",
+    "gpt-6-astra-healthcare",
+    "gpt-6.1-sol-healthcare"
+   ],
+   "model_name": "GPT-6.2 Astra Healthcare + GPT-6.2 Sol Healthcare + GPT-6 Astra Healthcare + GPT-6.1 Sol Healthcare",
+   "official_sources": [
+    {
+     "kind": "changelog",
+     "source": "OpenAI API changelog",
+     "url": "https://developers.openai.com/api/docs/changelog.md"
+    },
+    {
+     "kind": "changelog",
+     "source": "OpenAI API changelog",
+     "url": "https://developers.openai.com/api/docs/changelog.md"
+    },
+    {
+     "kind": "changelog",
+     "source": "OpenAI API changelog",
+     "url": "https://developers.openai.com/api/docs/changelog.md"
+    },
+    {
+     "kind": "changelog",
+     "source": "OpenAI API changelog",
+     "url": "https://developers.openai.com/api/docs/changelog.md"
+    }
+   ],
+   "previous_model": {
+    "id": "gpt-6.1-sol",
+    "method": "model lineage: same family, previous version (different tier, lower confidence)",
+    "name": "GPT-6.1 Sol"
+   },
+   "priority": "P1",
+   "source_url": "https://developers.openai.com/api/docs/changelog.md",
+   "verification": "OFFICIAL_CONFIRMED"
   },
   "openai:gpt-6-1-terra@MODEL_AVAILABILITY:2026-11": {
    "announcement_date": "2026-11-17",
@@ -1761,18 +2199,26 @@
   }
  },
  "index": {
+  "alibaba:glm-5-3-prime": "alibaba:glm-5-3-prime",
+  "alibaba:kimi-k-3-1-pro": "alibaba:kimi-k-3-1-pro",
+  "alibaba:kimi-k-3-1-pro-prime": "alibaba:kimi-k-3-1-pro-prime",
+  "alibaba:qwen-4-max": "alibaba:qwen-4-max",
   "alibaba:qwen-audio-3-1-live": "alibaba:qwen-audio-3-1-live",
   "google:gemini-3-6": "google:gemini-3-6",
   "google:gemini-4-carbon": "google:gemini-4-carbon",
   "google:gemini-4-neon": "google:gemini-4-neon",
   "google:genie-4": "google:genie-4",
   "openai:gpt-6": "openai:gpt-6",
+  "openai:gpt-6-1-sol-healthcare": "openai:gpt-6-1-sol-healthcare+gpt-6-2-astra-healthcare+gpt-6-2-sol-healthcare+gpt-6-astra-healthcare",
   "openai:gpt-6-2": "openai:gpt-6-2+gpt-6-2-astra",
   "openai:gpt-6-2-astra": "openai:gpt-6-2+gpt-6-2-astra",
+  "openai:gpt-6-2-astra-healthcare": "openai:gpt-6-1-sol-healthcare+gpt-6-2-astra-healthcare+gpt-6-2-sol-healthcare+gpt-6-astra-healthcare",
   "openai:gpt-6-2-astra-pro": "openai:gpt-6-2-astra-pro",
   "openai:gpt-6-2-sol": "openai:gpt-6-2-sol",
+  "openai:gpt-6-2-sol-healthcare": "openai:gpt-6-1-sol-healthcare+gpt-6-2-astra-healthcare+gpt-6-2-sol-healthcare+gpt-6-astra-healthcare",
   "openai:gpt-6-2-sol-pro": "openai:gpt-6-2-sol-pro",
   "openai:gpt-6-astra": "openai:gpt-6-astra",
+  "openai:gpt-6-astra-healthcare": "openai:gpt-6-1-sol-healthcare+gpt-6-2-astra-healthcare+gpt-6-2-sol-healthcare+gpt-6-astra-healthcare",
   "openai:gpt-live-1-1": "openai:gpt-live-1-1"
  },
  "meta": {
@@ -1960,6 +2406,78 @@
      "at": "2026-11-19T22:22:22+00:00",
      "message_id": 775,
      "telegram_date": 1795126942
+    }
+   },
+   "status": "SENT",
+   "verification": "OFFICIAL_CONFIRMED"
+  },
+  "openai:chat-latest@MAJOR_MODEL_UPGRADE:chat-latest|update|c1b189326e": {
+   "attempts": 1,
+   "category": "MAJOR_MODEL_UPGRADE",
+   "created": "2026-11-24T23:11:45+00:00",
+   "id": "openai:chat-latest@MAJOR_MODEL_UPGRADE:chat-latest|update|c1b189326e",
+   "kind": "update",
+   "last_error": null,
+   "log": [
+    "2026-11-24T23:11:49+00:00 SENT: Telegram confirmed message id(s) [931]",
+    "2026-11-24T23:11:50+00:00 delivery receipt SENT (message id 932)"
+   ],
+   "model_name": "Chat Latest",
+   "parts": [
+    "<b>🔄 MAJOR MODEL UPGRADE</b>\n<b>Chat Latest: Update · Model: chat-latest</b>\n<i>🟠 P1 High · OFFICIAL UPDATE · 📅 24 Nov 2026</i>\n🏢 OpenAI\n<b>What happened:</b> Updated the **chat-latest** snapshot, which points to the latest model available in ChatGPT for Plus, Pro, Business and Enterprise users. We recommend leveraging the GPT-6.2 model family for production API usage, but feel free to use this model to test the latest improvements for chat use cases. The underlying model snapshot will be regularly updated. Read more here.\n<b>Why it matters:</b> A new version of a model people already use: behaviour, quality or price may change.\n<b>Details:</b> chat-latest\n🔗 <a href=\"https://developers.openai.com/api/docs/changelog.md\">OpenAI API changelog</a>\n<i>official update to an existing model</i>\n<b>DELIVERY:</b> Pending Telegram confirmation."
+   ],
+   "priority": "P1",
+   "receipt": {
+    "at": "2026-11-24T23:11:50+00:00",
+    "message_id": 932,
+    "status": "SENT"
+   },
+   "release_id": "openai:chat-latest@MAJOR_MODEL_UPGRADE:chat-latest",
+   "sent_at": "2026-11-24T23:11:49+00:00",
+   "sent_parts": {
+    "0": {
+     "at": "2026-11-24T23:11:49+00:00",
+     "message_id": 931,
+     "telegram_date": 1795561909
+    }
+   },
+   "status": "SENT",
+   "verification": "OFFICIAL_UPDATE"
+  },
+  "openai:gpt-6-1-sol-healthcare+gpt-6-2-astra-healthcare+gpt-6-2-sol-healthcare+gpt-6-astra-healthcare|release|374b516523": {
+   "attempts": 1,
+   "category": "NEW_MODEL_RELEASE",
+   "created": "2026-11-24T23:11:45+00:00",
+   "id": "openai:gpt-6-1-sol-healthcare+gpt-6-2-astra-healthcare+gpt-6-2-sol-healthcare+gpt-6-astra-healthcare|release|374b516523",
+   "kind": "release",
+   "last_error": null,
+   "log": [
+    "2026-11-24T23:11:47+00:00 SENT: Telegram confirmed message id(s) [928, 929]",
+    "2026-11-24T23:11:48+00:00 delivery receipt SENT (message id 930)"
+   ],
+   "model_name": "GPT-6.2 Astra Healthcare + GPT-6.2 Sol Healthcare + GPT-6 Astra Healthcare + GPT-6.1 Sol Healthcare",
+   "parts": [
+    "🚨 <b>NEW AI MODEL RELEASE</b>\n<i>🚨 NEW MODEL RELEASES · 🟠 P1 High</i>\n\n<b>COMPANY:</b>\nOpenAI (GPT)\n\n<b>NEW MODEL:</b>\nGPT-6.2 Astra Healthcare + GPT-6.2 Sol Healthcare + GPT-6 Astra Healthcare + GPT-6.1 Sol Healthcare\n<code>gpt-6.2-astra-healthcare</code>, <code>gpt-6.2-sol-healthcare</code>, <code>gpt-6-astra-healthcare</code>, <code>gpt-6.1-sol-healthcare</code>\n\n<b>RELEASE INFORMATION:</b>\n• Announcement date: 24 November 2026\n• Availability date: 24 November 2026\n• Model category: New model release\n• Availability status: Not stated in the official sources\n• API access: Not stated in the official sources\n\n<b>WHAT'S NEW:</b>\n• Released Healthcare model configurations for the Responses API, pairing select OpenAI models with a harness tailored to clinical questions.\n\n<b>COMPARISON WITH PREVIOUS MODEL:</b>\nPrevious model: GPT-6.1 Sol (<code>gpt-6.1-sol</code>)\nNew model: GPT-6.2 Astra Healthcare + GPT-6.2 Sol Healthcare + GPT-6 Astra Healthcare + GPT-6.1 Sol Healthcare (<code>gpt-6.2-astra-healthcare</code>)\n<i>How the previous model was chosen: model lineage: same family, previous version (different tier, lower confidence)</i>\n\n<b>🧠 Reasoning</b> <i>(official specs)</i>\n• Previous: reasoning effort: low, medium (default), high, xhigh, and max.\n• New: <i>not established</i>\n\n<b>🖼 Multimodal</b> <i>(official specs)</i>\n• Previous: in: text, image · out: text\n• New: <i>not established</i>\n\n<b>📏 Context window</b> <i>(official specs)</i>\n• Previous: 1.05M tokens\n• New: <i>not established</i>\n\n<b>📤 Output limit</b> <i>(official specs)</i>\n• Previous: 128K tokens\n• New: <i>not established</i>\n\n<b>💰 API pricing</b> <i>(official specs)</i>\n• Previous: $2 input / $10 output per 1M tokens\n• New: <i>not established</i>\n\n<b>🌍 Availability</b> <i>(official specs)</i>\n• Previous: listed as available\n• New: <i>not established</i>\n\n<b>📈 Benchmarks</b>\n• Company-reported: none found in the official sources\n• Independent: none collected (the agent only reads official sources)\n\n<b>WHAT ACTUALLY IMPROVED:</b>\n• Nothing measurable could be established from the official sources yet.\n\n<b>WHAT HAS NOT BEEN ESTABLISHED:</b>\n• No evidence yet for: Architecture / family, Coding, Math &amp; problem-solving, Tool use &amp; agents, Speed &amp; latency\n• Benchmark scores (none in the official sources)\n• Independent benchmark results\n\n<b>OFFICIAL SOURCES:</b>\n• Original announcement: not published yet (the release was found in the official docs)\n• Official documentation: <a href=\"https://developers.openai.com/api/docs/changelog.md\">OpenAI API changelog</a>\n• Model information / API page: not listed yet\n\n<b>WHY THIS MATTERS:</b>\nOpenAI has a new GPT model. Builders should check whether it changes which model they use for their tasks and costs; for teaching, it is a chance to show how GPT models evolve.\n<i>(1/2)</i>",
+    "<b>💡 CONTENT OPPORTUNITIES</b>\n<i>Based on: GPT-6.2 Astra Healthcare + GPT-6.2 Sol Healthcare + GPT-6 Astra Healthcare + GPT-6.1 Sol Healthcare</i>\n<blockquote expandable><b>A. NEWS: OpenAI releases GPT-6.2 Astra Healthcare + GPT-6.2 Sol Healthcare + GPT-6 Astra Healthcare + GPT-6.1 Sol Healthcare: what&#x27;s new</b>\n<i>Angle:</i> What changed compared with GPT-6.1 Sol, who can use it and where.\n<i>Why it's interesting:</i> A new GPT model changes what builders and viewers can do.\n<i>Research or testing needed:</i> Read the full announcement; confirm pricing, limits and regional availability.\n\n<b>B. EDUCATION: How GPT-6.2 Astra Healthcare + GPT-6.2 Sol Healthcare + GPT-6 Astra Healthcare + GPT-6.1 Sol Healthcare works, explained</b>\n<i>Angle:</i> The capabilities and limits behind the announcement, in plain language.\n<i>Why it's interesting:</i> Viewers want to know when to use it, not just that it exists.\n<i>Research or testing needed:</i> Check the model card or system card; architecture details are often not disclosed.\n\n<b>C. ANALYSIS: GPT-6.2 Astra Healthcare + GPT-6.2 Sol Healthcare + GPT-6 Astra Healthcare + GPT-6.1 Sol Healthcare vs GPT-6.1 Sol: a hands-on test</b>\n<i>Angle:</i> Test the company&#x27;s claims on the same tasks with both models.\n<i>Why it's interesting:</i> Company benchmarks are self-reported; a fair test is real value for viewers.\n<i>Research or testing needed:</i> Run identical prompts on both; compare quality, speed and cost; look for independent benchmarks.\n\n<i>Ideas only. You decide what becomes a video or post.</i></blockquote>\n\n<b>VERIFICATION:</b>\nOFFICIAL CONFIRMED\n<i>not seen in any official catalog before; introduced by: OpenAI API changelog (changelog)</i>\n<i>AI reading by gemini/gemini-flash-lite-latest; 2 unsupported AI statements discarded</i>\n\n<b>DELIVERY:</b>\nPending Telegram confirmation.\n<i>(2/2)</i>"
+   ],
+   "priority": "P1",
+   "receipt": {
+    "at": "2026-11-24T23:11:48+00:00",
+    "message_id": 930,
+    "status": "SENT"
+   },
+   "release_id": "openai:gpt-6-1-sol-healthcare+gpt-6-2-astra-healthcare+gpt-6-2-sol-healthcare+gpt-6-astra-healthcare",
+   "sent_at": "2026-11-24T23:11:47+00:00",
+   "sent_parts": {
+    "0": {
+     "at": "2026-11-24T23:11:47+00:00",
+     "message_id": 928,
+     "telegram_date": 1795561907
+    },
+    "1": {
+     "at": "2026-11-24T23:11:47+00:00",
+     "message_id": 929,
+     "telegram_date": 1795561907
     }
    },
    "status": "SENT",
@@ -2161,6 +2679,36 @@
      "at": "2026-11-20T21:18:24+00:00",
      "message_id": 804,
      "telegram_date": 1795209504
+    }
+   },
+   "status": "SENT",
+   "verification": "REQUIRES_MANUAL_REVIEW"
+  },
+  "openai:gpt-6|review|b51d89ad09": {
+   "attempts": 1,
+   "category": "NEW_MODEL_RELEASE",
+   "created": "2026-11-24T23:08:31+00:00",
+   "id": "openai:gpt-6|review|b51d89ad09",
+   "kind": "review",
+   "last_error": null,
+   "log": [
+    "2026-11-24T23:11:46+00:00 SENT: Telegram confirmed message id(s) [927]"
+   ],
+   "model_name": "GPT-6",
+   "parts": [
+    "<b>🚨 POSSIBLE NEW MODEL: REQUIRES MANUAL REVIEW</b>\n<b>Possible new model: GPT-6</b>\n<i>🟠 P1 High · REQUIRES MANUAL REVIEW · 📅 24 Nov 2026</i>\n🏢 OpenAI\n<b>What happened:</b> An official OpenAI source points to GPT-6 (GPT-6), but it could not be verified automatically.\n<b>Why it matters:</b> It may be a new model. Check the sources before posting about it.\n<b>Details:</b> an official source mentions a model the agent has not seen before, without introducing it\n🔗 <a href=\"https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities\">OpenAI news</a> · <a href=\"https://openai.com/business/customer-stories/clay-plugins-openai\">OpenAI news</a>\n<b>DELIVERY:</b> Pending Telegram confirmation."
+   ],
+   "priority": "P1",
+   "receipt": {
+    "status": "NOT_NEEDED"
+   },
+   "release_id": "openai:gpt-6",
+   "sent_at": "2026-11-24T23:11:46+00:00",
+   "sent_parts": {
+    "0": {
+     "at": "2026-11-24T23:11:46+00:00",
+     "message_id": 927,
+     "telegram_date": 1795561906
     }
    },
    "status": "SENT",
@@ -7500,7 +8048,7 @@
      "knowledge_cutoff": "Jul 31, 2025",
      "output_modalities": "audio, text"
     },
-    "specs_checked": "2026-11-17T14:39:38+00:00",
+    "specs_checked": "2026-11-24T23:11:45+00:00",
     "status": "active"
    },
    "gpt-live-1.1": {
@@ -7528,7 +8076,7 @@
      "input_modalities": "audio, text",
      "output_modalities": "text"
     },
-    "specs_checked": "2026-11-17T23:04:02+00:00",
+    "specs_checked": "2026-11-24T23:11:45+00:00",
     "status": "active"
    },
    "gpt-oss-120b": {
@@ -10688,6 +11236,7 @@
   "Google Developers Blog": {
    "initialized": true,
    "seen": [
+    "2dd25b97ede7bebf",
     "e32eff4c33b7c593",
     "ee6631c8ba2851ab",
     "1db9ddaf91911f6e",
@@ -10723,6 +11272,8 @@
   "Google Gemini blog": {
    "initialized": true,
    "seen": [
+    "55df58cd391f3df3",
+    "7ad69e0a53c82c48",
     "4fe163eee8880b96",
     "0db0a6a9898a6b99",
     "321dc34f1e311926",
@@ -10899,6 +11450,8 @@
   "OpenAI API changelog": {
    "initialized": true,
    "seen": [
+    "8e030b1b1f5c155b",
+    "a3538c39702975fc",
     "154939ca3880c01c",
     "5d36d9b6ca2337bd",
     "c98d9dc796bd5bfb",
@@ -11547,6 +12100,11 @@
   "OpenAI news": {
    "initialized": true,
    "seen": [
+    "c1f6172fc7479329",
+    "c3940a82d91a7619",
+    "7f3262edbf36575d",
+    "72bde2e48336491c",
+    "e1235462a19d1cf1",
     "e7c6f54e87f0c50e",
     "a82990e8e472ade4",
     "2cee2f8b39b808a6",
@@ -13242,6 +13800,10 @@
   "models.dev listings (early signal)": {
    "initialized": true,
    "seen": [
+    "alibaba/kimi-k3.1-pro-prime",
+    "alibaba/kimi-k3.1-pro",
+    "alibaba/glm-5.3-prime",
+    "alibaba/qwen4-max",
     "google/gemini-4-neon",
     "openai/gpt-6.2-sol",
     "openai/gpt-6.2-astra",
