@@ -25,16 +25,16 @@
    "title": "Genie 4"
   },
   "model:openai:gpt-6": {
-   "at": "2026-11-20T21:18:24+00:00",
+   "at": "2026-11-24T02:21:13+00:00",
    "channel": "release",
    "priority": "P1",
-   "title": "GPT-6 Astra"
+   "title": "GPT-6"
   },
   "model:openai:gpt-6-2": {
-   "at": "2026-11-17T23:04:04+00:00",
-   "channel": "release",
-   "priority": "P0",
-   "title": "GPT-6.2 + GPT-6.2 Astra"
+   "at": "2026-11-24T02:21:23+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "OpenAI brings GPT-6.2 Sol to ChatGPT Chat and Dots to EU"
   },
   "model:openai:gpt-6-2-astra": {
    "at": "2026-11-17T23:04:04+00:00",
@@ -43,10 +43,10 @@
    "title": "GPT-6.2 + GPT-6.2 Astra"
   },
   "model:openai:gpt-6-2-sol": {
-   "at": "2026-11-17T23:04:05+00:00",
-   "channel": "release",
-   "priority": "P0",
-   "title": "GPT-6.2 Sol"
+   "at": "2026-11-24T02:21:23+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "OpenAI brings GPT-6.2 Sol to ChatGPT Chat and Dots to EU"
   },
   "model:openai:gpt-live-1-1": {
    "at": "2026-11-19T22:22:20+00:00",
@@ -804,6 +804,12 @@
    "priority": "P2",
    "title": "Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT"
   },
+  "title:brings chat chatgpt dots eu gpt-6.2 openai sol": {
+   "at": "2026-11-24T02:21:23+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "OpenAI brings GPT-6.2 Sol to ChatGPT Chat and Dots to EU"
+  },
   "title:care chatgpt forward healthcare more move ways": {
    "at": "2026-11-16T22:19:08+00:00",
    "channel": "alerts",
@@ -894,6 +900,12 @@
    "priority": "P3",
    "title": "Elon Musk Plans to Combine Tesla Traffic Data with Grok on X"
   },
+  "title:connected in-house intelligence legal": {
+   "at": "2026-11-24T02:21:23+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Connected intelligence for in-house legal"
+  },
   "title:consensus silent": {
    "at": "2026-11-18T22:10:54+00:00",
    "channel": "alerts",
@@ -965,6 +977,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "Qwen4-Max vs GLM-5.4: One Shipped, One Missed the Window - OrcaRouter"
+  },
+  "title:gpt-6": {
+   "at": "2026-11-24T02:21:13+00:00",
+   "channel": "release",
+   "priority": "P1",
+   "title": "GPT-6"
   },
   "title:gpt-6 luna": {
    "at": "2026-11-20T21:18:28+00:00",
@@ -3050,6 +3068,12 @@
    "priority": "P2",
    "title": "How Revolut raises ambition without lowering the bar"
   },
+  "url:https://openai.com/business/customer-stories/richpanel-ai-customer-support": {
+   "at": "2026-11-24T02:21:13+00:00",
+   "channel": "release",
+   "priority": "P1",
+   "title": "GPT-6"
+  },
   "url:https://openai.com/business/customer-stories/sumitomo-life": {
    "at": "2026-11-19T03:40:14+00:00",
    "channel": "alerts",
@@ -3061,6 +3085,12 @@
    "channel": "alerts",
    "priority": "P2",
    "title": "Explore the Codex Security Plugin"
+  },
+  "url:https://openai.com/business/learn/connected-intelligence-for-in-house-legal": {
+   "at": "2026-11-24T02:21:23+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Connected intelligence for in-house legal"
   },
   "url:https://openai.com/business/learn/daybreak-blue-onboarding-demo": {
    "at": "2026-11-20T03:31:17+00:00",
@@ -3529,6 +3559,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "Microsoft launches MAI Cyber 2 Flash security model"
+  },
+  "url:https://testingcatalog.com/openai-brings-gpt-6-2-sol-to-chatgpt-chat-and-dots-to-eu": {
+   "at": "2026-11-24T02:21:23+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "OpenAI brings GPT-6.2 Sol to ChatGPT Chat and Dots to EU"
   },
   "url:https://testingcatalog.com/openai-launches-gpt-6-2-astra-and-sol-on-chatgpt-and-apis": {
    "at": "2026-11-17T20:58:16+00:00",

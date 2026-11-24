@@ -1,6 +1,38 @@
 {
  "changes": [
   {
+   "at": "2026-11-24T02:21:12+00:00",
+   "category": "PRODUCT_OR_FEATURE_ANNOUNCEMENT",
+   "company": "google",
+   "model": "Gemini 2.5 Flash",
+   "sources": [
+    "Google Developers Blog"
+   ],
+   "title": "Did the user ask for this? Securing AI agents against intent hijacking with Semantic governance policies"
+  },
+  {
+   "at": "2026-11-24T02:21:12+00:00",
+   "category": "PRODUCT_OR_FEATURE_ANNOUNCEMENT",
+   "company": "google",
+   "model": "Gemini 4 Hydrogen",
+   "sources": [
+    "Google Gemini blog"
+   ],
+   "title": "See what 6 builders are making with Gemini 4 Hydrogen"
+  },
+  {
+   "at": "2026-11-24T02:21:12+00:00",
+   "category": "DOCUMENTATION_OR_PRICING_CHANGE",
+   "company": "anthropic",
+   "model": "claude-opus-4-5-20251101",
+   "sources": [
+    "Claude Platform release notes",
+    "Claude Platform release notes",
+    "Claude model deprecations"
+   ],
+   "title": "We announced the deprecation of the Claude Opus 4.5 model ( claude-opus-4-5-20251101 and claude-opus-4-5 ), with retirement on the Claude API scheduled for January 22, 2027."
+  },
+  {
    "at": "2026-11-20T21:18:24+00:00",
    "category": "DOCUMENTATION_OR_PRICING_CHANGE",
    "company": "xai",
@@ -318,6 +350,56 @@
    "priority": "P1",
    "source_url": "https://aistudio.google.com/docs/changelog.md",
    "verification": "REQUIRES_MANUAL_REVIEW"
+  },
+  "google:gemini-4-carbon": {
+   "announcement_date": null,
+   "availability_date": null,
+   "availability_status": null,
+   "classification": "UNCONFIRMED_EARLY_SIGNAL",
+   "company": "google",
+   "comparison_summary": "Google adds task checklists to Antigravity and Carbon for Pro",
+   "delivery": {
+    "attempts": 0,
+    "last_error": null,
+    "message_ids": [],
+    "notification": null,
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "details": {
+    "reasons": [
+     "only third-party sources so far: TestingCatalog (early signal)"
+    ],
+    "text": "Google resets Antigravity quotas, opens Gemini 4 Carbon to paid Pro users and Hydrogen to all, and adds Orchestrator settings and checklists."
+   },
+   "duplicates": 0,
+   "events": [
+    {
+     "at": "2026-11-24T02:21:12+00:00",
+     "note": "only third-party sources so far: TestingCatalog (early signal)",
+     "type": "detected"
+    }
+   ],
+   "fingerprints": [
+    "https://testingcatalog.com/google-adds-task-checklists-to-antigravity-and-carbon-for-pro"
+   ],
+   "first_detected": "2026-11-24T02:21:12+00:00",
+   "id": "google:gemini-4-carbon",
+   "last_updated": "2026-11-24T02:21:12+00:00",
+   "model_ids": [
+    "Gemini 4 Carbon"
+   ],
+   "model_name": "Gemini 4 Carbon",
+   "official_sources": [
+    {
+     "source": "TestingCatalog (early signal)",
+     "url": "https://www.testingcatalog.com/google-adds-task-checklists-to-antigravity-and-carbon-for-pro/"
+    }
+   ],
+   "previous_model": null,
+   "priority": "P2",
+   "source_url": "https://www.testingcatalog.com/google-adds-task-checklists-to-antigravity-and-carbon-for-pro/",
+   "verification": "UNCONFIRMED"
   },
   "google:gemini-4-neon": {
    "announcement_date": "2026-11-18",
@@ -697,9 +779,9 @@
    "verification": "OFFICIAL_CONFIRMED"
   },
   "openai:gpt-6": {
-   "announcement_date": "2026-11-20",
+   "announcement_date": "2026-11-23",
    "availability_date": null,
-   "availability_status": "prerelease build",
+   "availability_status": "Not stated in the official sources",
    "classification": "NEW_MODEL_RELEASE",
    "company": "openai",
    "comparison_summary": "compared with GPT-5.5",
@@ -707,53 +789,21 @@
     "attempts": 1,
     "last_error": null,
     "message_ids": [
-     804
+     901
     ],
-    "notification": "openai:gpt-6|review|91db9bd4d7",
-    "sent_at": "2026-11-20T21:18:24+00:00",
+    "notification": "openai:gpt-6|review|d45c1b144d",
+    "sent_at": "2026-11-24T02:21:13+00:00",
     "status": "SENT"
    },
    "details": {
-    "ai_model": "gemini/gemini-flash-lite-latest",
+    "ai_model": "gemini/gemini-flash-latest",
     "api_access": "Not stated in the official sources",
-    "benchmarks": [
-     {
-      "name": "citing the required types of sources",
-      "new": "13.6 percentage points above the best alternative tested",
-      "previous": "",
-      "quote": "It scored 13.6 percentage points above the best alternative tested on citing the required types of sources",
-      "source": 1
-     },
-     {
-      "name": "relevant excerpts cited",
-      "new": "99.5%",
-      "previous": "",
-      "quote": "while 99.5% of the excerpts it cited were relevant to the question.",
-      "source": 1
-     },
-     {
-      "name": "applicable presentation requirements met",
-      "new": "97.9%",
-      "previous": "",
-      "quote": "It met 97.9% of the applicable presentation requirements, putting it 14.4 percentage points ahead of the best alternative tested on that measure.",
-      "source": 1
-     }
-    ],
+    "benchmarks": [],
     "claims": [
      {
-      "quote": "It scored 13.6 percentage points above the best alternative tested on citing the required types of sources, while 99.5% of the excerpts it cited were relevant to the question.",
+      "quote": "In each of the cases, the AI is beating human support agents when it comes to customer satisfaction.",
       "source": 1,
-      "text": "GPT-6 Astra scored 13.6 percentage points above the best alternative tested on citing the required types of sources."
-     },
-     {
-      "quote": "while 99.5% of the excerpts it cited were relevant to the question.",
-      "source": 1,
-      "text": "99.5% of the excerpts cited by GPT-6 Astra were relevant to the question."
-     },
-     {
-      "quote": "It met 97.9% of the applicable presentation requirements, putting it 14.4 percentage points ahead of the best alternative tested on that measure.",
-      "source": 1,
-      "text": "GPT-6 Astra met 97.9% of the applicable presentation requirements in Hebbia's tests."
+      "text": "The deployed AI customer support agents outperform human agents in customer satisfaction."
      }
     ],
     "comparison": {
@@ -789,12 +839,11 @@
      }
     },
     "explain": {
-     "care": "It demonstrates advancements in source traceability and native document generation that can power more reliable professional AI agents.",
-     "different": "It ranks first on both instruction following and presentation craft, whereas previous models traded off one for the other.",
-     "does": "Finds required sources, cites relevant excerpts, and builds presentation slides that follow user instructions and branding guidelines.",
-     "introduced": "GPT-6 Astra",
-     "problem": "Financial research and deck preparation traditionally require manual source checking and tedious reformatting.",
-     "who": "Finance professionals and enterprise knowledge workers."
+     "care": "Demonstrates an architecture where expensive models build procedures while economical models handle conversation volume.",
+     "does": "Handles tool configuration, procedure generation, and high-volume customer support conversations across long contexts.",
+     "introduced": "GPT-6 Astra, GPT-6.1 Sol, and GPT-6 Luna referenced in an enterprise support agent deployment.",
+     "problem": "Manual forward-deployed engineering and setup bottlenecks required to connect agents to complex business systems.",
+     "who": "Customer support automation platforms and businesses needing cost-effective multi-agent operations."
     },
     "flagship": true,
     "improved": [],
@@ -822,7 +871,7 @@
     },
     "unchanged": [],
     "whats_new": [
-     "GPT-6 Astra combines broader source coverage with highly relevant citations and presentation generation capabilities."
+     "OpenAI provides models capable of handling long context and longer tasks cost-efficiently."
     ]
    },
    "duplicates": 0,
@@ -841,24 +890,29 @@
      "at": "2026-11-20T21:18:24+00:00",
      "note": "UNCONFIRMED → REQUIRES_MANUAL_REVIEW",
      "type": "confirmed"
+    },
+    {
+     "at": "2026-11-24T02:21:12+00:00",
+     "note": "REQUIRES_MANUAL_REVIEW → REQUIRES_MANUAL_REVIEW",
+     "type": "updated"
     }
    ],
    "fingerprints": [
-    "e3d92c736c1174dd",
-    "https://openai.com/business/customer-stories/hebbia"
+    "b4ece334f56cbe45",
+    "https://openai.com/business/customer-stories/richpanel-ai-customer-support"
    ],
    "first_detected": "2026-11-17T23:04:02+00:00",
    "id": "openai:gpt-6",
-   "last_updated": "2026-11-20T21:18:24+00:00",
+   "last_updated": "2026-11-24T02:21:13+00:00",
    "model_ids": [
     "GPT-6"
    ],
-   "model_name": "GPT-6 Astra",
+   "model_name": "GPT-6",
    "official_sources": [
     {
      "kind": "announcement",
      "source": "OpenAI news",
-     "url": "https://openai.com/business/customer-stories/hebbia"
+     "url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support"
     }
    ],
    "previous_model": {
@@ -867,7 +921,7 @@
     "name": "GPT-5.5"
    },
    "priority": "P1",
-   "source_url": "https://openai.com/business/customer-stories/hebbia",
+   "source_url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
    "verification": "REQUIRES_MANUAL_REVIEW"
   },
   "openai:gpt-6-1-terra@MODEL_AVAILABILITY:2026-11": {
@@ -1047,7 +1101,7 @@
      "Background completion windows of two or eight hours offer up to 40% lower token rates in the Responses API public beta."
     ]
    },
-   "duplicates": 2,
+   "duplicates": 3,
    "events": [
     {
      "at": "2026-11-17T23:01:21+00:00",
@@ -1063,6 +1117,11 @@
      "at": "2026-11-20T21:18:24+00:00",
      "note": "OpenAI API changelog",
      "type": "duplicate"
+    },
+    {
+     "at": "2026-11-24T02:21:12+00:00",
+     "note": "TestingCatalog (early signal)",
+     "type": "duplicate"
     }
    ],
    "fingerprints": [
@@ -1074,7 +1133,7 @@
    ],
    "first_detected": "2026-11-17T23:01:21+00:00",
    "id": "openai:gpt-6-2+gpt-6-2-astra",
-   "last_updated": "2026-11-20T21:18:24+00:00",
+   "last_updated": "2026-11-24T02:21:12+00:00",
    "model_ids": [
     "GPT-6.2",
     "gpt-6.2-astra"
@@ -1302,7 +1361,7 @@
      "Background completions in the Responses API public beta offer reduced token rates for two-hour and eight-hour processing windows."
     ]
    },
-   "duplicates": 2,
+   "duplicates": 3,
    "events": [
     {
      "at": "2026-11-17T23:04:02+00:00",
@@ -1318,6 +1377,11 @@
      "at": "2026-11-20T21:18:24+00:00",
      "note": "OpenAI API changelog",
      "type": "duplicate"
+    },
+    {
+     "at": "2026-11-24T02:21:12+00:00",
+     "note": "TestingCatalog (early signal)",
+     "type": "duplicate"
     }
    ],
    "fingerprints": [
@@ -1327,7 +1391,7 @@
    ],
    "first_detected": "2026-11-17T23:04:02+00:00",
    "id": "openai:gpt-6-2-sol",
-   "last_updated": "2026-11-20T21:18:24+00:00",
+   "last_updated": "2026-11-24T02:21:12+00:00",
    "model_ids": [
     "gpt-6.2-sol"
    ],
@@ -1699,6 +1763,7 @@
  "index": {
   "alibaba:qwen-audio-3-1-live": "alibaba:qwen-audio-3-1-live",
   "google:gemini-3-6": "google:gemini-3-6",
+  "google:gemini-4-carbon": "google:gemini-4-carbon",
   "google:gemini-4-neon": "google:gemini-4-neon",
   "google:genie-4": "google:genie-4",
   "openai:gpt-6": "openai:gpt-6",
@@ -2096,6 +2161,36 @@
      "at": "2026-11-20T21:18:24+00:00",
      "message_id": 804,
      "telegram_date": 1795209504
+    }
+   },
+   "status": "SENT",
+   "verification": "REQUIRES_MANUAL_REVIEW"
+  },
+  "openai:gpt-6|review|d45c1b144d": {
+   "attempts": 1,
+   "category": "NEW_MODEL_RELEASE",
+   "created": "2026-11-24T02:21:12+00:00",
+   "id": "openai:gpt-6|review|d45c1b144d",
+   "kind": "review",
+   "last_error": null,
+   "log": [
+    "2026-11-24T02:21:13+00:00 SENT: Telegram confirmed message id(s) [901]"
+   ],
+   "model_name": "GPT-6",
+   "parts": [
+    "<b>🚨 POSSIBLE NEW MODEL: REQUIRES MANUAL REVIEW</b>\n<b>Possible new model: GPT-6</b>\n<i>🟠 P1 High · REQUIRES MANUAL REVIEW · 📅 23 Nov 2026</i>\n🏢 OpenAI\n<b>What happened:</b> An official OpenAI source points to GPT-6 (GPT-6), but it could not be verified automatically.\n<b>Why it matters:</b> It may be a new model. Check the sources before posting about it.\n<b>Details:</b> an official source mentions a model the agent has not seen before, without introducing it\n🔗 <a href=\"https://openai.com/business/customer-stories/richpanel-ai-customer-support\">OpenAI news</a>\n<b>DELIVERY:</b> Pending Telegram confirmation."
+   ],
+   "priority": "P1",
+   "receipt": {
+    "status": "NOT_NEEDED"
+   },
+   "release_id": "openai:gpt-6",
+   "sent_at": "2026-11-24T02:21:13+00:00",
+   "sent_parts": {
+    "0": {
+     "at": "2026-11-24T02:21:13+00:00",
+     "message_id": 901,
+     "telegram_date": 1795486873
     }
    },
    "status": "SENT",
@@ -4955,9 +5050,9 @@
      "Claude model deprecations"
     ],
     "specs": {
-     "retirement": "Not sooner than November 24, 2026"
+     "retirement": "January 22, 2027"
     },
-    "status": "active"
+    "status": "deprecated"
    },
    "claude-opus-4-6": {
     "first_seen": "2026-11-16T22:18:58+00:00",
@@ -7342,7 +7437,7 @@
      "output_modalities": "image",
      "output_price": 30.0
     },
-    "specs_checked": "2026-11-16T22:18:59+00:00",
+    "specs_checked": "2026-11-24T02:21:12+00:00",
     "status": "active"
    },
    "gpt-image-2.5-sunburst": {
@@ -7358,7 +7453,7 @@
      "output_modalities": "image",
      "output_price": 30.0
     },
-    "specs_checked": "2026-11-16T22:18:59+00:00",
+    "specs_checked": "2026-11-24T02:21:12+00:00",
     "status": "active"
    },
    "gpt-image-2.6-flare": {
@@ -7374,7 +7469,7 @@
      "output_modalities": "image",
      "output_price": 30.0
     },
-    "specs_checked": "2026-11-16T22:18:59+00:00",
+    "specs_checked": "2026-11-24T02:21:12+00:00",
     "status": "active"
    },
    "gpt-image-2.6-sunburst": {
@@ -7390,7 +7485,7 @@
      "output_modalities": "image",
      "output_price": 30.0
     },
-    "specs_checked": "2026-11-16T22:18:59+00:00",
+    "specs_checked": "2026-11-24T02:21:13+00:00",
     "status": "active"
    },
    "gpt-live-1": {
@@ -9006,6 +9101,9 @@
   "Claude Platform release notes": {
    "initialized": true,
    "seen": [
+    "ae87daee607807d6",
+    "94cf907091c020dd",
+    "48bdb01a10648935",
     "2770640e83de3c0d",
     "ee41ca5a5d051d65",
     "9ce5807c1e468b4f",
@@ -9475,8 +9573,8 @@
      "status": "retired"
     },
     "claude-opus-4-5-20251101": {
-     "h": "ab0ab18453df",
-     "status": "active"
+     "h": "f9d834941f7b",
+     "status": "deprecated"
     },
     "claude-opus-4-6": {
      "h": "aebf59a3c4b2",
@@ -10482,6 +10580,7 @@
   "Google DeepMind blog": {
    "initialized": true,
    "seen": [
+    "0c9da2c9f5e742c1",
     "9ee12424a91a2976",
     "d031709d30c1cda7",
     "d79d22c00e7156a8",
@@ -10589,6 +10688,7 @@
   "Google Developers Blog": {
    "initialized": true,
    "seen": [
+    "e32eff4c33b7c593",
     "ee6631c8ba2851ab",
     "1db9ddaf91911f6e",
     "0c86b6fe5ad4a011",
@@ -10623,6 +10723,9 @@
   "Google Gemini blog": {
    "initialized": true,
    "seen": [
+    "4fe163eee8880b96",
+    "0db0a6a9898a6b99",
+    "321dc34f1e311926",
     "fcc300f2809ec027",
     "f633fe4c76408be8",
     "60fb76fee2d6c18d",
@@ -11444,6 +11547,9 @@
   "OpenAI news": {
    "initialized": true,
    "seen": [
+    "e7c6f54e87f0c50e",
+    "a82990e8e472ade4",
+    "2cee2f8b39b808a6",
     "fb9b7e5837ad9582",
     "3bfe80ddf02507a0",
     "b8d0beaa4013d3b3",
@@ -13096,6 +13202,8 @@
   "TestingCatalog (early signal)": {
    "initialized": true,
    "seen": [
+    "446722d0a4378948",
+    "e3a21332b100485f",
     "33c09688ed95513e",
     "7595b89419bd9d11",
     "3f1a0056d7aac62e",
