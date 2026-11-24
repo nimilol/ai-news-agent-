@@ -1446,6 +1446,11 @@
    "channel": "discovery",
    "title": "awdr74100/figwright"
   },
+  "url:https://github.com/awslabs/cli-agent-orchestrator": {
+   "at": "2026-11-24T14:05:37+00:00",
+   "channel": "discovery",
+   "title": "awslabs/cli-agent-orchestrator"
+  },
   "url:https://github.com/awslabs/uaef": {
    "at": "2026-11-22T01:33:01+00:00",
    "channel": "discovery",
@@ -1706,6 +1711,11 @@
    "channel": "discovery",
    "title": "haydenschmitty/floorplan"
   },
+  "url:https://github.com/hidai25/eval-view": {
+   "at": "2026-11-24T14:05:37+00:00",
+   "channel": "discovery",
+   "title": "hidai25/eval-view"
+  },
   "url:https://github.com/huggingface/pybot": {
    "at": "2026-11-16T23:48:27+00:00",
    "channel": "discovery",
@@ -1730,6 +1740,11 @@
    "at": "2026-11-18T20:50:39+00:00",
    "channel": "discovery",
    "title": "Jakeschincariol/replica-skill"
+  },
+  "url:https://github.com/jiji262/claude-design-skill": {
+   "at": "2026-11-24T14:05:37+00:00",
+   "channel": "discovery",
+   "title": "jiji262/claude-design-skill"
   },
   "url:https://github.com/jmanico/grim-prompter": {
    "at": "2026-11-22T11:50:20+00:00",
@@ -1791,10 +1806,20 @@
    "channel": "discovery",
    "title": "ling-stack-org/ling-stack"
   },
+  "url:https://github.com/locvel/voite": {
+   "at": "2026-11-24T14:05:37+00:00",
+   "channel": "discovery",
+   "title": "locvel/voite"
+  },
   "url:https://github.com/lodyai/lody": {
    "at": "2026-11-20T02:29:58+00:00",
    "channel": "discovery",
    "title": "LodyAI/Lody"
+  },
+  "url:https://github.com/loopx-project/loopx": {
+   "at": "2026-11-24T14:05:37+00:00",
+   "channel": "discovery",
+   "title": "loopx-project/loopx"
   },
   "url:https://github.com/mamawai/wtfibought": {
    "at": "2026-11-23T13:26:43+00:00",
@@ -2098,6 +2123,11 @@
    "channel": "discovery",
    "title": "the-open-engine/zeroshot"
   },
+  "url:https://github.com/tonhowtf/omniget": {
+   "at": "2026-11-24T14:05:37+00:00",
+   "channel": "discovery",
+   "title": "tonhowtf/omniget"
+  },
   "url:https://github.com/truera/trulens": {
    "at": "2026-11-22T11:50:20+00:00",
    "channel": "discovery",
@@ -2138,6 +2168,11 @@
    "channel": "discovery",
    "title": "VoxDance-Lab/VoxMel"
   },
+  "url:https://github.com/wangrongding/superhive": {
+   "at": "2026-11-24T14:05:37+00:00",
+   "channel": "discovery",
+   "title": "wangrongding/SuperHive"
+  },
   "url:https://github.com/wgjsg/agilex-docs-mcp": {
    "at": "2026-11-16T23:48:27+00:00",
    "channel": "discovery",
@@ -2147,6 +2182,11 @@
    "at": "2026-11-22T11:50:20+00:00",
    "channel": "discovery",
    "title": "YOLOW92/pagesift"
+  },
+  "url:https://github.com/zereight/gitlab-mcp": {
+   "at": "2026-11-24T14:05:37+00:00",
+   "channel": "discovery",
+   "title": "zereight/gitlab-mcp"
   },
   "url:https://github.com/zichuanlan/agent-purge": {
    "at": "2026-11-22T19:54:50+00:00",
