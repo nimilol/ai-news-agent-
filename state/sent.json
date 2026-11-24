@@ -1518,6 +1518,11 @@
    "channel": "discovery",
    "title": "EL4CTEO/blender-skills"
   },
+  "url:https://github.com/el4cteo/fast-anything": {
+   "at": "2026-11-24T02:29:06+00:00",
+   "channel": "discovery",
+   "title": "EL4CTEO/fast-anything"
+  },
   "url:https://github.com/elementalsouls/claude-bughunter": {
    "at": "2026-11-17T08:15:30+00:00",
    "channel": "discovery",
@@ -1905,6 +1910,11 @@
    "channel": "discovery",
    "title": "PrefectHQ/fastmcp"
   },
+  "url:https://github.com/pvjbuilds/delegate-router": {
+   "at": "2026-11-24T02:29:06+00:00",
+   "channel": "discovery",
+   "title": "pvjbuilds/delegate-router"
+  },
   "url:https://github.com/pydantic/pydantic-ai": {
    "at": "2026-11-19T02:46:27+00:00",
    "channel": "discovery",
@@ -1940,15 +1950,30 @@
    "channel": "discovery",
    "title": "rehan-remade/universal-modder"
   },
+  "url:https://github.com/renakoni/voicebox": {
+   "at": "2026-11-24T02:29:06+00:00",
+   "channel": "discovery",
+   "title": "Renakoni/Voicebox"
+  },
   "url:https://github.com/repoprompt/repoprompt-ce": {
    "at": "2026-11-23T01:59:00+00:00",
    "channel": "discovery",
    "title": "repoprompt/repoprompt-ce"
   },
+  "url:https://github.com/rikinshah787/dotpals": {
+   "at": "2026-11-24T02:29:06+00:00",
+   "channel": "discovery",
+   "title": "Rikinshah787/dotpals"
+  },
   "url:https://github.com/rustxng/rustxng": {
    "at": "2026-11-21T19:40:04+00:00",
    "channel": "discovery",
    "title": "RustXNG/RustXNG"
+  },
+  "url:https://github.com/sahilmahendrakar/paradee": {
+   "at": "2026-11-24T02:29:06+00:00",
+   "channel": "discovery",
+   "title": "sahilmahendrakar/paradee"
   },
   "url:https://github.com/sallyn0225/eidolon-sc": {
    "at": "2026-11-18T12:02:42+00:00",
@@ -2000,6 +2025,16 @@
    "channel": "discovery",
    "title": "truera/trulens"
   },
+  "url:https://github.com/trustabl/agent-reliability-skills": {
+   "at": "2026-11-24T02:29:06+00:00",
+   "channel": "discovery",
+   "title": "trustabl/agent-reliability-skills"
+  },
+  "url:https://github.com/tylerprogramming/ai": {
+   "at": "2026-11-24T02:29:06+00:00",
+   "channel": "discovery",
+   "title": "tylerprogramming/ai"
+  },
   "url:https://github.com/uclanlp/openvlharness": {
    "at": "2026-11-22T01:33:01+00:00",
    "channel": "discovery",
@@ -2019,6 +2054,11 @@
    "at": "2026-11-21T02:42:19+00:00",
    "channel": "discovery",
    "title": "vincentsch/explainroo"
+  },
+  "url:https://github.com/voxdance-lab/voxmel": {
+   "at": "2026-11-24T02:29:06+00:00",
+   "channel": "discovery",
+   "title": "VoxDance-Lab/VoxMel"
   },
   "url:https://github.com/wgjsg/agilex-docs-mcp": {
    "at": "2026-11-16T23:48:27+00:00",
