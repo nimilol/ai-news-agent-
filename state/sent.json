@@ -114,6 +114,12 @@
    "priority": "P3",
    "title": "Anthropic mathematician claims he used Claude to prove 19th-century Riemann hypothesis - The Guardian"
   },
+  "title:1m context glm-5.3-flashx-legal lists model token z.ai": {
+   "at": "2026-11-24T22:29:22+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Z.AI lists GLM-5.3-FlashX-Legal model with 1M token context"
+  },
   "title:1m king launch openai partnership trust": {
    "at": "2026-11-16T22:19:08+00:00",
    "channel": "alerts",
@@ -246,6 +252,12 @@
    "priority": "P1",
    "title": "Anthropic Prices IPO at $83 and Raises $81.3 Billion on Nasdaq"
   },
+  "title:83 amid anthropic below fall ipo market price shares slide": {
+   "at": "2026-11-24T22:29:22+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic shares fall below $83 IPO price amid market slide"
+  },
   "title:83 anthropic initial offering per prices public share": {
    "at": "2026-11-19T07:27:18+00:00",
    "channel": "digest",
@@ -354,6 +366,12 @@
    "priority": "P2",
    "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ option to purchase additional shares, and closing of concurrent"
   },
+  "title:addresses chatgpt dots email openai prepares standalone": {
+   "at": "2026-11-24T22:29:22+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "OpenAI prepares standalone email addresses for ChatGPT Dots"
+  },
   "title:adds anthropic beta claude computer enterprise meetings team use": {
    "at": "2026-11-21T07:09:49+00:00",
    "channel": "digest",
@@ -371,6 +389,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "Anthropic adds text watermarking to outputs from Opus and Sonnet models"
+  },
+  "title:adds api configurations family gpt-6.2 healthcare model openai": {
+   "at": "2026-11-24T22:29:22+00:00",
+   "channel": "digest",
+   "priority": "P0",
+   "title": "OpenAI adds GPT-6.2 model family and healthcare configurations to its API"
   },
   "title:adds classifier controls csam developers image openai safety": {
    "at": "2026-11-16T22:02:32+00:00",
@@ -810,6 +834,12 @@
    "priority": "P1",
    "title": "OpenAI begins embedded safety evaluations with external research labs"
   },
+  "title:beta claude cloud integration monthly out recap task": {
+   "at": "2026-11-24T22:29:22+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Claude Monthly Recap out of beta with cloud task integration"
+  },
   "title:blue daybreak get started": {
    "at": "2026-11-20T03:31:17+00:00",
    "channel": "alerts",
@@ -1127,6 +1157,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "Anthropic Crypto Bets Imply $1.7 Trillion Value Despite AI Rout - Bloomberg"
+  },
+  "url:https://bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading": {
+   "at": "2026-11-24T22:29:22+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic shares fall below $83 IPO price amid market slide"
   },
   "url:https://bloomberg.com/news/newsletters/2026-11-17/anthropic-is-shooting-for-the-ipo-pricing-moon-evening-briefing-americas": {
    "at": "2026-11-18T07:29:18+00:00",
@@ -2215,10 +2251,10 @@
    "title": "OpenAI rolls out GPT-6.2 Sol for chat tab and web search"
   },
   "url:https://help.openai.com/articles/9624314-model-release-notes": {
-   "at": "2026-11-21T07:09:49+00:00",
+   "at": "2026-11-24T22:29:22+00:00",
    "channel": "digest",
    "priority": "P0",
-   "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol in API"
+   "title": "OpenAI adds GPT-6.2 model family and healthcare configurations to its API"
   },
   "url:https://hollywoodreporter.com/news/general-news/ashton-kutcher-billionaire-anthropic-ipo-1236759822": {
    "at": "2026-11-20T07:17:37+00:00",
@@ -2279,10 +2315,16 @@
    "title": "Anthropic completes record $81.3 B IPO on Nasdaq at $1.5 T valuation"
   },
   "url:https://models.dev/": {
-   "at": "2026-11-23T23:53:32+00:00",
+   "at": "2026-11-24T22:29:22+00:00",
    "channel": "digest",
-   "priority": "P3",
-   "title": "OpenCode lists Qwen4 Max Free model"
+   "priority": "P2",
+   "title": "Z.AI lists GLM-5.3-FlashX-Legal model with 1M token context"
+  },
+  "url:https://msn.com/money/top-stocks/anthropic-stock-sinks-below-ipo-price-why-that-s-happened-so-fast/ar-aa2i7rqa": {
+   "at": "2026-11-24T22:29:22+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic shares fall below $83 IPO price amid market slide"
   },
   "url:https://nbcnews.com/tech/tech-news/california-sues-chatgpt-maker-openai-rogue-hacking-incidents-rcna609596": {
    "at": "2026-11-17T07:57:43+00:00",
@@ -2337,6 +2379,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "Anthropic IPO price expected to price at top of range or above amid high demand"
+  },
+  "url:https://news.google.com/rss/articles/cbmi4afbvv95cuxqq1zizkpfqvpiv0szmfjjuk1vn2hydhvulwnfbkvqmdfbd1lnm3g0aufuqjvunlfxtnpxyv8tcdn6zfzfqnvjclfpovjqc25wse9zt2xjmuvwmklvwxf5dw9cnxz0ownwvkhotmn6ogfqrfozbus4wjllrvrtwwdocjnovg5gc21pqna0whrhtl92mmxdcms1q3rurxhsswfitnlbdg51evqys0mxoxy2t0fkdlb6di11tlnunluxmnl1vkzss1vks3zvnvj0rxoxahzoqudtbwlasmqwa0z4nq": {
+   "at": "2026-11-24T22:29:22+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic shares fall below $83 IPO price amid market slide"
   },
   "url:https://news.google.com/rss/articles/cbmi4wfbvv95cuxod0t0og1cqv9pby11wdlvwgp0wezit3vwuzzhddg0dzbwqudyx29tngcywfv3me5mskx2vmhzqu5tc2rxseh6r2ztzhuyy3zlzmnuaxdxdwzsetf5c18zwlntwmv3mwhmwfpcblbvmmdssep5yjy1thr1nhlqskptx081clbjru13zznkzhnhzxnirfbpy1vmdgrknf9iwg1vt3fyzjrvyutvmdleay0zc1rxdkdytu5twnb3rgk5nuhvogprujexc2dyt2jsbhq1bld5v0zls3l3ewftuhvbwmpeuq": {
    "at": "2026-11-21T07:09:49+00:00",
@@ -2547,6 +2595,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic Finalizes Pricing for Blockbuster IPO Amid High Demand"
+  },
+  "url:https://news.google.com/rss/articles/cbmifefvx3lxtfbxsgxksk92nthxemttmvyymzm1oxlveu1roeytm2lia2fjqja4dw5jseu0vdblvwf0ahfnujlfvlliu1gzsdvibllxsuuwym1mwkl6azv0a19hqjdqaw0wwg1zsmitrtziqlrzvwvvn0lzs0itnwmxb2dcslnsayibqvvfexfmt1p0ckc3akjru1zwn2rhy2tlt29gvujwz3ffzuhau1lrt2xtb1lhchr4cy0xqxdhdudmcglbuzytu3azc1b5zzjfruxjdmltnmz4rjewqs1zetdhx3zitejvbehpamhucjflv0j6rzy0ujjqcjzsctd5rzbjqtnby3fsqq": {
+   "at": "2026-11-24T22:29:22+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic shares fall below $83 IPO price amid market slide"
   },
   "url:https://news.google.com/rss/articles/cbmifkfvx3lxte9fmg1ku0o0nerzutnymkszyvjhbgnjd2hnd3bgq21usfutwc1kouncskhxczlkqlvcvmoxzdhqrumtothwzglxwnvcvjryyljqaenhn1hsuup5rxdmqzf2z0wwyw9wdvl4b1vrdg4tsxphuvqxtnjznvk2n0i2dw": {
    "at": "2026-11-19T20:39:31+00:00",
@@ -2956,6 +3010,12 @@
    "priority": "P1",
    "title": "Anthropic hits Nasdaq in largest IPO in history at $2T valuation"
   },
+  "url:https://news.google.com/rss/articles/cbmiowfbvv95cuxnmhbnovy5rdc1nmxuujnnzknhlwroqkhuofzpvmq0sei0ug9asupttjhpv3eydtnkdw8xym1kowf6oxg2z3bmaujcwte3wnfcm0hczgnuq3zkuklsyurovwqzdexoamnkvljlrtgwywpoyvdoujldy0pxtmxzajlvckj4chc0tg1hbw1zukszadz2m2rvd3rqtwrfavrenxvwt0pr": {
+   "at": "2026-11-24T22:29:22+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic shares fall below $83 IPO price amid market slide"
+  },
   "url:https://news.google.com/rss/articles/cbmiowfbvv95cuxntvv1yzbnc0o2efhccgdoulk4r05awgnwsmjtz0tzt2r1bgr5u2p1x0xschvpmeg0zmd0vmw0n3n1evzbmxhxzmhlrzj5lthxm1vjzenqandkces4qunhy1lnmdfwqy1auw5dlvridlv0nxhirw1fa0zztey2n0norzlrv2lkx0d6bi1xnujxyve5rfbidktklthvag5jylyxngm0": {
    "at": "2026-11-24T09:54:17+00:00",
    "channel": "digest",
@@ -2986,6 +3046,12 @@
    "priority": "P0",
    "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol models"
   },
+  "url:https://news.google.com/rss/articles/cbmipgfbvv95cuxpbxljm2rqytnvck00mdjqsenrywtzm1q1ve5rrxhhmjj2dkdxtmn0tzr3qmlls3frujj1z0haqnvgvnrindcwmmp0dzhawwdrulllyjy5emlcmgp5vxixs2pkchh4sl9uytfebe9lrkj0wxvksg5czlzjvjzxtvotsgdkszltoup6mjlsuhrzcfzsb01mbhb4efhlmhvqnnpfdxrsvxvn": {
+   "at": "2026-11-24T22:29:22+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic shares fall below $83 IPO price amid market slide"
+  },
   "url:https://news.google.com/rss/articles/cbmipgfbvv95cuxpx2llvlnkx0f5bnbrbwjysmrim1jawtjptfnlntzoag9yr3ayofjhc2tmexdozezaltfpmgvvem9jagvcoe5toxhvu2j1cvfzu0p4zwvctwvowgdxlutsdgz5skxetejnrhnfb1prvmjstm84nktecvfgshztm1vscjc5c2jlx0tywnpuwkc4yvc4deeyauhwcllmntvqwg0tylprzflr": {
    "at": "2026-11-17T07:57:43+00:00",
    "channel": "digest",
@@ -2997,6 +3063,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "Chemical spill reported at xAI Southaven data center facility"
+  },
+  "url:https://news.google.com/rss/articles/cbmipwfbvv95cuxntzlkvmnhzxo1ewnisnl4ytzcvhp1bwvothfmutk5oxdhls1ncndpstfvos1ktxnsaflzdgixbl8tsgferjvkbef0b2zrx1zwzeoyvtr6x2zwmc1wbhp6zng4n0flcnf0a0fucmdqeglprmnkehnqtg5jrm9vrmpzn1lylupyyjkyb2lcunvjq0rcvu9udkxkmwvlm3rzbhfvm1q0s0ziuq": {
+   "at": "2026-11-24T22:29:22+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic shares fall below $83 IPO price amid market slide"
   },
   "url:https://news.google.com/rss/articles/cbmiqafbvv95cuxoznbutghdyjfynujevdfozznja296qlpkatrqyk1ivtz1zlhpugzwtunbqw13u09pym5hrfzyzgq4wc1pymrpa1vfedhwludpauuwv1zyrzvhrznwu0m1nw9jvgfhyudiugvvqljwyxl0bnh0cujot2n5s1o5cetyr1zhs3jtvxvlu0ktwedlzs0yvnmwrgdhvwhreuqyluvatkjqaxhurgo": {
    "at": "2026-11-23T23:53:32+00:00",
@@ -3063,6 +3135,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
+  },
+  "url:https://news.google.com/rss/articles/cbmirwfbvv95cuxpnhy3odvibfvmbgzsz0tsd0p0ytzqtvreswqxyw9uz193whc5n3jqnxj6bvnem3vwved5afhlsursavjlmg9rzgfcqmdjbefpc29tntfvtknxatjjv29eq3jfmuzxnmxzaf90tdm2vujsntrjdxotsmdrm09fs0wymnk2dzbsrkppzhzrcfpkcthpevvwx0lpemg1mku4u1zvq2swazm1t0jems1nnmew": {
+   "at": "2026-11-24T22:29:22+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic shares fall below $83 IPO price amid market slide"
   },
   "url:https://news.google.com/rss/articles/cbmisafbvv95cuxqsnpiq2hwqtniofvhshjfr1fjs1pimjvrahzmuxrqove3vnpxekzsq3l0qunhndbruhlvegreykn2m1yzevben2fyndfgxzbhdgrrylpmam1itju5u1lmbxdrzmstuuo0vgvmn3hwynvds1rhu0pocdjkcuzqyxvhvtnlyl9nynpcehbqneo2ahzva0sxnmtumnbneukwn1fxn3b5d2rqwwhxeghteezhng": {
    "at": "2026-11-24T09:54:17+00:00",
@@ -3587,10 +3665,10 @@
    "title": "Anthropic announces deprecation schedule for Claude Opus 4.5"
   },
   "url:https://platform.openai.com/docs/changelog": {
-   "at": "2026-11-21T07:09:49+00:00",
+   "at": "2026-11-24T22:29:22+00:00",
    "channel": "digest",
    "priority": "P0",
-   "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol in API"
+   "title": "OpenAI adds GPT-6.2 model family and healthcare configurations to its API"
   },
   "url:https://platform.openai.com/docs/deprecations": {
    "at": "2026-11-19T03:40:14+00:00",
@@ -3605,10 +3683,10 @@
    "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol models"
   },
   "url:https://platform.openai.com/docs/pricing": {
-   "at": "2026-11-20T07:17:37+00:00",
+   "at": "2026-11-24T22:29:22+00:00",
    "channel": "digest",
-   "priority": "P2",
-   "title": "OpenAI updates API pricing and deprecation timelines"
+   "priority": "P0",
+   "title": "OpenAI adds GPT-6.2 model family and healthcare configurations to its API"
   },
   "url:https://reddit.com/r/anthropic/comments/1xxnnbj/anthropic_founders_plan_ipo_share_sales_worth": {
    "at": "2026-11-16T22:02:32+00:00",
@@ -3731,10 +3809,10 @@
    "title": "Elevated errors affecting the Google Docs connector"
   },
   "url:https://support.claude.com/articles/12138966-release-notes": {
-   "at": "2026-11-22T06:47:48+00:00",
+   "at": "2026-11-24T22:29:22+00:00",
    "channel": "digest",
-   "priority": "P3",
-   "title": "Anthropic Updates Claude Mobile and Expands Computer Use Beta"
+   "priority": "P1",
+   "title": "Claude Monthly Recap out of beta with cloud task integration"
   },
   "url:https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents": {
    "at": "2026-11-16T22:02:32+00:00",
@@ -3802,6 +3880,12 @@
    "priority": "P3",
    "title": "Anthropic launches Claude Ship in beta for code reviews and PRs"
   },
+  "url:https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups": {
+   "at": "2026-11-24T22:29:22+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic shares fall below $83 IPO price amid market slide"
+  },
   "url:https://technode.com/2026/11/23/zhipu-rolls-out-glm-5-4-with-vision-and-million-token-context": {
    "at": "2026-11-23T07:37:38+00:00",
    "channel": "digest",
@@ -3855,6 +3939,12 @@
    "channel": "digest",
    "priority": "P0",
    "title": "OpenAI introduces GPT-6.2 Astra and GPT-6.2 Sol models"
+  },
+  "url:https://testingcatalog.com/openai-prepares-dedicated-email-inboxes-for-chatgpt-dots": {
+   "at": "2026-11-24T22:29:22+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "OpenAI prepares standalone email addresses for ChatGPT Dots"
   },
   "url:https://testingcatalog.com/z-ai-launches-glm-5-4-its-first-loop-transformer-model": {
    "at": "2026-11-23T23:53:32+00:00",
