@@ -436,6 +436,106 @@
    "source_url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
    "verification": "OFFICIAL_CONFIRMED"
   },
+  "anthropic:claude-opus-5-5": {
+   "announcement_date": null,
+   "availability_date": null,
+   "availability_status": null,
+   "classification": "UNCONFIRMED_EARLY_SIGNAL",
+   "company": "anthropic",
+   "comparison_summary": "Early outputs: Anthropic is A/B testing Claude Opus 5.6",
+   "delivery": {
+    "attempts": 0,
+    "last_error": null,
+    "message_ids": [],
+    "notification": null,
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "details": {
+    "reasons": [
+     "only third-party sources so far: TestingCatalog (early signal)"
+    ],
+    "text": "Testers say a new Claude model, possibly Opus 5.6, is routing through Opus 5.5 Extra."
+   },
+   "duplicates": 0,
+   "events": [
+    {
+     "at": "2026-11-25T17:25:03+00:00",
+     "note": "only third-party sources so far: TestingCatalog (early signal)",
+     "type": "detected"
+    }
+   ],
+   "fingerprints": [
+    "https://testingcatalog.com/testers-share-early-results-possible-claude-opus-5-6"
+   ],
+   "first_detected": "2026-11-25T17:25:03+00:00",
+   "id": "anthropic:claude-opus-5-5",
+   "last_updated": "2026-11-25T17:25:03+00:00",
+   "model_ids": [
+    "Opus 5.5"
+   ],
+   "model_name": "Claude Opus 5.5",
+   "official_sources": [
+    {
+     "source": "TestingCatalog (early signal)",
+     "url": "https://www.testingcatalog.com/testers-share-early-results-possible-claude-opus-5-6/"
+    }
+   ],
+   "previous_model": null,
+   "priority": "P2",
+   "source_url": "https://www.testingcatalog.com/testers-share-early-results-possible-claude-opus-5-6/",
+   "verification": "UNCONFIRMED"
+  },
+  "anthropic:claude-opus-5-6": {
+   "announcement_date": null,
+   "availability_date": null,
+   "availability_status": null,
+   "classification": "UNCONFIRMED_EARLY_SIGNAL",
+   "company": "anthropic",
+   "comparison_summary": "Early outputs: Anthropic is A/B testing Claude Opus 5.6",
+   "delivery": {
+    "attempts": 0,
+    "last_error": null,
+    "message_ids": [],
+    "notification": null,
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "details": {
+    "reasons": [
+     "only third-party sources so far: TestingCatalog (early signal)"
+    ],
+    "text": "Testers say a new Claude model, possibly Opus 5.6, is routing through Opus 5.5 Extra."
+   },
+   "duplicates": 0,
+   "events": [
+    {
+     "at": "2026-11-25T17:25:03+00:00",
+     "note": "only third-party sources so far: TestingCatalog (early signal)",
+     "type": "detected"
+    }
+   ],
+   "fingerprints": [
+    "https://testingcatalog.com/testers-share-early-results-possible-claude-opus-5-6"
+   ],
+   "first_detected": "2026-11-25T17:25:03+00:00",
+   "id": "anthropic:claude-opus-5-6",
+   "last_updated": "2026-11-25T17:25:03+00:00",
+   "model_ids": [
+    "Claude Opus 5.6"
+   ],
+   "model_name": "Claude Opus 5.6",
+   "official_sources": [
+    {
+     "source": "TestingCatalog (early signal)",
+     "url": "https://www.testingcatalog.com/testers-share-early-results-possible-claude-opus-5-6/"
+    }
+   ],
+   "previous_model": null,
+   "priority": "P2",
+   "source_url": "https://www.testingcatalog.com/testers-share-early-results-possible-claude-opus-5-6/",
+   "verification": "UNCONFIRMED"
+  },
   "google:gemini-3-6": {
    "announcement_date": "2026-11-19",
    "availability_date": null,
@@ -1310,12 +1410,32 @@
      "Released Healthcare model configurations for the Responses API, pairing select OpenAI models with a harness tailored to clinical questions."
     ]
    },
-   "duplicates": 0,
+   "duplicates": 4,
    "events": [
     {
      "at": "2026-11-24T23:11:45+00:00",
      "note": "not seen in any official catalog before; introduced by: OpenAI API changelog (changelog)",
      "type": "detected"
+    },
+    {
+     "at": "2026-11-25T17:25:03+00:00",
+     "note": "models.dev listings (early signal)",
+     "type": "duplicate"
+    },
+    {
+     "at": "2026-11-25T17:25:03+00:00",
+     "note": "models.dev listings (early signal)",
+     "type": "duplicate"
+    },
+    {
+     "at": "2026-11-25T17:25:03+00:00",
+     "note": "models.dev listings (early signal)",
+     "type": "duplicate"
+    },
+    {
+     "at": "2026-11-25T17:25:03+00:00",
+     "note": "models.dev listings (early signal)",
+     "type": "duplicate"
     }
    ],
    "fingerprints": [
@@ -1323,7 +1443,7 @@
    ],
    "first_detected": "2026-11-24T23:11:45+00:00",
    "id": "openai:gpt-6-1-sol-healthcare+gpt-6-2-astra-healthcare+gpt-6-2-sol-healthcare+gpt-6-astra-healthcare",
-   "last_updated": "2026-11-24T23:11:47+00:00",
+   "last_updated": "2026-11-25T17:25:03+00:00",
    "model_ids": [
     "gpt-6.2-astra-healthcare",
     "gpt-6.2-sol-healthcare",
@@ -2204,6 +2324,8 @@
   "alibaba:kimi-k-3-1-pro-prime": "alibaba:kimi-k-3-1-pro-prime",
   "alibaba:qwen-4-max": "alibaba:qwen-4-max",
   "alibaba:qwen-audio-3-1-live": "alibaba:qwen-audio-3-1-live",
+  "anthropic:claude-opus-5-5": "anthropic:claude-opus-5-5",
+  "anthropic:claude-opus-5-6": "anthropic:claude-opus-5-6",
   "google:gemini-3-6": "google:gemini-3-6",
   "google:gemini-4-carbon": "google:gemini-4-carbon",
   "google:gemini-4-neon": "google:gemini-4-neon",
@@ -11154,6 +11276,7 @@
   "Google DeepMind blog": {
    "initialized": true,
    "seen": [
+    "6c73b9863a524758",
     "0c9da2c9f5e742c1",
     "9ee12424a91a2976",
     "d031709d30c1cda7",
@@ -13786,6 +13909,7 @@
   "TestingCatalog (early signal)": {
    "initialized": true,
    "seen": [
+    "b7da52b46ae4431e",
     "446722d0a4378948",
     "e3a21332b100485f",
     "33c09688ed95513e",
@@ -13826,6 +13950,10 @@
   "models.dev listings (early signal)": {
    "initialized": true,
    "seen": [
+    "openai/gpt-6.2-astra-healthcare",
+    "openai/gpt-6-astra-healthcare",
+    "openai/gpt-6.2-sol-healthcare",
+    "openai/gpt-6.1-sol-healthcare",
     "alibaba/kimi-k3.1-pro-prime",
     "alibaba/kimi-k3.1-pro",
     "alibaba/glm-5.3-prime",

@@ -6,6 +6,12 @@
    "priority": "P1",
    "title": "qwen-audio-3.1-live"
   },
+  "model:anthropic:claude-opus-5-6": {
+   "at": "2026-11-25T17:25:12+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Early outputs: Anthropic is A/B testing Claude Opus 5.6"
+  },
   "model:google:gemini-3-6": {
    "at": "2026-11-19T22:22:21+00:00",
    "channel": "release",
@@ -275,6 +281,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "Anthropic announces deprecation schedule for Claude Opus 4.5"
+  },
+  "title:5.6 anthropic claude early opus outputs testing": {
+   "at": "2026-11-25T17:25:12+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Early outputs: Anthropic is A/B testing Claude Opus 5.6"
   },
   "title:561m amodei daniela dario discussion hacker ipo news selling sold stock": {
    "at": "2026-11-25T08:34:38+00:00",
@@ -701,6 +713,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "Prosecutors allege former OpenAI employee leaked trade secrets linked to Saudi government"
+  },
+  "title:allows anthropic apps artifacts desktop installing": {
+   "at": "2026-11-25T17:25:12+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Anthropic now allows installing artifacts as desktop apps"
   },
   "title:alongside chat dots eu features gpt-6.2 openai out rolls sol tab": {
    "at": "2026-11-24T09:54:17+00:00",
@@ -4260,6 +4278,12 @@
    "priority": "P3",
    "title": "Anthropic launches Claude Ship in beta for code reviews and PRs"
   },
+  "url:https://testingcatalog.com/anthropic-now-allows-installing-artifacts-as-desktop-apps": {
+   "at": "2026-11-25T17:25:12+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Anthropic now allows installing artifacts as desktop apps"
+  },
   "url:https://testingcatalog.com/grok-bot-to-get-local-computer-use-and-dictation-in-any-app": {
    "at": "2026-11-23T07:37:38+00:00",
    "channel": "digest",
@@ -4289,6 +4313,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "OpenAI prepares standalone email addresses for ChatGPT Dots"
+  },
+  "url:https://testingcatalog.com/testers-share-early-results-possible-claude-opus-5-6": {
+   "at": "2026-11-25T17:25:12+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Early outputs: Anthropic is A/B testing Claude Opus 5.6"
   },
   "url:https://testingcatalog.com/z-ai-launches-glm-5-4-its-first-loop-transformer-model": {
    "at": "2026-11-23T23:53:32+00:00",
