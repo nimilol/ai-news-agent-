@@ -1756,6 +1756,11 @@
    "channel": "discovery",
    "title": "FengZhenfei/carrel"
   },
+  "url:https://github.com/ffroliva/gflow-cli": {
+   "at": "2026-11-25T00:04:27+00:00",
+   "channel": "discovery",
+   "title": "ffroliva/gflow-cli"
+  },
   "url:https://github.com/firecrawl/firecrawl": {
    "at": "2026-11-19T12:01:00+00:00",
    "channel": "discovery",
@@ -1770,6 +1775,11 @@
    "at": "2026-11-21T11:33:38+00:00",
    "channel": "discovery",
    "title": "framerslab/agentos"
+  },
+  "url:https://github.com/giskard-ai/giskard-oss": {
+   "at": "2026-11-25T00:04:27+00:00",
+   "channel": "discovery",
+   "title": "Giskard-AI/giskard-oss"
   },
   "url:https://github.com/google-deepmind/gbench": {
    "at": "2026-11-17T18:43:32+00:00",
@@ -1876,6 +1886,11 @@
    "channel": "discovery",
    "title": "kajisho5/ffmpeg-skill"
   },
+  "url:https://github.com/kivanow/sessionly": {
+   "at": "2026-11-25T00:04:27+00:00",
+   "channel": "discovery",
+   "title": "KIvanow/sessionly"
+  },
   "url:https://github.com/kostja94/bricks": {
    "at": "2026-11-23T13:26:43+00:00",
    "channel": "discovery",
@@ -1910,6 +1925,11 @@
    "at": "2026-11-24T14:05:37+00:00",
    "channel": "discovery",
    "title": "loopx-project/loopx"
+  },
+  "url:https://github.com/lynote-ai/local-ai-note-taker": {
+   "at": "2026-11-25T00:04:27+00:00",
+   "channel": "discovery",
+   "title": "lynote-ai/local-ai-note-taker"
   },
   "url:https://github.com/mamawai/wtfibought": {
    "at": "2026-11-23T13:26:43+00:00",
@@ -2178,6 +2198,11 @@
    "channel": "discovery",
    "title": "scaleapi/agentenv-framework"
   },
+  "url:https://github.com/shenseanchen/waku-agent": {
+   "at": "2026-11-25T00:04:27+00:00",
+   "channel": "discovery",
+   "title": "ShenSeanChen/waku-agent"
+  },
   "url:https://github.com/sonichi/sutando": {
    "at": "2026-11-23T01:59:00+00:00",
    "channel": "discovery",
@@ -2268,10 +2293,25 @@
    "channel": "discovery",
    "title": "wgjsg/agilex-docs-mcp"
   },
+  "url:https://github.com/wshobson/agents": {
+   "at": "2026-11-25T00:04:27+00:00",
+   "channel": "discovery",
+   "title": "wshobson/agents"
+  },
+  "url:https://github.com/yangheng95/opencorvus": {
+   "at": "2026-11-25T00:04:27+00:00",
+   "channel": "discovery",
+   "title": "yangheng95/opencorvus"
+  },
   "url:https://github.com/yolow92/pagesift": {
    "at": "2026-11-22T11:50:20+00:00",
    "channel": "discovery",
    "title": "YOLOW92/pagesift"
+  },
+  "url:https://github.com/zaxiu88888/issue-rag": {
+   "at": "2026-11-25T00:04:27+00:00",
+   "channel": "discovery",
+   "title": "zaxiu88888/issue-rag"
   },
   "url:https://github.com/zereight/gitlab-mcp": {
    "at": "2026-11-24T14:05:37+00:00",
