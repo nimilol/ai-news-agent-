@@ -108,6 +108,12 @@
    "priority": "P3",
    "title": "Kimi vs DeepSeek vs Qwen vs GLM: 4 Ranked, 1 Wins [2026] - shattered.io"
   },
+  "title:1 560 backs goldman maintains morgan rating sachs stanley target zhipu": {
+   "at": "2026-11-25T08:34:38+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Goldman Sachs backs Zhipu with $1,560 target; Morgan Stanley maintains rating"
+  },
   "title:1 after ai bet billion finance grok investors rethink should spacex spcx story yahoo": {
    "at": "2026-11-21T19:19:33+00:00",
    "channel": "digest",
@@ -228,6 +234,12 @@
    "priority": "P1",
    "title": "Gemini 3.6"
   },
+  "title:30 analysts anthropic buying fall peak point shares suggest": {
+   "at": "2026-11-25T08:34:38+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Anthropic shares fall 30% from peak, analysts suggest buying point"
+  },
   "title:300 billion confirms deal fully funded infrastructure openai oracle": {
    "at": "2026-11-21T07:09:49+00:00",
    "channel": "digest",
@@ -239,6 +251,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "xAI's Grok Bot Sent 31 Unprompted Read Requests to Work Apps, All Blocked by an External Gateway - XenoSpectrum"
+  },
+  "title:4 9 claims exact exponent matrix multiplication openai preprint": {
+   "at": "2026-11-25T08:34:38+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI preprint claims exact 9/4 exponent for matrix multiplication"
   },
   "title:4 gemini neon": {
    "at": "2026-11-18T22:10:43+00:00",
@@ -257,6 +275,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "Anthropic announces deprecation schedule for Claude Opus 4.5"
+  },
+  "title:561m amodei daniela dario discussion hacker ipo news selling sold stock": {
+   "at": "2026-11-25T08:34:38+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Hacker News discussion on Dario Amodei and Daniela Sold selling $561M stock at IPO"
   },
   "title:6.2 astra gpt sol": {
    "at": "2026-11-18T07:29:18+00:00",
@@ -305,6 +329,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic says Claude Mythos Preview ported to AMD GPUs in about three days"
+  },
+  "title:about anthropic models openai overly powerful staff warn": {
+   "at": "2026-11-25T08:34:38+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Staff at Anthropic and OpenAI warn about overly powerful models"
   },
   "title:above amid anthropic demand expected high ipo price range top": {
    "at": "2026-11-17T20:58:16+00:00",
@@ -360,6 +390,12 @@
    "priority": "P1",
    "title": "xAI deploys Grok Bot teams for end-to-end accounting processes at SpaceXSI"
   },
+  "title:accused bail corporate engineer espionage grants judge openai": {
+   "at": "2026-11-25T08:34:38+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Judge grants bail to OpenAI engineer accused of corporate espionage"
+  },
   "title:action pr scans see": {
    "at": "2026-11-20T03:31:17+00:00",
    "channel": "alerts",
@@ -383,6 +419,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "ChatGPT for the SNES - Adafruit"
+  },
+  "title:add apps beta capability claude file transfer": {
+   "at": "2026-11-25T08:34:38+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Claude apps add beta file‑transfer capability"
   },
   "title:added alpha free model opencode tidepool": {
    "at": "2026-11-19T07:27:18+00:00",
@@ -437,6 +479,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "Claude Code Adds Experimental Code Mode and Tool Guards"
+  },
+  "title:adds claude code hook mcp preskillshellcommand skills v2.1.332": {
+   "at": "2026-11-25T08:34:38+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Claude Code v2.1.332 adds new MCP skills and PreSkillShellCommand hook"
   },
   "title:adds claude code loops task trust v2.1.329 warnings": {
    "at": "2026-11-20T07:17:37+00:00",
@@ -563,6 +611,24 @@
    "channel": "digest",
    "priority": "P1",
    "title": "OpenAI internal agent independently plans unauthorized email surveillance"
+  },
+  "title:agents ai cisco deploy openai protect systems vulnerable": {
+   "at": "2026-11-25T08:34:38+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Cisco and OpenAI deploy AI agents to protect vulnerable systems"
+  },
+  "title:agents announced claude managed pricing": {
+   "at": "2026-11-25T08:34:38+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Claude Managed Agents pricing announced"
+  },
+  "title:agents chatgpt codex deploys openai probe slowdowns": {
+   "at": "2026-11-25T08:34:38+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "OpenAI deploys Codex agents to probe ChatGPT slowdowns"
   },
   "title:agents coding external sandboxes": {
    "at": "2026-11-18T07:29:18+00:00",
@@ -744,6 +810,12 @@
    "priority": "P1",
    "title": "Anthropic researcher claims Claude helped discover Riemann Hypothesis proof"
   },
+  "title:anthropic claude elevated errors models multiple resolves": {
+   "at": "2026-11-25T08:34:38+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic resolves elevated errors on multiple Claude models"
+  },
   "title:anthropic initial offering prices public": {
    "at": "2026-11-19T03:40:14+00:00",
    "channel": "alerts",
@@ -912,6 +984,12 @@
    "priority": "P2",
    "title": "OpenAI brings GPT-6.2 Sol to ChatGPT Chat and Dots to EU"
   },
+  "title:card child focusing model openai releases safety transparency": {
+   "at": "2026-11-25T08:34:38+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "OpenAI releases Model Card focusing on child safety and transparency"
+  },
   "title:care chatgpt forward healthcare more move ways": {
    "at": "2026-11-16T22:19:08+00:00",
    "channel": "alerts",
@@ -1031,6 +1109,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "Microsoft Rolls Out OpenAI's GPT-6.2 Sol Worldwide in Copilot"
+  },
+  "title:creation deprecates fine job openai self serve tuning": {
+   "at": "2026-11-25T08:34:38+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI deprecates self‑serve fine‑tuning job creation"
   },
   "title:csam deepfake generation grok oregon over spacex sue virginia": {
    "at": "2026-11-23T23:53:32+00:00",
@@ -1356,6 +1440,12 @@
    "priority": "P3",
    "title": "ChatGPT squeezed onto a 35-year-old SNES, with a Super FX 2 chip doing the heavy lifting - BigGo Finance"
   },
+  "url:https://finance.biggo.com/news/bb3dc52a-594e-4e91-877a-d9cef6bbbb59": {
+   "at": "2026-11-25T08:34:38+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Goldman Sachs backs Zhipu with $1,560 target; Morgan Stanley maintains rating"
+  },
   "url:https://finance.biggo.com/news/d1a6121e-0a9f-40bc-a236-7f2e950665c8": {
    "at": "2026-11-24T09:54:17+00:00",
    "channel": "digest",
@@ -1403,6 +1493,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic Prices IPO at $83 and Raises $81.3 Billion on Nasdaq"
+  },
+  "url:https://forbes.com/sites/siladityaray/2026/11/24/anthropic-ceo-dario-amodei-sold-280-million-in-shares-as-part-of-record-ipo": {
+   "at": "2026-11-25T08:34:38+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Hacker News discussion on Dario Amodei and Daniela Sold selling $561M stock at IPO"
   },
   "url:https://forklog.com/z-ai-unveils-ai-model-with-layer-reuse": {
    "at": "2026-11-24T09:54:17+00:00",
@@ -1520,6 +1616,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "Claude Code v2.1.329 adds trust warnings and task loops"
+  },
+  "url:https://github.com/anthropics/claude-code/releases/tag/v2.1.332": {
+   "at": "2026-11-25T08:34:38+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Claude Code v2.1.332 adds new MCP skills and PreSkillShellCommand hook"
   },
   "url:https://github.com/anthropics/flashprove": {
    "at": "2026-11-16T23:48:27+00:00",
@@ -2402,6 +2504,12 @@
    "priority": "P2",
    "title": "Virginia and Oregon attorneys general sue SpaceX over Grok explicit images"
   },
+  "url:https://kucoin.com/news/flash/morgan-stanley-maintains-overweight-on-zhipu-ai-eyes-glm-5-4-architecture-and-december-catalyst": {
+   "at": "2026-11-25T08:34:38+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Goldman Sachs backs Zhipu with $1,560 target; Morgan Stanley maintains rating"
+  },
   "url:https://latent.space/p/ainews-anthropic-successfully-completes-largest-ipo-in-history-valued-at-1-5t": {
    "at": "2026-11-20T07:17:37+00:00",
    "channel": "digest",
@@ -2467,6 +2575,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "Virginia and Oregon attorneys general sue SpaceX over Grok explicit images"
+  },
+  "url:https://news.google.com/rss/articles/cbmi2wfbvv95cuxosfayyuxldxbmwtc3ejbmmhvoohzbclvnmk1xdhnfckczsnc0yw5nm2iytfp3a1fieupnvhbbruxhqvzwoghgqnnas0g3bujvzlbvckdjug1vvdvis2gwtjzit2l3vupsvhvluhvtsuvomdjrawf4zhd4wvl1u0s3d3otbep2sha1udzjlwrxuutvvfk0nfu2auyzvxbzsk81c21etkjxs1kyem1hqnhmck5fqxpuywnqs2w3uvres2nqzdbgddzuetvyutvmaklbrnd2wxlyelmwdtq": {
+   "at": "2026-11-25T08:34:38+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Cisco and OpenAI deploy AI agents to protect vulnerable systems"
   },
   "url:https://news.google.com/rss/articles/cbmi2wfbvv95cuxqcwdoaelwzfvjavc3dtdpde54r1lhrm5ir1liahatyi02tejqci1pzzbjyxf5t0dzujzfevlcyulimzzrcgx4yum1qmlqehfzb3bumtnjr2zyotdou05rbhvuoxg4y0rmrgz3tlvfuwxneklja1pot2x2tnlimmpmatg1ykd5ogpmywtuwdblmurxuudqujjkn1l6s2zbslvkrek2tnfpzvddt3hluvpvzm80nvvqbw95zvvnwgi1unqtr25wvnzzzkpccflwmeo2ynhzdwsxqmpfn0k": {
    "at": "2026-11-17T20:58:16+00:00",
@@ -2636,6 +2750,12 @@
    "priority": "P1",
    "title": "xAI deploys Grok Bot teams for end-to-end accounting processes at SpaceXSI"
   },
+  "url:https://news.google.com/rss/articles/cbmieefvx3lxte1ucnzztefgshjjzglawtruehr6rg11uthguvriwfpjbjbjugv4ofnusw1lczzwblrdtuvuyjf5nnr1wfvnq0l5ywzmbjbrrlhqout4qvizymk5bvy1c0pwmg1tbmlyq05mrejqzjr3tlduyxjtyuhxdq": {
+   "at": "2026-11-25T08:34:38+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI preprint claims exact 9/4 exponent for matrix multiplication"
+  },
   "url:https://news.google.com/rss/articles/cbmieefvx3lxte5kc3h1v3vzbfftnwxwbkdxegpwy2y0tknzb21ywff6wxjqd0h4r21ytenbb25ox3r0lur1be9jexjdcle4envcrhbyq0e5q1vwvk5na3rjwmxrzhpkrhb3zxbhmw9vouptcehezg04azrvrepfemxxsq": {
    "at": "2026-11-18T20:33:37+00:00",
    "channel": "digest",
@@ -2773,6 +2893,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic prices initial public offering at $83 per share"
+  },
+  "url:https://news.google.com/rss/articles/cbmihafbvv95cuxpvjqycnvkruy1azh6ddi5z1frv1hube5ku2xun3hpd3dluvi0a0dfwgxtqnbkykyyv1z0cxflovrrwgtqbdfwcwrfehfyv2d3mvrarhi1ognszjdqrzltbdn2qknorhvovju3rc15smlbmtizrlffa0tyaupmufvazzbizxy": {
+   "at": "2026-11-25T08:34:38+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Judge grants bail to OpenAI engineer accused of corporate espionage"
   },
   "url:https://news.google.com/rss/articles/cbmihafbvv95cuxqqmznm3dbm3hkbkvsb2iwdu51tuhiz1ozmelwszninudrckh4weutaknpznnrazh5z3hlawk5sjhwovbdte1dyw96rhzztmjiohdfu1r4bw9kmvlrwdiwukq2adfga3czs3nyem52udrlxy1hcmjpwg5vse9wdkp4wuozudbsaywbqvvfexfmt3bfc19yynrttghszwruwkhlshj6mgnlvy0xs2zbb2l3ckfwu1uxrjjjy2hbtfpjnw5oqla5ynviaxj3rulxluhqrxp3rfp3wmhesno1ewdvbnbms2x1wmzuexzkqjr0r1k3szryb045mwvvszc4ae9rwjhacmrizzznx2dilwg2nmvxyxq": {
    "at": "2026-11-18T20:33:37+00:00",
@@ -2930,6 +3056,12 @@
    "priority": "P3",
    "title": "ChatGPT Space rolls out globally to Plus users"
   },
+  "url:https://news.google.com/rss/articles/cbmilgfbvv95cuxnbk5znffbclbmbkewctrzn2ddagvplvjst2frakvys3btagfuek9xtfz2afjone9lbxfsytq5a0j3sjjftulmmev5b3c4ay0xa3byeklyvgi5m3vlv3fuy2h6vfi0bdk0b3m1m1zsxzbgd1louwdxv0zftuz4beldyvizswrscgjlx2lxqtjwnhg4aglusfe": {
+   "at": "2026-11-25T08:34:38+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI preprint claims exact 9/4 exponent for matrix multiplication"
+  },
   "url:https://news.google.com/rss/articles/cbmilgfbvv95cuxnnevotk9omutnsknpehvouefoukfgzzrmwfztz2vhrufgdgxqykd5zxdxms1bsuzbutvydut3zxpdtkrowu1buxzublfpz1hvt1hsoxnlr0zwzvjnajvawvk3ukjzduxjzlpqvutrdwm0v1ruqxjamvgxohmtq1phze5xrhnewxzxbznuqljytdvnlxfqzhc": {
    "at": "2026-11-23T07:37:38+00:00",
    "channel": "digest",
@@ -2971,6 +3103,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic hits Nasdaq in largest IPO in history at $2T valuation"
+  },
+  "url:https://news.google.com/rss/articles/cbmimgfbvv95cuxnwnvlaxzxrkhrvxjkqzf4uvaxdff3bnvlm05su1n6v2hczjdkuerwbs03vuu2djleywhzsetxnnnnalnqb1a3zed0a1vucjjuyujontjcz1k1wuxsqxfpdem2bgvelxhzs1a5rmzhaeizn1rozk1rx3nnztbgcnfdsjf3ovrrqtzhcgdiym9vrwzzbedtb085tjln": {
+   "at": "2026-11-25T08:34:38+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Anthropic shares fall 30% from peak, analysts suggest buying point"
   },
   "url:https://news.google.com/rss/articles/cbmimgfbvv95cuxocthtyklmx29idxv3evhjexdlrgxaddzot0r1zjjlqv8tvtflnepib3pvce9km1g2yzllzfh4tgn0bud3v0djttbwd1hvuenxlvvbwkk4vgptowjgnwtpznl3exfvbfbtc1njbf85yk5audhyrxv5c005bwzfm1v0dhznn1y5wuxnqurrd3nwru9qumhlwmzqzzbr": {
    "at": "2026-11-18T07:29:18+00:00",
@@ -3037,6 +3175,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "California AG Sues OpenAI Over Rogue Agent Hacking Incidents"
+  },
+  "url:https://news.google.com/rss/articles/cbminafbvv95cuxqew82tdq4mgpmbenqqmlfn3hddhz5zutiqlyxthexm0tltkqyqxh2c0wzq2q0wxlrv1bjbmmwz0ljb0ruztrgugtkyw5nuhy0txixdwxradrkdld5s1j1mwjxm1vfntz6tenjck5rsgh6x1gyz2hnwejdnv9xv3nknmtwruvasgfqce4zuejhujnnvw1famffmfa3egy": {
+   "at": "2026-11-25T08:34:38+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Anthropic shares fall 30% from peak, analysts suggest buying point"
   },
   "url:https://news.google.com/rss/articles/cbminafbvv95cuxqwdzlajjrb1z4ovkyc3hvu1lxqvhuv0y4zvpkamzetxjmeuh3qnnvcxltvtrsrhb4cvpzy1hiumq4s0dicmm4tjjuouo3uuxxcwdkdedyv1ixzwxlburrvgjfejhvumq3advpm0r0dln2vevxr3jfzwtibgfrvu1pru0tvudkukxlmjdmry11awg0a1zmve9jdddglxu": {
    "at": "2026-11-18T20:33:37+00:00",
@@ -3116,6 +3260,12 @@
    "priority": "P0",
    "title": "Z.ai unveils GLM-5.4 flagship model with loop transformer architecture"
   },
+  "url:https://news.google.com/rss/articles/cbmiowfbvv95cuxqb1k0ajfacuzywfzjrvh5rdlzvex0q0puedhkwtfrwmtnwk9ctzhqnzutvwdhlud0wm1pnndkadrlrurry0kxrefoc2ftujlds044y0p6uwpjotjlbdzsqkc4v0vmwtvlzhrqnulkmk5fatmynzlpcnzxnjbiedzorjflzkxucgpfrvrnvvd3zvhusdr5zmziwk0wt0rin2nhtdbz": {
+   "at": "2026-11-25T08:34:38+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "OpenAI releases Model Card focusing on child safety and transparency"
+  },
   "url:https://news.google.com/rss/articles/cbmipafbvv95cuxnzedxcl84zgnhtkpznhk4n0zywkvzmhdmswxzluzpznppqtgzn2dgvelnd1j2bdf3ckpvoedsddnsngzncfjpnun2azliltbkr3dpqmx1ve0zmti2znvlngnhunl5n2jpdjnlwnhpu0lbmjjjandzamzmatzzu1l6uzl5r3vez0fcyncxbhdur3lrbg13ddk2sesxclntv0uwm3pjtg": {
    "at": "2026-11-17T07:57:43+00:00",
    "channel": "digest",
@@ -3175,6 +3325,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic prices initial public offering at $83 per share"
+  },
+  "url:https://news.google.com/rss/articles/cbmiqafbvv95cuxqytv1cupfznq2rxftb2zmsmnkr2jqtmrlrkdyx1docwdevxjstgg1lufhulo4wultz25tburon0dwyw9dzgfhvun3zdjinvbtzi1yvy16rvbodm94r29nyzdfmed5z3q5zzvomfponwu4qwdowf9trmzsbhjbmehrquxmevm4vzr2mhlwrxrqc041cdrmsm1qvmfiynjzywvbvdzqqthwcgg": {
+   "at": "2026-11-25T08:34:38+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "OpenAI deploys Codex agents to probe ChatGPT slowdowns"
   },
   "url:https://news.google.com/rss/articles/cbmiqgfbvv95cuxqvefvndbodhpvulp4s085vfjqrgzsa1drmzjrqxzywjqtnhnfru1wr3z5vg95ddnmwjflmgrxmtntympqvhlrs1hvd1dymme2rhdiznbqaffqveqwwerxadd6awnqa1pxwnbyvnvcmtuyblg5zhnpytngbwf5ehdlzk40qudrcmziztl0cw5emuphwxzpcedqmjrqagjtwc1qq2jetnbhwf9kqq": {
    "at": "2026-11-21T07:09:49+00:00",
@@ -3302,6 +3458,12 @@
    "priority": "P0",
    "title": "Z.ai launches GLM-5.4, its first Loop Transformer model"
   },
+  "url:https://news.google.com/rss/articles/cbmitgfbvv95cuxoeflfy00tdfnjzddzy05ddlc0wuphsjzlawdyneq3we9fuc1vv2prcugymzhlb3bsm28yt1a1ytlyeu9tqkxbnnkwnhjwogw1ulrhv2jizknam1vuyvnnrmn2mmznsw9zlul4t1bmelbprzjgbhrownk4b0xobl9kdtbqrnuyugfqevjxu0p6bnhsr1n2lwtewuhqqi1megtjrwt0qzvragviy2pxvxlkmy1obgzqzw": {
+   "at": "2026-11-25T08:34:38+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Anthropic shares fall 30% from peak, analysts suggest buying point"
+  },
   "url:https://news.google.com/rss/articles/cbmitgfbvv95cuxontrlelzwbm1uuwr5udazsjzpblfwcmhusmjqtufezdj6mwqtmjjsaef0q0p6c3f6u0fkcwq1swvvtxrnunbrbfn2sfzyz2xianjjcxjulwvinxe0s21gyktxz2tic25rmzl1b0j5uvpfme45mgdldwo2rvnrnepsbdbgqwhmz3l2x3b6zkvoexz0c2l1rglgac1zc18tmldozlndcnhpshl4qnqzn01smlvezdn0zw": {
    "at": "2026-11-23T23:53:32+00:00",
    "channel": "digest",
@@ -3392,6 +3554,12 @@
    "priority": "P0",
    "title": "Z.ai unveils GLM-5.4 flagship model with loop transformer architecture"
   },
+  "url:https://news.google.com/rss/articles/cbmivwfbvv95cuxpqxpha0rwvhvtmdfmavpkvzzbrmnxdmjutvlpudv0uwl2c0xzeerhy1vyq2x3cng4qtrpmtb2mznnclndohjcnwhsnlhsy3qxmxfxu1dmynblnvvba3riamcxmfd4cvd1zfvocfjecvfnr29pr051c3nmrlltczlqvuluuzvgudbobmzjrvplbkztvlrvdlzfu014aejjtevwm1lfywpydu9ly1brag1vnjzoy1d1s2g3u1rsstf1rq": {
+   "at": "2026-11-25T08:34:38+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Staff at Anthropic and OpenAI warn about overly powerful models"
+  },
   "url:https://news.google.com/rss/articles/cbmivwfbvv95cuxqwkjpzfu4ls1fa3ctdfjqcutsdxbrcxflohfaunduy3vbvk5qyku5ovrkagnunhhhvutwvgzrbfhpd0vqdfhiagrkv2vhmlz1ykxhufbkzfbzttfsmznelwdrckv5bwzkalqztgvduwhpnwu2atzqeffnnunhztnyu0exdhfntc1tejnoy3vsakxootbhrdf1cvjwaelxetnwueflodvozg5law51ylrnvk81dufowxdpluzmltbzbw": {
    "at": "2026-11-21T07:09:49+00:00",
    "channel": "digest",
@@ -3475,6 +3643,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic completes record $81.3 B IPO on Nasdaq at $1.5 T valuation"
+  },
+  "url:https://news.google.com/rss/articles/cbmiygfbvv95cuxnvu9fck4wbgr4egvmwfbxx1fzcvnkbg9hyknwwfvqnxnhwuntbfvrovlaczrmsvhmb3pqzgdmrfrzwu9kenf4dfniwgv4v2hcmw1dmuwyn2rdqtdkvm4zr1uyaelbse5nnho0eviwagdienbwzf9roxf1rwpjanhxbenyeujnbvnzmllotmdxufd3eg1quy1rdnu5nnzhvmnlrdrkauz4d01rmks2mje0njzux2kwy2exz3zzx18zn0lqegiydhetqvpb": {
+   "at": "2026-11-25T08:34:38+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Goldman Sachs backs Zhipu with $1,560 target; Morgan Stanley maintains rating"
   },
   "url:https://news.google.com/rss/articles/cbmiygfbvv95cuxptjdoa3dnmvruv19yahrtc3dkugjtu29wskdvcf9bwmqzcelfttu0ntrjznq5q2jryv9hdhdpvc1juf9sqkduqnfunjnyzhplmerdr2f0nhctdnlpde1pwmm4elhvbexwbthnzhvbs1nlqlbss1lts1z5mlnyv0ticlhmngzsajltluvizw1jduq4nduybznucvb3zezqwnfewndlb3jretfvueh5cnponkvsdkdwykddogvcqxloumficdnhmnpkrujr": {
    "at": "2026-11-24T09:54:17+00:00",
@@ -3777,10 +3951,10 @@
    "title": "Anthropic announces deprecation schedule for Claude Opus 4.5"
   },
   "url:https://platform.claude.com/docs/about-claude/pricing": {
-   "at": "2026-11-18T22:10:54+00:00",
-   "channel": "alerts",
-   "priority": "P2",
-   "title": "Claude API pricing: Cloud platform pricing"
+   "at": "2026-11-25T08:34:38+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Claude Managed Agents pricing announced"
   },
   "url:https://platform.claude.com/docs/release-notes/overview": {
    "at": "2026-11-23T23:53:32+00:00",
@@ -3795,10 +3969,10 @@
    "title": "OpenAI adds GPT-6.2 model family and healthcare configurations to its API"
   },
   "url:https://platform.openai.com/docs/deprecations": {
-   "at": "2026-11-19T03:40:14+00:00",
-   "channel": "alerts",
-   "priority": "P2",
-   "title": "OpenAI deprecations: Feature and endpoint deprecations"
+   "at": "2026-11-25T08:34:38+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI deprecates self‑serve fine‑tuning job creation"
   },
   "url:https://platform.openai.com/docs/models": {
    "at": "2026-11-17T20:58:16+00:00",
@@ -3932,11 +4106,17 @@
    "priority": "P1",
    "title": "Elevated errors affecting the Google Docs connector"
   },
-  "url:https://support.claude.com/articles/12138966-release-notes": {
-   "at": "2026-11-24T22:29:22+00:00",
+  "url:https://status.claude.com/incidents/yl30wkjblcm6": {
+   "at": "2026-11-25T08:34:38+00:00",
    "channel": "digest",
    "priority": "P1",
-   "title": "Claude Monthly Recap out of beta with cloud task integration"
+   "title": "Anthropic resolves elevated errors on multiple Claude models"
+  },
+  "url:https://support.claude.com/articles/12138966-release-notes": {
+   "at": "2026-11-25T08:34:38+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Claude apps add beta file‑transfer capability"
   },
   "url:https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents": {
    "at": "2026-11-16T22:02:32+00:00",
