@@ -8256,7 +8256,7 @@
      "input_modalities": "audio, text",
      "output_modalities": "text"
     },
-    "specs_checked": "2026-11-18T04:33:03+00:00",
+    "specs_checked": "2026-11-25T05:30:00+00:00",
     "status": "active"
    },
    "o1": {
@@ -8380,7 +8380,7 @@
      "input_modalities": "text, image",
      "output_modalities": "text"
     },
-    "specs_checked": "2026-11-18T04:33:03+00:00",
+    "specs_checked": "2026-11-25T05:30:00+00:00",
     "status": "active"
    },
    "text-embedding-3-large": {
@@ -8394,7 +8394,7 @@
      "input_modalities": "text",
      "output_modalities": "text"
     },
-    "specs_checked": "2026-11-18T04:33:03+00:00",
+    "specs_checked": "2026-11-25T05:30:01+00:00",
     "status": "active"
    },
    "text-embedding-3-small": {
@@ -8408,7 +8408,7 @@
      "input_modalities": "text",
      "output_modalities": "text"
     },
-    "specs_checked": "2026-11-18T04:33:03+00:00",
+    "specs_checked": "2026-11-25T05:30:01+00:00",
     "status": "active"
    },
    "text-embedding-ada-002": {
@@ -8422,7 +8422,7 @@
      "input_modalities": "text",
      "output_modalities": "text"
     },
-    "specs_checked": "2026-11-18T04:33:03+00:00",
+    "specs_checked": "2026-11-25T05:30:01+00:00",
     "status": "active"
    },
    "text-moderation-latest": {
@@ -9649,6 +9649,32 @@
   "Claude Platform release notes": {
    "initialized": true,
    "seen": [
+    "f3cb8e00c4cf1a10",
+    "6a58c70dcff1acb7",
+    "6ebc950fcccc8720",
+    "b1edddc9d48f974f",
+    "19f468102f37b1de",
+    "86ac7a0a5f386434",
+    "caeb9b435d4be013",
+    "7d5de31cbacf9225",
+    "e8ee902d5d973f57",
+    "01d588d91e2d93f1",
+    "4e360c05970d1504",
+    "f15bf570fe294506",
+    "8db54276967ea733",
+    "750fbef628b76af4",
+    "66d1622aa47bcc79",
+    "6cf32396b008996b",
+    "eddb018c101a8a34",
+    "7fa21bdf4f780c4d",
+    "36cc29fd58cb9b40",
+    "69037cfad81733e8",
+    "11227f2b9bed4515",
+    "227c3e28450ab831",
+    "eca74f163adfa2be",
+    "35285f5f4653f83c",
+    "19c9a03ea0e04059",
+    "8fd16cbab8fde20c",
     "ae87daee607807d6",
     "94cf907091c020dd",
     "48bdb01a10648935",
