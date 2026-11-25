@@ -1686,6 +1686,16 @@
    "channel": "discovery",
    "title": "bethington/ghidra-mcp"
   },
+  "url:https://github.com/bil0000/hill-climb": {
+   "at": "2026-11-25T19:33:28+00:00",
+   "channel": "discovery",
+   "title": "Bil0000/Hill-Climb"
+  },
+  "url:https://github.com/blackbelttechnology/pi-agent-dashboard": {
+   "at": "2026-11-25T19:33:28+00:00",
+   "channel": "discovery",
+   "title": "BlackBeltTechnology/pi-agent-dashboard"
+  },
   "url:https://github.com/builderio/agent-native": {
    "at": "2026-11-20T12:00:37+00:00",
    "channel": "discovery",
@@ -1911,6 +1921,11 @@
    "channel": "discovery",
    "title": "geonodecom/integration-crewai"
   },
+  "url:https://github.com/geonodecom/integration-n8n": {
+   "at": "2026-11-25T19:33:28+00:00",
+   "channel": "discovery",
+   "title": "geonodecom/integration-n8n"
+  },
   "url:https://github.com/giskard-ai/giskard-oss": {
    "at": "2026-11-25T00:04:27+00:00",
    "channel": "discovery",
@@ -1985,6 +2000,11 @@
    "at": "2026-11-24T14:05:37+00:00",
    "channel": "discovery",
    "title": "jiji262/claude-design-skill"
+  },
+  "url:https://github.com/jimliu/open-artifact": {
+   "at": "2026-11-25T19:33:28+00:00",
+   "channel": "discovery",
+   "title": "JimLiu/open-artifact"
   },
   "url:https://github.com/jmanico/grim-prompter": {
    "at": "2026-11-22T11:50:20+00:00",
@@ -2216,6 +2236,11 @@
    "channel": "discovery",
    "title": "open-mercato/cezar"
   },
+  "url:https://github.com/open-multi-agent/open-multi-agent": {
+   "at": "2026-11-25T19:33:28+00:00",
+   "channel": "discovery",
+   "title": "open-multi-agent/open-multi-agent"
+  },
   "url:https://github.com/openai/codex/releases/tag/rust-v0.169.1": {
    "at": "2026-11-18T07:29:18+00:00",
    "channel": "digest",
@@ -2258,10 +2283,20 @@
    "channel": "discovery",
    "title": "paperclipai/paperclip"
   },
+  "url:https://github.com/pedromarinhodev/comfyui-drama3": {
+   "at": "2026-11-25T19:33:28+00:00",
+   "channel": "discovery",
+   "title": "PedroMarinhoDev/ComfyUI-Drama3"
+  },
   "url:https://github.com/phone-harness/mcp": {
    "at": "2026-11-21T19:40:04+00:00",
    "channel": "discovery",
    "title": "phone-harness/mcp"
+  },
+  "url:https://github.com/piebald-ai/tweakcc": {
+   "at": "2026-11-25T19:33:28+00:00",
+   "channel": "discovery",
+   "title": "Piebald-AI/tweakcc"
   },
   "url:https://github.com/praetorian-inc/julius": {
    "at": "2026-11-23T13:26:43+00:00",
@@ -2437,6 +2472,11 @@
    "at": "2026-11-24T02:29:06+00:00",
    "channel": "discovery",
    "title": "VoxDance-Lab/VoxMel"
+  },
+  "url:https://github.com/w01fb0ss/pibot": {
+   "at": "2026-11-25T19:33:28+00:00",
+   "channel": "discovery",
+   "title": "w01fb0ss/PiBot"
   },
   "url:https://github.com/wangrongding/superhive": {
    "at": "2026-11-24T14:05:37+00:00",
