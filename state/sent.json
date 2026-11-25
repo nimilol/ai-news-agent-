@@ -516,6 +516,12 @@
    "priority": "P2",
    "title": "How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise"
   },
+  "title:adoption ai anthropic barriers highlights study workplace": {
+   "at": "2026-11-25T21:44:37+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic study highlights workplace AI adoption barriers"
+  },
   "title:advancing agents computer-use healthcare teams": {
    "at": "2026-11-16T22:19:08+00:00",
    "channel": "alerts",
@@ -666,6 +672,12 @@
    "priority": "P2",
    "title": "Strengthening NATO and allied cyber defenses with AI"
   },
+  "title:ai amodei claims dario governance handing over rejects": {
+   "at": "2026-11-25T21:44:37+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Dario Amodei rejects claims of handing governance over to AI"
+  },
   "title:ai anthropic billion business cofounder ex her insider investment lifestyle lost passed says scale she support": {
    "at": "2026-11-21T19:19:33+00:00",
    "channel": "digest",
@@ -726,6 +738,12 @@
    "priority": "P1",
    "title": "OpenAI rolls out GPT-6.2 Sol for chat tab alongside Dots features in EU"
   },
+  "title:alpha begins business inference openai private prompts protect testing": {
+   "at": "2026-11-25T21:44:37+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI begins alpha testing Private Inference to protect business prompts"
+  },
   "title:ambition bar lowering raises revolut without": {
    "at": "2026-11-17T14:39:48+00:00",
    "channel": "alerts",
@@ -773,6 +791,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "OpenAI shares new prompting tips for GPT-6.2 Astra and Sol to fix brief answers and unnecessary questions"
+  },
+  "title:anthropic app artifacts beta claude install out rolls": {
+   "at": "2026-11-25T21:44:37+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Anthropic rolls out Install as app beta for Claude artifacts"
   },
   "title:anthropic automate beta claude launches pipelines pull request ship": {
    "at": "2026-11-24T09:54:17+00:00",
@@ -1031,6 +1055,12 @@
    "channel": "release",
    "priority": "P1",
    "title": "Chat Latest"
+  },
+  "title:chat limits openai out rolls unified usage work": {
+   "at": "2026-11-25T21:44:37+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI rolls out unified Chat and Work usage limits"
   },
   "title:chatgpt frontier science scientists use": {
    "at": "2026-11-16T22:19:08+00:00",
@@ -1451,6 +1481,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "GAO evaluation finds frontier models capable of producing attack guidance"
+  },
+  "url:https://fastcompany.com/91649055/workers-hoard-ai-knowledge-to-stay-competitive-anthropic-report-says": {
+   "at": "2026-11-25T21:44:37+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic study highlights workplace AI adoption barriers"
   },
   "url:https://finance.biggo.com/news/832f2a84-adf8-4fc7-a00d-f54750da3fac": {
    "at": "2026-11-21T19:19:33+00:00",
@@ -4288,6 +4324,18 @@
    "priority": "P1",
    "title": "Anthropic shares fall below $83 IPO price amid market slide"
   },
+  "url:https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd": {
+   "at": "2026-11-25T21:44:37+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Dario Amodei rejects claims of handing governance over to AI"
+  },
+  "url:https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work": {
+   "at": "2026-11-25T21:44:37+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI rolls out unified Chat and Work usage limits"
+  },
   "url:https://technode.com/2026/11/23/zhipu-rolls-out-glm-5-4-with-vision-and-million-token-context": {
    "at": "2026-11-23T07:37:38+00:00",
    "channel": "digest",
@@ -4319,10 +4367,10 @@
    "title": "Anthropic launches Claude Ship in beta for code reviews and PRs"
   },
   "url:https://testingcatalog.com/anthropic-now-allows-installing-artifacts-as-desktop-apps": {
-   "at": "2026-11-25T17:25:12+00:00",
-   "channel": "alerts",
-   "priority": "P2",
-   "title": "Anthropic now allows installing artifacts as desktop apps"
+   "at": "2026-11-25T21:44:37+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Anthropic rolls out Install as app beta for Claude artifacts"
   },
   "url:https://testingcatalog.com/grok-bot-to-get-local-computer-use-and-dictation-in-any-app": {
    "at": "2026-11-23T07:37:38+00:00",
@@ -4372,6 +4420,18 @@
    "priority": "P1",
    "title": "OpenAI internal agent independently plans unauthorized email surveillance"
   },
+  "url:https://the-decoder.com/anthropic-ceo-dario-amodei-says-letting-ai-govern-society-would-be-a-bad-idea": {
+   "at": "2026-11-25T21:44:37+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Dario Amodei rejects claims of handing governance over to AI"
+  },
+  "url:https://the-decoder.com/anthropic-study-shows-the-hardest-part-of-adopting-ai-at-work-has-little-to-do-with-learning-the-tools": {
+   "at": "2026-11-25T21:44:37+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic study highlights workplace AI adoption barriers"
+  },
   "url:https://the-decoder.com/anthropics-81-3-billion-ipo-shatters-spacexs-record-as-rising-rates-and-political-headwinds-shake-the-sector": {
    "at": "2026-11-19T20:39:31+00:00",
    "channel": "digest",
@@ -4420,6 +4480,12 @@
    "priority": "P1",
    "title": "OpenAI rolls out GPT-6.2 Sol for chat tab and web search"
   },
+  "url:https://the-decoder.com/openai-wants-companies-to-trust-it-with-sensitive-work-by-promising-not-to-look-at-their-data": {
+   "at": "2026-11-25T21:44:37+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI begins alpha testing Private Inference to protect business prompts"
+  },
   "url:https://the-decoder.com/z-ai-follows-openai-into-loop-transformer-territory-with-its-new-750b-flagship-model": {
    "at": "2026-11-23T23:53:32+00:00",
    "channel": "digest",
@@ -4437,6 +4503,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "Anthropic mathematician claims he used Claude to prove 19th-century Riemann hypothesis - The Guardian"
+  },
+  "url:https://thenextweb.com/news/openai-private-inference-testing-customers": {
+   "at": "2026-11-25T21:44:37+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI begins alpha testing Private Inference to protect business prompts"
   },
   "url:https://theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem": {
    "at": "2026-11-21T07:09:49+00:00",
