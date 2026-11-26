@@ -2032,6 +2032,11 @@
    "channel": "discovery",
    "title": "Jakeschincariol/trader-skill"
   },
+  "url:https://github.com/jaredchu/context-docs": {
+   "at": "2026-11-26T03:42:08+00:00",
+   "channel": "discovery",
+   "title": "jaredchu/context-docs"
+  },
   "url:https://github.com/jiji262/claude-design-skill": {
    "at": "2026-11-24T14:05:37+00:00",
    "channel": "discovery",
@@ -2056,6 +2061,11 @@
    "at": "2026-11-20T02:29:58+00:00",
    "channel": "discovery",
    "title": "JosssphZhou/poki"
+  },
+  "url:https://github.com/jpicklyk/task-orchestrator": {
+   "at": "2026-11-26T03:42:08+00:00",
+   "channel": "discovery",
+   "title": "jpicklyk/task-orchestrator"
   },
   "url:https://github.com/jub0t/concat": {
    "at": "2026-11-18T20:50:39+00:00",
@@ -2082,6 +2092,11 @@
    "channel": "discovery",
    "title": "kajisho5/ffmpeg-skill"
   },
+  "url:https://github.com/kevinpbuckley/vibeue": {
+   "at": "2026-11-26T03:42:08+00:00",
+   "channel": "discovery",
+   "title": "kevinpbuckley/VibeUE"
+  },
   "url:https://github.com/kivanow/sessionly": {
    "at": "2026-11-25T00:04:27+00:00",
    "channel": "discovery",
@@ -2091,6 +2106,11 @@
    "at": "2026-11-23T13:26:43+00:00",
    "channel": "discovery",
    "title": "kostja94/bricks"
+  },
+  "url:https://github.com/lacs-project/sysknife": {
+   "at": "2026-11-26T03:42:08+00:00",
+   "channel": "discovery",
+   "title": "lacs-project/sysknife"
   },
   "url:https://github.com/laulauraluo/looks-good-to-ai": {
    "at": "2026-11-23T13:26:43+00:00",
@@ -2141,6 +2161,11 @@
    "at": "2026-11-23T13:26:43+00:00",
    "channel": "discovery",
    "title": "mamawai/wtfibought"
+  },
+  "url:https://github.com/mcp-use/mcp-use": {
+   "at": "2026-11-26T03:42:08+00:00",
+   "channel": "discovery",
+   "title": "mcp-use/mcp-use"
   },
   "url:https://github.com/mdiri-ai/soduwork": {
    "at": "2026-11-19T20:54:44+00:00",
@@ -2429,6 +2454,11 @@
    "channel": "discovery",
    "title": "Sinan6021/codex-cli-unlimited"
   },
+  "url:https://github.com/smithersai/smithers": {
+   "at": "2026-11-26T03:42:08+00:00",
+   "channel": "discovery",
+   "title": "smithersai/smithers"
+  },
   "url:https://github.com/sonichi/sutando": {
    "at": "2026-11-23T01:59:00+00:00",
    "channel": "discovery",
@@ -2438,6 +2468,11 @@
    "at": "2026-11-19T02:46:27+00:00",
    "channel": "discovery",
    "title": "strands-agents/harness-sdk"
+  },
+  "url:https://github.com/sylphxai/anymd": {
+   "at": "2026-11-26T03:42:08+00:00",
+   "channel": "discovery",
+   "title": "SylphxAI/anymd"
   },
   "url:https://github.com/t3dotgg/tstack": {
    "at": "2026-11-21T19:40:04+00:00",
@@ -2548,6 +2583,11 @@
    "at": "2026-11-24T14:05:37+00:00",
    "channel": "discovery",
    "title": "zereight/gitlab-mcp"
+  },
+  "url:https://github.com/zhayujie/cowagent": {
+   "at": "2026-11-26T03:42:08+00:00",
+   "channel": "discovery",
+   "title": "zhayujie/CowAgent"
   },
   "url:https://github.com/zichuanlan/agent-purge": {
    "at": "2026-11-22T19:54:50+00:00",

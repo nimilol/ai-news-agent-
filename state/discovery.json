@@ -91,6 +91,7 @@
   "gh:chipfighter/context-attachment-manager": "github:R_kgDOUojiPw",
   "gh:christos-antono/npctalk": "github:R_kgDOVLlacw",
   "gh:chromedevtools/chrome-devtools-mcp": "github:R_kgDOPt7f_g",
+  "gh:cixisvesper/dsh-soundtry": "github:R_kgDOVdxwXw",
   "gh:clacky-ai/openclacky": "github:R_kgDOQw55wQ",
   "gh:clickhouse/loom": "github:R_kgDOVA_xtQ",
   "gh:codeaholicguy/ai-devkit": "github:R_kgDOQCHD2A",
@@ -151,6 +152,7 @@
   "gh:el4cteo/blender-skills": "github:R_kgDOVJ8ICw",
   "gh:el4cteo/fast-anything": "github:R_kgDOV2sUSw",
   "gh:elder-plinius/cl4r1t4s": "github:R_kgDOODMFTA",
+  "gh:electronbladesmith/whisperdesk-offlinetranscriber": "github:R_kgDOV4pVtg",
   "gh:elementalsouls/claude-bughunter": "github:R_kgDOSUzdDA",
   "gh:elvarofficial/teardown": "github:R_kgDOVc1e6Q",
   "gh:emanuele-em/kanzo": "github:R_kgDOVWuMCw",
@@ -164,6 +166,7 @@
   "gh:evaleval/every_eval_ever": "github:R_kgDOP-vP7A",
   "gh:evalstate/fast-agent": "github:R_kgDONsNzVQ",
   "gh:evergreen-it-dev/folio": "github:R_kgDOUztUmA",
+  "gh:evermind-ai/raven": "github:R_kgDOSjxMgQ",
   "gh:evolvinglmms-lab/lmms-eval": "github:R_kgDOLdAZwA",
   "gh:expo/exact": "github:R_kgDOVfkMyg",
   "gh:fainir/most-capable-agent-system-prompt": "github:R_kgDORzRc2g",
@@ -249,6 +252,8 @@
   "gh:imkofty/hermuse": "github:R_kgDOUuQXQQ",
   "gh:imsai-sh/fish-pocket": "github:R_kgDOVjYGwg",
   "gh:ink-q/agy-fast": "github:R_kgDOVz4IQg",
+  "gh:instructa/constructa-starter": "github:R_kgDOO5H6QA",
+  "gh:ishangautam7/talvio": "github:R_kgDOVTfKxg",
   "gh:jackson-cmd/risk-aware-trading-agents": "github:R_kgDOVrWJoA",
   "gh:jackulau/coding.sh": "github:R_kgDOVl2LzQ",
   "gh:jaikydota/bullflow": "github:R_kgDOVI0SbA",
@@ -271,6 +276,7 @@
   "gh:joasasantos/rea-prompts": "github:R_kgDOVQKzRQ",
   "gh:jonigl/mcp-client-for-ollama": "github:R_kgDOOeox5Q",
   "gh:josssphzhou/poki": "github:R_kgDOVkGvGA",
+  "gh:jpicklyk/task-orchestrator": "github:R_kgDOOu0GMA",
   "gh:jub0t/concat": "github:R_kgDOUEHx5A",
   "gh:judgmentlabs/judgeval": "github:R_kgDONFlf-w",
   "gh:juinwei7/shiyin": "github:R_kgDOVLDH7w",
@@ -284,6 +290,8 @@
   "gh:katherineleroy/codex-unlimited": "github:R_kgDOV5O2Ug",
   "gh:kentucky-ai/opentakeoff": "github:R_kgDOS84j3A",
   "gh:kettuai/kettu": "github:R_kgDOVROqjQ",
+  "gh:kevin-liu-01/claude-of-tanks": "github:R_kgDOTnZ88A",
+  "gh:kevinpbuckley/vibeue": "github:R_kgDOPuti7g",
   "gh:kitfunso/hippo-memory": "github:R_kgDORniRRA",
   "gh:kivanow/sessionly": "github:R_kgDOVtWz9Q",
   "gh:kkjiangk/agent-py": "github:R_kgDOU7GStg",
@@ -293,6 +301,7 @@
   "gh:ktwu01/benchmark-radar": "github:R_kgDOTkneTQ",
   "gh:kubai087/kubai-icons": "github:R_kgDOVhMpig",
   "gh:kyegomez/awesome-multi-agent-papers": "github:R_kgDOLWH_9g",
+  "gh:lacs-project/sysknife": "github:R_kgDOS72SbQ",
   "gh:lalipa2003-arch/jailbreakhub": "github:R_kgDOUu5DkQ",
   "gh:langchain-ai/design-agent": "github:R_kgDOVOB3Zg",
   "gh:langchain-ai/lca-managed-agents": "github:R_kgDOVo3vew",
@@ -313,6 +322,7 @@
   "gh:liyupi/ai-promo-video-maker": "github:R_kgDOVCJ46A",
   "gh:ljxpython/ai-agent-platform": "github:R_kgDOO2UzEA",
   "gh:lmnr-ai/lmnr": "github:R_kgDOMpzYrQ",
+  "gh:lobu-ai/lobu": "github:R_kgDOPTZ9Fg",
   "gh:locvel/voite": "github:R_kgDOV1NSVQ",
   "gh:lodyai/lody": "github:R_kgDOTwqrzw",
   "gh:lofcz/llmtornado": "github:R_kgDOKdlH0w",
@@ -321,10 +331,12 @@
   "gh:louisshark/chatgpt_system_prompt": "github:R_kgDOKn3x8g",
   "gh:lumidarin/agy-capsule": "github:R_kgDOVuNJ4w",
   "gh:lynote-ai/local-ai-note-taker": "github:R_kgDOVryALg",
+  "gh:magerko/glossplay": "github:R_kgDOV04Fgg",
   "gh:mamawai/wtfibought": "github:R_kgDORJs5nw",
   "gh:marclou/mailcheap": "github:R_kgDOVDuGdA",
   "gh:marketzy/codex-cli-repo-workbench": "github:R_kgDOV1ooPg",
   "gh:maximhq/bifrost": "github:R_kgDOOLDdQA",
+  "gh:mcp-use/mcp-use": "github:R_kgDOOQKbDA",
   "gh:mdalamin5/end-to-end-agentic-ai-automation-lab": "github:R_kgDOOr79Dg",
   "gh:mdiri-ai/soduwork": "github:R_kgDOVbQmEQ",
   "gh:mdpsec/bug-bounty-hunting-prompts": "github:R_kgDOU0XiBQ",
@@ -469,6 +481,7 @@
   "gh:skyhook-io/radar": "github:R_kgDOQ9J0IQ",
   "gh:slow-stack/mneme": "github:R_kgDOT3faAQ",
   "gh:smart-mcp-proxy/mcpproxy-go": "github:R_kgDOO9ixUg",
+  "gh:smithersai/smithers": "github:R_kgDOQ0TAIQ",
   "gh:smixs/pi-durable-telegram": "github:R_kgDOVETISg",
   "gh:songconmaisaix31-design/mcpet": "github:R_kgDOVD1Mpg",
   "gh:sonichi/sutando": "github:R_kgDORzPLgg",
@@ -484,6 +497,7 @@
   "gh:strands-agents/harness-sdk": "github:R_kgDOOqJOzg",
   "gh:studioplatforms/aistupidmeter-web": "github:R_kgDOPt1RyQ",
   "gh:supercli-site/xiaobai-kanban": "github:R_kgDOUxghGg",
+  "gh:sylphxai/anymd": "github:R_kgDOOUDSTg",
   "gh:syngnat/gonavi": "github:R_kgDORFcByA",
   "gh:t3dotgg/tstack": "github:R_kgDOVVf_hg",
   "gh:talsiach/take-one": "github:R_kgDOVHC-9w",
@@ -514,17 +528,20 @@
   "gh:uernamezzj/workbuddy-prompt-patcher": "github:R_kgDOThMc0g",
   "gh:underleveledbuilder/awesome-short-drama-skills": "github:R_kgDOVIQiug",
   "gh:useapi/muse-api": "github:R_kgDOVFlbZw",
+  "gh:uselexora/lexora": "github:R_kgDOR098TA",
   "gh:vapi-network/vapi-network": "github:R_kgDOU4zrqA",
   "gh:vayungodara/cliproxy-rs": "github:R_kgDOU56ZJA",
   "gh:vectifyai/jev-doc-search": "github:R_kgDOU1bBJA",
   "gh:verifywise-ai/verifywise": "github:R_kgDOMlKt8g",
   "gh:vibheksoni/stealth-browser-mcp": "github:R_kgDOPa3YDg",
   "gh:vincentsch/explainroo": "github:R_kgDOUrdHXw",
+  "gh:vladkens/wavo": "github:R_kgDOU_zwoQ",
   "gh:voxdance-lab/voxmel": "github:R_kgDOVqlePA",
   "gh:vstorm-co/agenticos": "github:R_kgDOTpIZ9w",
   "gh:w01fb0ss/pibot": "github:R_kgDOV2WJ6Q",
   "gh:wanghao-sunsky/cs329z-chinese": "github:R_kgDOVa4Eag",
   "gh:wangrongding/superhive": "github:R_kgDOKQcBgA",
+  "gh:watzon/sayso": "github:R_kgDOU5G3Kw",
   "gh:weifeng2333/phistory": "github:R_kgDOSkLw8Q",
   "gh:wendystar0628/ai-all-round-bench": "github:R_kgDOVWB1Kw",
   "gh:wgjsg/agilex-docs-mcp": "github:R_kgDOVhPfQQ",
@@ -551,6 +568,7 @@
   "gh:zeekk0/openamika": "github:R_kgDOVhtsbQ",
   "gh:zereight/gitlab-mcp": "github:R_kgDON3ilYw",
   "gh:zhanghao123vip/ai-manju-skills": "github:R_kgDOVduyGg",
+  "gh:zhayujie/cowagent": "github:R_kgDOHx-ACA",
   "gh:zhouxiaoka/autoclip": "github:R_kgDOPIwfLw",
   "gh:zhtyyx/codex-seo": "github:R_kgDOVY_AXw",
   "gh:zhuyansen/awesome-claude-video-skills": "github:R_kgDOUtsQdw",
@@ -651,6 +669,7 @@
   "url:https://github.com/chipfighter/context-attachment-manager": "github:R_kgDOUojiPw",
   "url:https://github.com/christos-antono/npctalk": "github:R_kgDOVLlacw",
   "url:https://github.com/chromedevtools/chrome-devtools-mcp": "github:R_kgDOPt7f_g",
+  "url:https://github.com/cixisvesper/dsh-soundtry": "github:R_kgDOVdxwXw",
   "url:https://github.com/clacky-ai/openclacky": "github:R_kgDOQw55wQ",
   "url:https://github.com/clickhouse/loom": "github:R_kgDOVA_xtQ",
   "url:https://github.com/codeaholicguy/ai-devkit": "github:R_kgDOQCHD2A",
@@ -711,6 +730,7 @@
   "url:https://github.com/el4cteo/blender-skills": "github:R_kgDOVJ8ICw",
   "url:https://github.com/el4cteo/fast-anything": "github:R_kgDOV2sUSw",
   "url:https://github.com/elder-plinius/cl4r1t4s": "github:R_kgDOODMFTA",
+  "url:https://github.com/electronbladesmith/whisperdesk-offlinetranscriber": "github:R_kgDOV4pVtg",
   "url:https://github.com/elementalsouls/claude-bughunter": "github:R_kgDOSUzdDA",
   "url:https://github.com/elvarofficial/teardown": "github:R_kgDOVc1e6Q",
   "url:https://github.com/emanuele-em/kanzo": "github:R_kgDOVWuMCw",
@@ -724,6 +744,7 @@
   "url:https://github.com/evaleval/every_eval_ever": "github:R_kgDOP-vP7A",
   "url:https://github.com/evalstate/fast-agent": "github:R_kgDONsNzVQ",
   "url:https://github.com/evergreen-it-dev/folio": "github:R_kgDOUztUmA",
+  "url:https://github.com/evermind-ai/raven": "github:R_kgDOSjxMgQ",
   "url:https://github.com/evolvinglmms-lab/lmms-eval": "github:R_kgDOLdAZwA",
   "url:https://github.com/expo/exact": "github:R_kgDOVfkMyg",
   "url:https://github.com/fainir/most-capable-agent-system-prompt": "github:R_kgDORzRc2g",
@@ -809,6 +830,8 @@
   "url:https://github.com/imkofty/hermuse": "github:R_kgDOUuQXQQ",
   "url:https://github.com/imsai-sh/fish-pocket": "github:R_kgDOVjYGwg",
   "url:https://github.com/ink-q/agy-fast": "github:R_kgDOVz4IQg",
+  "url:https://github.com/instructa/constructa-starter": "github:R_kgDOO5H6QA",
+  "url:https://github.com/ishangautam7/talvio": "github:R_kgDOVTfKxg",
   "url:https://github.com/jackson-cmd/risk-aware-trading-agents": "github:R_kgDOVrWJoA",
   "url:https://github.com/jackulau/coding.sh": "github:R_kgDOVl2LzQ",
   "url:https://github.com/jaikydota/bullflow": "github:R_kgDOVI0SbA",
@@ -831,6 +854,7 @@
   "url:https://github.com/joasasantos/rea-prompts": "github:R_kgDOVQKzRQ",
   "url:https://github.com/jonigl/mcp-client-for-ollama": "github:R_kgDOOeox5Q",
   "url:https://github.com/josssphzhou/poki": "github:R_kgDOVkGvGA",
+  "url:https://github.com/jpicklyk/task-orchestrator": "github:R_kgDOOu0GMA",
   "url:https://github.com/jub0t/concat": "github:R_kgDOUEHx5A",
   "url:https://github.com/judgmentlabs/judgeval": "github:R_kgDONFlf-w",
   "url:https://github.com/juinwei7/shiyin": "github:R_kgDOVLDH7w",
@@ -844,6 +868,8 @@
   "url:https://github.com/katherineleroy/codex-unlimited": "github:R_kgDOV5O2Ug",
   "url:https://github.com/kentucky-ai/opentakeoff": "github:R_kgDOS84j3A",
   "url:https://github.com/kettuai/kettu": "github:R_kgDOVROqjQ",
+  "url:https://github.com/kevin-liu-01/claude-of-tanks": "github:R_kgDOTnZ88A",
+  "url:https://github.com/kevinpbuckley/vibeue": "github:R_kgDOPuti7g",
   "url:https://github.com/kitfunso/hippo-memory": "github:R_kgDORniRRA",
   "url:https://github.com/kivanow/sessionly": "github:R_kgDOVtWz9Q",
   "url:https://github.com/kkjiangk/agent-py": "github:R_kgDOU7GStg",
@@ -853,6 +879,7 @@
   "url:https://github.com/ktwu01/benchmark-radar": "github:R_kgDOTkneTQ",
   "url:https://github.com/kubai087/kubai-icons": "github:R_kgDOVhMpig",
   "url:https://github.com/kyegomez/awesome-multi-agent-papers": "github:R_kgDOLWH_9g",
+  "url:https://github.com/lacs-project/sysknife": "github:R_kgDOS72SbQ",
   "url:https://github.com/lalipa2003-arch/jailbreakhub": "github:R_kgDOUu5DkQ",
   "url:https://github.com/langchain-ai/design-agent": "github:R_kgDOVOB3Zg",
   "url:https://github.com/langchain-ai/lca-managed-agents": "github:R_kgDOVo3vew",
@@ -873,6 +900,7 @@
   "url:https://github.com/liyupi/ai-promo-video-maker": "github:R_kgDOVCJ46A",
   "url:https://github.com/ljxpython/ai-agent-platform": "github:R_kgDOO2UzEA",
   "url:https://github.com/lmnr-ai/lmnr": "github:R_kgDOMpzYrQ",
+  "url:https://github.com/lobu-ai/lobu": "github:R_kgDOPTZ9Fg",
   "url:https://github.com/locvel/voite": "github:R_kgDOV1NSVQ",
   "url:https://github.com/lodyai/lody": "github:R_kgDOTwqrzw",
   "url:https://github.com/lofcz/llmtornado": "github:R_kgDOKdlH0w",
@@ -881,10 +909,12 @@
   "url:https://github.com/louisshark/chatgpt_system_prompt": "github:R_kgDOKn3x8g",
   "url:https://github.com/lumidarin/agy-capsule": "github:R_kgDOVuNJ4w",
   "url:https://github.com/lynote-ai/local-ai-note-taker": "github:R_kgDOVryALg",
+  "url:https://github.com/magerko/glossplay": "github:R_kgDOV04Fgg",
   "url:https://github.com/mamawai/wtfibought": "github:R_kgDORJs5nw",
   "url:https://github.com/marclou/mailcheap": "github:R_kgDOVDuGdA",
   "url:https://github.com/marketzy/codex-cli-repo-workbench": "github:R_kgDOV1ooPg",
   "url:https://github.com/maximhq/bifrost": "github:R_kgDOOLDdQA",
+  "url:https://github.com/mcp-use/mcp-use": "github:R_kgDOOQKbDA",
   "url:https://github.com/mdalamin5/end-to-end-agentic-ai-automation-lab": "github:R_kgDOOr79Dg",
   "url:https://github.com/mdiri-ai/soduwork": "github:R_kgDOVbQmEQ",
   "url:https://github.com/mdpsec/bug-bounty-hunting-prompts": "github:R_kgDOU0XiBQ",
@@ -1029,6 +1059,7 @@
   "url:https://github.com/skyhook-io/radar": "github:R_kgDOQ9J0IQ",
   "url:https://github.com/slow-stack/mneme": "github:R_kgDOT3faAQ",
   "url:https://github.com/smart-mcp-proxy/mcpproxy-go": "github:R_kgDOO9ixUg",
+  "url:https://github.com/smithersai/smithers": "github:R_kgDOQ0TAIQ",
   "url:https://github.com/smixs/pi-durable-telegram": "github:R_kgDOVETISg",
   "url:https://github.com/songconmaisaix31-design/mcpet": "github:R_kgDOVD1Mpg",
   "url:https://github.com/sonichi/sutando": "github:R_kgDORzPLgg",
@@ -1044,6 +1075,7 @@
   "url:https://github.com/strands-agents/harness-sdk": "github:R_kgDOOqJOzg",
   "url:https://github.com/studioplatforms/aistupidmeter-web": "github:R_kgDOPt1RyQ",
   "url:https://github.com/supercli-site/xiaobai-kanban": "github:R_kgDOUxghGg",
+  "url:https://github.com/sylphxai/anymd": "github:R_kgDOOUDSTg",
   "url:https://github.com/syngnat/gonavi": "github:R_kgDORFcByA",
   "url:https://github.com/t3dotgg/tstack": "github:R_kgDOVVf_hg",
   "url:https://github.com/talsiach/take-one": "github:R_kgDOVHC-9w",
@@ -1074,17 +1106,20 @@
   "url:https://github.com/uernamezzj/workbuddy-prompt-patcher": "github:R_kgDOThMc0g",
   "url:https://github.com/underleveledbuilder/awesome-short-drama-skills": "github:R_kgDOVIQiug",
   "url:https://github.com/useapi/muse-api": "github:R_kgDOVFlbZw",
+  "url:https://github.com/uselexora/lexora": "github:R_kgDOR098TA",
   "url:https://github.com/vapi-network/vapi-network": "github:R_kgDOU4zrqA",
   "url:https://github.com/vayungodara/cliproxy-rs": "github:R_kgDOU56ZJA",
   "url:https://github.com/vectifyai/jev-doc-search": "github:R_kgDOU1bBJA",
   "url:https://github.com/verifywise-ai/verifywise": "github:R_kgDOMlKt8g",
   "url:https://github.com/vibheksoni/stealth-browser-mcp": "github:R_kgDOPa3YDg",
   "url:https://github.com/vincentsch/explainroo": "github:R_kgDOUrdHXw",
+  "url:https://github.com/vladkens/wavo": "github:R_kgDOU_zwoQ",
   "url:https://github.com/voxdance-lab/voxmel": "github:R_kgDOVqlePA",
   "url:https://github.com/vstorm-co/agenticos": "github:R_kgDOTpIZ9w",
   "url:https://github.com/w01fb0ss/pibot": "github:R_kgDOV2WJ6Q",
   "url:https://github.com/wanghao-sunsky/cs329z-chinese": "github:R_kgDOVa4Eag",
   "url:https://github.com/wangrongding/superhive": "github:R_kgDOKQcBgA",
+  "url:https://github.com/watzon/sayso": "github:R_kgDOU5G3Kw",
   "url:https://github.com/weifeng2333/phistory": "github:R_kgDOSkLw8Q",
   "url:https://github.com/wendystar0628/ai-all-round-bench": "github:R_kgDOVWB1Kw",
   "url:https://github.com/wgjsg/agilex-docs-mcp": "github:R_kgDOVhPfQQ",
@@ -1111,6 +1146,7 @@
   "url:https://github.com/zeekk0/openamika": "github:R_kgDOVhtsbQ",
   "url:https://github.com/zereight/gitlab-mcp": "github:R_kgDON3ilYw",
   "url:https://github.com/zhanghao123vip/ai-manju-skills": "github:R_kgDOVduyGg",
+  "url:https://github.com/zhayujie/cowagent": "github:R_kgDOHx-ACA",
   "url:https://github.com/zhouxiaoka/autoclip": "github:R_kgDOPIwfLw",
   "url:https://github.com/zhtyyx/codex-seo": "github:R_kgDOVY_AXw",
   "url:https://github.com/zhuyansen/awesome-claude-video-skills": "github:R_kgDOUtsQdw",
@@ -1194,6 +1230,7 @@
   "url:https://huggingface.co/n4ze3m/tiny-voca": "hf:model:n4ze3m/tiny-voca",
   "url:https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF": "hf:model:nari-labs/qwen3.8-27b-nariq-gguf",
   "url:https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB": "hf:model:nvidia/nvidia-nemotron-3.5-bolt-e4b-4gb",
+  "url:https://huggingface.co/nvidia/Nemotron-Labs-Image-30B-A3B": "hf:model:nvidia/nemotron-labs-image-30b-a3b",
   "url:https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF": "hf:model:prism-ml/ternary-bonsai-2.5-27b-gguf",
   "url:https://huggingface.co/sensenova/SenseNova-Loop-9B": "hf:model:sensenova/sensenova-loop-9b",
   "url:https://huggingface.co/spaces/AST-1320/Qwen-2511-Plus-Flux.2-klein": "hf:space:ast-1320/qwen-2511-plus-flux.2-klein",
@@ -1209,6 +1246,7 @@
   "url:https://huggingface.co/spaces/Guaryn/qwen-image-2.1-uncensored-aio-loras": "hf:space:guaryn/qwen-image-2.1-uncensored-aio-loras",
   "url:https://huggingface.co/spaces/Heartsync/NSFW-Uncensored-video2": "hf:space:heartsync/nsfw-uncensored-video2",
   "url:https://huggingface.co/spaces/HuggingFaceSwarms/PyBot": "hf:space:huggingfaceswarms/pybot",
+  "url:https://huggingface.co/spaces/HuggingFaceSwarms/scaling-swarms": "hf:space:huggingfaceswarms/scaling-swarms",
   "url:https://huggingface.co/spaces/ICML-2026-agent-repro/challenge": "hf:space:icml-2026-agent-repro/challenge",
   "url:https://huggingface.co/spaces/JCisHERE/wan2-2-i2v-v3": "hf:space:jcishere/wan2-2-i2v-v3",
   "url:https://huggingface.co/spaces/KingNish/Instant-Video": "hf:space:kingnish/instant-video",
@@ -1281,6 +1319,7 @@
   "url:https://huggingface.co/spaces/xyzanonimous5/Qwen-Image-2.1-Studio": "hf:space:xyzanonimous5/qwen-image-2.1-studio",
   "url:https://huggingface.co/spaces/ysharma/OpenAI_TTS_New": "hf:space:ysharma/openai_tts_new",
   "url:https://huggingface.co/speridlabs/idol": "hf:model:speridlabs/idol",
+  "url:https://huggingface.co/strata-engine/Inkling-2-Mini-Strata": "hf:model:strata-engine/inkling-2-mini-strata",
   "url:https://huggingface.co/tencent/Hy4": "hf:model:tencent/hy4",
   "url:https://huggingface.co/tencent/Hy4-flash": "hf:model:tencent/hy4-flash",
   "url:https://huggingface.co/thinkingmachines/Inkling-2-Mini": "hf:model:thinkingmachines/inkling-2-mini",
@@ -1290,10 +1329,10 @@
   "url:https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic": "hf:model:xtools-at/deepseek-v4-pro-qwen3.5-9b-uncensored-heretic"
  },
  "failures": {
-  "Codeberg": 25
+  "Codeberg": 26
  },
  "meta": {
-  "last_batch_at": "2026-11-25T19:33:24+00:00",
+  "last_batch_at": "2026-11-26T03:42:06+00:00",
   "pending_updates": []
  },
  "outbox": {
@@ -2649,6 +2688,60 @@
     }
    ],
    "verification": ""
+  },
+  "discovery|2026-11-26T03:42:06+00:00": {
+   "applied": true,
+   "attempts": 1,
+   "category": "DISCOVERY",
+   "created": "2026-11-26T03:42:06+00:00",
+   "id": "discovery|2026-11-26T03:42:06+00:00",
+   "kind": "discovery",
+   "last_error": null,
+   "log": [
+    "2026-11-26T03:42:08+00:00 SENT: Telegram confirmed message id(s) [962, 963, 964]"
+   ],
+   "model_name": "AI skills & open-source discoveries",
+   "parts": [
+    "<b>🚀 AI SKILLS &amp; OPEN-SOURCE DISCOVERIES</b>\n<b>Date:</b> 26 Nov 2026, 03:42 UTC\n<b>Discovery period:</b> 25 Nov 19:33 – 26 Nov 03:42 UTC\n<b>New discoveries:</b> 8\n\n<b>🧠 AI AGENT BUILDING</b>\n<b>1. jpicklyk/task-orchestrator</b>\n<i>🟠 P1 Highly useful · score 84/100</i>\n<i>★ 215 · 25 forks · 11 open issues · 2 contributors · updated today</i>\n<b>Developer:</b> jpicklyk\n<b>What it does:</b> An MCP server implemented in Kotlin that enforces work item graphs, dependency trees, and quality gates server-side for AI agents.\n<b>Why it matters:</b> It blocks agent tool calls server-side if required pre-conditions or documentation gates are not met, guaranteeing strict workflow discipline.\n<b>Practical application:</b> Run it via Docker as an MCP backend to enforce strict prerequisites before your coding agent can transition tasks.\n<b>Compatibility:</b> Claude Code, MCP, Docker\n<b>Cost:</b> Free and open source\n<b>Licence:</b> MIT\n💼 <i>Enhances your personal AI agent orchestration setups.</i>\n<i>Also useful for: automation, skills and instructions</i>\n🔗 <b>Repository:</b> <a href=\"https://github.com/jpicklyk/task-orchestrator\">github.com/jpicklyk/task-orchestrator</a>\n\n<b>2. smithersai/smithers</b>\n<i>🟠 P1 Highly useful · score 83/100</i>\n<i>★ 450 · 50 forks · 59 open issues · 45 contributors · updated today</i>\n<b>Developer:</b> smithersai\n<b>What it does:</b> A TypeScript agentic workflow framework for defining and executing reliable, durable background tasks and codebase maintenance.\n<b>Why it matters:</b> It offers a clean TypeScript configuration layer for durable agent execution and background automation.\n<b>Practical application:</b> Define a configuration file for an automated codebase task and execute it via the Smithers CLI.\n<b>Compatibility:</b> Claude Code, Codex, Node.js\n<b>Cost:</b> Free and open source\n<b>Licence:</b> MIT\n💼 <i>Integrates into your Claude Code and Codex development setup.</i>\n<i>Also useful for: skills and instructions, automation</i>\n🔗 <b>Repository:</b> <a href=\"https://github.com/smithersai/smithers\">github.com/smithersai/smithers</a>\n\n<b>3. zhayujie/CowAgent</b>\n<i>🟠 P1 Highly useful · score 82/100</i>\n<i>★ 48,080 · 10,450 forks · 48 open issues · 230 contributors · updated today</i>\n<b>Developer:</b> zhayujie\n<b>What it does:</b> An open-source personal AI assistant and extensible agent harness featuring task planning, long-term memory, knowledge bases, and multi-agent collaboration.\n<b>Why it matters:</b> It provides a ready-to-run, extensible harness that handles planning, memory distillation, and tool execution out of the box.\n<b>Practical application:</b> Deploy it locally or via Docker to serve as your central personal AI agent across messaging channels.\n<b>Compatibility:</b> Claude Code, Codex, MCP, OpenAI API, Docker\n<b>Cost:</b> Free and open source\n<b>Licence:</b> MIT\n💼 <i>Great resource for deep-dives in your AI educational videos.</i>\n<i>Also useful for: skills and instructions, automation</i>\n🔗 <b>Repository:</b> <a href=\"https://github.com/zhayujie/cowagent\">github.com/zhayujie/cowagent</a>\n<i>(1/3)</i>",
+    "<b>🛠 AI SKILLS AND PROMPTS</b>\n<b>4. mcp-use/mcp-use</b>\n<i>🟠 P1 Highly useful · score 84/100</i>\n<i>★ 11,011 · 1,563 forks · 144 open issues · 65 contributors · updated today</i>\n<b>What it does:</b> A full-stack TypeScript framework for building MCP apps with native React views, typed Zod schemas, and built-in inspection tools.\n<b>Why it is useful:</b> It bridges backend agent tools with native React frontend components out of the box.\n<b>Where it can be integrated:</b> A Node.js project or Claude Code environment\n<b>Installation:</b> <code>npx -y create-mcp-use-app@latest</code>\n<b>Cost:</b> Free and open source\n💼 <i>Fits right into your TypeScript and agent-building stack.</i>\n<i>Also useful for: agent building, automation</i>\n🔗 <b>Original link:</b> <a href=\"https://github.com/mcp-use/mcp-use\">github.com/mcp-use/mcp-use</a>\n\n<b>5. jaredchu/context-docs</b>\n<i>🟠 P1 Highly useful · score 80/100</i>\n<i>★ 171 · 0 open issues · 1 contributors · updated 4 days ago</i>\n<b>What it does:</b> Lightweight Markdown-based agent skills for Codex and Claude Code that preserve project context, architectural decisions, and next steps across sessions.\n<b>Why it is useful:</b> It uses plain Markdown files and simple skills to automatically track state and hand off work seamlessly between AI sessions.\n<b>Where it can be integrated:</b> Claude Code skills folder or Codex configuration\n<b>Installation:</b> <code>git clone --branch v0.2.8 https://github.com/jaredchu/context-docs.git</code>\n<b>Cost:</b> Free and open source\n💼 <i>Directly plugs into your Claude Code and Codex projects.</i>\n<i>Also useful for: developer productivity, agent building</i>\n🔗 <b>Original link:</b> <a href=\"https://github.com/jaredchu/context-docs\">github.com/jaredchu/context-docs</a>\n\n<b>⚡ AI AUTOMATION AND WORKFLOWS</b>\n<b>6. kevinpbuckley/VibeUE</b>\n<i>🟠 P1 Highly useful · score 82/100</i>\n<i>★ 843 · 183 forks · 19 open issues · 29 contributors · updated today</i>\n<b>What it does:</b> An Unreal Engine 5.8+ MCP expansion and deep AI editor toolset that exposes engine domains like landscapes, materials, and Blueprints to AI agents.\n<b>Workflow it improves:</b> Improves game asset generation, terrain blockout, and level design workflows inside Unreal Engine.\n<b>Practical use:</b> Enable the plugin in Unreal Editor preferences and let your connected MCP agent manipulate terrain and assets directly.\n<b>Requirements:</b> no paid API, subscription or GPU mentioned in its README\n💼 <i>Complements your Claude Code and Codex developer toolkit.</i>\n<i>Also useful for: skills and instructions</i>\n🔗 <b>Original link:</b> <a href=\"https://github.com/kevinpbuckley/vibeue\">github.com/kevinpbuckley/vibeue</a>\n\n<b>7. lacs-project/sysknife</b>\n<i>🟠 P1 Highly useful · score 81/100</i>\n<i>★ 339 · 47 forks · 33 open issues · 44 contributors · updated today</i>\n<b>What it does:</b> A Rust-based Linux system administration MCP server that executes typed, approval-gated, and Ed25519-audited actions selected by an AI model.\n<b>Workflow it improves:</b> Improves secure systems administration and automated infrastructure management.\n<b>Practical use:</b> Run the daemon on a test server and connect it to your local MCP client to safely manage system resources.\n<b>Requirements:</b> no paid API, subscription or GPU mentioned in its README\n💼 <i>Plugs directly into your Claude Code and Codex workflow.</i>\n<i>Also useful for: agent building, developer productivity</i>\n🔗 <b>Original link:</b> <a href=\"https://github.com/lacs-project/sysknife\">github.com/lacs-project/sysknife</a>\n<i>(2/3)</i>",
+    "<b>🎬 AI CREATOR RESOURCES</b>\n<b>8. SylphxAI/anymd</b>\n<i>🔴 P0 Exceptional discovery · score 86/100</i>\n<i>★ 1,079 · 95 forks · 5 open issues · 18 contributors · updated today</i>\n<b>What it does:</b> A fast Rust MCP server and CLI that converts PDF, Word, PowerPoint, Excel, EPUB, HTML, web pages, images, audio, and video into clean Markdown for AI agents without requiring an API key.\n<b>How creators can use it:</b> Convert messy user documents or research papers into pristine Markdown for video scripting or reference notes.\n<b>Requirements:</b> no paid API, subscription or GPU mentioned in its README\n💼 <i>Directly enhances your Claude Code and Gemini development workflows with local file parsing.</i>\n<i>Also useful for: developer productivity, agent building</i>\n🔗 <b>Original link:</b> <a href=\"https://github.com/sylphxai/anymd\">github.com/sylphxai/anymd</a>\n\n<b>🏆 BEST DISCOVERY</b>\n<b>mcp-use/mcp-use</b> · <a href=\"https://github.com/mcp-use/mcp-use\">open</a>\n<b>Why it ranked first:</b> mcp-use is an exceptional, highly rated TypeScript framework for building rich MCP apps with React views and typed schemas, making it immensely valuable for building hackathon projects and reusable agent tooling.\n<b>What problem it solves:</b> It eliminates the custom extension wiring and boilerplate typically required to build interactive UIs and typed tools for Model Context Protocol servers.\n<b>What you could build or improve:</b> Build an interactive, view-backed AI assistant app or custom agent plugin for your next AI hackathon.\n\n<i>Discovered, checked and ranked automatically; nothing was installed or run. Read a repository&#x27;s code and licence before using it. Explanations by gemini/gemini-flash-lite-latest.</i>\n<i>(3/3)</i>"
+   ],
+   "priority": "P0",
+   "receipt": {
+    "status": "NOT_NEEDED"
+   },
+   "release_id": "discovery|2026-11-26T03:42:06+00:00",
+   "resource_ids": [
+    "github:R_kgDOOUDSTg",
+    "github:R_kgDOOQKbDA",
+    "github:R_kgDOOu0GMA",
+    "github:R_kgDOQ0TAIQ",
+    "github:R_kgDOHx-ACA",
+    "github:R_kgDOPuti7g",
+    "github:R_kgDOS72SbQ",
+    "github:R_kgDOUsWr4w"
+   ],
+   "sent_at": "2026-11-26T03:42:08+00:00",
+   "sent_parts": {
+    "0": {
+     "at": "2026-11-26T03:42:06+00:00",
+     "message_id": 962,
+     "telegram_date": 1795664526
+    },
+    "1": {
+     "at": "2026-11-26T03:42:07+00:00",
+     "message_id": 963,
+     "telegram_date": 1795664527
+    },
+    "2": {
+     "at": "2026-11-26T03:42:08+00:00",
+     "message_id": 964,
+     "telegram_date": 1795664527
+    }
+   },
+   "status": "SENT",
+   "updates": [],
+   "verification": ""
   }
  },
  "resources": {
@@ -3251,6 +3344,81 @@
    "status": "delivered",
    "url": "https://github.com/giskard-ai/giskard-oss",
    "version": "giskard-scan/v1.0.2"
+  },
+  "github:R_kgDOHx-ACA": {
+   "categories": [
+    "agent_building",
+    "skills",
+    "automation",
+    "app_development",
+    "creator_tools"
+   ],
+   "delivery": {
+    "message_ids": [
+     962,
+     963,
+     964
+    ],
+    "sent_at": "2026-11-26T03:42:08+00:00",
+    "status": "SENT"
+   },
+   "evaluated_at": "2026-11-26T03:41:17+00:00",
+   "first_discovered": "2026-11-26T03:41:17+00:00",
+   "id": "github:R_kgDOHx-ACA",
+   "identifier": "R_kgDOHx-ACA",
+   "kind": "repository",
+   "last_checked": "2026-11-26T03:41:17+00:00",
+   "last_notified": "2026-11-26T03:42:08+00:00",
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "zhayujie/CowAgent",
+   "owner": "zhayujie",
+   "platform": "github",
+   "priority": "P1",
+   "score": 82,
+   "snapshot": {
+    "created_at": "2022-08-07T08:33:41Z",
+    "default_branch": "master",
+    "description": "Open-source personal AI assistant & Agent Harness. Plans tasks, runs tools and skills, self-evolves with memory and knowledge. Multi-agent, multi-model, multi-channel. Lightweight, extensible, one-line install.",
+    "display": "CowAgent",
+    "forks": 10450,
+    "found_by": [
+     "search: topic:multi-agent"
+    ],
+    "kind": "repository",
+    "language": "Python",
+    "license_spdx": "MIT",
+    "name": "zhayujie/CowAgent",
+    "node_id": "R_kgDOHx-ACA",
+    "open_issues": 48,
+    "owner": "zhayujie",
+    "platform": "github",
+    "platform_id": 522158088,
+    "pushed_at": "2026-11-26T03:21:51Z",
+    "rid": "github:R_kgDOHx-ACA",
+    "stars": 48080,
+    "topics": [
+     "ai",
+     "ai-agent",
+     "ai-agents",
+     "chatgpt-on-wechat",
+     "claude",
+     "claude-code",
+     "codex",
+     "cowagent",
+     "deepseek",
+     "harness",
+     "llm",
+     "mcp",
+     "multi-agent",
+     "openai",
+     "openclaw",
+     "personal-agent",
+     "skills"
+    ],
+    "url": "https://github.com/zhayujie/cowagent"
+   },
+   "status": "delivered",
+   "url": "https://github.com/zhayujie/cowagent"
   },
   "github:R_kgDOIF8T9Q": {
    "categories": [
@@ -7133,6 +7301,93 @@
    "status": "pool",
    "url": "https://github.com/ljxpython/ai-agent-platform"
   },
+  "github:R_kgDOO5H6QA": {
+   "categories": [
+    "app_development",
+    "hackathon",
+    "productivity",
+    "skills",
+    "agent_building"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-26T03:41:20+00:00",
+   "evaluation": {
+    "categories": [
+     "app_development",
+     "hackathon",
+     "productivity",
+     "skills",
+     "agent_building"
+    ],
+    "compatibility": [
+     "Claude Code",
+     "Codex",
+     "Cursor",
+     "OpenAI API",
+     "Node.js",
+     "Docker"
+    ],
+    "contributors": 3,
+    "docs": "good",
+    "install": "npx gitpick git@github.com:instructa/constructa-starter.git my-app",
+    "licence_class": "OPEN SOURCE WITH PAID OPTIONAL SERVICES",
+    "licence_note": "MIT code; uses paid API",
+    "maintenance": "updated today",
+    "primary": "app_development",
+    "priority": "P1",
+    "reject": null,
+    "relevance": {
+     "hint": "it plugs into the coding agents you already use",
+     "project": "your Claude Code, Codex and Gemini development"
+    },
+    "requirements": [
+     "paid API"
+    ],
+    "score": 77,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-26T03:41:20+00:00",
+   "id": "github:R_kgDOO5H6QA",
+   "identifier": "R_kgDOO5H6QA",
+   "kind": "repository",
+   "last_checked": "2026-11-26T03:41:20+00:00",
+   "last_notified": null,
+   "licence_class": "OPEN SOURCE WITH PAID OPTIONAL SERVICES",
+   "name": "instructa/constructa-starter",
+   "owner": "instructa",
+   "platform": "github",
+   "priority": "P1",
+   "score": 77,
+   "snapshot": {
+    "created_at": "2025-06-10T08:20:51Z",
+    "default_branch": "main",
+    "description": "AI-First SAAS Starter Kit",
+    "display": "constructa-starter",
+    "forks": 17,
+    "found_by": [
+     "search: ai saas starter in:name,description"
+    ],
+    "kind": "repository",
+    "language": "TypeScript",
+    "license_spdx": "MIT",
+    "name": "instructa/constructa-starter",
+    "node_id": "R_kgDOO5H6QA",
+    "open_issues": 7,
+    "owner": "instructa",
+    "platform": "github",
+    "platform_id": 999422528,
+    "pushed_at": "2026-11-25T19:51:20Z",
+    "rid": "github:R_kgDOO5H6QA",
+    "stars": 120,
+    "url": "https://github.com/instructa/constructa-starter"
+   },
+   "status": "pool",
+   "url": "https://github.com/instructa/constructa-starter"
+  },
   "github:R_kgDOO9ixUg": {
    "categories": [
     "automation",
@@ -7534,6 +7789,163 @@
    },
    "status": "pool",
    "url": "https://github.com/maximhq/bifrost"
+  },
+  "github:R_kgDOOQKbDA": {
+   "categories": [
+    "skills",
+    "agent_building",
+    "automation",
+    "productivity",
+    "hackathon"
+   ],
+   "delivery": {
+    "message_ids": [
+     962,
+     963,
+     964
+    ],
+    "sent_at": "2026-11-26T03:42:08+00:00",
+    "status": "SENT"
+   },
+   "evaluated_at": "2026-11-26T03:41:17+00:00",
+   "first_discovered": "2026-11-26T03:41:17+00:00",
+   "id": "github:R_kgDOOQKbDA",
+   "identifier": "R_kgDOOQKbDA",
+   "kind": "repository",
+   "last_checked": "2026-11-26T03:41:17+00:00",
+   "last_notified": "2026-11-26T03:42:08+00:00",
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "mcp-use/mcp-use",
+   "owner": "mcp-use",
+   "platform": "github",
+   "priority": "P1",
+   "score": 84,
+   "snapshot": {
+    "created_at": "2025-03-28T10:06:31Z",
+    "default_branch": "main",
+    "description": "The fullstack MCP framework to develop MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents.",
+    "display": "mcp-use",
+    "forks": 1563,
+    "found_by": [
+     "search: topic:model-context-protocol"
+    ],
+    "kind": "repository",
+    "language": "TypeScript",
+    "license_spdx": "MIT",
+    "name": "mcp-use/mcp-use",
+    "node_id": "R_kgDOOQKbDA",
+    "open_issues": 144,
+    "owner": "mcp-use",
+    "platform": "github",
+    "platform_id": 956472076,
+    "pushed_at": "2026-11-26T02:50:43Z",
+    "rid": "github:R_kgDOOQKbDA",
+    "stars": 11011,
+    "topics": [
+     "agent-plugins",
+     "agentic-framework",
+     "ai",
+     "apps-sdk",
+     "chatgpt",
+     "claude-code",
+     "claude-connectors",
+     "llms",
+     "mcp",
+     "mcp-apps",
+     "mcp-client",
+     "mcp-gateway",
+     "mcp-inspector",
+     "mcp-server",
+     "mcp-servers",
+     "mcp-tools",
+     "mcp-ui",
+     "model-context-protocol",
+     "modelcontextprotocol",
+     "skills"
+    ],
+    "url": "https://github.com/mcp-use/mcp-use"
+   },
+   "status": "delivered",
+   "url": "https://github.com/mcp-use/mcp-use"
+  },
+  "github:R_kgDOOUDSTg": {
+   "categories": [
+    "creator_tools",
+    "productivity",
+    "agent_building",
+    "automation",
+    "app_development",
+    "skills"
+   ],
+   "delivery": {
+    "message_ids": [
+     962,
+     963,
+     964
+    ],
+    "sent_at": "2026-11-26T03:42:08+00:00",
+    "status": "SENT"
+   },
+   "evaluated_at": "2026-11-26T03:41:18+00:00",
+   "first_discovered": "2026-11-26T03:41:18+00:00",
+   "id": "github:R_kgDOOUDSTg",
+   "identifier": "R_kgDOOUDSTg",
+   "kind": "repository",
+   "last_checked": "2026-11-26T03:41:18+00:00",
+   "last_notified": "2026-11-26T03:42:08+00:00",
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "SylphxAI/anymd",
+   "owner": "SylphxAI",
+   "platform": "github",
+   "priority": "P0",
+   "score": 86,
+   "snapshot": {
+    "created_at": "2025-04-04T16:17:42Z",
+    "default_branch": "main",
+    "description": "Any file → clean Markdown for AI agents: PDF, Word, PowerPoint, Excel, EPUB, HTML and web pages, images (OCR), audio and video (metadata, subtitles, transcripts). A fast Rust MCP server and CLI that runs on your machine. No API key.",
+    "display": "anymd",
+    "forks": 95,
+    "found_by": [
+     "search: topic:model-context-protocol"
+    ],
+    "kind": "repository",
+    "language": "Rust",
+    "license_spdx": "MIT",
+    "name": "SylphxAI/anymd",
+    "node_id": "R_kgDOOUDSTg",
+    "open_issues": 5,
+    "owner": "SylphxAI",
+    "platform": "github",
+    "platform_id": 960549454,
+    "pushed_at": "2026-11-26T03:35:06Z",
+    "rid": "github:R_kgDOOUDSTg",
+    "stars": 1079,
+    "topics": [
+     "ai-agents",
+     "cli",
+     "document-conversion",
+     "docx",
+     "docx-to-markdown",
+     "epub",
+     "html-to-markdown",
+     "llm",
+     "markdown",
+     "markitdown-alternative",
+     "mcp",
+     "model-context-protocol",
+     "ocr",
+     "pdf",
+     "pdf-to-markdown",
+     "pptx",
+     "rag",
+     "rust",
+     "transcription",
+     "xlsx"
+    ],
+    "url": "https://github.com/sylphxai/anymd"
+   },
+   "status": "delivered",
+   "url": "https://github.com/sylphxai/anymd"
   },
   "github:R_kgDOOeox5Q": {
    "categories": [
@@ -8435,6 +8847,81 @@
    "status": "pool",
    "url": "https://github.com/mdalamin5/end-to-end-agentic-ai-automation-lab"
   },
+  "github:R_kgDOOu0GMA": {
+   "categories": [
+    "agent_building",
+    "automation",
+    "skills",
+    "productivity"
+   ],
+   "delivery": {
+    "message_ids": [
+     962,
+     963,
+     964
+    ],
+    "sent_at": "2026-11-26T03:42:08+00:00",
+    "status": "SENT"
+   },
+   "evaluated_at": "2026-11-26T03:41:20+00:00",
+   "first_discovered": "2026-11-26T03:41:20+00:00",
+   "id": "github:R_kgDOOu0GMA",
+   "identifier": "R_kgDOOu0GMA",
+   "kind": "repository",
+   "last_checked": "2026-11-26T03:41:20+00:00",
+   "last_notified": "2026-11-26T03:42:08+00:00",
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "jpicklyk/task-orchestrator",
+   "owner": "jpicklyk",
+   "platform": "github",
+   "priority": "P1",
+   "score": 84,
+   "snapshot": {
+    "created_at": "2025-05-22T20:06:06Z",
+    "default_branch": "main",
+    "description": "Server-enforced workflow discipline for AI agents. An MCP server providing persistent work items, dependency graphs, quality gates, and actor attribution. Schemas define what agents must produce — the server blocks the call if they don't. Works with any MCP-compatible client.",
+    "display": "task-orchestrator",
+    "forks": 25,
+    "found_by": [
+     "search: topic:model-context-protocol"
+    ],
+    "kind": "repository",
+    "language": "Kotlin",
+    "license_spdx": "MIT",
+    "name": "jpicklyk/task-orchestrator",
+    "node_id": "R_kgDOOu0GMA",
+    "open_issues": 11,
+    "owner": "jpicklyk",
+    "platform": "github",
+    "platform_id": 988612144,
+    "pushed_at": "2026-11-26T03:38:13Z",
+    "rid": "github:R_kgDOOu0GMA",
+    "stars": 215,
+    "topics": [
+     "ai-coding-assistant",
+     "ai-development",
+     "ai-harness",
+     "ai-memory",
+     "ai-tools",
+     "claude",
+     "claude-code",
+     "claude-desktop",
+     "context-persistence",
+     "developer-tools",
+     "harness-engineering",
+     "harness-framework",
+     "mcp",
+     "mcp-server",
+     "model-context-protocol",
+     "task-management",
+     "vibe-coding",
+     "workflow-automation"
+    ],
+    "url": "https://github.com/jpicklyk/task-orchestrator"
+   },
+   "status": "delivered",
+   "url": "https://github.com/jpicklyk/task-orchestrator"
+  },
   "github:R_kgDOP-vP7A": {
    "categories": [
     "automation",
@@ -8706,6 +9193,7 @@
    "kind": "repository",
    "last_checked": "2026-11-20T02:28:32+00:00",
    "last_notified": "2026-11-25T19:33:28+00:00",
+   "last_update_check": "2026-11-26T03:41:23+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "Piebald-AI/tweakcc",
    "owner": "Piebald-AI",
@@ -8758,7 +9246,8 @@
     "url": "https://github.com/piebald-ai/tweakcc"
    },
    "status": "delivered",
-   "url": "https://github.com/piebald-ai/tweakcc"
+   "url": "https://github.com/piebald-ai/tweakcc",
+   "version": "v4.4.0"
   },
   "github:R_kgDOPSVUiA": {
    "categories": [
@@ -8839,6 +9328,110 @@
    },
    "status": "delivered",
    "url": "https://github.com/wshobson/agents"
+  },
+  "github:R_kgDOPTZ9Fg": {
+   "categories": [
+    "agent_building",
+    "automation",
+    "skills",
+    "app_development",
+    "productivity"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-26T03:41:19+00:00",
+   "evaluation": {
+    "categories": [
+     "agent_building",
+     "automation",
+     "skills",
+     "app_development",
+     "productivity"
+    ],
+    "compatibility": [
+     "Claude Code",
+     "Codex",
+     "Cursor",
+     "MCP",
+     "Node.js",
+     "Docker"
+    ],
+    "contributors": 44,
+    "docs": "basic",
+    "install": "npx @lobu/cli@latest connect claude-code",
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "Apache-2.0",
+    "maintenance": "updated today",
+    "primary": "agent_building",
+    "priority": "P1",
+    "reject": null,
+    "relevance": {
+     "hint": "it covers source monitoring, summarising or Telegram delivery, which your news agent does every day",
+     "project": "your AI News Agent"
+    },
+    "requirements": [],
+    "score": 77,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-26T03:41:19+00:00",
+   "id": "github:R_kgDOPTZ9Fg",
+   "identifier": "R_kgDOPTZ9Fg",
+   "kind": "repository",
+   "last_checked": "2026-11-26T03:41:19+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "lobu-ai/lobu",
+   "owner": "lobu-ai",
+   "platform": "github",
+   "priority": "P1",
+   "score": 77,
+   "snapshot": {
+    "created_at": "2025-07-27T03:49:12Z",
+    "default_branch": "main",
+    "description": "Open-source control plane and runtime for organisational agents: shared company context & brain",
+    "display": "lobu",
+    "forks": 31,
+    "found_by": [
+     "search: topic:model-context-protocol"
+    ],
+    "kind": "repository",
+    "language": "TypeScript",
+    "license_spdx": "Apache-2.0",
+    "name": "lobu-ai/lobu",
+    "node_id": "R_kgDOPTZ9Fg",
+    "open_issues": 65,
+    "owner": "lobu-ai",
+    "platform": "github",
+    "platform_id": 1026981142,
+    "pushed_at": "2026-11-26T03:31:53Z",
+    "rid": "github:R_kgDOPTZ9Fg",
+    "stars": 237,
+    "topics": [
+     "agent",
+     "agent-infrastructure",
+     "agent-memory",
+     "ai-agents",
+     "chatbot",
+     "clawdbot",
+     "event-sourcing",
+     "glean",
+     "knowledge-graph",
+     "mcp",
+     "model-context-protocol",
+     "multi-agent",
+     "openclaw",
+     "personal-assistant",
+     "self-hosted",
+     "slack-bot",
+     "typescript"
+    ],
+    "url": "https://github.com/lobu-ai/lobu"
+   },
+   "status": "pool",
+   "url": "https://github.com/lobu-ai/lobu"
   },
   "github:R_kgDOPU2Lmg": {
    "categories": [
@@ -9577,6 +10170,81 @@
    "url": "https://github.com/chromedevtools/chrome-devtools-mcp",
    "version": "chrome-devtools-mcp-v1.14.0"
   },
+  "github:R_kgDOPuti7g": {
+   "categories": [
+    "automation",
+    "skills"
+   ],
+   "delivery": {
+    "message_ids": [
+     962,
+     963,
+     964
+    ],
+    "sent_at": "2026-11-26T03:42:08+00:00",
+    "status": "SENT"
+   },
+   "evaluated_at": "2026-11-26T03:41:18+00:00",
+   "first_discovered": "2026-11-26T03:41:18+00:00",
+   "id": "github:R_kgDOPuti7g",
+   "identifier": "R_kgDOPuti7g",
+   "kind": "repository",
+   "last_checked": "2026-11-26T03:41:18+00:00",
+   "last_notified": "2026-11-26T03:42:08+00:00",
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "kevinpbuckley/VibeUE",
+   "owner": "kevinpbuckley",
+   "platform": "github",
+   "priority": "P1",
+   "score": 82,
+   "snapshot": {
+    "created_at": "2025-09-12T14:25:35Z",
+    "default_branch": "master",
+    "description": "Unreal Engine Vibe Coding tool",
+    "display": "VibeUE",
+    "forks": 183,
+    "found_by": [
+     "search: topic:model-context-protocol"
+    ],
+    "kind": "repository",
+    "language": "C++",
+    "license_spdx": "MIT",
+    "name": "kevinpbuckley/VibeUE",
+    "node_id": "R_kgDOPuti7g",
+    "open_issues": 19,
+    "owner": "kevinpbuckley",
+    "platform": "github",
+    "platform_id": 1055613678,
+    "pushed_at": "2026-11-26T03:18:30Z",
+    "rid": "github:R_kgDOPuti7g",
+    "stars": 843,
+    "topics": [
+     "ai",
+     "ai-tools",
+     "automation",
+     "blueprint",
+     "claude",
+     "copilot",
+     "cursor",
+     "game-development",
+     "gamedev",
+     "landscape",
+     "mcp",
+     "mcp-server",
+     "model-context-protocol",
+     "niagara",
+     "open-source",
+     "python",
+     "ue5",
+     "unreal-engine",
+     "unreal-engine-plugin",
+     "vibe-coding"
+    ],
+    "url": "https://github.com/kevinpbuckley/vibeue"
+   },
+   "status": "delivered",
+   "url": "https://github.com/kevinpbuckley/vibeue"
+  },
   "github:R_kgDOPvq5vQ": {
    "categories": [
     "automation"
@@ -9661,6 +10329,77 @@
    },
    "status": "pool",
    "url": "https://github.com/homeassistant-ai/ha-mcp"
+  },
+  "github:R_kgDOQ0TAIQ": {
+   "categories": [
+    "agent_building",
+    "skills",
+    "automation",
+    "productivity",
+    "hackathon"
+   ],
+   "delivery": {
+    "message_ids": [
+     962,
+     963,
+     964
+    ],
+    "sent_at": "2026-11-26T03:42:08+00:00",
+    "status": "SENT"
+   },
+   "evaluated_at": "2026-11-26T03:41:19+00:00",
+   "first_discovered": "2026-11-26T03:41:19+00:00",
+   "id": "github:R_kgDOQ0TAIQ",
+   "identifier": "R_kgDOQ0TAIQ",
+   "kind": "repository",
+   "last_checked": "2026-11-26T03:41:19+00:00",
+   "last_notified": "2026-11-26T03:42:08+00:00",
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "smithersai/smithers",
+   "owner": "smithersai",
+   "platform": "github",
+   "priority": "P1",
+   "score": 83,
+   "snapshot": {
+    "created_at": "2026-01-05T21:13:36Z",
+    "default_branch": "main",
+    "description": "Smithers is an agentic workflow framework for defining workflows in simple TypeScript configuration files and executing them quickly, durably, and reliably",
+    "display": "smithers",
+    "forks": 50,
+    "found_by": [
+     "search: topic:multi-agent"
+    ],
+    "kind": "repository",
+    "language": "TypeScript",
+    "license_spdx": "MIT",
+    "name": "smithersai/smithers",
+    "node_id": "R_kgDOQ0TAIQ",
+    "open_issues": 59,
+    "owner": "smithersai",
+    "platform": "github",
+    "platform_id": 1128579105,
+    "pushed_at": "2026-11-26T03:21:37Z",
+    "rid": "github:R_kgDOQ0TAIQ",
+    "stars": 450,
+    "topics": [
+     "agent-orchestration",
+     "ai-agents",
+     "background-agents",
+     "claude-code",
+     "codex",
+     "developer-tools",
+     "durable-execution",
+     "human-in-the-loop",
+     "llm",
+     "multi-agent",
+     "react",
+     "typescript",
+     "workflow-engine"
+    ],
+    "url": "https://github.com/smithersai/smithers"
+   },
+   "status": "delivered",
+   "url": "https://github.com/smithersai/smithers"
   },
   "github:R_kgDOQ4REOA": {
    "categories": [
@@ -11516,6 +12255,104 @@
    "status": "pool",
    "url": "https://github.com/openbyteinc/quantdinger"
   },
+  "github:R_kgDOR098TA": {
+   "categories": [
+    "agent_building",
+    "skills",
+    "automation"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-26T03:41:18+00:00",
+   "evaluation": {
+    "categories": [
+     "agent_building",
+     "skills",
+     "automation"
+    ],
+    "compatibility": [
+     "MCP",
+     "Hugging Face",
+     "Node.js"
+    ],
+    "contributors": null,
+    "docs": "basic",
+    "install": null,
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "AGPL-3.0",
+    "maintenance": "updated today",
+    "primary": "agent_building",
+    "priority": "P2",
+    "reject": null,
+    "relevance": {
+     "hint": "it is a building block for agents that remember, use tools and act on their own",
+     "project": "your personal AI agents"
+    },
+    "requirements": [],
+    "score": 67,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-26T03:41:18+00:00",
+   "id": "github:R_kgDOR098TA",
+   "identifier": "R_kgDOR098TA",
+   "kind": "repository",
+   "last_checked": "2026-11-26T03:41:18+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "useLexora/Lexora",
+   "owner": "useLexora",
+   "platform": "github",
+   "priority": "P2",
+   "score": 67,
+   "snapshot": {
+    "created_at": "2026-03-30T16:50:22Z",
+    "default_branch": "master",
+    "description": "A self-evolved, sovereign desktop AI agent built for real-world action — beyond model wrappers and coding copilots. / 真实实践中自我演化的独立桌面 AI Agent。",
+    "display": "Lexora",
+    "forks": 32,
+    "found_by": [
+     "search: topic:multi-agent"
+    ],
+    "kind": "repository",
+    "language": "TypeScript",
+    "license_spdx": "AGPL-3.0",
+    "name": "useLexora/Lexora",
+    "node_id": "R_kgDOR098TA",
+    "open_issues": 28,
+    "owner": "useLexora",
+    "platform": "github",
+    "platform_id": 1196391500,
+    "pushed_at": "2026-11-26T03:24:25Z",
+    "rid": "github:R_kgDOR098TA",
+    "stars": 808,
+    "topics": [
+     "agent-loop",
+     "ai-agent",
+     "archlinux",
+     "autonomous-agents",
+     "desktop-agent",
+     "linux-desktop",
+     "llama",
+     "local-ai",
+     "mcp",
+     "multi-agent",
+     "pi",
+     "pi-agent",
+     "pi-desktop",
+     "rust",
+     "sandbox",
+     "skills",
+     "typescipt",
+     "wayland"
+    ],
+    "url": "https://github.com/uselexora/lexora"
+   },
+   "status": "pool",
+   "url": "https://github.com/uselexora/lexora"
+  },
   "github:R_kgDOR2LJVg": {
    "categories": [
     "agent_building",
@@ -11539,6 +12376,7 @@
    "kind": "repository",
    "last_checked": "2026-11-23T01:53:56+00:00",
    "last_notified": "2026-11-25T19:33:28+00:00",
+   "last_update_check": "2026-11-26T03:41:23+00:00",
    "licence_class": "OPEN SOURCE WITH PAID OPTIONAL SERVICES",
    "name": "open-multi-agent/open-multi-agent",
    "owner": "open-multi-agent",
@@ -11590,7 +12428,8 @@
     "url": "https://github.com/open-multi-agent/open-multi-agent"
    },
    "status": "delivered",
-   "url": "https://github.com/open-multi-agent/open-multi-agent"
+   "url": "https://github.com/open-multi-agent/open-multi-agent",
+   "version": "v1.25.0"
   },
   "github:R_kgDOR2ntBw": {
    "categories": [
@@ -14954,6 +15793,7 @@
    "kind": "repository",
    "last_checked": "2026-11-23T01:53:58+00:00",
    "last_notified": "2026-11-25T19:33:28+00:00",
+   "last_update_check": "2026-11-26T03:41:23+00:00",
    "licence_class": "OPEN SOURCE WITH PAID OPTIONAL SERVICES",
    "name": "BlackBeltTechnology/pi-agent-dashboard",
    "owner": "BlackBeltTechnology",
@@ -14997,7 +15837,8 @@
     "url": "https://github.com/blackbelttechnology/pi-agent-dashboard"
    },
    "status": "delivered",
-   "url": "https://github.com/blackbelttechnology/pi-agent-dashboard"
+   "url": "https://github.com/blackbelttechnology/pi-agent-dashboard",
+   "version": "v0.11.0"
   },
   "github:R_kgDORv73HA": {
    "categories": [
@@ -15762,6 +16603,83 @@
    },
    "status": "pool",
    "url": "https://github.com/omnigent-ai/omnigent"
+  },
+  "github:R_kgDOS72SbQ": {
+   "categories": [
+    "automation",
+    "agent_building",
+    "productivity",
+    "skills"
+   ],
+   "delivery": {
+    "message_ids": [
+     962,
+     963,
+     964
+    ],
+    "sent_at": "2026-11-26T03:42:08+00:00",
+    "status": "SENT"
+   },
+   "evaluated_at": "2026-11-26T03:41:19+00:00",
+   "first_discovered": "2026-11-26T03:41:19+00:00",
+   "id": "github:R_kgDOS72SbQ",
+   "identifier": "R_kgDOS72SbQ",
+   "kind": "repository",
+   "last_checked": "2026-11-26T03:41:19+00:00",
+   "last_notified": "2026-11-26T03:42:08+00:00",
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "lacs-project/sysknife",
+   "owner": "lacs-project",
+   "platform": "github",
+   "priority": "P1",
+   "score": 81,
+   "snapshot": {
+    "created_at": "2026-06-16T01:36:53Z",
+    "default_branch": "main",
+    "description": "An AI that administers Linux through typed, approval-gated, Ed25519-audited actions. The model selects the action; the daemon builds the command.",
+    "display": "sysknife",
+    "forks": 47,
+    "found_by": [
+     "search: topic:model-context-protocol"
+    ],
+    "kind": "repository",
+    "language": "Rust",
+    "license_spdx": "MIT",
+    "name": "lacs-project/sysknife",
+    "node_id": "R_kgDOS72SbQ",
+    "open_issues": 33,
+    "owner": "lacs-project",
+    "platform": "github",
+    "platform_id": 1270714989,
+    "pushed_at": "2026-11-26T03:23:33Z",
+    "rid": "github:R_kgDOS72SbQ",
+    "stars": 339,
+    "topics": [
+     "agentic-ai",
+     "ai-agents",
+     "ai-safety",
+     "audit-log",
+     "automation",
+     "claude",
+     "cli",
+     "devops",
+     "fedora",
+     "good-first-issue",
+     "help-wanted",
+     "linux",
+     "llm",
+     "mcp",
+     "model-context-protocol",
+     "rust",
+     "security",
+     "sysadmin",
+     "systemd",
+     "ubuntu"
+    ],
+    "url": "https://github.com/lacs-project/sysknife"
+   },
+   "status": "delivered",
+   "url": "https://github.com/lacs-project/sysknife"
   },
   "github:R_kgDOS84j3A": {
    "categories": [
@@ -17208,6 +18126,109 @@
    "status": "delivered",
    "url": "https://github.com/ling-stack-org/ling-stack",
    "version": "v0.6.1"
+  },
+  "github:R_kgDOSjxMgQ": {
+   "categories": [
+    "agent_building",
+    "skills",
+    "automation",
+    "creator_tools"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-26T03:41:17+00:00",
+   "evaluation": {
+    "categories": [
+     "agent_building",
+     "skills",
+     "automation",
+     "creator_tools"
+    ],
+    "compatibility": [
+     "Claude Code",
+     "Codex",
+     "OpenAI API",
+     "Hugging Face"
+    ],
+    "contributors": null,
+    "docs": "basic",
+    "install": null,
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "Apache-2.0",
+    "maintenance": "updated today",
+    "primary": "agent_building",
+    "priority": "P2",
+    "reject": null,
+    "relevance": {
+     "hint": "it is a building block for agents that remember, use tools and act on their own",
+     "project": "your personal AI agents"
+    },
+    "requirements": [],
+    "score": 70,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-26T03:41:17+00:00",
+   "id": "github:R_kgDOSjxMgQ",
+   "identifier": "R_kgDOSjxMgQ",
+   "kind": "repository",
+   "last_checked": "2026-11-26T03:41:17+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "EverMind-AI/Raven",
+   "owner": "EverMind-AI",
+   "platform": "github",
+   "priority": "P2",
+   "score": 70,
+   "snapshot": {
+    "created_at": "2026-05-21T08:45:07Z",
+    "default_branch": "main",
+    "description": "The Harness of Harnesses • Super Agent: a trusted, persistent, self-evolving multi-agent ecosystem for all-domain collaboration.",
+    "display": "Raven",
+    "forks": 282,
+    "found_by": [
+     "search: topic:multi-agent"
+    ],
+    "kind": "repository",
+    "language": "Python",
+    "license_spdx": "Apache-2.0",
+    "name": "EverMind-AI/Raven",
+    "node_id": "R_kgDOSjxMgQ",
+    "open_issues": 67,
+    "owner": "EverMind-AI",
+    "platform": "github",
+    "platform_id": 1245465729,
+    "pushed_at": "2026-11-26T03:21:21Z",
+    "rid": "github:R_kgDOSjxMgQ",
+    "stars": 6325,
+    "topics": [
+     "ai",
+     "ai-agents",
+     "anthropic",
+     "chatgpt",
+     "claude",
+     "codex",
+     "evermind",
+     "hermes",
+     "hermes-agent",
+     "llm",
+     "multi-agent",
+     "multi-agent-systems",
+     "openai",
+     "openclaw",
+     "openhuman",
+     "recursive-self-improvement",
+     "rsi",
+     "self-evolving",
+     "self-improving",
+     "super-agent"
+    ],
+    "url": "https://github.com/evermind-ai/raven"
+   },
+   "status": "pool",
+   "url": "https://github.com/evermind-ai/raven"
   },
   "github:R_kgDOSkLw8Q": {
    "categories": [
@@ -19066,6 +20087,98 @@
    "reject_reason": "security: asks for secrets (seed phrase, private key, password)",
    "status": "rejected",
    "url": "https://github.com/bloopodotai/bloopo-marketplace"
+  },
+  "github:R_kgDOTnZ88A": {
+   "categories": [
+    "agent_building",
+    "skills",
+    "creator_tools"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-26T03:41:18+00:00",
+   "evaluation": {
+    "categories": [
+     "agent_building",
+     "skills",
+     "creator_tools"
+    ],
+    "compatibility": [
+     "Codex"
+    ],
+    "contributors": null,
+    "docs": "basic",
+    "install": null,
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "MIT",
+    "maintenance": "updated today",
+    "primary": "agent_building",
+    "priority": "P2",
+    "reject": null,
+    "relevance": {
+     "hint": "it helps produce or explain material for your videos",
+     "project": "your AI educational videos"
+    },
+    "requirements": [],
+    "score": 66,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-26T03:41:18+00:00",
+   "id": "github:R_kgDOTnZ88A",
+   "identifier": "R_kgDOTnZ88A",
+   "kind": "repository",
+   "last_checked": "2026-11-26T03:41:18+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "Kevin-Liu-01/Claude-of-Tanks",
+   "owner": "Kevin-Liu-01",
+   "platform": "github",
+   "priority": "P2",
+   "score": 66,
+   "snapshot": {
+    "created_at": "2026-07-29T17:14:28Z",
+    "default_branch": "main",
+    "description": "A World of Tanks-style armored combat simulator built directly with Three.js and Vite: 311 vehicles, 33 destructible battlefields, and 15 modes, with plate-level armor, ballistics, modules, spotting, and physics. Play in your browser on desktop or mobile. Built end-to-end by a multi-agent Claude/Codex pipeline.",
+    "display": "Claude-of-Tanks",
+    "forks": 112,
+    "found_by": [
+     "search: topic:multi-agent"
+    ],
+    "kind": "repository",
+    "language": "TypeScript",
+    "license_spdx": "MIT",
+    "name": "Kevin-Liu-01/Claude-of-Tanks",
+    "node_id": "R_kgDOTnZ88A",
+    "open_issues": 2,
+    "owner": "Kevin-Liu-01",
+    "platform": "github",
+    "platform_id": 1316388080,
+    "pushed_at": "2026-11-26T03:26:59Z",
+    "rid": "github:R_kgDOTnZ88A",
+    "stars": 554,
+    "topics": [
+     "3d-game",
+     "browser-game",
+     "claude",
+     "game",
+     "gamedev",
+     "javascript",
+     "mobile-game",
+     "multi-agent",
+     "procedural-generation",
+     "tank-game",
+     "threejs",
+     "vite",
+     "webgl",
+     "world-of-tanks"
+    ],
+    "url": "https://github.com/kevin-liu-01/claude-of-tanks"
+   },
+   "status": "pool",
+   "url": "https://github.com/kevin-liu-01/claude-of-tanks"
   },
   "github:R_kgDOTpIZ9w": {
    "categories": [
@@ -21321,6 +22434,95 @@
    "status": "pool",
    "url": "https://github.com/vayungodara/cliproxy-rs"
   },
+  "github:R_kgDOU5G3Kw": {
+   "categories": [
+    "creator_tools"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-26T03:41:21+00:00",
+   "evaluation": {
+    "categories": [
+     "creator_tools"
+    ],
+    "compatibility": [
+     "OpenAI API"
+    ],
+    "contributors": 5,
+    "docs": "good",
+    "install": "brew install --cask watzon/tap/sayso",
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "GPL-3.0",
+    "maintenance": "updated today",
+    "primary": "creator_tools",
+    "priority": "P1",
+    "reject": null,
+    "relevance": {
+     "hint": "it helps produce or explain material for your videos",
+     "project": "your AI educational videos"
+    },
+    "requirements": [],
+    "score": 78,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-26T03:41:21+00:00",
+   "id": "github:R_kgDOU5G3Kw",
+   "identifier": "R_kgDOU5G3Kw",
+   "kind": "repository",
+   "last_checked": "2026-11-26T03:41:21+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "watzon/sayso",
+   "owner": "watzon",
+   "platform": "github",
+   "priority": "P1",
+   "score": 78,
+   "snapshot": {
+    "created_at": "2026-10-02T16:20:16Z",
+    "default_branch": "main",
+    "description": "Dictation that runs on your own computer. Press a key, speak, and the text lands in the app you are using. Free and open source, for macOS, Windows, and Linux.",
+    "display": "sayso",
+    "forks": 10,
+    "found_by": [
+     "search: topic:whisper transcription"
+    ],
+    "kind": "repository",
+    "language": "Go",
+    "license_spdx": "GPL-3.0",
+    "name": "watzon/sayso",
+    "node_id": "R_kgDOU5G3Kw",
+    "open_issues": 6,
+    "owner": "watzon",
+    "platform": "github",
+    "platform_id": 1402058539,
+    "pushed_at": "2026-11-26T03:33:21Z",
+    "rid": "github:R_kgDOU5G3Kw",
+    "stars": 56,
+    "topics": [
+     "apple-silicon",
+     "dictation",
+     "gpui",
+     "local-first",
+     "macos",
+     "open-source",
+     "parakeet",
+     "privacy",
+     "rust",
+     "speech-to-text",
+     "transcription",
+     "voice-to-text",
+     "voice-typing",
+     "whisper",
+     "whisperkit"
+    ],
+    "url": "https://github.com/watzon/sayso"
+   },
+   "status": "pool",
+   "url": "https://github.com/watzon/sayso"
+  },
   "github:R_kgDOU5QMuA": {
    "categories": [
     "agent_building",
@@ -23416,6 +24618,105 @@
    "status": "delivered",
    "url": "https://github.com/fei2411/ds-bot",
    "version": "v0.3.8"
+  },
+  "github:R_kgDOU_zwoQ": {
+   "categories": [
+    "creator_tools",
+    "productivity"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-26T03:41:21+00:00",
+   "evaluation": {
+    "categories": [
+     "creator_tools",
+     "productivity"
+    ],
+    "compatibility": [
+     "Ollama",
+     "OpenAI API",
+     "Hugging Face",
+     "Python",
+     "Docker"
+    ],
+    "contributors": 3,
+    "docs": "basic",
+    "install": "brew install vladkens/tap/wavo",
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "MIT",
+    "maintenance": "updated 7 days ago",
+    "primary": "creator_tools",
+    "priority": "P1",
+    "reject": null,
+    "relevance": {
+     "hint": "it helps produce or explain material for your videos",
+     "project": "your AI educational videos"
+    },
+    "requirements": [
+     "GPU"
+    ],
+    "score": 77,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-26T03:41:21+00:00",
+   "id": "github:R_kgDOU_zwoQ",
+   "identifier": "R_kgDOU_zwoQ",
+   "kind": "repository",
+   "last_checked": "2026-11-26T03:41:21+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "vladkens/wavo",
+   "owner": "vladkens",
+   "platform": "github",
+   "priority": "P1",
+   "score": 77,
+   "snapshot": {
+    "created_at": "2026-10-07T16:34:10Z",
+    "default_branch": "main",
+    "description": "Local speech-to-text at GPU speed: Parakeet, GigaAM and Whisper in pure Rust, as a library and an ollama-like CLI",
+    "display": "wavo",
+    "forks": 6,
+    "found_by": [
+     "search: topic:whisper transcription"
+    ],
+    "kind": "repository",
+    "language": "Rust",
+    "license_spdx": "MIT",
+    "name": "vladkens/wavo",
+    "node_id": "R_kgDOU_zwoQ",
+    "open_issues": 13,
+    "owner": "vladkens",
+    "platform": "github",
+    "platform_id": 1409085601,
+    "pushed_at": "2026-11-18T11:02:10Z",
+    "rid": "github:R_kgDOU_zwoQ",
+    "stars": 44,
+    "topics": [
+     "apple-silicon",
+     "asr",
+     "cli",
+     "gguf",
+     "gigaam",
+     "gpu",
+     "metal",
+     "offline",
+     "parakeet",
+     "rust",
+     "speech-recognition",
+     "speech-to-text",
+     "subtitles",
+     "transcription",
+     "vulkan",
+     "wgpu",
+     "whisper"
+    ],
+    "url": "https://github.com/vladkens/wavo"
+   },
+   "status": "pool",
+   "url": "https://github.com/vladkens/wavo"
   },
   "github:R_kgDOUcXOdA": {
    "categories": [
@@ -25837,46 +27138,21 @@
     "hackathon"
    ],
    "delivery": {
-    "message_ids": [],
-    "sent_at": null,
-    "status": "NOT_SENT"
+    "message_ids": [
+     962,
+     963,
+     964
+    ],
+    "sent_at": "2026-11-26T03:42:08+00:00",
+    "status": "SENT"
    },
    "evaluated_at": "2026-11-23T01:54:01+00:00",
-   "evaluation": {
-    "categories": [
-     "skills",
-     "productivity",
-     "agent_building",
-     "hackathon"
-    ],
-    "compatibility": [
-     "Claude Code",
-     "Codex",
-     "Cursor"
-    ],
-    "contributors": 1,
-    "docs": "good",
-    "install": "git clone --branch v0.2.8 https://github.com/jaredchu/context-docs.git",
-    "licence_class": "FREE AND OPEN SOURCE",
-    "licence_note": "MIT",
-    "maintenance": "updated today",
-    "primary": "skills",
-    "priority": "P1",
-    "reject": null,
-    "relevance": {
-     "hint": "it plugs into the coding agents you already use",
-     "project": "your Claude Code, Codex and Gemini development"
-    },
-    "requirements": [],
-    "score": 80,
-    "warnings": []
-   },
    "first_discovered": "2026-11-23T01:54:01+00:00",
    "id": "github:R_kgDOUsWr4w",
    "identifier": "R_kgDOUsWr4w",
    "kind": "repository",
    "last_checked": "2026-11-23T01:54:01+00:00",
-   "last_notified": null,
+   "last_notified": "2026-11-26T03:42:08+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "jaredchu/context-docs",
    "owner": "jaredchu",
@@ -25920,7 +27196,7 @@
     ],
     "url": "https://github.com/jaredchu/context-docs"
    },
-   "status": "pool",
+   "status": "delivered",
    "url": "https://github.com/jaredchu/context-docs"
   },
   "github:R_kgDOUshxmQ": {
@@ -28287,6 +29563,91 @@
    "status": "pool",
    "url": "https://github.com/evergreen-it-dev/folio"
   },
+  "github:R_kgDOV04Fgg": {
+   "categories": [
+    "creator_tools"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-26T03:41:22+00:00",
+   "evaluation": {
+    "categories": [
+     "creator_tools"
+    ],
+    "compatibility": [
+     "Ollama",
+     "OpenAI API",
+     "Hugging Face"
+    ],
+    "contributors": 1,
+    "docs": "good",
+    "install": "brew install mpv ffmpeg",
+    "licence_class": "OPEN SOURCE WITH PAID OPTIONAL SERVICES",
+    "licence_note": "GPL-3.0 code; uses paid API (a free/local option is mentioned)",
+    "maintenance": "updated 4 days ago",
+    "primary": "creator_tools",
+    "priority": "P1",
+    "reject": null,
+    "relevance": {
+     "hint": "it helps produce or explain material for your videos",
+     "project": "your AI educational videos"
+    },
+    "requirements": [
+     "paid API"
+    ],
+    "score": 72,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-26T03:41:22+00:00",
+   "id": "github:R_kgDOV04Fgg",
+   "identifier": "R_kgDOV04Fgg",
+   "kind": "repository",
+   "last_checked": "2026-11-26T03:41:22+00:00",
+   "last_notified": null,
+   "licence_class": "OPEN SOURCE WITH PAID OPTIONAL SERVICES",
+   "name": "Magerko/glossplay",
+   "owner": "Magerko",
+   "platform": "github",
+   "priority": "P1",
+   "score": 72,
+   "snapshot": {
+    "created_at": "2026-11-19T22:30:51Z",
+    "default_branch": "main",
+    "description": "A video player for language learners: dual subtitles, live transcription, word lookup, Anki, voice-over",
+    "display": "glossplay",
+    "forks": 4,
+    "found_by": [
+     "search: topic:whisper transcription"
+    ],
+    "kind": "repository",
+    "language": "Rust",
+    "license_spdx": "GPL-3.0",
+    "name": "Magerko/glossplay",
+    "node_id": "R_kgDOV04Fgg",
+    "open_issues": 0,
+    "owner": "Magerko",
+    "platform": "github",
+    "platform_id": 1464731010,
+    "pushed_at": "2026-11-21T15:08:53Z",
+    "rid": "github:R_kgDOV04Fgg",
+    "stars": 32,
+    "topics": [
+     "anki",
+     "language-learning",
+     "mpv",
+     "rust",
+     "subtitles",
+     "video-player",
+     "whisper"
+    ],
+    "url": "https://github.com/magerko/glossplay"
+   },
+   "status": "pool",
+   "url": "https://github.com/magerko/glossplay"
+  },
   "github:R_kgDOV0cDSA": {
    "categories": [
     "automation",
@@ -28790,6 +30151,7 @@
    "kind": "repository",
    "last_checked": "2026-11-23T01:53:57+00:00",
    "last_notified": "2026-11-25T19:33:28+00:00",
+   "last_update_check": "2026-11-26T03:41:23+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "w01fb0ss/PiBot",
    "owner": "w01fb0ss",
@@ -28842,7 +30204,8 @@
     "url": "https://github.com/w01fb0ss/pibot"
    },
    "status": "delivered",
-   "url": "https://github.com/w01fb0ss/pibot"
+   "url": "https://github.com/w01fb0ss/pibot",
+   "version": "v0.0.3"
   },
   "github:R_kgDOV2qGZA": {
    "categories": [
@@ -29141,6 +30504,92 @@
    },
    "status": "pool",
    "url": "https://github.com/microsoft/genesia"
+  },
+  "github:R_kgDOV4pVtg": {
+   "categories": [
+    "creator_tools",
+    "productivity"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-26T03:41:22+00:00",
+   "evaluation": {
+    "categories": [
+     "creator_tools",
+     "productivity"
+    ],
+    "compatibility": [
+     "OpenAI API",
+     "Python"
+    ],
+    "contributors": 1,
+    "docs": "good",
+    "install": null,
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "MIT",
+    "maintenance": "updated 2 days ago",
+    "primary": "creator_tools",
+    "priority": "P1",
+    "reject": null,
+    "relevance": {
+     "hint": "it helps produce or explain material for your videos",
+     "project": "your AI educational videos"
+    },
+    "requirements": [],
+    "score": 74,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-26T03:41:22+00:00",
+   "id": "github:R_kgDOV4pVtg",
+   "identifier": "R_kgDOV4pVtg",
+   "kind": "repository",
+   "last_checked": "2026-11-26T03:41:22+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "ElectronBladesmith/WhisperDesk-OfflineTranscriber",
+   "owner": "ElectronBladesmith",
+   "platform": "github",
+   "priority": "P1",
+   "score": 74,
+   "snapshot": {
+    "created_at": "2026-11-23T11:39:33Z",
+    "default_branch": "main",
+    "description": "Offline audio and video transcriber for Windows: turn MP4, MKV, MP3, and WAV recordings into accurate TXT transcripts and SRT subtitles locally.",
+    "display": "WhisperDesk-OfflineTranscriber",
+    "forks": 0,
+    "found_by": [
+     "search: topic:whisper transcription"
+    ],
+    "kind": "repository",
+    "license_spdx": "MIT",
+    "name": "ElectronBladesmith/WhisperDesk-OfflineTranscriber",
+    "node_id": "R_kgDOV4pVtg",
+    "open_issues": 0,
+    "owner": "ElectronBladesmith",
+    "platform": "github",
+    "platform_id": 1468683702,
+    "pushed_at": "2026-11-23T11:39:47Z",
+    "rid": "github:R_kgDOV4pVtg",
+    "stars": 32,
+    "topics": [
+     "audio-to-text",
+     "desktop-application",
+     "offline-ai",
+     "productivity",
+     "speech-to-text",
+     "srt-subtitles",
+     "transcription",
+     "video-to-text",
+     "whisper",
+     "windows"
+    ],
+    "url": "https://github.com/electronbladesmith/whisperdesk-offlinetranscriber"
+   },
+   "status": "pool",
+   "url": "https://github.com/electronbladesmith/whisperdesk-offlinetranscriber"
   },
   "github:R_kgDOV58-xA": {
    "delivery": {
@@ -33734,6 +35183,7 @@
    "kind": "repository",
    "last_checked": "2026-11-25T19:30:00+00:00",
    "last_notified": "2026-11-25T19:33:28+00:00",
+   "last_update_check": "2026-11-26T03:41:23+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "PedroMarinhoDev/ComfyUI-Drama3",
    "owner": "PedroMarinhoDev",
@@ -37602,6 +39052,102 @@
    "status": "rejected",
    "url": "https://github.com/sarthzk/internship-tracker"
   },
+  "github:R_kgDOVTfKxg": {
+   "categories": [
+    "creator_tools",
+    "productivity"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-26T03:41:20+00:00",
+   "evaluation": {
+    "categories": [
+     "creator_tools",
+     "productivity"
+    ],
+    "compatibility": [
+     "Cursor"
+    ],
+    "contributors": 5,
+    "docs": "good",
+    "install": "git clone https://github.com/ishangautam7/Talvio.git",
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "MIT",
+    "maintenance": "updated 29 days ago",
+    "primary": "creator_tools",
+    "priority": "P1",
+    "reject": null,
+    "relevance": {
+     "hint": "it helps produce or explain material for your videos",
+     "project": "your AI educational videos"
+    },
+    "requirements": [],
+    "score": 79,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-26T03:41:20+00:00",
+   "id": "github:R_kgDOVTfKxg",
+   "identifier": "R_kgDOVTfKxg",
+   "kind": "repository",
+   "last_checked": "2026-11-26T03:41:20+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "ishangautam7/Talvio",
+   "owner": "ishangautam7",
+   "platform": "github",
+   "priority": "P1",
+   "score": 79,
+   "snapshot": {
+    "created_at": "2026-10-22T12:31:02Z",
+    "default_branch": "main",
+    "description": "Talk to your computer: dictation into any app, a voice assistant that answers out loud and gets things done, meeting notes, and a phone app to control your PC. Local-first, open source.",
+    "display": "Talvio",
+    "forks": 6,
+    "found_by": [
+     "search: topic:whisper transcription"
+    ],
+    "kind": "repository",
+    "language": "Rust",
+    "license_spdx": "MIT",
+    "name": "ishangautam7/Talvio",
+    "node_id": "R_kgDOVTfKxg",
+    "open_issues": 0,
+    "owner": "ishangautam7",
+    "platform": "github",
+    "platform_id": 1429719750,
+    "pushed_at": "2026-10-27T13:06:02Z",
+    "rid": "github:R_kgDOVTfKxg",
+    "stars": 60,
+    "topics": [
+     "ai-assistant",
+     "android",
+     "dictation",
+     "linux",
+     "llm",
+     "local-first",
+     "macos",
+     "offline",
+     "open-source",
+     "productivity",
+     "rust",
+     "speech-to-text",
+     "tauri",
+     "text-to-speech",
+     "transcription",
+     "voice-assistant",
+     "voice-control",
+     "voice-typing",
+     "whisper",
+     "windows"
+    ],
+    "url": "https://github.com/ishangautam7/talvio"
+   },
+   "status": "pool",
+   "url": "https://github.com/ishangautam7/talvio"
+  },
   "github:R_kgDOVU0w-w": {
    "categories": [
     "app_development"
@@ -40091,6 +41637,7 @@
    "kind": "repository",
    "last_checked": "2026-11-25T19:30:01+00:00",
    "last_notified": "2026-11-25T19:33:28+00:00",
+   "last_update_check": "2026-11-26T03:41:24+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "geonodecom/integration-n8n",
    "owner": "geonodecom",
@@ -41514,6 +43061,106 @@
    "status": "pool",
    "url": "https://github.com/zhanghao123vip/ai-manju-skills"
   },
+  "github:R_kgDOVdxwXw": {
+   "categories": [
+    "creator_tools",
+    "skills",
+    "app_development"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-26T03:41:21+00:00",
+   "evaluation": {
+    "categories": [
+     "creator_tools",
+     "skills",
+     "app_development"
+    ],
+    "compatibility": [
+     "Python"
+    ],
+    "contributors": null,
+    "docs": "basic",
+    "install": null,
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "MIT",
+    "maintenance": "updated 17 days ago",
+    "primary": "creator_tools",
+    "priority": "P2",
+    "reject": null,
+    "relevance": {
+     "hint": "it helps produce or explain material for your videos",
+     "project": "your AI educational videos"
+    },
+    "requirements": [
+     "GPU"
+    ],
+    "score": 70,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-26T03:41:21+00:00",
+   "id": "github:R_kgDOVdxwXw",
+   "identifier": "R_kgDOVdxwXw",
+   "kind": "repository",
+   "last_checked": "2026-11-26T03:41:21+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "CixiSVesper/dsh-soundtry",
+   "owner": "CixiSVesper",
+   "platform": "github",
+   "priority": "P2",
+   "score": 70,
+   "snapshot": {
+    "created_at": "2026-10-31T04:42:28Z",
+    "default_branch": "main",
+    "description": "Local audio understanding for DeepSeek Harness: transcription (whisper medium), rhythm, melody, chords, structure - six tools, fully offline. Needs a Python 3.10-3.12: point DSH at an existing environment (e.g. ComfyUI), or let the plugin create and install its own. Vocal separation runs UVR MDX-Net on onnxruntime, so torch is not required.",
+    "display": "dsh-soundtry",
+    "forks": 2,
+    "found_by": [
+     "search: topic:whisper transcription"
+    ],
+    "kind": "repository",
+    "language": "Python",
+    "license_spdx": "MIT",
+    "name": "CixiSVesper/dsh-soundtry",
+    "node_id": "R_kgDOVdxwXw",
+    "open_issues": 0,
+    "owner": "CixiSVesper",
+    "platform": "github",
+    "platform_id": 1440510047,
+    "pushed_at": "2026-11-08T13:43:08Z",
+    "rid": "github:R_kgDOVdxwXw",
+    "stars": 42,
+    "topics": [
+     "asr",
+     "audio",
+     "audio-analysis",
+     "beat-detection",
+     "bpm",
+     "deepseek",
+     "deepseek-harness",
+     "demucs",
+     "dsh",
+     "dsh-plugin",
+     "faster-whisper",
+     "lyrics",
+     "music-information-retrieval",
+     "offline",
+     "onnxruntime",
+     "speech-to-text",
+     "subtitle",
+     "vocal-separation",
+     "whisper",
+     "windows"
+    ],
+    "url": "https://github.com/cixisvesper/dsh-soundtry"
+   },
+   "status": "pool",
+   "url": "https://github.com/cixisvesper/dsh-soundtry"
+  },
   "github:R_kgDOVe9jyg": {
    "categories": [
     "app_development",
@@ -42352,6 +43999,7 @@
    "kind": "repository",
    "last_checked": "2026-11-24T23:59:35+00:00",
    "last_notified": "2026-11-25T19:33:28+00:00",
+   "last_update_check": "2026-11-26T03:41:24+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "Bil0000/Hill-Climb",
    "owner": "Bil0000",
@@ -42402,7 +44050,8 @@
     "url": "https://github.com/bil0000/hill-climb"
    },
    "status": "delivered",
-   "url": "https://github.com/bil0000/hill-climb"
+   "url": "https://github.com/bil0000/hill-climb",
+   "version": "v1.1.0"
   },
   "github:R_kgDOVhF2rg": {
    "categories": [
@@ -47920,6 +49569,7 @@
    "kind": "repository",
    "last_checked": "2026-11-23T01:53:58+00:00",
    "last_notified": "2026-11-25T19:33:28+00:00",
+   "last_update_check": "2026-11-26T03:41:24+00:00",
    "licence_class": "FREE AND OPEN SOURCE",
    "name": "JimLiu/open-artifact",
    "owner": "JimLiu",
@@ -47968,7 +49618,8 @@
     "url": "https://github.com/jimliu/open-artifact"
    },
    "status": "delivered",
-   "url": "https://github.com/jimliu/open-artifact"
+   "url": "https://github.com/jimliu/open-artifact",
+   "version": "v0.16.2"
   },
   "github:R_kgDOVxZDng": {
    "categories": [
@@ -52338,6 +53989,26 @@
    "status": "pool",
    "url": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF"
   },
+  "hf:model:nvidia/nemotron-labs-image-30b-a3b": {
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "first_discovered": "2026-11-26T03:41:17+00:00",
+   "id": "hf:model:nvidia/nemotron-labs-image-30b-a3b",
+   "identifier": "nvidia/Nemotron-Labs-Image-30B-A3B",
+   "kind": "model",
+   "last_checked": "2026-11-26T03:41:17+00:00",
+   "last_notified": null,
+   "name": "nvidia/Nemotron-Labs-Image-30B-A3B",
+   "owner": "nvidia",
+   "platform": "huggingface",
+   "reject_reason": "score 40 below the minimum",
+   "score": 40,
+   "status": "rejected",
+   "url": "https://huggingface.co/nvidia/Nemotron-Labs-Image-30B-A3B"
+  },
   "hf:model:nvidia/nvidia-nemotron-3.5-bolt-e4b-4gb": {
    "categories": [
     "agent_building",
@@ -52822,6 +54493,84 @@
    },
    "status": "delivered",
    "url": "https://huggingface.co/speridlabs/idol"
+  },
+  "hf:model:strata-engine/inkling-2-mini-strata": {
+   "categories": [
+    "creator_tools"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-26T03:41:17+00:00",
+   "evaluation": {
+    "categories": [
+     "creator_tools"
+    ],
+    "compatibility": [],
+    "contributors": null,
+    "docs": "basic",
+    "install": null,
+    "licence_class": "FREE AND OPEN SOURCE",
+    "licence_note": "apache-2.0",
+    "maintenance": "updated 3 days ago",
+    "primary": "creator_tools",
+    "priority": "P3",
+    "reject": null,
+    "relevance": {
+     "hint": "it is a building block for agents that remember, use tools and act on their own",
+     "project": "your personal AI agents"
+    },
+    "requirements": [
+     "GPU"
+    ],
+    "score": 57,
+    "warnings": []
+   },
+   "first_discovered": "2026-11-26T03:41:17+00:00",
+   "id": "hf:model:strata-engine/inkling-2-mini-strata",
+   "identifier": "strata-engine/Inkling-2-Mini-Strata",
+   "kind": "model",
+   "last_checked": "2026-11-26T03:41:17+00:00",
+   "last_notified": null,
+   "licence_class": "FREE AND OPEN SOURCE",
+   "name": "strata-engine/Inkling-2-Mini-Strata",
+   "owner": "strata-engine",
+   "platform": "huggingface",
+   "priority": "P3",
+   "score": 57,
+   "snapshot": {
+    "created_at": "2026-11-21T18:46:06.000Z",
+    "display": "Inkling-2-Mini-Strata",
+    "downloads": 2965,
+    "found_by": [
+     "Hugging Face trending models"
+    ],
+    "kind": "model",
+    "license_spdx": "apache-2.0",
+    "likes": 162,
+    "name": "strata-engine/Inkling-2-Mini-Strata",
+    "owner": "strata-engine",
+    "platform": "huggingface",
+    "pushed_at": "2026-11-22T08:40:56.000Z",
+    "rid": "hf:model:strata-engine/inkling-2-mini-strata",
+    "topics": [
+     "inkling2_loop",
+     "strata",
+     "inkling-2-mini",
+     "moe",
+     "quantization",
+     "looped-transformer",
+     "dspark",
+     "image-text-to-text",
+     "conversational",
+     "modelopt"
+    ],
+    "url": "https://huggingface.co/strata-engine/Inkling-2-Mini-Strata"
+   },
+   "status": "pool",
+   "url": "https://huggingface.co/strata-engine/Inkling-2-Mini-Strata"
   },
   "hf:model:sulphurai/sulphur-3": {
    "delivery": {
@@ -54190,6 +55939,88 @@
    },
    "status": "pool",
    "url": "https://huggingface.co/spaces/HuggingFaceSwarms/PyBot"
+  },
+  "hf:space:huggingfaceswarms/scaling-swarms": {
+   "categories": [
+    "agent_building",
+    "automation",
+    "skills",
+    "app_development"
+   ],
+   "delivery": {
+    "message_ids": [],
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "evaluated_at": "2026-11-26T03:41:17+00:00",
+   "evaluation": {
+    "categories": [
+     "agent_building",
+     "automation",
+     "skills",
+     "app_development"
+    ],
+    "compatibility": [
+     "Claude Code",
+     "Codex",
+     "Cursor",
+     "MCP",
+     "OpenAI API",
+     "Hugging Face"
+    ],
+    "contributors": null,
+    "docs": "good",
+    "install": "npm install",
+    "licence_class": "LICENCE UNCLEAR",
+    "licence_note": "no recognised licence file",
+    "maintenance": "updated today",
+    "primary": "agent_building",
+    "priority": "P3",
+    "reject": null,
+    "relevance": {
+     "hint": "it automates searching, reading and citing sources",
+     "project": "your autonomous research systems"
+    },
+    "requirements": [],
+    "score": 57,
+    "warnings": [
+     "no clear licence: check before reusing the code"
+    ]
+   },
+   "first_discovered": "2026-11-26T03:41:17+00:00",
+   "id": "hf:space:huggingfaceswarms/scaling-swarms",
+   "identifier": "HuggingFaceSwarms/scaling-swarms",
+   "kind": "space",
+   "last_checked": "2026-11-26T03:41:17+00:00",
+   "last_notified": null,
+   "licence_class": "LICENCE UNCLEAR",
+   "name": "HuggingFaceSwarms/scaling-swarms",
+   "owner": "HuggingFaceSwarms",
+   "platform": "huggingface",
+   "priority": "P3",
+   "score": 57,
+   "snapshot": {
+    "created_at": "2026-11-17T20:18:50.000Z",
+    "description": "A field report from building PyBot",
+    "display": "scaling-swarms",
+    "downloads": 0,
+    "found_by": [
+     "Hugging Face trending Spaces"
+    ],
+    "kind": "space",
+    "likes": 24,
+    "name": "HuggingFaceSwarms/scaling-swarms",
+    "owner": "HuggingFaceSwarms",
+    "platform": "huggingface",
+    "pushed_at": "2026-11-25T15:28:07.000Z",
+    "rid": "hf:space:huggingfaceswarms/scaling-swarms",
+    "topics": [
+     "docker"
+    ],
+    "url": "https://huggingface.co/spaces/HuggingFaceSwarms/scaling-swarms"
+   },
+   "status": "pool",
+   "url": "https://huggingface.co/spaces/HuggingFaceSwarms/scaling-swarms"
   },
   "hf:space:icml-2026-agent-repro/challenge": {
    "categories": [
@@ -56071,12 +57902,12 @@
    "results": 20
   },
   "github:\"system prompts\" in:name,description": {
-   "last_run": "2026-11-24T14:04:19+00:00",
-   "results": 14
+   "last_run": "2026-11-26T03:41:10+00:00",
+   "results": 12
   },
   "github:ai saas starter in:name,description": {
-   "last_run": "2026-11-24T14:04:18+00:00",
-   "results": 1
+   "last_run": "2026-11-26T03:41:10+00:00",
+   "results": 2
   },
   "github:hackathon starter ai in:name,description": {
    "last_run": "2026-11-25T19:29:48+00:00",
@@ -56095,7 +57926,7 @@
    "results": 20
   },
   "github:topic:agent-skills": {
-   "last_run": "2026-11-24T14:04:16+00:00",
+   "last_run": "2026-11-26T03:41:08+00:00",
    "results": 20
   },
   "github:topic:ai-agents": {
@@ -56111,8 +57942,8 @@
    "results": 13
   },
   "github:topic:browser-automation llm": {
-   "last_run": "2026-11-24T14:04:19+00:00",
-   "results": 7
+   "last_run": "2026-11-26T03:41:11+00:00",
+   "results": 6
   },
   "github:topic:claude-code": {
    "last_run": "2026-11-25T19:29:44+00:00",
@@ -56159,11 +57990,11 @@
    "results": 20
   },
   "github:topic:model-context-protocol": {
-   "last_run": "2026-11-24T14:04:18+00:00",
+   "last_run": "2026-11-26T03:41:09+00:00",
    "results": 20
   },
   "github:topic:multi-agent": {
-   "last_run": "2026-11-24T14:04:17+00:00",
+   "last_run": "2026-11-26T03:41:09+00:00",
    "results": 20
   },
   "github:topic:n8n": {
@@ -56187,12 +58018,12 @@
    "results": 20
   },
   "github:topic:vscode-extension llm": {
-   "last_run": "2026-11-24T14:04:15+00:00",
+   "last_run": "2026-11-26T03:41:07+00:00",
    "results": 1
   },
   "github:topic:whisper transcription": {
-   "last_run": "2026-11-24T14:04:20+00:00",
-   "results": 13
+   "last_run": "2026-11-26T03:41:11+00:00",
+   "results": 14
   },
   "gitlab": {
    "last_run": "2026-11-25T08:57:07+00:00",
