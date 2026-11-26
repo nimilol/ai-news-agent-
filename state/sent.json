@@ -858,6 +858,12 @@
    "priority": "P3",
    "title": "Anthropic Worker Claims to Have Solved Riemann Hypothesis With Help From Claude - Broadband Breakfast"
   },
+  "title:anthropic browser claude drive file google prepares": {
+   "at": "2026-11-26T20:16:41+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Anthropic prepares Google Drive file browser for Claude"
+  },
   "title:anthropic capital financial ipo power rankings redraw set times venture": {
    "at": "2026-11-18T07:29:18+00:00",
    "channel": "digest",
@@ -4535,6 +4541,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "Anthropic rolls out Install as app beta for Claude artifacts"
+  },
+  "url:https://testingcatalog.com/anthropic-prepares-google-drive-file-browser-for-claude": {
+   "at": "2026-11-26T20:16:41+00:00",
+   "channel": "alerts",
+   "priority": "P2",
+   "title": "Anthropic prepares Google Drive file browser for Claude"
   },
   "url:https://testingcatalog.com/grok-bot-to-get-local-computer-use-and-dictation-in-any-app": {
    "at": "2026-11-23T07:37:38+00:00",
