@@ -156,6 +156,12 @@
    "priority": "P3",
    "title": "Anthropic mathematician claims he used Claude to prove 19th-century Riemann hypothesis - The Guardian"
   },
+  "title:1m alpha context free lists model opencode seaglass token": {
+   "at": "2026-11-26T08:19:48+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "OpenCode lists Seaglass Alpha Free model with 1M token context"
+  },
   "title:1m context glm-5.3-flashx-legal lists model token z.ai": {
    "at": "2026-11-24T22:29:22+00:00",
    "channel": "digest",
@@ -228,6 +234,12 @@
    "priority": "P1",
    "title": "Gemma 4 26B A4B IT"
   },
+  "title:28 ai analysts anthropic cool fall ipo listings peak shares": {
+   "at": "2026-11-26T08:19:48+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic shares fall 28% from IPO peak as analysts cool on AI listings"
+  },
   "title:2t anthropic history hits ipo largest nasdaq valuation": {
    "at": "2026-11-19T20:39:31+00:00",
    "channel": "digest",
@@ -281,6 +293,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "Anthropic announces deprecation schedule for Claude Opus 4.5"
+  },
+  "title:40 billing causes chatgpt faster fix hit limits openai users": {
+   "at": "2026-11-26T08:19:48+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI billing fix causes ChatGPT users to hit limits 40% faster"
   },
   "title:5.6 anthropic claude early opus outputs testing": {
    "at": "2026-11-25T17:25:12+00:00",
@@ -972,6 +990,12 @@
    "priority": "P2",
    "title": "Virginia and Oregon attorneys general sue SpaceX over Grok explicit images"
   },
+  "title:attorneys filters general grok image oregon over sue virginia xai": {
+   "at": "2026-11-26T08:19:48+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Virginia and Oregon attorneys general sue xAI over Grok image filters"
+  },
   "title:automated factory openai optimization performance reveals": {
    "at": "2026-11-19T20:39:31+00:00",
    "channel": "digest",
@@ -1133,6 +1157,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "Zhipu introduces GLM-5.4 with vision support for Coding Plan users"
+  },
+  "title:coding glm-5.4 launches open plan users weights without z.ai": {
+   "at": "2026-11-26T08:19:48+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Z.ai launches GLM-5.4 for Coding Plan users without open weights"
   },
   "title:combine data elon grok musk plans tesla traffic": {
    "at": "2026-11-22T06:47:48+00:00",
@@ -1512,11 +1542,23 @@
    "priority": "P3",
    "title": "ChatGPT AI Predicts XRP’s Price for the End of 2029 - Yahoo Finance"
   },
+  "url:https://finance.yahoo.com/markets/stocks/articles/free-pop-over-openai-anthropic-044149243.html": {
+   "at": "2026-11-26T08:19:48+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic shares fall 28% from IPO peak as analysts cool on AI listings"
+  },
   "url:https://finance.yahoo.com/markets/stocks/articles/spacex-vs-anthropic-mega-ipo-062902689.html": {
    "at": "2026-11-18T07:29:18+00:00",
    "channel": "digest",
    "priority": "P3",
    "title": "SpaceX vs. Anthropic: Here’s Which Mega-IPO Stock I’d Buy After Anthropic Goes Public. - Yahoo Finance"
+  },
+  "url:https://finance.yahoo.com/technology/ai/articles/2-ways-anthropics-ipo-pays-052002893.html": {
+   "at": "2026-11-26T08:19:48+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic shares fall 28% from IPO peak as analysts cool on AI listings"
   },
   "url:https://finance.yahoo.com/technology/ai/articles/anthropic-ipo-buzz-builds-crypto-043005175.html": {
    "at": "2026-11-22T06:47:48+00:00",
@@ -1547,6 +1589,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic Prices IPO at $83 and Raises $81.3 Billion on Nasdaq"
+  },
+  "url:https://fool.com/investing/2026/11/26/2-ways-anthropic-s-ipo-pays-off-for-alphabet-investors": {
+   "at": "2026-11-26T08:19:48+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic shares fall 28% from IPO peak as analysts cool on AI listings"
   },
   "url:https://forbes.com/sites/siladityaray/2026/11/24/anthropic-ceo-dario-amodei-sold-280-million-in-shares-as-part-of-record-ipo": {
    "at": "2026-11-25T08:34:38+00:00",
@@ -2690,11 +2738,17 @@
    "priority": "P1",
    "title": "Anthropic completes record $81.3 B IPO on Nasdaq at $1.5 T valuation"
   },
-  "url:https://models.dev/": {
-   "at": "2026-11-24T22:29:22+00:00",
+  "url:https://mezha.net/eng/news/mezha-abc7e70d6b6ed104128f8cce_chatgpt_users_hit": {
+   "at": "2026-11-26T08:19:48+00:00",
    "channel": "digest",
-   "priority": "P2",
-   "title": "Z.AI lists GLM-5.3-FlashX-Legal model with 1M token context"
+   "priority": "P1",
+   "title": "OpenAI billing fix causes ChatGPT users to hit limits 40% faster"
+  },
+  "url:https://models.dev/": {
+   "at": "2026-11-26T08:19:48+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "OpenCode lists Seaglass Alpha Free model with 1M token context"
   },
   "url:https://msn.com/money/top-stocks/anthropic-stock-sinks-below-ipo-price-why-that-s-happened-so-fast/ar-aa2i7rqa": {
    "at": "2026-11-24T22:29:22+00:00",
@@ -2815,6 +2869,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic prices initial public offering at $83 per share"
+  },
+  "url:https://news.google.com/rss/articles/cbmibefvx3lxtfa3rhd3qvrsbfrts1fovm5imnpjs0xumtq0cgrxnk1qrtkyenbvmfhvymcxrzbay1jhugvuav9onepzalfhtuw1aec0ms1iuevxevdisji3uxpqs2zrn2lqnxjwoxkxuznpnglfua": {
+   "at": "2026-11-26T08:19:48+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Virginia and Oregon attorneys general sue xAI over Grok image filters"
   },
   "url:https://news.google.com/rss/articles/cbmibkfvx3lxte1ang5qzg9tatjhtlrrtmjbuzninzvjt1b2cxzzelbwexritxj1zgphvkm0mwxysk4yddzea2dfdnzrehljyjlpcvbfaglyewj1wmvjsui1tzfzedm3serwzkd2d2vsngvrrmhfyxbb": {
    "at": "2026-11-21T07:09:49+00:00",
@@ -3842,6 +3902,12 @@
    "priority": "P1",
    "title": "Anthropic hits Nasdaq in largest IPO in history at $2T valuation"
   },
+  "url:https://news.google.com/rss/articles/cbmiykfvx3lxte92txfrczv3x2txuxdtrkqztjlyx3nayxbpvw0wvxv2awi3be1kb3vud1cxoegtzxjyav9vakjfmmzmqs15mzrragtsmudnamdoqnrez3dxc25sctgzzktha2lr0gfiqvvfexfmt3zncvfznxdfa3frd21grdnooxjfc1phcglvbtbvdxzpyjdstupvdw53vze4sc1lcnjpx29qqkuyzmzblxkzngtoa2wxr2dqz2hcdernd3fzbmxxodnms0drave": {
+   "at": "2026-11-26T08:19:48+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Virginia and Oregon attorneys general sue xAI over Grok image filters"
+  },
   "url:https://news.google.com/rss/articles/cbmiz0fvx3lxte9ptuzvuhleruszrufvdjjsrw84tnpvq25ndkk1ty1kblozsvh6vuvytuz1zjbcdlfya0s3chhnyum5r3zrvedzevdpa2izt0lzbwkwuzvutjdazxdevtdla3h3zg14oddsawxbvv95cuxowmu0cwfuwmtwufzyzvrwtnd0nxvvrnbhngh2rtlmsgrachhxb1znotq3si1smuu2zke5mwltru50nny2v2npnnfxdejxew0zahrpzk1wajrowvp2b25iuxldbdf5azfxx2jzmjq": {
    "at": "2026-11-17T20:58:16+00:00",
    "channel": "digest",
@@ -4213,6 +4279,24 @@
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic hits Nasdaq in largest IPO in history at $2T valuation"
+  },
+  "url:https://scanx.trade/stock-market-news/ipo/anthropic-shares-drop-28-analysts-warn-tougher-openai-ipo/57214150": {
+   "at": "2026-11-26T08:19:48+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic shares fall 28% from IPO peak as analysts cool on AI listings"
+  },
+  "url:https://scmp.com/business/china-business/article/3375856/chinese-ai-trade-turns-cautious-after-wall-street-volatility-anthropics-rocky-debut": {
+   "at": "2026-11-26T08:19:48+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Anthropic shares fall 28% from IPO peak as analysts cool on AI listings"
+  },
+  "url:https://shattered.io/glm-5-4-vs-glm-5-3-no-open-weights-coding-plan-from-18-nov-26": {
+   "at": "2026-11-26T08:19:48+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "Z.ai launches GLM-5.4 for Coding Plan users without open weights"
   },
   "url:https://shattered.io/glm-coding-plan-vs-kimi-code-vs-deepseek-api-mistral-pro-from-18-2026": {
    "at": "2026-11-17T07:57:43+00:00",
@@ -4615,6 +4699,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic says Claude Mythos Preview ported to AMD GPUs in about three days"
+  },
+  "url:https://twitter.com/thsottiaux/status/2125784147889393806": {
+   "at": "2026-11-26T08:19:48+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI billing fix causes ChatGPT users to hit limits 40% faster"
   },
   "url:https://twitter.com/zai_org/status/2124719658074825004": {
    "at": "2026-11-23T23:53:32+00:00",
