@@ -8184,7 +8184,7 @@
      "input_modalities": "audio, text",
      "output_modalities": "audio, text"
     },
-    "specs_checked": "2026-11-19T22:22:19+00:00",
+    "specs_checked": "2026-11-27T02:57:01+00:00",
     "status": "active"
    },
    "gpt-live-transcribe": {
@@ -14144,6 +14144,9 @@
   "xAI API release notes": {
    "initialized": true,
    "seen": [
+    "877b0f9b0096a3e2",
+    "37d9b78249aae791",
+    "cf0edbdab763e56e",
     "14d25f247f8b354b",
     "c1b10ac525850570",
     "419196ab68ba4d63",
