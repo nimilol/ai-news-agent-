@@ -768,6 +768,12 @@
    "priority": "P1",
    "title": "Claude Managed Agents pricing announced"
   },
+  "title:agents athena builds chatgpt data openai platform semantic work": {
+   "at": "2026-11-27T21:18:11+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "OpenAI builds 'Athena' semantic data platform for ChatGPT Work agents"
+  },
   "title:agents chatgpt codex deploys openai probe slowdowns": {
    "at": "2026-11-25T08:34:38+00:00",
    "channel": "digest",
@@ -875,6 +881,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "US Distillation Curbs and Chip Rules Delay China's Z.AI GLM-5.5 as Moonshot Warns of Widening AI Gap - IndexBox"
+  },
+  "title:ai chinese distillation google labs meta model pivot": {
+   "at": "2026-11-27T21:18:11+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Chinese AI labs pivot model distillation to Google and Meta"
   },
   "title:ai could cryptonews elon grok happen huge musk predicts price reversal xrp": {
    "at": "2026-11-26T21:39:05+00:00",
@@ -1098,11 +1110,23 @@
    "priority": "P1",
    "title": "xAI API release notes: grok-build-0.1 end of life"
   },
+  "title:apple coercion countersues openai over secret supplier theft trade": {
+   "at": "2026-11-27T21:18:11+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI countersues Apple over trade secret theft and supplier coercion"
+  },
   "title:approved current effingham openai plan site": {
    "at": "2026-11-18T07:29:18+00:00",
    "channel": "digest",
    "priority": "P3",
    "title": "OpenAI site plan approved for Effingham - The Current"
+  },
+  "title:architecture bot details grok multi-model musk orchestration routing": {
+   "at": "2026-11-27T21:18:11+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Musk details Grok Bot orchestration architecture and multi-model routing"
   },
   "title:architecture flagship glm-5.4 loop model transformer unveils z.ai": {
    "at": "2026-11-24T09:54:17+00:00",
@@ -1602,11 +1626,29 @@
    "priority": "P1",
    "title": "OpenAI Proposes Perplexity-Based Limits for Frontier AI Development"
   },
+  "url:https://appleinsider.com/articles/26/11/27/openai-counter-sues-apple-over-trade-secret-theft": {
+   "at": "2026-11-27T21:18:11+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI countersues Apple over trade secret theft and supplier coercion"
+  },
   "url:https://barrons.com/articles/spacex-stock-price-anthropic-ipo-0ea1c91b": {
    "at": "2026-11-22T06:47:48+00:00",
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic Prices IPO at $83 and Raises $81.3 Billion on Nasdaq"
+  },
+  "url:https://basenor.com/blogs/news/grok-gets-build-upgrades-and-a-multi-model-strategy": {
+   "at": "2026-11-27T21:18:11+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Musk details Grok Bot orchestration architecture and multi-model routing"
+  },
+  "url:https://basenor.com/blogs/news/musk-lays-out-four-rules-for-getting-grok-bots-to-work-at-scale": {
+   "at": "2026-11-27T21:18:11+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Musk details Grok Bot orchestration architecture and multi-model routing"
   },
   "url:https://beincrypto.com/anthropic-sp-500-inclusion-late-2027": {
    "at": "2026-11-26T21:39:05+00:00",
@@ -1793,6 +1835,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "Prosecutors allege former OpenAI employee leaked trade secrets linked to Saudi government"
+  },
+  "url:https://engadget.com/2329747/openai-countersues-apple-and-accuses-it-of-stealing-trade-secrets": {
+   "at": "2026-11-27T21:18:11+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI countersues Apple over trade secret theft and supplier coercion"
   },
   "url:https://eweek.com/news/gao-chatgpt-claude-gemini-grok-attack-guidance": {
    "at": "2026-11-19T20:39:31+00:00",
@@ -3071,6 +3119,12 @@
    "channel": "discovery",
    "title": "fforster/gitlab-mcp"
   },
+  "url:https://gizmodo.com/openai-files-counterclaim-against-apple-in-ongoing-trade-secrets-fight-2000846263": {
+   "at": "2026-11-27T21:18:11+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI countersues Apple over trade secret theft and supplier coercion"
+  },
   "url:https://help.openai.com/articles/6825453-chatgpt-release-notes": {
    "at": "2026-11-23T23:53:32+00:00",
    "channel": "digest",
@@ -3194,6 +3248,12 @@
    "priority": "P3",
    "title": "ArcticRAT malware and Grok: Zimperium’s findings - NeoTeo"
   },
+  "url:https://news.google.com/rss/articles/cbmi0afbvv95cuxpbutnqndhnu1wbxv6r25powhhqtrfel95xzjaltlwrwvvevdomnfucuxan2itulh5wgn1skvfvfdzck00be1yudvhnzvft0jtrgt5qxbxwngwemy5ekfvsnljqs13n0neai1gdtf6bu5fa1lyees0rvdku3firjfua0t4y1qzmtlrqlbwzi15x3o0nwrcodnbxzfmaupecvf0as1qytliendutm5ks1eyqklta0nlqkvtzulgsuftvxpaulrewkhzdvjrs203b2dq": {
+   "at": "2026-11-27T21:18:11+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Chinese AI labs pivot model distillation to Google and Meta"
+  },
   "url:https://news.google.com/rss/articles/cbmi0gfbvv95cuxnmwd2vzbfuvrkbwfbsddctkzmuerpyzznqv9tmmi1metryl91ow5nngg2afbnrnjxx1nseejqt2e3lwlfdk1ktgjhu0jmnmdwdmduqkxxvuxmsu0za05sqnfrcw1kavnpbmfxngs0lwxiotzxuvbnoflpvehrsghrskvsn1z6ylbkmhywodblxzfozfu4whzvd2lhz2fjzwz0tna5shvknhzvrgzfcuznsvjsz0t5rzb5edqtt0nhtzfednbbchaxd2y1ejm4ajzfm0e": {
    "at": "2026-11-21T07:09:49+00:00",
    "channel": "digest",
@@ -3296,6 +3356,12 @@
    "priority": "P1",
    "title": "Anthropic prices initial public offering at $83 per share"
   },
+  "url:https://news.google.com/rss/articles/cbmibefvx3lxte5xtw11wi1qv2lsnzvvrlyyvklerhdsukxklxdrbjrjbdk2ec1uymm1lxnzn2fpdedhrc1lci1syu56m3zsowmxm3p6oxb0c2h0dtfvvjbhswnvsezjsnnusnbjmu5hzgd6sty3sg": {
+   "at": "2026-11-27T21:18:11+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI countersues Apple over trade secret theft and supplier coercion"
+  },
   "url:https://news.google.com/rss/articles/cbmibefvx3lxtfa3rhd3qvrsbfrts1fovm5imnpjs0xumtq0cgrxnk1qrtkyenbvmfhvymcxrzbay1jhugvuav9onepzalfhtuw1aec0ms1iuevxevdisji3uxpqs2zrn2lqnxjwoxkxuznpnglfua": {
    "at": "2026-11-26T08:19:48+00:00",
    "channel": "digest",
@@ -3313,6 +3379,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "Virginia and Oregon sue SpaceX over Grok CSAM and deepfake generation"
+  },
+  "url:https://news.google.com/rss/articles/cbmic0fvx3lxte93nwphb2fct2g1q05xd216dzlewvhtudvayxhysmdqtvdfu3blsljvowhfd2h3nuz4z1jkb1q4vkr5n1vjoxhdbxrrmf9yznvnsevmegwztzjjbtc5uwjrzk5qwl9xvwxsdvhycunkm1dtbtq": {
+   "at": "2026-11-27T21:18:11+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Musk details Grok Bot orchestration architecture and multi-model routing"
   },
   "url:https://news.google.com/rss/articles/cbmicefvx3lxte5ysxppr00yoxppmdgzmm44rfndsdb3x2l1qwtmvkj2zdzpvvfqeedrte5lcuhzogdndfpetufhbkvmbgtaov9vnw5nef9hm3nlmtv5wet3ym1hz1vxbg9qevhmdnkttgpjouo0u1i3mva": {
    "at": "2026-11-16T22:02:32+00:00",
@@ -3421,6 +3493,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "xAI deploys Grok Bot teams for end-to-end accounting processes at SpaceXSI"
+  },
+  "url:https://news.google.com/rss/articles/cbmie0fvx3lxtfbed3lfb0noeuxmn1vfanjyz1hmu0vkek9nc1ztuhp0a3o5curnbwdwrlfrmjn5nxhmstrguvdqbjnsskxabkrzruq3nkdumvbmzgs1r3ywqtrwrfbfwmxengnirnrycmvbvgxqzu9axzrmnzvzykpnchhscw": {
+   "at": "2026-11-27T21:18:11+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Chinese AI labs pivot model distillation to Google and Meta"
   },
   "url:https://news.google.com/rss/articles/cbmieefvx3lxte1ucnzztefgshjjzglawtruehr6rg11uthguvriwfpjbjbjugv4ofnusw1lczzwblrdtuvuyjf5nnr1wfvnq0l5ywzmbjbrrlhqout4qvizymk5bvy1c0pwmg1tbmlyq05mrejqzjr3tlduyxjtyuhxdq": {
    "at": "2026-11-25T08:34:38+00:00",
@@ -3547,6 +3625,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic researcher claims Claude helped discover Riemann Hypothesis proof"
+  },
+  "url:https://news.google.com/rss/articles/cbmihafbvv95cuxnafnnmvlyzkzkoxb1sk41m093uxdvmnbdzfzqmffkqxhwefvyznldyjvfnlj1nfbvyna4ywp2yjdtewxecglad2rrb3pcd0jlvu5hnvzxrmlytlvbnxvzslk5turyyxpbzernmmuztuzlvff4zdhyy3e2eme3mwtmzeziy3a": {
+   "at": "2026-11-27T21:18:11+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI countersues Apple over trade secret theft and supplier coercion"
   },
   "url:https://news.google.com/rss/articles/cbmihafbvv95cuxoem9ndlrta0lvanricmj3q0vbby14wkzhd3vranhrnvnjys1hztrorhq3wwhxymoztdrnq0o4mtj4y1znr0ruv0zdx3jqc3dhmnvod1fpm0t3elhoqxdnswlys2nxdgzvum5jmkjnq3huwnziehzpeer5bkjtqvc3uwyxsi0": {
    "at": "2026-11-17T07:57:43+00:00",
@@ -3932,6 +4016,12 @@
    "priority": "P1",
    "title": "Anthropic prices initial public offering at $83 per share"
   },
+  "url:https://news.google.com/rss/articles/cbminwfbvv95cuxotk85rfhoavq1uzz5zmn5cjd1zwhgsxlfr1hezeytelmzb3m3a3b2rwlfawlxmuytbnlwshzwdvhjmwr2cxbivmtatgutbzrhvvrbwff2vdlvagh4oxvjvvlsdfjbn1kwvej3qxpjevnywlbjqmjksvfrx0f5cufwvk9mdxzdctjlnxjrogfpevjpef9fbxzxynzbofbed2c": {
+   "at": "2026-11-27T21:18:11+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "OpenAI builds 'Athena' semantic data platform for ChatGPT Work agents"
+  },
   "url:https://news.google.com/rss/articles/cbminwfbvv95cuxpzwsta3njmezjltlrchl5tgvlu0oyodvkt2xjv3nmwwr2dxhostzcetbrsflqv180etnhbw9hm0zwatzaejnqmuu4shzpqm5arnfodknrqvfrnuftv2i5bhbjuk5urdfmtm1uqnrqcxpvbdgyb3hregowr0otmdzwehvmbfhut1a4mwpynnnpc2vjnuzockhaqwr2cwxgzehsaaqbqvvfexfmt2ztedrvb2nxdvzfvuntelbysgvjy1nods1uvxjxb21cv05pykvloen4vgpua0y0bxrvahdjqln5dzy4u1prakxpmjvod05tsnu5umvjel9prkhredlnd1zuowndsgxru0rjagdddusxtvdurgdxu0rpqmlbtfdprjdnt3h3lvj5wek2c3cxufozegvgzehwsfdkrnnovhdpofptlww": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
@@ -3949,6 +4039,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
+  },
+  "url:https://news.google.com/rss/articles/cbmioafbvv95cuxoanqycfjeajnxde50c0xgtkpdeglsaufuddjzaxhwzu1vtejsrs1zc1ppz3rrx19oufrcmvhpdhkxwf9qynl3yv9uzexboexfwxk2supznmfgd01hm3zmuwnyckhtdzc4d1rpb2g0nurnzjzmwtaztlf2qjrczw1qbzfqbhnnblh6lvfjujljduvvse5on3nzcxjmn3fgr0t00ggmaufvx3lxte54u0zavnhjdgtvltywtmxsszrqy2drdfrxze1jc0xydfvzrwnmmdgxz2tvsknzmui1t2pfagnevmxvqxbttm1ycznku1hjmg1kttbmbum5sjhxmmz2uva5su85nhd6zgzsqu1qcl9pelvdnfdnvxvxdlnsdhzkcl9mzkxrvdriejjlcgtmvenus2pbvkduzevhcgjtukp2m1rkzlj5r1e": {
+   "at": "2026-11-27T21:18:11+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI countersues Apple over trade secret theft and supplier coercion"
   },
   "url:https://news.google.com/rss/articles/cbmioafbvv95cuxodlplmklyb1c1n0synurzswv2zufcm2q3cmznn3hjtlzfdhr0y05vx2rpegzvt21qwkrvx2nkchfcrgfpr2p5n3jorwnfy2x3t1ngmfy0utlyqzflothyczhrehhhelatzgzes29hegpza2jpq1bqyxhkzde2v3fsww9twjzuekdpltfjahe0wg1pog5ouunwbfdxumximg1n": {
    "at": "2026-11-26T21:39:05+00:00",
@@ -4045,6 +4141,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic shares fall below $83 IPO price amid market slide"
+  },
+  "url:https://news.google.com/rss/articles/cbmiqafbvv95cuxnzzh2tm5vugrfa3n6rvznctfpbnhrywkwa3baq3juag5fznnscmvqyzjea2cyzzy0umruu2wzm0dpnllid1psn3y0endbwvyxru5gtmp4zexlwxn0uzhsrllulwhrc2fqts1nb0hzutzlzhj1oxzzujqwsjjtngjkwllxcepvajm4ekjzaxvvtxjjdvfqwetvwwlwvdzqqv9pvdvxrxi0ako": {
+   "at": "2026-11-27T21:18:11+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI countersues Apple over trade secret theft and supplier coercion"
   },
   "url:https://news.google.com/rss/articles/cbmiqafbvv95cuxoznbutghdyjfynujevdfozznja296qlpkatrqyk1ivtz1zlhpugzwtunbqw13u09pym5hrfzyzgq4wc1pymrpa1vfedhwludpauuwv1zyrzvhrznwu0m1nw9jvgfhyudiugvvqljwyxl0bnh0cujot2n5s1o5cetyr1zhs3jtvxvlu0ktwedlzs0yvnmwrgdhvwhreuqyluvatkjqaxhurgo": {
    "at": "2026-11-23T23:53:32+00:00",
@@ -4856,6 +4958,12 @@
    "priority": "P1",
    "title": "Anthropic hits Nasdaq in largest IPO in history at $2T valuation"
   },
+  "url:https://reuters.com/technology/openai-countersues-apple-stealing-trade-secrets-ft-reports-2026-11-27": {
+   "at": "2026-11-27T21:18:11+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI countersues Apple over trade secret theft and supplier coercion"
+  },
   "url:https://scanx.trade/stock-market-news/ipo/anthropic-shares-drop-28-analysts-warn-tougher-openai-ipo/57214150": {
    "at": "2026-11-26T08:19:48+00:00",
    "channel": "digest",
@@ -5179,6 +5287,18 @@
    "channel": "digest",
    "priority": "P3",
    "title": "GPT-6.2 Astra users now hit limits 40% faster after OpenAI patched a pricing error"
+  },
+  "url:https://the-decoder.com/openai-countersues-apple-over-trade-secret-theft-and-alleged-coercion-of-shared-suppliers": {
+   "at": "2026-11-27T21:18:11+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI countersues Apple over trade secret theft and supplier coercion"
+  },
+  "url:https://the-decoder.com/openai-is-building-athena-data-platform-to-cut-down-on-ai-agent-guesswork": {
+   "at": "2026-11-27T21:18:11+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "OpenAI builds 'Athena' semantic data platform for ChatGPT Work agents"
   },
   "url:https://the-decoder.com/openai-launches-gpt-6-2-astra-and-sol-with-lower-api-prices-and-some-benchmark-gains": {
    "at": "2026-11-17T20:58:16+00:00",
