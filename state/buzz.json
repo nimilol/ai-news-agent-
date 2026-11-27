@@ -1,6 +1,7 @@
 {
  "failures": {},
  "seen": {
+  "gh:HKUDS/CLI-Anything": "2026-11-27",
   "gh:INK-Q/agy-fast": "2026-11-25",
   "gh:Karimk899/free-llm-router": "2026-11-25",
   "gh:LIUFelix2004/dsh-workbuddy": "2026-11-25",
@@ -37,7 +38,9 @@
   "gh:google-labs-code/stitch-skills": "2026-11-24",
   "gh:iamajmeena/neonclipping": "2026-11-21",
   "gh:jackson-cmd/claude-multi-desktop": "2026-11-21",
+  "gh:jingyaogong/minimind": "2026-11-27",
   "gh:meta-llama/PurpleLlama": "2026-11-21",
+  "gh:mjmirza/app-store-compliance": "2026-11-27",
   "gh:nexu-io/opengame": "2026-11-27",
   "gh:nginx/nginx": "2026-11-22",
   "gh:openai/codex": "2026-11-21",
@@ -111,6 +114,7 @@
   "news:740641f8a62899ec": "2026-11-24",
   "news:7569c3e3c3738a41": "2026-11-22",
   "news:7b297818599cd2fe": "2026-11-23",
+  "news:7ce0b3cc7f1f8ec3": "2026-11-27",
   "news:7f5a4ec2da75a3fc": "2026-11-20",
   "news:8351c25a01193802": "2026-11-24",
   "news:84bd2b4ff53e128a": "2026-11-24",
@@ -133,6 +137,7 @@
   "news:d63afe8b23150f43": "2026-11-26",
   "news:df91db7dc7d5c720": "2026-11-22",
   "news:e006776b2b8c2a18": "2026-11-26",
+  "news:e384f62a35350590": "2026-11-27",
   "news:ffeb590f037c94a4": "2026-11-26",
   "paper:2611.21885": "2026-11-22",
   "paper:2611.26444": "2026-11-22",
