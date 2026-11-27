@@ -1978,6 +1978,11 @@
    "channel": "discovery",
    "title": "abdiraimov-otabek/dashboard-design-skill"
   },
+  "url:https://github.com/abilityai/trinity": {
+   "at": "2026-11-27T23:38:09+00:00",
+   "channel": "discovery",
+   "title": "Abilityai/trinity"
+  },
   "url:https://github.com/affaan-m/ecc": {
    "at": "2026-11-17T18:43:32+00:00",
    "channel": "discovery",
@@ -2007,6 +2012,11 @@
    "at": "2026-11-21T19:40:04+00:00",
    "channel": "discovery",
    "title": "agentscope-ai/agentscope-java"
+  },
+  "url:https://github.com/agilerl/agilerl": {
+   "at": "2026-11-27T23:38:09+00:00",
+   "channel": "discovery",
+   "title": "AgileRL/AgileRL"
   },
   "url:https://github.com/alchaincyf/huashu-art-motion": {
    "at": "2026-11-22T11:50:20+00:00",
@@ -2207,6 +2217,11 @@
    "channel": "discovery",
    "title": "daveebbelaar/bama"
   },
+  "url:https://github.com/db-lyon/ue-mcp": {
+   "at": "2026-11-27T23:38:09+00:00",
+   "channel": "discovery",
+   "title": "db-lyon/ue-mcp"
+  },
   "url:https://github.com/deepset-ai/haystack": {
    "at": "2026-11-20T12:00:37+00:00",
    "channel": "discovery",
@@ -2357,6 +2372,11 @@
    "channel": "discovery",
    "title": "Flow-Steward/flow-steward-app"
   },
+  "url:https://github.com/foreactlabs/openexecutive": {
+   "at": "2026-11-27T23:38:09+00:00",
+   "channel": "discovery",
+   "title": "ForeactLabs/OpenExecutive"
+  },
   "url:https://github.com/framerslab/agentos": {
    "at": "2026-11-21T11:33:38+00:00",
    "channel": "discovery",
@@ -2396,6 +2416,11 @@
    "at": "2026-11-19T02:46:27+00:00",
    "channel": "discovery",
    "title": "google-gemini/gemini-managed-agents-workshop"
+  },
+  "url:https://github.com/google-labs-code/stitch-skills": {
+   "at": "2026-11-27T23:38:09+00:00",
+   "channel": "discovery",
+   "title": "google-labs-code/stitch-skills"
   },
   "url:https://github.com/google-research/paper-orchestra": {
    "at": "2026-11-17T18:43:32+00:00",
@@ -2632,6 +2657,11 @@
    "channel": "discovery",
    "title": "mdiri-ai/SoduWork"
   },
+  "url:https://github.com/mervinpraison/praisonai": {
+   "at": "2026-11-27T23:38:09+00:00",
+   "channel": "discovery",
+   "title": "MervinPraison/PraisonAI"
+  },
   "url:https://github.com/microsoft/agent-governance-toolkit": {
    "at": "2026-11-20T12:00:37+00:00",
    "channel": "discovery",
@@ -2721,6 +2751,11 @@
    "at": "2026-11-22T19:54:50+00:00",
    "channel": "discovery",
    "title": "Nanako0129/pilotfish"
+  },
+  "url:https://github.com/nexu-io/opengame": {
+   "at": "2026-11-27T23:38:09+00:00",
+   "channel": "discovery",
+   "title": "nexu-io/opengame"
   },
   "url:https://github.com/niazmorshed2007/reanimate": {
    "at": "2026-11-20T12:00:37+00:00",
@@ -3003,6 +3038,11 @@
    "at": "2026-11-22T01:33:01+00:00",
    "channel": "discovery",
    "title": "uclanlp/OpenVLHarness"
+  },
+  "url:https://github.com/uditakhourii/quicksilver": {
+   "at": "2026-11-27T23:38:09+00:00",
+   "channel": "discovery",
+   "title": "UditAkhourii/quicksilver"
   },
   "url:https://github.com/vapi-network/vapi-network": {
    "at": "2026-11-19T20:54:44+00:00",
