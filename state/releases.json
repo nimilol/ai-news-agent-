@@ -277,6 +277,206 @@
    "source_url": "https://models.dev/?search=kimi-k3.1-pro-prime",
    "verification": "UNCONFIRMED"
   },
+  "alibaba:macaron-v-1-1-coding-venti": {
+   "announcement_date": null,
+   "availability_date": null,
+   "availability_status": null,
+   "classification": "UNCONFIRMED_EARLY_SIGNAL",
+   "company": "alibaba",
+   "comparison_summary": "models.dev lists Macaron V1.1 Coding Venti for alibaba",
+   "delivery": {
+    "attempts": 0,
+    "last_error": null,
+    "message_ids": [],
+    "notification": null,
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "details": {
+    "reasons": [
+     "only third-party sources so far: models.dev listings (early signal)"
+    ],
+    "text": "Release date on models.dev: 2026-09-22."
+   },
+   "duplicates": 0,
+   "events": [
+    {
+     "at": "2026-11-27T22:07:09+00:00",
+     "note": "only third-party sources so far: models.dev listings (early signal)",
+     "type": "detected"
+    }
+   ],
+   "fingerprints": [
+    "https://models.dev/"
+   ],
+   "first_detected": "2026-11-27T22:07:09+00:00",
+   "id": "alibaba:macaron-v-1-1-coding-venti",
+   "last_updated": "2026-11-27T22:07:09+00:00",
+   "model_ids": [
+    "mindlab/macaron-v1.1-coding-venti"
+   ],
+   "model_name": "Macaron V1.1 Coding Venti",
+   "official_sources": [
+    {
+     "source": "models.dev listings (early signal)",
+     "url": "https://models.dev/?search=mindlab/macaron-v1.1-coding-venti"
+    }
+   ],
+   "previous_model": null,
+   "priority": "P2",
+   "source_url": "https://models.dev/?search=mindlab/macaron-v1.1-coding-venti",
+   "verification": "UNCONFIRMED"
+  },
+  "alibaba:macaron-v-1-1-venti": {
+   "announcement_date": null,
+   "availability_date": null,
+   "availability_status": null,
+   "classification": "UNCONFIRMED_EARLY_SIGNAL",
+   "company": "alibaba",
+   "comparison_summary": "models.dev lists Macaron V1.1 Venti for alibaba",
+   "delivery": {
+    "attempts": 0,
+    "last_error": null,
+    "message_ids": [],
+    "notification": null,
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "details": {
+    "reasons": [
+     "only third-party sources so far: models.dev listings (early signal)"
+    ],
+    "text": "Release date on models.dev: 2026-09-22."
+   },
+   "duplicates": 0,
+   "events": [
+    {
+     "at": "2026-11-27T22:07:09+00:00",
+     "note": "only third-party sources so far: models.dev listings (early signal)",
+     "type": "detected"
+    }
+   ],
+   "fingerprints": [
+    "https://models.dev/"
+   ],
+   "first_detected": "2026-11-27T22:07:09+00:00",
+   "id": "alibaba:macaron-v-1-1-venti",
+   "last_updated": "2026-11-27T22:07:09+00:00",
+   "model_ids": [
+    "mindlab/macaron-v1.1-venti"
+   ],
+   "model_name": "Macaron V1.1 Venti",
+   "official_sources": [
+    {
+     "source": "models.dev listings (early signal)",
+     "url": "https://models.dev/?search=mindlab/macaron-v1.1-venti"
+    }
+   ],
+   "previous_model": null,
+   "priority": "P2",
+   "source_url": "https://models.dev/?search=mindlab/macaron-v1.1-venti",
+   "verification": "UNCONFIRMED"
+  },
+  "alibaba:macaron-v-1-1-venti-pro": {
+   "announcement_date": null,
+   "availability_date": null,
+   "availability_status": null,
+   "classification": "UNCONFIRMED_EARLY_SIGNAL",
+   "company": "alibaba",
+   "comparison_summary": "models.dev lists Macaron V1.1 Venti Pro for alibaba",
+   "delivery": {
+    "attempts": 0,
+    "last_error": null,
+    "message_ids": [],
+    "notification": null,
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "details": {
+    "reasons": [
+     "only third-party sources so far: models.dev listings (early signal)"
+    ],
+    "text": "Release date on models.dev: 2026-09-22."
+   },
+   "duplicates": 0,
+   "events": [
+    {
+     "at": "2026-11-27T22:07:09+00:00",
+     "note": "only third-party sources so far: models.dev listings (early signal)",
+     "type": "detected"
+    }
+   ],
+   "fingerprints": [
+    "https://models.dev/"
+   ],
+   "first_detected": "2026-11-27T22:07:09+00:00",
+   "id": "alibaba:macaron-v-1-1-venti-pro",
+   "last_updated": "2026-11-27T22:07:09+00:00",
+   "model_ids": [
+    "mindlab/macaron-v1.1-venti-pro"
+   ],
+   "model_name": "Macaron V1.1 Venti Pro",
+   "official_sources": [
+    {
+     "source": "models.dev listings (early signal)",
+     "url": "https://models.dev/?search=mindlab/macaron-v1.1-venti-pro"
+    }
+   ],
+   "previous_model": null,
+   "priority": "P2",
+   "source_url": "https://models.dev/?search=mindlab/macaron-v1.1-venti-pro",
+   "verification": "UNCONFIRMED"
+  },
+  "alibaba:macaron-v-1-tall": {
+   "announcement_date": null,
+   "availability_date": null,
+   "availability_status": null,
+   "classification": "UNCONFIRMED_EARLY_SIGNAL",
+   "company": "alibaba",
+   "comparison_summary": "models.dev lists Macaron V1 Tall for alibaba",
+   "delivery": {
+    "attempts": 0,
+    "last_error": null,
+    "message_ids": [],
+    "notification": null,
+    "sent_at": null,
+    "status": "NOT_SENT"
+   },
+   "details": {
+    "reasons": [
+     "only third-party sources so far: models.dev listings (early signal)"
+    ],
+    "text": "Release date on models.dev: 2026-07-21."
+   },
+   "duplicates": 0,
+   "events": [
+    {
+     "at": "2026-11-27T22:07:09+00:00",
+     "note": "only third-party sources so far: models.dev listings (early signal)",
+     "type": "detected"
+    }
+   ],
+   "fingerprints": [
+    "https://models.dev/"
+   ],
+   "first_detected": "2026-11-27T22:07:09+00:00",
+   "id": "alibaba:macaron-v-1-tall",
+   "last_updated": "2026-11-27T22:07:09+00:00",
+   "model_ids": [
+    "mindlab/macaron-v1-tall"
+   ],
+   "model_name": "Macaron V1 Tall",
+   "official_sources": [
+    {
+     "source": "models.dev listings (early signal)",
+     "url": "https://models.dev/?search=mindlab/macaron-v1-tall"
+    }
+   ],
+   "previous_model": null,
+   "priority": "P2",
+   "source_url": "https://models.dev/?search=mindlab/macaron-v1-tall",
+   "verification": "UNCONFIRMED"
+  },
   "alibaba:qwen-4-max": {
    "announcement_date": null,
    "availability_date": null,
@@ -2322,6 +2522,10 @@
   "alibaba:glm-5-3-prime": "alibaba:glm-5-3-prime",
   "alibaba:kimi-k-3-1-pro": "alibaba:kimi-k-3-1-pro",
   "alibaba:kimi-k-3-1-pro-prime": "alibaba:kimi-k-3-1-pro-prime",
+  "alibaba:macaron-v-1-1-coding-venti": "alibaba:macaron-v-1-1-coding-venti",
+  "alibaba:macaron-v-1-1-venti": "alibaba:macaron-v-1-1-venti",
+  "alibaba:macaron-v-1-1-venti-pro": "alibaba:macaron-v-1-1-venti-pro",
+  "alibaba:macaron-v-1-tall": "alibaba:macaron-v-1-tall",
   "alibaba:qwen-4-max": "alibaba:qwen-4-max",
   "alibaba:qwen-audio-3-1-live": "alibaba:qwen-audio-3-1-live",
   "anthropic:claude-opus-5-5": "anthropic:claude-opus-5-5",
@@ -13950,6 +14154,10 @@
   "models.dev listings (early signal)": {
    "initialized": true,
    "seen": [
+    "alibaba/mindlab/macaron-v1.1-venti-pro",
+    "alibaba/mindlab/macaron-v1.1-coding-venti",
+    "alibaba/mindlab/macaron-v1.1-venti",
+    "alibaba/mindlab/macaron-v1-tall",
     "openai/gpt-6.2-astra-healthcare",
     "openai/gpt-6-astra-healthcare",
     "openai/gpt-6.2-sol-healthcare",
