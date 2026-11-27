@@ -348,6 +348,12 @@
    "priority": "P3",
    "title": "Opus 5.6 testing 🤖, OpenAI private Inference 🔒, Jev is probably Qwen 📝"
   },
+  "title:50 bot grok increases limits routine run up users xai": {
+   "at": "2026-11-27T08:31:20+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "xAI Increases Routine Run Limits for Grok Bot Users by Up to 50%"
+  },
   "title:500 anthropic anytime beincrypto here join soon won": {
    "at": "2026-11-26T21:39:05+00:00",
    "channel": "digest",
@@ -1038,6 +1044,12 @@
    "priority": "P1",
    "title": "Anthropic researcher claims Claude helped discover Riemann Hypothesis proof"
   },
+  "title:anthropic claude cloud gains scheduled tasks": {
+   "at": "2026-11-27T08:31:20+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Anthropic's Claude Gains Scheduled Cloud Tasks"
+  },
   "title:anthropic claude elevated errors models multiple resolves": {
    "at": "2026-11-25T08:34:38+00:00",
    "channel": "digest",
@@ -1368,6 +1380,12 @@
    "priority": "P3",
    "title": "US computing curbs threaten delays for Z.AI and Moonshot models, Reuters reports - Superpower Daily"
   },
+  "title:confirms december delay disputes executive glm-5.5 launch reports zhipu": {
+   "at": "2026-11-27T08:31:20+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Zhipu Executive Disputes Reports of GLM-5.5 Delay, Confirms December Launch"
+  },
   "title:connected in-house intelligence legal": {
    "at": "2026-11-24T02:21:23+00:00",
    "channel": "alerts",
@@ -1571,6 +1589,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic closes $93.5B initial public offering on Nasdaq"
+  },
+  "url:https://app.dealroom.co/news/note/distilling-us-ai-models-gets-harder-as-z-ai-s-glm-5-5-slips-and-moonshot-turns-to-google-and-meta-models-reuters-reports": {
+   "at": "2026-11-27T08:31:20+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Zhipu Executive Disputes Reports of GLM-5.5 Delay, Confirms December Launch"
   },
   "url:https://app.dealroom.co/news/note/openai-publishes-its-internal-pretraining-curve-and-proposes-industry-wide-limits-based-on-perplexity": {
    "at": "2026-11-22T19:39:39+00:00",
@@ -1781,6 +1805,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "Anthropic study highlights workplace AI adoption barriers"
+  },
+  "url:https://finance.biggo.com/news/13738f0b-1c0e-40c7-904d-8a420e3d7109": {
+   "at": "2026-11-27T08:31:20+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Anthropic's Claude Gains Scheduled Cloud Tasks"
   },
   "url:https://finance.biggo.com/news/832f2a84-adf8-4fc7-a00d-f54750da3fac": {
    "at": "2026-11-21T19:19:33+00:00",
@@ -3670,6 +3700,12 @@
    "priority": "P2",
    "title": "Zhipu Shares Crash Amid US Chip Curbs and Content Trimming"
   },
+  "url:https://news.google.com/rss/articles/cbmikwfbvv95cuxos3jwskdmcwdvngfyn3c5eenlzlkxn0jlt0zdquvycuczatdvng9fbu9tcg1zstlrtfb0ymdoczawvxd6u1u1wenfbjh2dfz5butxzljtnxjqshi3vmxitwt2ckxovfnqoc1xagnwwelmdhlorerezvbezuv2wvitofq5wkzjefdsrtvbcnjvcmlxdxm": {
+   "at": "2026-11-27T08:31:20+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "xAI Increases Routine Run Limits for Grok Bot Users by Up to 50%"
+  },
   "url:https://news.google.com/rss/articles/cbmikwfbvv95cuxqouqtvg5tdwhkofzotmraqznevjbnyva0zzdksjhju2xoaeraa25detjhauvxawrrwtdrt1jathhvmnlscejnwxo3ywxov3lrvddztgf5uv94dmdqrw5psli2twpreejjcu5htg85zknha3fvddfjqkcyqxvpaxfmcna3swflrwnpufqzmhnseudldg8": {
    "at": "2026-11-19T20:39:31+00:00",
    "channel": "digest",
@@ -3681,6 +3717,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "ChatGPT Space rolls out globally to Plus users"
+  },
+  "url:https://news.google.com/rss/articles/cbmilafbvv95cuxqcjlnnnfjdws3ehmtqmrza2fyowrut1hrqjnlz3dwdlo2vtktqm1rbxfqwhewv0pvx3nktezhukhxrzzwc3zpawdzrk92bvn0svh1ufvpc3p4mkr4ehjucmlretnicuxuvefsbc1gmxfmbwngvhjtz29ormizt1vadnoyq3vucdnkwutiehnrbhl2cfhi": {
+   "at": "2026-11-27T08:31:20+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Zhipu Executive Disputes Reports of GLM-5.5 Delay, Confirms December Launch"
   },
   "url:https://news.google.com/rss/articles/cbmilgfbvv95cuxnbk5znffbclbmbkewctrzn2ddagvplvjst2frakvys3btagfuek9xtfz2afjone9lbxfsytq5a0j3sjjftulmmev5b3c4ay0xa3byeklyvgi5m3vlv3fuy2h6vfi0bdk0b3m1m1zsxzbgd1louwdxv0zftuz4beldyvizswrscgjlx2lxqtjwnhg4aglusfe": {
    "at": "2026-11-25T08:34:38+00:00",
@@ -3724,11 +3766,23 @@
    "priority": "P2",
    "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
   },
+  "url:https://news.google.com/rss/articles/cbmimafbvv95cuxorujzvl8ysxfwb24zaznvlxb6uw9gul9ou3bwnufka0o5tzywdkfudnnjddq4egczrwmxam5kvfkxuzdkbeyxv0zblu5swkdxvutqq2tysv9fuwmztmixbgl2n1f3y2u4zuzkzzntnmkzoglrvzhoze5xtdh5tg1fd0gxavhrz2zhqne4wtzwbdfjekpybhrjcg": {
+   "at": "2026-11-27T08:31:20+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Zhipu Executive Disputes Reports of GLM-5.5 Delay, Confirms December Launch"
+  },
   "url:https://news.google.com/rss/articles/cbmimafbvv95cuxowfbazlo0sdb6u2htrjqwntvkyk9xbeztu0oxnwrhqwd0cvjavvn4d1f3rvd6ck5qympwvgdtsxbqr3vhwmf1q2tosdhstm1xbmtbbli1y0rvsvlsuwnaoenzd0xamdhqs0zgalvbd19ynk5rrfg2vk9xvfd3akpla2n0nfplzjrayjjgmdnqmgzkmw15adfzdg": {
    "at": "2026-11-19T20:39:31+00:00",
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic hits Nasdaq in largest IPO in history at $2T valuation"
+  },
+  "url:https://news.google.com/rss/articles/cbmimafbvv95cuxqthzorvjvrfbrmu1wyujqvhbusmjermnumkxptw0xrwdmrddqz0rvsmrkrwffchfqmkduruhzmvrzv0tlt2hlx2i1y21rcl95clvmrm56dhfhyxj1djntqmfyqmhjblfhdwrfsvl0s1nuql8yvgzlynrtrgr2owitv25irtltlxrcm3nxywdzzdg3enyxevzqcw": {
+   "at": "2026-11-27T08:31:20+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Zhipu Executive Disputes Reports of GLM-5.5 Delay, Confirms December Launch"
   },
   "url:https://news.google.com/rss/articles/cbmimgfbvv95cuxnwnvlaxzxrkhrvxjkqzf4uvaxdff3bnvlm05su1n6v2hczjdkuerwbs03vuu2djleywhzsetxnnnnalnqb1a3zed0a1vucjjuyujontjcz1k1wuxsqxfpdem2bgvelxhzs1a5rmzhaeizn1rozk1rx3nnztbgcnfdsjf3ovrrqtzhcgdiym9vrwzzbedtb085tjln": {
    "at": "2026-11-25T08:34:38+00:00",
@@ -3819,6 +3873,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "Anthropic IPO preparations continue ahead of Nasdaq debut"
+  },
+  "url:https://news.google.com/rss/articles/cbmingfbvv95cuxovhpxutvacvznwnbnbjvwnvzmdnrpm09pvwtyt283b3pjte9qclv6b3dkof9uthzeanrmvxpgz1hmawdpt1k4m3y3ulzsczl1n01yexlqnjfss0tfs0tyvej4a0e2vmzob3nzvc1sag1stvjjwesxbl9xn1d6vwhrvkgtmnp6mda4uxhcmunawdnuzeppwtbgqnjbcgrfdw": {
+   "at": "2026-11-27T08:31:20+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Zhipu Executive Disputes Reports of GLM-5.5 Delay, Confirms December Launch"
   },
   "url:https://news.google.com/rss/articles/cbmingfbvv95cuxpvenfr2jtexlpbexmq0pztflwaldlrtrhbtr4zeq1bzzxshzjqmhqb3hjms1itgxusvlsae1qqwnvamjsndnpztu4rlbzdlzanxoyvxddwtvztjjfadz1sjdhszhjaxfdug41ngfkn0fdwtvrqjvpqutxbgv5x1dwrzn0y2mty2zpvmveztb6uufjrzngtezzwu5zmngwdw": {
    "at": "2026-11-17T07:57:43+00:00",
@@ -4713,6 +4773,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "Claude Code Adds Experimental Code Mode and Tool Guards"
+  },
+  "url:https://reddit.com/r/localllama/comments/1y6260i/zai_clarifies_glm55_has_not_been_delayed": {
+   "at": "2026-11-27T08:31:20+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Zhipu Executive Disputes Reports of GLM-5.5 Delay, Confirms December Launch"
   },
   "url:https://reddit.com/r/openai/comments/1xy1dim/do_we_need_another_device_just_to_talk_to_ai": {
    "at": "2026-11-17T07:57:43+00:00",
