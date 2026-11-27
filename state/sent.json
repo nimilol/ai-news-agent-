@@ -2114,6 +2114,11 @@
    "channel": "discovery",
    "title": "daniel3303/Equibles"
   },
+  "url:https://github.com/danielwh2/sprite-stacking": {
+   "at": "2026-11-27T01:56:48+00:00",
+   "channel": "discovery",
+   "title": "danielwh2/sprite-stacking"
+  },
   "url:https://github.com/daveebbelaar/bama": {
    "at": "2026-11-21T02:42:19+00:00",
    "channel": "discovery",
@@ -2264,6 +2269,11 @@
    "channel": "discovery",
    "title": "firecrawl/firecrawl-mcp-server"
   },
+  "url:https://github.com/flow-steward/flow-steward-app": {
+   "at": "2026-11-27T01:56:48+00:00",
+   "channel": "discovery",
+   "title": "Flow-Steward/flow-steward-app"
+  },
   "url:https://github.com/framerslab/agentos": {
    "at": "2026-11-21T11:33:38+00:00",
    "channel": "discovery",
@@ -2334,6 +2344,11 @@
    "channel": "discovery",
    "title": "IBM/AssetOpsBench"
   },
+  "url:https://github.com/instructa/constructa-starter": {
+   "at": "2026-11-27T01:56:48+00:00",
+   "channel": "discovery",
+   "title": "instructa/constructa-starter"
+  },
   "url:https://github.com/ishangautam7/talvio": {
    "at": "2026-11-26T17:13:14+00:00",
    "channel": "discovery",
@@ -2368,6 +2383,11 @@
    "at": "2026-11-26T03:42:08+00:00",
    "channel": "discovery",
    "title": "jaredchu/context-docs"
+  },
+  "url:https://github.com/jasoncolapietro/suede-creator-skills": {
+   "at": "2026-11-27T01:56:48+00:00",
+   "channel": "discovery",
+   "title": "JasonColapietro/suede-creator-skills"
   },
   "url:https://github.com/jiji262/claude-design-skill": {
    "at": "2026-11-24T14:05:37+00:00",
@@ -2424,6 +2444,11 @@
    "channel": "discovery",
    "title": "kajisho5/ffmpeg-skill"
   },
+  "url:https://github.com/katherineleroy/codex-unlimited": {
+   "at": "2026-11-27T01:56:48+00:00",
+   "channel": "discovery",
+   "title": "katherineleroy/codex-unlimited"
+  },
   "url:https://github.com/kevinpbuckley/vibeue": {
    "at": "2026-11-26T03:42:08+00:00",
    "channel": "discovery",
@@ -2463,6 +2488,11 @@
    "at": "2026-11-22T19:54:50+00:00",
    "channel": "discovery",
    "title": "ling-stack-org/ling-stack"
+  },
+  "url:https://github.com/lobu-ai/lobu": {
+   "at": "2026-11-27T01:56:48+00:00",
+   "channel": "discovery",
+   "title": "lobu-ai/lobu"
   },
   "url:https://github.com/locvel/voite": {
    "at": "2026-11-24T14:05:37+00:00",
@@ -2881,6 +2911,11 @@
    "channel": "discovery",
    "title": "vincentsch/explainroo"
   },
+  "url:https://github.com/vladkens/wavo": {
+   "at": "2026-11-27T01:56:48+00:00",
+   "channel": "discovery",
+   "title": "vladkens/wavo"
+  },
   "url:https://github.com/voxdance-lab/voxmel": {
    "at": "2026-11-24T02:29:06+00:00",
    "channel": "discovery",
@@ -2925,6 +2960,11 @@
    "at": "2026-11-22T11:50:20+00:00",
    "channel": "discovery",
    "title": "YOLOW92/pagesift"
+  },
+  "url:https://github.com/yucezerey/turkish-anti-ai-skill": {
+   "at": "2026-11-27T01:56:48+00:00",
+   "channel": "discovery",
+   "title": "yucezerey/turkish-anti-ai-skill"
   },
   "url:https://github.com/zaxiu88888/issue-rag": {
    "at": "2026-11-25T00:04:27+00:00",
