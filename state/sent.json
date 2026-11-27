@@ -2149,6 +2149,11 @@
    "channel": "discovery",
    "title": "danielwh2/sprite-stacking"
   },
+  "url:https://github.com/data-goblin/claude-code-filetree": {
+   "at": "2026-11-27T12:56:26+00:00",
+   "channel": "discovery",
+   "title": "data-goblin/claude-code-filetree"
+  },
   "url:https://github.com/daveebbelaar/bama": {
    "at": "2026-11-21T02:42:19+00:00",
    "channel": "discovery",
@@ -2349,6 +2354,11 @@
    "channel": "discovery",
    "title": "google-research/paper-orchestra"
   },
+  "url:https://github.com/haqayade25/codex-cli-rotator": {
+   "at": "2026-11-27T12:56:26+00:00",
+   "channel": "discovery",
+   "title": "HaqayaDe25/codex-cli-rotator"
+  },
   "url:https://github.com/harnessrouter/harnessrouter": {
    "at": "2026-11-20T12:00:37+00:00",
    "channel": "discovery",
@@ -2484,6 +2494,11 @@
    "channel": "discovery",
    "title": "kevinpbuckley/VibeUE"
   },
+  "url:https://github.com/kitfunso/hippo-memory": {
+   "at": "2026-11-27T12:56:26+00:00",
+   "channel": "discovery",
+   "title": "kitfunso/hippo-memory"
+  },
   "url:https://github.com/kivanow/sessionly": {
    "at": "2026-11-25T00:04:27+00:00",
    "channel": "discovery",
@@ -2498,6 +2513,11 @@
    "at": "2026-11-26T03:42:08+00:00",
    "channel": "discovery",
    "title": "lacs-project/sysknife"
+  },
+  "url:https://github.com/lastreload/mnemonic-proxy": {
+   "at": "2026-11-27T12:56:26+00:00",
+   "channel": "discovery",
+   "title": "lastreload/mnemonic-proxy"
   },
   "url:https://github.com/laulauraluo/looks-good-to-ai": {
    "at": "2026-11-23T13:26:43+00:00",
@@ -2603,6 +2623,11 @@
    "at": "2026-11-21T19:40:04+00:00",
    "channel": "discovery",
    "title": "MiniMax-AI/mcode-stack"
+  },
+  "url:https://github.com/miuuyy/octopus-si-os": {
+   "at": "2026-11-27T12:56:26+00:00",
+   "channel": "discovery",
+   "title": "miuuyy/Octopus-SI-OS"
   },
   "url:https://github.com/modelengine-group/nexent": {
    "at": "2026-11-21T11:33:38+00:00",
@@ -2856,6 +2881,11 @@
    "channel": "discovery",
    "title": "sonichi/sutando"
   },
+  "url:https://github.com/sonicloudtech/mouse-mcp": {
+   "at": "2026-11-27T12:56:26+00:00",
+   "channel": "discovery",
+   "title": "SonicloudTech/mouse-mcp"
+  },
   "url:https://github.com/strands-agents/harness-sdk": {
    "at": "2026-11-19T02:46:27+00:00",
    "channel": "discovery",
@@ -2981,6 +3011,11 @@
    "channel": "discovery",
    "title": "wshobson/agents"
   },
+  "url:https://github.com/y5ez3g/facadecode": {
+   "at": "2026-11-27T12:56:26+00:00",
+   "channel": "discovery",
+   "title": "y5ez3g/facadecode"
+  },
   "url:https://github.com/yangheng95/opencorvus": {
    "at": "2026-11-25T00:04:27+00:00",
    "channel": "discovery",
@@ -2995,6 +3030,11 @@
    "at": "2026-11-27T01:56:48+00:00",
    "channel": "discovery",
    "title": "yucezerey/turkish-anti-ai-skill"
+  },
+  "url:https://github.com/yzsind/mydb": {
+   "at": "2026-11-27T12:56:26+00:00",
+   "channel": "discovery",
+   "title": "yzsind/mydb"
   },
   "url:https://github.com/zaxiu88888/issue-rag": {
    "at": "2026-11-25T00:04:27+00:00",
