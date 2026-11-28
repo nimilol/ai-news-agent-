@@ -2039,6 +2039,11 @@
    "channel": "discovery",
    "title": "0xS4N4TG/papercut-explainer"
   },
+  "url:https://github.com/5235aa-web/pebbleagent": {
+   "at": "2026-11-28T08:15:17+00:00",
+   "channel": "discovery",
+   "title": "5235aa-web/pebbleagent"
+  },
   "url:https://github.com/abdiraimov-otabek/dashboard-design-skill": {
    "at": "2026-11-23T13:26:43+00:00",
    "channel": "discovery",
@@ -2257,6 +2262,11 @@
    "at": "2026-11-17T08:15:30+00:00",
    "channel": "discovery",
    "title": "Cotal-AI/Cotal"
+  },
+  "url:https://github.com/crmne/ruby_llm": {
+   "at": "2026-11-28T08:15:17+00:00",
+   "channel": "discovery",
+   "title": "crmne/ruby_llm"
   },
   "url:https://github.com/dagoste/squadra": {
    "at": "2026-11-22T19:54:50+00:00",
@@ -2608,6 +2618,11 @@
    "channel": "discovery",
    "title": "JudgmentLabs/judgeval"
   },
+  "url:https://github.com/juliobsz/skills": {
+   "at": "2026-11-28T08:15:17+00:00",
+   "channel": "discovery",
+   "title": "juliobsz/skills"
+  },
   "url:https://github.com/juneyaooo/rea-video": {
    "at": "2026-11-17T08:15:30+00:00",
    "channel": "discovery",
@@ -2647,6 +2662,11 @@
    "at": "2026-11-23T13:26:43+00:00",
    "channel": "discovery",
    "title": "kostja94/bricks"
+  },
+  "url:https://github.com/ktwu01/benchmark-radar": {
+   "at": "2026-11-28T08:15:17+00:00",
+   "channel": "discovery",
+   "title": "ktwu01/benchmark-radar"
   },
   "url:https://github.com/lacs-project/sysknife": {
    "at": "2026-11-26T03:42:08+00:00",
@@ -2915,6 +2935,11 @@
    "channel": "discovery",
    "title": "PedroMarinhoDev/ComfyUI-Drama3"
   },
+  "url:https://github.com/petergyang/video-explainer": {
+   "at": "2026-11-28T08:15:17+00:00",
+   "channel": "discovery",
+   "title": "petergyang/video-explainer"
+  },
   "url:https://github.com/phone-harness/mcp": {
    "at": "2026-11-21T19:40:04+00:00",
    "channel": "discovery",
@@ -3015,6 +3040,11 @@
    "channel": "discovery",
    "title": "ShenSeanChen/waku-agent"
   },
+  "url:https://github.com/shibing624/agentica": {
+   "at": "2026-11-28T08:15:17+00:00",
+   "channel": "discovery",
+   "title": "shibing624/agentica"
+  },
   "url:https://github.com/sinan6021/codex-cli-unlimited": {
    "at": "2026-11-25T08:58:31+00:00",
    "channel": "discovery",
@@ -3110,6 +3140,11 @@
    "channel": "discovery",
    "title": "UditAkhourii/quicksilver"
   },
+  "url:https://github.com/umair/stalemap": {
+   "at": "2026-11-28T08:15:17+00:00",
+   "channel": "discovery",
+   "title": "Umair/stalemap"
+  },
   "url:https://github.com/vapi-network/vapi-network": {
    "at": "2026-11-19T20:54:44+00:00",
    "channel": "discovery",
@@ -3174,6 +3209,11 @@
    "at": "2026-11-25T00:04:27+00:00",
    "channel": "discovery",
    "title": "yangheng95/opencorvus"
+  },
+  "url:https://github.com/yjid/kensaku": {
+   "at": "2026-11-28T08:15:17+00:00",
+   "channel": "discovery",
+   "title": "yjid/kensaku"
   },
   "url:https://github.com/yolow92/pagesift": {
    "at": "2026-11-22T11:50:20+00:00",
