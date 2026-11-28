@@ -510,6 +510,12 @@
    "priority": "P3",
    "title": "Anthropic's IPO: How It Changes Venture | Applied Compute, Bill.com & Mailchimp Acquisitions"
   },
+  "title:across benchmark claims claude code coding complex sabotage tests workflows": {
+   "at": "2026-11-28T20:03:45+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Benchmark tests Claude Code sabotage claims across complex coding workflows"
+  },
   "title:action pr scans see": {
    "at": "2026-11-20T03:31:17+00:00",
    "channel": "alerts",
@@ -738,6 +744,12 @@
    "priority": "P3",
    "title": "Coinbase Reports Grok Bot Leads AI Agent Popularity Rankings - Coinfomania"
   },
+  "title:agent ai effectiveness institute monitors questions security study uk": {
+   "at": "2026-11-28T20:03:45+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "UK AI Security Institute study questions effectiveness of AI agent monitors"
+  },
   "title:agent arena astra briefing crypto gpt-6.2 index openai ranks sixth": {
    "at": "2026-11-21T19:19:33+00:00",
    "channel": "digest",
@@ -845,6 +857,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "AI stocks lose their shine as Anthropic debuts | CNN Business - CNN"
+  },
+  "title:ai anthropic metr orders parliament release report safety uk unredacted": {
+   "at": "2026-11-28T20:03:45+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "UK Parliament orders Anthropic to release unredacted METR AI safety report"
   },
   "title:ai attack finds gao major models planning report vulnerable": {
    "at": "2026-11-19T07:27:18+00:00",
@@ -1272,6 +1290,12 @@
    "priority": "P3",
    "title": "Elon Musk: Grok Bot can help save millions in corporate expenses - Traders Union"
   },
+  "title:bot citing constraints defends grok gross limits margin musk negative rate": {
+   "at": "2026-11-28T20:03:45+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Musk defends Grok Bot rate limits citing negative gross margin constraints"
+  },
   "title:bot company elon grok multi-agent musk orchestration outlines roles specialized": {
    "at": "2026-11-28T07:50:22+00:00",
    "channel": "digest",
@@ -1457,6 +1481,12 @@
    "channel": "alerts",
    "priority": "P2",
    "title": "The Silent Consensus"
+  },
+  "title:consistency deepmind everyday exam fail frontier models repeated shows tasks": {
+   "at": "2026-11-28T20:03:45+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "DeepMind exam shows frontier models fail consistency on repeated everyday tasks"
   },
   "title:control cost may mode openai": {
    "at": "2026-11-26T21:39:05+00:00",
@@ -4514,6 +4544,12 @@
    "priority": "P3",
    "title": "Chinese AI company Z.AI falls behind schedule on new model — The Japan Times - UA.NEWS"
   },
+  "url:https://news.google.com/rss/articles/cbmirwfbvv95cuxnev9qywxmn05onfcztkdlc1dqrvhznkl6ou9lwugttnpjb0o4s2c5tvjbajrvy21kzv9qyu5wws1qmldnltz0au9saglttvc0v0jxddbhre5em1l5qklasxhyc25wmlpzbe5wc2nsvm1udknnohdvz2nna1limvvxmmtnodixeu5wmwlectzmchroahzfzk9smhc3rvjybtgzvg1it01rrezkqm0wbxlb": {
+   "at": "2026-11-28T20:03:45+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Musk defends Grok Bot rate limits citing negative gross margin constraints"
+  },
   "url:https://news.google.com/rss/articles/cbmirwfbvv95cuxpnhy3odvibfvmbgzsz0tsd0p0ytzqtvreswqxyw9uz193whc5n3jqnxj6bvnem3vwved5afhlsursavjlmg9rzgfcqmdjbefpc29tntfvtknxatjjv29eq3jfmuzxnmxzaf90tdm2vujsntrjdxotsmdrm09fs0wymnk2dzbsrkppzhzrcfpkcthpevvwx0lpemg1mku4u1zvq2swazm1t0jems1nnmew": {
    "at": "2026-11-24T22:29:22+00:00",
    "channel": "digest",
@@ -5576,6 +5612,12 @@
    "priority": "P3",
    "title": "Former OpenAI researcher says the Riemann proof matters less than the fact that an AI system can produce it"
   },
+  "url:https://the-decoder.com/google-deepminds-humanitys-first-exam-shows-top-ai-models-still-fail-simple-everyday-tasks-under-repeated-runs": {
+   "at": "2026-11-28T20:03:45+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "DeepMind exam shows frontier models fail consistency on repeated everyday tasks"
+  },
   "url:https://the-decoder.com/gpt-6-2-astra-solved-a-math-theorem-no-other-ai-could-crack-then-invented-its-own-proof-strategy": {
    "at": "2026-11-23T23:53:32+00:00",
    "channel": "digest",
@@ -5587,6 +5629,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "GPT-6.2 Astra users now hit limits 40% faster after OpenAI patched a pricing error"
+  },
+  "url:https://the-decoder.com/new-study-casts-doubt-on-how-ai-companies-test-the-safety-systems-meant-to-keep-their-agents-in-check": {
+   "at": "2026-11-28T20:03:45+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "UK AI Security Institute study questions effectiveness of AI agent monitors"
   },
   "url:https://the-decoder.com/openai-countersues-apple-over-trade-secret-theft-and-alleged-coercion-of-shared-suppliers": {
    "at": "2026-11-27T21:18:11+00:00",
@@ -5635,6 +5683,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "OpenAI begins alpha testing Private Inference to protect business prompts"
+  },
+  "url:https://the-decoder.com/uk-parliament-demands-unredacted-metr-safety-report-after-anthropic-redacts-most-of-the-evidence": {
+   "at": "2026-11-28T20:03:45+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "UK Parliament orders Anthropic to release unredacted METR AI safety report"
   },
   "url:https://the-decoder.com/z-ai-follows-openai-into-loop-transformer-territory-with-its-new-750b-flagship-model": {
    "at": "2026-11-23T23:53:32+00:00",
@@ -5797,6 +5851,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "Study Finds Claude Models Trained on Protein Sequences"
+  },
+  "url:https://xinyadu.github.io/blog/claude-code-sabotage.html": {
+   "at": "2026-11-28T20:03:45+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Benchmark tests Claude Code sabotage claims across complex coding workflows"
   },
   "url:https://youtube.com/shorts/2pdf52evlbm": {
    "at": "2026-11-18T07:29:18+00:00",
