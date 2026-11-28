@@ -2104,6 +2104,11 @@
    "channel": "discovery",
    "title": "alexeyw/lot-map"
   },
+  "url:https://github.com/alexturkey/dubworld": {
+   "at": "2026-11-28T17:43:01+00:00",
+   "channel": "discovery",
+   "title": "alexturkey/dubworld"
+  },
   "url:https://github.com/alexturkey/voxcpm2-turkce-ses-tasarimi": {
    "at": "2026-11-22T11:50:20+00:00",
    "channel": "discovery",
@@ -2197,6 +2202,11 @@
    "at": "2026-11-25T19:33:28+00:00",
    "channel": "discovery",
    "title": "Bil0000/Hill-Climb"
+  },
+  "url:https://github.com/bjarneo/shoulder": {
+   "at": "2026-11-28T17:43:01+00:00",
+   "channel": "discovery",
+   "title": "bjarneo/shoulder"
   },
   "url:https://github.com/blackbelttechnology/pi-agent-dashboard": {
    "at": "2026-11-25T19:33:28+00:00",
@@ -2403,6 +2413,11 @@
    "channel": "discovery",
    "title": "ersinkoc/AI-Video-Factory"
   },
+  "url:https://github.com/eust-w/open-robotics-plugin": {
+   "at": "2026-11-28T17:43:01+00:00",
+   "channel": "discovery",
+   "title": "eust-w/open-robotics-plugin"
+  },
   "url:https://github.com/evalstate/fast-agent": {
    "at": "2026-11-21T02:42:19+00:00",
    "channel": "discovery",
@@ -2467,6 +2482,11 @@
    "at": "2026-11-25T19:33:28+00:00",
    "channel": "discovery",
    "title": "geonodecom/integration-n8n"
+  },
+  "url:https://github.com/gianlucabave/murmury": {
+   "at": "2026-11-28T17:43:01+00:00",
+   "channel": "discovery",
+   "title": "GianlucaBave/murmury"
   },
   "url:https://github.com/giskard-ai/giskard-oss": {
    "at": "2026-11-25T00:04:27+00:00",
@@ -2542,6 +2562,11 @@
    "at": "2026-11-26T17:13:14+00:00",
    "channel": "discovery",
    "title": "ishangautam7/Talvio"
+  },
+  "url:https://github.com/jackson-cmd/risk-aware-trading-agents": {
+   "at": "2026-11-28T17:43:01+00:00",
+   "channel": "discovery",
+   "title": "jackson-cmd/risk-aware-trading-agents"
   },
   "url:https://github.com/jakeschincariol/arena-skill": {
    "at": "2026-11-26T17:13:14+00:00",
@@ -2762,6 +2787,11 @@
    "at": "2026-11-19T12:01:00+00:00",
    "channel": "discovery",
    "title": "microsoft/autogen"
+  },
+  "url:https://github.com/microsoft/hybrid-computer-use": {
+   "at": "2026-11-28T17:43:01+00:00",
+   "channel": "discovery",
+   "title": "microsoft/Hybrid-Computer-Use"
   },
   "url:https://github.com/microsoft/magentic-ui": {
    "at": "2026-11-19T12:01:00+00:00",
@@ -3065,6 +3095,11 @@
    "channel": "discovery",
    "title": "SonicloudTech/mouse-mcp"
   },
+  "url:https://github.com/stoyan-stoyanov/wavefunction": {
+   "at": "2026-11-28T17:43:01+00:00",
+   "channel": "discovery",
+   "title": "stoyan-stoyanov/wavefunction"
+  },
   "url:https://github.com/strands-agents/harness-sdk": {
    "at": "2026-11-19T02:46:27+00:00",
    "channel": "discovery",
@@ -3209,6 +3244,11 @@
    "at": "2026-11-25T00:04:27+00:00",
    "channel": "discovery",
    "title": "yangheng95/opencorvus"
+  },
+  "url:https://github.com/yijiejiang/kaogong-school": {
+   "at": "2026-11-28T17:43:01+00:00",
+   "channel": "discovery",
+   "title": "yijiejiang/kaogong-school"
   },
   "url:https://github.com/yjid/kensaku": {
    "at": "2026-11-28T08:15:17+00:00",
