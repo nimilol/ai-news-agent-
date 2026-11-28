@@ -144,6 +144,12 @@
    "priority": "P3",
    "title": "Anthropic Crypto Bets Imply $1.7 Trillion Value Despite AI Rout - Bloomberg"
   },
+  "title:100m 80 anthropic despite hires meta pushes recent recruitment retains": {
+   "at": "2026-11-28T07:50:22+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic retains 80% of recent hires despite Meta's $100M recruitment pushes"
+  },
   "title:1080p api character openai output references sora updates": {
    "at": "2026-11-19T07:27:18+00:00",
    "channel": "digest",
@@ -335,6 +341,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "OpenAI billing fix causes ChatGPT users to hit limits 40% faster"
+  },
+  "title:5.5 build claude datasette-charts experimental opus plugins simon uses willison": {
+   "at": "2026-11-28T07:50:22+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Simon Willison uses Claude Opus 5.5 to build experimental datasette-charts plugins"
   },
   "title:5.6 anthropic claude early opus outputs testing": {
    "at": "2026-11-25T17:25:12+00:00",
@@ -996,6 +1008,12 @@
    "priority": "P3",
    "title": "Anthropic's Claude now lets you turn artifacts into apps - Mashable"
   },
+  "title:anthropic authors coast distribute funds settlement wizards": {
+   "at": "2026-11-28T07:50:22+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Wizards of the Coast to distribute Anthropic settlement funds to D&D authors"
+  },
   "title:anthropic automate beta claude launches pipelines pull request ship": {
    "at": "2026-11-24T09:54:17+00:00",
    "channel": "digest",
@@ -1007,6 +1025,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "Anthropic IPO signals ‘beginning of a gold rush’ for small businesses, says biz tech CEO - Fox Business"
+  },
+  "title:anthropic behavior cautious clarifies claude employee long not sabotage tasks": {
+   "at": "2026-11-28T07:50:22+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic employee clarifies Claude's cautious behavior on long tasks is not sabotage"
   },
   "title:anthropic beta billing claude developers launches linked platform": {
    "at": "2026-11-17T20:58:16+00:00",
@@ -1111,7 +1135,7 @@
    "title": "xAI API release notes: grok-build-0.1 end of life"
   },
   "title:apple coercion countersues openai over secret supplier theft trade": {
-   "at": "2026-11-27T21:18:11+00:00",
+   "at": "2026-11-28T07:50:22+00:00",
    "channel": "digest",
    "priority": "P1",
    "title": "OpenAI countersues Apple over trade secret theft and supplier coercion"
@@ -1248,6 +1272,12 @@
    "priority": "P3",
    "title": "Elon Musk: Grok Bot can help save millions in corporate expenses - Traders Union"
   },
+  "title:bot company elon grok multi-agent musk orchestration outlines roles specialized": {
+   "at": "2026-11-28T07:50:22+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Elon Musk outlines Grok Bot multi-agent orchestration and specialized company roles"
+  },
   "title:bot computer dictation grok local macos prepares spacexsi system-wide use": {
    "at": "2026-11-23T07:37:38+00:00",
    "channel": "digest",
@@ -1271,6 +1301,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "X's new parental controls cap teen screen time but leave Grok unanswered - Startup Fortune"
+  },
+  "title:but chatgpt clinical expert finds generates panel scoring struggles study tests": {
+   "at": "2026-11-28T07:50:22+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Study finds ChatGPT generates clinical tests but struggles as an expert scoring panel"
   },
   "title:card child focusing model openai releases safety transparency": {
    "at": "2026-11-25T08:34:38+00:00",
@@ -1578,6 +1614,12 @@
    "priority": "P1",
    "title": "v2.1.327"
   },
+  "url:https://aa.com.tr/science-technology/openai-files-countersuit-against-apple-in-dispute-over-alleged-trade-secret-theft/4141145": {
+   "at": "2026-11-28T07:50:22+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI countersues Apple over trade secret theft and supplier coercion"
+  },
   "url:https://aistudio.google.com/docs/changelog.md": {
    "at": "2026-11-19T22:22:21+00:00",
    "channel": "release",
@@ -1620,6 +1662,12 @@
    "priority": "P2",
    "title": "Zhipu Executive Disputes Reports of GLM-5.5 Delay, Confirms December Launch"
   },
+  "url:https://app.dealroom.co/news/note/openai-countersues-apple-accusing-it-of-stealing-device-secrets-and-pressuring-shared-suppliers": {
+   "at": "2026-11-28T07:50:22+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI countersues Apple over trade secret theft and supplier coercion"
+  },
   "url:https://app.dealroom.co/news/note/openai-publishes-its-internal-pretraining-curve-and-proposes-industry-wide-limits-based-on-perplexity": {
    "at": "2026-11-22T19:39:39+00:00",
    "channel": "digest",
@@ -1655,6 +1703,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "Anthropic Won't Join the S&P 500 Anytime Soon. Here's Why - BeInCrypto"
+  },
+  "url:https://bioengineer.org/chatgpt-generates-clinical-tests-but-fails-as-an-expert-scoring-panel": {
+   "at": "2026-11-28T07:50:22+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Study finds ChatGPT generates clinical tests but struggles as an expert scoring panel"
   },
   "url:https://bleepingcomputer.com/news/artificial-intelligence/openai-warns-gpt-62-astra-will-hit-usage-limits-40-percent-faster-because-it-fixed-a-bug": {
    "at": "2026-11-26T21:39:05+00:00",
@@ -1757,6 +1811,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "OpenAI, Google and Anthropic Gain Breathing Room as Chinese AI Developers Face Delays - Coinpaper"
+  },
+  "url:https://cryptobriefing.com/anthropic-claude-fable-5-sabotage-claims": {
+   "at": "2026-11-28T07:50:22+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic employee clarifies Claude's cautious behavior on long tasks is not sabotage"
   },
   "url:https://cryptobriefing.com/openai-gpt-6-2-astra-agent-arena-index": {
    "at": "2026-11-21T19:19:33+00:00",
@@ -1889,6 +1949,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic shares fall 28% from IPO peak as analysts cool on AI listings"
+  },
+  "url:https://finance.yahoo.com/markets/stocks/articles/heres-why-anthropic-stock-rallied-021524348.html": {
+   "at": "2026-11-28T07:50:22+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic retains 80% of recent hires despite Meta's $100M recruitment pushes"
   },
   "url:https://finance.yahoo.com/markets/stocks/articles/spacex-vs-anthropic-mega-ipo-062902689.html": {
    "at": "2026-11-18T07:29:18+00:00",
@@ -3228,6 +3294,30 @@
    "channel": "discovery",
    "title": "Zyphra/ZONOS3-Mini"
   },
+  "url:https://icv2.com/articles/news/view/63980/wizards-coast-give-anthropic-settlement-d-d-authors": {
+   "at": "2026-11-28T07:50:22+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Wizards of the Coast to distribute Anthropic settlement funds to D&D authors"
+  },
+  "url:https://indiatoday.in/technology/news/story/elon-musk-says-grok-bot-is-like-human-employee-stop-overloading-one-with-all-the-work-3048900-2026-11-28": {
+   "at": "2026-11-28T07:50:22+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Elon Musk outlines Grok Bot multi-agent orchestration and specialized company roles"
+  },
+  "url:https://japantimes.co.jp/business/2026/11/28/tech/openai-apple-pressured-suppliers": {
+   "at": "2026-11-28T07:50:22+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI countersues Apple over trade secret theft and supplier coercion"
+  },
+  "url:https://kcentv.com/video/news/national/openai-countersues-apple/500-454125f4-de2e-422c-b4a6-445665ae8f70": {
+   "at": "2026-11-28T07:50:22+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI countersues Apple over trade secret theft and supplier coercion"
+  },
   "url:https://keeptrack.space/x-report/spacex-brief-2026-11-24": {
    "at": "2026-11-24T09:54:17+00:00",
    "channel": "digest",
@@ -3396,6 +3486,12 @@
    "priority": "P1",
    "title": "Anthropic prices initial public offering at $83 per share"
   },
+  "url:https://news.google.com/rss/articles/cbmib0fvx3lxtfbwvgnwq1b6tfdsylg5venxz3djc2fxtjrvnkrlofvorgfhlwnfn1lqu1ztalpvbe41d0rwrvl5alk1cxk2rhhzvejknjizeg90amxtuu9bdnzhdwpotjndz21fderqsuhkbndjqkxnoa": {
+   "at": "2026-11-28T07:50:22+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic retains 80% of recent hires despite Meta's $100M recruitment pushes"
+  },
   "url:https://news.google.com/rss/articles/cbmibefvx3lxte5xtw11wi1qv2lsnzvvrlyyvklerhdsukxklxdrbjrjbdk2ec1uymm1lxnzn2fpdedhrc1lci1syu56m3zsowmxm3p6oxb0c2h0dtfvvjbhswnvsezjsnnusnbjmu5hzgd6sty3sg": {
    "at": "2026-11-27T21:18:11+00:00",
    "channel": "digest",
@@ -3474,6 +3570,12 @@
    "priority": "P1",
    "title": "Anthropic Finalizes Pricing for Blockbuster IPO Amid High Demand"
   },
+  "url:https://news.google.com/rss/articles/cbmid0fvx3lxtfbox05aewrcbu85tmzflvuyu25vdg9weed3zwg4b25eumjqzw5zem9mdnu2akm1ofhcnvnmm0jhzkhyvjllq0rhmjvrdvnsc1rhsetiq0vlv09evhvpwk5sbwhrbhrmqljfwmfvztnmwuu2yup1y2xf": {
+   "at": "2026-11-28T07:50:22+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Elon Musk outlines Grok Bot multi-agent orchestration and specialized company roles"
+  },
   "url:https://news.google.com/rss/articles/cbmid0fvx3lxtfbpvdhkb3heegntukqzahdotglpwwd3v3vlew9waedhvgver1ktzk9iswrfs2ljqvjyu19abvh0unjiafu5ynruumwwoho1ng9hae9quhfjxy1vcut2n1czsxa4awcwqtbrvxbynhbltku2ntiwbw5z0gf8qvvfexfmt2hoajr1zljzb1nvx0lmqul2uuw1renlexrubnu5czezmvvynnu4tfy1depvm09ovwjvcnjnwwk0mwm2ownvxznyajhac2r2tkm1zjdnehrqtlptr2v4wffwovhwvjzvndnongo2vg5nsvjamkznnglqrm8xug": {
    "at": "2026-11-20T07:17:37+00:00",
    "channel": "digest",
@@ -3515,6 +3617,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "U.S. Chip Curbs and Distillation Blockade Leave Chinese AI Development Reeling; Zhipu, Moonshot Delay Flagship Models - BigGo Finance"
+  },
+  "url:https://news.google.com/rss/articles/cbmie0fvx3lxte1vtgducjnrmjvgdljsehbqr1vnztm1ylnmwv9szkvetwhysf9dt2pyyxy3sjk2r1npcktlqllzejf2rvzxczgwc2hdqza0y28xc2jmek51zflpyujjaudochnzotvitnmyb05wtnnulwy5ekxbv2lrsmtorq": {
+   "at": "2026-11-28T07:50:22+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Elon Musk outlines Grok Bot multi-agent orchestration and specialized company roles"
   },
   "url:https://news.google.com/rss/articles/cbmie0fvx3lxte45zv9azupntgl2cujrtez3szr5a2zjcw42vurgbelxz1b1tutise4zexhevlftww11ajjpv2fsnzncm0lrylbwrepxmursuwjgulppbtdnbupjdxnuvu1yq3vflw1wam5kndvzq1o1cde2bvg0uufwewe3vq": {
    "at": "2026-11-19T07:27:18+00:00",
@@ -3659,6 +3767,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic Prices IPO at $83 and Raises $81.3 Billion on Nasdaq"
+  },
+  "url:https://news.google.com/rss/articles/cbmiggfbvv95cuxqoevla3j3wezithjkbfdpnnn0stj5ewljb0hec21knzvoywtladbws19zevp4umn3sfhqetzoxzzvci00mwsywdrczfrprmryevjhenf1cvffrtjaqmdyeheynwfoewxzqnpbtzzkqnfsotvidlnjmmg0znrkbvzlsjhb": {
+   "at": "2026-11-28T07:50:22+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI countersues Apple over trade secret theft and supplier coercion"
   },
   "url:https://news.google.com/rss/articles/cbmigwfbvv95cuxodvkzqlndalfhchrtsenwwer3chp5ndbszgyxbnvkwuzgn0tdsndssvfeu21lq3n4n3htzgtzs3o5rljzrvvcqxnrx2npc2vgzmp5twpqsxvhcfnqvejsrxfpa3hmshhac0xzbkrnullnnljty3vjwfbkynfvzu9vbvhcqq": {
    "at": "2026-11-21T07:09:49+00:00",
@@ -3924,6 +4038,12 @@
    "priority": "P3",
    "title": "Scale AI cofounder says she passed on an Anthropic investment to support her ex's lifestyle: 'Lost a billion' - Business Insider"
   },
+  "url:https://news.google.com/rss/articles/cbmilwfbvv95cuxqwmroekpxetbpr2fqd2xtbjhktwrqcm5lzvetcfjjzlrhmgloqxfby1cttw5lx1jeodlornrkytjusvrnru9pq1rlrjdlofi3ewjbsfbmatdnnxn5vuz6vvhrx1h6ctf0s3vtmfvfazvgn21fvzvrufnra3c3u2szs3fptmxwvlhhaejnafi0evc1djdpy0zz": {
+   "at": "2026-11-28T07:50:22+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI countersues Apple over trade secret theft and supplier coercion"
+  },
   "url:https://news.google.com/rss/articles/cbmimafbvv95cuxondbquwx1wg8xt3e3uvgzqupruevjnnhmwelumk1esezwwez0twnuqza5szhszev0zk94bxptutnaretaumrit0rtwe1tthpvrdfmuwtlefjrtxbkvex0tenpzxzhx3nhvmd5euvwdeq2ymvjrhv2anfprjbrsl82wnp3anrgemy2v3lvuzbjamhpdkvwzxzwwq": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
@@ -4055,6 +4175,12 @@
    "channel": "digest",
    "priority": "P1",
    "title": "Anthropic prices initial public offering at $83 per share"
+  },
+  "url:https://news.google.com/rss/articles/cbminwfbvv95cuxnbeh4ugzwaxpkafpyrwn0amxqd1ljx3atd2vkzex2c3dkwjnumulfa19hdlewytc0mg44dkitdnfznhzuumtnrhlyofpwnxvkwdlfuzv3culju0dit0i3qm1nwetbt0lvafnps2vfnc1vvwv1ovuzq2vpv3z6vxo1shzfnjzyb0dhmgtwoxhkvudex1dpt19aenv1tmq2qjq": {
+   "at": "2026-11-28T07:50:22+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic retains 80% of recent hires despite Meta's $100M recruitment pushes"
   },
   "url:https://news.google.com/rss/articles/cbminwfbvv95cuxotk85rfhoavq1uzz5zmn5cjd1zwhgsxlfr1hezeytelmzb3m3a3b2rwlfawlxmuytbnlwshzwdvhjmwr2cxbivmtatgutbzrhvvrbwff2vdlvagh4oxvjvvlsdfjbn1kwvej3qxpjevnywlbjqmjksvfrx0f5cufwvk9mdxzdctjlnxjrogfpevjpef9fbxzxynzbofbed2c": {
    "at": "2026-11-27T21:18:11+00:00",
@@ -4224,6 +4350,12 @@
    "priority": "P0",
    "title": "Z.ai launches GLM-5.4, its first Loop Transformer model"
   },
+  "url:https://news.google.com/rss/articles/cbmiqkfvx3lxtfbgzmxfanbhc3vaehzjuwyxowo4ug90zvhwmepwtm9uoxnwcwlnmkfeymtmxzl0nkuxauzitw10rtq4zw": {
+   "at": "2026-11-28T07:50:22+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Elon Musk outlines Grok Bot multi-agent orchestration and specialized company roles"
+  },
   "url:https://news.google.com/rss/articles/cbmiqwfbvv95cuxns2yyd1r5sknxsldhdjfxzuu2a21fm3c4evdftl96z3loehk5cjbyylnuvzhndxrnau1orevuzhrowuy0z1l2udnqv3dtx1jeu2dbotzdnuxvahrptwxuyzfynhpjec1acvjjsjm0d3byovp2se9rmgdqvkvyahhybxvmmnhhqmzkquzda1frwmvoeerib0dfmdmttenpav84zk1mqmvht2zjata": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
@@ -4247,6 +4379,24 @@
    "channel": "digest",
    "priority": "P2",
    "title": "OpenAI and Jony Ive Lease Large S.F. Office for Hardware Team"
+  },
+  "url:https://news.google.com/rss/articles/cbmirafbvv95cuxon1uynzvum1vwyllduvb5rl9lvdywzeximwt2wfp4ewvuckvjddhqbfffsxr1b2nirm9lbfzqz2xlztnkrmtaskznb2m4ekjwvkvxbe1jdmnlazc2qumxallwb1jptwrvvk9zow12svm5mtz4rs1cqkngcw5qzlmyswjztjbknxbtzxbyr0nuvwdjzwvxww8zcwrstuf1zujxmlnvnwxem2l0vthn0ggyaufvx3lxte16t05qbedebtdcuklbu3kyx05yx2rxatzrvl9ywtetwdf4dthxofayodndtjfhty1lrmjkzejpd1e0etboawxks0nxv1biwfo0v1ztu01jmzd5bvpkmhfwtehsnevbt3e1cxd1nvjfbejtsxfurgpxmzlkowtntxg1amfkzdheowttulhku1y2umvnsugwrwzqwmjmtzdravbnm01pczfxtnh0rzyxrk02mfe": {
+   "at": "2026-11-28T07:50:22+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI countersues Apple over trade secret theft and supplier coercion"
+  },
+  "url:https://news.google.com/rss/articles/cbmirafbvv95cuxpv0xawxjomk5isnr5qtzls2zuewnxzlvmqu9nzes4tnpyvwrgywdoew1ywvdlnluxrdz2qmztbvjncgxjuw5hcjbrbzfisujkykxgvzjmn2nvww9qewtmnkvothbpnkzbyxrwdjboujryedbhmwplzmq4yux0cjnmce9navv4bzzuslvbztb4whg0rulszkrxlvdobwpuuflubmnvykxmx3zpqlqw": {
+   "at": "2026-11-28T07:50:22+00:00",
+   "channel": "digest",
+   "priority": "P1",
+   "title": "OpenAI countersues Apple over trade secret theft and supplier coercion"
+  },
+  "url:https://news.google.com/rss/articles/cbmirafbvv95cuxqbnbjrvgzx3zitknruee4vhp6ww80wgdjtvvra1ppwnq3zuf3c0qwodzpvkjbsfiwntjtmhnpsufddek2mmxinldgrtzdnkzvmvb4vhbqngt3vgfzekffuwpbnxe5mm9pczvoaertltluovpfefnmvf9mbgqybgndtupwdtzkts1asll2ukpfqnqxv204cwndqnbaudi4s1bnxzy1bw1adfrys2na": {
+   "at": "2026-11-28T07:50:22+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Elon Musk outlines Grok Bot multi-agent orchestration and specialized company roles"
   },
   "url:https://news.google.com/rss/articles/cbmirafbvv95cuxqd0p4qvlqugxnceqwuvjfwku2cnbwogromjk0zdrsaflnzzzmdmt5d3p0qzzzedzxzks1tghyn1jpndi0clrkshmtswpodhnmeumynhu5ylpjy0nitnj4muhjetbywmtkdu9qdlzizgtvymjlzw1otjvkz25wrgowqvrxswp1cdzyltronxrovkrsc3zjddnvwe5jluhny2lhd202lxd5umk3zlqt": {
    "at": "2026-11-21T07:09:49+00:00",
@@ -4380,6 +4530,12 @@
    "priority": "P3",
    "title": "OpenAI and Cisco introduce Shirudo open-source eBPF security runtime"
   },
+  "url:https://news.google.com/rss/articles/cbmitgfbvv95cuxpevhwm1d4vgtcx3prulbucwljb2jsoenmbhhncw9wrdfcnnbrd2i5mzdklvdoskvivwfxehnpq1lwn0rwd1kwr19xdgs0ykd2nzblnuvoaumyvw5grhfwytl5mhlpq0diburnukc5al8xczvnmmluv1ptwuhdvkqtnm9vyl9rwu1vwnvtqll3a0zmqjferhq0t3f4ek80mje4bwzwche0mf9eb1zzszvuzk9evhnsuq": {
+   "at": "2026-11-28T07:50:22+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic retains 80% of recent hires despite Meta's $100M recruitment pushes"
+  },
   "url:https://news.google.com/rss/articles/cbmitgfbvv95cuxqu2zzdhhtcxzma2jztghtukruekr0akplexlrlu9mwnzfmmxxzujowkxjotnmvnjqovvxrevjwtjlnjh6uetras1zavnorhd6vfvvzw1mbk1ot1rgzf8waejwtjhyajvnuenycwpozmliuvnxsgllmgzmcmpzandnajm0ymtxouv2tfj0zkpdauh1cwpeszm0lwmxcdr4avpzow5ft3rddgfxymlkss04uhp6sjngzw": {
    "at": "2026-11-16T22:02:32+00:00",
    "channel": "digest",
@@ -4463,6 +4619,12 @@
    "channel": "digest",
    "priority": "P2",
    "title": "Virginia and Oregon sue SpaceX over Grok CSAM and deepfake generation"
+  },
+  "url:https://news.google.com/rss/articles/cbmivwfbvv95cuxowde4dv9uukriqlfuzkvqogrlt0jiv2ndsgpmclbyugm2enn5skzytmpxb1dfz2jjnurrulmzx05bx0fzvethsgzrd2hiefm3t1qxylv1zwhvaelor1piuuxruf9yznlomwhozk84z2pynutwttfhu2ztvwxuvdrisjiyu0xstkp1uthhlv9soc0wow9zufdzwmdewnawajbpadlznvdhowrzenvcuelxejvvvjdqsjvjoxpmtnl0dw": {
+   "at": "2026-11-28T07:50:22+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic retains 80% of recent hires despite Meta's $100M recruitment pushes"
   },
   "url:https://news.google.com/rss/articles/cbmivwfbvv95cuxoyzvqevf0stvjtgtoq251ywpszwx6vhjodduxrhq2zg5itfzacxj1retawxpyr09xt2etmzq4wdfswfluxzrvntizwglzb3bnwehose9jwgk4vjhqbzvdvjf0nwhhql8ws2o5lue1wu9qylv3zmntzxfmqxpuuhvptwxbqnfqwmk2tkzmvhj1nnm2tmq1dxzjre8wclzjbxnjrkvuq1bidwzpymdbq25jtzdqqwp4c0o1ajleunzhsq": {
    "at": "2026-11-24T09:54:17+00:00",
@@ -4619,6 +4781,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "GLM-5.4 Loop Transformer: What Z.ai Actually Built - OrcaRouter"
+  },
+  "url:https://newsbytesapp.com/news/science/elon-musk-says-assign-roles-and-manager-to-grok-bots/tldr": {
+   "at": "2026-11-28T07:50:22+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Elon Musk outlines Grok Bot multi-agent orchestration and specialized company roles"
   },
   "url:https://openai.com/business/customer-stories/clay-plugins-openai": {
    "at": "2026-11-24T23:11:46+00:00",
@@ -5022,6 +5190,12 @@
    "priority": "P3",
    "title": "ChatGPT Ads adds audience metrics and expands Business Agents - Search Engine Land"
   },
+  "url:https://shattered.io/anthropic-retains-80-percent-recent-hires-meta-100-million-offers-nov-28": {
+   "at": "2026-11-28T07:50:22+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic retains 80% of recent hires despite Meta's $100M recruitment pushes"
+  },
   "url:https://shattered.io/glm-5-4-vs-glm-5-3-no-open-weights-coding-plan-from-18-nov-26": {
    "at": "2026-11-26T08:19:48+00:00",
    "channel": "digest",
@@ -5081,6 +5255,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "Quoting Jack Despain Zhou"
+  },
+  "url:https://simonwillison.net/2026/nov/27/datasette-charts": {
+   "at": "2026-11-28T07:50:22+00:00",
+   "channel": "digest",
+   "priority": "P3",
+   "title": "Simon Willison uses Claude Opus 5.5 to build experimental datasette-charts plugins"
   },
   "url:https://startupfortune.com/microsoft-puts-openais-gpt-62-sol-in-copilot-worldwide-as-mai-models-push-in": {
    "at": "2026-11-22T06:47:48+00:00",
@@ -5502,6 +5682,12 @@
    "priority": "P1",
    "title": "OpenAI Proposes Perplexity-Based Limits for Frontier AI Development"
   },
+  "url:https://wsj.com/finance/investing/anthropic-lives-up-to-wall-street-hype-but-ai-doubts-linger-d6a4519b": {
+   "at": "2026-11-28T07:50:22+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Anthropic retains 80% of recent hires despite Meta's $100M recruitment pushes"
+  },
   "url:https://wsj.com/finance/stocks/anthropics-ipo-bust-punctuates-4-trillion-ai-wipeout-on-wall-street-f1f1ec90": {
    "at": "2026-11-21T07:09:49+00:00",
    "channel": "digest",
@@ -5519,6 +5705,12 @@
    "channel": "digest",
    "priority": "P3",
    "title": "Stop taking meeting notes. Invite Grok Bot to the call instead. Unlike the rest of us, it actually pays attention. Questions answered on the spot. Work assigned"
+  },
+  "url:https://x.com/marionawfal/status/2126579345699619094/video/1": {
+   "at": "2026-11-28T07:50:22+00:00",
+   "channel": "digest",
+   "priority": "P2",
+   "title": "Elon Musk outlines Grok Bot multi-agent orchestration and specialized company roles"
   },
   "url:https://xinmingtu.cn/blog/2026/claude-opus-5-5-protein-sequences": {
    "at": "2026-11-18T20:33:37+00:00",
